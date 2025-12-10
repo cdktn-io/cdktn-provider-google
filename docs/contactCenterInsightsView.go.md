@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.contactCenterInsightsView.ContactCenterInsightsView.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/contactcenterinsightsview"
+import "github.com/cdktf/cdktf-provider-google-go/google/contactcenterinsightsview"
 
 contactcenterinsightsview.NewContactCenterInsightsView(scope Construct, id *string, config ContactCenterInsightsViewConfig) ContactCenterInsightsView
 ```
@@ -426,7 +426,7 @@ func ResetValue()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google.contactCenterInsightsView.ContactCenterInsightsView.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/contactcenterinsightsview"
+import "github.com/cdktf/cdktf-provider-google-go/google/contactcenterinsightsview"
 
 contactcenterinsightsview.ContactCenterInsightsView_IsConstruct(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google.contactCenterInsightsView.ContactCenterInsightsView.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/contactcenterinsightsview"
+import "github.com/cdktf/cdktf-provider-google-go/google/contactcenterinsightsview"
 
 contactcenterinsightsview.ContactCenterInsightsView_IsTerraformElement(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ contactcenterinsightsview.ContactCenterInsightsView_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google.contactCenterInsightsView.ContactCenterInsightsView.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/contactcenterinsightsview"
+import "github.com/cdktf/cdktf-provider-google-go/google/contactcenterinsightsview"
 
 contactcenterinsightsview.ContactCenterInsightsView_IsTerraformResource(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ contactcenterinsightsview.ContactCenterInsightsView_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google.contactCenterInsightsView.ContactCenterInsightsView.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/contactcenterinsightsview"
+import "github.com/cdktf/cdktf-provider-google-go/google/contactcenterinsightsview"
 
 contactcenterinsightsview.ContactCenterInsightsView_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -880,7 +880,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.contactCenterInsightsView.ContactCenterInsightsViewConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/contactcenterinsightsview"
+import "github.com/cdktf/cdktf-provider-google-go/google/contactcenterinsightsview"
 
 &contactcenterinsightsview.ContactCenterInsightsViewConfig {
 	Connection: interface{},
@@ -894,7 +894,7 @@ import "github.com/cdktf/cdktf-provider-google-go/google/v16/contactcenterinsigh
 	DisplayName: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-google-go/google/v16.contactCenterInsightsView.ContactCenterInsightsViewTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-google-go/google.contactCenterInsightsView.ContactCenterInsightsViewTimeouts,
 	Value: *string,
 }
 ```
@@ -1077,7 +1077,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.contactCenterInsightsView.ContactCenterInsightsViewTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/contactcenterinsightsview"
+import "github.com/cdktf/cdktf-provider-google-go/google/contactcenterinsightsview"
 
 &contactcenterinsightsview.ContactCenterInsightsViewTimeouts {
 	Create: *string,
@@ -1139,7 +1139,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.contactCenterInsightsView.ContactCenterInsightsViewTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/contactcenterinsightsview"
+import "github.com/cdktf/cdktf-provider-google-go/google/contactcenterinsightsview"
 
 contactcenterinsightsview.NewContactCenterInsightsViewTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContactCenterInsightsViewTimeoutsOutputReference
 ```

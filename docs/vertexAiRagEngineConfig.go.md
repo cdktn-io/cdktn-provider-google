@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.vertexAiRagEngineConfig.VertexAiRagEngineConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexairagengineconfig"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexairagengineconfig"
 
 vertexairagengineconfig.NewVertexAiRagEngineConfig(scope Construct, id *string, config VertexAiRagEngineConfigConfig) VertexAiRagEngineConfig
 ```
@@ -432,7 +432,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google.vertexAiRagEngineConfig.VertexAiRagEngineConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexairagengineconfig"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexairagengineconfig"
 
 vertexairagengineconfig.VertexAiRagEngineConfig_IsConstruct(x interface{}) *bool
 ```
@@ -464,7 +464,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google.vertexAiRagEngineConfig.VertexAiRagEngineConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexairagengineconfig"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexairagengineconfig"
 
 vertexairagengineconfig.VertexAiRagEngineConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ vertexairagengineconfig.VertexAiRagEngineConfig_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google.vertexAiRagEngineConfig.VertexAiRagEngineConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexairagengineconfig"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexairagengineconfig"
 
 vertexairagengineconfig.VertexAiRagEngineConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ vertexairagengineconfig.VertexAiRagEngineConfig_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google.vertexAiRagEngineConfig.VertexAiRagEngineConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexairagengineconfig"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexairagengineconfig"
 
 vertexairagengineconfig.VertexAiRagEngineConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -842,7 +842,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.vertexAiRagEngineConfig.VertexAiRagEngineConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexairagengineconfig"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexairagengineconfig"
 
 &vertexairagengineconfig.VertexAiRagEngineConfigConfig {
 	Connection: interface{},
@@ -852,11 +852,11 @@ import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexairagengineco
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	RagManagedDbConfig: github.com/cdktf/cdktf-provider-google-go/google/v16.vertexAiRagEngineConfig.VertexAiRagEngineConfigRagManagedDbConfig,
+	RagManagedDbConfig: github.com/cdktf/cdktf-provider-google-go/google.vertexAiRagEngineConfig.VertexAiRagEngineConfigRagManagedDbConfig,
 	Id: *string,
 	Project: *string,
 	Region: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-google-go/google/v16.vertexAiRagEngineConfig.VertexAiRagEngineConfigTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-google-go/google.vertexAiRagEngineConfig.VertexAiRagEngineConfigTimeouts,
 }
 ```
 
@@ -1023,12 +1023,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.vertexAiRagEngineConfig.VertexAiRagEngineConfigRagManagedDbConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexairagengineconfig"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexairagengineconfig"
 
 &vertexairagengineconfig.VertexAiRagEngineConfigRagManagedDbConfig {
-	Basic: github.com/cdktf/cdktf-provider-google-go/google/v16.vertexAiRagEngineConfig.VertexAiRagEngineConfigRagManagedDbConfigBasic,
-	Scaled: github.com/cdktf/cdktf-provider-google-go/google/v16.vertexAiRagEngineConfig.VertexAiRagEngineConfigRagManagedDbConfigScaled,
-	Unprovisioned: github.com/cdktf/cdktf-provider-google-go/google/v16.vertexAiRagEngineConfig.VertexAiRagEngineConfigRagManagedDbConfigUnprovisioned,
+	Basic: github.com/cdktf/cdktf-provider-google-go/google.vertexAiRagEngineConfig.VertexAiRagEngineConfigRagManagedDbConfigBasic,
+	Scaled: github.com/cdktf/cdktf-provider-google-go/google.vertexAiRagEngineConfig.VertexAiRagEngineConfigRagManagedDbConfigScaled,
+	Unprovisioned: github.com/cdktf/cdktf-provider-google-go/google.vertexAiRagEngineConfig.VertexAiRagEngineConfigRagManagedDbConfigUnprovisioned,
 }
 ```
 
@@ -1089,7 +1089,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.vertexAiRagEngineConfig.VertexAiRagEngineConfigRagManagedDbConfigBasic.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexairagengineconfig"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexairagengineconfig"
 
 &vertexairagengineconfig.VertexAiRagEngineConfigRagManagedDbConfigBasic {
 
@@ -1102,7 +1102,7 @@ import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexairagengineco
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.vertexAiRagEngineConfig.VertexAiRagEngineConfigRagManagedDbConfigScaled.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexairagengineconfig"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexairagengineconfig"
 
 &vertexairagengineconfig.VertexAiRagEngineConfigRagManagedDbConfigScaled {
 
@@ -1115,7 +1115,7 @@ import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexairagengineco
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.vertexAiRagEngineConfig.VertexAiRagEngineConfigRagManagedDbConfigUnprovisioned.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexairagengineconfig"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexairagengineconfig"
 
 &vertexairagengineconfig.VertexAiRagEngineConfigRagManagedDbConfigUnprovisioned {
 
@@ -1128,7 +1128,7 @@ import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexairagengineco
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.vertexAiRagEngineConfig.VertexAiRagEngineConfigTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexairagengineconfig"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexairagengineconfig"
 
 &vertexairagengineconfig.VertexAiRagEngineConfigTimeouts {
 	Create: *string,
@@ -1190,7 +1190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.vertexAiRagEngineConfig.VertexAiRagEngineConfigRagManagedDbConfigBasicOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexairagengineconfig"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexairagengineconfig"
 
 vertexairagengineconfig.NewVertexAiRagEngineConfigRagManagedDbConfigBasicOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiRagEngineConfigRagManagedDbConfigBasicOutputReference
 ```
@@ -1439,7 +1439,7 @@ func InternalValue() VertexAiRagEngineConfigRagManagedDbConfigBasic
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.vertexAiRagEngineConfig.VertexAiRagEngineConfigRagManagedDbConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexairagengineconfig"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexairagengineconfig"
 
 vertexairagengineconfig.NewVertexAiRagEngineConfigRagManagedDbConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiRagEngineConfigRagManagedDbConfigOutputReference
 ```
@@ -1814,7 +1814,7 @@ func InternalValue() VertexAiRagEngineConfigRagManagedDbConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.vertexAiRagEngineConfig.VertexAiRagEngineConfigRagManagedDbConfigScaledOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexairagengineconfig"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexairagengineconfig"
 
 vertexairagengineconfig.NewVertexAiRagEngineConfigRagManagedDbConfigScaledOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiRagEngineConfigRagManagedDbConfigScaledOutputReference
 ```
@@ -2063,7 +2063,7 @@ func InternalValue() VertexAiRagEngineConfigRagManagedDbConfigScaled
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.vertexAiRagEngineConfig.VertexAiRagEngineConfigRagManagedDbConfigUnprovisionedOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexairagengineconfig"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexairagengineconfig"
 
 vertexairagengineconfig.NewVertexAiRagEngineConfigRagManagedDbConfigUnprovisionedOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiRagEngineConfigRagManagedDbConfigUnprovisionedOutputReference
 ```
@@ -2312,7 +2312,7 @@ func InternalValue() VertexAiRagEngineConfigRagManagedDbConfigUnprovisioned
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.vertexAiRagEngineConfig.VertexAiRagEngineConfigTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexairagengineconfig"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexairagengineconfig"
 
 vertexairagengineconfig.NewVertexAiRagEngineConfigTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiRagEngineConfigTimeoutsOutputReference
 ```

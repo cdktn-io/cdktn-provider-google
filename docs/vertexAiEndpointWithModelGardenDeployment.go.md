@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeployment.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexaiendpointwithmodelgardendeployment"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexaiendpointwithmodelgardendeployment"
 
 vertexaiendpointwithmodelgardendeployment.NewVertexAiEndpointWithModelGardenDeployment(scope Construct, id *string, config VertexAiEndpointWithModelGardenDeploymentConfig) VertexAiEndpointWithModelGardenDeployment
 ```
@@ -486,7 +486,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeployment.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexaiendpointwithmodelgardendeployment"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexaiendpointwithmodelgardendeployment"
 
 vertexaiendpointwithmodelgardendeployment.VertexAiEndpointWithModelGardenDeployment_IsConstruct(x interface{}) *bool
 ```
@@ -518,7 +518,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeployment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexaiendpointwithmodelgardendeployment"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexaiendpointwithmodelgardendeployment"
 
 vertexaiendpointwithmodelgardendeployment.VertexAiEndpointWithModelGardenDeployment_IsTerraformElement(x interface{}) *bool
 ```
@@ -532,7 +532,7 @@ vertexaiendpointwithmodelgardendeployment.VertexAiEndpointWithModelGardenDeploym
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeployment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexaiendpointwithmodelgardendeployment"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexaiendpointwithmodelgardendeployment"
 
 vertexaiendpointwithmodelgardendeployment.VertexAiEndpointWithModelGardenDeployment_IsTerraformResource(x interface{}) *bool
 ```
@@ -546,7 +546,7 @@ vertexaiendpointwithmodelgardendeployment.VertexAiEndpointWithModelGardenDeploym
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeployment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexaiendpointwithmodelgardendeployment"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexaiendpointwithmodelgardendeployment"
 
 vertexaiendpointwithmodelgardendeployment.VertexAiEndpointWithModelGardenDeployment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1006,7 +1006,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexaiendpointwithmodelgardendeployment"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexaiendpointwithmodelgardendeployment"
 
 &vertexaiendpointwithmodelgardendeployment.VertexAiEndpointWithModelGardenDeploymentConfig {
 	Connection: interface{},
@@ -1017,14 +1017,14 @@ import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexaiendpointwit
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Location: *string,
-	DeployConfig: github.com/cdktf/cdktf-provider-google-go/google/v16.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentDeployConfig,
-	EndpointConfig: github.com/cdktf/cdktf-provider-google-go/google/v16.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentEndpointConfig,
+	DeployConfig: github.com/cdktf/cdktf-provider-google-go/google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentDeployConfig,
+	EndpointConfig: github.com/cdktf/cdktf-provider-google-go/google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentEndpointConfig,
 	HuggingFaceModelId: *string,
 	Id: *string,
-	ModelConfig: github.com/cdktf/cdktf-provider-google-go/google/v16.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfig,
+	ModelConfig: github.com/cdktf/cdktf-provider-google-go/google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfig,
 	Project: *string,
 	PublisherModelName: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-google-go/google/v16.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-google-go/google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentTimeouts,
 }
 ```
 
@@ -1251,10 +1251,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentDeployConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexaiendpointwithmodelgardendeployment"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexaiendpointwithmodelgardendeployment"
 
 &vertexaiendpointwithmodelgardendeployment.VertexAiEndpointWithModelGardenDeploymentDeployConfig {
-	DedicatedResources: github.com/cdktf/cdktf-provider-google-go/google/v16.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedResources,
+	DedicatedResources: github.com/cdktf/cdktf-provider-google-go/google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedResources,
 	FastTryoutEnabled: interface{},
 	SystemLabels: *map[string]*string,
 }
@@ -1317,10 +1317,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedResources.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexaiendpointwithmodelgardendeployment"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexaiendpointwithmodelgardendeployment"
 
 &vertexaiendpointwithmodelgardendeployment.VertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedResources {
-	MachineSpec: github.com/cdktf/cdktf-provider-google-go/google/v16.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedResourcesMachineSpec,
+	MachineSpec: github.com/cdktf/cdktf-provider-google-go/google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedResourcesMachineSpec,
 	MinReplicaCount: *f64,
 	AutoscalingMetricSpecs: interface{},
 	MaxReplicaCount: *f64,
@@ -1454,7 +1454,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedResourcesAutoscalingMetricSpecs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexaiendpointwithmodelgardendeployment"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexaiendpointwithmodelgardendeployment"
 
 &vertexaiendpointwithmodelgardendeployment.VertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedResourcesAutoscalingMetricSpecs {
 	MetricName: *string,
@@ -1512,14 +1512,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedResourcesMachineSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexaiendpointwithmodelgardendeployment"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexaiendpointwithmodelgardendeployment"
 
 &vertexaiendpointwithmodelgardendeployment.VertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedResourcesMachineSpec {
 	AcceleratorCount: *f64,
 	AcceleratorType: *string,
 	MachineType: *string,
 	MultihostGpuNodeCount: *f64,
-	ReservationAffinity: github.com/cdktf/cdktf-provider-google-go/google/v16.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedResourcesMachineSpecReservationAffinity,
+	ReservationAffinity: github.com/cdktf/cdktf-provider-google-go/google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedResourcesMachineSpecReservationAffinity,
 	TpuTopology: *string,
 }
 ```
@@ -1636,7 +1636,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedResourcesMachineSpecReservationAffinity.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexaiendpointwithmodelgardendeployment"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexaiendpointwithmodelgardendeployment"
 
 &vertexaiendpointwithmodelgardendeployment.VertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedResourcesMachineSpecReservationAffinity {
 	ReservationAffinityType: *string,
@@ -1709,7 +1709,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentEndpointConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexaiendpointwithmodelgardendeployment"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexaiendpointwithmodelgardendeployment"
 
 &vertexaiendpointwithmodelgardendeployment.VertexAiEndpointWithModelGardenDeploymentEndpointConfig {
 	DedicatedEndpointEnabled: interface{},
@@ -1759,11 +1759,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexaiendpointwithmodelgardendeployment"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexaiendpointwithmodelgardendeployment"
 
 &vertexaiendpointwithmodelgardendeployment.VertexAiEndpointWithModelGardenDeploymentModelConfig {
 	AcceptEula: interface{},
-	ContainerSpec: github.com/cdktf/cdktf-provider-google-go/google/v16.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpec,
+	ContainerSpec: github.com/cdktf/cdktf-provider-google-go/google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpec,
 	HuggingFaceAccessToken: *string,
 	HuggingFaceCacheEnabled: interface{},
 	ModelDisplayName: *string,
@@ -1860,7 +1860,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexaiendpointwithmodelgardendeployment"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexaiendpointwithmodelgardendeployment"
 
 &vertexaiendpointwithmodelgardendeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpec {
 	ImageUri: *string,
@@ -1869,13 +1869,13 @@ import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexaiendpointwit
 	DeploymentTimeout: *string,
 	Env: interface{},
 	GrpcPorts: interface{},
-	HealthProbe: github.com/cdktf/cdktf-provider-google-go/google/v16.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbe,
+	HealthProbe: github.com/cdktf/cdktf-provider-google-go/google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbe,
 	HealthRoute: *string,
-	LivenessProbe: github.com/cdktf/cdktf-provider-google-go/google/v16.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbe,
+	LivenessProbe: github.com/cdktf/cdktf-provider-google-go/google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbe,
 	Ports: interface{},
 	PredictRoute: *string,
 	SharedMemorySizeMb: *string,
-	StartupProbe: github.com/cdktf/cdktf-provider-google-go/google/v16.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbe,
+	StartupProbe: github.com/cdktf/cdktf-provider-google-go/google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbe,
 }
 ```
 
@@ -2222,7 +2222,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecEnv.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexaiendpointwithmodelgardendeployment"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexaiendpointwithmodelgardendeployment"
 
 &vertexaiendpointwithmodelgardendeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecEnv {
 	Name: *string,
@@ -2278,7 +2278,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecGrpcPorts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexaiendpointwithmodelgardendeployment"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexaiendpointwithmodelgardendeployment"
 
 &vertexaiendpointwithmodelgardendeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecGrpcPorts {
 	ContainerPort: *f64,
@@ -2314,17 +2314,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbe.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexaiendpointwithmodelgardendeployment"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexaiendpointwithmodelgardendeployment"
 
 &vertexaiendpointwithmodelgardendeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbe {
-	Exec: github.com/cdktf/cdktf-provider-google-go/google/v16.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeExec,
+	Exec: github.com/cdktf/cdktf-provider-google-go/google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeExec,
 	FailureThreshold: *f64,
-	Grpc: github.com/cdktf/cdktf-provider-google-go/google/v16.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeGrpc,
-	HttpGet: github.com/cdktf/cdktf-provider-google-go/google/v16.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeHttpGet,
+	Grpc: github.com/cdktf/cdktf-provider-google-go/google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeGrpc,
+	HttpGet: github.com/cdktf/cdktf-provider-google-go/google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeHttpGet,
 	InitialDelaySeconds: *f64,
 	PeriodSeconds: *f64,
 	SuccessThreshold: *f64,
-	TcpSocket: github.com/cdktf/cdktf-provider-google-go/google/v16.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeTcpSocket,
+	TcpSocket: github.com/cdktf/cdktf-provider-google-go/google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeTcpSocket,
 	TimeoutSeconds: *f64,
 }
 ```
@@ -2492,7 +2492,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeExec.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexaiendpointwithmodelgardendeployment"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexaiendpointwithmodelgardendeployment"
 
 &vertexaiendpointwithmodelgardendeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeExec {
 	Command: *[]*string,
@@ -2531,7 +2531,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeGrpc.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexaiendpointwithmodelgardendeployment"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexaiendpointwithmodelgardendeployment"
 
 &vertexaiendpointwithmodelgardendeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeGrpc {
 	Port: *f64,
@@ -2583,7 +2583,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeHttpGet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexaiendpointwithmodelgardendeployment"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexaiendpointwithmodelgardendeployment"
 
 &vertexaiendpointwithmodelgardendeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeHttpGet {
 	Host: *string,
@@ -2683,7 +2683,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeHttpGetHttpHeaders.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexaiendpointwithmodelgardendeployment"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexaiendpointwithmodelgardendeployment"
 
 &vertexaiendpointwithmodelgardendeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeHttpGetHttpHeaders {
 	Name: *string,
@@ -2733,7 +2733,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeTcpSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexaiendpointwithmodelgardendeployment"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexaiendpointwithmodelgardendeployment"
 
 &vertexaiendpointwithmodelgardendeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeTcpSocket {
 	Host: *string,
@@ -2783,17 +2783,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbe.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexaiendpointwithmodelgardendeployment"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexaiendpointwithmodelgardendeployment"
 
 &vertexaiendpointwithmodelgardendeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbe {
-	Exec: github.com/cdktf/cdktf-provider-google-go/google/v16.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeExec,
+	Exec: github.com/cdktf/cdktf-provider-google-go/google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeExec,
 	FailureThreshold: *f64,
-	Grpc: github.com/cdktf/cdktf-provider-google-go/google/v16.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeGrpc,
-	HttpGet: github.com/cdktf/cdktf-provider-google-go/google/v16.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeHttpGet,
+	Grpc: github.com/cdktf/cdktf-provider-google-go/google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeGrpc,
+	HttpGet: github.com/cdktf/cdktf-provider-google-go/google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeHttpGet,
 	InitialDelaySeconds: *f64,
 	PeriodSeconds: *f64,
 	SuccessThreshold: *f64,
-	TcpSocket: github.com/cdktf/cdktf-provider-google-go/google/v16.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeTcpSocket,
+	TcpSocket: github.com/cdktf/cdktf-provider-google-go/google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeTcpSocket,
 	TimeoutSeconds: *f64,
 }
 ```
@@ -2961,7 +2961,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeExec.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexaiendpointwithmodelgardendeployment"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexaiendpointwithmodelgardendeployment"
 
 &vertexaiendpointwithmodelgardendeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeExec {
 	Command: *[]*string,
@@ -3000,7 +3000,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeGrpc.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexaiendpointwithmodelgardendeployment"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexaiendpointwithmodelgardendeployment"
 
 &vertexaiendpointwithmodelgardendeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeGrpc {
 	Port: *f64,
@@ -3052,7 +3052,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeHttpGet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexaiendpointwithmodelgardendeployment"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexaiendpointwithmodelgardendeployment"
 
 &vertexaiendpointwithmodelgardendeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeHttpGet {
 	Host: *string,
@@ -3152,7 +3152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeHttpGetHttpHeaders.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexaiendpointwithmodelgardendeployment"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexaiendpointwithmodelgardendeployment"
 
 &vertexaiendpointwithmodelgardendeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeHttpGetHttpHeaders {
 	Name: *string,
@@ -3202,7 +3202,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeTcpSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexaiendpointwithmodelgardendeployment"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexaiendpointwithmodelgardendeployment"
 
 &vertexaiendpointwithmodelgardendeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeTcpSocket {
 	Host: *string,
@@ -3252,7 +3252,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecPorts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexaiendpointwithmodelgardendeployment"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexaiendpointwithmodelgardendeployment"
 
 &vertexaiendpointwithmodelgardendeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecPorts {
 	ContainerPort: *f64,
@@ -3288,17 +3288,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbe.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexaiendpointwithmodelgardendeployment"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexaiendpointwithmodelgardendeployment"
 
 &vertexaiendpointwithmodelgardendeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbe {
-	Exec: github.com/cdktf/cdktf-provider-google-go/google/v16.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeExec,
+	Exec: github.com/cdktf/cdktf-provider-google-go/google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeExec,
 	FailureThreshold: *f64,
-	Grpc: github.com/cdktf/cdktf-provider-google-go/google/v16.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeGrpc,
-	HttpGet: github.com/cdktf/cdktf-provider-google-go/google/v16.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeHttpGet,
+	Grpc: github.com/cdktf/cdktf-provider-google-go/google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeGrpc,
+	HttpGet: github.com/cdktf/cdktf-provider-google-go/google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeHttpGet,
 	InitialDelaySeconds: *f64,
 	PeriodSeconds: *f64,
 	SuccessThreshold: *f64,
-	TcpSocket: github.com/cdktf/cdktf-provider-google-go/google/v16.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeTcpSocket,
+	TcpSocket: github.com/cdktf/cdktf-provider-google-go/google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeTcpSocket,
 	TimeoutSeconds: *f64,
 }
 ```
@@ -3466,7 +3466,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeExec.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexaiendpointwithmodelgardendeployment"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexaiendpointwithmodelgardendeployment"
 
 &vertexaiendpointwithmodelgardendeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeExec {
 	Command: *[]*string,
@@ -3505,7 +3505,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeGrpc.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexaiendpointwithmodelgardendeployment"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexaiendpointwithmodelgardendeployment"
 
 &vertexaiendpointwithmodelgardendeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeGrpc {
 	Port: *f64,
@@ -3557,7 +3557,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeHttpGet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexaiendpointwithmodelgardendeployment"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexaiendpointwithmodelgardendeployment"
 
 &vertexaiendpointwithmodelgardendeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeHttpGet {
 	Host: *string,
@@ -3657,7 +3657,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeHttpGetHttpHeaders.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexaiendpointwithmodelgardendeployment"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexaiendpointwithmodelgardendeployment"
 
 &vertexaiendpointwithmodelgardendeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeHttpGetHttpHeaders {
 	Name: *string,
@@ -3707,7 +3707,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeTcpSocket.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexaiendpointwithmodelgardendeployment"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexaiendpointwithmodelgardendeployment"
 
 &vertexaiendpointwithmodelgardendeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeTcpSocket {
 	Host: *string,
@@ -3757,7 +3757,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexaiendpointwithmodelgardendeployment"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexaiendpointwithmodelgardendeployment"
 
 &vertexaiendpointwithmodelgardendeployment.VertexAiEndpointWithModelGardenDeploymentTimeouts {
 	Create: *string,
@@ -3805,7 +3805,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedResourcesAutoscalingMetricSpecsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexaiendpointwithmodelgardendeployment"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexaiendpointwithmodelgardendeployment"
 
 vertexaiendpointwithmodelgardendeployment.NewVertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedResourcesAutoscalingMetricSpecsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedResourcesAutoscalingMetricSpecsList
 ```
@@ -3965,7 +3965,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedResourcesAutoscalingMetricSpecsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexaiendpointwithmodelgardendeployment"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexaiendpointwithmodelgardendeployment"
 
 vertexaiendpointwithmodelgardendeployment.NewVertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedResourcesAutoscalingMetricSpecsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedResourcesAutoscalingMetricSpecsOutputReference
 ```
@@ -4283,7 +4283,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedResourcesMachineSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexaiendpointwithmodelgardendeployment"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexaiendpointwithmodelgardendeployment"
 
 vertexaiendpointwithmodelgardendeployment.NewVertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedResourcesMachineSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedResourcesMachineSpecOutputReference
 ```
@@ -4719,7 +4719,7 @@ func InternalValue() VertexAiEndpointWithModelGardenDeploymentDeployConfigDedica
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedResourcesMachineSpecReservationAffinityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexaiendpointwithmodelgardendeployment"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexaiendpointwithmodelgardendeployment"
 
 vertexaiendpointwithmodelgardendeployment.NewVertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedResourcesMachineSpecReservationAffinityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedResourcesMachineSpecReservationAffinityOutputReference
 ```
@@ -5048,7 +5048,7 @@ func InternalValue() VertexAiEndpointWithModelGardenDeploymentDeployConfigDedica
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedResourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexaiendpointwithmodelgardendeployment"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexaiendpointwithmodelgardendeployment"
 
 vertexaiendpointwithmodelgardendeployment.NewVertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedResourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiEndpointWithModelGardenDeploymentDeployConfigDedicatedResourcesOutputReference
 ```
@@ -5483,7 +5483,7 @@ func InternalValue() VertexAiEndpointWithModelGardenDeploymentDeployConfigDedica
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentDeployConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexaiendpointwithmodelgardendeployment"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexaiendpointwithmodelgardendeployment"
 
 vertexaiendpointwithmodelgardendeployment.NewVertexAiEndpointWithModelGardenDeploymentDeployConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiEndpointWithModelGardenDeploymentDeployConfigOutputReference
 ```
@@ -5832,7 +5832,7 @@ func InternalValue() VertexAiEndpointWithModelGardenDeploymentDeployConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentEndpointConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexaiendpointwithmodelgardendeployment"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexaiendpointwithmodelgardendeployment"
 
 vertexaiendpointwithmodelgardendeployment.NewVertexAiEndpointWithModelGardenDeploymentEndpointConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiEndpointWithModelGardenDeploymentEndpointConfigOutputReference
 ```
@@ -6139,7 +6139,7 @@ func InternalValue() VertexAiEndpointWithModelGardenDeploymentEndpointConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecEnvList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexaiendpointwithmodelgardendeployment"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexaiendpointwithmodelgardendeployment"
 
 vertexaiendpointwithmodelgardendeployment.NewVertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecEnvList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecEnvList
 ```
@@ -6299,7 +6299,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecEnvOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexaiendpointwithmodelgardendeployment"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexaiendpointwithmodelgardendeployment"
 
 vertexaiendpointwithmodelgardendeployment.NewVertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecEnvOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecEnvOutputReference
 ```
@@ -6610,7 +6610,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecGrpcPortsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexaiendpointwithmodelgardendeployment"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexaiendpointwithmodelgardendeployment"
 
 vertexaiendpointwithmodelgardendeployment.NewVertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecGrpcPortsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecGrpcPortsList
 ```
@@ -6770,7 +6770,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecGrpcPortsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexaiendpointwithmodelgardendeployment"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexaiendpointwithmodelgardendeployment"
 
 vertexaiendpointwithmodelgardendeployment.NewVertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecGrpcPortsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecGrpcPortsOutputReference
 ```
@@ -7066,7 +7066,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeExecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexaiendpointwithmodelgardendeployment"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexaiendpointwithmodelgardendeployment"
 
 vertexaiendpointwithmodelgardendeployment.NewVertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeExecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeExecOutputReference
 ```
@@ -7344,7 +7344,7 @@ func InternalValue() VertexAiEndpointWithModelGardenDeploymentModelConfigContain
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeGrpcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexaiendpointwithmodelgardendeployment"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexaiendpointwithmodelgardendeployment"
 
 vertexaiendpointwithmodelgardendeployment.NewVertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeGrpcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeGrpcOutputReference
 ```
@@ -7651,7 +7651,7 @@ func InternalValue() VertexAiEndpointWithModelGardenDeploymentModelConfigContain
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeHttpGetHttpHeadersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexaiendpointwithmodelgardendeployment"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexaiendpointwithmodelgardendeployment"
 
 vertexaiendpointwithmodelgardendeployment.NewVertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeHttpGetHttpHeadersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeHttpGetHttpHeadersList
 ```
@@ -7811,7 +7811,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeHttpGetHttpHeadersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexaiendpointwithmodelgardendeployment"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexaiendpointwithmodelgardendeployment"
 
 vertexaiendpointwithmodelgardendeployment.NewVertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeHttpGetHttpHeadersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeHttpGetHttpHeadersOutputReference
 ```
@@ -8136,7 +8136,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeHttpGetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexaiendpointwithmodelgardendeployment"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexaiendpointwithmodelgardendeployment"
 
 vertexaiendpointwithmodelgardendeployment.NewVertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeHttpGetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeHttpGetOutputReference
 ```
@@ -8543,7 +8543,7 @@ func InternalValue() VertexAiEndpointWithModelGardenDeploymentModelConfigContain
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexaiendpointwithmodelgardendeployment"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexaiendpointwithmodelgardendeployment"
 
 vertexaiendpointwithmodelgardendeployment.NewVertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeOutputReference
 ```
@@ -9105,7 +9105,7 @@ func InternalValue() VertexAiEndpointWithModelGardenDeploymentModelConfigContain
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeTcpSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexaiendpointwithmodelgardendeployment"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexaiendpointwithmodelgardendeployment"
 
 vertexaiendpointwithmodelgardendeployment.NewVertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeTcpSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecHealthProbeTcpSocketOutputReference
 ```
@@ -9412,7 +9412,7 @@ func InternalValue() VertexAiEndpointWithModelGardenDeploymentModelConfigContain
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeExecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexaiendpointwithmodelgardendeployment"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexaiendpointwithmodelgardendeployment"
 
 vertexaiendpointwithmodelgardendeployment.NewVertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeExecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeExecOutputReference
 ```
@@ -9690,7 +9690,7 @@ func InternalValue() VertexAiEndpointWithModelGardenDeploymentModelConfigContain
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeGrpcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexaiendpointwithmodelgardendeployment"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexaiendpointwithmodelgardendeployment"
 
 vertexaiendpointwithmodelgardendeployment.NewVertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeGrpcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeGrpcOutputReference
 ```
@@ -9997,7 +9997,7 @@ func InternalValue() VertexAiEndpointWithModelGardenDeploymentModelConfigContain
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeHttpGetHttpHeadersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexaiendpointwithmodelgardendeployment"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexaiendpointwithmodelgardendeployment"
 
 vertexaiendpointwithmodelgardendeployment.NewVertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeHttpGetHttpHeadersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeHttpGetHttpHeadersList
 ```
@@ -10157,7 +10157,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeHttpGetHttpHeadersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexaiendpointwithmodelgardendeployment"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexaiendpointwithmodelgardendeployment"
 
 vertexaiendpointwithmodelgardendeployment.NewVertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeHttpGetHttpHeadersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeHttpGetHttpHeadersOutputReference
 ```
@@ -10482,7 +10482,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeHttpGetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexaiendpointwithmodelgardendeployment"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexaiendpointwithmodelgardendeployment"
 
 vertexaiendpointwithmodelgardendeployment.NewVertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeHttpGetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeHttpGetOutputReference
 ```
@@ -10889,7 +10889,7 @@ func InternalValue() VertexAiEndpointWithModelGardenDeploymentModelConfigContain
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexaiendpointwithmodelgardendeployment"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexaiendpointwithmodelgardendeployment"
 
 vertexaiendpointwithmodelgardendeployment.NewVertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeOutputReference
 ```
@@ -11451,7 +11451,7 @@ func InternalValue() VertexAiEndpointWithModelGardenDeploymentModelConfigContain
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeTcpSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexaiendpointwithmodelgardendeployment"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexaiendpointwithmodelgardendeployment"
 
 vertexaiendpointwithmodelgardendeployment.NewVertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeTcpSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecLivenessProbeTcpSocketOutputReference
 ```
@@ -11758,7 +11758,7 @@ func InternalValue() VertexAiEndpointWithModelGardenDeploymentModelConfigContain
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexaiendpointwithmodelgardendeployment"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexaiendpointwithmodelgardendeployment"
 
 vertexaiendpointwithmodelgardendeployment.NewVertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecOutputReference
 ```
@@ -12455,7 +12455,7 @@ func InternalValue() VertexAiEndpointWithModelGardenDeploymentModelConfigContain
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecPortsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexaiendpointwithmodelgardendeployment"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexaiendpointwithmodelgardendeployment"
 
 vertexaiendpointwithmodelgardendeployment.NewVertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecPortsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecPortsList
 ```
@@ -12615,7 +12615,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecPortsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexaiendpointwithmodelgardendeployment"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexaiendpointwithmodelgardendeployment"
 
 vertexaiendpointwithmodelgardendeployment.NewVertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecPortsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecPortsOutputReference
 ```
@@ -12911,7 +12911,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeExecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexaiendpointwithmodelgardendeployment"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexaiendpointwithmodelgardendeployment"
 
 vertexaiendpointwithmodelgardendeployment.NewVertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeExecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeExecOutputReference
 ```
@@ -13189,7 +13189,7 @@ func InternalValue() VertexAiEndpointWithModelGardenDeploymentModelConfigContain
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeGrpcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexaiendpointwithmodelgardendeployment"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexaiendpointwithmodelgardendeployment"
 
 vertexaiendpointwithmodelgardendeployment.NewVertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeGrpcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeGrpcOutputReference
 ```
@@ -13496,7 +13496,7 @@ func InternalValue() VertexAiEndpointWithModelGardenDeploymentModelConfigContain
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeHttpGetHttpHeadersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexaiendpointwithmodelgardendeployment"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexaiendpointwithmodelgardendeployment"
 
 vertexaiendpointwithmodelgardendeployment.NewVertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeHttpGetHttpHeadersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeHttpGetHttpHeadersList
 ```
@@ -13656,7 +13656,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeHttpGetHttpHeadersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexaiendpointwithmodelgardendeployment"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexaiendpointwithmodelgardendeployment"
 
 vertexaiendpointwithmodelgardendeployment.NewVertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeHttpGetHttpHeadersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeHttpGetHttpHeadersOutputReference
 ```
@@ -13981,7 +13981,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeHttpGetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexaiendpointwithmodelgardendeployment"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexaiendpointwithmodelgardendeployment"
 
 vertexaiendpointwithmodelgardendeployment.NewVertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeHttpGetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeHttpGetOutputReference
 ```
@@ -14388,7 +14388,7 @@ func InternalValue() VertexAiEndpointWithModelGardenDeploymentModelConfigContain
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexaiendpointwithmodelgardendeployment"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexaiendpointwithmodelgardendeployment"
 
 vertexaiendpointwithmodelgardendeployment.NewVertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeOutputReference
 ```
@@ -14950,7 +14950,7 @@ func InternalValue() VertexAiEndpointWithModelGardenDeploymentModelConfigContain
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeTcpSocketOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexaiendpointwithmodelgardendeployment"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexaiendpointwithmodelgardendeployment"
 
 vertexaiendpointwithmodelgardendeployment.NewVertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeTcpSocketOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiEndpointWithModelGardenDeploymentModelConfigContainerSpecStartupProbeTcpSocketOutputReference
 ```
@@ -15257,7 +15257,7 @@ func InternalValue() VertexAiEndpointWithModelGardenDeploymentModelConfigContain
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentModelConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexaiendpointwithmodelgardendeployment"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexaiendpointwithmodelgardendeployment"
 
 vertexaiendpointwithmodelgardendeployment.NewVertexAiEndpointWithModelGardenDeploymentModelConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiEndpointWithModelGardenDeploymentModelConfigOutputReference
 ```
@@ -15664,7 +15664,7 @@ func InternalValue() VertexAiEndpointWithModelGardenDeploymentModelConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.vertexAiEndpointWithModelGardenDeployment.VertexAiEndpointWithModelGardenDeploymentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/vertexaiendpointwithmodelgardendeployment"
+import "github.com/cdktf/cdktf-provider-google-go/google/vertexaiendpointwithmodelgardendeployment"
 
 vertexaiendpointwithmodelgardendeployment.NewVertexAiEndpointWithModelGardenDeploymentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VertexAiEndpointWithModelGardenDeploymentTimeoutsOutputReference
 ```

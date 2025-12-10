@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.dialogflowEncryptionSpec.DialogflowEncryptionSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/dialogflowencryptionspec"
+import "github.com/cdktf/cdktf-provider-google-go/google/dialogflowencryptionspec"
 
 dialogflowencryptionspec.NewDialogflowEncryptionSpec(scope Construct, id *string, config DialogflowEncryptionSpecConfig) DialogflowEncryptionSpec
 ```
@@ -425,7 +425,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google.dialogflowEncryptionSpec.DialogflowEncryptionSpec.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/dialogflowencryptionspec"
+import "github.com/cdktf/cdktf-provider-google-go/google/dialogflowencryptionspec"
 
 dialogflowencryptionspec.DialogflowEncryptionSpec_IsConstruct(x interface{}) *bool
 ```
@@ -457,7 +457,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google.dialogflowEncryptionSpec.DialogflowEncryptionSpec.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/dialogflowencryptionspec"
+import "github.com/cdktf/cdktf-provider-google-go/google/dialogflowencryptionspec"
 
 dialogflowencryptionspec.DialogflowEncryptionSpec_IsTerraformElement(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ dialogflowencryptionspec.DialogflowEncryptionSpec_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google.dialogflowEncryptionSpec.DialogflowEncryptionSpec.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/dialogflowencryptionspec"
+import "github.com/cdktf/cdktf-provider-google-go/google/dialogflowencryptionspec"
 
 dialogflowencryptionspec.DialogflowEncryptionSpec_IsTerraformResource(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ dialogflowencryptionspec.DialogflowEncryptionSpec_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google.dialogflowEncryptionSpec.DialogflowEncryptionSpec.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/dialogflowencryptionspec"
+import "github.com/cdktf/cdktf-provider-google-go/google/dialogflowencryptionspec"
 
 dialogflowencryptionspec.DialogflowEncryptionSpec_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -824,7 +824,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.dialogflowEncryptionSpec.DialogflowEncryptionSpecConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/dialogflowencryptionspec"
+import "github.com/cdktf/cdktf-provider-google-go/google/dialogflowencryptionspec"
 
 &dialogflowencryptionspec.DialogflowEncryptionSpecConfig {
 	Connection: interface{},
@@ -834,11 +834,11 @@ import "github.com/cdktf/cdktf-provider-google-go/google/v16/dialogflowencryptio
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	EncryptionSpec: github.com/cdktf/cdktf-provider-google-go/google/v16.dialogflowEncryptionSpec.DialogflowEncryptionSpecEncryptionSpec,
+	EncryptionSpec: github.com/cdktf/cdktf-provider-google-go/google.dialogflowEncryptionSpec.DialogflowEncryptionSpecEncryptionSpec,
 	Location: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-google-go/google/v16.dialogflowEncryptionSpec.DialogflowEncryptionSpecTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-google-go/google.dialogflowEncryptionSpec.DialogflowEncryptionSpecTimeouts,
 }
 ```
 
@@ -1005,7 +1005,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.dialogflowEncryptionSpec.DialogflowEncryptionSpecEncryptionSpec.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/dialogflowencryptionspec"
+import "github.com/cdktf/cdktf-provider-google-go/google/dialogflowencryptionspec"
 
 &dialogflowencryptionspec.DialogflowEncryptionSpecEncryptionSpec {
 	KmsKey: *string,
@@ -1043,7 +1043,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.dialogflowEncryptionSpec.DialogflowEncryptionSpecTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/dialogflowencryptionspec"
+import "github.com/cdktf/cdktf-provider-google-go/google/dialogflowencryptionspec"
 
 &dialogflowencryptionspec.DialogflowEncryptionSpecTimeouts {
 	Create: *string,
@@ -1091,7 +1091,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.dialogflowEncryptionSpec.DialogflowEncryptionSpecEncryptionSpecOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/dialogflowencryptionspec"
+import "github.com/cdktf/cdktf-provider-google-go/google/dialogflowencryptionspec"
 
 dialogflowencryptionspec.NewDialogflowEncryptionSpecEncryptionSpecOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowEncryptionSpecEncryptionSpecOutputReference
 ```
@@ -1362,7 +1362,7 @@ func InternalValue() DialogflowEncryptionSpecEncryptionSpec
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.dialogflowEncryptionSpec.DialogflowEncryptionSpecTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/dialogflowencryptionspec"
+import "github.com/cdktf/cdktf-provider-google-go/google/dialogflowencryptionspec"
 
 dialogflowencryptionspec.NewDialogflowEncryptionSpecTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DialogflowEncryptionSpecTimeoutsOutputReference
 ```

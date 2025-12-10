@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/storageinsightsdatasetconfig"
+import "github.com/cdktf/cdktf-provider-google-go/google/storageinsightsdatasetconfig"
 
 storageinsightsdatasetconfig.NewStorageInsightsDatasetConfig(scope Construct, id *string, config StorageInsightsDatasetConfigConfig) StorageInsightsDatasetConfig
 ```
@@ -580,7 +580,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/storageinsightsdatasetconfig"
+import "github.com/cdktf/cdktf-provider-google-go/google/storageinsightsdatasetconfig"
 
 storageinsightsdatasetconfig.StorageInsightsDatasetConfig_IsConstruct(x interface{}) *bool
 ```
@@ -612,7 +612,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/storageinsightsdatasetconfig"
+import "github.com/cdktf/cdktf-provider-google-go/google/storageinsightsdatasetconfig"
 
 storageinsightsdatasetconfig.StorageInsightsDatasetConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -626,7 +626,7 @@ storageinsightsdatasetconfig.StorageInsightsDatasetConfig_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/storageinsightsdatasetconfig"
+import "github.com/cdktf/cdktf-provider-google-go/google/storageinsightsdatasetconfig"
 
 storageinsightsdatasetconfig.StorageInsightsDatasetConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -640,7 +640,7 @@ storageinsightsdatasetconfig.StorageInsightsDatasetConfig_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/storageinsightsdatasetconfig"
+import "github.com/cdktf/cdktf-provider-google-go/google/storageinsightsdatasetconfig"
 
 storageinsightsdatasetconfig.StorageInsightsDatasetConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1331,7 +1331,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/storageinsightsdatasetconfig"
+import "github.com/cdktf/cdktf-provider-google-go/google/storageinsightsdatasetconfig"
 
 &storageinsightsdatasetconfig.StorageInsightsDatasetConfigConfig {
 	Connection: interface{},
@@ -1342,23 +1342,23 @@ import "github.com/cdktf/cdktf-provider-google-go/google/v16/storageinsightsdata
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	DatasetConfigId: *string,
-	Identity: github.com/cdktf/cdktf-provider-google-go/google/v16.storageInsightsDatasetConfig.StorageInsightsDatasetConfigIdentity,
+	Identity: github.com/cdktf/cdktf-provider-google-go/google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigIdentity,
 	Location: *string,
 	RetentionPeriodDays: *f64,
 	Description: *string,
-	ExcludeCloudStorageBuckets: github.com/cdktf/cdktf-provider-google-go/google/v16.storageInsightsDatasetConfig.StorageInsightsDatasetConfigExcludeCloudStorageBuckets,
-	ExcludeCloudStorageLocations: github.com/cdktf/cdktf-provider-google-go/google/v16.storageInsightsDatasetConfig.StorageInsightsDatasetConfigExcludeCloudStorageLocations,
+	ExcludeCloudStorageBuckets: github.com/cdktf/cdktf-provider-google-go/google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigExcludeCloudStorageBuckets,
+	ExcludeCloudStorageLocations: github.com/cdktf/cdktf-provider-google-go/google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigExcludeCloudStorageLocations,
 	Id: *string,
-	IncludeCloudStorageBuckets: github.com/cdktf/cdktf-provider-google-go/google/v16.storageInsightsDatasetConfig.StorageInsightsDatasetConfigIncludeCloudStorageBuckets,
-	IncludeCloudStorageLocations: github.com/cdktf/cdktf-provider-google-go/google/v16.storageInsightsDatasetConfig.StorageInsightsDatasetConfigIncludeCloudStorageLocations,
+	IncludeCloudStorageBuckets: github.com/cdktf/cdktf-provider-google-go/google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigIncludeCloudStorageBuckets,
+	IncludeCloudStorageLocations: github.com/cdktf/cdktf-provider-google-go/google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigIncludeCloudStorageLocations,
 	IncludeNewlyCreatedBuckets: interface{},
 	LinkDataset: interface{},
 	OrganizationNumber: *string,
 	OrganizationScope: interface{},
 	Project: *string,
-	SourceFolders: github.com/cdktf/cdktf-provider-google-go/google/v16.storageInsightsDatasetConfig.StorageInsightsDatasetConfigSourceFolders,
-	SourceProjects: github.com/cdktf/cdktf-provider-google-go/google/v16.storageInsightsDatasetConfig.StorageInsightsDatasetConfigSourceProjects,
-	Timeouts: github.com/cdktf/cdktf-provider-google-go/google/v16.storageInsightsDatasetConfig.StorageInsightsDatasetConfigTimeouts,
+	SourceFolders: github.com/cdktf/cdktf-provider-google-go/google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigSourceFolders,
+	SourceProjects: github.com/cdktf/cdktf-provider-google-go/google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigSourceProjects,
+	Timeouts: github.com/cdktf/cdktf-provider-google-go/google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigTimeouts,
 }
 ```
 
@@ -1726,7 +1726,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigExcludeCloudStorageBuckets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/storageinsightsdatasetconfig"
+import "github.com/cdktf/cdktf-provider-google-go/google/storageinsightsdatasetconfig"
 
 &storageinsightsdatasetconfig.StorageInsightsDatasetConfigExcludeCloudStorageBuckets {
 	CloudStorageBuckets: interface{},
@@ -1760,7 +1760,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigExcludeCloudStorageBucketsCloudStorageBuckets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/storageinsightsdatasetconfig"
+import "github.com/cdktf/cdktf-provider-google-go/google/storageinsightsdatasetconfig"
 
 &storageinsightsdatasetconfig.StorageInsightsDatasetConfigExcludeCloudStorageBucketsCloudStorageBuckets {
 	BucketName: *string,
@@ -1815,7 +1815,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigExcludeCloudStorageLocations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/storageinsightsdatasetconfig"
+import "github.com/cdktf/cdktf-provider-google-go/google/storageinsightsdatasetconfig"
 
 &storageinsightsdatasetconfig.StorageInsightsDatasetConfigExcludeCloudStorageLocations {
 	Locations: *[]*string,
@@ -1849,7 +1849,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigIdentity.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/storageinsightsdatasetconfig"
+import "github.com/cdktf/cdktf-provider-google-go/google/storageinsightsdatasetconfig"
 
 &storageinsightsdatasetconfig.StorageInsightsDatasetConfigIdentity {
 	Type: *string,
@@ -1883,7 +1883,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigIncludeCloudStorageBuckets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/storageinsightsdatasetconfig"
+import "github.com/cdktf/cdktf-provider-google-go/google/storageinsightsdatasetconfig"
 
 &storageinsightsdatasetconfig.StorageInsightsDatasetConfigIncludeCloudStorageBuckets {
 	CloudStorageBuckets: interface{},
@@ -1917,7 +1917,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigIncludeCloudStorageBucketsCloudStorageBuckets.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/storageinsightsdatasetconfig"
+import "github.com/cdktf/cdktf-provider-google-go/google/storageinsightsdatasetconfig"
 
 &storageinsightsdatasetconfig.StorageInsightsDatasetConfigIncludeCloudStorageBucketsCloudStorageBuckets {
 	BucketName: *string,
@@ -1972,7 +1972,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigIncludeCloudStorageLocations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/storageinsightsdatasetconfig"
+import "github.com/cdktf/cdktf-provider-google-go/google/storageinsightsdatasetconfig"
 
 &storageinsightsdatasetconfig.StorageInsightsDatasetConfigIncludeCloudStorageLocations {
 	Locations: *[]*string,
@@ -2006,7 +2006,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigLink.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/storageinsightsdatasetconfig"
+import "github.com/cdktf/cdktf-provider-google-go/google/storageinsightsdatasetconfig"
 
 &storageinsightsdatasetconfig.StorageInsightsDatasetConfigLink {
 
@@ -2019,7 +2019,7 @@ import "github.com/cdktf/cdktf-provider-google-go/google/v16/storageinsightsdata
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigSourceFolders.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/storageinsightsdatasetconfig"
+import "github.com/cdktf/cdktf-provider-google-go/google/storageinsightsdatasetconfig"
 
 &storageinsightsdatasetconfig.StorageInsightsDatasetConfigSourceFolders {
 	FolderNumbers: *[]*string,
@@ -2053,7 +2053,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigSourceProjects.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/storageinsightsdatasetconfig"
+import "github.com/cdktf/cdktf-provider-google-go/google/storageinsightsdatasetconfig"
 
 &storageinsightsdatasetconfig.StorageInsightsDatasetConfigSourceProjects {
 	ProjectNumbers: *[]*string,
@@ -2087,7 +2087,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/storageinsightsdatasetconfig"
+import "github.com/cdktf/cdktf-provider-google-go/google/storageinsightsdatasetconfig"
 
 &storageinsightsdatasetconfig.StorageInsightsDatasetConfigTimeouts {
 	Create: *string,
@@ -2149,7 +2149,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigExcludeCloudStorageBucketsCloudStorageBucketsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/storageinsightsdatasetconfig"
+import "github.com/cdktf/cdktf-provider-google-go/google/storageinsightsdatasetconfig"
 
 storageinsightsdatasetconfig.NewStorageInsightsDatasetConfigExcludeCloudStorageBucketsCloudStorageBucketsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StorageInsightsDatasetConfigExcludeCloudStorageBucketsCloudStorageBucketsList
 ```
@@ -2309,7 +2309,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigExcludeCloudStorageBucketsCloudStorageBucketsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/storageinsightsdatasetconfig"
+import "github.com/cdktf/cdktf-provider-google-go/google/storageinsightsdatasetconfig"
 
 storageinsightsdatasetconfig.NewStorageInsightsDatasetConfigExcludeCloudStorageBucketsCloudStorageBucketsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StorageInsightsDatasetConfigExcludeCloudStorageBucketsCloudStorageBucketsOutputReference
 ```
@@ -2634,7 +2634,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigExcludeCloudStorageBucketsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/storageinsightsdatasetconfig"
+import "github.com/cdktf/cdktf-provider-google-go/google/storageinsightsdatasetconfig"
 
 storageinsightsdatasetconfig.NewStorageInsightsDatasetConfigExcludeCloudStorageBucketsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageInsightsDatasetConfigExcludeCloudStorageBucketsOutputReference
 ```
@@ -2918,7 +2918,7 @@ func InternalValue() StorageInsightsDatasetConfigExcludeCloudStorageBuckets
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigExcludeCloudStorageLocationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/storageinsightsdatasetconfig"
+import "github.com/cdktf/cdktf-provider-google-go/google/storageinsightsdatasetconfig"
 
 storageinsightsdatasetconfig.NewStorageInsightsDatasetConfigExcludeCloudStorageLocationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageInsightsDatasetConfigExcludeCloudStorageLocationsOutputReference
 ```
@@ -3189,7 +3189,7 @@ func InternalValue() StorageInsightsDatasetConfigExcludeCloudStorageLocations
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigIdentityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/storageinsightsdatasetconfig"
+import "github.com/cdktf/cdktf-provider-google-go/google/storageinsightsdatasetconfig"
 
 storageinsightsdatasetconfig.NewStorageInsightsDatasetConfigIdentityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageInsightsDatasetConfigIdentityOutputReference
 ```
@@ -3471,7 +3471,7 @@ func InternalValue() StorageInsightsDatasetConfigIdentity
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigIncludeCloudStorageBucketsCloudStorageBucketsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/storageinsightsdatasetconfig"
+import "github.com/cdktf/cdktf-provider-google-go/google/storageinsightsdatasetconfig"
 
 storageinsightsdatasetconfig.NewStorageInsightsDatasetConfigIncludeCloudStorageBucketsCloudStorageBucketsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StorageInsightsDatasetConfigIncludeCloudStorageBucketsCloudStorageBucketsList
 ```
@@ -3631,7 +3631,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigIncludeCloudStorageBucketsCloudStorageBucketsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/storageinsightsdatasetconfig"
+import "github.com/cdktf/cdktf-provider-google-go/google/storageinsightsdatasetconfig"
 
 storageinsightsdatasetconfig.NewStorageInsightsDatasetConfigIncludeCloudStorageBucketsCloudStorageBucketsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StorageInsightsDatasetConfigIncludeCloudStorageBucketsCloudStorageBucketsOutputReference
 ```
@@ -3956,7 +3956,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigIncludeCloudStorageBucketsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/storageinsightsdatasetconfig"
+import "github.com/cdktf/cdktf-provider-google-go/google/storageinsightsdatasetconfig"
 
 storageinsightsdatasetconfig.NewStorageInsightsDatasetConfigIncludeCloudStorageBucketsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageInsightsDatasetConfigIncludeCloudStorageBucketsOutputReference
 ```
@@ -4240,7 +4240,7 @@ func InternalValue() StorageInsightsDatasetConfigIncludeCloudStorageBuckets
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigIncludeCloudStorageLocationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/storageinsightsdatasetconfig"
+import "github.com/cdktf/cdktf-provider-google-go/google/storageinsightsdatasetconfig"
 
 storageinsightsdatasetconfig.NewStorageInsightsDatasetConfigIncludeCloudStorageLocationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageInsightsDatasetConfigIncludeCloudStorageLocationsOutputReference
 ```
@@ -4511,7 +4511,7 @@ func InternalValue() StorageInsightsDatasetConfigIncludeCloudStorageLocations
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigLinkList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/storageinsightsdatasetconfig"
+import "github.com/cdktf/cdktf-provider-google-go/google/storageinsightsdatasetconfig"
 
 storageinsightsdatasetconfig.NewStorageInsightsDatasetConfigLinkList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StorageInsightsDatasetConfigLinkList
 ```
@@ -4660,7 +4660,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigLinkOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/storageinsightsdatasetconfig"
+import "github.com/cdktf/cdktf-provider-google-go/google/storageinsightsdatasetconfig"
 
 storageinsightsdatasetconfig.NewStorageInsightsDatasetConfigLinkOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StorageInsightsDatasetConfigLinkOutputReference
 ```
@@ -4949,7 +4949,7 @@ func InternalValue() StorageInsightsDatasetConfigLink
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigSourceFoldersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/storageinsightsdatasetconfig"
+import "github.com/cdktf/cdktf-provider-google-go/google/storageinsightsdatasetconfig"
 
 storageinsightsdatasetconfig.NewStorageInsightsDatasetConfigSourceFoldersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageInsightsDatasetConfigSourceFoldersOutputReference
 ```
@@ -5227,7 +5227,7 @@ func InternalValue() StorageInsightsDatasetConfigSourceFolders
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigSourceProjectsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/storageinsightsdatasetconfig"
+import "github.com/cdktf/cdktf-provider-google-go/google/storageinsightsdatasetconfig"
 
 storageinsightsdatasetconfig.NewStorageInsightsDatasetConfigSourceProjectsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageInsightsDatasetConfigSourceProjectsOutputReference
 ```
@@ -5505,7 +5505,7 @@ func InternalValue() StorageInsightsDatasetConfigSourceProjects
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/storageinsightsdatasetconfig"
+import "github.com/cdktf/cdktf-provider-google-go/google/storageinsightsdatasetconfig"
 
 storageinsightsdatasetconfig.NewStorageInsightsDatasetConfigTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StorageInsightsDatasetConfigTimeoutsOutputReference
 ```

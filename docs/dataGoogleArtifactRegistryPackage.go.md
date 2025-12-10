@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagoogleartifactregistrypackage"
+import "github.com/cdktf/cdktf-provider-google-go/google/datagoogleartifactregistrypackage"
 
 datagoogleartifactregistrypackage.NewDataGoogleArtifactRegistryPackage(scope Construct, id *string, config DataGoogleArtifactRegistryPackageConfig) DataGoogleArtifactRegistryPackage
 ```
@@ -290,7 +290,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagoogleartifactregistrypackage"
+import "github.com/cdktf/cdktf-provider-google-go/google/datagoogleartifactregistrypackage"
 
 datagoogleartifactregistrypackage.DataGoogleArtifactRegistryPackage_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagoogleartifactregistrypackage"
+import "github.com/cdktf/cdktf-provider-google-go/google/datagoogleartifactregistrypackage"
 
 datagoogleartifactregistrypackage.DataGoogleArtifactRegistryPackage_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datagoogleartifactregistrypackage.DataGoogleArtifactRegistryPackage_IsTerraformE
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagoogleartifactregistrypackage"
+import "github.com/cdktf/cdktf-provider-google-go/google/datagoogleartifactregistrypackage"
 
 datagoogleartifactregistrypackage.DataGoogleArtifactRegistryPackage_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ datagoogleartifactregistrypackage.DataGoogleArtifactRegistryPackage_IsTerraformD
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagoogleartifactregistrypackage"
+import "github.com/cdktf/cdktf-provider-google-go/google/datagoogleartifactregistrypackage"
 
 datagoogleartifactregistrypackage.DataGoogleArtifactRegistryPackage_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -711,7 +711,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackageConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagoogleartifactregistrypackage"
+import "github.com/cdktf/cdktf-provider-google-go/google/datagoogleartifactregistrypackage"
 
 &datagoogleartifactregistrypackage.DataGoogleArtifactRegistryPackageConfig {
 	Connection: interface{},

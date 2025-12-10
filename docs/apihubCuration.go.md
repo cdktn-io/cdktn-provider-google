@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.apihubCuration.ApihubCuration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/apihubcuration"
+import "github.com/cdktf/cdktf-provider-google-go/google/apihubcuration"
 
 apihubcuration.NewApihubCuration(scope Construct, id *string, config ApihubCurationConfig) ApihubCuration
 ```
@@ -432,7 +432,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google.apihubCuration.ApihubCuration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/apihubcuration"
+import "github.com/cdktf/cdktf-provider-google-go/google/apihubcuration"
 
 apihubcuration.ApihubCuration_IsConstruct(x interface{}) *bool
 ```
@@ -464,7 +464,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google.apihubCuration.ApihubCuration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/apihubcuration"
+import "github.com/cdktf/cdktf-provider-google-go/google/apihubcuration"
 
 apihubcuration.ApihubCuration_IsTerraformElement(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ apihubcuration.ApihubCuration_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google.apihubCuration.ApihubCuration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/apihubcuration"
+import "github.com/cdktf/cdktf-provider-google-go/google/apihubcuration"
 
 apihubcuration.ApihubCuration_IsTerraformResource(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ apihubcuration.ApihubCuration_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google.apihubCuration.ApihubCuration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/apihubcuration"
+import "github.com/cdktf/cdktf-provider-google-go/google/apihubcuration"
 
 apihubcuration.ApihubCuration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -974,7 +974,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.apihubCuration.ApihubCurationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/apihubcuration"
+import "github.com/cdktf/cdktf-provider-google-go/google/apihubcuration"
 
 &apihubcuration.ApihubCurationConfig {
 	Connection: interface{},
@@ -986,12 +986,12 @@ import "github.com/cdktf/cdktf-provider-google-go/google/v16/apihubcuration"
 	Provisioners: *[]interface{},
 	CurationId: *string,
 	DisplayName: *string,
-	Endpoint: github.com/cdktf/cdktf-provider-google-go/google/v16.apihubCuration.ApihubCurationEndpoint,
+	Endpoint: github.com/cdktf/cdktf-provider-google-go/google.apihubCuration.ApihubCurationEndpoint,
 	Location: *string,
 	Description: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-google-go/google/v16.apihubCuration.ApihubCurationTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-google-go/google.apihubCuration.ApihubCurationTimeouts,
 }
 ```
 
@@ -1213,10 +1213,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.apihubCuration.ApihubCurationEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/apihubcuration"
+import "github.com/cdktf/cdktf-provider-google-go/google/apihubcuration"
 
 &apihubcuration.ApihubCurationEndpoint {
-	ApplicationIntegrationEndpointDetails: github.com/cdktf/cdktf-provider-google-go/google/v16.apihubCuration.ApihubCurationEndpointApplicationIntegrationEndpointDetails,
+	ApplicationIntegrationEndpointDetails: github.com/cdktf/cdktf-provider-google-go/google.apihubCuration.ApihubCurationEndpointApplicationIntegrationEndpointDetails,
 }
 ```
 
@@ -1247,7 +1247,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.apihubCuration.ApihubCurationEndpointApplicationIntegrationEndpointDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/apihubcuration"
+import "github.com/cdktf/cdktf-provider-google-go/google/apihubcuration"
 
 &apihubcuration.ApihubCurationEndpointApplicationIntegrationEndpointDetails {
 	TriggerId: *string,
@@ -1299,7 +1299,7 @@ Note: The above comment contained a comment block ending sequence (* followed by
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.apihubCuration.ApihubCurationPluginInstanceActions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/apihubcuration"
+import "github.com/cdktf/cdktf-provider-google-go/google/apihubcuration"
 
 &apihubcuration.ApihubCurationPluginInstanceActions {
 
@@ -1312,7 +1312,7 @@ import "github.com/cdktf/cdktf-provider-google-go/google/v16/apihubcuration"
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.apihubCuration.ApihubCurationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/apihubcuration"
+import "github.com/cdktf/cdktf-provider-google-go/google/apihubcuration"
 
 &apihubcuration.ApihubCurationTimeouts {
 	Create: *string,
@@ -1374,7 +1374,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.apihubCuration.ApihubCurationEndpointApplicationIntegrationEndpointDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/apihubcuration"
+import "github.com/cdktf/cdktf-provider-google-go/google/apihubcuration"
 
 apihubcuration.NewApihubCurationEndpointApplicationIntegrationEndpointDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApihubCurationEndpointApplicationIntegrationEndpointDetailsOutputReference
 ```
@@ -1667,7 +1667,7 @@ func InternalValue() ApihubCurationEndpointApplicationIntegrationEndpointDetails
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.apihubCuration.ApihubCurationEndpointOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/apihubcuration"
+import "github.com/cdktf/cdktf-provider-google-go/google/apihubcuration"
 
 apihubcuration.NewApihubCurationEndpointOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApihubCurationEndpointOutputReference
 ```
@@ -1951,7 +1951,7 @@ func InternalValue() ApihubCurationEndpoint
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.apihubCuration.ApihubCurationPluginInstanceActionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/apihubcuration"
+import "github.com/cdktf/cdktf-provider-google-go/google/apihubcuration"
 
 apihubcuration.NewApihubCurationPluginInstanceActionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApihubCurationPluginInstanceActionsList
 ```
@@ -2100,7 +2100,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.apihubCuration.ApihubCurationPluginInstanceActionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/apihubcuration"
+import "github.com/cdktf/cdktf-provider-google-go/google/apihubcuration"
 
 apihubcuration.NewApihubCurationPluginInstanceActionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApihubCurationPluginInstanceActionsOutputReference
 ```
@@ -2389,7 +2389,7 @@ func InternalValue() ApihubCurationPluginInstanceActions
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.apihubCuration.ApihubCurationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/apihubcuration"
+import "github.com/cdktf/cdktf-provider-google-go/google/apihubcuration"
 
 apihubcuration.NewApihubCurationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApihubCurationTimeoutsOutputReference
 ```
