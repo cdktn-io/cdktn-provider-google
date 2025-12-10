@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.dataGoogleSecretManagerSecret.DataGoogleSecretManagerSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/datagooglesecretmanagersecret"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagooglesecretmanagersecret"
 
 datagooglesecretmanagersecret.NewDataGoogleSecretManagerSecret(scope Construct, id *string, config DataGoogleSecretManagerSecretConfig) DataGoogleSecretManagerSecret
 ```
@@ -290,7 +290,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google.dataGoogleSecretManagerSecret.DataGoogleSecretManagerSecret.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/datagooglesecretmanagersecret"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagooglesecretmanagersecret"
 
 datagooglesecretmanagersecret.DataGoogleSecretManagerSecret_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google.dataGoogleSecretManagerSecret.DataGoogleSecretManagerSecret.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/datagooglesecretmanagersecret"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagooglesecretmanagersecret"
 
 datagooglesecretmanagersecret.DataGoogleSecretManagerSecret_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datagooglesecretmanagersecret.DataGoogleSecretManagerSecret_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google.dataGoogleSecretManagerSecret.DataGoogleSecretManagerSecret.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/datagooglesecretmanagersecret"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagooglesecretmanagersecret"
 
 datagooglesecretmanagersecret.DataGoogleSecretManagerSecret_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ datagooglesecretmanagersecret.DataGoogleSecretManagerSecret_IsTerraformDataSourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google.dataGoogleSecretManagerSecret.DataGoogleSecretManagerSecret.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/datagooglesecretmanagersecret"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagooglesecretmanagersecret"
 
 datagooglesecretmanagersecret.DataGoogleSecretManagerSecret_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -799,7 +799,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.dataGoogleSecretManagerSecret.DataGoogleSecretManagerSecretConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/datagooglesecretmanagersecret"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagooglesecretmanagersecret"
 
 &datagooglesecretmanagersecret.DataGoogleSecretManagerSecretConfig {
 	Connection: interface{},
@@ -948,7 +948,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.dataGoogleSecretManagerSecret.DataGoogleSecretManagerSecretReplication.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/datagooglesecretmanagersecret"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagooglesecretmanagersecret"
 
 &datagooglesecretmanagersecret.DataGoogleSecretManagerSecretReplication {
 
@@ -961,7 +961,7 @@ import "github.com/cdktf/cdktf-provider-google-go/google/datagooglesecretmanager
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.dataGoogleSecretManagerSecret.DataGoogleSecretManagerSecretReplicationAuto.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/datagooglesecretmanagersecret"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagooglesecretmanagersecret"
 
 &datagooglesecretmanagersecret.DataGoogleSecretManagerSecretReplicationAuto {
 
@@ -974,7 +974,7 @@ import "github.com/cdktf/cdktf-provider-google-go/google/datagooglesecretmanager
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.dataGoogleSecretManagerSecret.DataGoogleSecretManagerSecretReplicationAutoCustomerManagedEncryption.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/datagooglesecretmanagersecret"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagooglesecretmanagersecret"
 
 &datagooglesecretmanagersecret.DataGoogleSecretManagerSecretReplicationAutoCustomerManagedEncryption {
 
@@ -987,7 +987,7 @@ import "github.com/cdktf/cdktf-provider-google-go/google/datagooglesecretmanager
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.dataGoogleSecretManagerSecret.DataGoogleSecretManagerSecretReplicationUserManaged.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/datagooglesecretmanagersecret"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagooglesecretmanagersecret"
 
 &datagooglesecretmanagersecret.DataGoogleSecretManagerSecretReplicationUserManaged {
 
@@ -1000,7 +1000,7 @@ import "github.com/cdktf/cdktf-provider-google-go/google/datagooglesecretmanager
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.dataGoogleSecretManagerSecret.DataGoogleSecretManagerSecretReplicationUserManagedReplicas.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/datagooglesecretmanagersecret"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagooglesecretmanagersecret"
 
 &datagooglesecretmanagersecret.DataGoogleSecretManagerSecretReplicationUserManagedReplicas {
 
@@ -1013,7 +1013,7 @@ import "github.com/cdktf/cdktf-provider-google-go/google/datagooglesecretmanager
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.dataGoogleSecretManagerSecret.DataGoogleSecretManagerSecretReplicationUserManagedReplicasCustomerManagedEncryption.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/datagooglesecretmanagersecret"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagooglesecretmanagersecret"
 
 &datagooglesecretmanagersecret.DataGoogleSecretManagerSecretReplicationUserManagedReplicasCustomerManagedEncryption {
 
@@ -1026,7 +1026,7 @@ import "github.com/cdktf/cdktf-provider-google-go/google/datagooglesecretmanager
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.dataGoogleSecretManagerSecret.DataGoogleSecretManagerSecretRotation.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/datagooglesecretmanagersecret"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagooglesecretmanagersecret"
 
 &datagooglesecretmanagersecret.DataGoogleSecretManagerSecretRotation {
 
@@ -1039,7 +1039,7 @@ import "github.com/cdktf/cdktf-provider-google-go/google/datagooglesecretmanager
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.dataGoogleSecretManagerSecret.DataGoogleSecretManagerSecretTopics.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/datagooglesecretmanagersecret"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagooglesecretmanagersecret"
 
 &datagooglesecretmanagersecret.DataGoogleSecretManagerSecretTopics {
 
@@ -1054,7 +1054,7 @@ import "github.com/cdktf/cdktf-provider-google-go/google/datagooglesecretmanager
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.dataGoogleSecretManagerSecret.DataGoogleSecretManagerSecretReplicationAutoCustomerManagedEncryptionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/datagooglesecretmanagersecret"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagooglesecretmanagersecret"
 
 datagooglesecretmanagersecret.NewDataGoogleSecretManagerSecretReplicationAutoCustomerManagedEncryptionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleSecretManagerSecretReplicationAutoCustomerManagedEncryptionList
 ```
@@ -1203,7 +1203,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.dataGoogleSecretManagerSecret.DataGoogleSecretManagerSecretReplicationAutoCustomerManagedEncryptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/datagooglesecretmanagersecret"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagooglesecretmanagersecret"
 
 datagooglesecretmanagersecret.NewDataGoogleSecretManagerSecretReplicationAutoCustomerManagedEncryptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleSecretManagerSecretReplicationAutoCustomerManagedEncryptionOutputReference
 ```
@@ -1481,7 +1481,7 @@ func InternalValue() DataGoogleSecretManagerSecretReplicationAutoCustomerManaged
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.dataGoogleSecretManagerSecret.DataGoogleSecretManagerSecretReplicationAutoList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/datagooglesecretmanagersecret"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagooglesecretmanagersecret"
 
 datagooglesecretmanagersecret.NewDataGoogleSecretManagerSecretReplicationAutoList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleSecretManagerSecretReplicationAutoList
 ```
@@ -1630,7 +1630,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.dataGoogleSecretManagerSecret.DataGoogleSecretManagerSecretReplicationAutoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/datagooglesecretmanagersecret"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagooglesecretmanagersecret"
 
 datagooglesecretmanagersecret.NewDataGoogleSecretManagerSecretReplicationAutoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleSecretManagerSecretReplicationAutoOutputReference
 ```
@@ -1908,7 +1908,7 @@ func InternalValue() DataGoogleSecretManagerSecretReplicationAuto
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.dataGoogleSecretManagerSecret.DataGoogleSecretManagerSecretReplicationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/datagooglesecretmanagersecret"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagooglesecretmanagersecret"
 
 datagooglesecretmanagersecret.NewDataGoogleSecretManagerSecretReplicationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleSecretManagerSecretReplicationList
 ```
@@ -2057,7 +2057,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.dataGoogleSecretManagerSecret.DataGoogleSecretManagerSecretReplicationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/datagooglesecretmanagersecret"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagooglesecretmanagersecret"
 
 datagooglesecretmanagersecret.NewDataGoogleSecretManagerSecretReplicationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleSecretManagerSecretReplicationOutputReference
 ```
@@ -2346,7 +2346,7 @@ func InternalValue() DataGoogleSecretManagerSecretReplication
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.dataGoogleSecretManagerSecret.DataGoogleSecretManagerSecretReplicationUserManagedList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/datagooglesecretmanagersecret"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagooglesecretmanagersecret"
 
 datagooglesecretmanagersecret.NewDataGoogleSecretManagerSecretReplicationUserManagedList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleSecretManagerSecretReplicationUserManagedList
 ```
@@ -2495,7 +2495,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.dataGoogleSecretManagerSecret.DataGoogleSecretManagerSecretReplicationUserManagedOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/datagooglesecretmanagersecret"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagooglesecretmanagersecret"
 
 datagooglesecretmanagersecret.NewDataGoogleSecretManagerSecretReplicationUserManagedOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleSecretManagerSecretReplicationUserManagedOutputReference
 ```
@@ -2773,7 +2773,7 @@ func InternalValue() DataGoogleSecretManagerSecretReplicationUserManaged
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.dataGoogleSecretManagerSecret.DataGoogleSecretManagerSecretReplicationUserManagedReplicasCustomerManagedEncryptionList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/datagooglesecretmanagersecret"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagooglesecretmanagersecret"
 
 datagooglesecretmanagersecret.NewDataGoogleSecretManagerSecretReplicationUserManagedReplicasCustomerManagedEncryptionList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleSecretManagerSecretReplicationUserManagedReplicasCustomerManagedEncryptionList
 ```
@@ -2922,7 +2922,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.dataGoogleSecretManagerSecret.DataGoogleSecretManagerSecretReplicationUserManagedReplicasCustomerManagedEncryptionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/datagooglesecretmanagersecret"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagooglesecretmanagersecret"
 
 datagooglesecretmanagersecret.NewDataGoogleSecretManagerSecretReplicationUserManagedReplicasCustomerManagedEncryptionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleSecretManagerSecretReplicationUserManagedReplicasCustomerManagedEncryptionOutputReference
 ```
@@ -3200,7 +3200,7 @@ func InternalValue() DataGoogleSecretManagerSecretReplicationUserManagedReplicas
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.dataGoogleSecretManagerSecret.DataGoogleSecretManagerSecretReplicationUserManagedReplicasList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/datagooglesecretmanagersecret"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagooglesecretmanagersecret"
 
 datagooglesecretmanagersecret.NewDataGoogleSecretManagerSecretReplicationUserManagedReplicasList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleSecretManagerSecretReplicationUserManagedReplicasList
 ```
@@ -3349,7 +3349,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.dataGoogleSecretManagerSecret.DataGoogleSecretManagerSecretReplicationUserManagedReplicasOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/datagooglesecretmanagersecret"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagooglesecretmanagersecret"
 
 datagooglesecretmanagersecret.NewDataGoogleSecretManagerSecretReplicationUserManagedReplicasOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleSecretManagerSecretReplicationUserManagedReplicasOutputReference
 ```
@@ -3638,7 +3638,7 @@ func InternalValue() DataGoogleSecretManagerSecretReplicationUserManagedReplicas
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.dataGoogleSecretManagerSecret.DataGoogleSecretManagerSecretRotationList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/datagooglesecretmanagersecret"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagooglesecretmanagersecret"
 
 datagooglesecretmanagersecret.NewDataGoogleSecretManagerSecretRotationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleSecretManagerSecretRotationList
 ```
@@ -3787,7 +3787,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.dataGoogleSecretManagerSecret.DataGoogleSecretManagerSecretRotationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/datagooglesecretmanagersecret"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagooglesecretmanagersecret"
 
 datagooglesecretmanagersecret.NewDataGoogleSecretManagerSecretRotationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleSecretManagerSecretRotationOutputReference
 ```
@@ -4076,7 +4076,7 @@ func InternalValue() DataGoogleSecretManagerSecretRotation
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.dataGoogleSecretManagerSecret.DataGoogleSecretManagerSecretTopicsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/datagooglesecretmanagersecret"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagooglesecretmanagersecret"
 
 datagooglesecretmanagersecret.NewDataGoogleSecretManagerSecretTopicsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleSecretManagerSecretTopicsList
 ```
@@ -4225,7 +4225,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.dataGoogleSecretManagerSecret.DataGoogleSecretManagerSecretTopicsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/datagooglesecretmanagersecret"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagooglesecretmanagersecret"
 
 datagooglesecretmanagersecret.NewDataGoogleSecretManagerSecretTopicsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleSecretManagerSecretTopicsOutputReference
 ```

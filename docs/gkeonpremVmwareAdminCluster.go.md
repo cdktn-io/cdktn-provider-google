@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminCluster.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 gkeonpremvmwareadmincluster.NewGkeonpremVmwareAdminCluster(scope Construct, id *string, config GkeonpremVmwareAdminClusterConfig) GkeonpremVmwareAdminCluster
 ```
@@ -647,7 +647,7 @@ func ResetVcenter()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminCluster.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 gkeonpremvmwareadmincluster.GkeonpremVmwareAdminCluster_IsConstruct(x interface{}) *bool
 ```
@@ -679,7 +679,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminCluster.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 gkeonpremvmwareadmincluster.GkeonpremVmwareAdminCluster_IsTerraformElement(x interface{}) *bool
 ```
@@ -693,7 +693,7 @@ gkeonpremvmwareadmincluster.GkeonpremVmwareAdminCluster_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminCluster.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 gkeonpremvmwareadmincluster.GkeonpremVmwareAdminCluster_IsTerraformResource(x interface{}) *bool
 ```
@@ -707,7 +707,7 @@ gkeonpremvmwareadmincluster.GkeonpremVmwareAdminCluster_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminCluster.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 gkeonpremvmwareadmincluster.GkeonpremVmwareAdminCluster_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1519,10 +1519,10 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterAddonNode.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 &gkeonpremvmwareadmincluster.GkeonpremVmwareAdminClusterAddonNode {
-	AutoResizeConfig: github.com/cdktf/cdktf-provider-google-go/google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterAddonNodeAutoResizeConfig,
+	AutoResizeConfig: github.com/cdktf/cdktf-provider-google-go/google/v16.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterAddonNodeAutoResizeConfig,
 }
 ```
 
@@ -1553,7 +1553,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterAddonNodeAutoResizeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 &gkeonpremvmwareadmincluster.GkeonpremVmwareAdminClusterAddonNodeAutoResizeConfig {
 	Enabled: interface{},
@@ -1587,7 +1587,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterAntiAffinityGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 &gkeonpremvmwareadmincluster.GkeonpremVmwareAdminClusterAntiAffinityGroups {
 	AagConfigDisabled: interface{},
@@ -1621,7 +1621,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterAuthorization.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 &gkeonpremvmwareadmincluster.GkeonpremVmwareAdminClusterAuthorization {
 	ViewerUsers: interface{},
@@ -1655,7 +1655,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterAuthorizationViewerUsers.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 &gkeonpremvmwareadmincluster.GkeonpremVmwareAdminClusterAuthorizationViewerUsers {
 	Username: *string,
@@ -1689,7 +1689,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterAutoRepairConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 &gkeonpremvmwareadmincluster.GkeonpremVmwareAdminClusterAutoRepairConfig {
 	Enabled: interface{},
@@ -1723,7 +1723,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 &gkeonpremvmwareadmincluster.GkeonpremVmwareAdminClusterConfig {
 	Connection: interface{},
@@ -1735,25 +1735,25 @@ import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadminclu
 	Provisioners: *[]interface{},
 	Location: *string,
 	Name: *string,
-	NetworkConfig: github.com/cdktf/cdktf-provider-google-go/google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterNetworkConfig,
-	AddonNode: github.com/cdktf/cdktf-provider-google-go/google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterAddonNode,
+	NetworkConfig: github.com/cdktf/cdktf-provider-google-go/google/v16.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterNetworkConfig,
+	AddonNode: github.com/cdktf/cdktf-provider-google-go/google/v16.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterAddonNode,
 	Annotations: *map[string]*string,
-	AntiAffinityGroups: github.com/cdktf/cdktf-provider-google-go/google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterAntiAffinityGroups,
-	Authorization: github.com/cdktf/cdktf-provider-google-go/google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterAuthorization,
-	AutoRepairConfig: github.com/cdktf/cdktf-provider-google-go/google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterAutoRepairConfig,
+	AntiAffinityGroups: github.com/cdktf/cdktf-provider-google-go/google/v16.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterAntiAffinityGroups,
+	Authorization: github.com/cdktf/cdktf-provider-google-go/google/v16.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterAuthorization,
+	AutoRepairConfig: github.com/cdktf/cdktf-provider-google-go/google/v16.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterAutoRepairConfig,
 	BootstrapClusterMembership: *string,
-	ControlPlaneNode: github.com/cdktf/cdktf-provider-google-go/google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterControlPlaneNode,
+	ControlPlaneNode: github.com/cdktf/cdktf-provider-google-go/google/v16.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterControlPlaneNode,
 	Description: *string,
 	EnableAdvancedCluster: interface{},
 	Id: *string,
 	ImageType: *string,
-	LoadBalancer: github.com/cdktf/cdktf-provider-google-go/google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterLoadBalancer,
+	LoadBalancer: github.com/cdktf/cdktf-provider-google-go/google/v16.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterLoadBalancer,
 	OnPremVersion: *string,
-	PlatformConfig: github.com/cdktf/cdktf-provider-google-go/google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterPlatformConfig,
-	PrivateRegistryConfig: github.com/cdktf/cdktf-provider-google-go/google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterPrivateRegistryConfig,
+	PlatformConfig: github.com/cdktf/cdktf-provider-google-go/google/v16.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterPlatformConfig,
+	PrivateRegistryConfig: github.com/cdktf/cdktf-provider-google-go/google/v16.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterPrivateRegistryConfig,
 	Project: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-google-go/google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterTimeouts,
-	Vcenter: github.com/cdktf/cdktf-provider-google-go/google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterVcenter,
+	Timeouts: github.com/cdktf/cdktf-provider-google-go/google/v16.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterTimeouts,
+	Vcenter: github.com/cdktf/cdktf-provider-google-go/google/v16.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterVcenter,
 }
 ```
 
@@ -2171,7 +2171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterControlPlaneNode.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 &gkeonpremvmwareadmincluster.GkeonpremVmwareAdminClusterControlPlaneNode {
 	Cpus: *f64,
@@ -2237,7 +2237,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterFleet.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 &gkeonpremvmwareadmincluster.GkeonpremVmwareAdminClusterFleet {
 
@@ -2250,13 +2250,13 @@ import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadminclu
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterLoadBalancer.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 &gkeonpremvmwareadmincluster.GkeonpremVmwareAdminClusterLoadBalancer {
-	VipConfig: github.com/cdktf/cdktf-provider-google-go/google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterLoadBalancerVipConfig,
-	F5Config: github.com/cdktf/cdktf-provider-google-go/google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterLoadBalancerF5Config,
-	ManualLbConfig: github.com/cdktf/cdktf-provider-google-go/google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterLoadBalancerManualLbConfig,
-	MetalLbConfig: github.com/cdktf/cdktf-provider-google-go/google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterLoadBalancerMetalLbConfig,
+	VipConfig: github.com/cdktf/cdktf-provider-google-go/google/v16.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterLoadBalancerVipConfig,
+	F5Config: github.com/cdktf/cdktf-provider-google-go/google/v16.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterLoadBalancerF5Config,
+	ManualLbConfig: github.com/cdktf/cdktf-provider-google-go/google/v16.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterLoadBalancerManualLbConfig,
+	MetalLbConfig: github.com/cdktf/cdktf-provider-google-go/google/v16.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterLoadBalancerMetalLbConfig,
 }
 ```
 
@@ -2332,7 +2332,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterLoadBalancerF5Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 &gkeonpremvmwareadmincluster.GkeonpremVmwareAdminClusterLoadBalancerF5Config {
 	Address: *string,
@@ -2402,7 +2402,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterLoadBalancerManualLbConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 &gkeonpremvmwareadmincluster.GkeonpremVmwareAdminClusterLoadBalancerManualLbConfig {
 	AddonsNodePort: *f64,
@@ -2509,7 +2509,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterLoadBalancerMetalLbConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 &gkeonpremvmwareadmincluster.GkeonpremVmwareAdminClusterLoadBalancerMetalLbConfig {
 	Enabled: interface{},
@@ -2543,7 +2543,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterLoadBalancerVipConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 &gkeonpremvmwareadmincluster.GkeonpremVmwareAdminClusterLoadBalancerVipConfig {
 	ControlPlaneVip: *string,
@@ -2593,15 +2593,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterNetworkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 &gkeonpremvmwareadmincluster.GkeonpremVmwareAdminClusterNetworkConfig {
 	PodAddressCidrBlocks: *[]*string,
 	ServiceAddressCidrBlocks: *[]*string,
-	DhcpIpConfig: github.com/cdktf/cdktf-provider-google-go/google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterNetworkConfigDhcpIpConfig,
-	HaControlPlaneConfig: github.com/cdktf/cdktf-provider-google-go/google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfig,
-	HostConfig: github.com/cdktf/cdktf-provider-google-go/google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterNetworkConfigHostConfig,
-	StaticIpConfig: github.com/cdktf/cdktf-provider-google-go/google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfig,
+	DhcpIpConfig: github.com/cdktf/cdktf-provider-google-go/google/v16.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterNetworkConfigDhcpIpConfig,
+	HaControlPlaneConfig: github.com/cdktf/cdktf-provider-google-go/google/v16.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfig,
+	HostConfig: github.com/cdktf/cdktf-provider-google-go/google/v16.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterNetworkConfigHostConfig,
+	StaticIpConfig: github.com/cdktf/cdktf-provider-google-go/google/v16.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfig,
 	VcenterNetwork: *string,
 }
 ```
@@ -2728,7 +2728,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterNetworkConfigDhcpIpConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 &gkeonpremvmwareadmincluster.GkeonpremVmwareAdminClusterNetworkConfigDhcpIpConfig {
 	Enabled: interface{},
@@ -2762,10 +2762,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 &gkeonpremvmwareadmincluster.GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfig {
-	ControlPlaneIpBlock: github.com/cdktf/cdktf-provider-google-go/google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigControlPlaneIpBlock,
+	ControlPlaneIpBlock: github.com/cdktf/cdktf-provider-google-go/google/v16.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigControlPlaneIpBlock,
 }
 ```
 
@@ -2796,7 +2796,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigControlPlaneIpBlock.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 &gkeonpremvmwareadmincluster.GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigControlPlaneIpBlock {
 	Gateway: *string,
@@ -2862,7 +2862,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigControlPlaneIpBlockIps.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 &gkeonpremvmwareadmincluster.GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigControlPlaneIpBlockIps {
 	Ip: *string,
@@ -2912,7 +2912,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterNetworkConfigHostConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 &gkeonpremvmwareadmincluster.GkeonpremVmwareAdminClusterNetworkConfigHostConfig {
 	DnsSearchDomains: *[]*string,
@@ -2978,7 +2978,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 &gkeonpremvmwareadmincluster.GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfig {
 	IpBlocks: interface{},
@@ -3012,7 +3012,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 &gkeonpremvmwareadmincluster.GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocks {
 	Gateway: *string,
@@ -3078,7 +3078,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksIps.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 &gkeonpremvmwareadmincluster.GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksIps {
 	Ip: *string,
@@ -3128,7 +3128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterPlatformConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 &gkeonpremvmwareadmincluster.GkeonpremVmwareAdminClusterPlatformConfig {
 	RequiredPlatformVersion: *string,
@@ -3162,7 +3162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterPlatformConfigBundles.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 &gkeonpremvmwareadmincluster.GkeonpremVmwareAdminClusterPlatformConfigBundles {
 
@@ -3175,7 +3175,7 @@ import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadminclu
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterPlatformConfigBundlesStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 &gkeonpremvmwareadmincluster.GkeonpremVmwareAdminClusterPlatformConfigBundlesStatus {
 
@@ -3188,7 +3188,7 @@ import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadminclu
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterPlatformConfigBundlesStatusConditions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 &gkeonpremvmwareadmincluster.GkeonpremVmwareAdminClusterPlatformConfigBundlesStatusConditions {
 
@@ -3201,7 +3201,7 @@ import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadminclu
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterPlatformConfigStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 &gkeonpremvmwareadmincluster.GkeonpremVmwareAdminClusterPlatformConfigStatus {
 
@@ -3214,7 +3214,7 @@ import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadminclu
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterPlatformConfigStatusConditions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 &gkeonpremvmwareadmincluster.GkeonpremVmwareAdminClusterPlatformConfigStatusConditions {
 
@@ -3227,7 +3227,7 @@ import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadminclu
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterPrivateRegistryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 &gkeonpremvmwareadmincluster.GkeonpremVmwareAdminClusterPrivateRegistryConfig {
 	Address: *string,
@@ -3277,7 +3277,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 &gkeonpremvmwareadmincluster.GkeonpremVmwareAdminClusterStatus {
 
@@ -3290,7 +3290,7 @@ import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadminclu
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterStatusConditions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 &gkeonpremvmwareadmincluster.GkeonpremVmwareAdminClusterStatusConditions {
 
@@ -3303,7 +3303,7 @@ import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadminclu
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 &gkeonpremvmwareadmincluster.GkeonpremVmwareAdminClusterTimeouts {
 	Create: *string,
@@ -3363,7 +3363,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterVcenter.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 &gkeonpremvmwareadmincluster.GkeonpremVmwareAdminClusterVcenter {
 	Address: *string,
@@ -3527,7 +3527,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterAddonNodeAutoResizeConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 gkeonpremvmwareadmincluster.NewGkeonpremVmwareAdminClusterAddonNodeAutoResizeConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GkeonpremVmwareAdminClusterAddonNodeAutoResizeConfigOutputReference
 ```
@@ -3798,7 +3798,7 @@ func InternalValue() GkeonpremVmwareAdminClusterAddonNodeAutoResizeConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterAddonNodeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 gkeonpremvmwareadmincluster.NewGkeonpremVmwareAdminClusterAddonNodeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GkeonpremVmwareAdminClusterAddonNodeOutputReference
 ```
@@ -4089,7 +4089,7 @@ func InternalValue() GkeonpremVmwareAdminClusterAddonNode
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterAntiAffinityGroupsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 gkeonpremvmwareadmincluster.NewGkeonpremVmwareAdminClusterAntiAffinityGroupsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GkeonpremVmwareAdminClusterAntiAffinityGroupsOutputReference
 ```
@@ -4360,7 +4360,7 @@ func InternalValue() GkeonpremVmwareAdminClusterAntiAffinityGroups
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterAuthorizationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 gkeonpremvmwareadmincluster.NewGkeonpremVmwareAdminClusterAuthorizationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GkeonpremVmwareAdminClusterAuthorizationOutputReference
 ```
@@ -4651,7 +4651,7 @@ func InternalValue() GkeonpremVmwareAdminClusterAuthorization
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterAuthorizationViewerUsersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 gkeonpremvmwareadmincluster.NewGkeonpremVmwareAdminClusterAuthorizationViewerUsersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GkeonpremVmwareAdminClusterAuthorizationViewerUsersList
 ```
@@ -4811,7 +4811,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterAuthorizationViewerUsersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 gkeonpremvmwareadmincluster.NewGkeonpremVmwareAdminClusterAuthorizationViewerUsersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GkeonpremVmwareAdminClusterAuthorizationViewerUsersOutputReference
 ```
@@ -5100,7 +5100,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterAutoRepairConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 gkeonpremvmwareadmincluster.NewGkeonpremVmwareAdminClusterAutoRepairConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GkeonpremVmwareAdminClusterAutoRepairConfigOutputReference
 ```
@@ -5371,7 +5371,7 @@ func InternalValue() GkeonpremVmwareAdminClusterAutoRepairConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterControlPlaneNodeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 gkeonpremvmwareadmincluster.NewGkeonpremVmwareAdminClusterControlPlaneNodeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GkeonpremVmwareAdminClusterControlPlaneNodeOutputReference
 ```
@@ -5707,7 +5707,7 @@ func InternalValue() GkeonpremVmwareAdminClusterControlPlaneNode
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterFleetList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 gkeonpremvmwareadmincluster.NewGkeonpremVmwareAdminClusterFleetList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GkeonpremVmwareAdminClusterFleetList
 ```
@@ -5856,7 +5856,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterFleetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 gkeonpremvmwareadmincluster.NewGkeonpremVmwareAdminClusterFleetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GkeonpremVmwareAdminClusterFleetOutputReference
 ```
@@ -6134,7 +6134,7 @@ func InternalValue() GkeonpremVmwareAdminClusterFleet
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterLoadBalancerF5ConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 gkeonpremvmwareadmincluster.NewGkeonpremVmwareAdminClusterLoadBalancerF5ConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GkeonpremVmwareAdminClusterLoadBalancerF5ConfigOutputReference
 ```
@@ -6470,7 +6470,7 @@ func InternalValue() GkeonpremVmwareAdminClusterLoadBalancerF5Config
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterLoadBalancerManualLbConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 gkeonpremvmwareadmincluster.NewGkeonpremVmwareAdminClusterLoadBalancerManualLbConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GkeonpremVmwareAdminClusterLoadBalancerManualLbConfigOutputReference
 ```
@@ -6864,7 +6864,7 @@ func InternalValue() GkeonpremVmwareAdminClusterLoadBalancerManualLbConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterLoadBalancerMetalLbConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 gkeonpremvmwareadmincluster.NewGkeonpremVmwareAdminClusterLoadBalancerMetalLbConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GkeonpremVmwareAdminClusterLoadBalancerMetalLbConfigOutputReference
 ```
@@ -7142,7 +7142,7 @@ func InternalValue() GkeonpremVmwareAdminClusterLoadBalancerMetalLbConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterLoadBalancerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 gkeonpremvmwareadmincluster.NewGkeonpremVmwareAdminClusterLoadBalancerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GkeonpremVmwareAdminClusterLoadBalancerOutputReference
 ```
@@ -7552,7 +7552,7 @@ func InternalValue() GkeonpremVmwareAdminClusterLoadBalancer
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterLoadBalancerVipConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 gkeonpremvmwareadmincluster.NewGkeonpremVmwareAdminClusterLoadBalancerVipConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GkeonpremVmwareAdminClusterLoadBalancerVipConfigOutputReference
 ```
@@ -7852,7 +7852,7 @@ func InternalValue() GkeonpremVmwareAdminClusterLoadBalancerVipConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterNetworkConfigDhcpIpConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 gkeonpremvmwareadmincluster.NewGkeonpremVmwareAdminClusterNetworkConfigDhcpIpConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GkeonpremVmwareAdminClusterNetworkConfigDhcpIpConfigOutputReference
 ```
@@ -8123,7 +8123,7 @@ func InternalValue() GkeonpremVmwareAdminClusterNetworkConfigDhcpIpConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigControlPlaneIpBlockIpsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 gkeonpremvmwareadmincluster.NewGkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigControlPlaneIpBlockIpsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigControlPlaneIpBlockIpsList
 ```
@@ -8283,7 +8283,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigControlPlaneIpBlockIpsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 gkeonpremvmwareadmincluster.NewGkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigControlPlaneIpBlockIpsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigControlPlaneIpBlockIpsOutputReference
 ```
@@ -8601,7 +8601,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigControlPlaneIpBlockOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 gkeonpremvmwareadmincluster.NewGkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigControlPlaneIpBlockOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigControlPlaneIpBlockOutputReference
 ```
@@ -8929,7 +8929,7 @@ func InternalValue() GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 gkeonpremvmwareadmincluster.NewGkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfigOutputReference
 ```
@@ -9220,7 +9220,7 @@ func InternalValue() GkeonpremVmwareAdminClusterNetworkConfigHaControlPlaneConfi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterNetworkConfigHostConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 gkeonpremvmwareadmincluster.NewGkeonpremVmwareAdminClusterNetworkConfigHostConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GkeonpremVmwareAdminClusterNetworkConfigHostConfigOutputReference
 ```
@@ -9556,7 +9556,7 @@ func InternalValue() GkeonpremVmwareAdminClusterNetworkConfigHostConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterNetworkConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 gkeonpremvmwareadmincluster.NewGkeonpremVmwareAdminClusterNetworkConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GkeonpremVmwareAdminClusterNetworkConfigOutputReference
 ```
@@ -10046,7 +10046,7 @@ func InternalValue() GkeonpremVmwareAdminClusterNetworkConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksIpsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 gkeonpremvmwareadmincluster.NewGkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksIpsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksIpsList
 ```
@@ -10206,7 +10206,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksIpsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 gkeonpremvmwareadmincluster.NewGkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksIpsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksIpsOutputReference
 ```
@@ -10524,7 +10524,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 gkeonpremvmwareadmincluster.NewGkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksList
 ```
@@ -10684,7 +10684,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 gkeonpremvmwareadmincluster.NewGkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigIpBlocksOutputReference
 ```
@@ -11030,7 +11030,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 gkeonpremvmwareadmincluster.NewGkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfigOutputReference
 ```
@@ -11321,7 +11321,7 @@ func InternalValue() GkeonpremVmwareAdminClusterNetworkConfigStaticIpConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterPlatformConfigBundlesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 gkeonpremvmwareadmincluster.NewGkeonpremVmwareAdminClusterPlatformConfigBundlesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GkeonpremVmwareAdminClusterPlatformConfigBundlesList
 ```
@@ -11470,7 +11470,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterPlatformConfigBundlesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 gkeonpremvmwareadmincluster.NewGkeonpremVmwareAdminClusterPlatformConfigBundlesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GkeonpremVmwareAdminClusterPlatformConfigBundlesOutputReference
 ```
@@ -11759,7 +11759,7 @@ func InternalValue() GkeonpremVmwareAdminClusterPlatformConfigBundles
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterPlatformConfigBundlesStatusConditionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 gkeonpremvmwareadmincluster.NewGkeonpremVmwareAdminClusterPlatformConfigBundlesStatusConditionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GkeonpremVmwareAdminClusterPlatformConfigBundlesStatusConditionsList
 ```
@@ -11908,7 +11908,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterPlatformConfigBundlesStatusConditionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 gkeonpremvmwareadmincluster.NewGkeonpremVmwareAdminClusterPlatformConfigBundlesStatusConditionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GkeonpremVmwareAdminClusterPlatformConfigBundlesStatusConditionsOutputReference
 ```
@@ -12230,7 +12230,7 @@ func InternalValue() GkeonpremVmwareAdminClusterPlatformConfigBundlesStatusCondi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterPlatformConfigBundlesStatusList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 gkeonpremvmwareadmincluster.NewGkeonpremVmwareAdminClusterPlatformConfigBundlesStatusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GkeonpremVmwareAdminClusterPlatformConfigBundlesStatusList
 ```
@@ -12379,7 +12379,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterPlatformConfigBundlesStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 gkeonpremvmwareadmincluster.NewGkeonpremVmwareAdminClusterPlatformConfigBundlesStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GkeonpremVmwareAdminClusterPlatformConfigBundlesStatusOutputReference
 ```
@@ -12668,7 +12668,7 @@ func InternalValue() GkeonpremVmwareAdminClusterPlatformConfigBundlesStatus
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterPlatformConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 gkeonpremvmwareadmincluster.NewGkeonpremVmwareAdminClusterPlatformConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GkeonpremVmwareAdminClusterPlatformConfigOutputReference
 ```
@@ -12979,7 +12979,7 @@ func InternalValue() GkeonpremVmwareAdminClusterPlatformConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterPlatformConfigStatusConditionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 gkeonpremvmwareadmincluster.NewGkeonpremVmwareAdminClusterPlatformConfigStatusConditionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GkeonpremVmwareAdminClusterPlatformConfigStatusConditionsList
 ```
@@ -13128,7 +13128,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterPlatformConfigStatusConditionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 gkeonpremvmwareadmincluster.NewGkeonpremVmwareAdminClusterPlatformConfigStatusConditionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GkeonpremVmwareAdminClusterPlatformConfigStatusConditionsOutputReference
 ```
@@ -13450,7 +13450,7 @@ func InternalValue() GkeonpremVmwareAdminClusterPlatformConfigStatusConditions
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterPlatformConfigStatusList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 gkeonpremvmwareadmincluster.NewGkeonpremVmwareAdminClusterPlatformConfigStatusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GkeonpremVmwareAdminClusterPlatformConfigStatusList
 ```
@@ -13599,7 +13599,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterPlatformConfigStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 gkeonpremvmwareadmincluster.NewGkeonpremVmwareAdminClusterPlatformConfigStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GkeonpremVmwareAdminClusterPlatformConfigStatusOutputReference
 ```
@@ -13888,7 +13888,7 @@ func InternalValue() GkeonpremVmwareAdminClusterPlatformConfigStatus
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterPrivateRegistryConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 gkeonpremvmwareadmincluster.NewGkeonpremVmwareAdminClusterPrivateRegistryConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GkeonpremVmwareAdminClusterPrivateRegistryConfigOutputReference
 ```
@@ -14195,7 +14195,7 @@ func InternalValue() GkeonpremVmwareAdminClusterPrivateRegistryConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterStatusConditionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 gkeonpremvmwareadmincluster.NewGkeonpremVmwareAdminClusterStatusConditionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GkeonpremVmwareAdminClusterStatusConditionsList
 ```
@@ -14344,7 +14344,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterStatusConditionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 gkeonpremvmwareadmincluster.NewGkeonpremVmwareAdminClusterStatusConditionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GkeonpremVmwareAdminClusterStatusConditionsOutputReference
 ```
@@ -14666,7 +14666,7 @@ func InternalValue() GkeonpremVmwareAdminClusterStatusConditions
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterStatusList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 gkeonpremvmwareadmincluster.NewGkeonpremVmwareAdminClusterStatusList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GkeonpremVmwareAdminClusterStatusList
 ```
@@ -14815,7 +14815,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 gkeonpremvmwareadmincluster.NewGkeonpremVmwareAdminClusterStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) GkeonpremVmwareAdminClusterStatusOutputReference
 ```
@@ -15104,7 +15104,7 @@ func InternalValue() GkeonpremVmwareAdminClusterStatus
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 gkeonpremvmwareadmincluster.NewGkeonpremVmwareAdminClusterTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GkeonpremVmwareAdminClusterTimeoutsOutputReference
 ```
@@ -15440,7 +15440,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterVcenterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/gkeonpremvmwareadmincluster"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/gkeonpremvmwareadmincluster"
 
 gkeonpremvmwareadmincluster.NewGkeonpremVmwareAdminClusterVcenterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GkeonpremVmwareAdminClusterVcenterOutputReference
 ```

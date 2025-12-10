@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.dataprocSessionTemplate.DataprocSessionTemplate.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/dataprocsessiontemplate"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/dataprocsessiontemplate"
 
 dataprocsessiontemplate.NewDataprocSessionTemplate(scope Construct, id *string, config DataprocSessionTemplateConfig) DataprocSessionTemplate
 ```
@@ -506,7 +506,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google.dataprocSessionTemplate.DataprocSessionTemplate.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/dataprocsessiontemplate"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/dataprocsessiontemplate"
 
 dataprocsessiontemplate.DataprocSessionTemplate_IsConstruct(x interface{}) *bool
 ```
@@ -538,7 +538,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google.dataprocSessionTemplate.DataprocSessionTemplate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/dataprocsessiontemplate"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/dataprocsessiontemplate"
 
 dataprocsessiontemplate.DataprocSessionTemplate_IsTerraformElement(x interface{}) *bool
 ```
@@ -552,7 +552,7 @@ dataprocsessiontemplate.DataprocSessionTemplate_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google.dataprocSessionTemplate.DataprocSessionTemplate.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/dataprocsessiontemplate"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/dataprocsessiontemplate"
 
 dataprocsessiontemplate.DataprocSessionTemplate_IsTerraformResource(x interface{}) *bool
 ```
@@ -566,7 +566,7 @@ dataprocsessiontemplate.DataprocSessionTemplate_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google.dataprocSessionTemplate.DataprocSessionTemplate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/dataprocsessiontemplate"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/dataprocsessiontemplate"
 
 dataprocsessiontemplate.DataprocSessionTemplate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1081,7 +1081,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.dataprocSessionTemplate.DataprocSessionTemplateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/dataprocsessiontemplate"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/dataprocsessiontemplate"
 
 &dataprocsessiontemplate.DataprocSessionTemplateConfig {
 	Connection: interface{},
@@ -1092,15 +1092,15 @@ import "github.com/cdktf/cdktf-provider-google-go/google/dataprocsessiontemplate
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	EnvironmentConfig: github.com/cdktf/cdktf-provider-google-go/google.dataprocSessionTemplate.DataprocSessionTemplateEnvironmentConfig,
+	EnvironmentConfig: github.com/cdktf/cdktf-provider-google-go/google/v16.dataprocSessionTemplate.DataprocSessionTemplateEnvironmentConfig,
 	Id: *string,
-	JupyterSession: github.com/cdktf/cdktf-provider-google-go/google.dataprocSessionTemplate.DataprocSessionTemplateJupyterSession,
+	JupyterSession: github.com/cdktf/cdktf-provider-google-go/google/v16.dataprocSessionTemplate.DataprocSessionTemplateJupyterSession,
 	Labels: *map[string]*string,
 	Location: *string,
 	Project: *string,
-	RuntimeConfig: github.com/cdktf/cdktf-provider-google-go/google.dataprocSessionTemplate.DataprocSessionTemplateRuntimeConfig,
-	SparkConnectSession: github.com/cdktf/cdktf-provider-google-go/google.dataprocSessionTemplate.DataprocSessionTemplateSparkConnectSession,
-	Timeouts: github.com/cdktf/cdktf-provider-google-go/google.dataprocSessionTemplate.DataprocSessionTemplateTimeouts,
+	RuntimeConfig: github.com/cdktf/cdktf-provider-google-go/google/v16.dataprocSessionTemplate.DataprocSessionTemplateRuntimeConfig,
+	SparkConnectSession: github.com/cdktf/cdktf-provider-google-go/google/v16.dataprocSessionTemplate.DataprocSessionTemplateSparkConnectSession,
+	Timeouts: github.com/cdktf/cdktf-provider-google-go/google/v16.dataprocSessionTemplate.DataprocSessionTemplateTimeouts,
 }
 ```
 
@@ -1345,11 +1345,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.dataprocSessionTemplate.DataprocSessionTemplateEnvironmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/dataprocsessiontemplate"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/dataprocsessiontemplate"
 
 &dataprocsessiontemplate.DataprocSessionTemplateEnvironmentConfig {
-	ExecutionConfig: github.com/cdktf/cdktf-provider-google-go/google.dataprocSessionTemplate.DataprocSessionTemplateEnvironmentConfigExecutionConfig,
-	PeripheralsConfig: github.com/cdktf/cdktf-provider-google-go/google.dataprocSessionTemplate.DataprocSessionTemplateEnvironmentConfigPeripheralsConfig,
+	ExecutionConfig: github.com/cdktf/cdktf-provider-google-go/google/v16.dataprocSessionTemplate.DataprocSessionTemplateEnvironmentConfigExecutionConfig,
+	PeripheralsConfig: github.com/cdktf/cdktf-provider-google-go/google/v16.dataprocSessionTemplate.DataprocSessionTemplateEnvironmentConfigPeripheralsConfig,
 }
 ```
 
@@ -1395,10 +1395,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.dataprocSessionTemplate.DataprocSessionTemplateEnvironmentConfigExecutionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/dataprocsessiontemplate"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/dataprocsessiontemplate"
 
 &dataprocsessiontemplate.DataprocSessionTemplateEnvironmentConfigExecutionConfig {
-	AuthenticationConfig: github.com/cdktf/cdktf-provider-google-go/google.dataprocSessionTemplate.DataprocSessionTemplateEnvironmentConfigExecutionConfigAuthenticationConfig,
+	AuthenticationConfig: github.com/cdktf/cdktf-provider-google-go/google/v16.dataprocSessionTemplate.DataprocSessionTemplateEnvironmentConfigExecutionConfigAuthenticationConfig,
 	IdleTtl: *string,
 	KmsKey: *string,
 	NetworkTags: *[]*string,
@@ -1559,7 +1559,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.dataprocSessionTemplate.DataprocSessionTemplateEnvironmentConfigExecutionConfigAuthenticationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/dataprocsessiontemplate"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/dataprocsessiontemplate"
 
 &dataprocsessiontemplate.DataprocSessionTemplateEnvironmentConfigExecutionConfigAuthenticationConfig {
 	UserWorkloadAuthenticationType: *string,
@@ -1593,11 +1593,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.dataprocSessionTemplate.DataprocSessionTemplateEnvironmentConfigPeripheralsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/dataprocsessiontemplate"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/dataprocsessiontemplate"
 
 &dataprocsessiontemplate.DataprocSessionTemplateEnvironmentConfigPeripheralsConfig {
 	MetastoreService: *string,
-	SparkHistoryServerConfig: github.com/cdktf/cdktf-provider-google-go/google.dataprocSessionTemplate.DataprocSessionTemplateEnvironmentConfigPeripheralsConfigSparkHistoryServerConfig,
+	SparkHistoryServerConfig: github.com/cdktf/cdktf-provider-google-go/google/v16.dataprocSessionTemplate.DataprocSessionTemplateEnvironmentConfigPeripheralsConfigSparkHistoryServerConfig,
 }
 ```
 
@@ -1643,7 +1643,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.dataprocSessionTemplate.DataprocSessionTemplateEnvironmentConfigPeripheralsConfigSparkHistoryServerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/dataprocsessiontemplate"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/dataprocsessiontemplate"
 
 &dataprocsessiontemplate.DataprocSessionTemplateEnvironmentConfigPeripheralsConfigSparkHistoryServerConfig {
 	DataprocCluster: *string,
@@ -1677,7 +1677,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.dataprocSessionTemplate.DataprocSessionTemplateJupyterSession.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/dataprocsessiontemplate"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/dataprocsessiontemplate"
 
 &dataprocsessiontemplate.DataprocSessionTemplateJupyterSession {
 	DisplayName: *string,
@@ -1727,7 +1727,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.dataprocSessionTemplate.DataprocSessionTemplateRuntimeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/dataprocsessiontemplate"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/dataprocsessiontemplate"
 
 &dataprocsessiontemplate.DataprocSessionTemplateRuntimeConfig {
 	ContainerImage: *string,
@@ -1793,7 +1793,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.dataprocSessionTemplate.DataprocSessionTemplateSparkConnectSession.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/dataprocsessiontemplate"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/dataprocsessiontemplate"
 
 &dataprocsessiontemplate.DataprocSessionTemplateSparkConnectSession {
 
@@ -1806,7 +1806,7 @@ import "github.com/cdktf/cdktf-provider-google-go/google/dataprocsessiontemplate
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.dataprocSessionTemplate.DataprocSessionTemplateTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/dataprocsessiontemplate"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/dataprocsessiontemplate"
 
 &dataprocsessiontemplate.DataprocSessionTemplateTimeouts {
 	Create: *string,
@@ -1868,7 +1868,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.dataprocSessionTemplate.DataprocSessionTemplateEnvironmentConfigExecutionConfigAuthenticationConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/dataprocsessiontemplate"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/dataprocsessiontemplate"
 
 dataprocsessiontemplate.NewDataprocSessionTemplateEnvironmentConfigExecutionConfigAuthenticationConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataprocSessionTemplateEnvironmentConfigExecutionConfigAuthenticationConfigOutputReference
 ```
@@ -2146,7 +2146,7 @@ func InternalValue() DataprocSessionTemplateEnvironmentConfigExecutionConfigAuth
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.dataprocSessionTemplate.DataprocSessionTemplateEnvironmentConfigExecutionConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/dataprocsessiontemplate"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/dataprocsessiontemplate"
 
 dataprocsessiontemplate.NewDataprocSessionTemplateEnvironmentConfigExecutionConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataprocSessionTemplateEnvironmentConfigExecutionConfigOutputReference
 ```
@@ -2640,7 +2640,7 @@ func InternalValue() DataprocSessionTemplateEnvironmentConfigExecutionConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.dataprocSessionTemplate.DataprocSessionTemplateEnvironmentConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/dataprocsessiontemplate"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/dataprocsessiontemplate"
 
 dataprocsessiontemplate.NewDataprocSessionTemplateEnvironmentConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataprocSessionTemplateEnvironmentConfigOutputReference
 ```
@@ -2973,7 +2973,7 @@ func InternalValue() DataprocSessionTemplateEnvironmentConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.dataprocSessionTemplate.DataprocSessionTemplateEnvironmentConfigPeripheralsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/dataprocsessiontemplate"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/dataprocsessiontemplate"
 
 dataprocsessiontemplate.NewDataprocSessionTemplateEnvironmentConfigPeripheralsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataprocSessionTemplateEnvironmentConfigPeripheralsConfigOutputReference
 ```
@@ -3293,7 +3293,7 @@ func InternalValue() DataprocSessionTemplateEnvironmentConfigPeripheralsConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.dataprocSessionTemplate.DataprocSessionTemplateEnvironmentConfigPeripheralsConfigSparkHistoryServerConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/dataprocsessiontemplate"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/dataprocsessiontemplate"
 
 dataprocsessiontemplate.NewDataprocSessionTemplateEnvironmentConfigPeripheralsConfigSparkHistoryServerConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataprocSessionTemplateEnvironmentConfigPeripheralsConfigSparkHistoryServerConfigOutputReference
 ```
@@ -3571,7 +3571,7 @@ func InternalValue() DataprocSessionTemplateEnvironmentConfigPeripheralsConfigSp
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.dataprocSessionTemplate.DataprocSessionTemplateJupyterSessionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/dataprocsessiontemplate"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/dataprocsessiontemplate"
 
 dataprocsessiontemplate.NewDataprocSessionTemplateJupyterSessionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataprocSessionTemplateJupyterSessionOutputReference
 ```
@@ -3878,7 +3878,7 @@ func InternalValue() DataprocSessionTemplateJupyterSession
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.dataprocSessionTemplate.DataprocSessionTemplateRuntimeConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/dataprocsessiontemplate"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/dataprocsessiontemplate"
 
 dataprocsessiontemplate.NewDataprocSessionTemplateRuntimeConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataprocSessionTemplateRuntimeConfigOutputReference
 ```
@@ -4225,7 +4225,7 @@ func InternalValue() DataprocSessionTemplateRuntimeConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.dataprocSessionTemplate.DataprocSessionTemplateSparkConnectSessionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/dataprocsessiontemplate"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/dataprocsessiontemplate"
 
 dataprocsessiontemplate.NewDataprocSessionTemplateSparkConnectSessionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataprocSessionTemplateSparkConnectSessionOutputReference
 ```
@@ -4474,7 +4474,7 @@ func InternalValue() DataprocSessionTemplateSparkConnectSession
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.dataprocSessionTemplate.DataprocSessionTemplateTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/dataprocsessiontemplate"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/dataprocsessiontemplate"
 
 dataprocsessiontemplate.NewDataprocSessionTemplateTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataprocSessionTemplateTimeoutsOutputReference
 ```

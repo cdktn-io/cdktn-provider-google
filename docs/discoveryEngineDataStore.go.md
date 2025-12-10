@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.discoveryEngineDataStore.DiscoveryEngineDataStore.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/discoveryenginedatastore"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/discoveryenginedatastore"
 
 discoveryenginedatastore.NewDiscoveryEngineDataStore(scope Construct, id *string, config DiscoveryEngineDataStoreConfig) DiscoveryEngineDataStore
 ```
@@ -480,7 +480,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google.discoveryEngineDataStore.DiscoveryEngineDataStore.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/discoveryenginedatastore"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/discoveryenginedatastore"
 
 discoveryenginedatastore.DiscoveryEngineDataStore_IsConstruct(x interface{}) *bool
 ```
@@ -512,7 +512,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google.discoveryEngineDataStore.DiscoveryEngineDataStore.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/discoveryenginedatastore"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/discoveryenginedatastore"
 
 discoveryenginedatastore.DiscoveryEngineDataStore_IsTerraformElement(x interface{}) *bool
 ```
@@ -526,7 +526,7 @@ discoveryenginedatastore.DiscoveryEngineDataStore_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google.discoveryEngineDataStore.DiscoveryEngineDataStore.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/discoveryenginedatastore"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/discoveryenginedatastore"
 
 discoveryenginedatastore.DiscoveryEngineDataStore_IsTerraformResource(x interface{}) *bool
 ```
@@ -540,7 +540,7 @@ discoveryenginedatastore.DiscoveryEngineDataStore_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google.discoveryEngineDataStore.DiscoveryEngineDataStore.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/discoveryenginedatastore"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/discoveryenginedatastore"
 
 discoveryenginedatastore.DiscoveryEngineDataStore_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1110,7 +1110,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.discoveryEngineDataStore.DiscoveryEngineDataStoreAdvancedSiteSearchConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/discoveryenginedatastore"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/discoveryenginedatastore"
 
 &discoveryenginedatastore.DiscoveryEngineDataStoreAdvancedSiteSearchConfig {
 	DisableAutomaticRefresh: interface{},
@@ -1160,7 +1160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.discoveryEngineDataStore.DiscoveryEngineDataStoreConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/discoveryenginedatastore"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/discoveryenginedatastore"
 
 &discoveryenginedatastore.DiscoveryEngineDataStoreConfig {
 	Connection: interface{},
@@ -1175,15 +1175,15 @@ import "github.com/cdktf/cdktf-provider-google-go/google/discoveryenginedatastor
 	DisplayName: *string,
 	IndustryVertical: *string,
 	Location: *string,
-	AdvancedSiteSearchConfig: github.com/cdktf/cdktf-provider-google-go/google.discoveryEngineDataStore.DiscoveryEngineDataStoreAdvancedSiteSearchConfig,
+	AdvancedSiteSearchConfig: github.com/cdktf/cdktf-provider-google-go/google/v16.discoveryEngineDataStore.DiscoveryEngineDataStoreAdvancedSiteSearchConfig,
 	CreateAdvancedSiteSearch: interface{},
-	DocumentProcessingConfig: github.com/cdktf/cdktf-provider-google-go/google.discoveryEngineDataStore.DiscoveryEngineDataStoreDocumentProcessingConfig,
+	DocumentProcessingConfig: github.com/cdktf/cdktf-provider-google-go/google/v16.discoveryEngineDataStore.DiscoveryEngineDataStoreDocumentProcessingConfig,
 	Id: *string,
 	KmsKeyName: *string,
 	Project: *string,
 	SkipDefaultSchemaCreation: interface{},
 	SolutionTypes: *[]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-google-go/google.discoveryEngineDataStore.DiscoveryEngineDataStoreTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-google-go/google/v16.discoveryEngineDataStore.DiscoveryEngineDataStoreTimeouts,
 }
 ```
 
@@ -1504,11 +1504,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.discoveryEngineDataStore.DiscoveryEngineDataStoreDocumentProcessingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/discoveryenginedatastore"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/discoveryenginedatastore"
 
 &discoveryenginedatastore.DiscoveryEngineDataStoreDocumentProcessingConfig {
-	ChunkingConfig: github.com/cdktf/cdktf-provider-google-go/google.discoveryEngineDataStore.DiscoveryEngineDataStoreDocumentProcessingConfigChunkingConfig,
-	DefaultParsingConfig: github.com/cdktf/cdktf-provider-google-go/google.discoveryEngineDataStore.DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfig,
+	ChunkingConfig: github.com/cdktf/cdktf-provider-google-go/google/v16.discoveryEngineDataStore.DiscoveryEngineDataStoreDocumentProcessingConfigChunkingConfig,
+	DefaultParsingConfig: github.com/cdktf/cdktf-provider-google-go/google/v16.discoveryEngineDataStore.DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfig,
 	ParsingConfigOverrides: interface{},
 }
 ```
@@ -1570,10 +1570,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.discoveryEngineDataStore.DiscoveryEngineDataStoreDocumentProcessingConfigChunkingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/discoveryenginedatastore"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/discoveryenginedatastore"
 
 &discoveryenginedatastore.DiscoveryEngineDataStoreDocumentProcessingConfigChunkingConfig {
-	LayoutBasedChunkingConfig: github.com/cdktf/cdktf-provider-google-go/google.discoveryEngineDataStore.DiscoveryEngineDataStoreDocumentProcessingConfigChunkingConfigLayoutBasedChunkingConfig,
+	LayoutBasedChunkingConfig: github.com/cdktf/cdktf-provider-google-go/google/v16.discoveryEngineDataStore.DiscoveryEngineDataStoreDocumentProcessingConfigChunkingConfigLayoutBasedChunkingConfig,
 }
 ```
 
@@ -1604,7 +1604,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.discoveryEngineDataStore.DiscoveryEngineDataStoreDocumentProcessingConfigChunkingConfigLayoutBasedChunkingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/discoveryenginedatastore"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/discoveryenginedatastore"
 
 &discoveryenginedatastore.DiscoveryEngineDataStoreDocumentProcessingConfigChunkingConfigLayoutBasedChunkingConfig {
 	ChunkSize: *f64,
@@ -1656,12 +1656,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.discoveryEngineDataStore.DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/discoveryenginedatastore"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/discoveryenginedatastore"
 
 &discoveryenginedatastore.DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfig {
-	DigitalParsingConfig: github.com/cdktf/cdktf-provider-google-go/google.discoveryEngineDataStore.DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigDigitalParsingConfig,
-	LayoutParsingConfig: github.com/cdktf/cdktf-provider-google-go/google.discoveryEngineDataStore.DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigLayoutParsingConfig,
-	OcrParsingConfig: github.com/cdktf/cdktf-provider-google-go/google.discoveryEngineDataStore.DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigOcrParsingConfig,
+	DigitalParsingConfig: github.com/cdktf/cdktf-provider-google-go/google/v16.discoveryEngineDataStore.DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigDigitalParsingConfig,
+	LayoutParsingConfig: github.com/cdktf/cdktf-provider-google-go/google/v16.discoveryEngineDataStore.DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigLayoutParsingConfig,
+	OcrParsingConfig: github.com/cdktf/cdktf-provider-google-go/google/v16.discoveryEngineDataStore.DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigOcrParsingConfig,
 }
 ```
 
@@ -1722,7 +1722,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.discoveryEngineDataStore.DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigDigitalParsingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/discoveryenginedatastore"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/discoveryenginedatastore"
 
 &discoveryenginedatastore.DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigDigitalParsingConfig {
 
@@ -1735,7 +1735,7 @@ import "github.com/cdktf/cdktf-provider-google-go/google/discoveryenginedatastor
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.discoveryEngineDataStore.DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigLayoutParsingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/discoveryenginedatastore"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/discoveryenginedatastore"
 
 &discoveryenginedatastore.DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigLayoutParsingConfig {
 	EnableImageAnnotation: interface{},
@@ -1849,7 +1849,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.discoveryEngineDataStore.DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigOcrParsingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/discoveryenginedatastore"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/discoveryenginedatastore"
 
 &discoveryenginedatastore.DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigOcrParsingConfig {
 	UseNativeText: interface{},
@@ -1883,13 +1883,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.discoveryEngineDataStore.DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverrides.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/discoveryenginedatastore"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/discoveryenginedatastore"
 
 &discoveryenginedatastore.DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverrides {
 	FileType: *string,
-	DigitalParsingConfig: github.com/cdktf/cdktf-provider-google-go/google.discoveryEngineDataStore.DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesDigitalParsingConfig,
-	LayoutParsingConfig: github.com/cdktf/cdktf-provider-google-go/google.discoveryEngineDataStore.DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesLayoutParsingConfig,
-	OcrParsingConfig: github.com/cdktf/cdktf-provider-google-go/google.discoveryEngineDataStore.DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesOcrParsingConfig,
+	DigitalParsingConfig: github.com/cdktf/cdktf-provider-google-go/google/v16.discoveryEngineDataStore.DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesDigitalParsingConfig,
+	LayoutParsingConfig: github.com/cdktf/cdktf-provider-google-go/google/v16.discoveryEngineDataStore.DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesLayoutParsingConfig,
+	OcrParsingConfig: github.com/cdktf/cdktf-provider-google-go/google/v16.discoveryEngineDataStore.DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesOcrParsingConfig,
 }
 ```
 
@@ -1963,7 +1963,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.discoveryEngineDataStore.DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesDigitalParsingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/discoveryenginedatastore"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/discoveryenginedatastore"
 
 &discoveryenginedatastore.DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesDigitalParsingConfig {
 
@@ -1976,7 +1976,7 @@ import "github.com/cdktf/cdktf-provider-google-go/google/discoveryenginedatastor
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.discoveryEngineDataStore.DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesLayoutParsingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/discoveryenginedatastore"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/discoveryenginedatastore"
 
 &discoveryenginedatastore.DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesLayoutParsingConfig {
 	EnableImageAnnotation: interface{},
@@ -2090,7 +2090,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.discoveryEngineDataStore.DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesOcrParsingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/discoveryenginedatastore"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/discoveryenginedatastore"
 
 &discoveryenginedatastore.DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesOcrParsingConfig {
 	UseNativeText: interface{},
@@ -2124,7 +2124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-google.discoveryEngineDataStore.DiscoveryEngineDataStoreTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/discoveryenginedatastore"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/discoveryenginedatastore"
 
 &discoveryenginedatastore.DiscoveryEngineDataStoreTimeouts {
 	Create: *string,
@@ -2186,7 +2186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.discoveryEngineDataStore.DiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/discoveryenginedatastore"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/discoveryenginedatastore"
 
 discoveryenginedatastore.NewDiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReference
 ```
@@ -2493,7 +2493,7 @@ func InternalValue() DiscoveryEngineDataStoreAdvancedSiteSearchConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.discoveryEngineDataStore.DiscoveryEngineDataStoreDocumentProcessingConfigChunkingConfigLayoutBasedChunkingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/discoveryenginedatastore"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/discoveryenginedatastore"
 
 discoveryenginedatastore.NewDiscoveryEngineDataStoreDocumentProcessingConfigChunkingConfigLayoutBasedChunkingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DiscoveryEngineDataStoreDocumentProcessingConfigChunkingConfigLayoutBasedChunkingConfigOutputReference
 ```
@@ -2800,7 +2800,7 @@ func InternalValue() DiscoveryEngineDataStoreDocumentProcessingConfigChunkingCon
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.discoveryEngineDataStore.DiscoveryEngineDataStoreDocumentProcessingConfigChunkingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/discoveryenginedatastore"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/discoveryenginedatastore"
 
 discoveryenginedatastore.NewDiscoveryEngineDataStoreDocumentProcessingConfigChunkingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DiscoveryEngineDataStoreDocumentProcessingConfigChunkingConfigOutputReference
 ```
@@ -3091,7 +3091,7 @@ func InternalValue() DiscoveryEngineDataStoreDocumentProcessingConfigChunkingCon
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.discoveryEngineDataStore.DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigDigitalParsingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/discoveryenginedatastore"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/discoveryenginedatastore"
 
 discoveryenginedatastore.NewDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigDigitalParsingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigDigitalParsingConfigOutputReference
 ```
@@ -3340,7 +3340,7 @@ func InternalValue() DiscoveryEngineDataStoreDocumentProcessingConfigDefaultPars
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.discoveryEngineDataStore.DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigLayoutParsingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/discoveryenginedatastore"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/discoveryenginedatastore"
 
 discoveryenginedatastore.NewDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigLayoutParsingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigLayoutParsingConfigOutputReference
 ```
@@ -3763,7 +3763,7 @@ func InternalValue() DiscoveryEngineDataStoreDocumentProcessingConfigDefaultPars
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.discoveryEngineDataStore.DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigOcrParsingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/discoveryenginedatastore"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/discoveryenginedatastore"
 
 discoveryenginedatastore.NewDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigOcrParsingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigOcrParsingConfigOutputReference
 ```
@@ -4041,7 +4041,7 @@ func InternalValue() DiscoveryEngineDataStoreDocumentProcessingConfigDefaultPars
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.discoveryEngineDataStore.DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/discoveryenginedatastore"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/discoveryenginedatastore"
 
 discoveryenginedatastore.NewDiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DiscoveryEngineDataStoreDocumentProcessingConfigDefaultParsingConfigOutputReference
 ```
@@ -4416,7 +4416,7 @@ func InternalValue() DiscoveryEngineDataStoreDocumentProcessingConfigDefaultPars
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.discoveryEngineDataStore.DiscoveryEngineDataStoreDocumentProcessingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/discoveryenginedatastore"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/discoveryenginedatastore"
 
 discoveryenginedatastore.NewDiscoveryEngineDataStoreDocumentProcessingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DiscoveryEngineDataStoreDocumentProcessingConfigOutputReference
 ```
@@ -4802,7 +4802,7 @@ func InternalValue() DiscoveryEngineDataStoreDocumentProcessingConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.discoveryEngineDataStore.DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesDigitalParsingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/discoveryenginedatastore"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/discoveryenginedatastore"
 
 discoveryenginedatastore.NewDiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesDigitalParsingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesDigitalParsingConfigOutputReference
 ```
@@ -5051,7 +5051,7 @@ func InternalValue() DiscoveryEngineDataStoreDocumentProcessingConfigParsingConf
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.discoveryEngineDataStore.DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesLayoutParsingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/discoveryenginedatastore"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/discoveryenginedatastore"
 
 discoveryenginedatastore.NewDiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesLayoutParsingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesLayoutParsingConfigOutputReference
 ```
@@ -5474,7 +5474,7 @@ func InternalValue() DiscoveryEngineDataStoreDocumentProcessingConfigParsingConf
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.discoveryEngineDataStore.DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/discoveryenginedatastore"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/discoveryenginedatastore"
 
 discoveryenginedatastore.NewDiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesList
 ```
@@ -5634,7 +5634,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.discoveryEngineDataStore.DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesOcrParsingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/discoveryenginedatastore"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/discoveryenginedatastore"
 
 discoveryenginedatastore.NewDiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesOcrParsingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesOcrParsingConfigOutputReference
 ```
@@ -5912,7 +5912,7 @@ func InternalValue() DiscoveryEngineDataStoreDocumentProcessingConfigParsingConf
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.discoveryEngineDataStore.DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/discoveryenginedatastore"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/discoveryenginedatastore"
 
 discoveryenginedatastore.NewDiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DiscoveryEngineDataStoreDocumentProcessingConfigParsingConfigOverridesOutputReference
 ```
@@ -6327,7 +6327,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-google.discoveryEngineDataStore.DiscoveryEngineDataStoreTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/discoveryenginedatastore"
+import "github.com/cdktf/cdktf-provider-google-go/google/v16/discoveryenginedatastore"
 
 discoveryenginedatastore.NewDiscoveryEngineDataStoreTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DiscoveryEngineDataStoreTimeoutsOutputReference
 ```
