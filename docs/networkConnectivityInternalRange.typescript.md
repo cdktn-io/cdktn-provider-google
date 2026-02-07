@@ -1,28 +1,28 @@
-# `networkConnectivityInternalRange` Submodule <a name="`networkConnectivityInternalRange` Submodule" id="@cdktf/provider-google.networkConnectivityInternalRange"></a>
+# `networkConnectivityInternalRange` Submodule <a name="`networkConnectivityInternalRange` Submodule" id="@cdktn/provider-google.networkConnectivityInternalRange"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### NetworkConnectivityInternalRange <a name="NetworkConnectivityInternalRange" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange"></a>
+### NetworkConnectivityInternalRange <a name="NetworkConnectivityInternalRange" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange"></a>
 
 Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_connectivity_internal_range google_network_connectivity_internal_range}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.Initializer"></a>
 
 ```typescript
-import { networkConnectivityInternalRange } from '@cdktf/provider-google'
+import { networkConnectivityInternalRange } from '@cdktn/provider-google'
 
 new networkConnectivityInternalRange.NetworkConnectivityInternalRange(scope: Construct, id: string, config: NetworkConnectivityInternalRangeConfig)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig">NetworkConnectivityInternalRangeConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig">NetworkConnectivityInternalRangeConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.Initializer.parameter.id"></a>
 
 - *Type:* string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.Initializer.parameter.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig">NetworkConnectivityInternalRangeConfig</a>
+- *Type:* <a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig">NetworkConnectivityInternalRangeConfig</a>
 
 ---
 
@@ -50,49 +50,49 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.toString">toString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.addOverride">addOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.toHclTerraform">toHclTerraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.toMetadata">toMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.hasResourceMove">hasResourceMove</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.importFrom">importFrom</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.putAllocationOptions">putAllocationOptions</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.putMigration">putMigration</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.putTimeouts">putTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.resetAllocationOptions">resetAllocationOptions</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.resetDescription">resetDescription</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.resetExcludeCidrRanges">resetExcludeCidrRanges</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.resetId">resetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.resetImmutable">resetImmutable</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.resetIpCidrRange">resetIpCidrRange</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.resetLabels">resetLabels</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.resetMigration">resetMigration</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.resetOverlaps">resetOverlaps</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.resetPrefixLength">resetPrefixLength</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.resetProject">resetProject</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.resetTargetCidrRange">resetTargetCidrRange</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.resetTimeouts">resetTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.addOverride">addOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.toHclTerraform">toHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.toMetadata">toMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.hasResourceMove">hasResourceMove</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.importFrom">importFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.putAllocationOptions">putAllocationOptions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.putMigration">putMigration</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.resetAllocationOptions">resetAllocationOptions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.resetDescription">resetDescription</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.resetExcludeCidrRanges">resetExcludeCidrRanges</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.resetImmutable">resetImmutable</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.resetIpCidrRange">resetIpCidrRange</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.resetLabels">resetLabels</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.resetMigration">resetMigration</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.resetOverlaps">resetOverlaps</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.resetPrefixLength">resetPrefixLength</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.resetProject">resetProject</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.resetTargetCidrRange">resetTargetCidrRange</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.resetTimeouts">resetTimeouts</a></code> | *No description.* |
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.toString"></a>
 
 ```typescript
 public toString(): string
@@ -100,25 +100,25 @@ public toString(): string
 
 Returns a string representation of this construct.
 
-##### `addOverride` <a name="addOverride" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.addOverride"></a>
+##### `addOverride` <a name="addOverride" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.addOverride"></a>
 
 ```typescript
 public addOverride(path: string, value: any): void
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.addOverride.parameter.path"></a>
 
 - *Type:* string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.addOverride.parameter.value"></a>
 
 - *Type:* any
 
 ---
 
-##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.overrideLogicalId"></a>
+##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.overrideLogicalId"></a>
 
 ```typescript
 public overrideLogicalId(newLogicalId: string): void
@@ -126,7 +126,7 @@ public overrideLogicalId(newLogicalId: string): void
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* string
 
@@ -134,7 +134,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.resetOverrideLogicalId"></a>
+##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.resetOverrideLogicalId"></a>
 
 ```typescript
 public resetOverrideLogicalId(): void
@@ -142,19 +142,19 @@ public resetOverrideLogicalId(): void
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `toHclTerraform` <a name="toHclTerraform" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.toHclTerraform"></a>
+##### `toHclTerraform` <a name="toHclTerraform" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.toHclTerraform"></a>
 
 ```typescript
 public toHclTerraform(): any
 ```
 
-##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.toMetadata"></a>
+##### `toMetadata` <a name="toMetadata" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.toMetadata"></a>
 
 ```typescript
 public toMetadata(): any
 ```
 
-##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.toTerraform"></a>
+##### `toTerraform` <a name="toTerraform" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.toTerraform"></a>
 
 ```typescript
 public toTerraform(): any
@@ -162,7 +162,7 @@ public toTerraform(): any
 
 Adds this resource to the terraform JSON output.
 
-##### `addMoveTarget` <a name="addMoveTarget" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.addMoveTarget"></a>
+##### `addMoveTarget` <a name="addMoveTarget" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.addMoveTarget"></a>
 
 ```typescript
 public addMoveTarget(moveTarget: string): void
@@ -170,7 +170,7 @@ public addMoveTarget(moveTarget: string): void
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.addMoveTarget.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* string
 
@@ -178,151 +178,151 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `hasResourceMove` <a name="hasResourceMove" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.hasResourceMove"></a>
+##### `hasResourceMove` <a name="hasResourceMove" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.hasResourceMove"></a>
 
 ```typescript
 public hasResourceMove(): TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `importFrom` <a name="importFrom" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.importFrom"></a>
+##### `importFrom` <a name="importFrom" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.importFrom"></a>
 
 ```typescript
 public importFrom(id: string, provider?: TerraformProvider): void
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.importFrom.parameter.id"></a>
 
 - *Type:* string
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.importFrom.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `moveFromId` <a name="moveFromId" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.moveFromId"></a>
+##### `moveFromId` <a name="moveFromId" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.moveFromId"></a>
 
 ```typescript
 public moveFromId(id: string): void
@@ -332,7 +332,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.moveFromId.parameter.id"></a>
 
 - *Type:* string
 
@@ -340,7 +340,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `moveTo` <a name="moveTo" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.moveTo"></a>
+##### `moveTo` <a name="moveTo" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.moveTo"></a>
 
 ```typescript
 public moveTo(moveTarget: string, index?: string | number): void
@@ -348,7 +348,7 @@ public moveTo(moveTarget: string, index?: string | number): void
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.moveTo.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.moveTo.parameter.moveTarget"></a>
 
 - *Type:* string
 
@@ -356,7 +356,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.moveTo.parameter.index"></a>
 
 - *Type:* string | number
 
@@ -364,7 +364,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `moveToId` <a name="moveToId" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.moveToId"></a>
+##### `moveToId` <a name="moveToId" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.moveToId"></a>
 
 ```typescript
 public moveToId(id: string): void
@@ -372,7 +372,7 @@ public moveToId(id: string): void
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.moveToId.parameter.id"></a>
 
 - *Type:* string
 
@@ -380,115 +380,115 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `putAllocationOptions` <a name="putAllocationOptions" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.putAllocationOptions"></a>
+##### `putAllocationOptions` <a name="putAllocationOptions" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.putAllocationOptions"></a>
 
 ```typescript
 public putAllocationOptions(value: NetworkConnectivityInternalRangeAllocationOptions): void
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.putAllocationOptions.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.putAllocationOptions.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptions">NetworkConnectivityInternalRangeAllocationOptions</a>
+- *Type:* <a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptions">NetworkConnectivityInternalRangeAllocationOptions</a>
 
 ---
 
-##### `putMigration` <a name="putMigration" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.putMigration"></a>
+##### `putMigration` <a name="putMigration" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.putMigration"></a>
 
 ```typescript
 public putMigration(value: NetworkConnectivityInternalRangeMigration): void
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.putMigration.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.putMigration.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigration">NetworkConnectivityInternalRangeMigration</a>
+- *Type:* <a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigration">NetworkConnectivityInternalRangeMigration</a>
 
 ---
 
-##### `putTimeouts` <a name="putTimeouts" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.putTimeouts"></a>
+##### `putTimeouts` <a name="putTimeouts" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.putTimeouts"></a>
 
 ```typescript
 public putTimeouts(value: NetworkConnectivityInternalRangeTimeouts): void
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.putTimeouts.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.putTimeouts.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeouts">NetworkConnectivityInternalRangeTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeouts">NetworkConnectivityInternalRangeTimeouts</a>
 
 ---
 
-##### `resetAllocationOptions` <a name="resetAllocationOptions" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.resetAllocationOptions"></a>
+##### `resetAllocationOptions` <a name="resetAllocationOptions" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.resetAllocationOptions"></a>
 
 ```typescript
 public resetAllocationOptions(): void
 ```
 
-##### `resetDescription` <a name="resetDescription" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.resetDescription"></a>
+##### `resetDescription` <a name="resetDescription" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.resetDescription"></a>
 
 ```typescript
 public resetDescription(): void
 ```
 
-##### `resetExcludeCidrRanges` <a name="resetExcludeCidrRanges" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.resetExcludeCidrRanges"></a>
+##### `resetExcludeCidrRanges` <a name="resetExcludeCidrRanges" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.resetExcludeCidrRanges"></a>
 
 ```typescript
 public resetExcludeCidrRanges(): void
 ```
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.resetId"></a>
+##### `resetId` <a name="resetId" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.resetId"></a>
 
 ```typescript
 public resetId(): void
 ```
 
-##### `resetImmutable` <a name="resetImmutable" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.resetImmutable"></a>
+##### `resetImmutable` <a name="resetImmutable" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.resetImmutable"></a>
 
 ```typescript
 public resetImmutable(): void
 ```
 
-##### `resetIpCidrRange` <a name="resetIpCidrRange" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.resetIpCidrRange"></a>
+##### `resetIpCidrRange` <a name="resetIpCidrRange" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.resetIpCidrRange"></a>
 
 ```typescript
 public resetIpCidrRange(): void
 ```
 
-##### `resetLabels` <a name="resetLabels" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.resetLabels"></a>
+##### `resetLabels` <a name="resetLabels" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.resetLabels"></a>
 
 ```typescript
 public resetLabels(): void
 ```
 
-##### `resetMigration` <a name="resetMigration" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.resetMigration"></a>
+##### `resetMigration` <a name="resetMigration" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.resetMigration"></a>
 
 ```typescript
 public resetMigration(): void
 ```
 
-##### `resetOverlaps` <a name="resetOverlaps" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.resetOverlaps"></a>
+##### `resetOverlaps` <a name="resetOverlaps" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.resetOverlaps"></a>
 
 ```typescript
 public resetOverlaps(): void
 ```
 
-##### `resetPrefixLength` <a name="resetPrefixLength" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.resetPrefixLength"></a>
+##### `resetPrefixLength` <a name="resetPrefixLength" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.resetPrefixLength"></a>
 
 ```typescript
 public resetPrefixLength(): void
 ```
 
-##### `resetProject` <a name="resetProject" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.resetProject"></a>
+##### `resetProject` <a name="resetProject" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.resetProject"></a>
 
 ```typescript
 public resetProject(): void
 ```
 
-##### `resetTargetCidrRange` <a name="resetTargetCidrRange" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.resetTargetCidrRange"></a>
+##### `resetTargetCidrRange` <a name="resetTargetCidrRange" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.resetTargetCidrRange"></a>
 
 ```typescript
 public resetTargetCidrRange(): void
 ```
 
-##### `resetTimeouts` <a name="resetTimeouts" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.resetTimeouts"></a>
+##### `resetTimeouts` <a name="resetTimeouts" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.resetTimeouts"></a>
 
 ```typescript
 public resetTimeouts(): void
@@ -498,17 +498,17 @@ public resetTimeouts(): void
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.isTerraformElement">isTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a NetworkConnectivityInternalRange resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.isTerraformResource">isTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a NetworkConnectivityInternalRange resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.isConstruct"></a>
 
 ```typescript
-import { networkConnectivityInternalRange } from '@cdktf/provider-google'
+import { networkConnectivityInternalRange } from '@cdktn/provider-google'
 
 networkConnectivityInternalRange.NetworkConnectivityInternalRange.isConstruct(x: any)
 ```
@@ -529,7 +529,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.isConstruct.parameter.x"></a>
 
 - *Type:* any
 
@@ -537,45 +537,45 @@ Any object.
 
 ---
 
-##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.isTerraformElement"></a>
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.isTerraformElement"></a>
 
 ```typescript
-import { networkConnectivityInternalRange } from '@cdktf/provider-google'
+import { networkConnectivityInternalRange } from '@cdktn/provider-google'
 
 networkConnectivityInternalRange.NetworkConnectivityInternalRange.isTerraformElement(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.isTerraformElement.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.isTerraformResource"></a>
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.isTerraformResource"></a>
 
 ```typescript
-import { networkConnectivityInternalRange } from '@cdktf/provider-google'
+import { networkConnectivityInternalRange } from '@cdktn/provider-google'
 
 networkConnectivityInternalRange.NetworkConnectivityInternalRange.isTerraformResource(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.isTerraformResource.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.generateConfigForImport"></a>
+##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.generateConfigForImport"></a>
 
 ```typescript
-import { networkConnectivityInternalRange } from '@cdktf/provider-google'
+import { networkConnectivityInternalRange } from '@cdktn/provider-google'
 
 networkConnectivityInternalRange.NetworkConnectivityInternalRange.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
 Generates CDKTF code for importing a NetworkConnectivityInternalRange resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -583,7 +583,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* string
 
@@ -591,7 +591,7 @@ The construct id used in the generated config for the NetworkConnectivityInterna
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* string
 
@@ -601,7 +601,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
@@ -613,61 +613,61 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.allocationOptions">allocationOptions</a></code> | <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference">NetworkConnectivityInternalRangeAllocationOptionsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.effectiveLabels">effectiveLabels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.migration">migration</a></code> | <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference">NetworkConnectivityInternalRangeMigrationOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.terraformLabels">terraformLabels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference">NetworkConnectivityInternalRangeTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.users">users</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.allocationOptionsInput">allocationOptionsInput</a></code> | <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptions">NetworkConnectivityInternalRangeAllocationOptions</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.excludeCidrRangesInput">excludeCidrRangesInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.immutableInput">immutableInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.ipCidrRangeInput">ipCidrRangeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.labelsInput">labelsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.migrationInput">migrationInput</a></code> | <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigration">NetworkConnectivityInternalRangeMigration</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.networkInput">networkInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.overlapsInput">overlapsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.peeringInput">peeringInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.prefixLengthInput">prefixLengthInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.targetCidrRangeInput">targetCidrRangeInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeouts">NetworkConnectivityInternalRangeTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.usageInput">usageInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.description">description</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.excludeCidrRanges">excludeCidrRanges</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.immutable">immutable</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.ipCidrRange">ipCidrRange</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.network">network</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.overlaps">overlaps</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.peering">peering</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.prefixLength">prefixLength</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.project">project</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.targetCidrRange">targetCidrRange</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.usage">usage</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.allocationOptions">allocationOptions</a></code> | <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference">NetworkConnectivityInternalRangeAllocationOptionsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.effectiveLabels">effectiveLabels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.migration">migration</a></code> | <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference">NetworkConnectivityInternalRangeMigrationOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.terraformLabels">terraformLabels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference">NetworkConnectivityInternalRangeTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.users">users</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.allocationOptionsInput">allocationOptionsInput</a></code> | <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptions">NetworkConnectivityInternalRangeAllocationOptions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.excludeCidrRangesInput">excludeCidrRangesInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.immutableInput">immutableInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.ipCidrRangeInput">ipCidrRangeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.labelsInput">labelsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.migrationInput">migrationInput</a></code> | <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigration">NetworkConnectivityInternalRangeMigration</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.networkInput">networkInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.overlapsInput">overlapsInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.peeringInput">peeringInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.prefixLengthInput">prefixLengthInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.targetCidrRangeInput">targetCidrRangeInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeouts">NetworkConnectivityInternalRangeTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.usageInput">usageInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.description">description</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.excludeCidrRanges">excludeCidrRanges</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.immutable">immutable</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.ipCidrRange">ipCidrRange</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.network">network</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.overlaps">overlaps</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.peering">peering</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.prefixLength">prefixLength</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.project">project</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.targetCidrRange">targetCidrRange</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.usage">usage</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.node"></a>
 
 ```typescript
 public readonly node: Node;
@@ -679,7 +679,7 @@ The tree node.
 
 ---
 
-##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.cdktfStack"></a>
+##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.cdktfStack"></a>
 
 ```typescript
 public readonly cdktfStack: TerraformStack;
@@ -689,7 +689,7 @@ public readonly cdktfStack: TerraformStack;
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -699,7 +699,7 @@ public readonly fqn: string;
 
 ---
 
-##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.friendlyUniqueId"></a>
+##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.friendlyUniqueId"></a>
 
 ```typescript
 public readonly friendlyUniqueId: string;
@@ -709,7 +709,7 @@ public readonly friendlyUniqueId: string;
 
 ---
 
-##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.terraformMetaArguments"></a>
+##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.terraformMetaArguments"></a>
 
 ```typescript
 public readonly terraformMetaArguments: {[ key: string ]: any};
@@ -719,7 +719,7 @@ public readonly terraformMetaArguments: {[ key: string ]: any};
 
 ---
 
-##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.terraformResourceType"></a>
+##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.terraformResourceType"></a>
 
 ```typescript
 public readonly terraformResourceType: string;
@@ -729,7 +729,7 @@ public readonly terraformResourceType: string;
 
 ---
 
-##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.terraformGeneratorMetadata"></a>
+##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.terraformGeneratorMetadata"></a>
 
 ```typescript
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
@@ -739,7 +739,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.connection"></a>
 
 ```typescript
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
@@ -749,7 +749,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.count"></a>
 
 ```typescript
 public readonly count: number | TerraformCount;
@@ -759,7 +759,7 @@ public readonly count: number | TerraformCount;
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: string[];
@@ -769,7 +769,7 @@ public readonly dependsOn: string[];
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
@@ -779,7 +779,7 @@ public readonly forEach: ITerraformIterator;
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
@@ -789,7 +789,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
@@ -799,7 +799,7 @@ public readonly provider: TerraformProvider;
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.provisioners"></a>
 
 ```typescript
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
@@ -809,17 +809,17 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `allocationOptions`<sup>Required</sup> <a name="allocationOptions" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.allocationOptions"></a>
+##### `allocationOptions`<sup>Required</sup> <a name="allocationOptions" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.allocationOptions"></a>
 
 ```typescript
 public readonly allocationOptions: NetworkConnectivityInternalRangeAllocationOptionsOutputReference;
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference">NetworkConnectivityInternalRangeAllocationOptionsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference">NetworkConnectivityInternalRangeAllocationOptionsOutputReference</a>
 
 ---
 
-##### `effectiveLabels`<sup>Required</sup> <a name="effectiveLabels" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.effectiveLabels"></a>
+##### `effectiveLabels`<sup>Required</sup> <a name="effectiveLabels" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.effectiveLabels"></a>
 
 ```typescript
 public readonly effectiveLabels: StringMap;
@@ -829,17 +829,17 @@ public readonly effectiveLabels: StringMap;
 
 ---
 
-##### `migration`<sup>Required</sup> <a name="migration" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.migration"></a>
+##### `migration`<sup>Required</sup> <a name="migration" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.migration"></a>
 
 ```typescript
 public readonly migration: NetworkConnectivityInternalRangeMigrationOutputReference;
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference">NetworkConnectivityInternalRangeMigrationOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference">NetworkConnectivityInternalRangeMigrationOutputReference</a>
 
 ---
 
-##### `terraformLabels`<sup>Required</sup> <a name="terraformLabels" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.terraformLabels"></a>
+##### `terraformLabels`<sup>Required</sup> <a name="terraformLabels" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.terraformLabels"></a>
 
 ```typescript
 public readonly terraformLabels: StringMap;
@@ -849,17 +849,17 @@ public readonly terraformLabels: StringMap;
 
 ---
 
-##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.timeouts"></a>
+##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.timeouts"></a>
 
 ```typescript
 public readonly timeouts: NetworkConnectivityInternalRangeTimeoutsOutputReference;
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference">NetworkConnectivityInternalRangeTimeoutsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference">NetworkConnectivityInternalRangeTimeoutsOutputReference</a>
 
 ---
 
-##### `users`<sup>Required</sup> <a name="users" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.users"></a>
+##### `users`<sup>Required</sup> <a name="users" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.users"></a>
 
 ```typescript
 public readonly users: string[];
@@ -869,17 +869,17 @@ public readonly users: string[];
 
 ---
 
-##### `allocationOptionsInput`<sup>Optional</sup> <a name="allocationOptionsInput" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.allocationOptionsInput"></a>
+##### `allocationOptionsInput`<sup>Optional</sup> <a name="allocationOptionsInput" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.allocationOptionsInput"></a>
 
 ```typescript
 public readonly allocationOptionsInput: NetworkConnectivityInternalRangeAllocationOptions;
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptions">NetworkConnectivityInternalRangeAllocationOptions</a>
+- *Type:* <a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptions">NetworkConnectivityInternalRangeAllocationOptions</a>
 
 ---
 
-##### `descriptionInput`<sup>Optional</sup> <a name="descriptionInput" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.descriptionInput"></a>
+##### `descriptionInput`<sup>Optional</sup> <a name="descriptionInput" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.descriptionInput"></a>
 
 ```typescript
 public readonly descriptionInput: string;
@@ -889,7 +889,7 @@ public readonly descriptionInput: string;
 
 ---
 
-##### `excludeCidrRangesInput`<sup>Optional</sup> <a name="excludeCidrRangesInput" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.excludeCidrRangesInput"></a>
+##### `excludeCidrRangesInput`<sup>Optional</sup> <a name="excludeCidrRangesInput" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.excludeCidrRangesInput"></a>
 
 ```typescript
 public readonly excludeCidrRangesInput: string[];
@@ -899,7 +899,7 @@ public readonly excludeCidrRangesInput: string[];
 
 ---
 
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.idInput"></a>
+##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.idInput"></a>
 
 ```typescript
 public readonly idInput: string;
@@ -909,7 +909,7 @@ public readonly idInput: string;
 
 ---
 
-##### `immutableInput`<sup>Optional</sup> <a name="immutableInput" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.immutableInput"></a>
+##### `immutableInput`<sup>Optional</sup> <a name="immutableInput" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.immutableInput"></a>
 
 ```typescript
 public readonly immutableInput: boolean | IResolvable;
@@ -919,7 +919,7 @@ public readonly immutableInput: boolean | IResolvable;
 
 ---
 
-##### `ipCidrRangeInput`<sup>Optional</sup> <a name="ipCidrRangeInput" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.ipCidrRangeInput"></a>
+##### `ipCidrRangeInput`<sup>Optional</sup> <a name="ipCidrRangeInput" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.ipCidrRangeInput"></a>
 
 ```typescript
 public readonly ipCidrRangeInput: string;
@@ -929,7 +929,7 @@ public readonly ipCidrRangeInput: string;
 
 ---
 
-##### `labelsInput`<sup>Optional</sup> <a name="labelsInput" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.labelsInput"></a>
+##### `labelsInput`<sup>Optional</sup> <a name="labelsInput" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.labelsInput"></a>
 
 ```typescript
 public readonly labelsInput: {[ key: string ]: string};
@@ -939,17 +939,17 @@ public readonly labelsInput: {[ key: string ]: string};
 
 ---
 
-##### `migrationInput`<sup>Optional</sup> <a name="migrationInput" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.migrationInput"></a>
+##### `migrationInput`<sup>Optional</sup> <a name="migrationInput" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.migrationInput"></a>
 
 ```typescript
 public readonly migrationInput: NetworkConnectivityInternalRangeMigration;
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigration">NetworkConnectivityInternalRangeMigration</a>
+- *Type:* <a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigration">NetworkConnectivityInternalRangeMigration</a>
 
 ---
 
-##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.nameInput"></a>
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.nameInput"></a>
 
 ```typescript
 public readonly nameInput: string;
@@ -959,7 +959,7 @@ public readonly nameInput: string;
 
 ---
 
-##### `networkInput`<sup>Optional</sup> <a name="networkInput" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.networkInput"></a>
+##### `networkInput`<sup>Optional</sup> <a name="networkInput" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.networkInput"></a>
 
 ```typescript
 public readonly networkInput: string;
@@ -969,7 +969,7 @@ public readonly networkInput: string;
 
 ---
 
-##### `overlapsInput`<sup>Optional</sup> <a name="overlapsInput" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.overlapsInput"></a>
+##### `overlapsInput`<sup>Optional</sup> <a name="overlapsInput" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.overlapsInput"></a>
 
 ```typescript
 public readonly overlapsInput: string[];
@@ -979,7 +979,7 @@ public readonly overlapsInput: string[];
 
 ---
 
-##### `peeringInput`<sup>Optional</sup> <a name="peeringInput" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.peeringInput"></a>
+##### `peeringInput`<sup>Optional</sup> <a name="peeringInput" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.peeringInput"></a>
 
 ```typescript
 public readonly peeringInput: string;
@@ -989,7 +989,7 @@ public readonly peeringInput: string;
 
 ---
 
-##### `prefixLengthInput`<sup>Optional</sup> <a name="prefixLengthInput" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.prefixLengthInput"></a>
+##### `prefixLengthInput`<sup>Optional</sup> <a name="prefixLengthInput" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.prefixLengthInput"></a>
 
 ```typescript
 public readonly prefixLengthInput: number;
@@ -999,7 +999,7 @@ public readonly prefixLengthInput: number;
 
 ---
 
-##### `projectInput`<sup>Optional</sup> <a name="projectInput" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.projectInput"></a>
+##### `projectInput`<sup>Optional</sup> <a name="projectInput" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.projectInput"></a>
 
 ```typescript
 public readonly projectInput: string;
@@ -1009,7 +1009,7 @@ public readonly projectInput: string;
 
 ---
 
-##### `targetCidrRangeInput`<sup>Optional</sup> <a name="targetCidrRangeInput" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.targetCidrRangeInput"></a>
+##### `targetCidrRangeInput`<sup>Optional</sup> <a name="targetCidrRangeInput" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.targetCidrRangeInput"></a>
 
 ```typescript
 public readonly targetCidrRangeInput: string[];
@@ -1019,17 +1019,17 @@ public readonly targetCidrRangeInput: string[];
 
 ---
 
-##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.timeoutsInput"></a>
+##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.timeoutsInput"></a>
 
 ```typescript
 public readonly timeoutsInput: IResolvable | NetworkConnectivityInternalRangeTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeouts">NetworkConnectivityInternalRangeTimeouts</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeouts">NetworkConnectivityInternalRangeTimeouts</a>
 
 ---
 
-##### `usageInput`<sup>Optional</sup> <a name="usageInput" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.usageInput"></a>
+##### `usageInput`<sup>Optional</sup> <a name="usageInput" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.usageInput"></a>
 
 ```typescript
 public readonly usageInput: string;
@@ -1039,7 +1039,7 @@ public readonly usageInput: string;
 
 ---
 
-##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.description"></a>
+##### `description`<sup>Required</sup> <a name="description" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.description"></a>
 
 ```typescript
 public readonly description: string;
@@ -1049,7 +1049,7 @@ public readonly description: string;
 
 ---
 
-##### `excludeCidrRanges`<sup>Required</sup> <a name="excludeCidrRanges" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.excludeCidrRanges"></a>
+##### `excludeCidrRanges`<sup>Required</sup> <a name="excludeCidrRanges" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.excludeCidrRanges"></a>
 
 ```typescript
 public readonly excludeCidrRanges: string[];
@@ -1059,7 +1059,7 @@ public readonly excludeCidrRanges: string[];
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -1069,7 +1069,7 @@ public readonly id: string;
 
 ---
 
-##### `immutable`<sup>Required</sup> <a name="immutable" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.immutable"></a>
+##### `immutable`<sup>Required</sup> <a name="immutable" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.immutable"></a>
 
 ```typescript
 public readonly immutable: boolean | IResolvable;
@@ -1079,7 +1079,7 @@ public readonly immutable: boolean | IResolvable;
 
 ---
 
-##### `ipCidrRange`<sup>Required</sup> <a name="ipCidrRange" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.ipCidrRange"></a>
+##### `ipCidrRange`<sup>Required</sup> <a name="ipCidrRange" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.ipCidrRange"></a>
 
 ```typescript
 public readonly ipCidrRange: string;
@@ -1089,7 +1089,7 @@ public readonly ipCidrRange: string;
 
 ---
 
-##### `labels`<sup>Required</sup> <a name="labels" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.labels"></a>
+##### `labels`<sup>Required</sup> <a name="labels" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.labels"></a>
 
 ```typescript
 public readonly labels: {[ key: string ]: string};
@@ -1099,7 +1099,7 @@ public readonly labels: {[ key: string ]: string};
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -1109,7 +1109,7 @@ public readonly name: string;
 
 ---
 
-##### `network`<sup>Required</sup> <a name="network" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.network"></a>
+##### `network`<sup>Required</sup> <a name="network" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.network"></a>
 
 ```typescript
 public readonly network: string;
@@ -1119,7 +1119,7 @@ public readonly network: string;
 
 ---
 
-##### `overlaps`<sup>Required</sup> <a name="overlaps" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.overlaps"></a>
+##### `overlaps`<sup>Required</sup> <a name="overlaps" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.overlaps"></a>
 
 ```typescript
 public readonly overlaps: string[];
@@ -1129,7 +1129,7 @@ public readonly overlaps: string[];
 
 ---
 
-##### `peering`<sup>Required</sup> <a name="peering" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.peering"></a>
+##### `peering`<sup>Required</sup> <a name="peering" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.peering"></a>
 
 ```typescript
 public readonly peering: string;
@@ -1139,7 +1139,7 @@ public readonly peering: string;
 
 ---
 
-##### `prefixLength`<sup>Required</sup> <a name="prefixLength" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.prefixLength"></a>
+##### `prefixLength`<sup>Required</sup> <a name="prefixLength" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.prefixLength"></a>
 
 ```typescript
 public readonly prefixLength: number;
@@ -1149,7 +1149,7 @@ public readonly prefixLength: number;
 
 ---
 
-##### `project`<sup>Required</sup> <a name="project" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.project"></a>
+##### `project`<sup>Required</sup> <a name="project" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.project"></a>
 
 ```typescript
 public readonly project: string;
@@ -1159,7 +1159,7 @@ public readonly project: string;
 
 ---
 
-##### `targetCidrRange`<sup>Required</sup> <a name="targetCidrRange" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.targetCidrRange"></a>
+##### `targetCidrRange`<sup>Required</sup> <a name="targetCidrRange" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.targetCidrRange"></a>
 
 ```typescript
 public readonly targetCidrRange: string[];
@@ -1169,7 +1169,7 @@ public readonly targetCidrRange: string[];
 
 ---
 
-##### `usage`<sup>Required</sup> <a name="usage" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.usage"></a>
+##### `usage`<sup>Required</sup> <a name="usage" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.usage"></a>
 
 ```typescript
 public readonly usage: string;
@@ -1183,11 +1183,11 @@ public readonly usage: string;
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange.property.tfResourceType"></a>
 
 ```typescript
 public readonly tfResourceType: string;
@@ -1199,12 +1199,12 @@ public readonly tfResourceType: string;
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### NetworkConnectivityInternalRangeAllocationOptions <a name="NetworkConnectivityInternalRangeAllocationOptions" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptions"></a>
+### NetworkConnectivityInternalRangeAllocationOptions <a name="NetworkConnectivityInternalRangeAllocationOptions" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptions"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptions.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptions.Initializer"></a>
 
 ```typescript
-import { networkConnectivityInternalRange } from '@cdktf/provider-google'
+import { networkConnectivityInternalRange } from '@cdktn/provider-google'
 
 const networkConnectivityInternalRangeAllocationOptions: networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptions = { ... }
 ```
@@ -1213,12 +1213,12 @@ const networkConnectivityInternalRangeAllocationOptions: networkConnectivityInte
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptions.property.allocationStrategy">allocationStrategy</a></code> | <code>string</code> | Optional. |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptions.property.firstAvailableRangesLookupSize">firstAvailableRangesLookupSize</a></code> | <code>number</code> | Must be set when allocation_strategy is RANDOM_FIRST_N_AVAILABLE, otherwise must remain unset. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptions.property.allocationStrategy">allocationStrategy</a></code> | <code>string</code> | Optional. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptions.property.firstAvailableRangesLookupSize">firstAvailableRangesLookupSize</a></code> | <code>number</code> | Must be set when allocation_strategy is RANDOM_FIRST_N_AVAILABLE, otherwise must remain unset. |
 
 ---
 
-##### `allocationStrategy`<sup>Optional</sup> <a name="allocationStrategy" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptions.property.allocationStrategy"></a>
+##### `allocationStrategy`<sup>Optional</sup> <a name="allocationStrategy" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptions.property.allocationStrategy"></a>
 
 ```typescript
 public readonly allocationStrategy: string;
@@ -1234,7 +1234,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `firstAvailableRangesLookupSize`<sup>Optional</sup> <a name="firstAvailableRangesLookupSize" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptions.property.firstAvailableRangesLookupSize"></a>
+##### `firstAvailableRangesLookupSize`<sup>Optional</sup> <a name="firstAvailableRangesLookupSize" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptions.property.firstAvailableRangesLookupSize"></a>
 
 ```typescript
 public readonly firstAvailableRangesLookupSize: number;
@@ -1251,12 +1251,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### NetworkConnectivityInternalRangeConfig <a name="NetworkConnectivityInternalRangeConfig" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig"></a>
+### NetworkConnectivityInternalRangeConfig <a name="NetworkConnectivityInternalRangeConfig" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.Initializer"></a>
 
 ```typescript
-import { networkConnectivityInternalRange } from '@cdktf/provider-google'
+import { networkConnectivityInternalRange } from '@cdktn/provider-google'
 
 const networkConnectivityInternalRangeConfig: networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig = { ... }
 ```
@@ -1265,34 +1265,34 @@ const networkConnectivityInternalRangeConfig: networkConnectivityInternalRange.N
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.name">name</a></code> | <code>string</code> | The name of the policy based route. |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.network">network</a></code> | <code>string</code> | Fully-qualified URL of the network that this route applies to, for example: projects/my-project/global/networks/my-network. |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.peering">peering</a></code> | <code>string</code> | The type of peering set for this internal range. Possible values: ["FOR_SELF", "FOR_PEER", "NOT_SHARED"]. |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.usage">usage</a></code> | <code>string</code> | The type of usage set for this InternalRange. Possible values: ["FOR_VPC", "EXTERNAL_TO_VPC", "FOR_MIGRATION"]. |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.allocationOptions">allocationOptions</a></code> | <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptions">NetworkConnectivityInternalRangeAllocationOptions</a></code> | allocation_options block. |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.description">description</a></code> | <code>string</code> | An optional description of this resource. |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.excludeCidrRanges">excludeCidrRanges</a></code> | <code>string[]</code> | Optional. |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_connectivity_internal_range#id NetworkConnectivityInternalRange#id}. |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.immutable">immutable</a></code> | <code>boolean \| cdktf.IResolvable</code> | Immutable ranges cannot have their fields modified, except for labels and description. |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.ipCidrRange">ipCidrRange</a></code> | <code>string</code> | The IP range that this internal range defines. |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | User-defined labels. |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.migration">migration</a></code> | <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigration">NetworkConnectivityInternalRangeMigration</a></code> | migration block. |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.overlaps">overlaps</a></code> | <code>string[]</code> | Optional. Types of resources that are allowed to overlap with the current internal range. Possible values: ["OVERLAP_ROUTE_RANGE", "OVERLAP_EXISTING_SUBNET_RANGE"]. |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.prefixLength">prefixLength</a></code> | <code>number</code> | An alternate to ipCidrRange. |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_connectivity_internal_range#project NetworkConnectivityInternalRange#project}. |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.targetCidrRange">targetCidrRange</a></code> | <code>string[]</code> | Optional. |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeouts">NetworkConnectivityInternalRangeTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.name">name</a></code> | <code>string</code> | The name of the policy based route. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.network">network</a></code> | <code>string</code> | Fully-qualified URL of the network that this route applies to, for example: projects/my-project/global/networks/my-network. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.peering">peering</a></code> | <code>string</code> | The type of peering set for this internal range. Possible values: ["FOR_SELF", "FOR_PEER", "NOT_SHARED"]. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.usage">usage</a></code> | <code>string</code> | The type of usage set for this InternalRange. Possible values: ["FOR_VPC", "EXTERNAL_TO_VPC", "FOR_MIGRATION"]. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.allocationOptions">allocationOptions</a></code> | <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptions">NetworkConnectivityInternalRangeAllocationOptions</a></code> | allocation_options block. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.description">description</a></code> | <code>string</code> | An optional description of this resource. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.excludeCidrRanges">excludeCidrRanges</a></code> | <code>string[]</code> | Optional. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_connectivity_internal_range#id NetworkConnectivityInternalRange#id}. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.immutable">immutable</a></code> | <code>boolean \| cdktf.IResolvable</code> | Immutable ranges cannot have their fields modified, except for labels and description. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.ipCidrRange">ipCidrRange</a></code> | <code>string</code> | The IP range that this internal range defines. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | User-defined labels. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.migration">migration</a></code> | <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigration">NetworkConnectivityInternalRangeMigration</a></code> | migration block. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.overlaps">overlaps</a></code> | <code>string[]</code> | Optional. Types of resources that are allowed to overlap with the current internal range. Possible values: ["OVERLAP_ROUTE_RANGE", "OVERLAP_EXISTING_SUBNET_RANGE"]. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.prefixLength">prefixLength</a></code> | <code>number</code> | An alternate to ipCidrRange. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_connectivity_internal_range#project NetworkConnectivityInternalRange#project}. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.targetCidrRange">targetCidrRange</a></code> | <code>string[]</code> | Optional. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeouts">NetworkConnectivityInternalRangeTimeouts</a></code> | timeouts block. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.connection"></a>
 
 ```typescript
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
@@ -1302,7 +1302,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.count"></a>
 
 ```typescript
 public readonly count: number | TerraformCount;
@@ -1312,7 +1312,7 @@ public readonly count: number | TerraformCount;
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: ITerraformDependable[];
@@ -1322,7 +1322,7 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
@@ -1332,7 +1332,7 @@ public readonly forEach: ITerraformIterator;
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
@@ -1342,7 +1342,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
@@ -1352,7 +1352,7 @@ public readonly provider: TerraformProvider;
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.provisioners"></a>
 
 ```typescript
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
@@ -1362,7 +1362,7 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -1376,7 +1376,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `network`<sup>Required</sup> <a name="network" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.network"></a>
+##### `network`<sup>Required</sup> <a name="network" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.network"></a>
 
 ```typescript
 public readonly network: string;
@@ -1390,7 +1390,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `peering`<sup>Required</sup> <a name="peering" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.peering"></a>
+##### `peering`<sup>Required</sup> <a name="peering" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.peering"></a>
 
 ```typescript
 public readonly peering: string;
@@ -1404,7 +1404,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `usage`<sup>Required</sup> <a name="usage" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.usage"></a>
+##### `usage`<sup>Required</sup> <a name="usage" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.usage"></a>
 
 ```typescript
 public readonly usage: string;
@@ -1418,13 +1418,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `allocationOptions`<sup>Optional</sup> <a name="allocationOptions" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.allocationOptions"></a>
+##### `allocationOptions`<sup>Optional</sup> <a name="allocationOptions" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.allocationOptions"></a>
 
 ```typescript
 public readonly allocationOptions: NetworkConnectivityInternalRangeAllocationOptions;
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptions">NetworkConnectivityInternalRangeAllocationOptions</a>
+- *Type:* <a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptions">NetworkConnectivityInternalRangeAllocationOptions</a>
 
 allocation_options block.
 
@@ -1432,7 +1432,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.description"></a>
+##### `description`<sup>Optional</sup> <a name="description" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.description"></a>
 
 ```typescript
 public readonly description: string;
@@ -1446,7 +1446,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `excludeCidrRanges`<sup>Optional</sup> <a name="excludeCidrRanges" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.excludeCidrRanges"></a>
+##### `excludeCidrRanges`<sup>Optional</sup> <a name="excludeCidrRanges" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.excludeCidrRanges"></a>
 
 ```typescript
 public readonly excludeCidrRanges: string[];
@@ -1463,7 +1463,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -1478,7 +1478,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
-##### `immutable`<sup>Optional</sup> <a name="immutable" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.immutable"></a>
+##### `immutable`<sup>Optional</sup> <a name="immutable" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.immutable"></a>
 
 ```typescript
 public readonly immutable: boolean | IResolvable;
@@ -1492,7 +1492,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `ipCidrRange`<sup>Optional</sup> <a name="ipCidrRange" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.ipCidrRange"></a>
+##### `ipCidrRange`<sup>Optional</sup> <a name="ipCidrRange" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.ipCidrRange"></a>
 
 ```typescript
 public readonly ipCidrRange: string;
@@ -1509,7 +1509,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `labels`<sup>Optional</sup> <a name="labels" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.labels"></a>
+##### `labels`<sup>Optional</sup> <a name="labels" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.labels"></a>
 
 ```typescript
 public readonly labels: {[ key: string ]: string};
@@ -1526,13 +1526,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `migration`<sup>Optional</sup> <a name="migration" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.migration"></a>
+##### `migration`<sup>Optional</sup> <a name="migration" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.migration"></a>
 
 ```typescript
 public readonly migration: NetworkConnectivityInternalRangeMigration;
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigration">NetworkConnectivityInternalRangeMigration</a>
+- *Type:* <a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigration">NetworkConnectivityInternalRangeMigration</a>
 
 migration block.
 
@@ -1540,7 +1540,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `overlaps`<sup>Optional</sup> <a name="overlaps" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.overlaps"></a>
+##### `overlaps`<sup>Optional</sup> <a name="overlaps" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.overlaps"></a>
 
 ```typescript
 public readonly overlaps: string[];
@@ -1554,7 +1554,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `prefixLength`<sup>Optional</sup> <a name="prefixLength" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.prefixLength"></a>
+##### `prefixLength`<sup>Optional</sup> <a name="prefixLength" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.prefixLength"></a>
 
 ```typescript
 public readonly prefixLength: number;
@@ -1573,7 +1573,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `project`<sup>Optional</sup> <a name="project" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.project"></a>
+##### `project`<sup>Optional</sup> <a name="project" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.project"></a>
 
 ```typescript
 public readonly project: string;
@@ -1585,7 +1585,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `targetCidrRange`<sup>Optional</sup> <a name="targetCidrRange" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.targetCidrRange"></a>
+##### `targetCidrRange`<sup>Optional</sup> <a name="targetCidrRange" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.targetCidrRange"></a>
 
 ```typescript
 public readonly targetCidrRange: string[];
@@ -1602,13 +1602,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig.property.timeouts"></a>
 
 ```typescript
 public readonly timeouts: NetworkConnectivityInternalRangeTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeouts">NetworkConnectivityInternalRangeTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeouts">NetworkConnectivityInternalRangeTimeouts</a>
 
 timeouts block.
 
@@ -1616,12 +1616,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### NetworkConnectivityInternalRangeMigration <a name="NetworkConnectivityInternalRangeMigration" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigration"></a>
+### NetworkConnectivityInternalRangeMigration <a name="NetworkConnectivityInternalRangeMigration" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigration"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigration.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigration.Initializer"></a>
 
 ```typescript
-import { networkConnectivityInternalRange } from '@cdktf/provider-google'
+import { networkConnectivityInternalRange } from '@cdktn/provider-google'
 
 const networkConnectivityInternalRangeMigration: networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigration = { ... }
 ```
@@ -1630,12 +1630,12 @@ const networkConnectivityInternalRangeMigration: networkConnectivityInternalRang
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigration.property.source">source</a></code> | <code>string</code> | Resource path as an URI of the source resource, for example a subnet. |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigration.property.target">target</a></code> | <code>string</code> | Resource path of the target resource. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigration.property.source">source</a></code> | <code>string</code> | Resource path as an URI of the source resource, for example a subnet. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigration.property.target">target</a></code> | <code>string</code> | Resource path of the target resource. |
 
 ---
 
-##### `source`<sup>Required</sup> <a name="source" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigration.property.source"></a>
+##### `source`<sup>Required</sup> <a name="source" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigration.property.source"></a>
 
 ```typescript
 public readonly source: string;
@@ -1653,7 +1653,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `target`<sup>Required</sup> <a name="target" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigration.property.target"></a>
+##### `target`<sup>Required</sup> <a name="target" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigration.property.target"></a>
 
 ```typescript
 public readonly target: string;
@@ -1672,12 +1672,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### NetworkConnectivityInternalRangeTimeouts <a name="NetworkConnectivityInternalRangeTimeouts" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeouts"></a>
+### NetworkConnectivityInternalRangeTimeouts <a name="NetworkConnectivityInternalRangeTimeouts" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeouts"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeouts.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeouts.Initializer"></a>
 
 ```typescript
-import { networkConnectivityInternalRange } from '@cdktf/provider-google'
+import { networkConnectivityInternalRange } from '@cdktn/provider-google'
 
 const networkConnectivityInternalRangeTimeouts: networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeouts = { ... }
 ```
@@ -1686,13 +1686,13 @@ const networkConnectivityInternalRangeTimeouts: networkConnectivityInternalRange
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_connectivity_internal_range#create NetworkConnectivityInternalRange#create}. |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_connectivity_internal_range#delete NetworkConnectivityInternalRange#delete}. |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_connectivity_internal_range#update NetworkConnectivityInternalRange#update}. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_connectivity_internal_range#create NetworkConnectivityInternalRange#create}. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_connectivity_internal_range#delete NetworkConnectivityInternalRange#delete}. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/network_connectivity_internal_range#update NetworkConnectivityInternalRange#update}. |
 
 ---
 
-##### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeouts.property.create"></a>
+##### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeouts.property.create"></a>
 
 ```typescript
 public readonly create: string;
@@ -1704,7 +1704,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeouts.property.delete"></a>
+##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeouts.property.delete"></a>
 
 ```typescript
 public readonly delete: string;
@@ -1716,7 +1716,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeouts.property.update"></a>
+##### `update`<sup>Optional</sup> <a name="update" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeouts.property.update"></a>
 
 ```typescript
 public readonly update: string;
@@ -1730,24 +1730,24 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### NetworkConnectivityInternalRangeAllocationOptionsOutputReference <a name="NetworkConnectivityInternalRangeAllocationOptionsOutputReference" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference"></a>
+### NetworkConnectivityInternalRangeAllocationOptionsOutputReference <a name="NetworkConnectivityInternalRangeAllocationOptionsOutputReference" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.Initializer"></a>
 
 ```typescript
-import { networkConnectivityInternalRange } from '@cdktf/provider-google'
+import { networkConnectivityInternalRange } from '@cdktn/provider-google'
 
 new networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -1755,7 +1755,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
@@ -1767,151 +1767,151 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.resetAllocationStrategy">resetAllocationStrategy</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.resetFirstAvailableRangesLookupSize">resetFirstAvailableRangesLookupSize</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.resetAllocationStrategy">resetAllocationStrategy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.resetFirstAvailableRangesLookupSize">resetFirstAvailableRangesLookupSize</a></code> | *No description.* |
 
 ---
 
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.computeFqn"></a>
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.computeFqn"></a>
 
 ```typescript
 public computeFqn(): string
 ```
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(property: string): IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* string
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.resolve"></a>
 
 ```typescript
 public resolve(_context: IResolveContext): any
@@ -1919,13 +1919,13 @@ public resolve(_context: IResolveContext): any
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.toString"></a>
 
 ```typescript
 public toString(): string
@@ -1935,13 +1935,13 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `resetAllocationStrategy` <a name="resetAllocationStrategy" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.resetAllocationStrategy"></a>
+##### `resetAllocationStrategy` <a name="resetAllocationStrategy" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.resetAllocationStrategy"></a>
 
 ```typescript
 public resetAllocationStrategy(): void
 ```
 
-##### `resetFirstAvailableRangesLookupSize` <a name="resetFirstAvailableRangesLookupSize" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.resetFirstAvailableRangesLookupSize"></a>
+##### `resetFirstAvailableRangesLookupSize` <a name="resetFirstAvailableRangesLookupSize" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.resetFirstAvailableRangesLookupSize"></a>
 
 ```typescript
 public resetFirstAvailableRangesLookupSize(): void
@@ -1952,17 +1952,17 @@ public resetFirstAvailableRangesLookupSize(): void
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.property.allocationStrategyInput">allocationStrategyInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.property.firstAvailableRangesLookupSizeInput">firstAvailableRangesLookupSizeInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.property.allocationStrategy">allocationStrategy</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.property.firstAvailableRangesLookupSize">firstAvailableRangesLookupSize</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptions">NetworkConnectivityInternalRangeAllocationOptions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.property.allocationStrategyInput">allocationStrategyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.property.firstAvailableRangesLookupSizeInput">firstAvailableRangesLookupSizeInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.property.allocationStrategy">allocationStrategy</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.property.firstAvailableRangesLookupSize">firstAvailableRangesLookupSize</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptions">NetworkConnectivityInternalRangeAllocationOptions</a></code> | *No description.* |
 
 ---
 
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.property.creationStack"></a>
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.property.creationStack"></a>
 
 ```typescript
 public readonly creationStack: string[];
@@ -1976,7 +1976,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -1986,7 +1986,7 @@ public readonly fqn: string;
 
 ---
 
-##### `allocationStrategyInput`<sup>Optional</sup> <a name="allocationStrategyInput" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.property.allocationStrategyInput"></a>
+##### `allocationStrategyInput`<sup>Optional</sup> <a name="allocationStrategyInput" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.property.allocationStrategyInput"></a>
 
 ```typescript
 public readonly allocationStrategyInput: string;
@@ -1996,7 +1996,7 @@ public readonly allocationStrategyInput: string;
 
 ---
 
-##### `firstAvailableRangesLookupSizeInput`<sup>Optional</sup> <a name="firstAvailableRangesLookupSizeInput" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.property.firstAvailableRangesLookupSizeInput"></a>
+##### `firstAvailableRangesLookupSizeInput`<sup>Optional</sup> <a name="firstAvailableRangesLookupSizeInput" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.property.firstAvailableRangesLookupSizeInput"></a>
 
 ```typescript
 public readonly firstAvailableRangesLookupSizeInput: number;
@@ -2006,7 +2006,7 @@ public readonly firstAvailableRangesLookupSizeInput: number;
 
 ---
 
-##### `allocationStrategy`<sup>Required</sup> <a name="allocationStrategy" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.property.allocationStrategy"></a>
+##### `allocationStrategy`<sup>Required</sup> <a name="allocationStrategy" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.property.allocationStrategy"></a>
 
 ```typescript
 public readonly allocationStrategy: string;
@@ -2016,7 +2016,7 @@ public readonly allocationStrategy: string;
 
 ---
 
-##### `firstAvailableRangesLookupSize`<sup>Required</sup> <a name="firstAvailableRangesLookupSize" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.property.firstAvailableRangesLookupSize"></a>
+##### `firstAvailableRangesLookupSize`<sup>Required</sup> <a name="firstAvailableRangesLookupSize" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.property.firstAvailableRangesLookupSize"></a>
 
 ```typescript
 public readonly firstAvailableRangesLookupSize: number;
@@ -2026,35 +2026,35 @@ public readonly firstAvailableRangesLookupSize: number;
 
 ---
 
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.property.internalValue"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference.property.internalValue"></a>
 
 ```typescript
 public readonly internalValue: NetworkConnectivityInternalRangeAllocationOptions;
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptions">NetworkConnectivityInternalRangeAllocationOptions</a>
+- *Type:* <a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptions">NetworkConnectivityInternalRangeAllocationOptions</a>
 
 ---
 
 
-### NetworkConnectivityInternalRangeMigrationOutputReference <a name="NetworkConnectivityInternalRangeMigrationOutputReference" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference"></a>
+### NetworkConnectivityInternalRangeMigrationOutputReference <a name="NetworkConnectivityInternalRangeMigrationOutputReference" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.Initializer"></a>
 
 ```typescript
-import { networkConnectivityInternalRange } from '@cdktf/provider-google'
+import { networkConnectivityInternalRange } from '@cdktn/provider-google'
 
 new networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -2062,7 +2062,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
@@ -2074,149 +2074,149 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 
 ---
 
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.computeFqn"></a>
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.computeFqn"></a>
 
 ```typescript
 public computeFqn(): string
 ```
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(property: string): IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* string
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.resolve"></a>
 
 ```typescript
 public resolve(_context: IResolveContext): any
@@ -2224,13 +2224,13 @@ public resolve(_context: IResolveContext): any
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.toString"></a>
 
 ```typescript
 public toString(): string
@@ -2245,17 +2245,17 @@ Returns a reversible string representation.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.property.sourceInput">sourceInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.property.targetInput">targetInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.property.source">source</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.property.target">target</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigration">NetworkConnectivityInternalRangeMigration</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.property.sourceInput">sourceInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.property.targetInput">targetInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.property.source">source</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.property.target">target</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigration">NetworkConnectivityInternalRangeMigration</a></code> | *No description.* |
 
 ---
 
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.property.creationStack"></a>
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.property.creationStack"></a>
 
 ```typescript
 public readonly creationStack: string[];
@@ -2269,7 +2269,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -2279,7 +2279,7 @@ public readonly fqn: string;
 
 ---
 
-##### `sourceInput`<sup>Optional</sup> <a name="sourceInput" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.property.sourceInput"></a>
+##### `sourceInput`<sup>Optional</sup> <a name="sourceInput" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.property.sourceInput"></a>
 
 ```typescript
 public readonly sourceInput: string;
@@ -2289,7 +2289,7 @@ public readonly sourceInput: string;
 
 ---
 
-##### `targetInput`<sup>Optional</sup> <a name="targetInput" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.property.targetInput"></a>
+##### `targetInput`<sup>Optional</sup> <a name="targetInput" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.property.targetInput"></a>
 
 ```typescript
 public readonly targetInput: string;
@@ -2299,7 +2299,7 @@ public readonly targetInput: string;
 
 ---
 
-##### `source`<sup>Required</sup> <a name="source" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.property.source"></a>
+##### `source`<sup>Required</sup> <a name="source" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.property.source"></a>
 
 ```typescript
 public readonly source: string;
@@ -2309,7 +2309,7 @@ public readonly source: string;
 
 ---
 
-##### `target`<sup>Required</sup> <a name="target" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.property.target"></a>
+##### `target`<sup>Required</sup> <a name="target" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.property.target"></a>
 
 ```typescript
 public readonly target: string;
@@ -2319,35 +2319,35 @@ public readonly target: string;
 
 ---
 
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.property.internalValue"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference.property.internalValue"></a>
 
 ```typescript
 public readonly internalValue: NetworkConnectivityInternalRangeMigration;
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigration">NetworkConnectivityInternalRangeMigration</a>
+- *Type:* <a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigration">NetworkConnectivityInternalRangeMigration</a>
 
 ---
 
 
-### NetworkConnectivityInternalRangeTimeoutsOutputReference <a name="NetworkConnectivityInternalRangeTimeoutsOutputReference" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference"></a>
+### NetworkConnectivityInternalRangeTimeoutsOutputReference <a name="NetworkConnectivityInternalRangeTimeoutsOutputReference" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.Initializer"></a>
 
 ```typescript
-import { networkConnectivityInternalRange } from '@cdktf/provider-google'
+import { networkConnectivityInternalRange } from '@cdktn/provider-google'
 
 new networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -2355,7 +2355,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
@@ -2367,152 +2367,152 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.resetCreate">resetCreate</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.resetDelete">resetDelete</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.resetUpdate">resetUpdate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.resetCreate">resetCreate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.resetDelete">resetDelete</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.resetUpdate">resetUpdate</a></code> | *No description.* |
 
 ---
 
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.computeFqn"></a>
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.computeFqn"></a>
 
 ```typescript
 public computeFqn(): string
 ```
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(property: string): IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* string
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.resolve"></a>
 
 ```typescript
 public resolve(_context: IResolveContext): any
@@ -2520,13 +2520,13 @@ public resolve(_context: IResolveContext): any
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.toString"></a>
 
 ```typescript
 public toString(): string
@@ -2536,19 +2536,19 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `resetCreate` <a name="resetCreate" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.resetCreate"></a>
+##### `resetCreate` <a name="resetCreate" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.resetCreate"></a>
 
 ```typescript
 public resetCreate(): void
 ```
 
-##### `resetDelete` <a name="resetDelete" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.resetDelete"></a>
+##### `resetDelete` <a name="resetDelete" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.resetDelete"></a>
 
 ```typescript
 public resetDelete(): void
 ```
 
-##### `resetUpdate` <a name="resetUpdate" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.resetUpdate"></a>
+##### `resetUpdate` <a name="resetUpdate" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.resetUpdate"></a>
 
 ```typescript
 public resetUpdate(): void
@@ -2559,19 +2559,19 @@ public resetUpdate(): void
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.property.createInput">createInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.property.deleteInput">deleteInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.property.updateInput">updateInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeouts">NetworkConnectivityInternalRangeTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.property.createInput">createInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.property.deleteInput">deleteInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.property.updateInput">updateInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeouts">NetworkConnectivityInternalRangeTimeouts</a></code> | *No description.* |
 
 ---
 
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.property.creationStack"></a>
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.property.creationStack"></a>
 
 ```typescript
 public readonly creationStack: string[];
@@ -2585,7 +2585,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -2595,7 +2595,7 @@ public readonly fqn: string;
 
 ---
 
-##### `createInput`<sup>Optional</sup> <a name="createInput" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.property.createInput"></a>
+##### `createInput`<sup>Optional</sup> <a name="createInput" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.property.createInput"></a>
 
 ```typescript
 public readonly createInput: string;
@@ -2605,7 +2605,7 @@ public readonly createInput: string;
 
 ---
 
-##### `deleteInput`<sup>Optional</sup> <a name="deleteInput" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.property.deleteInput"></a>
+##### `deleteInput`<sup>Optional</sup> <a name="deleteInput" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.property.deleteInput"></a>
 
 ```typescript
 public readonly deleteInput: string;
@@ -2615,7 +2615,7 @@ public readonly deleteInput: string;
 
 ---
 
-##### `updateInput`<sup>Optional</sup> <a name="updateInput" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.property.updateInput"></a>
+##### `updateInput`<sup>Optional</sup> <a name="updateInput" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.property.updateInput"></a>
 
 ```typescript
 public readonly updateInput: string;
@@ -2625,7 +2625,7 @@ public readonly updateInput: string;
 
 ---
 
-##### `create`<sup>Required</sup> <a name="create" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.property.create"></a>
+##### `create`<sup>Required</sup> <a name="create" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.property.create"></a>
 
 ```typescript
 public readonly create: string;
@@ -2635,7 +2635,7 @@ public readonly create: string;
 
 ---
 
-##### `delete`<sup>Required</sup> <a name="delete" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.property.delete"></a>
+##### `delete`<sup>Required</sup> <a name="delete" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.property.delete"></a>
 
 ```typescript
 public readonly delete: string;
@@ -2645,7 +2645,7 @@ public readonly delete: string;
 
 ---
 
-##### `update`<sup>Required</sup> <a name="update" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.property.update"></a>
+##### `update`<sup>Required</sup> <a name="update" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.property.update"></a>
 
 ```typescript
 public readonly update: string;
@@ -2655,13 +2655,13 @@ public readonly update: string;
 
 ---
 
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.property.internalValue"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
 public readonly internalValue: IResolvable | NetworkConnectivityInternalRangeTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeouts">NetworkConnectivityInternalRangeTimeouts</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeouts">NetworkConnectivityInternalRangeTimeouts</a>
 
 ---
 

@@ -1,15 +1,15 @@
-# `tpuNode` Submodule <a name="`tpuNode` Submodule" id="@cdktf/provider-google.tpuNode"></a>
+# `tpuNode` Submodule <a name="`tpuNode` Submodule" id="@cdktn/provider-google.tpuNode"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### TpuNode <a name="TpuNode" id="@cdktf/provider-google.tpuNode.TpuNode"></a>
+### TpuNode <a name="TpuNode" id="@cdktn/provider-google.tpuNode.TpuNode"></a>
 
 Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/tpu_node google_tpu_node}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.tpuNode.TpuNode.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.tpuNode.TpuNode.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import tpu_node
+from cdktn_provider_google import tpu_node
 
 tpuNode.TpuNode(
   scope: Construct,
@@ -39,32 +39,32 @@ tpuNode.TpuNode(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.Initializer.parameter.acceleratorType">accelerator_type</a></code> | <code>str</code> | The type of hardware accelerators associated with this node. |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.Initializer.parameter.name">name</a></code> | <code>str</code> | The immutable name of the TPU. |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.Initializer.parameter.tensorflowVersion">tensorflow_version</a></code> | <code>str</code> | The version of Tensorflow running in the Node. |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.Initializer.parameter.cidrBlock">cidr_block</a></code> | <code>str</code> | The CIDR block that the TPU node will use when selecting an IP address. |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.Initializer.parameter.description">description</a></code> | <code>str</code> | The user-supplied description of the TPU. Maximum of 512 characters. |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/tpu_node#id TpuNode#id}. |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.Initializer.parameter.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Resource labels to represent user provided metadata. |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.Initializer.parameter.network">network</a></code> | <code>str</code> | The name of a network to peer the TPU node to. |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/tpu_node#project TpuNode#project}. |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.Initializer.parameter.schedulingConfig">scheduling_config</a></code> | <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeSchedulingConfig">TpuNodeSchedulingConfig</a></code> | scheduling_config block. |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeTimeouts">TpuNodeTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.Initializer.parameter.useServiceNetworking">use_service_networking</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether the VPC peering for the node is set up through Service Networking API. |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.Initializer.parameter.zone">zone</a></code> | <code>str</code> | The GCP location for the TPU. If it is not provided, the provider zone is used. |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.Initializer.parameter.acceleratorType">accelerator_type</a></code> | <code>str</code> | The type of hardware accelerators associated with this node. |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.Initializer.parameter.name">name</a></code> | <code>str</code> | The immutable name of the TPU. |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.Initializer.parameter.tensorflowVersion">tensorflow_version</a></code> | <code>str</code> | The version of Tensorflow running in the Node. |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.Initializer.parameter.cidrBlock">cidr_block</a></code> | <code>str</code> | The CIDR block that the TPU node will use when selecting an IP address. |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.Initializer.parameter.description">description</a></code> | <code>str</code> | The user-supplied description of the TPU. Maximum of 512 characters. |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/tpu_node#id TpuNode#id}. |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.Initializer.parameter.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Resource labels to represent user provided metadata. |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.Initializer.parameter.network">network</a></code> | <code>str</code> | The name of a network to peer the TPU node to. |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/tpu_node#project TpuNode#project}. |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.Initializer.parameter.schedulingConfig">scheduling_config</a></code> | <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeSchedulingConfig">TpuNodeSchedulingConfig</a></code> | scheduling_config block. |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeTimeouts">TpuNodeTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.Initializer.parameter.useServiceNetworking">use_service_networking</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether the VPC peering for the node is set up through Service Networking API. |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.Initializer.parameter.zone">zone</a></code> | <code>str</code> | The GCP location for the TPU. If it is not provided, the provider zone is used. |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-google.tpuNode.TpuNode.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.tpuNode.TpuNode.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -72,7 +72,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.tpuNode.TpuNode.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.tpuNode.TpuNode.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -82,49 +82,49 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-google.tpuNode.TpuNode.Initializer.parameter.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.tpuNode.TpuNode.Initializer.parameter.connection"></a>
 
 - *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-google.tpuNode.TpuNode.Initializer.parameter.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.tpuNode.TpuNode.Initializer.parameter.count"></a>
 
 - *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-google.tpuNode.TpuNode.Initializer.parameter.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.tpuNode.TpuNode.Initializer.parameter.dependsOn"></a>
 
 - *Type:* typing.List[cdktf.ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-google.tpuNode.TpuNode.Initializer.parameter.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.tpuNode.TpuNode.Initializer.parameter.forEach"></a>
 
 - *Type:* cdktf.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-google.tpuNode.TpuNode.Initializer.parameter.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.tpuNode.TpuNode.Initializer.parameter.lifecycle"></a>
 
 - *Type:* cdktf.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.tpuNode.TpuNode.Initializer.parameter.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.tpuNode.TpuNode.Initializer.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-google.tpuNode.TpuNode.Initializer.parameter.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.tpuNode.TpuNode.Initializer.parameter.provisioners"></a>
 
 - *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
-##### `accelerator_type`<sup>Required</sup> <a name="accelerator_type" id="@cdktf/provider-google.tpuNode.TpuNode.Initializer.parameter.acceleratorType"></a>
+##### `accelerator_type`<sup>Required</sup> <a name="accelerator_type" id="@cdktn/provider-google.tpuNode.TpuNode.Initializer.parameter.acceleratorType"></a>
 
 - *Type:* str
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-google.tpuNode.TpuNode.Initializer.parameter.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-google.tpuNode.TpuNode.Initializer.parameter.name"></a>
 
 - *Type:* str
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `tensorflow_version`<sup>Required</sup> <a name="tensorflow_version" id="@cdktf/provider-google.tpuNode.TpuNode.Initializer.parameter.tensorflowVersion"></a>
+##### `tensorflow_version`<sup>Required</sup> <a name="tensorflow_version" id="@cdktn/provider-google.tpuNode.TpuNode.Initializer.parameter.tensorflowVersion"></a>
 
 - *Type:* str
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `cidr_block`<sup>Optional</sup> <a name="cidr_block" id="@cdktf/provider-google.tpuNode.TpuNode.Initializer.parameter.cidrBlock"></a>
+##### `cidr_block`<sup>Optional</sup> <a name="cidr_block" id="@cdktn/provider-google.tpuNode.TpuNode.Initializer.parameter.cidrBlock"></a>
 
 - *Type:* str
 
@@ -173,7 +173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-google.tpuNode.TpuNode.Initializer.parameter.description"></a>
+##### `description`<sup>Optional</sup> <a name="description" id="@cdktn/provider-google.tpuNode.TpuNode.Initializer.parameter.description"></a>
 
 - *Type:* str
 
@@ -183,7 +183,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-google.tpuNode.TpuNode.Initializer.parameter.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-google.tpuNode.TpuNode.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -194,7 +194,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
-##### `labels`<sup>Optional</sup> <a name="labels" id="@cdktf/provider-google.tpuNode.TpuNode.Initializer.parameter.labels"></a>
+##### `labels`<sup>Optional</sup> <a name="labels" id="@cdktn/provider-google.tpuNode.TpuNode.Initializer.parameter.labels"></a>
 
 - *Type:* typing.Mapping[str]
 
@@ -207,7 +207,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `network`<sup>Optional</sup> <a name="network" id="@cdktf/provider-google.tpuNode.TpuNode.Initializer.parameter.network"></a>
+##### `network`<sup>Optional</sup> <a name="network" id="@cdktn/provider-google.tpuNode.TpuNode.Initializer.parameter.network"></a>
 
 - *Type:* str
 
@@ -222,7 +222,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `project`<sup>Optional</sup> <a name="project" id="@cdktf/provider-google.tpuNode.TpuNode.Initializer.parameter.project"></a>
+##### `project`<sup>Optional</sup> <a name="project" id="@cdktn/provider-google.tpuNode.TpuNode.Initializer.parameter.project"></a>
 
 - *Type:* str
 
@@ -230,9 +230,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `scheduling_config`<sup>Optional</sup> <a name="scheduling_config" id="@cdktf/provider-google.tpuNode.TpuNode.Initializer.parameter.schedulingConfig"></a>
+##### `scheduling_config`<sup>Optional</sup> <a name="scheduling_config" id="@cdktn/provider-google.tpuNode.TpuNode.Initializer.parameter.schedulingConfig"></a>
 
-- *Type:* <a href="#@cdktf/provider-google.tpuNode.TpuNodeSchedulingConfig">TpuNodeSchedulingConfig</a>
+- *Type:* <a href="#@cdktn/provider-google.tpuNode.TpuNodeSchedulingConfig">TpuNodeSchedulingConfig</a>
 
 scheduling_config block.
 
@@ -240,9 +240,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-google.tpuNode.TpuNode.Initializer.parameter.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-google.tpuNode.TpuNode.Initializer.parameter.timeouts"></a>
 
-- *Type:* <a href="#@cdktf/provider-google.tpuNode.TpuNodeTimeouts">TpuNodeTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-google.tpuNode.TpuNodeTimeouts">TpuNodeTimeouts</a>
 
 timeouts block.
 
@@ -250,7 +250,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `use_service_networking`<sup>Optional</sup> <a name="use_service_networking" id="@cdktf/provider-google.tpuNode.TpuNode.Initializer.parameter.useServiceNetworking"></a>
+##### `use_service_networking`<sup>Optional</sup> <a name="use_service_networking" id="@cdktn/provider-google.tpuNode.TpuNode.Initializer.parameter.useServiceNetworking"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
@@ -264,7 +264,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `zone`<sup>Optional</sup> <a name="zone" id="@cdktf/provider-google.tpuNode.TpuNode.Initializer.parameter.zone"></a>
+##### `zone`<sup>Optional</sup> <a name="zone" id="@cdktn/provider-google.tpuNode.TpuNode.Initializer.parameter.zone"></a>
 
 - *Type:* str
 
@@ -278,45 +278,45 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.toString">to_string</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.addOverride">add_override</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.toMetadata">to_metadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.hasResourceMove">has_resource_move</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.importFrom">import_from</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.putSchedulingConfig">put_scheduling_config</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.putTimeouts">put_timeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.resetCidrBlock">reset_cidr_block</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.resetDescription">reset_description</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.resetId">reset_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.resetLabels">reset_labels</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.resetNetwork">reset_network</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.resetProject">reset_project</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.resetSchedulingConfig">reset_scheduling_config</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.resetTimeouts">reset_timeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.resetUseServiceNetworking">reset_use_service_networking</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.resetZone">reset_zone</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.toString">to_string</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.addOverride">add_override</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.toMetadata">to_metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.hasResourceMove">has_resource_move</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.importFrom">import_from</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.putSchedulingConfig">put_scheduling_config</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.resetCidrBlock">reset_cidr_block</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.resetDescription">reset_description</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.resetLabels">reset_labels</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.resetNetwork">reset_network</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.resetProject">reset_project</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.resetSchedulingConfig">reset_scheduling_config</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.resetTimeouts">reset_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.resetUseServiceNetworking">reset_use_service_networking</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.resetZone">reset_zone</a></code> | *No description.* |
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-google.tpuNode.TpuNode.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.tpuNode.TpuNode.toString"></a>
 
 ```python
 def to_string() -> str
@@ -324,7 +324,7 @@ def to_string() -> str
 
 Returns a string representation of this construct.
 
-##### `add_override` <a name="add_override" id="@cdktf/provider-google.tpuNode.TpuNode.addOverride"></a>
+##### `add_override` <a name="add_override" id="@cdktn/provider-google.tpuNode.TpuNode.addOverride"></a>
 
 ```python
 def add_override(
@@ -333,19 +333,19 @@ def add_override(
 ) -> None
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-google.tpuNode.TpuNode.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-google.tpuNode.TpuNode.addOverride.parameter.path"></a>
 
 - *Type:* str
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google.tpuNode.TpuNode.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.tpuNode.TpuNode.addOverride.parameter.value"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `override_logical_id` <a name="override_logical_id" id="@cdktf/provider-google.tpuNode.TpuNode.overrideLogicalId"></a>
+##### `override_logical_id` <a name="override_logical_id" id="@cdktn/provider-google.tpuNode.TpuNode.overrideLogicalId"></a>
 
 ```python
 def override_logical_id(
@@ -355,7 +355,7 @@ def override_logical_id(
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktf/provider-google.tpuNode.TpuNode.overrideLogicalId.parameter.newLogicalId"></a>
+###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktn/provider-google.tpuNode.TpuNode.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* str
 
@@ -363,7 +363,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktf/provider-google.tpuNode.TpuNode.resetOverrideLogicalId"></a>
+##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktn/provider-google.tpuNode.TpuNode.resetOverrideLogicalId"></a>
 
 ```python
 def reset_override_logical_id() -> None
@@ -371,19 +371,19 @@ def reset_override_logical_id() -> None
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktf/provider-google.tpuNode.TpuNode.toHclTerraform"></a>
+##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktn/provider-google.tpuNode.TpuNode.toHclTerraform"></a>
 
 ```python
 def to_hcl_terraform() -> typing.Any
 ```
 
-##### `to_metadata` <a name="to_metadata" id="@cdktf/provider-google.tpuNode.TpuNode.toMetadata"></a>
+##### `to_metadata` <a name="to_metadata" id="@cdktn/provider-google.tpuNode.TpuNode.toMetadata"></a>
 
 ```python
 def to_metadata() -> typing.Any
 ```
 
-##### `to_terraform` <a name="to_terraform" id="@cdktf/provider-google.tpuNode.TpuNode.toTerraform"></a>
+##### `to_terraform` <a name="to_terraform" id="@cdktn/provider-google.tpuNode.TpuNode.toTerraform"></a>
 
 ```python
 def to_terraform() -> typing.Any
@@ -391,7 +391,7 @@ def to_terraform() -> typing.Any
 
 Adds this resource to the terraform JSON output.
 
-##### `add_move_target` <a name="add_move_target" id="@cdktf/provider-google.tpuNode.TpuNode.addMoveTarget"></a>
+##### `add_move_target` <a name="add_move_target" id="@cdktn/provider-google.tpuNode.TpuNode.addMoveTarget"></a>
 
 ```python
 def add_move_target(
@@ -401,7 +401,7 @@ def add_move_target(
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-google.tpuNode.TpuNode.addMoveTarget.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-google.tpuNode.TpuNode.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -409,7 +409,7 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-google.tpuNode.TpuNode.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.tpuNode.TpuNode.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -417,13 +417,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.tpuNode.TpuNode.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.tpuNode.TpuNode.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-google.tpuNode.TpuNode.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.tpuNode.TpuNode.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -431,13 +431,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.tpuNode.TpuNode.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.tpuNode.TpuNode.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-google.tpuNode.TpuNode.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.tpuNode.TpuNode.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -445,13 +445,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.tpuNode.TpuNode.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.tpuNode.TpuNode.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-google.tpuNode.TpuNode.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.tpuNode.TpuNode.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -459,13 +459,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.tpuNode.TpuNode.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.tpuNode.TpuNode.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-google.tpuNode.TpuNode.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.tpuNode.TpuNode.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -473,13 +473,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.tpuNode.TpuNode.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.tpuNode.TpuNode.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-google.tpuNode.TpuNode.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.tpuNode.TpuNode.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -487,13 +487,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.tpuNode.TpuNode.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.tpuNode.TpuNode.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-google.tpuNode.TpuNode.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.tpuNode.TpuNode.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -501,13 +501,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.tpuNode.TpuNode.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.tpuNode.TpuNode.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-google.tpuNode.TpuNode.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.tpuNode.TpuNode.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -515,13 +515,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.tpuNode.TpuNode.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.tpuNode.TpuNode.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-google.tpuNode.TpuNode.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.tpuNode.TpuNode.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -529,19 +529,19 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.tpuNode.TpuNode.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.tpuNode.TpuNode.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-google.tpuNode.TpuNode.hasResourceMove"></a>
+##### `has_resource_move` <a name="has_resource_move" id="@cdktn/provider-google.tpuNode.TpuNode.hasResourceMove"></a>
 
 ```python
 def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `import_from` <a name="import_from" id="@cdktf/provider-google.tpuNode.TpuNode.importFrom"></a>
+##### `import_from` <a name="import_from" id="@cdktn/provider-google.tpuNode.TpuNode.importFrom"></a>
 
 ```python
 def import_from(
@@ -550,19 +550,19 @@ def import_from(
 ) -> None
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.tpuNode.TpuNode.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.tpuNode.TpuNode.importFrom.parameter.id"></a>
 
 - *Type:* str
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.tpuNode.TpuNode.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.tpuNode.TpuNode.importFrom.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-google.tpuNode.TpuNode.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.tpuNode.TpuNode.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -570,13 +570,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.tpuNode.TpuNode.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.tpuNode.TpuNode.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `move_from_id` <a name="move_from_id" id="@cdktf/provider-google.tpuNode.TpuNode.moveFromId"></a>
+##### `move_from_id` <a name="move_from_id" id="@cdktn/provider-google.tpuNode.TpuNode.moveFromId"></a>
 
 ```python
 def move_from_id(
@@ -588,7 +588,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.tpuNode.TpuNode.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.tpuNode.TpuNode.moveFromId.parameter.id"></a>
 
 - *Type:* str
 
@@ -596,7 +596,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `move_to` <a name="move_to" id="@cdktf/provider-google.tpuNode.TpuNode.moveTo"></a>
+##### `move_to` <a name="move_to" id="@cdktn/provider-google.tpuNode.TpuNode.moveTo"></a>
 
 ```python
 def move_to(
@@ -607,7 +607,7 @@ def move_to(
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-google.tpuNode.TpuNode.moveTo.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-google.tpuNode.TpuNode.moveTo.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -615,7 +615,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-google.tpuNode.TpuNode.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-google.tpuNode.TpuNode.moveTo.parameter.index"></a>
 
 - *Type:* str | typing.Union[int, float]
 
@@ -623,7 +623,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `move_to_id` <a name="move_to_id" id="@cdktf/provider-google.tpuNode.TpuNode.moveToId"></a>
+##### `move_to_id` <a name="move_to_id" id="@cdktn/provider-google.tpuNode.TpuNode.moveToId"></a>
 
 ```python
 def move_to_id(
@@ -633,7 +633,7 @@ def move_to_id(
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.tpuNode.TpuNode.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.tpuNode.TpuNode.moveToId.parameter.id"></a>
 
 - *Type:* str
 
@@ -641,7 +641,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `put_scheduling_config` <a name="put_scheduling_config" id="@cdktf/provider-google.tpuNode.TpuNode.putSchedulingConfig"></a>
+##### `put_scheduling_config` <a name="put_scheduling_config" id="@cdktn/provider-google.tpuNode.TpuNode.putSchedulingConfig"></a>
 
 ```python
 def put_scheduling_config(
@@ -649,7 +649,7 @@ def put_scheduling_config(
 ) -> None
 ```
 
-###### `preemptible`<sup>Required</sup> <a name="preemptible" id="@cdktf/provider-google.tpuNode.TpuNode.putSchedulingConfig.parameter.preemptible"></a>
+###### `preemptible`<sup>Required</sup> <a name="preemptible" id="@cdktn/provider-google.tpuNode.TpuNode.putSchedulingConfig.parameter.preemptible"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
@@ -659,7 +659,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `put_timeouts` <a name="put_timeouts" id="@cdktf/provider-google.tpuNode.TpuNode.putTimeouts"></a>
+##### `put_timeouts` <a name="put_timeouts" id="@cdktn/provider-google.tpuNode.TpuNode.putTimeouts"></a>
 
 ```python
 def put_timeouts(
@@ -669,7 +669,7 @@ def put_timeouts(
 ) -> None
 ```
 
-###### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-google.tpuNode.TpuNode.putTimeouts.parameter.create"></a>
+###### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-google.tpuNode.TpuNode.putTimeouts.parameter.create"></a>
 
 - *Type:* str
 
@@ -677,7 +677,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-google.tpuNode.TpuNode.putTimeouts.parameter.delete"></a>
+###### `delete`<sup>Optional</sup> <a name="delete" id="@cdktn/provider-google.tpuNode.TpuNode.putTimeouts.parameter.delete"></a>
 
 - *Type:* str
 
@@ -685,7 +685,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-google.tpuNode.TpuNode.putTimeouts.parameter.update"></a>
+###### `update`<sup>Optional</sup> <a name="update" id="@cdktn/provider-google.tpuNode.TpuNode.putTimeouts.parameter.update"></a>
 
 - *Type:* str
 
@@ -693,61 +693,61 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `reset_cidr_block` <a name="reset_cidr_block" id="@cdktf/provider-google.tpuNode.TpuNode.resetCidrBlock"></a>
+##### `reset_cidr_block` <a name="reset_cidr_block" id="@cdktn/provider-google.tpuNode.TpuNode.resetCidrBlock"></a>
 
 ```python
 def reset_cidr_block() -> None
 ```
 
-##### `reset_description` <a name="reset_description" id="@cdktf/provider-google.tpuNode.TpuNode.resetDescription"></a>
+##### `reset_description` <a name="reset_description" id="@cdktn/provider-google.tpuNode.TpuNode.resetDescription"></a>
 
 ```python
 def reset_description() -> None
 ```
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-google.tpuNode.TpuNode.resetId"></a>
+##### `reset_id` <a name="reset_id" id="@cdktn/provider-google.tpuNode.TpuNode.resetId"></a>
 
 ```python
 def reset_id() -> None
 ```
 
-##### `reset_labels` <a name="reset_labels" id="@cdktf/provider-google.tpuNode.TpuNode.resetLabels"></a>
+##### `reset_labels` <a name="reset_labels" id="@cdktn/provider-google.tpuNode.TpuNode.resetLabels"></a>
 
 ```python
 def reset_labels() -> None
 ```
 
-##### `reset_network` <a name="reset_network" id="@cdktf/provider-google.tpuNode.TpuNode.resetNetwork"></a>
+##### `reset_network` <a name="reset_network" id="@cdktn/provider-google.tpuNode.TpuNode.resetNetwork"></a>
 
 ```python
 def reset_network() -> None
 ```
 
-##### `reset_project` <a name="reset_project" id="@cdktf/provider-google.tpuNode.TpuNode.resetProject"></a>
+##### `reset_project` <a name="reset_project" id="@cdktn/provider-google.tpuNode.TpuNode.resetProject"></a>
 
 ```python
 def reset_project() -> None
 ```
 
-##### `reset_scheduling_config` <a name="reset_scheduling_config" id="@cdktf/provider-google.tpuNode.TpuNode.resetSchedulingConfig"></a>
+##### `reset_scheduling_config` <a name="reset_scheduling_config" id="@cdktn/provider-google.tpuNode.TpuNode.resetSchedulingConfig"></a>
 
 ```python
 def reset_scheduling_config() -> None
 ```
 
-##### `reset_timeouts` <a name="reset_timeouts" id="@cdktf/provider-google.tpuNode.TpuNode.resetTimeouts"></a>
+##### `reset_timeouts` <a name="reset_timeouts" id="@cdktn/provider-google.tpuNode.TpuNode.resetTimeouts"></a>
 
 ```python
 def reset_timeouts() -> None
 ```
 
-##### `reset_use_service_networking` <a name="reset_use_service_networking" id="@cdktf/provider-google.tpuNode.TpuNode.resetUseServiceNetworking"></a>
+##### `reset_use_service_networking` <a name="reset_use_service_networking" id="@cdktn/provider-google.tpuNode.TpuNode.resetUseServiceNetworking"></a>
 
 ```python
 def reset_use_service_networking() -> None
 ```
 
-##### `reset_zone` <a name="reset_zone" id="@cdktf/provider-google.tpuNode.TpuNode.resetZone"></a>
+##### `reset_zone` <a name="reset_zone" id="@cdktn/provider-google.tpuNode.TpuNode.resetZone"></a>
 
 ```python
 def reset_zone() -> None
@@ -757,17 +757,17 @@ def reset_zone() -> None
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.isTerraformElement">is_terraform_element</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a TpuNode resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.isTerraformElement">is_terraform_element</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a TpuNode resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `is_construct` <a name="is_construct" id="@cdktf/provider-google.tpuNode.TpuNode.isConstruct"></a>
+##### `is_construct` <a name="is_construct" id="@cdktn/provider-google.tpuNode.TpuNode.isConstruct"></a>
 
 ```python
-from cdktf_cdktf_provider_google import tpu_node
+from cdktn_provider_google import tpu_node
 
 tpuNode.TpuNode.is_construct(
   x: typing.Any
@@ -790,7 +790,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.tpuNode.TpuNode.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.tpuNode.TpuNode.isConstruct.parameter.x"></a>
 
 - *Type:* typing.Any
 
@@ -798,42 +798,42 @@ Any object.
 
 ---
 
-##### `is_terraform_element` <a name="is_terraform_element" id="@cdktf/provider-google.tpuNode.TpuNode.isTerraformElement"></a>
+##### `is_terraform_element` <a name="is_terraform_element" id="@cdktn/provider-google.tpuNode.TpuNode.isTerraformElement"></a>
 
 ```python
-from cdktf_cdktf_provider_google import tpu_node
+from cdktn_provider_google import tpu_node
 
 tpuNode.TpuNode.is_terraform_element(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.tpuNode.TpuNode.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.tpuNode.TpuNode.isTerraformElement.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktf/provider-google.tpuNode.TpuNode.isTerraformResource"></a>
+##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktn/provider-google.tpuNode.TpuNode.isTerraformResource"></a>
 
 ```python
-from cdktf_cdktf_provider_google import tpu_node
+from cdktn_provider_google import tpu_node
 
 tpuNode.TpuNode.is_terraform_resource(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.tpuNode.TpuNode.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.tpuNode.TpuNode.isTerraformResource.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktf/provider-google.tpuNode.TpuNode.generateConfigForImport"></a>
+##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktn/provider-google.tpuNode.TpuNode.generateConfigForImport"></a>
 
 ```python
-from cdktf_cdktf_provider_google import tpu_node
+from cdktn_provider_google import tpu_node
 
 tpuNode.TpuNode.generate_config_for_import(
   scope: Construct,
@@ -845,7 +845,7 @@ tpuNode.TpuNode.generate_config_for_import(
 
 Generates CDKTF code for importing a TpuNode resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-google.tpuNode.TpuNode.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.tpuNode.TpuNode.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -853,7 +853,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktf/provider-google.tpuNode.TpuNode.generateConfigForImport.parameter.importToId"></a>
+###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktn/provider-google.tpuNode.TpuNode.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* str
 
@@ -861,7 +861,7 @@ The construct id used in the generated config for the TpuNode to import.
 
 ---
 
-###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktf/provider-google.tpuNode.TpuNode.generateConfigForImport.parameter.importFromId"></a>
+###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktn/provider-google.tpuNode.TpuNode.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* str
 
@@ -871,7 +871,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.tpuNode.TpuNode.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.tpuNode.TpuNode.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
@@ -883,54 +883,54 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.property.effectiveLabels">effective_labels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.property.networkEndpoints">network_endpoints</a></code> | <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsList">TpuNodeNetworkEndpointsList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.property.schedulingConfig">scheduling_config</a></code> | <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference">TpuNodeSchedulingConfigOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.property.serviceAccount">service_account</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.property.terraformLabels">terraform_labels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeTimeoutsOutputReference">TpuNodeTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.property.acceleratorTypeInput">accelerator_type_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.property.cidrBlockInput">cidr_block_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.property.labelsInput">labels_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.property.networkInput">network_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.property.schedulingConfigInput">scheduling_config_input</a></code> | <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeSchedulingConfig">TpuNodeSchedulingConfig</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.property.tensorflowVersionInput">tensorflow_version_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-google.tpuNode.TpuNodeTimeouts">TpuNodeTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.property.useServiceNetworkingInput">use_service_networking_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.property.zoneInput">zone_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.property.acceleratorType">accelerator_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.property.cidrBlock">cidr_block</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.property.description">description</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.property.network">network</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.property.project">project</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.property.tensorflowVersion">tensorflow_version</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.property.useServiceNetworking">use_service_networking</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.property.zone">zone</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.property.effectiveLabels">effective_labels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.property.networkEndpoints">network_endpoints</a></code> | <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsList">TpuNodeNetworkEndpointsList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.property.schedulingConfig">scheduling_config</a></code> | <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference">TpuNodeSchedulingConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.property.serviceAccount">service_account</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.property.terraformLabels">terraform_labels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeTimeoutsOutputReference">TpuNodeTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.property.acceleratorTypeInput">accelerator_type_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.property.cidrBlockInput">cidr_block_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.property.labelsInput">labels_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.property.networkInput">network_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.property.schedulingConfigInput">scheduling_config_input</a></code> | <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeSchedulingConfig">TpuNodeSchedulingConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.property.tensorflowVersionInput">tensorflow_version_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.tpuNode.TpuNodeTimeouts">TpuNodeTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.property.useServiceNetworkingInput">use_service_networking_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.property.zoneInput">zone_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.property.acceleratorType">accelerator_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.property.cidrBlock">cidr_block</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.property.description">description</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.property.network">network</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.property.project">project</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.property.tensorflowVersion">tensorflow_version</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.property.useServiceNetworking">use_service_networking</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.property.zone">zone</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-google.tpuNode.TpuNode.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-google.tpuNode.TpuNode.property.node"></a>
 
 ```python
 node: Node
@@ -942,7 +942,7 @@ The tree node.
 
 ---
 
-##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktf/provider-google.tpuNode.TpuNode.property.cdktfStack"></a>
+##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktn/provider-google.tpuNode.TpuNode.property.cdktfStack"></a>
 
 ```python
 cdktf_stack: TerraformStack
@@ -952,7 +952,7 @@ cdktf_stack: TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google.tpuNode.TpuNode.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.tpuNode.TpuNode.property.fqn"></a>
 
 ```python
 fqn: str
@@ -962,7 +962,7 @@ fqn: str
 
 ---
 
-##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktf/provider-google.tpuNode.TpuNode.property.friendlyUniqueId"></a>
+##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktn/provider-google.tpuNode.TpuNode.property.friendlyUniqueId"></a>
 
 ```python
 friendly_unique_id: str
@@ -972,7 +972,7 @@ friendly_unique_id: str
 
 ---
 
-##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktf/provider-google.tpuNode.TpuNode.property.terraformMetaArguments"></a>
+##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktn/provider-google.tpuNode.TpuNode.property.terraformMetaArguments"></a>
 
 ```python
 terraform_meta_arguments: typing.Mapping[typing.Any]
@@ -982,7 +982,7 @@ terraform_meta_arguments: typing.Mapping[typing.Any]
 
 ---
 
-##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktf/provider-google.tpuNode.TpuNode.property.terraformResourceType"></a>
+##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktn/provider-google.tpuNode.TpuNode.property.terraformResourceType"></a>
 
 ```python
 terraform_resource_type: str
@@ -992,7 +992,7 @@ terraform_resource_type: str
 
 ---
 
-##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktf/provider-google.tpuNode.TpuNode.property.terraformGeneratorMetadata"></a>
+##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktn/provider-google.tpuNode.TpuNode.property.terraformGeneratorMetadata"></a>
 
 ```python
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
@@ -1002,7 +1002,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-google.tpuNode.TpuNode.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.tpuNode.TpuNode.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
@@ -1012,7 +1012,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-google.tpuNode.TpuNode.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.tpuNode.TpuNode.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -1022,7 +1022,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-google.tpuNode.TpuNode.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.tpuNode.TpuNode.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[str]
@@ -1032,7 +1032,7 @@ depends_on: typing.List[str]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-google.tpuNode.TpuNode.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.tpuNode.TpuNode.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -1042,7 +1042,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-google.tpuNode.TpuNode.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.tpuNode.TpuNode.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -1052,7 +1052,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.tpuNode.TpuNode.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.tpuNode.TpuNode.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -1062,7 +1062,7 @@ provider: TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-google.tpuNode.TpuNode.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.tpuNode.TpuNode.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
@@ -1072,7 +1072,7 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `effective_labels`<sup>Required</sup> <a name="effective_labels" id="@cdktf/provider-google.tpuNode.TpuNode.property.effectiveLabels"></a>
+##### `effective_labels`<sup>Required</sup> <a name="effective_labels" id="@cdktn/provider-google.tpuNode.TpuNode.property.effectiveLabels"></a>
 
 ```python
 effective_labels: StringMap
@@ -1082,27 +1082,27 @@ effective_labels: StringMap
 
 ---
 
-##### `network_endpoints`<sup>Required</sup> <a name="network_endpoints" id="@cdktf/provider-google.tpuNode.TpuNode.property.networkEndpoints"></a>
+##### `network_endpoints`<sup>Required</sup> <a name="network_endpoints" id="@cdktn/provider-google.tpuNode.TpuNode.property.networkEndpoints"></a>
 
 ```python
 network_endpoints: TpuNodeNetworkEndpointsList
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsList">TpuNodeNetworkEndpointsList</a>
+- *Type:* <a href="#@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsList">TpuNodeNetworkEndpointsList</a>
 
 ---
 
-##### `scheduling_config`<sup>Required</sup> <a name="scheduling_config" id="@cdktf/provider-google.tpuNode.TpuNode.property.schedulingConfig"></a>
+##### `scheduling_config`<sup>Required</sup> <a name="scheduling_config" id="@cdktn/provider-google.tpuNode.TpuNode.property.schedulingConfig"></a>
 
 ```python
 scheduling_config: TpuNodeSchedulingConfigOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference">TpuNodeSchedulingConfigOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference">TpuNodeSchedulingConfigOutputReference</a>
 
 ---
 
-##### `service_account`<sup>Required</sup> <a name="service_account" id="@cdktf/provider-google.tpuNode.TpuNode.property.serviceAccount"></a>
+##### `service_account`<sup>Required</sup> <a name="service_account" id="@cdktn/provider-google.tpuNode.TpuNode.property.serviceAccount"></a>
 
 ```python
 service_account: str
@@ -1112,7 +1112,7 @@ service_account: str
 
 ---
 
-##### `terraform_labels`<sup>Required</sup> <a name="terraform_labels" id="@cdktf/provider-google.tpuNode.TpuNode.property.terraformLabels"></a>
+##### `terraform_labels`<sup>Required</sup> <a name="terraform_labels" id="@cdktn/provider-google.tpuNode.TpuNode.property.terraformLabels"></a>
 
 ```python
 terraform_labels: StringMap
@@ -1122,17 +1122,17 @@ terraform_labels: StringMap
 
 ---
 
-##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktf/provider-google.tpuNode.TpuNode.property.timeouts"></a>
+##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktn/provider-google.tpuNode.TpuNode.property.timeouts"></a>
 
 ```python
 timeouts: TpuNodeTimeoutsOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.tpuNode.TpuNodeTimeoutsOutputReference">TpuNodeTimeoutsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-google.tpuNode.TpuNodeTimeoutsOutputReference">TpuNodeTimeoutsOutputReference</a>
 
 ---
 
-##### `accelerator_type_input`<sup>Optional</sup> <a name="accelerator_type_input" id="@cdktf/provider-google.tpuNode.TpuNode.property.acceleratorTypeInput"></a>
+##### `accelerator_type_input`<sup>Optional</sup> <a name="accelerator_type_input" id="@cdktn/provider-google.tpuNode.TpuNode.property.acceleratorTypeInput"></a>
 
 ```python
 accelerator_type_input: str
@@ -1142,7 +1142,7 @@ accelerator_type_input: str
 
 ---
 
-##### `cidr_block_input`<sup>Optional</sup> <a name="cidr_block_input" id="@cdktf/provider-google.tpuNode.TpuNode.property.cidrBlockInput"></a>
+##### `cidr_block_input`<sup>Optional</sup> <a name="cidr_block_input" id="@cdktn/provider-google.tpuNode.TpuNode.property.cidrBlockInput"></a>
 
 ```python
 cidr_block_input: str
@@ -1152,7 +1152,7 @@ cidr_block_input: str
 
 ---
 
-##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktf/provider-google.tpuNode.TpuNode.property.descriptionInput"></a>
+##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktn/provider-google.tpuNode.TpuNode.property.descriptionInput"></a>
 
 ```python
 description_input: str
@@ -1162,7 +1162,7 @@ description_input: str
 
 ---
 
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-google.tpuNode.TpuNode.property.idInput"></a>
+##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-google.tpuNode.TpuNode.property.idInput"></a>
 
 ```python
 id_input: str
@@ -1172,7 +1172,7 @@ id_input: str
 
 ---
 
-##### `labels_input`<sup>Optional</sup> <a name="labels_input" id="@cdktf/provider-google.tpuNode.TpuNode.property.labelsInput"></a>
+##### `labels_input`<sup>Optional</sup> <a name="labels_input" id="@cdktn/provider-google.tpuNode.TpuNode.property.labelsInput"></a>
 
 ```python
 labels_input: typing.Mapping[str]
@@ -1182,7 +1182,7 @@ labels_input: typing.Mapping[str]
 
 ---
 
-##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktf/provider-google.tpuNode.TpuNode.property.nameInput"></a>
+##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktn/provider-google.tpuNode.TpuNode.property.nameInput"></a>
 
 ```python
 name_input: str
@@ -1192,7 +1192,7 @@ name_input: str
 
 ---
 
-##### `network_input`<sup>Optional</sup> <a name="network_input" id="@cdktf/provider-google.tpuNode.TpuNode.property.networkInput"></a>
+##### `network_input`<sup>Optional</sup> <a name="network_input" id="@cdktn/provider-google.tpuNode.TpuNode.property.networkInput"></a>
 
 ```python
 network_input: str
@@ -1202,7 +1202,7 @@ network_input: str
 
 ---
 
-##### `project_input`<sup>Optional</sup> <a name="project_input" id="@cdktf/provider-google.tpuNode.TpuNode.property.projectInput"></a>
+##### `project_input`<sup>Optional</sup> <a name="project_input" id="@cdktn/provider-google.tpuNode.TpuNode.property.projectInput"></a>
 
 ```python
 project_input: str
@@ -1212,17 +1212,17 @@ project_input: str
 
 ---
 
-##### `scheduling_config_input`<sup>Optional</sup> <a name="scheduling_config_input" id="@cdktf/provider-google.tpuNode.TpuNode.property.schedulingConfigInput"></a>
+##### `scheduling_config_input`<sup>Optional</sup> <a name="scheduling_config_input" id="@cdktn/provider-google.tpuNode.TpuNode.property.schedulingConfigInput"></a>
 
 ```python
 scheduling_config_input: TpuNodeSchedulingConfig
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.tpuNode.TpuNodeSchedulingConfig">TpuNodeSchedulingConfig</a>
+- *Type:* <a href="#@cdktn/provider-google.tpuNode.TpuNodeSchedulingConfig">TpuNodeSchedulingConfig</a>
 
 ---
 
-##### `tensorflow_version_input`<sup>Optional</sup> <a name="tensorflow_version_input" id="@cdktf/provider-google.tpuNode.TpuNode.property.tensorflowVersionInput"></a>
+##### `tensorflow_version_input`<sup>Optional</sup> <a name="tensorflow_version_input" id="@cdktn/provider-google.tpuNode.TpuNode.property.tensorflowVersionInput"></a>
 
 ```python
 tensorflow_version_input: str
@@ -1232,17 +1232,17 @@ tensorflow_version_input: str
 
 ---
 
-##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-google.tpuNode.TpuNode.property.timeoutsInput"></a>
+##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktn/provider-google.tpuNode.TpuNode.property.timeoutsInput"></a>
 
 ```python
 timeouts_input: IResolvable | TpuNodeTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-google.tpuNode.TpuNodeTimeouts">TpuNodeTimeouts</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.tpuNode.TpuNodeTimeouts">TpuNodeTimeouts</a>
 
 ---
 
-##### `use_service_networking_input`<sup>Optional</sup> <a name="use_service_networking_input" id="@cdktf/provider-google.tpuNode.TpuNode.property.useServiceNetworkingInput"></a>
+##### `use_service_networking_input`<sup>Optional</sup> <a name="use_service_networking_input" id="@cdktn/provider-google.tpuNode.TpuNode.property.useServiceNetworkingInput"></a>
 
 ```python
 use_service_networking_input: bool | IResolvable
@@ -1252,7 +1252,7 @@ use_service_networking_input: bool | IResolvable
 
 ---
 
-##### `zone_input`<sup>Optional</sup> <a name="zone_input" id="@cdktf/provider-google.tpuNode.TpuNode.property.zoneInput"></a>
+##### `zone_input`<sup>Optional</sup> <a name="zone_input" id="@cdktn/provider-google.tpuNode.TpuNode.property.zoneInput"></a>
 
 ```python
 zone_input: str
@@ -1262,7 +1262,7 @@ zone_input: str
 
 ---
 
-##### `accelerator_type`<sup>Required</sup> <a name="accelerator_type" id="@cdktf/provider-google.tpuNode.TpuNode.property.acceleratorType"></a>
+##### `accelerator_type`<sup>Required</sup> <a name="accelerator_type" id="@cdktn/provider-google.tpuNode.TpuNode.property.acceleratorType"></a>
 
 ```python
 accelerator_type: str
@@ -1272,7 +1272,7 @@ accelerator_type: str
 
 ---
 
-##### `cidr_block`<sup>Required</sup> <a name="cidr_block" id="@cdktf/provider-google.tpuNode.TpuNode.property.cidrBlock"></a>
+##### `cidr_block`<sup>Required</sup> <a name="cidr_block" id="@cdktn/provider-google.tpuNode.TpuNode.property.cidrBlock"></a>
 
 ```python
 cidr_block: str
@@ -1282,7 +1282,7 @@ cidr_block: str
 
 ---
 
-##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-google.tpuNode.TpuNode.property.description"></a>
+##### `description`<sup>Required</sup> <a name="description" id="@cdktn/provider-google.tpuNode.TpuNode.property.description"></a>
 
 ```python
 description: str
@@ -1292,7 +1292,7 @@ description: str
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.tpuNode.TpuNode.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.tpuNode.TpuNode.property.id"></a>
 
 ```python
 id: str
@@ -1302,7 +1302,7 @@ id: str
 
 ---
 
-##### `labels`<sup>Required</sup> <a name="labels" id="@cdktf/provider-google.tpuNode.TpuNode.property.labels"></a>
+##### `labels`<sup>Required</sup> <a name="labels" id="@cdktn/provider-google.tpuNode.TpuNode.property.labels"></a>
 
 ```python
 labels: typing.Mapping[str]
@@ -1312,7 +1312,7 @@ labels: typing.Mapping[str]
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-google.tpuNode.TpuNode.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-google.tpuNode.TpuNode.property.name"></a>
 
 ```python
 name: str
@@ -1322,7 +1322,7 @@ name: str
 
 ---
 
-##### `network`<sup>Required</sup> <a name="network" id="@cdktf/provider-google.tpuNode.TpuNode.property.network"></a>
+##### `network`<sup>Required</sup> <a name="network" id="@cdktn/provider-google.tpuNode.TpuNode.property.network"></a>
 
 ```python
 network: str
@@ -1332,7 +1332,7 @@ network: str
 
 ---
 
-##### `project`<sup>Required</sup> <a name="project" id="@cdktf/provider-google.tpuNode.TpuNode.property.project"></a>
+##### `project`<sup>Required</sup> <a name="project" id="@cdktn/provider-google.tpuNode.TpuNode.property.project"></a>
 
 ```python
 project: str
@@ -1342,7 +1342,7 @@ project: str
 
 ---
 
-##### `tensorflow_version`<sup>Required</sup> <a name="tensorflow_version" id="@cdktf/provider-google.tpuNode.TpuNode.property.tensorflowVersion"></a>
+##### `tensorflow_version`<sup>Required</sup> <a name="tensorflow_version" id="@cdktn/provider-google.tpuNode.TpuNode.property.tensorflowVersion"></a>
 
 ```python
 tensorflow_version: str
@@ -1352,7 +1352,7 @@ tensorflow_version: str
 
 ---
 
-##### `use_service_networking`<sup>Required</sup> <a name="use_service_networking" id="@cdktf/provider-google.tpuNode.TpuNode.property.useServiceNetworking"></a>
+##### `use_service_networking`<sup>Required</sup> <a name="use_service_networking" id="@cdktn/provider-google.tpuNode.TpuNode.property.useServiceNetworking"></a>
 
 ```python
 use_service_networking: bool | IResolvable
@@ -1362,7 +1362,7 @@ use_service_networking: bool | IResolvable
 
 ---
 
-##### `zone`<sup>Required</sup> <a name="zone" id="@cdktf/provider-google.tpuNode.TpuNode.property.zone"></a>
+##### `zone`<sup>Required</sup> <a name="zone" id="@cdktn/provider-google.tpuNode.TpuNode.property.zone"></a>
 
 ```python
 zone: str
@@ -1376,11 +1376,11 @@ zone: str
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNode.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNode.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-google.tpuNode.TpuNode.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-google.tpuNode.TpuNode.property.tfResourceType"></a>
 
 ```python
 tfResourceType: str
@@ -1392,12 +1392,12 @@ tfResourceType: str
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### TpuNodeConfig <a name="TpuNodeConfig" id="@cdktf/provider-google.tpuNode.TpuNodeConfig"></a>
+### TpuNodeConfig <a name="TpuNodeConfig" id="@cdktn/provider-google.tpuNode.TpuNodeConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-google.tpuNode.TpuNodeConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.tpuNode.TpuNodeConfig.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import tpu_node
+from cdktn_provider_google import tpu_node
 
 tpuNode.TpuNodeConfig(
   connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
@@ -1427,30 +1427,30 @@ tpuNode.TpuNodeConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeConfig.property.acceleratorType">accelerator_type</a></code> | <code>str</code> | The type of hardware accelerators associated with this node. |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeConfig.property.name">name</a></code> | <code>str</code> | The immutable name of the TPU. |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeConfig.property.tensorflowVersion">tensorflow_version</a></code> | <code>str</code> | The version of Tensorflow running in the Node. |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeConfig.property.cidrBlock">cidr_block</a></code> | <code>str</code> | The CIDR block that the TPU node will use when selecting an IP address. |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeConfig.property.description">description</a></code> | <code>str</code> | The user-supplied description of the TPU. Maximum of 512 characters. |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/tpu_node#id TpuNode#id}. |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeConfig.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Resource labels to represent user provided metadata. |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeConfig.property.network">network</a></code> | <code>str</code> | The name of a network to peer the TPU node to. |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/tpu_node#project TpuNode#project}. |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeConfig.property.schedulingConfig">scheduling_config</a></code> | <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeSchedulingConfig">TpuNodeSchedulingConfig</a></code> | scheduling_config block. |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeTimeouts">TpuNodeTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeConfig.property.useServiceNetworking">use_service_networking</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether the VPC peering for the node is set up through Service Networking API. |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeConfig.property.zone">zone</a></code> | <code>str</code> | The GCP location for the TPU. If it is not provided, the provider zone is used. |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeConfig.property.acceleratorType">accelerator_type</a></code> | <code>str</code> | The type of hardware accelerators associated with this node. |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeConfig.property.name">name</a></code> | <code>str</code> | The immutable name of the TPU. |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeConfig.property.tensorflowVersion">tensorflow_version</a></code> | <code>str</code> | The version of Tensorflow running in the Node. |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeConfig.property.cidrBlock">cidr_block</a></code> | <code>str</code> | The CIDR block that the TPU node will use when selecting an IP address. |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeConfig.property.description">description</a></code> | <code>str</code> | The user-supplied description of the TPU. Maximum of 512 characters. |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/tpu_node#id TpuNode#id}. |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeConfig.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Resource labels to represent user provided metadata. |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeConfig.property.network">network</a></code> | <code>str</code> | The name of a network to peer the TPU node to. |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/tpu_node#project TpuNode#project}. |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeConfig.property.schedulingConfig">scheduling_config</a></code> | <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeSchedulingConfig">TpuNodeSchedulingConfig</a></code> | scheduling_config block. |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeTimeouts">TpuNodeTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeConfig.property.useServiceNetworking">use_service_networking</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether the VPC peering for the node is set up through Service Networking API. |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeConfig.property.zone">zone</a></code> | <code>str</code> | The GCP location for the TPU. If it is not provided, the provider zone is used. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-google.tpuNode.TpuNodeConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.tpuNode.TpuNodeConfig.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
@@ -1460,7 +1460,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-google.tpuNode.TpuNodeConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.tpuNode.TpuNodeConfig.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -1470,7 +1470,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-google.tpuNode.TpuNodeConfig.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.tpuNode.TpuNodeConfig.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[ITerraformDependable]
@@ -1480,7 +1480,7 @@ depends_on: typing.List[ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-google.tpuNode.TpuNodeConfig.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.tpuNode.TpuNodeConfig.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -1490,7 +1490,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-google.tpuNode.TpuNodeConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.tpuNode.TpuNodeConfig.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -1500,7 +1500,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.tpuNode.TpuNodeConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.tpuNode.TpuNodeConfig.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -1510,7 +1510,7 @@ provider: TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-google.tpuNode.TpuNodeConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.tpuNode.TpuNodeConfig.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
@@ -1520,7 +1520,7 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `accelerator_type`<sup>Required</sup> <a name="accelerator_type" id="@cdktf/provider-google.tpuNode.TpuNodeConfig.property.acceleratorType"></a>
+##### `accelerator_type`<sup>Required</sup> <a name="accelerator_type" id="@cdktn/provider-google.tpuNode.TpuNodeConfig.property.acceleratorType"></a>
 
 ```python
 accelerator_type: str
@@ -1534,7 +1534,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-google.tpuNode.TpuNodeConfig.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-google.tpuNode.TpuNodeConfig.property.name"></a>
 
 ```python
 name: str
@@ -1548,7 +1548,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `tensorflow_version`<sup>Required</sup> <a name="tensorflow_version" id="@cdktf/provider-google.tpuNode.TpuNodeConfig.property.tensorflowVersion"></a>
+##### `tensorflow_version`<sup>Required</sup> <a name="tensorflow_version" id="@cdktn/provider-google.tpuNode.TpuNodeConfig.property.tensorflowVersion"></a>
 
 ```python
 tensorflow_version: str
@@ -1562,7 +1562,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `cidr_block`<sup>Optional</sup> <a name="cidr_block" id="@cdktf/provider-google.tpuNode.TpuNodeConfig.property.cidrBlock"></a>
+##### `cidr_block`<sup>Optional</sup> <a name="cidr_block" id="@cdktn/provider-google.tpuNode.TpuNodeConfig.property.cidrBlock"></a>
 
 ```python
 cidr_block: str
@@ -1585,7 +1585,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-google.tpuNode.TpuNodeConfig.property.description"></a>
+##### `description`<sup>Optional</sup> <a name="description" id="@cdktn/provider-google.tpuNode.TpuNodeConfig.property.description"></a>
 
 ```python
 description: str
@@ -1599,7 +1599,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-google.tpuNode.TpuNodeConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-google.tpuNode.TpuNodeConfig.property.id"></a>
 
 ```python
 id: str
@@ -1614,7 +1614,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
-##### `labels`<sup>Optional</sup> <a name="labels" id="@cdktf/provider-google.tpuNode.TpuNodeConfig.property.labels"></a>
+##### `labels`<sup>Optional</sup> <a name="labels" id="@cdktn/provider-google.tpuNode.TpuNodeConfig.property.labels"></a>
 
 ```python
 labels: typing.Mapping[str]
@@ -1631,7 +1631,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `network`<sup>Optional</sup> <a name="network" id="@cdktf/provider-google.tpuNode.TpuNodeConfig.property.network"></a>
+##### `network`<sup>Optional</sup> <a name="network" id="@cdktn/provider-google.tpuNode.TpuNodeConfig.property.network"></a>
 
 ```python
 network: str
@@ -1650,7 +1650,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `project`<sup>Optional</sup> <a name="project" id="@cdktf/provider-google.tpuNode.TpuNodeConfig.property.project"></a>
+##### `project`<sup>Optional</sup> <a name="project" id="@cdktn/provider-google.tpuNode.TpuNodeConfig.property.project"></a>
 
 ```python
 project: str
@@ -1662,13 +1662,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `scheduling_config`<sup>Optional</sup> <a name="scheduling_config" id="@cdktf/provider-google.tpuNode.TpuNodeConfig.property.schedulingConfig"></a>
+##### `scheduling_config`<sup>Optional</sup> <a name="scheduling_config" id="@cdktn/provider-google.tpuNode.TpuNodeConfig.property.schedulingConfig"></a>
 
 ```python
 scheduling_config: TpuNodeSchedulingConfig
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.tpuNode.TpuNodeSchedulingConfig">TpuNodeSchedulingConfig</a>
+- *Type:* <a href="#@cdktn/provider-google.tpuNode.TpuNodeSchedulingConfig">TpuNodeSchedulingConfig</a>
 
 scheduling_config block.
 
@@ -1676,13 +1676,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-google.tpuNode.TpuNodeConfig.property.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-google.tpuNode.TpuNodeConfig.property.timeouts"></a>
 
 ```python
 timeouts: TpuNodeTimeouts
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.tpuNode.TpuNodeTimeouts">TpuNodeTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-google.tpuNode.TpuNodeTimeouts">TpuNodeTimeouts</a>
 
 timeouts block.
 
@@ -1690,7 +1690,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `use_service_networking`<sup>Optional</sup> <a name="use_service_networking" id="@cdktf/provider-google.tpuNode.TpuNodeConfig.property.useServiceNetworking"></a>
+##### `use_service_networking`<sup>Optional</sup> <a name="use_service_networking" id="@cdktn/provider-google.tpuNode.TpuNodeConfig.property.useServiceNetworking"></a>
 
 ```python
 use_service_networking: bool | IResolvable
@@ -1708,7 +1708,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `zone`<sup>Optional</sup> <a name="zone" id="@cdktf/provider-google.tpuNode.TpuNodeConfig.property.zone"></a>
+##### `zone`<sup>Optional</sup> <a name="zone" id="@cdktn/provider-google.tpuNode.TpuNodeConfig.property.zone"></a>
 
 ```python
 zone: str
@@ -1722,23 +1722,23 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### TpuNodeNetworkEndpoints <a name="TpuNodeNetworkEndpoints" id="@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpoints"></a>
+### TpuNodeNetworkEndpoints <a name="TpuNodeNetworkEndpoints" id="@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpoints"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpoints.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpoints.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import tpu_node
+from cdktn_provider_google import tpu_node
 
 tpuNode.TpuNodeNetworkEndpoints()
 ```
 
 
-### TpuNodeSchedulingConfig <a name="TpuNodeSchedulingConfig" id="@cdktf/provider-google.tpuNode.TpuNodeSchedulingConfig"></a>
+### TpuNodeSchedulingConfig <a name="TpuNodeSchedulingConfig" id="@cdktn/provider-google.tpuNode.TpuNodeSchedulingConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-google.tpuNode.TpuNodeSchedulingConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.tpuNode.TpuNodeSchedulingConfig.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import tpu_node
+from cdktn_provider_google import tpu_node
 
 tpuNode.TpuNodeSchedulingConfig(
   preemptible: bool | IResolvable
@@ -1749,11 +1749,11 @@ tpuNode.TpuNodeSchedulingConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeSchedulingConfig.property.preemptible">preemptible</a></code> | <code>bool \| cdktf.IResolvable</code> | Defines whether the TPU instance is preemptible. |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeSchedulingConfig.property.preemptible">preemptible</a></code> | <code>bool \| cdktf.IResolvable</code> | Defines whether the TPU instance is preemptible. |
 
 ---
 
-##### `preemptible`<sup>Required</sup> <a name="preemptible" id="@cdktf/provider-google.tpuNode.TpuNodeSchedulingConfig.property.preemptible"></a>
+##### `preemptible`<sup>Required</sup> <a name="preemptible" id="@cdktn/provider-google.tpuNode.TpuNodeSchedulingConfig.property.preemptible"></a>
 
 ```python
 preemptible: bool | IResolvable
@@ -1767,12 +1767,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### TpuNodeTimeouts <a name="TpuNodeTimeouts" id="@cdktf/provider-google.tpuNode.TpuNodeTimeouts"></a>
+### TpuNodeTimeouts <a name="TpuNodeTimeouts" id="@cdktn/provider-google.tpuNode.TpuNodeTimeouts"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-google.tpuNode.TpuNodeTimeouts.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.tpuNode.TpuNodeTimeouts.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import tpu_node
+from cdktn_provider_google import tpu_node
 
 tpuNode.TpuNodeTimeouts(
   create: str = None,
@@ -1785,13 +1785,13 @@ tpuNode.TpuNodeTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/tpu_node#create TpuNode#create}. |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/tpu_node#delete TpuNode#delete}. |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/tpu_node#update TpuNode#update}. |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/tpu_node#create TpuNode#create}. |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/tpu_node#delete TpuNode#delete}. |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/tpu_node#update TpuNode#update}. |
 
 ---
 
-##### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-google.tpuNode.TpuNodeTimeouts.property.create"></a>
+##### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-google.tpuNode.TpuNodeTimeouts.property.create"></a>
 
 ```python
 create: str
@@ -1803,7 +1803,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-google.tpuNode.TpuNodeTimeouts.property.delete"></a>
+##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktn/provider-google.tpuNode.TpuNodeTimeouts.property.delete"></a>
 
 ```python
 delete: str
@@ -1815,7 +1815,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-google.tpuNode.TpuNodeTimeouts.property.update"></a>
+##### `update`<sup>Optional</sup> <a name="update" id="@cdktn/provider-google.tpuNode.TpuNodeTimeouts.property.update"></a>
 
 ```python
 update: str
@@ -1829,12 +1829,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### TpuNodeNetworkEndpointsList <a name="TpuNodeNetworkEndpointsList" id="@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsList"></a>
+### TpuNodeNetworkEndpointsList <a name="TpuNodeNetworkEndpointsList" id="@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsList.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import tpu_node
+from cdktn_provider_google import tpu_node
 
 tpuNode.TpuNodeNetworkEndpointsList(
   terraform_resource: IInterpolatingParent,
@@ -1845,13 +1845,13 @@ tpuNode.TpuNodeNetworkEndpointsList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsList.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -1859,7 +1859,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsList.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -1867,7 +1867,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsList.Initializer.parameter.wrapsSet"></a>
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* bool
 
@@ -1879,15 +1879,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsList.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsList.get">get</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `all_with_map_key` <a name="all_with_map_key" id="@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsList.allWithMapKey"></a>
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsList.allWithMapKey"></a>
 
 ```python
 def all_with_map_key(
@@ -1899,19 +1899,19 @@ Creating an iterator for this complex list.
 
 The list will be converted into a map with the mapKeyAttributeName as the key.
 
-###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
 
 - *Type:* str
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsList.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsList.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsList.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsList.resolve"></a>
 
 ```python
 def resolve(
@@ -1921,13 +1921,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsList.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsList.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsList.toString"></a>
 
 ```python
 def to_string() -> str
@@ -1937,7 +1937,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `get` <a name="get" id="@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsList.get"></a>
+##### `get` <a name="get" id="@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsList.get"></a>
 
 ```python
 def get(
@@ -1945,7 +1945,7 @@ def get(
 ) -> TpuNodeNetworkEndpointsOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsList.get.parameter.index"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -1958,12 +1958,12 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsList.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsList.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -1977,7 +1977,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsList.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsList.property.fqn"></a>
 
 ```python
 fqn: str
@@ -1988,12 +1988,12 @@ fqn: str
 ---
 
 
-### TpuNodeNetworkEndpointsOutputReference <a name="TpuNodeNetworkEndpointsOutputReference" id="@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference"></a>
+### TpuNodeNetworkEndpointsOutputReference <a name="TpuNodeNetworkEndpointsOutputReference" id="@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import tpu_node
+from cdktn_provider_google import tpu_node
 
 tpuNode.TpuNodeNetworkEndpointsOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -2005,14 +2005,14 @@ tpuNode.TpuNodeNetworkEndpointsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -2020,7 +2020,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -2028,7 +2028,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -2036,7 +2036,7 @@ the index of this item in the list.
 
 ---
 
-##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* bool
 
@@ -2048,29 +2048,29 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -2078,13 +2078,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -2092,13 +2092,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -2106,13 +2106,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -2120,13 +2120,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -2134,13 +2134,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -2148,13 +2148,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -2162,13 +2162,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -2176,13 +2176,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -2190,13 +2190,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -2204,13 +2204,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -2220,13 +2220,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -2241,15 +2241,15 @@ Returns a reversible string representation.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.property.ipAddress">ip_address</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.property.port">port</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpoints">TpuNodeNetworkEndpoints</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.property.ipAddress">ip_address</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.property.port">port</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpoints">TpuNodeNetworkEndpoints</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -2263,7 +2263,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -2273,7 +2273,7 @@ fqn: str
 
 ---
 
-##### `ip_address`<sup>Required</sup> <a name="ip_address" id="@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.property.ipAddress"></a>
+##### `ip_address`<sup>Required</sup> <a name="ip_address" id="@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.property.ipAddress"></a>
 
 ```python
 ip_address: str
@@ -2283,7 +2283,7 @@ ip_address: str
 
 ---
 
-##### `port`<sup>Required</sup> <a name="port" id="@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.property.port"></a>
+##### `port`<sup>Required</sup> <a name="port" id="@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.property.port"></a>
 
 ```python
 port: typing.Union[int, float]
@@ -2293,23 +2293,23 @@ port: typing.Union[int, float]
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpointsOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: TpuNodeNetworkEndpoints
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.tpuNode.TpuNodeNetworkEndpoints">TpuNodeNetworkEndpoints</a>
+- *Type:* <a href="#@cdktn/provider-google.tpuNode.TpuNodeNetworkEndpoints">TpuNodeNetworkEndpoints</a>
 
 ---
 
 
-### TpuNodeSchedulingConfigOutputReference <a name="TpuNodeSchedulingConfigOutputReference" id="@cdktf/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference"></a>
+### TpuNodeSchedulingConfigOutputReference <a name="TpuNodeSchedulingConfigOutputReference" id="@cdktn/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import tpu_node
+from cdktn_provider_google import tpu_node
 
 tpuNode.TpuNodeSchedulingConfigOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -2319,12 +2319,12 @@ tpuNode.TpuNodeSchedulingConfigOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -2332,7 +2332,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -2344,29 +2344,29 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -2374,13 +2374,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -2388,13 +2388,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -2402,13 +2402,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -2416,13 +2416,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -2430,13 +2430,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -2444,13 +2444,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -2458,13 +2458,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -2472,13 +2472,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -2486,13 +2486,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -2500,13 +2500,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -2516,13 +2516,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -2537,15 +2537,15 @@ Returns a reversible string representation.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.property.preemptibleInput">preemptible_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.property.preemptible">preemptible</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeSchedulingConfig">TpuNodeSchedulingConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.property.preemptibleInput">preemptible_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.property.preemptible">preemptible</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeSchedulingConfig">TpuNodeSchedulingConfig</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -2559,7 +2559,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -2569,7 +2569,7 @@ fqn: str
 
 ---
 
-##### `preemptible_input`<sup>Optional</sup> <a name="preemptible_input" id="@cdktf/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.property.preemptibleInput"></a>
+##### `preemptible_input`<sup>Optional</sup> <a name="preemptible_input" id="@cdktn/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.property.preemptibleInput"></a>
 
 ```python
 preemptible_input: bool | IResolvable
@@ -2579,7 +2579,7 @@ preemptible_input: bool | IResolvable
 
 ---
 
-##### `preemptible`<sup>Required</sup> <a name="preemptible" id="@cdktf/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.property.preemptible"></a>
+##### `preemptible`<sup>Required</sup> <a name="preemptible" id="@cdktn/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.property.preemptible"></a>
 
 ```python
 preemptible: bool | IResolvable
@@ -2589,23 +2589,23 @@ preemptible: bool | IResolvable
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.tpuNode.TpuNodeSchedulingConfigOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: TpuNodeSchedulingConfig
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.tpuNode.TpuNodeSchedulingConfig">TpuNodeSchedulingConfig</a>
+- *Type:* <a href="#@cdktn/provider-google.tpuNode.TpuNodeSchedulingConfig">TpuNodeSchedulingConfig</a>
 
 ---
 
 
-### TpuNodeTimeoutsOutputReference <a name="TpuNodeTimeoutsOutputReference" id="@cdktf/provider-google.tpuNode.TpuNodeTimeoutsOutputReference"></a>
+### TpuNodeTimeoutsOutputReference <a name="TpuNodeTimeoutsOutputReference" id="@cdktn/provider-google.tpuNode.TpuNodeTimeoutsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import tpu_node
+from cdktn_provider_google import tpu_node
 
 tpuNode.TpuNodeTimeoutsOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -2615,12 +2615,12 @@ tpuNode.TpuNodeTimeoutsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -2628,7 +2628,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -2640,32 +2640,32 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.resetCreate">reset_create</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.resetDelete">reset_delete</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.resetUpdate">reset_update</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.resetCreate">reset_create</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.resetDelete">reset_delete</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.resetUpdate">reset_update</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -2673,13 +2673,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -2687,13 +2687,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -2701,13 +2701,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -2715,13 +2715,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -2729,13 +2729,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -2743,13 +2743,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -2757,13 +2757,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -2771,13 +2771,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -2785,13 +2785,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -2799,13 +2799,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -2815,13 +2815,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -2831,19 +2831,19 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_create` <a name="reset_create" id="@cdktf/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.resetCreate"></a>
+##### `reset_create` <a name="reset_create" id="@cdktn/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.resetCreate"></a>
 
 ```python
 def reset_create() -> None
 ```
 
-##### `reset_delete` <a name="reset_delete" id="@cdktf/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.resetDelete"></a>
+##### `reset_delete` <a name="reset_delete" id="@cdktn/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.resetDelete"></a>
 
 ```python
 def reset_delete() -> None
 ```
 
-##### `reset_update` <a name="reset_update" id="@cdktf/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.resetUpdate"></a>
+##### `reset_update` <a name="reset_update" id="@cdktn/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.resetUpdate"></a>
 
 ```python
 def reset_update() -> None
@@ -2854,19 +2854,19 @@ def reset_update() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.property.createInput">create_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.property.updateInput">update_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-google.tpuNode.TpuNodeTimeouts">TpuNodeTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.property.createInput">create_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.property.updateInput">update_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.tpuNode.TpuNodeTimeouts">TpuNodeTimeouts</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -2880,7 +2880,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -2890,7 +2890,7 @@ fqn: str
 
 ---
 
-##### `create_input`<sup>Optional</sup> <a name="create_input" id="@cdktf/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.property.createInput"></a>
+##### `create_input`<sup>Optional</sup> <a name="create_input" id="@cdktn/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.property.createInput"></a>
 
 ```python
 create_input: str
@@ -2900,7 +2900,7 @@ create_input: str
 
 ---
 
-##### `delete_input`<sup>Optional</sup> <a name="delete_input" id="@cdktf/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.property.deleteInput"></a>
+##### `delete_input`<sup>Optional</sup> <a name="delete_input" id="@cdktn/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.property.deleteInput"></a>
 
 ```python
 delete_input: str
@@ -2910,7 +2910,7 @@ delete_input: str
 
 ---
 
-##### `update_input`<sup>Optional</sup> <a name="update_input" id="@cdktf/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.property.updateInput"></a>
+##### `update_input`<sup>Optional</sup> <a name="update_input" id="@cdktn/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.property.updateInput"></a>
 
 ```python
 update_input: str
@@ -2920,7 +2920,7 @@ update_input: str
 
 ---
 
-##### `create`<sup>Required</sup> <a name="create" id="@cdktf/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.property.create"></a>
+##### `create`<sup>Required</sup> <a name="create" id="@cdktn/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.property.create"></a>
 
 ```python
 create: str
@@ -2930,7 +2930,7 @@ create: str
 
 ---
 
-##### `delete`<sup>Required</sup> <a name="delete" id="@cdktf/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.property.delete"></a>
+##### `delete`<sup>Required</sup> <a name="delete" id="@cdktn/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.property.delete"></a>
 
 ```python
 delete: str
@@ -2940,7 +2940,7 @@ delete: str
 
 ---
 
-##### `update`<sup>Required</sup> <a name="update" id="@cdktf/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.property.update"></a>
+##### `update`<sup>Required</sup> <a name="update" id="@cdktn/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.property.update"></a>
 
 ```python
 update: str
@@ -2950,13 +2950,13 @@ update: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.tpuNode.TpuNodeTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | TpuNodeTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-google.tpuNode.TpuNodeTimeouts">TpuNodeTimeouts</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.tpuNode.TpuNodeTimeouts">TpuNodeTimeouts</a>
 
 ---
 

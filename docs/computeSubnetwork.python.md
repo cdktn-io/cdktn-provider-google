@@ -1,15 +1,15 @@
-# `computeSubnetwork` Submodule <a name="`computeSubnetwork` Submodule" id="@cdktf/provider-google.computeSubnetwork"></a>
+# `computeSubnetwork` Submodule <a name="`computeSubnetwork` Submodule" id="@cdktn/provider-google.computeSubnetwork"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### ComputeSubnetwork <a name="ComputeSubnetwork" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork"></a>
+### ComputeSubnetwork <a name="ComputeSubnetwork" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork"></a>
 
 Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_subnetwork google_compute_subnetwork}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import compute_subnetwork
+from cdktn_provider_google import compute_subnetwork
 
 computeSubnetwork.ComputeSubnetwork(
   scope: Construct,
@@ -48,41 +48,41 @@ computeSubnetwork.ComputeSubnetwork(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of the resource, provided by the client when initially creating the resource. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.network">network</a></code> | <code>str</code> | The network this subnet belongs to. Only networks that are in the distributed mode can have subnetworks. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.description">description</a></code> | <code>str</code> | An optional description of this resource. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.enableFlowLogs">enable_flow_logs</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether to enable flow logging for this subnetwork. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.externalIpv6Prefix">external_ipv6_prefix</a></code> | <code>str</code> | The range of external IPv6 addresses that are owned by this subnetwork. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_subnetwork#id ComputeSubnetwork#id}. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.ipCidrRange">ip_cidr_range</a></code> | <code>str</code> | The range of internal addresses that are owned by this subnetwork. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.ipCollection">ip_collection</a></code> | <code>str</code> | Resource reference of a PublicDelegatedPrefix. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.ipv6AccessType">ipv6_access_type</a></code> | <code>str</code> | The access type of IPv6 address this subnet holds. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.logConfig">log_config</a></code> | <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfig">ComputeSubnetworkLogConfig</a></code> | log_config block. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.params">params</a></code> | <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkParams">ComputeSubnetworkParams</a></code> | params block. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.privateIpGoogleAccess">private_ip_google_access</a></code> | <code>bool \| cdktf.IResolvable</code> | When enabled, VMs in this subnetwork without external IP addresses can access Google APIs and services by using Private Google Access. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.privateIpv6GoogleAccess">private_ipv6_google_access</a></code> | <code>str</code> | The private IPv6 google access type for the VMs in this subnet. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_subnetwork#project ComputeSubnetwork#project}. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.purpose">purpose</a></code> | <code>str</code> | The purpose of the resource. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.region">region</a></code> | <code>str</code> | The GCP region for this subnetwork. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.reservedInternalRange">reserved_internal_range</a></code> | <code>str</code> | The ID of the reserved internal range. Must be prefixed with 'networkconnectivity.googleapis.com' E.g. 'networkconnectivity.googleapis.com/projects/{project}/locations/global/internalRanges/{rangeId}'. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.role">role</a></code> | <code>str</code> | The role of subnetwork. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.secondaryIpRange">secondary_ip_range</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRange">ComputeSubnetworkSecondaryIpRange</a>]</code> | secondary_ip_range block. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.sendSecondaryIpRangeIfEmpty">send_secondary_ip_range_if_empty</a></code> | <code>bool \| cdktf.IResolvable</code> | Controls the removal behavior of secondary_ip_range. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.stackType">stack_type</a></code> | <code>str</code> | The stack type for this subnet to identify whether the IPv6 feature is enabled or not. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeouts">ComputeSubnetworkTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of the resource, provided by the client when initially creating the resource. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.network">network</a></code> | <code>str</code> | The network this subnet belongs to. Only networks that are in the distributed mode can have subnetworks. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.description">description</a></code> | <code>str</code> | An optional description of this resource. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.enableFlowLogs">enable_flow_logs</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether to enable flow logging for this subnetwork. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.externalIpv6Prefix">external_ipv6_prefix</a></code> | <code>str</code> | The range of external IPv6 addresses that are owned by this subnetwork. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_subnetwork#id ComputeSubnetwork#id}. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.ipCidrRange">ip_cidr_range</a></code> | <code>str</code> | The range of internal addresses that are owned by this subnetwork. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.ipCollection">ip_collection</a></code> | <code>str</code> | Resource reference of a PublicDelegatedPrefix. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.ipv6AccessType">ipv6_access_type</a></code> | <code>str</code> | The access type of IPv6 address this subnet holds. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.logConfig">log_config</a></code> | <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfig">ComputeSubnetworkLogConfig</a></code> | log_config block. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.params">params</a></code> | <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkParams">ComputeSubnetworkParams</a></code> | params block. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.privateIpGoogleAccess">private_ip_google_access</a></code> | <code>bool \| cdktf.IResolvable</code> | When enabled, VMs in this subnetwork without external IP addresses can access Google APIs and services by using Private Google Access. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.privateIpv6GoogleAccess">private_ipv6_google_access</a></code> | <code>str</code> | The private IPv6 google access type for the VMs in this subnet. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_subnetwork#project ComputeSubnetwork#project}. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.purpose">purpose</a></code> | <code>str</code> | The purpose of the resource. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.region">region</a></code> | <code>str</code> | The GCP region for this subnetwork. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.reservedInternalRange">reserved_internal_range</a></code> | <code>str</code> | The ID of the reserved internal range. Must be prefixed with 'networkconnectivity.googleapis.com' E.g. 'networkconnectivity.googleapis.com/projects/{project}/locations/global/internalRanges/{rangeId}'. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.role">role</a></code> | <code>str</code> | The role of subnetwork. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.secondaryIpRange">secondary_ip_range</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRange">ComputeSubnetworkSecondaryIpRange</a>]</code> | secondary_ip_range block. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.sendSecondaryIpRangeIfEmpty">send_secondary_ip_range_if_empty</a></code> | <code>bool \| cdktf.IResolvable</code> | Controls the removal behavior of secondary_ip_range. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.stackType">stack_type</a></code> | <code>str</code> | The stack type for this subnet to identify whether the IPv6 feature is enabled or not. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeouts">ComputeSubnetworkTimeouts</a></code> | timeouts block. |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -90,7 +90,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -100,49 +100,49 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.connection"></a>
 
 - *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.count"></a>
 
 - *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.dependsOn"></a>
 
 - *Type:* typing.List[cdktf.ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.forEach"></a>
 
 - *Type:* cdktf.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.lifecycle"></a>
 
 - *Type:* cdktf.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.provisioners"></a>
 
 - *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.name"></a>
 
 - *Type:* str
 
@@ -159,7 +159,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `network`<sup>Required</sup> <a name="network" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.network"></a>
+##### `network`<sup>Required</sup> <a name="network" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.network"></a>
 
 - *Type:* str
 
@@ -169,7 +169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.description"></a>
+##### `description`<sup>Optional</sup> <a name="description" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.description"></a>
 
 - *Type:* str
 
@@ -183,7 +183,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `enable_flow_logs`<sup>Optional</sup> <a name="enable_flow_logs" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.enableFlowLogs"></a>
+##### `enable_flow_logs`<sup>Optional</sup> <a name="enable_flow_logs" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.enableFlowLogs"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
@@ -198,7 +198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `external_ipv6_prefix`<sup>Optional</sup> <a name="external_ipv6_prefix" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.externalIpv6Prefix"></a>
+##### `external_ipv6_prefix`<sup>Optional</sup> <a name="external_ipv6_prefix" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.externalIpv6Prefix"></a>
 
 - *Type:* str
 
@@ -208,7 +208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -219,7 +219,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
-##### `ip_cidr_range`<sup>Optional</sup> <a name="ip_cidr_range" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.ipCidrRange"></a>
+##### `ip_cidr_range`<sup>Optional</sup> <a name="ip_cidr_range" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.ipCidrRange"></a>
 
 - *Type:* str
 
@@ -234,7 +234,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `ip_collection`<sup>Optional</sup> <a name="ip_collection" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.ipCollection"></a>
+##### `ip_collection`<sup>Optional</sup> <a name="ip_collection" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.ipCollection"></a>
 
 - *Type:* str
 
@@ -255,7 +255,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `ipv6_access_type`<sup>Optional</sup> <a name="ipv6_access_type" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.ipv6AccessType"></a>
+##### `ipv6_access_type`<sup>Optional</sup> <a name="ipv6_access_type" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.ipv6AccessType"></a>
 
 - *Type:* str
 
@@ -269,9 +269,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `log_config`<sup>Optional</sup> <a name="log_config" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.logConfig"></a>
+##### `log_config`<sup>Optional</sup> <a name="log_config" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.logConfig"></a>
 
-- *Type:* <a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfig">ComputeSubnetworkLogConfig</a>
+- *Type:* <a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfig">ComputeSubnetworkLogConfig</a>
 
 log_config block.
 
@@ -279,9 +279,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `params`<sup>Optional</sup> <a name="params" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.params"></a>
+##### `params`<sup>Optional</sup> <a name="params" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.params"></a>
 
-- *Type:* <a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkParams">ComputeSubnetworkParams</a>
+- *Type:* <a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkParams">ComputeSubnetworkParams</a>
 
 params block.
 
@@ -289,7 +289,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `private_ip_google_access`<sup>Optional</sup> <a name="private_ip_google_access" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.privateIpGoogleAccess"></a>
+##### `private_ip_google_access`<sup>Optional</sup> <a name="private_ip_google_access" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.privateIpGoogleAccess"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
@@ -299,7 +299,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `private_ipv6_google_access`<sup>Optional</sup> <a name="private_ipv6_google_access" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.privateIpv6GoogleAccess"></a>
+##### `private_ipv6_google_access`<sup>Optional</sup> <a name="private_ipv6_google_access" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.privateIpv6GoogleAccess"></a>
 
 - *Type:* str
 
@@ -309,7 +309,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `project`<sup>Optional</sup> <a name="project" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.project"></a>
+##### `project`<sup>Optional</sup> <a name="project" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.project"></a>
 
 - *Type:* str
 
@@ -317,7 +317,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `purpose`<sup>Optional</sup> <a name="purpose" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.purpose"></a>
+##### `purpose`<sup>Optional</sup> <a name="purpose" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.purpose"></a>
 
 - *Type:* str
 
@@ -336,7 +336,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.region"></a>
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.region"></a>
 
 - *Type:* str
 
@@ -346,7 +346,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `reserved_internal_range`<sup>Optional</sup> <a name="reserved_internal_range" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.reservedInternalRange"></a>
+##### `reserved_internal_range`<sup>Optional</sup> <a name="reserved_internal_range" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.reservedInternalRange"></a>
 
 - *Type:* str
 
@@ -356,7 +356,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `role`<sup>Optional</sup> <a name="role" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.role"></a>
+##### `role`<sup>Optional</sup> <a name="role" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.role"></a>
 
 - *Type:* str
 
@@ -371,9 +371,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `secondary_ip_range`<sup>Optional</sup> <a name="secondary_ip_range" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.secondaryIpRange"></a>
+##### `secondary_ip_range`<sup>Optional</sup> <a name="secondary_ip_range" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.secondaryIpRange"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRange">ComputeSubnetworkSecondaryIpRange</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRange">ComputeSubnetworkSecondaryIpRange</a>]
 
 secondary_ip_range block.
 
@@ -381,7 +381,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `send_secondary_ip_range_if_empty`<sup>Optional</sup> <a name="send_secondary_ip_range_if_empty" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.sendSecondaryIpRangeIfEmpty"></a>
+##### `send_secondary_ip_range_if_empty`<sup>Optional</sup> <a name="send_secondary_ip_range_if_empty" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.sendSecondaryIpRangeIfEmpty"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
@@ -397,7 +397,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `stack_type`<sup>Optional</sup> <a name="stack_type" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.stackType"></a>
+##### `stack_type`<sup>Optional</sup> <a name="stack_type" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.stackType"></a>
 
 - *Type:* str
 
@@ -409,9 +409,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.Initializer.parameter.timeouts"></a>
 
-- *Type:* <a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeouts">ComputeSubnetworkTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeouts">ComputeSubnetworkTimeouts</a>
 
 timeouts block.
 
@@ -423,57 +423,57 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.toString">to_string</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.addOverride">add_override</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.toMetadata">to_metadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.hasResourceMove">has_resource_move</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.importFrom">import_from</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.putLogConfig">put_log_config</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.putParams">put_params</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.putSecondaryIpRange">put_secondary_ip_range</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.putTimeouts">put_timeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.resetDescription">reset_description</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.resetEnableFlowLogs">reset_enable_flow_logs</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.resetExternalIpv6Prefix">reset_external_ipv6_prefix</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.resetId">reset_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.resetIpCidrRange">reset_ip_cidr_range</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.resetIpCollection">reset_ip_collection</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.resetIpv6AccessType">reset_ipv6_access_type</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.resetLogConfig">reset_log_config</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.resetParams">reset_params</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.resetPrivateIpGoogleAccess">reset_private_ip_google_access</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.resetPrivateIpv6GoogleAccess">reset_private_ipv6_google_access</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.resetProject">reset_project</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.resetPurpose">reset_purpose</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.resetRegion">reset_region</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.resetReservedInternalRange">reset_reserved_internal_range</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.resetRole">reset_role</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.resetSecondaryIpRange">reset_secondary_ip_range</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.resetSendSecondaryIpRangeIfEmpty">reset_send_secondary_ip_range_if_empty</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.resetStackType">reset_stack_type</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.resetTimeouts">reset_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.toString">to_string</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.addOverride">add_override</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.toMetadata">to_metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.hasResourceMove">has_resource_move</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.importFrom">import_from</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.putLogConfig">put_log_config</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.putParams">put_params</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.putSecondaryIpRange">put_secondary_ip_range</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.resetDescription">reset_description</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.resetEnableFlowLogs">reset_enable_flow_logs</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.resetExternalIpv6Prefix">reset_external_ipv6_prefix</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.resetIpCidrRange">reset_ip_cidr_range</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.resetIpCollection">reset_ip_collection</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.resetIpv6AccessType">reset_ipv6_access_type</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.resetLogConfig">reset_log_config</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.resetParams">reset_params</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.resetPrivateIpGoogleAccess">reset_private_ip_google_access</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.resetPrivateIpv6GoogleAccess">reset_private_ipv6_google_access</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.resetProject">reset_project</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.resetPurpose">reset_purpose</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.resetRegion">reset_region</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.resetReservedInternalRange">reset_reserved_internal_range</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.resetRole">reset_role</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.resetSecondaryIpRange">reset_secondary_ip_range</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.resetSendSecondaryIpRangeIfEmpty">reset_send_secondary_ip_range_if_empty</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.resetStackType">reset_stack_type</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.resetTimeouts">reset_timeouts</a></code> | *No description.* |
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.toString"></a>
 
 ```python
 def to_string() -> str
@@ -481,7 +481,7 @@ def to_string() -> str
 
 Returns a string representation of this construct.
 
-##### `add_override` <a name="add_override" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.addOverride"></a>
+##### `add_override` <a name="add_override" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.addOverride"></a>
 
 ```python
 def add_override(
@@ -490,19 +490,19 @@ def add_override(
 ) -> None
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.addOverride.parameter.path"></a>
 
 - *Type:* str
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.addOverride.parameter.value"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `override_logical_id` <a name="override_logical_id" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.overrideLogicalId"></a>
+##### `override_logical_id` <a name="override_logical_id" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.overrideLogicalId"></a>
 
 ```python
 def override_logical_id(
@@ -512,7 +512,7 @@ def override_logical_id(
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.overrideLogicalId.parameter.newLogicalId"></a>
+###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* str
 
@@ -520,7 +520,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.resetOverrideLogicalId"></a>
+##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.resetOverrideLogicalId"></a>
 
 ```python
 def reset_override_logical_id() -> None
@@ -528,19 +528,19 @@ def reset_override_logical_id() -> None
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.toHclTerraform"></a>
+##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.toHclTerraform"></a>
 
 ```python
 def to_hcl_terraform() -> typing.Any
 ```
 
-##### `to_metadata` <a name="to_metadata" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.toMetadata"></a>
+##### `to_metadata` <a name="to_metadata" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.toMetadata"></a>
 
 ```python
 def to_metadata() -> typing.Any
 ```
 
-##### `to_terraform` <a name="to_terraform" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.toTerraform"></a>
+##### `to_terraform` <a name="to_terraform" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.toTerraform"></a>
 
 ```python
 def to_terraform() -> typing.Any
@@ -548,7 +548,7 @@ def to_terraform() -> typing.Any
 
 Adds this resource to the terraform JSON output.
 
-##### `add_move_target` <a name="add_move_target" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.addMoveTarget"></a>
+##### `add_move_target` <a name="add_move_target" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.addMoveTarget"></a>
 
 ```python
 def add_move_target(
@@ -558,7 +558,7 @@ def add_move_target(
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.addMoveTarget.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -566,7 +566,7 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -574,13 +574,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -588,13 +588,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -602,13 +602,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -616,13 +616,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -630,13 +630,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -644,13 +644,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -658,13 +658,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -672,13 +672,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -686,19 +686,19 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.hasResourceMove"></a>
+##### `has_resource_move` <a name="has_resource_move" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.hasResourceMove"></a>
 
 ```python
 def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `import_from` <a name="import_from" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.importFrom"></a>
+##### `import_from` <a name="import_from" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.importFrom"></a>
 
 ```python
 def import_from(
@@ -707,19 +707,19 @@ def import_from(
 ) -> None
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.importFrom.parameter.id"></a>
 
 - *Type:* str
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.importFrom.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -727,13 +727,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `move_from_id` <a name="move_from_id" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.moveFromId"></a>
+##### `move_from_id` <a name="move_from_id" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.moveFromId"></a>
 
 ```python
 def move_from_id(
@@ -745,7 +745,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.moveFromId.parameter.id"></a>
 
 - *Type:* str
 
@@ -753,7 +753,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `move_to` <a name="move_to" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.moveTo"></a>
+##### `move_to` <a name="move_to" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.moveTo"></a>
 
 ```python
 def move_to(
@@ -764,7 +764,7 @@ def move_to(
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.moveTo.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.moveTo.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -772,7 +772,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.moveTo.parameter.index"></a>
 
 - *Type:* str | typing.Union[int, float]
 
@@ -780,7 +780,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `move_to_id` <a name="move_to_id" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.moveToId"></a>
+##### `move_to_id` <a name="move_to_id" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.moveToId"></a>
 
 ```python
 def move_to_id(
@@ -790,7 +790,7 @@ def move_to_id(
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.moveToId.parameter.id"></a>
 
 - *Type:* str
 
@@ -798,7 +798,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `put_log_config` <a name="put_log_config" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.putLogConfig"></a>
+##### `put_log_config` <a name="put_log_config" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.putLogConfig"></a>
 
 ```python
 def put_log_config(
@@ -810,7 +810,7 @@ def put_log_config(
 ) -> None
 ```
 
-###### `aggregation_interval`<sup>Optional</sup> <a name="aggregation_interval" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.putLogConfig.parameter.aggregationInterval"></a>
+###### `aggregation_interval`<sup>Optional</sup> <a name="aggregation_interval" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.putLogConfig.parameter.aggregationInterval"></a>
 
 - *Type:* str
 
@@ -824,7 +824,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `filter_expr`<sup>Optional</sup> <a name="filter_expr" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.putLogConfig.parameter.filterExpr"></a>
+###### `filter_expr`<sup>Optional</sup> <a name="filter_expr" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.putLogConfig.parameter.filterExpr"></a>
 
 - *Type:* str
 
@@ -838,7 +838,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `flow_sampling`<sup>Optional</sup> <a name="flow_sampling" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.putLogConfig.parameter.flowSampling"></a>
+###### `flow_sampling`<sup>Optional</sup> <a name="flow_sampling" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.putLogConfig.parameter.flowSampling"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -853,7 +853,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `metadata`<sup>Optional</sup> <a name="metadata" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.putLogConfig.parameter.metadata"></a>
+###### `metadata`<sup>Optional</sup> <a name="metadata" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.putLogConfig.parameter.metadata"></a>
 
 - *Type:* str
 
@@ -866,7 +866,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `metadata_fields`<sup>Optional</sup> <a name="metadata_fields" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.putLogConfig.parameter.metadataFields"></a>
+###### `metadata_fields`<sup>Optional</sup> <a name="metadata_fields" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.putLogConfig.parameter.metadataFields"></a>
 
 - *Type:* typing.List[str]
 
@@ -878,7 +878,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `put_params` <a name="put_params" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.putParams"></a>
+##### `put_params` <a name="put_params" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.putParams"></a>
 
 ```python
 def put_params(
@@ -886,7 +886,7 @@ def put_params(
 ) -> None
 ```
 
-###### `resource_manager_tags`<sup>Optional</sup> <a name="resource_manager_tags" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.putParams.parameter.resourceManagerTags"></a>
+###### `resource_manager_tags`<sup>Optional</sup> <a name="resource_manager_tags" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.putParams.parameter.resourceManagerTags"></a>
 
 - *Type:* typing.Mapping[str]
 
@@ -903,7 +903,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `put_secondary_ip_range` <a name="put_secondary_ip_range" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.putSecondaryIpRange"></a>
+##### `put_secondary_ip_range` <a name="put_secondary_ip_range" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.putSecondaryIpRange"></a>
 
 ```python
 def put_secondary_ip_range(
@@ -911,13 +911,13 @@ def put_secondary_ip_range(
 ) -> None
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.putSecondaryIpRange.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.putSecondaryIpRange.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRange">ComputeSubnetworkSecondaryIpRange</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRange">ComputeSubnetworkSecondaryIpRange</a>]
 
 ---
 
-##### `put_timeouts` <a name="put_timeouts" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.putTimeouts"></a>
+##### `put_timeouts` <a name="put_timeouts" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.putTimeouts"></a>
 
 ```python
 def put_timeouts(
@@ -927,7 +927,7 @@ def put_timeouts(
 ) -> None
 ```
 
-###### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.putTimeouts.parameter.create"></a>
+###### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.putTimeouts.parameter.create"></a>
 
 - *Type:* str
 
@@ -935,7 +935,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.putTimeouts.parameter.delete"></a>
+###### `delete`<sup>Optional</sup> <a name="delete" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.putTimeouts.parameter.delete"></a>
 
 - *Type:* str
 
@@ -943,7 +943,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.putTimeouts.parameter.update"></a>
+###### `update`<sup>Optional</sup> <a name="update" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.putTimeouts.parameter.update"></a>
 
 - *Type:* str
 
@@ -951,121 +951,121 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `reset_description` <a name="reset_description" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.resetDescription"></a>
+##### `reset_description` <a name="reset_description" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.resetDescription"></a>
 
 ```python
 def reset_description() -> None
 ```
 
-##### `reset_enable_flow_logs` <a name="reset_enable_flow_logs" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.resetEnableFlowLogs"></a>
+##### `reset_enable_flow_logs` <a name="reset_enable_flow_logs" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.resetEnableFlowLogs"></a>
 
 ```python
 def reset_enable_flow_logs() -> None
 ```
 
-##### `reset_external_ipv6_prefix` <a name="reset_external_ipv6_prefix" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.resetExternalIpv6Prefix"></a>
+##### `reset_external_ipv6_prefix` <a name="reset_external_ipv6_prefix" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.resetExternalIpv6Prefix"></a>
 
 ```python
 def reset_external_ipv6_prefix() -> None
 ```
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.resetId"></a>
+##### `reset_id` <a name="reset_id" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.resetId"></a>
 
 ```python
 def reset_id() -> None
 ```
 
-##### `reset_ip_cidr_range` <a name="reset_ip_cidr_range" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.resetIpCidrRange"></a>
+##### `reset_ip_cidr_range` <a name="reset_ip_cidr_range" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.resetIpCidrRange"></a>
 
 ```python
 def reset_ip_cidr_range() -> None
 ```
 
-##### `reset_ip_collection` <a name="reset_ip_collection" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.resetIpCollection"></a>
+##### `reset_ip_collection` <a name="reset_ip_collection" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.resetIpCollection"></a>
 
 ```python
 def reset_ip_collection() -> None
 ```
 
-##### `reset_ipv6_access_type` <a name="reset_ipv6_access_type" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.resetIpv6AccessType"></a>
+##### `reset_ipv6_access_type` <a name="reset_ipv6_access_type" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.resetIpv6AccessType"></a>
 
 ```python
 def reset_ipv6_access_type() -> None
 ```
 
-##### `reset_log_config` <a name="reset_log_config" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.resetLogConfig"></a>
+##### `reset_log_config` <a name="reset_log_config" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.resetLogConfig"></a>
 
 ```python
 def reset_log_config() -> None
 ```
 
-##### `reset_params` <a name="reset_params" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.resetParams"></a>
+##### `reset_params` <a name="reset_params" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.resetParams"></a>
 
 ```python
 def reset_params() -> None
 ```
 
-##### `reset_private_ip_google_access` <a name="reset_private_ip_google_access" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.resetPrivateIpGoogleAccess"></a>
+##### `reset_private_ip_google_access` <a name="reset_private_ip_google_access" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.resetPrivateIpGoogleAccess"></a>
 
 ```python
 def reset_private_ip_google_access() -> None
 ```
 
-##### `reset_private_ipv6_google_access` <a name="reset_private_ipv6_google_access" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.resetPrivateIpv6GoogleAccess"></a>
+##### `reset_private_ipv6_google_access` <a name="reset_private_ipv6_google_access" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.resetPrivateIpv6GoogleAccess"></a>
 
 ```python
 def reset_private_ipv6_google_access() -> None
 ```
 
-##### `reset_project` <a name="reset_project" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.resetProject"></a>
+##### `reset_project` <a name="reset_project" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.resetProject"></a>
 
 ```python
 def reset_project() -> None
 ```
 
-##### `reset_purpose` <a name="reset_purpose" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.resetPurpose"></a>
+##### `reset_purpose` <a name="reset_purpose" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.resetPurpose"></a>
 
 ```python
 def reset_purpose() -> None
 ```
 
-##### `reset_region` <a name="reset_region" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.resetRegion"></a>
+##### `reset_region` <a name="reset_region" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.resetRegion"></a>
 
 ```python
 def reset_region() -> None
 ```
 
-##### `reset_reserved_internal_range` <a name="reset_reserved_internal_range" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.resetReservedInternalRange"></a>
+##### `reset_reserved_internal_range` <a name="reset_reserved_internal_range" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.resetReservedInternalRange"></a>
 
 ```python
 def reset_reserved_internal_range() -> None
 ```
 
-##### `reset_role` <a name="reset_role" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.resetRole"></a>
+##### `reset_role` <a name="reset_role" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.resetRole"></a>
 
 ```python
 def reset_role() -> None
 ```
 
-##### `reset_secondary_ip_range` <a name="reset_secondary_ip_range" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.resetSecondaryIpRange"></a>
+##### `reset_secondary_ip_range` <a name="reset_secondary_ip_range" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.resetSecondaryIpRange"></a>
 
 ```python
 def reset_secondary_ip_range() -> None
 ```
 
-##### `reset_send_secondary_ip_range_if_empty` <a name="reset_send_secondary_ip_range_if_empty" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.resetSendSecondaryIpRangeIfEmpty"></a>
+##### `reset_send_secondary_ip_range_if_empty` <a name="reset_send_secondary_ip_range_if_empty" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.resetSendSecondaryIpRangeIfEmpty"></a>
 
 ```python
 def reset_send_secondary_ip_range_if_empty() -> None
 ```
 
-##### `reset_stack_type` <a name="reset_stack_type" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.resetStackType"></a>
+##### `reset_stack_type` <a name="reset_stack_type" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.resetStackType"></a>
 
 ```python
 def reset_stack_type() -> None
 ```
 
-##### `reset_timeouts` <a name="reset_timeouts" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.resetTimeouts"></a>
+##### `reset_timeouts` <a name="reset_timeouts" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.resetTimeouts"></a>
 
 ```python
 def reset_timeouts() -> None
@@ -1075,17 +1075,17 @@ def reset_timeouts() -> None
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.isTerraformElement">is_terraform_element</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a ComputeSubnetwork resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.isTerraformElement">is_terraform_element</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a ComputeSubnetwork resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `is_construct` <a name="is_construct" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.isConstruct"></a>
+##### `is_construct` <a name="is_construct" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.isConstruct"></a>
 
 ```python
-from cdktf_cdktf_provider_google import compute_subnetwork
+from cdktn_provider_google import compute_subnetwork
 
 computeSubnetwork.ComputeSubnetwork.is_construct(
   x: typing.Any
@@ -1108,7 +1108,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.isConstruct.parameter.x"></a>
 
 - *Type:* typing.Any
 
@@ -1116,42 +1116,42 @@ Any object.
 
 ---
 
-##### `is_terraform_element` <a name="is_terraform_element" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.isTerraformElement"></a>
+##### `is_terraform_element` <a name="is_terraform_element" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.isTerraformElement"></a>
 
 ```python
-from cdktf_cdktf_provider_google import compute_subnetwork
+from cdktn_provider_google import compute_subnetwork
 
 computeSubnetwork.ComputeSubnetwork.is_terraform_element(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.isTerraformElement.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.isTerraformResource"></a>
+##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.isTerraformResource"></a>
 
 ```python
-from cdktf_cdktf_provider_google import compute_subnetwork
+from cdktn_provider_google import compute_subnetwork
 
 computeSubnetwork.ComputeSubnetwork.is_terraform_resource(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.isTerraformResource.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.generateConfigForImport"></a>
+##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.generateConfigForImport"></a>
 
 ```python
-from cdktf_cdktf_provider_google import compute_subnetwork
+from cdktn_provider_google import compute_subnetwork
 
 computeSubnetwork.ComputeSubnetwork.generate_config_for_import(
   scope: Construct,
@@ -1163,7 +1163,7 @@ computeSubnetwork.ComputeSubnetwork.generate_config_for_import(
 
 Generates CDKTF code for importing a ComputeSubnetwork resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -1171,7 +1171,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.generateConfigForImport.parameter.importToId"></a>
+###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* str
 
@@ -1179,7 +1179,7 @@ The construct id used in the generated config for the ComputeSubnetwork to impor
 
 ---
 
-###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.generateConfigForImport.parameter.importFromId"></a>
+###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* str
 
@@ -1189,7 +1189,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
@@ -1201,77 +1201,77 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.creationTimestamp">creation_timestamp</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.fingerprint">fingerprint</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.gatewayAddress">gateway_address</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.internalIpv6Prefix">internal_ipv6_prefix</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.ipv6CidrRange">ipv6_cidr_range</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.ipv6GceEndpoint">ipv6_gce_endpoint</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.logConfig">log_config</a></code> | <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference">ComputeSubnetworkLogConfigOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.params">params</a></code> | <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference">ComputeSubnetworkParamsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.secondaryIpRange">secondary_ip_range</a></code> | <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeList">ComputeSubnetworkSecondaryIpRangeList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.selfLink">self_link</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.state">state</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.subnetworkId">subnetwork_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference">ComputeSubnetworkTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.enableFlowLogsInput">enable_flow_logs_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.externalIpv6PrefixInput">external_ipv6_prefix_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.ipCidrRangeInput">ip_cidr_range_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.ipCollectionInput">ip_collection_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.ipv6AccessTypeInput">ipv6_access_type_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.logConfigInput">log_config_input</a></code> | <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfig">ComputeSubnetworkLogConfig</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.networkInput">network_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.paramsInput">params_input</a></code> | <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkParams">ComputeSubnetworkParams</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.privateIpGoogleAccessInput">private_ip_google_access_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.privateIpv6GoogleAccessInput">private_ipv6_google_access_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.purposeInput">purpose_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.reservedInternalRangeInput">reserved_internal_range_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.roleInput">role_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.secondaryIpRangeInput">secondary_ip_range_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRange">ComputeSubnetworkSecondaryIpRange</a>]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.sendSecondaryIpRangeIfEmptyInput">send_secondary_ip_range_if_empty_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.stackTypeInput">stack_type_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeouts">ComputeSubnetworkTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.description">description</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.enableFlowLogs">enable_flow_logs</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.externalIpv6Prefix">external_ipv6_prefix</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.ipCidrRange">ip_cidr_range</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.ipCollection">ip_collection</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.ipv6AccessType">ipv6_access_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.network">network</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.privateIpGoogleAccess">private_ip_google_access</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.privateIpv6GoogleAccess">private_ipv6_google_access</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.project">project</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.purpose">purpose</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.region">region</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.reservedInternalRange">reserved_internal_range</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.role">role</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.sendSecondaryIpRangeIfEmpty">send_secondary_ip_range_if_empty</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.stackType">stack_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.creationTimestamp">creation_timestamp</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.fingerprint">fingerprint</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.gatewayAddress">gateway_address</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.internalIpv6Prefix">internal_ipv6_prefix</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.ipv6CidrRange">ipv6_cidr_range</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.ipv6GceEndpoint">ipv6_gce_endpoint</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.logConfig">log_config</a></code> | <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference">ComputeSubnetworkLogConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.params">params</a></code> | <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference">ComputeSubnetworkParamsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.secondaryIpRange">secondary_ip_range</a></code> | <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeList">ComputeSubnetworkSecondaryIpRangeList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.selfLink">self_link</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.state">state</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.subnetworkId">subnetwork_id</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference">ComputeSubnetworkTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.enableFlowLogsInput">enable_flow_logs_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.externalIpv6PrefixInput">external_ipv6_prefix_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.ipCidrRangeInput">ip_cidr_range_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.ipCollectionInput">ip_collection_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.ipv6AccessTypeInput">ipv6_access_type_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.logConfigInput">log_config_input</a></code> | <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfig">ComputeSubnetworkLogConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.networkInput">network_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.paramsInput">params_input</a></code> | <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkParams">ComputeSubnetworkParams</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.privateIpGoogleAccessInput">private_ip_google_access_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.privateIpv6GoogleAccessInput">private_ipv6_google_access_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.purposeInput">purpose_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.reservedInternalRangeInput">reserved_internal_range_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.roleInput">role_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.secondaryIpRangeInput">secondary_ip_range_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRange">ComputeSubnetworkSecondaryIpRange</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.sendSecondaryIpRangeIfEmptyInput">send_secondary_ip_range_if_empty_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.stackTypeInput">stack_type_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeouts">ComputeSubnetworkTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.description">description</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.enableFlowLogs">enable_flow_logs</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.externalIpv6Prefix">external_ipv6_prefix</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.ipCidrRange">ip_cidr_range</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.ipCollection">ip_collection</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.ipv6AccessType">ipv6_access_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.network">network</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.privateIpGoogleAccess">private_ip_google_access</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.privateIpv6GoogleAccess">private_ipv6_google_access</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.project">project</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.purpose">purpose</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.region">region</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.reservedInternalRange">reserved_internal_range</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.role">role</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.sendSecondaryIpRangeIfEmpty">send_secondary_ip_range_if_empty</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.stackType">stack_type</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.node"></a>
 
 ```python
 node: Node
@@ -1283,7 +1283,7 @@ The tree node.
 
 ---
 
-##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.cdktfStack"></a>
+##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.cdktfStack"></a>
 
 ```python
 cdktf_stack: TerraformStack
@@ -1293,7 +1293,7 @@ cdktf_stack: TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.fqn"></a>
 
 ```python
 fqn: str
@@ -1303,7 +1303,7 @@ fqn: str
 
 ---
 
-##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.friendlyUniqueId"></a>
+##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.friendlyUniqueId"></a>
 
 ```python
 friendly_unique_id: str
@@ -1313,7 +1313,7 @@ friendly_unique_id: str
 
 ---
 
-##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.terraformMetaArguments"></a>
+##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.terraformMetaArguments"></a>
 
 ```python
 terraform_meta_arguments: typing.Mapping[typing.Any]
@@ -1323,7 +1323,7 @@ terraform_meta_arguments: typing.Mapping[typing.Any]
 
 ---
 
-##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.terraformResourceType"></a>
+##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.terraformResourceType"></a>
 
 ```python
 terraform_resource_type: str
@@ -1333,7 +1333,7 @@ terraform_resource_type: str
 
 ---
 
-##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.terraformGeneratorMetadata"></a>
+##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.terraformGeneratorMetadata"></a>
 
 ```python
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
@@ -1343,7 +1343,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
@@ -1353,7 +1353,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -1363,7 +1363,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[str]
@@ -1373,7 +1373,7 @@ depends_on: typing.List[str]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -1383,7 +1383,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -1393,7 +1393,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -1403,7 +1403,7 @@ provider: TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
@@ -1413,7 +1413,7 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `creation_timestamp`<sup>Required</sup> <a name="creation_timestamp" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.creationTimestamp"></a>
+##### `creation_timestamp`<sup>Required</sup> <a name="creation_timestamp" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.creationTimestamp"></a>
 
 ```python
 creation_timestamp: str
@@ -1423,7 +1423,7 @@ creation_timestamp: str
 
 ---
 
-##### `fingerprint`<sup>Required</sup> <a name="fingerprint" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.fingerprint"></a>
+##### `fingerprint`<sup>Required</sup> <a name="fingerprint" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.fingerprint"></a>
 
 ```python
 fingerprint: str
@@ -1433,7 +1433,7 @@ fingerprint: str
 
 ---
 
-##### `gateway_address`<sup>Required</sup> <a name="gateway_address" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.gatewayAddress"></a>
+##### `gateway_address`<sup>Required</sup> <a name="gateway_address" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.gatewayAddress"></a>
 
 ```python
 gateway_address: str
@@ -1443,7 +1443,7 @@ gateway_address: str
 
 ---
 
-##### `internal_ipv6_prefix`<sup>Required</sup> <a name="internal_ipv6_prefix" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.internalIpv6Prefix"></a>
+##### `internal_ipv6_prefix`<sup>Required</sup> <a name="internal_ipv6_prefix" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.internalIpv6Prefix"></a>
 
 ```python
 internal_ipv6_prefix: str
@@ -1453,7 +1453,7 @@ internal_ipv6_prefix: str
 
 ---
 
-##### `ipv6_cidr_range`<sup>Required</sup> <a name="ipv6_cidr_range" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.ipv6CidrRange"></a>
+##### `ipv6_cidr_range`<sup>Required</sup> <a name="ipv6_cidr_range" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.ipv6CidrRange"></a>
 
 ```python
 ipv6_cidr_range: str
@@ -1463,7 +1463,7 @@ ipv6_cidr_range: str
 
 ---
 
-##### `ipv6_gce_endpoint`<sup>Required</sup> <a name="ipv6_gce_endpoint" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.ipv6GceEndpoint"></a>
+##### `ipv6_gce_endpoint`<sup>Required</sup> <a name="ipv6_gce_endpoint" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.ipv6GceEndpoint"></a>
 
 ```python
 ipv6_gce_endpoint: str
@@ -1473,37 +1473,37 @@ ipv6_gce_endpoint: str
 
 ---
 
-##### `log_config`<sup>Required</sup> <a name="log_config" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.logConfig"></a>
+##### `log_config`<sup>Required</sup> <a name="log_config" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.logConfig"></a>
 
 ```python
 log_config: ComputeSubnetworkLogConfigOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference">ComputeSubnetworkLogConfigOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference">ComputeSubnetworkLogConfigOutputReference</a>
 
 ---
 
-##### `params`<sup>Required</sup> <a name="params" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.params"></a>
+##### `params`<sup>Required</sup> <a name="params" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.params"></a>
 
 ```python
 params: ComputeSubnetworkParamsOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference">ComputeSubnetworkParamsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference">ComputeSubnetworkParamsOutputReference</a>
 
 ---
 
-##### `secondary_ip_range`<sup>Required</sup> <a name="secondary_ip_range" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.secondaryIpRange"></a>
+##### `secondary_ip_range`<sup>Required</sup> <a name="secondary_ip_range" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.secondaryIpRange"></a>
 
 ```python
 secondary_ip_range: ComputeSubnetworkSecondaryIpRangeList
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeList">ComputeSubnetworkSecondaryIpRangeList</a>
+- *Type:* <a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeList">ComputeSubnetworkSecondaryIpRangeList</a>
 
 ---
 
-##### `self_link`<sup>Required</sup> <a name="self_link" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.selfLink"></a>
+##### `self_link`<sup>Required</sup> <a name="self_link" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.selfLink"></a>
 
 ```python
 self_link: str
@@ -1513,7 +1513,7 @@ self_link: str
 
 ---
 
-##### `state`<sup>Required</sup> <a name="state" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.state"></a>
+##### `state`<sup>Required</sup> <a name="state" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.state"></a>
 
 ```python
 state: str
@@ -1523,7 +1523,7 @@ state: str
 
 ---
 
-##### `subnetwork_id`<sup>Required</sup> <a name="subnetwork_id" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.subnetworkId"></a>
+##### `subnetwork_id`<sup>Required</sup> <a name="subnetwork_id" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.subnetworkId"></a>
 
 ```python
 subnetwork_id: typing.Union[int, float]
@@ -1533,17 +1533,17 @@ subnetwork_id: typing.Union[int, float]
 
 ---
 
-##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.timeouts"></a>
+##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.timeouts"></a>
 
 ```python
 timeouts: ComputeSubnetworkTimeoutsOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference">ComputeSubnetworkTimeoutsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference">ComputeSubnetworkTimeoutsOutputReference</a>
 
 ---
 
-##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.descriptionInput"></a>
+##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.descriptionInput"></a>
 
 ```python
 description_input: str
@@ -1553,7 +1553,7 @@ description_input: str
 
 ---
 
-##### `enable_flow_logs_input`<sup>Optional</sup> <a name="enable_flow_logs_input" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.enableFlowLogsInput"></a>
+##### `enable_flow_logs_input`<sup>Optional</sup> <a name="enable_flow_logs_input" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.enableFlowLogsInput"></a>
 
 ```python
 enable_flow_logs_input: bool | IResolvable
@@ -1563,7 +1563,7 @@ enable_flow_logs_input: bool | IResolvable
 
 ---
 
-##### `external_ipv6_prefix_input`<sup>Optional</sup> <a name="external_ipv6_prefix_input" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.externalIpv6PrefixInput"></a>
+##### `external_ipv6_prefix_input`<sup>Optional</sup> <a name="external_ipv6_prefix_input" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.externalIpv6PrefixInput"></a>
 
 ```python
 external_ipv6_prefix_input: str
@@ -1573,7 +1573,7 @@ external_ipv6_prefix_input: str
 
 ---
 
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.idInput"></a>
+##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.idInput"></a>
 
 ```python
 id_input: str
@@ -1583,7 +1583,7 @@ id_input: str
 
 ---
 
-##### `ip_cidr_range_input`<sup>Optional</sup> <a name="ip_cidr_range_input" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.ipCidrRangeInput"></a>
+##### `ip_cidr_range_input`<sup>Optional</sup> <a name="ip_cidr_range_input" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.ipCidrRangeInput"></a>
 
 ```python
 ip_cidr_range_input: str
@@ -1593,7 +1593,7 @@ ip_cidr_range_input: str
 
 ---
 
-##### `ip_collection_input`<sup>Optional</sup> <a name="ip_collection_input" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.ipCollectionInput"></a>
+##### `ip_collection_input`<sup>Optional</sup> <a name="ip_collection_input" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.ipCollectionInput"></a>
 
 ```python
 ip_collection_input: str
@@ -1603,7 +1603,7 @@ ip_collection_input: str
 
 ---
 
-##### `ipv6_access_type_input`<sup>Optional</sup> <a name="ipv6_access_type_input" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.ipv6AccessTypeInput"></a>
+##### `ipv6_access_type_input`<sup>Optional</sup> <a name="ipv6_access_type_input" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.ipv6AccessTypeInput"></a>
 
 ```python
 ipv6_access_type_input: str
@@ -1613,17 +1613,17 @@ ipv6_access_type_input: str
 
 ---
 
-##### `log_config_input`<sup>Optional</sup> <a name="log_config_input" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.logConfigInput"></a>
+##### `log_config_input`<sup>Optional</sup> <a name="log_config_input" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.logConfigInput"></a>
 
 ```python
 log_config_input: ComputeSubnetworkLogConfig
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfig">ComputeSubnetworkLogConfig</a>
+- *Type:* <a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfig">ComputeSubnetworkLogConfig</a>
 
 ---
 
-##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.nameInput"></a>
+##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.nameInput"></a>
 
 ```python
 name_input: str
@@ -1633,7 +1633,7 @@ name_input: str
 
 ---
 
-##### `network_input`<sup>Optional</sup> <a name="network_input" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.networkInput"></a>
+##### `network_input`<sup>Optional</sup> <a name="network_input" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.networkInput"></a>
 
 ```python
 network_input: str
@@ -1643,17 +1643,17 @@ network_input: str
 
 ---
 
-##### `params_input`<sup>Optional</sup> <a name="params_input" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.paramsInput"></a>
+##### `params_input`<sup>Optional</sup> <a name="params_input" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.paramsInput"></a>
 
 ```python
 params_input: ComputeSubnetworkParams
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkParams">ComputeSubnetworkParams</a>
+- *Type:* <a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkParams">ComputeSubnetworkParams</a>
 
 ---
 
-##### `private_ip_google_access_input`<sup>Optional</sup> <a name="private_ip_google_access_input" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.privateIpGoogleAccessInput"></a>
+##### `private_ip_google_access_input`<sup>Optional</sup> <a name="private_ip_google_access_input" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.privateIpGoogleAccessInput"></a>
 
 ```python
 private_ip_google_access_input: bool | IResolvable
@@ -1663,7 +1663,7 @@ private_ip_google_access_input: bool | IResolvable
 
 ---
 
-##### `private_ipv6_google_access_input`<sup>Optional</sup> <a name="private_ipv6_google_access_input" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.privateIpv6GoogleAccessInput"></a>
+##### `private_ipv6_google_access_input`<sup>Optional</sup> <a name="private_ipv6_google_access_input" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.privateIpv6GoogleAccessInput"></a>
 
 ```python
 private_ipv6_google_access_input: str
@@ -1673,7 +1673,7 @@ private_ipv6_google_access_input: str
 
 ---
 
-##### `project_input`<sup>Optional</sup> <a name="project_input" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.projectInput"></a>
+##### `project_input`<sup>Optional</sup> <a name="project_input" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.projectInput"></a>
 
 ```python
 project_input: str
@@ -1683,7 +1683,7 @@ project_input: str
 
 ---
 
-##### `purpose_input`<sup>Optional</sup> <a name="purpose_input" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.purposeInput"></a>
+##### `purpose_input`<sup>Optional</sup> <a name="purpose_input" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.purposeInput"></a>
 
 ```python
 purpose_input: str
@@ -1693,7 +1693,7 @@ purpose_input: str
 
 ---
 
-##### `region_input`<sup>Optional</sup> <a name="region_input" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.regionInput"></a>
+##### `region_input`<sup>Optional</sup> <a name="region_input" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.regionInput"></a>
 
 ```python
 region_input: str
@@ -1703,7 +1703,7 @@ region_input: str
 
 ---
 
-##### `reserved_internal_range_input`<sup>Optional</sup> <a name="reserved_internal_range_input" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.reservedInternalRangeInput"></a>
+##### `reserved_internal_range_input`<sup>Optional</sup> <a name="reserved_internal_range_input" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.reservedInternalRangeInput"></a>
 
 ```python
 reserved_internal_range_input: str
@@ -1713,7 +1713,7 @@ reserved_internal_range_input: str
 
 ---
 
-##### `role_input`<sup>Optional</sup> <a name="role_input" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.roleInput"></a>
+##### `role_input`<sup>Optional</sup> <a name="role_input" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.roleInput"></a>
 
 ```python
 role_input: str
@@ -1723,17 +1723,17 @@ role_input: str
 
 ---
 
-##### `secondary_ip_range_input`<sup>Optional</sup> <a name="secondary_ip_range_input" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.secondaryIpRangeInput"></a>
+##### `secondary_ip_range_input`<sup>Optional</sup> <a name="secondary_ip_range_input" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.secondaryIpRangeInput"></a>
 
 ```python
 secondary_ip_range_input: IResolvable | typing.List[ComputeSubnetworkSecondaryIpRange]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRange">ComputeSubnetworkSecondaryIpRange</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRange">ComputeSubnetworkSecondaryIpRange</a>]
 
 ---
 
-##### `send_secondary_ip_range_if_empty_input`<sup>Optional</sup> <a name="send_secondary_ip_range_if_empty_input" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.sendSecondaryIpRangeIfEmptyInput"></a>
+##### `send_secondary_ip_range_if_empty_input`<sup>Optional</sup> <a name="send_secondary_ip_range_if_empty_input" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.sendSecondaryIpRangeIfEmptyInput"></a>
 
 ```python
 send_secondary_ip_range_if_empty_input: bool | IResolvable
@@ -1743,7 +1743,7 @@ send_secondary_ip_range_if_empty_input: bool | IResolvable
 
 ---
 
-##### `stack_type_input`<sup>Optional</sup> <a name="stack_type_input" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.stackTypeInput"></a>
+##### `stack_type_input`<sup>Optional</sup> <a name="stack_type_input" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.stackTypeInput"></a>
 
 ```python
 stack_type_input: str
@@ -1753,17 +1753,17 @@ stack_type_input: str
 
 ---
 
-##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.timeoutsInput"></a>
+##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.timeoutsInput"></a>
 
 ```python
 timeouts_input: IResolvable | ComputeSubnetworkTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeouts">ComputeSubnetworkTimeouts</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeouts">ComputeSubnetworkTimeouts</a>
 
 ---
 
-##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.description"></a>
+##### `description`<sup>Required</sup> <a name="description" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.description"></a>
 
 ```python
 description: str
@@ -1773,7 +1773,7 @@ description: str
 
 ---
 
-##### `enable_flow_logs`<sup>Required</sup> <a name="enable_flow_logs" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.enableFlowLogs"></a>
+##### `enable_flow_logs`<sup>Required</sup> <a name="enable_flow_logs" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.enableFlowLogs"></a>
 
 ```python
 enable_flow_logs: bool | IResolvable
@@ -1783,7 +1783,7 @@ enable_flow_logs: bool | IResolvable
 
 ---
 
-##### `external_ipv6_prefix`<sup>Required</sup> <a name="external_ipv6_prefix" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.externalIpv6Prefix"></a>
+##### `external_ipv6_prefix`<sup>Required</sup> <a name="external_ipv6_prefix" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.externalIpv6Prefix"></a>
 
 ```python
 external_ipv6_prefix: str
@@ -1793,7 +1793,7 @@ external_ipv6_prefix: str
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.id"></a>
 
 ```python
 id: str
@@ -1803,7 +1803,7 @@ id: str
 
 ---
 
-##### `ip_cidr_range`<sup>Required</sup> <a name="ip_cidr_range" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.ipCidrRange"></a>
+##### `ip_cidr_range`<sup>Required</sup> <a name="ip_cidr_range" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.ipCidrRange"></a>
 
 ```python
 ip_cidr_range: str
@@ -1813,7 +1813,7 @@ ip_cidr_range: str
 
 ---
 
-##### `ip_collection`<sup>Required</sup> <a name="ip_collection" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.ipCollection"></a>
+##### `ip_collection`<sup>Required</sup> <a name="ip_collection" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.ipCollection"></a>
 
 ```python
 ip_collection: str
@@ -1823,7 +1823,7 @@ ip_collection: str
 
 ---
 
-##### `ipv6_access_type`<sup>Required</sup> <a name="ipv6_access_type" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.ipv6AccessType"></a>
+##### `ipv6_access_type`<sup>Required</sup> <a name="ipv6_access_type" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.ipv6AccessType"></a>
 
 ```python
 ipv6_access_type: str
@@ -1833,7 +1833,7 @@ ipv6_access_type: str
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.name"></a>
 
 ```python
 name: str
@@ -1843,7 +1843,7 @@ name: str
 
 ---
 
-##### `network`<sup>Required</sup> <a name="network" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.network"></a>
+##### `network`<sup>Required</sup> <a name="network" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.network"></a>
 
 ```python
 network: str
@@ -1853,7 +1853,7 @@ network: str
 
 ---
 
-##### `private_ip_google_access`<sup>Required</sup> <a name="private_ip_google_access" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.privateIpGoogleAccess"></a>
+##### `private_ip_google_access`<sup>Required</sup> <a name="private_ip_google_access" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.privateIpGoogleAccess"></a>
 
 ```python
 private_ip_google_access: bool | IResolvable
@@ -1863,7 +1863,7 @@ private_ip_google_access: bool | IResolvable
 
 ---
 
-##### `private_ipv6_google_access`<sup>Required</sup> <a name="private_ipv6_google_access" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.privateIpv6GoogleAccess"></a>
+##### `private_ipv6_google_access`<sup>Required</sup> <a name="private_ipv6_google_access" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.privateIpv6GoogleAccess"></a>
 
 ```python
 private_ipv6_google_access: str
@@ -1873,7 +1873,7 @@ private_ipv6_google_access: str
 
 ---
 
-##### `project`<sup>Required</sup> <a name="project" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.project"></a>
+##### `project`<sup>Required</sup> <a name="project" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.project"></a>
 
 ```python
 project: str
@@ -1883,7 +1883,7 @@ project: str
 
 ---
 
-##### `purpose`<sup>Required</sup> <a name="purpose" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.purpose"></a>
+##### `purpose`<sup>Required</sup> <a name="purpose" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.purpose"></a>
 
 ```python
 purpose: str
@@ -1893,7 +1893,7 @@ purpose: str
 
 ---
 
-##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.region"></a>
+##### `region`<sup>Required</sup> <a name="region" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.region"></a>
 
 ```python
 region: str
@@ -1903,7 +1903,7 @@ region: str
 
 ---
 
-##### `reserved_internal_range`<sup>Required</sup> <a name="reserved_internal_range" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.reservedInternalRange"></a>
+##### `reserved_internal_range`<sup>Required</sup> <a name="reserved_internal_range" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.reservedInternalRange"></a>
 
 ```python
 reserved_internal_range: str
@@ -1913,7 +1913,7 @@ reserved_internal_range: str
 
 ---
 
-##### `role`<sup>Required</sup> <a name="role" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.role"></a>
+##### `role`<sup>Required</sup> <a name="role" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.role"></a>
 
 ```python
 role: str
@@ -1923,7 +1923,7 @@ role: str
 
 ---
 
-##### `send_secondary_ip_range_if_empty`<sup>Required</sup> <a name="send_secondary_ip_range_if_empty" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.sendSecondaryIpRangeIfEmpty"></a>
+##### `send_secondary_ip_range_if_empty`<sup>Required</sup> <a name="send_secondary_ip_range_if_empty" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.sendSecondaryIpRangeIfEmpty"></a>
 
 ```python
 send_secondary_ip_range_if_empty: bool | IResolvable
@@ -1933,7 +1933,7 @@ send_secondary_ip_range_if_empty: bool | IResolvable
 
 ---
 
-##### `stack_type`<sup>Required</sup> <a name="stack_type" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.stackType"></a>
+##### `stack_type`<sup>Required</sup> <a name="stack_type" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.stackType"></a>
 
 ```python
 stack_type: str
@@ -1947,11 +1947,11 @@ stack_type: str
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetwork.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetwork.property.tfResourceType"></a>
 
 ```python
 tfResourceType: str
@@ -1963,12 +1963,12 @@ tfResourceType: str
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### ComputeSubnetworkConfig <a name="ComputeSubnetworkConfig" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkConfig"></a>
+### ComputeSubnetworkConfig <a name="ComputeSubnetworkConfig" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkConfig.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import compute_subnetwork
+from cdktn_provider_google import compute_subnetwork
 
 computeSubnetwork.ComputeSubnetworkConfig(
   connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
@@ -2007,39 +2007,39 @@ computeSubnetwork.ComputeSubnetworkConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.name">name</a></code> | <code>str</code> | The name of the resource, provided by the client when initially creating the resource. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.network">network</a></code> | <code>str</code> | The network this subnet belongs to. Only networks that are in the distributed mode can have subnetworks. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.description">description</a></code> | <code>str</code> | An optional description of this resource. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.enableFlowLogs">enable_flow_logs</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether to enable flow logging for this subnetwork. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.externalIpv6Prefix">external_ipv6_prefix</a></code> | <code>str</code> | The range of external IPv6 addresses that are owned by this subnetwork. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_subnetwork#id ComputeSubnetwork#id}. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.ipCidrRange">ip_cidr_range</a></code> | <code>str</code> | The range of internal addresses that are owned by this subnetwork. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.ipCollection">ip_collection</a></code> | <code>str</code> | Resource reference of a PublicDelegatedPrefix. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.ipv6AccessType">ipv6_access_type</a></code> | <code>str</code> | The access type of IPv6 address this subnet holds. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.logConfig">log_config</a></code> | <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfig">ComputeSubnetworkLogConfig</a></code> | log_config block. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.params">params</a></code> | <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkParams">ComputeSubnetworkParams</a></code> | params block. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.privateIpGoogleAccess">private_ip_google_access</a></code> | <code>bool \| cdktf.IResolvable</code> | When enabled, VMs in this subnetwork without external IP addresses can access Google APIs and services by using Private Google Access. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.privateIpv6GoogleAccess">private_ipv6_google_access</a></code> | <code>str</code> | The private IPv6 google access type for the VMs in this subnet. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_subnetwork#project ComputeSubnetwork#project}. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.purpose">purpose</a></code> | <code>str</code> | The purpose of the resource. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.region">region</a></code> | <code>str</code> | The GCP region for this subnetwork. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.reservedInternalRange">reserved_internal_range</a></code> | <code>str</code> | The ID of the reserved internal range. Must be prefixed with 'networkconnectivity.googleapis.com' E.g. 'networkconnectivity.googleapis.com/projects/{project}/locations/global/internalRanges/{rangeId}'. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.role">role</a></code> | <code>str</code> | The role of subnetwork. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.secondaryIpRange">secondary_ip_range</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRange">ComputeSubnetworkSecondaryIpRange</a>]</code> | secondary_ip_range block. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.sendSecondaryIpRangeIfEmpty">send_secondary_ip_range_if_empty</a></code> | <code>bool \| cdktf.IResolvable</code> | Controls the removal behavior of secondary_ip_range. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.stackType">stack_type</a></code> | <code>str</code> | The stack type for this subnet to identify whether the IPv6 feature is enabled or not. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeouts">ComputeSubnetworkTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.name">name</a></code> | <code>str</code> | The name of the resource, provided by the client when initially creating the resource. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.network">network</a></code> | <code>str</code> | The network this subnet belongs to. Only networks that are in the distributed mode can have subnetworks. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.description">description</a></code> | <code>str</code> | An optional description of this resource. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.enableFlowLogs">enable_flow_logs</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether to enable flow logging for this subnetwork. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.externalIpv6Prefix">external_ipv6_prefix</a></code> | <code>str</code> | The range of external IPv6 addresses that are owned by this subnetwork. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_subnetwork#id ComputeSubnetwork#id}. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.ipCidrRange">ip_cidr_range</a></code> | <code>str</code> | The range of internal addresses that are owned by this subnetwork. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.ipCollection">ip_collection</a></code> | <code>str</code> | Resource reference of a PublicDelegatedPrefix. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.ipv6AccessType">ipv6_access_type</a></code> | <code>str</code> | The access type of IPv6 address this subnet holds. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.logConfig">log_config</a></code> | <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfig">ComputeSubnetworkLogConfig</a></code> | log_config block. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.params">params</a></code> | <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkParams">ComputeSubnetworkParams</a></code> | params block. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.privateIpGoogleAccess">private_ip_google_access</a></code> | <code>bool \| cdktf.IResolvable</code> | When enabled, VMs in this subnetwork without external IP addresses can access Google APIs and services by using Private Google Access. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.privateIpv6GoogleAccess">private_ipv6_google_access</a></code> | <code>str</code> | The private IPv6 google access type for the VMs in this subnet. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_subnetwork#project ComputeSubnetwork#project}. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.purpose">purpose</a></code> | <code>str</code> | The purpose of the resource. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.region">region</a></code> | <code>str</code> | The GCP region for this subnetwork. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.reservedInternalRange">reserved_internal_range</a></code> | <code>str</code> | The ID of the reserved internal range. Must be prefixed with 'networkconnectivity.googleapis.com' E.g. 'networkconnectivity.googleapis.com/projects/{project}/locations/global/internalRanges/{rangeId}'. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.role">role</a></code> | <code>str</code> | The role of subnetwork. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.secondaryIpRange">secondary_ip_range</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRange">ComputeSubnetworkSecondaryIpRange</a>]</code> | secondary_ip_range block. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.sendSecondaryIpRangeIfEmpty">send_secondary_ip_range_if_empty</a></code> | <code>bool \| cdktf.IResolvable</code> | Controls the removal behavior of secondary_ip_range. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.stackType">stack_type</a></code> | <code>str</code> | The stack type for this subnet to identify whether the IPv6 feature is enabled or not. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeouts">ComputeSubnetworkTimeouts</a></code> | timeouts block. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
@@ -2049,7 +2049,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -2059,7 +2059,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[ITerraformDependable]
@@ -2069,7 +2069,7 @@ depends_on: typing.List[ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -2079,7 +2079,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -2089,7 +2089,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -2099,7 +2099,7 @@ provider: TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
@@ -2109,7 +2109,7 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.name"></a>
 
 ```python
 name: str
@@ -2130,7 +2130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `network`<sup>Required</sup> <a name="network" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.network"></a>
+##### `network`<sup>Required</sup> <a name="network" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.network"></a>
 
 ```python
 network: str
@@ -2144,7 +2144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.description"></a>
+##### `description`<sup>Optional</sup> <a name="description" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.description"></a>
 
 ```python
 description: str
@@ -2162,7 +2162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `enable_flow_logs`<sup>Optional</sup> <a name="enable_flow_logs" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.enableFlowLogs"></a>
+##### `enable_flow_logs`<sup>Optional</sup> <a name="enable_flow_logs" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.enableFlowLogs"></a>
 
 ```python
 enable_flow_logs: bool | IResolvable
@@ -2181,7 +2181,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `external_ipv6_prefix`<sup>Optional</sup> <a name="external_ipv6_prefix" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.externalIpv6Prefix"></a>
+##### `external_ipv6_prefix`<sup>Optional</sup> <a name="external_ipv6_prefix" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.externalIpv6Prefix"></a>
 
 ```python
 external_ipv6_prefix: str
@@ -2195,7 +2195,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.id"></a>
 
 ```python
 id: str
@@ -2210,7 +2210,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
-##### `ip_cidr_range`<sup>Optional</sup> <a name="ip_cidr_range" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.ipCidrRange"></a>
+##### `ip_cidr_range`<sup>Optional</sup> <a name="ip_cidr_range" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.ipCidrRange"></a>
 
 ```python
 ip_cidr_range: str
@@ -2229,7 +2229,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `ip_collection`<sup>Optional</sup> <a name="ip_collection" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.ipCollection"></a>
+##### `ip_collection`<sup>Optional</sup> <a name="ip_collection" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.ipCollection"></a>
 
 ```python
 ip_collection: str
@@ -2254,7 +2254,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `ipv6_access_type`<sup>Optional</sup> <a name="ipv6_access_type" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.ipv6AccessType"></a>
+##### `ipv6_access_type`<sup>Optional</sup> <a name="ipv6_access_type" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.ipv6AccessType"></a>
 
 ```python
 ipv6_access_type: str
@@ -2272,13 +2272,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `log_config`<sup>Optional</sup> <a name="log_config" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.logConfig"></a>
+##### `log_config`<sup>Optional</sup> <a name="log_config" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.logConfig"></a>
 
 ```python
 log_config: ComputeSubnetworkLogConfig
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfig">ComputeSubnetworkLogConfig</a>
+- *Type:* <a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfig">ComputeSubnetworkLogConfig</a>
 
 log_config block.
 
@@ -2286,13 +2286,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `params`<sup>Optional</sup> <a name="params" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.params"></a>
+##### `params`<sup>Optional</sup> <a name="params" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.params"></a>
 
 ```python
 params: ComputeSubnetworkParams
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkParams">ComputeSubnetworkParams</a>
+- *Type:* <a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkParams">ComputeSubnetworkParams</a>
 
 params block.
 
@@ -2300,7 +2300,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `private_ip_google_access`<sup>Optional</sup> <a name="private_ip_google_access" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.privateIpGoogleAccess"></a>
+##### `private_ip_google_access`<sup>Optional</sup> <a name="private_ip_google_access" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.privateIpGoogleAccess"></a>
 
 ```python
 private_ip_google_access: bool | IResolvable
@@ -2314,7 +2314,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `private_ipv6_google_access`<sup>Optional</sup> <a name="private_ipv6_google_access" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.privateIpv6GoogleAccess"></a>
+##### `private_ipv6_google_access`<sup>Optional</sup> <a name="private_ipv6_google_access" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.privateIpv6GoogleAccess"></a>
 
 ```python
 private_ipv6_google_access: str
@@ -2328,7 +2328,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `project`<sup>Optional</sup> <a name="project" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.project"></a>
+##### `project`<sup>Optional</sup> <a name="project" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.project"></a>
 
 ```python
 project: str
@@ -2340,7 +2340,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `purpose`<sup>Optional</sup> <a name="purpose" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.purpose"></a>
+##### `purpose`<sup>Optional</sup> <a name="purpose" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.purpose"></a>
 
 ```python
 purpose: str
@@ -2363,7 +2363,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.region"></a>
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.region"></a>
 
 ```python
 region: str
@@ -2377,7 +2377,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `reserved_internal_range`<sup>Optional</sup> <a name="reserved_internal_range" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.reservedInternalRange"></a>
+##### `reserved_internal_range`<sup>Optional</sup> <a name="reserved_internal_range" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.reservedInternalRange"></a>
 
 ```python
 reserved_internal_range: str
@@ -2391,7 +2391,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `role`<sup>Optional</sup> <a name="role" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.role"></a>
+##### `role`<sup>Optional</sup> <a name="role" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.role"></a>
 
 ```python
 role: str
@@ -2410,13 +2410,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `secondary_ip_range`<sup>Optional</sup> <a name="secondary_ip_range" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.secondaryIpRange"></a>
+##### `secondary_ip_range`<sup>Optional</sup> <a name="secondary_ip_range" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.secondaryIpRange"></a>
 
 ```python
 secondary_ip_range: IResolvable | typing.List[ComputeSubnetworkSecondaryIpRange]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRange">ComputeSubnetworkSecondaryIpRange</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRange">ComputeSubnetworkSecondaryIpRange</a>]
 
 secondary_ip_range block.
 
@@ -2424,7 +2424,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `send_secondary_ip_range_if_empty`<sup>Optional</sup> <a name="send_secondary_ip_range_if_empty" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.sendSecondaryIpRangeIfEmpty"></a>
+##### `send_secondary_ip_range_if_empty`<sup>Optional</sup> <a name="send_secondary_ip_range_if_empty" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.sendSecondaryIpRangeIfEmpty"></a>
 
 ```python
 send_secondary_ip_range_if_empty: bool | IResolvable
@@ -2444,7 +2444,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `stack_type`<sup>Optional</sup> <a name="stack_type" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.stackType"></a>
+##### `stack_type`<sup>Optional</sup> <a name="stack_type" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.stackType"></a>
 
 ```python
 stack_type: str
@@ -2460,13 +2460,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkConfig.property.timeouts"></a>
 
 ```python
 timeouts: ComputeSubnetworkTimeouts
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeouts">ComputeSubnetworkTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeouts">ComputeSubnetworkTimeouts</a>
 
 timeouts block.
 
@@ -2474,12 +2474,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### ComputeSubnetworkLogConfig <a name="ComputeSubnetworkLogConfig" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfig"></a>
+### ComputeSubnetworkLogConfig <a name="ComputeSubnetworkLogConfig" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfig.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import compute_subnetwork
+from cdktn_provider_google import compute_subnetwork
 
 computeSubnetwork.ComputeSubnetworkLogConfig(
   aggregation_interval: str = None,
@@ -2494,15 +2494,15 @@ computeSubnetwork.ComputeSubnetworkLogConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfig.property.aggregationInterval">aggregation_interval</a></code> | <code>str</code> | Can only be specified if VPC flow logging for this subnetwork is enabled. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfig.property.filterExpr">filter_expr</a></code> | <code>str</code> | Export filter used to define which VPC flow logs should be logged, as as CEL expression. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfig.property.flowSampling">flow_sampling</a></code> | <code>typing.Union[int, float]</code> | Can only be specified if VPC flow logging for this subnetwork is enabled. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfig.property.metadata">metadata</a></code> | <code>str</code> | Can only be specified if VPC flow logging for this subnetwork is enabled. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfig.property.metadataFields">metadata_fields</a></code> | <code>typing.List[str]</code> | List of metadata fields that should be added to reported logs. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfig.property.aggregationInterval">aggregation_interval</a></code> | <code>str</code> | Can only be specified if VPC flow logging for this subnetwork is enabled. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfig.property.filterExpr">filter_expr</a></code> | <code>str</code> | Export filter used to define which VPC flow logs should be logged, as as CEL expression. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfig.property.flowSampling">flow_sampling</a></code> | <code>typing.Union[int, float]</code> | Can only be specified if VPC flow logging for this subnetwork is enabled. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfig.property.metadata">metadata</a></code> | <code>str</code> | Can only be specified if VPC flow logging for this subnetwork is enabled. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfig.property.metadataFields">metadata_fields</a></code> | <code>typing.List[str]</code> | List of metadata fields that should be added to reported logs. |
 
 ---
 
-##### `aggregation_interval`<sup>Optional</sup> <a name="aggregation_interval" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfig.property.aggregationInterval"></a>
+##### `aggregation_interval`<sup>Optional</sup> <a name="aggregation_interval" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfig.property.aggregationInterval"></a>
 
 ```python
 aggregation_interval: str
@@ -2520,7 +2520,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `filter_expr`<sup>Optional</sup> <a name="filter_expr" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfig.property.filterExpr"></a>
+##### `filter_expr`<sup>Optional</sup> <a name="filter_expr" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfig.property.filterExpr"></a>
 
 ```python
 filter_expr: str
@@ -2538,7 +2538,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `flow_sampling`<sup>Optional</sup> <a name="flow_sampling" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfig.property.flowSampling"></a>
+##### `flow_sampling`<sup>Optional</sup> <a name="flow_sampling" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfig.property.flowSampling"></a>
 
 ```python
 flow_sampling: typing.Union[int, float]
@@ -2557,7 +2557,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `metadata`<sup>Optional</sup> <a name="metadata" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfig.property.metadata"></a>
+##### `metadata`<sup>Optional</sup> <a name="metadata" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfig.property.metadata"></a>
 
 ```python
 metadata: str
@@ -2574,7 +2574,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `metadata_fields`<sup>Optional</sup> <a name="metadata_fields" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfig.property.metadataFields"></a>
+##### `metadata_fields`<sup>Optional</sup> <a name="metadata_fields" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfig.property.metadataFields"></a>
 
 ```python
 metadata_fields: typing.List[str]
@@ -2590,12 +2590,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### ComputeSubnetworkParams <a name="ComputeSubnetworkParams" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkParams"></a>
+### ComputeSubnetworkParams <a name="ComputeSubnetworkParams" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkParams"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkParams.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkParams.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import compute_subnetwork
+from cdktn_provider_google import compute_subnetwork
 
 computeSubnetwork.ComputeSubnetworkParams(
   resource_manager_tags: typing.Mapping[str] = None
@@ -2606,11 +2606,11 @@ computeSubnetwork.ComputeSubnetworkParams(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkParams.property.resourceManagerTags">resource_manager_tags</a></code> | <code>typing.Mapping[str]</code> | Resource manager tags to be bound to the subnetwork. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkParams.property.resourceManagerTags">resource_manager_tags</a></code> | <code>typing.Mapping[str]</code> | Resource manager tags to be bound to the subnetwork. |
 
 ---
 
-##### `resource_manager_tags`<sup>Optional</sup> <a name="resource_manager_tags" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkParams.property.resourceManagerTags"></a>
+##### `resource_manager_tags`<sup>Optional</sup> <a name="resource_manager_tags" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkParams.property.resourceManagerTags"></a>
 
 ```python
 resource_manager_tags: typing.Mapping[str]
@@ -2631,12 +2631,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### ComputeSubnetworkSecondaryIpRange <a name="ComputeSubnetworkSecondaryIpRange" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRange"></a>
+### ComputeSubnetworkSecondaryIpRange <a name="ComputeSubnetworkSecondaryIpRange" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRange"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRange.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRange.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import compute_subnetwork
+from cdktn_provider_google import compute_subnetwork
 
 computeSubnetwork.ComputeSubnetworkSecondaryIpRange(
   range_name: str,
@@ -2649,13 +2649,13 @@ computeSubnetwork.ComputeSubnetworkSecondaryIpRange(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRange.property.rangeName">range_name</a></code> | <code>str</code> | The name associated with this subnetwork secondary range, used when adding an alias IP range to a VM instance. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRange.property.ipCidrRange">ip_cidr_range</a></code> | <code>str</code> | The range of IP addresses belonging to this subnetwork secondary range. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRange.property.reservedInternalRange">reserved_internal_range</a></code> | <code>str</code> | The ID of the reserved internal range. Must be prefixed with 'networkconnectivity.googleapis.com' E.g. 'networkconnectivity.googleapis.com/projects/{project}/locations/global/internalRanges/{rangeId}'. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRange.property.rangeName">range_name</a></code> | <code>str</code> | The name associated with this subnetwork secondary range, used when adding an alias IP range to a VM instance. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRange.property.ipCidrRange">ip_cidr_range</a></code> | <code>str</code> | The range of IP addresses belonging to this subnetwork secondary range. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRange.property.reservedInternalRange">reserved_internal_range</a></code> | <code>str</code> | The ID of the reserved internal range. Must be prefixed with 'networkconnectivity.googleapis.com' E.g. 'networkconnectivity.googleapis.com/projects/{project}/locations/global/internalRanges/{rangeId}'. |
 
 ---
 
-##### `range_name`<sup>Required</sup> <a name="range_name" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRange.property.rangeName"></a>
+##### `range_name`<sup>Required</sup> <a name="range_name" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRange.property.rangeName"></a>
 
 ```python
 range_name: str
@@ -2673,7 +2673,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `ip_cidr_range`<sup>Optional</sup> <a name="ip_cidr_range" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRange.property.ipCidrRange"></a>
+##### `ip_cidr_range`<sup>Optional</sup> <a name="ip_cidr_range" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRange.property.ipCidrRange"></a>
 
 ```python
 ip_cidr_range: str
@@ -2692,7 +2692,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `reserved_internal_range`<sup>Optional</sup> <a name="reserved_internal_range" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRange.property.reservedInternalRange"></a>
+##### `reserved_internal_range`<sup>Optional</sup> <a name="reserved_internal_range" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRange.property.reservedInternalRange"></a>
 
 ```python
 reserved_internal_range: str
@@ -2706,12 +2706,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### ComputeSubnetworkTimeouts <a name="ComputeSubnetworkTimeouts" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeouts"></a>
+### ComputeSubnetworkTimeouts <a name="ComputeSubnetworkTimeouts" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeouts"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeouts.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeouts.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import compute_subnetwork
+from cdktn_provider_google import compute_subnetwork
 
 computeSubnetwork.ComputeSubnetworkTimeouts(
   create: str = None,
@@ -2724,13 +2724,13 @@ computeSubnetwork.ComputeSubnetworkTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_subnetwork#create ComputeSubnetwork#create}. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_subnetwork#delete ComputeSubnetwork#delete}. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_subnetwork#update ComputeSubnetwork#update}. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_subnetwork#create ComputeSubnetwork#create}. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_subnetwork#delete ComputeSubnetwork#delete}. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_subnetwork#update ComputeSubnetwork#update}. |
 
 ---
 
-##### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeouts.property.create"></a>
+##### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeouts.property.create"></a>
 
 ```python
 create: str
@@ -2742,7 +2742,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeouts.property.delete"></a>
+##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeouts.property.delete"></a>
 
 ```python
 delete: str
@@ -2754,7 +2754,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeouts.property.update"></a>
+##### `update`<sup>Optional</sup> <a name="update" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeouts.property.update"></a>
 
 ```python
 update: str
@@ -2768,12 +2768,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### ComputeSubnetworkLogConfigOutputReference <a name="ComputeSubnetworkLogConfigOutputReference" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference"></a>
+### ComputeSubnetworkLogConfigOutputReference <a name="ComputeSubnetworkLogConfigOutputReference" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import compute_subnetwork
+from cdktn_provider_google import compute_subnetwork
 
 computeSubnetwork.ComputeSubnetworkLogConfigOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -2783,12 +2783,12 @@ computeSubnetwork.ComputeSubnetworkLogConfigOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -2796,7 +2796,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -2808,34 +2808,34 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.resetAggregationInterval">reset_aggregation_interval</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.resetFilterExpr">reset_filter_expr</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.resetFlowSampling">reset_flow_sampling</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.resetMetadata">reset_metadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.resetMetadataFields">reset_metadata_fields</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.resetAggregationInterval">reset_aggregation_interval</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.resetFilterExpr">reset_filter_expr</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.resetFlowSampling">reset_flow_sampling</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.resetMetadata">reset_metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.resetMetadataFields">reset_metadata_fields</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -2843,13 +2843,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -2857,13 +2857,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -2871,13 +2871,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -2885,13 +2885,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -2899,13 +2899,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -2913,13 +2913,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -2927,13 +2927,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -2941,13 +2941,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -2955,13 +2955,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -2969,13 +2969,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -2985,13 +2985,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -3001,31 +3001,31 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_aggregation_interval` <a name="reset_aggregation_interval" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.resetAggregationInterval"></a>
+##### `reset_aggregation_interval` <a name="reset_aggregation_interval" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.resetAggregationInterval"></a>
 
 ```python
 def reset_aggregation_interval() -> None
 ```
 
-##### `reset_filter_expr` <a name="reset_filter_expr" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.resetFilterExpr"></a>
+##### `reset_filter_expr` <a name="reset_filter_expr" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.resetFilterExpr"></a>
 
 ```python
 def reset_filter_expr() -> None
 ```
 
-##### `reset_flow_sampling` <a name="reset_flow_sampling" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.resetFlowSampling"></a>
+##### `reset_flow_sampling` <a name="reset_flow_sampling" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.resetFlowSampling"></a>
 
 ```python
 def reset_flow_sampling() -> None
 ```
 
-##### `reset_metadata` <a name="reset_metadata" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.resetMetadata"></a>
+##### `reset_metadata` <a name="reset_metadata" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.resetMetadata"></a>
 
 ```python
 def reset_metadata() -> None
 ```
 
-##### `reset_metadata_fields` <a name="reset_metadata_fields" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.resetMetadataFields"></a>
+##### `reset_metadata_fields` <a name="reset_metadata_fields" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.resetMetadataFields"></a>
 
 ```python
 def reset_metadata_fields() -> None
@@ -3036,23 +3036,23 @@ def reset_metadata_fields() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.property.aggregationIntervalInput">aggregation_interval_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.property.filterExprInput">filter_expr_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.property.flowSamplingInput">flow_sampling_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.property.metadataFieldsInput">metadata_fields_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.property.metadataInput">metadata_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.property.aggregationInterval">aggregation_interval</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.property.filterExpr">filter_expr</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.property.flowSampling">flow_sampling</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.property.metadata">metadata</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.property.metadataFields">metadata_fields</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfig">ComputeSubnetworkLogConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.property.aggregationIntervalInput">aggregation_interval_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.property.filterExprInput">filter_expr_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.property.flowSamplingInput">flow_sampling_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.property.metadataFieldsInput">metadata_fields_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.property.metadataInput">metadata_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.property.aggregationInterval">aggregation_interval</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.property.filterExpr">filter_expr</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.property.flowSampling">flow_sampling</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.property.metadata">metadata</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.property.metadataFields">metadata_fields</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfig">ComputeSubnetworkLogConfig</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -3066,7 +3066,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -3076,7 +3076,7 @@ fqn: str
 
 ---
 
-##### `aggregation_interval_input`<sup>Optional</sup> <a name="aggregation_interval_input" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.property.aggregationIntervalInput"></a>
+##### `aggregation_interval_input`<sup>Optional</sup> <a name="aggregation_interval_input" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.property.aggregationIntervalInput"></a>
 
 ```python
 aggregation_interval_input: str
@@ -3086,7 +3086,7 @@ aggregation_interval_input: str
 
 ---
 
-##### `filter_expr_input`<sup>Optional</sup> <a name="filter_expr_input" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.property.filterExprInput"></a>
+##### `filter_expr_input`<sup>Optional</sup> <a name="filter_expr_input" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.property.filterExprInput"></a>
 
 ```python
 filter_expr_input: str
@@ -3096,7 +3096,7 @@ filter_expr_input: str
 
 ---
 
-##### `flow_sampling_input`<sup>Optional</sup> <a name="flow_sampling_input" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.property.flowSamplingInput"></a>
+##### `flow_sampling_input`<sup>Optional</sup> <a name="flow_sampling_input" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.property.flowSamplingInput"></a>
 
 ```python
 flow_sampling_input: typing.Union[int, float]
@@ -3106,7 +3106,7 @@ flow_sampling_input: typing.Union[int, float]
 
 ---
 
-##### `metadata_fields_input`<sup>Optional</sup> <a name="metadata_fields_input" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.property.metadataFieldsInput"></a>
+##### `metadata_fields_input`<sup>Optional</sup> <a name="metadata_fields_input" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.property.metadataFieldsInput"></a>
 
 ```python
 metadata_fields_input: typing.List[str]
@@ -3116,7 +3116,7 @@ metadata_fields_input: typing.List[str]
 
 ---
 
-##### `metadata_input`<sup>Optional</sup> <a name="metadata_input" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.property.metadataInput"></a>
+##### `metadata_input`<sup>Optional</sup> <a name="metadata_input" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.property.metadataInput"></a>
 
 ```python
 metadata_input: str
@@ -3126,7 +3126,7 @@ metadata_input: str
 
 ---
 
-##### `aggregation_interval`<sup>Required</sup> <a name="aggregation_interval" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.property.aggregationInterval"></a>
+##### `aggregation_interval`<sup>Required</sup> <a name="aggregation_interval" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.property.aggregationInterval"></a>
 
 ```python
 aggregation_interval: str
@@ -3136,7 +3136,7 @@ aggregation_interval: str
 
 ---
 
-##### `filter_expr`<sup>Required</sup> <a name="filter_expr" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.property.filterExpr"></a>
+##### `filter_expr`<sup>Required</sup> <a name="filter_expr" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.property.filterExpr"></a>
 
 ```python
 filter_expr: str
@@ -3146,7 +3146,7 @@ filter_expr: str
 
 ---
 
-##### `flow_sampling`<sup>Required</sup> <a name="flow_sampling" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.property.flowSampling"></a>
+##### `flow_sampling`<sup>Required</sup> <a name="flow_sampling" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.property.flowSampling"></a>
 
 ```python
 flow_sampling: typing.Union[int, float]
@@ -3156,7 +3156,7 @@ flow_sampling: typing.Union[int, float]
 
 ---
 
-##### `metadata`<sup>Required</sup> <a name="metadata" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.property.metadata"></a>
+##### `metadata`<sup>Required</sup> <a name="metadata" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.property.metadata"></a>
 
 ```python
 metadata: str
@@ -3166,7 +3166,7 @@ metadata: str
 
 ---
 
-##### `metadata_fields`<sup>Required</sup> <a name="metadata_fields" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.property.metadataFields"></a>
+##### `metadata_fields`<sup>Required</sup> <a name="metadata_fields" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.property.metadataFields"></a>
 
 ```python
 metadata_fields: typing.List[str]
@@ -3176,23 +3176,23 @@ metadata_fields: typing.List[str]
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfigOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: ComputeSubnetworkLogConfig
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkLogConfig">ComputeSubnetworkLogConfig</a>
+- *Type:* <a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkLogConfig">ComputeSubnetworkLogConfig</a>
 
 ---
 
 
-### ComputeSubnetworkParamsOutputReference <a name="ComputeSubnetworkParamsOutputReference" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference"></a>
+### ComputeSubnetworkParamsOutputReference <a name="ComputeSubnetworkParamsOutputReference" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import compute_subnetwork
+from cdktn_provider_google import compute_subnetwork
 
 computeSubnetwork.ComputeSubnetworkParamsOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -3202,12 +3202,12 @@ computeSubnetwork.ComputeSubnetworkParamsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -3215,7 +3215,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -3227,30 +3227,30 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.resetResourceManagerTags">reset_resource_manager_tags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.resetResourceManagerTags">reset_resource_manager_tags</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -3258,13 +3258,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -3272,13 +3272,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -3286,13 +3286,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -3300,13 +3300,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -3314,13 +3314,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -3328,13 +3328,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -3342,13 +3342,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -3356,13 +3356,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -3370,13 +3370,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -3384,13 +3384,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -3400,13 +3400,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -3416,7 +3416,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_resource_manager_tags` <a name="reset_resource_manager_tags" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.resetResourceManagerTags"></a>
+##### `reset_resource_manager_tags` <a name="reset_resource_manager_tags" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.resetResourceManagerTags"></a>
 
 ```python
 def reset_resource_manager_tags() -> None
@@ -3427,15 +3427,15 @@ def reset_resource_manager_tags() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.property.resourceManagerTagsInput">resource_manager_tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.property.resourceManagerTags">resource_manager_tags</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkParams">ComputeSubnetworkParams</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.property.resourceManagerTagsInput">resource_manager_tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.property.resourceManagerTags">resource_manager_tags</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkParams">ComputeSubnetworkParams</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -3449,7 +3449,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -3459,7 +3459,7 @@ fqn: str
 
 ---
 
-##### `resource_manager_tags_input`<sup>Optional</sup> <a name="resource_manager_tags_input" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.property.resourceManagerTagsInput"></a>
+##### `resource_manager_tags_input`<sup>Optional</sup> <a name="resource_manager_tags_input" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.property.resourceManagerTagsInput"></a>
 
 ```python
 resource_manager_tags_input: typing.Mapping[str]
@@ -3469,7 +3469,7 @@ resource_manager_tags_input: typing.Mapping[str]
 
 ---
 
-##### `resource_manager_tags`<sup>Required</sup> <a name="resource_manager_tags" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.property.resourceManagerTags"></a>
+##### `resource_manager_tags`<sup>Required</sup> <a name="resource_manager_tags" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.property.resourceManagerTags"></a>
 
 ```python
 resource_manager_tags: typing.Mapping[str]
@@ -3479,23 +3479,23 @@ resource_manager_tags: typing.Mapping[str]
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkParamsOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: ComputeSubnetworkParams
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkParams">ComputeSubnetworkParams</a>
+- *Type:* <a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkParams">ComputeSubnetworkParams</a>
 
 ---
 
 
-### ComputeSubnetworkSecondaryIpRangeList <a name="ComputeSubnetworkSecondaryIpRangeList" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeList"></a>
+### ComputeSubnetworkSecondaryIpRangeList <a name="ComputeSubnetworkSecondaryIpRangeList" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeList.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import compute_subnetwork
+from cdktn_provider_google import compute_subnetwork
 
 computeSubnetwork.ComputeSubnetworkSecondaryIpRangeList(
   terraform_resource: IInterpolatingParent,
@@ -3506,13 +3506,13 @@ computeSubnetwork.ComputeSubnetworkSecondaryIpRangeList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeList.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -3520,7 +3520,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeList.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -3528,7 +3528,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeList.Initializer.parameter.wrapsSet"></a>
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* bool
 
@@ -3540,15 +3540,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeList.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeList.get">get</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `all_with_map_key` <a name="all_with_map_key" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeList.allWithMapKey"></a>
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeList.allWithMapKey"></a>
 
 ```python
 def all_with_map_key(
@@ -3560,19 +3560,19 @@ Creating an iterator for this complex list.
 
 The list will be converted into a map with the mapKeyAttributeName as the key.
 
-###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeList.allWithMapKey.parameter.mapKeyAttributeName"></a>
 
 - *Type:* str
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeList.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeList.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeList.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeList.resolve"></a>
 
 ```python
 def resolve(
@@ -3582,13 +3582,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeList.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeList.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeList.toString"></a>
 
 ```python
 def to_string() -> str
@@ -3598,7 +3598,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `get` <a name="get" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeList.get"></a>
+##### `get` <a name="get" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeList.get"></a>
 
 ```python
 def get(
@@ -3606,7 +3606,7 @@ def get(
 ) -> ComputeSubnetworkSecondaryIpRangeOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeList.get.parameter.index"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -3619,13 +3619,13 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRange">ComputeSubnetworkSecondaryIpRange</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRange">ComputeSubnetworkSecondaryIpRange</a>]</code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeList.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeList.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -3639,7 +3639,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeList.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeList.property.fqn"></a>
 
 ```python
 fqn: str
@@ -3649,23 +3649,23 @@ fqn: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeList.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeList.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | typing.List[ComputeSubnetworkSecondaryIpRange]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRange">ComputeSubnetworkSecondaryIpRange</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRange">ComputeSubnetworkSecondaryIpRange</a>]
 
 ---
 
 
-### ComputeSubnetworkSecondaryIpRangeOutputReference <a name="ComputeSubnetworkSecondaryIpRangeOutputReference" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference"></a>
+### ComputeSubnetworkSecondaryIpRangeOutputReference <a name="ComputeSubnetworkSecondaryIpRangeOutputReference" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import compute_subnetwork
+from cdktn_provider_google import compute_subnetwork
 
 computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -3677,14 +3677,14 @@ computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -3692,7 +3692,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -3700,7 +3700,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -3708,7 +3708,7 @@ the index of this item in the list.
 
 ---
 
-##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* bool
 
@@ -3720,31 +3720,31 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.resetIpCidrRange">reset_ip_cidr_range</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.resetReservedInternalRange">reset_reserved_internal_range</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.resetIpCidrRange">reset_ip_cidr_range</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.resetReservedInternalRange">reset_reserved_internal_range</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -3752,13 +3752,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -3766,13 +3766,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -3780,13 +3780,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -3794,13 +3794,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -3808,13 +3808,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -3822,13 +3822,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -3836,13 +3836,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -3850,13 +3850,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -3864,13 +3864,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -3878,13 +3878,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -3894,13 +3894,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -3910,13 +3910,13 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_ip_cidr_range` <a name="reset_ip_cidr_range" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.resetIpCidrRange"></a>
+##### `reset_ip_cidr_range` <a name="reset_ip_cidr_range" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.resetIpCidrRange"></a>
 
 ```python
 def reset_ip_cidr_range() -> None
 ```
 
-##### `reset_reserved_internal_range` <a name="reset_reserved_internal_range" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.resetReservedInternalRange"></a>
+##### `reset_reserved_internal_range` <a name="reset_reserved_internal_range" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.resetReservedInternalRange"></a>
 
 ```python
 def reset_reserved_internal_range() -> None
@@ -3927,19 +3927,19 @@ def reset_reserved_internal_range() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.property.ipCidrRangeInput">ip_cidr_range_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.property.rangeNameInput">range_name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.property.reservedInternalRangeInput">reserved_internal_range_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.property.ipCidrRange">ip_cidr_range</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.property.rangeName">range_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.property.reservedInternalRange">reserved_internal_range</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRange">ComputeSubnetworkSecondaryIpRange</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.property.ipCidrRangeInput">ip_cidr_range_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.property.rangeNameInput">range_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.property.reservedInternalRangeInput">reserved_internal_range_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.property.ipCidrRange">ip_cidr_range</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.property.rangeName">range_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.property.reservedInternalRange">reserved_internal_range</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRange">ComputeSubnetworkSecondaryIpRange</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -3953,7 +3953,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -3963,7 +3963,7 @@ fqn: str
 
 ---
 
-##### `ip_cidr_range_input`<sup>Optional</sup> <a name="ip_cidr_range_input" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.property.ipCidrRangeInput"></a>
+##### `ip_cidr_range_input`<sup>Optional</sup> <a name="ip_cidr_range_input" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.property.ipCidrRangeInput"></a>
 
 ```python
 ip_cidr_range_input: str
@@ -3973,7 +3973,7 @@ ip_cidr_range_input: str
 
 ---
 
-##### `range_name_input`<sup>Optional</sup> <a name="range_name_input" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.property.rangeNameInput"></a>
+##### `range_name_input`<sup>Optional</sup> <a name="range_name_input" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.property.rangeNameInput"></a>
 
 ```python
 range_name_input: str
@@ -3983,7 +3983,7 @@ range_name_input: str
 
 ---
 
-##### `reserved_internal_range_input`<sup>Optional</sup> <a name="reserved_internal_range_input" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.property.reservedInternalRangeInput"></a>
+##### `reserved_internal_range_input`<sup>Optional</sup> <a name="reserved_internal_range_input" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.property.reservedInternalRangeInput"></a>
 
 ```python
 reserved_internal_range_input: str
@@ -3993,7 +3993,7 @@ reserved_internal_range_input: str
 
 ---
 
-##### `ip_cidr_range`<sup>Required</sup> <a name="ip_cidr_range" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.property.ipCidrRange"></a>
+##### `ip_cidr_range`<sup>Required</sup> <a name="ip_cidr_range" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.property.ipCidrRange"></a>
 
 ```python
 ip_cidr_range: str
@@ -4003,7 +4003,7 @@ ip_cidr_range: str
 
 ---
 
-##### `range_name`<sup>Required</sup> <a name="range_name" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.property.rangeName"></a>
+##### `range_name`<sup>Required</sup> <a name="range_name" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.property.rangeName"></a>
 
 ```python
 range_name: str
@@ -4013,7 +4013,7 @@ range_name: str
 
 ---
 
-##### `reserved_internal_range`<sup>Required</sup> <a name="reserved_internal_range" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.property.reservedInternalRange"></a>
+##### `reserved_internal_range`<sup>Required</sup> <a name="reserved_internal_range" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.property.reservedInternalRange"></a>
 
 ```python
 reserved_internal_range: str
@@ -4023,23 +4023,23 @@ reserved_internal_range: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRangeOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | ComputeSubnetworkSecondaryIpRange
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRange">ComputeSubnetworkSecondaryIpRange</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkSecondaryIpRange">ComputeSubnetworkSecondaryIpRange</a>
 
 ---
 
 
-### ComputeSubnetworkTimeoutsOutputReference <a name="ComputeSubnetworkTimeoutsOutputReference" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference"></a>
+### ComputeSubnetworkTimeoutsOutputReference <a name="ComputeSubnetworkTimeoutsOutputReference" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import compute_subnetwork
+from cdktn_provider_google import compute_subnetwork
 
 computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -4049,12 +4049,12 @@ computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -4062,7 +4062,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -4074,32 +4074,32 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.resetCreate">reset_create</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.resetDelete">reset_delete</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.resetUpdate">reset_update</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.resetCreate">reset_create</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.resetDelete">reset_delete</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.resetUpdate">reset_update</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -4107,13 +4107,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -4121,13 +4121,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -4135,13 +4135,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -4149,13 +4149,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -4163,13 +4163,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -4177,13 +4177,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -4191,13 +4191,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -4205,13 +4205,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -4219,13 +4219,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -4233,13 +4233,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -4249,13 +4249,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -4265,19 +4265,19 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_create` <a name="reset_create" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.resetCreate"></a>
+##### `reset_create` <a name="reset_create" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.resetCreate"></a>
 
 ```python
 def reset_create() -> None
 ```
 
-##### `reset_delete` <a name="reset_delete" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.resetDelete"></a>
+##### `reset_delete` <a name="reset_delete" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.resetDelete"></a>
 
 ```python
 def reset_delete() -> None
 ```
 
-##### `reset_update` <a name="reset_update" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.resetUpdate"></a>
+##### `reset_update` <a name="reset_update" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.resetUpdate"></a>
 
 ```python
 def reset_update() -> None
@@ -4288,19 +4288,19 @@ def reset_update() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.property.createInput">create_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.property.updateInput">update_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeouts">ComputeSubnetworkTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.property.createInput">create_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.property.updateInput">update_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeouts">ComputeSubnetworkTimeouts</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -4314,7 +4314,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -4324,7 +4324,7 @@ fqn: str
 
 ---
 
-##### `create_input`<sup>Optional</sup> <a name="create_input" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.property.createInput"></a>
+##### `create_input`<sup>Optional</sup> <a name="create_input" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.property.createInput"></a>
 
 ```python
 create_input: str
@@ -4334,7 +4334,7 @@ create_input: str
 
 ---
 
-##### `delete_input`<sup>Optional</sup> <a name="delete_input" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.property.deleteInput"></a>
+##### `delete_input`<sup>Optional</sup> <a name="delete_input" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.property.deleteInput"></a>
 
 ```python
 delete_input: str
@@ -4344,7 +4344,7 @@ delete_input: str
 
 ---
 
-##### `update_input`<sup>Optional</sup> <a name="update_input" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.property.updateInput"></a>
+##### `update_input`<sup>Optional</sup> <a name="update_input" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.property.updateInput"></a>
 
 ```python
 update_input: str
@@ -4354,7 +4354,7 @@ update_input: str
 
 ---
 
-##### `create`<sup>Required</sup> <a name="create" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.property.create"></a>
+##### `create`<sup>Required</sup> <a name="create" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.property.create"></a>
 
 ```python
 create: str
@@ -4364,7 +4364,7 @@ create: str
 
 ---
 
-##### `delete`<sup>Required</sup> <a name="delete" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.property.delete"></a>
+##### `delete`<sup>Required</sup> <a name="delete" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.property.delete"></a>
 
 ```python
 delete: str
@@ -4374,7 +4374,7 @@ delete: str
 
 ---
 
-##### `update`<sup>Required</sup> <a name="update" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.property.update"></a>
+##### `update`<sup>Required</sup> <a name="update" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.property.update"></a>
 
 ```python
 update: str
@@ -4384,13 +4384,13 @@ update: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | ComputeSubnetworkTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-google.computeSubnetwork.ComputeSubnetworkTimeouts">ComputeSubnetworkTimeouts</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeSubnetwork.ComputeSubnetworkTimeouts">ComputeSubnetworkTimeouts</a>
 
 ---
 

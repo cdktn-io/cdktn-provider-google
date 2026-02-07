@@ -1,28 +1,28 @@
-# `dataGoogleTagsTagValue` Submodule <a name="`dataGoogleTagsTagValue` Submodule" id="@cdktf/provider-google.dataGoogleTagsTagValue"></a>
+# `dataGoogleTagsTagValue` Submodule <a name="`dataGoogleTagsTagValue` Submodule" id="@cdktn/provider-google.dataGoogleTagsTagValue"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### DataGoogleTagsTagValue <a name="DataGoogleTagsTagValue" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue"></a>
+### DataGoogleTagsTagValue <a name="DataGoogleTagsTagValue" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue"></a>
 
 Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/tags_tag_value google_tags_tag_value}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagoogletagstagvalue"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/datagoogletagstagvalue"
 
 datagoogletagstagvalue.NewDataGoogleTagsTagValue(scope Construct, id *string, config DataGoogleTagsTagValueConfig) DataGoogleTagsTagValue
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValueConfig">DataGoogleTagsTagValueConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValueConfig">DataGoogleTagsTagValueConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.Initializer.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.Initializer.parameter.id"></a>
 
 - *Type:* *string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.Initializer.parameter.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValueConfig">DataGoogleTagsTagValueConfig</a>
+- *Type:* <a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValueConfig">DataGoogleTagsTagValueConfig</a>
 
 ---
 
@@ -50,27 +50,27 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.toString">ToString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.addOverride">AddOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.toMetadata">ToMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.addOverride">AddOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.toMetadata">ToMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.toString"></a>
 
 ```go
 func ToString() *string
@@ -78,25 +78,25 @@ func ToString() *string
 
 Returns a string representation of this construct.
 
-##### `AddOverride` <a name="AddOverride" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.addOverride"></a>
+##### `AddOverride` <a name="AddOverride" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.addOverride"></a>
 
 ```go
 func AddOverride(path *string, value interface{})
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.addOverride.parameter.path"></a>
 
 - *Type:* *string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.addOverride.parameter.value"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.overrideLogicalId"></a>
+##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.overrideLogicalId"></a>
 
 ```go
 func OverrideLogicalId(newLogicalId *string)
@@ -104,7 +104,7 @@ func OverrideLogicalId(newLogicalId *string)
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* *string
 
@@ -112,7 +112,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.resetOverrideLogicalId"></a>
+##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.resetOverrideLogicalId"></a>
 
 ```go
 func ResetOverrideLogicalId()
@@ -120,7 +120,7 @@ func ResetOverrideLogicalId()
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.toHclTerraform"></a>
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.toHclTerraform"></a>
 
 ```go
 func ToHclTerraform() interface{}
@@ -128,13 +128,13 @@ func ToHclTerraform() interface{}
 
 Adds this resource to the terraform JSON output.
 
-##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.toMetadata"></a>
+##### `ToMetadata` <a name="ToMetadata" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.toMetadata"></a>
 
 ```go
 func ToMetadata() interface{}
 ```
 
-##### `ToTerraform` <a name="ToTerraform" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.toTerraform"></a>
+##### `ToTerraform` <a name="ToTerraform" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.toTerraform"></a>
 
 ```go
 func ToTerraform() interface{}
@@ -142,121 +142,121 @@ func ToTerraform() interface{}
 
 Adds this resource to the terraform JSON output.
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -266,17 +266,17 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.isTerraformDataSource">IsTerraformDataSource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DataGoogleTagsTagValue resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.isTerraformDataSource">IsTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DataGoogleTagsTagValue resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.isConstruct"></a>
+##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagoogletagstagvalue"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/datagoogletagstagvalue"
 
 datagoogletagstagvalue.DataGoogleTagsTagValue_IsConstruct(x interface{}) *bool
 ```
@@ -297,7 +297,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.isConstruct.parameter.x"></a>
 
 - *Type:* interface{}
 
@@ -305,45 +305,45 @@ Any object.
 
 ---
 
-##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.isTerraformElement"></a>
+##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagoogletagstagvalue"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/datagoogletagstagvalue"
 
 datagoogletagstagvalue.DataGoogleTagsTagValue_IsTerraformElement(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.isTerraformElement.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.isTerraformDataSource"></a>
+##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagoogletagstagvalue"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/datagoogletagstagvalue"
 
 datagoogletagstagvalue.DataGoogleTagsTagValue_IsTerraformDataSource(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.isTerraformDataSource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.generateConfigForImport"></a>
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagoogletagstagvalue"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/datagoogletagstagvalue"
 
 datagoogletagstagvalue.DataGoogleTagsTagValue_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
 
 Generates CDKTF code for importing a DataGoogleTagsTagValue resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -351,7 +351,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* *string
 
@@ -359,7 +359,7 @@ The construct id used in the generated config for the DataGoogleTagsTagValue to 
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* *string
 
@@ -369,7 +369,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
 
@@ -381,32 +381,32 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.createTime">CreateTime</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.description">Description</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.id">Id</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.name">Name</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.namespacedName">NamespacedName</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.updateTime">UpdateTime</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.parentInput">ParentInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.shortNameInput">ShortNameInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.parent">Parent</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.shortName">ShortName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.createTime">CreateTime</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.description">Description</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.namespacedName">NamespacedName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.updateTime">UpdateTime</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.parentInput">ParentInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.shortNameInput">ShortNameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.parent">Parent</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.shortName">ShortName</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `Node`<sup>Required</sup> <a name="Node" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.node"></a>
+##### `Node`<sup>Required</sup> <a name="Node" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.node"></a>
 
 ```go
 func Node() Node
@@ -418,7 +418,7 @@ The tree node.
 
 ---
 
-##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.cdktfStack"></a>
+##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.cdktfStack"></a>
 
 ```go
 func CdktfStack() TerraformStack
@@ -428,7 +428,7 @@ func CdktfStack() TerraformStack
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -438,7 +438,7 @@ func Fqn() *string
 
 ---
 
-##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.friendlyUniqueId"></a>
+##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.friendlyUniqueId"></a>
 
 ```go
 func FriendlyUniqueId() *string
@@ -448,7 +448,7 @@ func FriendlyUniqueId() *string
 
 ---
 
-##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.terraformMetaArguments"></a>
+##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.terraformMetaArguments"></a>
 
 ```go
 func TerraformMetaArguments() *map[string]interface{}
@@ -458,7 +458,7 @@ func TerraformMetaArguments() *map[string]interface{}
 
 ---
 
-##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.terraformResourceType"></a>
+##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.terraformResourceType"></a>
 
 ```go
 func TerraformResourceType() *string
@@ -468,7 +468,7 @@ func TerraformResourceType() *string
 
 ---
 
-##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.terraformGeneratorMetadata"></a>
+##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.terraformGeneratorMetadata"></a>
 
 ```go
 func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
@@ -478,7 +478,7 @@ func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.count"></a>
 
 ```go
 func Count() interface{}
@@ -488,7 +488,7 @@ func Count() interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.dependsOn"></a>
 
 ```go
 func DependsOn() *[]*string
@@ -498,7 +498,7 @@ func DependsOn() *[]*string
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.forEach"></a>
 
 ```go
 func ForEach() ITerraformIterator
@@ -508,7 +508,7 @@ func ForEach() ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.lifecycle"></a>
 
 ```go
 func Lifecycle() TerraformResourceLifecycle
@@ -518,7 +518,7 @@ func Lifecycle() TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.provider"></a>
 
 ```go
 func Provider() TerraformProvider
@@ -528,7 +528,7 @@ func Provider() TerraformProvider
 
 ---
 
-##### `CreateTime`<sup>Required</sup> <a name="CreateTime" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.createTime"></a>
+##### `CreateTime`<sup>Required</sup> <a name="CreateTime" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.createTime"></a>
 
 ```go
 func CreateTime() *string
@@ -538,7 +538,7 @@ func CreateTime() *string
 
 ---
 
-##### `Description`<sup>Required</sup> <a name="Description" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.description"></a>
+##### `Description`<sup>Required</sup> <a name="Description" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.description"></a>
 
 ```go
 func Description() *string
@@ -548,7 +548,7 @@ func Description() *string
 
 ---
 
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.id"></a>
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.id"></a>
 
 ```go
 func Id() *string
@@ -558,7 +558,7 @@ func Id() *string
 
 ---
 
-##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.name"></a>
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.name"></a>
 
 ```go
 func Name() *string
@@ -568,7 +568,7 @@ func Name() *string
 
 ---
 
-##### `NamespacedName`<sup>Required</sup> <a name="NamespacedName" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.namespacedName"></a>
+##### `NamespacedName`<sup>Required</sup> <a name="NamespacedName" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.namespacedName"></a>
 
 ```go
 func NamespacedName() *string
@@ -578,7 +578,7 @@ func NamespacedName() *string
 
 ---
 
-##### `UpdateTime`<sup>Required</sup> <a name="UpdateTime" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.updateTime"></a>
+##### `UpdateTime`<sup>Required</sup> <a name="UpdateTime" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.updateTime"></a>
 
 ```go
 func UpdateTime() *string
@@ -588,7 +588,7 @@ func UpdateTime() *string
 
 ---
 
-##### `ParentInput`<sup>Optional</sup> <a name="ParentInput" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.parentInput"></a>
+##### `ParentInput`<sup>Optional</sup> <a name="ParentInput" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.parentInput"></a>
 
 ```go
 func ParentInput() *string
@@ -598,7 +598,7 @@ func ParentInput() *string
 
 ---
 
-##### `ShortNameInput`<sup>Optional</sup> <a name="ShortNameInput" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.shortNameInput"></a>
+##### `ShortNameInput`<sup>Optional</sup> <a name="ShortNameInput" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.shortNameInput"></a>
 
 ```go
 func ShortNameInput() *string
@@ -608,7 +608,7 @@ func ShortNameInput() *string
 
 ---
 
-##### `Parent`<sup>Required</sup> <a name="Parent" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.parent"></a>
+##### `Parent`<sup>Required</sup> <a name="Parent" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.parent"></a>
 
 ```go
 func Parent() *string
@@ -618,7 +618,7 @@ func Parent() *string
 
 ---
 
-##### `ShortName`<sup>Required</sup> <a name="ShortName" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.shortName"></a>
+##### `ShortName`<sup>Required</sup> <a name="ShortName" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.shortName"></a>
 
 ```go
 func ShortName() *string
@@ -632,11 +632,11 @@ func ShortName() *string
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.tfResourceType"></a>
+##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValue.property.tfResourceType"></a>
 
 ```go
 func TfResourceType() *string
@@ -648,12 +648,12 @@ func TfResourceType() *string
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### DataGoogleTagsTagValueConfig <a name="DataGoogleTagsTagValueConfig" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValueConfig"></a>
+### DataGoogleTagsTagValueConfig <a name="DataGoogleTagsTagValueConfig" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValueConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValueConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValueConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagoogletagstagvalue"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/datagoogletagstagvalue"
 
 &datagoogletagstagvalue.DataGoogleTagsTagValueConfig {
 	Connection: interface{},
@@ -672,19 +672,19 @@ import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagoogletagstagva
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValueConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValueConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValueConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValueConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValueConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValueConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValueConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValueConfig.property.parent">Parent</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/tags_tag_value#parent DataGoogleTagsTagValue#parent}. |
-| <code><a href="#@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValueConfig.property.shortName">ShortName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/tags_tag_value#short_name DataGoogleTagsTagValue#short_name}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValueConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValueConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValueConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValueConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValueConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValueConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValueConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValueConfig.property.parent">Parent</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/tags_tag_value#parent DataGoogleTagsTagValue#parent}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValueConfig.property.shortName">ShortName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/tags_tag_value#short_name DataGoogleTagsTagValue#short_name}. |
 
 ---
 
-##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValueConfig.property.connection"></a>
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValueConfig.property.connection"></a>
 
 ```go
 Connection interface{}
@@ -694,7 +694,7 @@ Connection interface{}
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValueConfig.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValueConfig.property.count"></a>
 
 ```go
 Count interface{}
@@ -704,7 +704,7 @@ Count interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValueConfig.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValueConfig.property.dependsOn"></a>
 
 ```go
 DependsOn *[]ITerraformDependable
@@ -714,7 +714,7 @@ DependsOn *[]ITerraformDependable
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValueConfig.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValueConfig.property.forEach"></a>
 
 ```go
 ForEach ITerraformIterator
@@ -724,7 +724,7 @@ ForEach ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValueConfig.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValueConfig.property.lifecycle"></a>
 
 ```go
 Lifecycle TerraformResourceLifecycle
@@ -734,7 +734,7 @@ Lifecycle TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValueConfig.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValueConfig.property.provider"></a>
 
 ```go
 Provider TerraformProvider
@@ -744,7 +744,7 @@ Provider TerraformProvider
 
 ---
 
-##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValueConfig.property.provisioners"></a>
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValueConfig.property.provisioners"></a>
 
 ```go
 Provisioners *[]interface{}
@@ -754,7 +754,7 @@ Provisioners *[]interface{}
 
 ---
 
-##### `Parent`<sup>Required</sup> <a name="Parent" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValueConfig.property.parent"></a>
+##### `Parent`<sup>Required</sup> <a name="Parent" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValueConfig.property.parent"></a>
 
 ```go
 Parent *string
@@ -766,7 +766,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `ShortName`<sup>Required</sup> <a name="ShortName" id="@cdktf/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValueConfig.property.shortName"></a>
+##### `ShortName`<sup>Required</sup> <a name="ShortName" id="@cdktn/provider-google.dataGoogleTagsTagValue.DataGoogleTagsTagValueConfig.property.shortName"></a>
 
 ```go
 ShortName *string

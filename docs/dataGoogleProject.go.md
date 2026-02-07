@@ -1,28 +1,28 @@
-# `dataGoogleProject` Submodule <a name="`dataGoogleProject` Submodule" id="@cdktf/provider-google.dataGoogleProject"></a>
+# `dataGoogleProject` Submodule <a name="`dataGoogleProject` Submodule" id="@cdktn/provider-google.dataGoogleProject"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### DataGoogleProject <a name="DataGoogleProject" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProject"></a>
+### DataGoogleProject <a name="DataGoogleProject" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject"></a>
 
 Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/project google_project}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProject.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagoogleproject"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/datagoogleproject"
 
 datagoogleproject.NewDataGoogleProject(scope Construct, id *string, config DataGoogleProjectConfig) DataGoogleProject
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.dataGoogleProject.DataGoogleProject.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-google.dataGoogleProject.DataGoogleProject.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-google.dataGoogleProject.DataGoogleProject.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-google.dataGoogleProject.DataGoogleProjectConfig">DataGoogleProjectConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleProject.DataGoogleProject.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-google.dataGoogleProject.DataGoogleProject.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-google.dataGoogleProject.DataGoogleProject.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleProject.DataGoogleProjectConfig">DataGoogleProjectConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProject.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.Initializer.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProject.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.Initializer.parameter.id"></a>
 
 - *Type:* *string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Optional</sup> <a name="config" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProject.Initializer.parameter.config"></a>
+##### `config`<sup>Optional</sup> <a name="config" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-google.dataGoogleProject.DataGoogleProjectConfig">DataGoogleProjectConfig</a>
+- *Type:* <a href="#@cdktn/provider-google.dataGoogleProject.DataGoogleProjectConfig">DataGoogleProjectConfig</a>
 
 ---
 
@@ -50,29 +50,29 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.dataGoogleProject.DataGoogleProject.toString">ToString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-google.dataGoogleProject.DataGoogleProject.addOverride">AddOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleProject.DataGoogleProject.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-google.dataGoogleProject.DataGoogleProject.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-google.dataGoogleProject.DataGoogleProject.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-google.dataGoogleProject.DataGoogleProject.toMetadata">ToMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleProject.DataGoogleProject.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-google.dataGoogleProject.DataGoogleProject.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleProject.DataGoogleProject.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleProject.DataGoogleProject.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleProject.DataGoogleProject.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleProject.DataGoogleProject.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleProject.DataGoogleProject.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleProject.DataGoogleProject.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleProject.DataGoogleProject.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleProject.DataGoogleProject.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleProject.DataGoogleProject.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleProject.DataGoogleProject.resetId">ResetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleProject.DataGoogleProject.resetProjectId">ResetProjectId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleProject.DataGoogleProject.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-google.dataGoogleProject.DataGoogleProject.addOverride">AddOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleProject.DataGoogleProject.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-google.dataGoogleProject.DataGoogleProject.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-google.dataGoogleProject.DataGoogleProject.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-google.dataGoogleProject.DataGoogleProject.toMetadata">ToMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleProject.DataGoogleProject.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-google.dataGoogleProject.DataGoogleProject.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleProject.DataGoogleProject.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleProject.DataGoogleProject.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleProject.DataGoogleProject.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleProject.DataGoogleProject.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleProject.DataGoogleProject.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleProject.DataGoogleProject.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleProject.DataGoogleProject.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleProject.DataGoogleProject.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleProject.DataGoogleProject.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleProject.DataGoogleProject.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleProject.DataGoogleProject.resetProjectId">ResetProjectId</a></code> | *No description.* |
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProject.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.toString"></a>
 
 ```go
 func ToString() *string
@@ -80,25 +80,25 @@ func ToString() *string
 
 Returns a string representation of this construct.
 
-##### `AddOverride` <a name="AddOverride" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProject.addOverride"></a>
+##### `AddOverride` <a name="AddOverride" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.addOverride"></a>
 
 ```go
 func AddOverride(path *string, value interface{})
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProject.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.addOverride.parameter.path"></a>
 
 - *Type:* *string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProject.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.addOverride.parameter.value"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProject.overrideLogicalId"></a>
+##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.overrideLogicalId"></a>
 
 ```go
 func OverrideLogicalId(newLogicalId *string)
@@ -106,7 +106,7 @@ func OverrideLogicalId(newLogicalId *string)
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProject.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* *string
 
@@ -114,7 +114,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProject.resetOverrideLogicalId"></a>
+##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.resetOverrideLogicalId"></a>
 
 ```go
 func ResetOverrideLogicalId()
@@ -122,7 +122,7 @@ func ResetOverrideLogicalId()
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProject.toHclTerraform"></a>
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.toHclTerraform"></a>
 
 ```go
 func ToHclTerraform() interface{}
@@ -130,13 +130,13 @@ func ToHclTerraform() interface{}
 
 Adds this resource to the terraform JSON output.
 
-##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProject.toMetadata"></a>
+##### `ToMetadata` <a name="ToMetadata" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.toMetadata"></a>
 
 ```go
 func ToMetadata() interface{}
 ```
 
-##### `ToTerraform` <a name="ToTerraform" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProject.toTerraform"></a>
+##### `ToTerraform` <a name="ToTerraform" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.toTerraform"></a>
 
 ```go
 func ToTerraform() interface{}
@@ -144,133 +144,133 @@ func ToTerraform() interface{}
 
 Adds this resource to the terraform JSON output.
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProject.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProject.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProject.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProject.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProject.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProject.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProject.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProject.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProject.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProject.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProject.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProject.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProject.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProject.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProject.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProject.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProject.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProject.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProject.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProject.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProject.resetId"></a>
+##### `ResetId` <a name="ResetId" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.resetId"></a>
 
 ```go
 func ResetId()
 ```
 
-##### `ResetProjectId` <a name="ResetProjectId" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProject.resetProjectId"></a>
+##### `ResetProjectId` <a name="ResetProjectId" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.resetProjectId"></a>
 
 ```go
 func ResetProjectId()
@@ -280,17 +280,17 @@ func ResetProjectId()
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.dataGoogleProject.DataGoogleProject.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-google.dataGoogleProject.DataGoogleProject.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleProject.DataGoogleProject.isTerraformDataSource">IsTerraformDataSource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleProject.DataGoogleProject.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DataGoogleProject resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.dataGoogleProject.DataGoogleProject.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-google.dataGoogleProject.DataGoogleProject.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleProject.DataGoogleProject.isTerraformDataSource">IsTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleProject.DataGoogleProject.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DataGoogleProject resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProject.isConstruct"></a>
+##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagoogleproject"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/datagoogleproject"
 
 datagoogleproject.DataGoogleProject_IsConstruct(x interface{}) *bool
 ```
@@ -311,7 +311,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProject.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.isConstruct.parameter.x"></a>
 
 - *Type:* interface{}
 
@@ -319,45 +319,45 @@ Any object.
 
 ---
 
-##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProject.isTerraformElement"></a>
+##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagoogleproject"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/datagoogleproject"
 
 datagoogleproject.DataGoogleProject_IsTerraformElement(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProject.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.isTerraformElement.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProject.isTerraformDataSource"></a>
+##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagoogleproject"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/datagoogleproject"
 
 datagoogleproject.DataGoogleProject_IsTerraformDataSource(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProject.isTerraformDataSource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProject.generateConfigForImport"></a>
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagoogleproject"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/datagoogleproject"
 
 datagoogleproject.DataGoogleProject_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
 
 Generates CDKTF code for importing a DataGoogleProject resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProject.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -365,7 +365,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProject.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* *string
 
@@ -373,7 +373,7 @@ The construct id used in the generated config for the DataGoogleProject to impor
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProject.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* *string
 
@@ -383,7 +383,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProject.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
 
@@ -395,37 +395,37 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.dataGoogleProject.DataGoogleProject.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-google.dataGoogleProject.DataGoogleProject.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleProject.DataGoogleProject.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleProject.DataGoogleProject.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleProject.DataGoogleProject.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleProject.DataGoogleProject.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleProject.DataGoogleProject.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleProject.DataGoogleProject.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleProject.DataGoogleProject.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleProject.DataGoogleProject.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleProject.DataGoogleProject.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleProject.DataGoogleProject.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleProject.DataGoogleProject.property.autoCreateNetwork">AutoCreateNetwork</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleProject.DataGoogleProject.property.billingAccount">BillingAccount</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleProject.DataGoogleProject.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleProject.DataGoogleProject.property.effectiveLabels">EffectiveLabels</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.StringMap</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleProject.DataGoogleProject.property.folderId">FolderId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleProject.DataGoogleProject.property.labels">Labels</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.StringMap</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleProject.DataGoogleProject.property.name">Name</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleProject.DataGoogleProject.property.number">Number</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleProject.DataGoogleProject.property.orgId">OrgId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleProject.DataGoogleProject.property.tags">Tags</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.StringMap</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleProject.DataGoogleProject.property.terraformLabels">TerraformLabels</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.StringMap</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleProject.DataGoogleProject.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleProject.DataGoogleProject.property.projectIdInput">ProjectIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleProject.DataGoogleProject.property.id">Id</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleProject.DataGoogleProject.property.projectId">ProjectId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleProject.DataGoogleProject.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-google.dataGoogleProject.DataGoogleProject.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleProject.DataGoogleProject.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleProject.DataGoogleProject.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleProject.DataGoogleProject.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleProject.DataGoogleProject.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleProject.DataGoogleProject.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleProject.DataGoogleProject.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleProject.DataGoogleProject.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleProject.DataGoogleProject.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleProject.DataGoogleProject.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleProject.DataGoogleProject.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleProject.DataGoogleProject.property.autoCreateNetwork">AutoCreateNetwork</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleProject.DataGoogleProject.property.billingAccount">BillingAccount</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleProject.DataGoogleProject.property.deletionPolicy">DeletionPolicy</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleProject.DataGoogleProject.property.effectiveLabels">EffectiveLabels</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleProject.DataGoogleProject.property.folderId">FolderId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleProject.DataGoogleProject.property.labels">Labels</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleProject.DataGoogleProject.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleProject.DataGoogleProject.property.number">Number</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleProject.DataGoogleProject.property.orgId">OrgId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleProject.DataGoogleProject.property.tags">Tags</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleProject.DataGoogleProject.property.terraformLabels">TerraformLabels</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleProject.DataGoogleProject.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleProject.DataGoogleProject.property.projectIdInput">ProjectIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleProject.DataGoogleProject.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleProject.DataGoogleProject.property.projectId">ProjectId</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `Node`<sup>Required</sup> <a name="Node" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProject.property.node"></a>
+##### `Node`<sup>Required</sup> <a name="Node" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.property.node"></a>
 
 ```go
 func Node() Node
@@ -437,7 +437,7 @@ The tree node.
 
 ---
 
-##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProject.property.cdktfStack"></a>
+##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.property.cdktfStack"></a>
 
 ```go
 func CdktfStack() TerraformStack
@@ -447,7 +447,7 @@ func CdktfStack() TerraformStack
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProject.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -457,7 +457,7 @@ func Fqn() *string
 
 ---
 
-##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProject.property.friendlyUniqueId"></a>
+##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.property.friendlyUniqueId"></a>
 
 ```go
 func FriendlyUniqueId() *string
@@ -467,7 +467,7 @@ func FriendlyUniqueId() *string
 
 ---
 
-##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProject.property.terraformMetaArguments"></a>
+##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.property.terraformMetaArguments"></a>
 
 ```go
 func TerraformMetaArguments() *map[string]interface{}
@@ -477,7 +477,7 @@ func TerraformMetaArguments() *map[string]interface{}
 
 ---
 
-##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProject.property.terraformResourceType"></a>
+##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.property.terraformResourceType"></a>
 
 ```go
 func TerraformResourceType() *string
@@ -487,7 +487,7 @@ func TerraformResourceType() *string
 
 ---
 
-##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProject.property.terraformGeneratorMetadata"></a>
+##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.property.terraformGeneratorMetadata"></a>
 
 ```go
 func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
@@ -497,7 +497,7 @@ func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProject.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.property.count"></a>
 
 ```go
 func Count() interface{}
@@ -507,7 +507,7 @@ func Count() interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProject.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.property.dependsOn"></a>
 
 ```go
 func DependsOn() *[]*string
@@ -517,7 +517,7 @@ func DependsOn() *[]*string
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProject.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.property.forEach"></a>
 
 ```go
 func ForEach() ITerraformIterator
@@ -527,7 +527,7 @@ func ForEach() ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProject.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.property.lifecycle"></a>
 
 ```go
 func Lifecycle() TerraformResourceLifecycle
@@ -537,7 +537,7 @@ func Lifecycle() TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProject.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.property.provider"></a>
 
 ```go
 func Provider() TerraformProvider
@@ -547,7 +547,7 @@ func Provider() TerraformProvider
 
 ---
 
-##### `AutoCreateNetwork`<sup>Required</sup> <a name="AutoCreateNetwork" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProject.property.autoCreateNetwork"></a>
+##### `AutoCreateNetwork`<sup>Required</sup> <a name="AutoCreateNetwork" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.property.autoCreateNetwork"></a>
 
 ```go
 func AutoCreateNetwork() IResolvable
@@ -557,7 +557,7 @@ func AutoCreateNetwork() IResolvable
 
 ---
 
-##### `BillingAccount`<sup>Required</sup> <a name="BillingAccount" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProject.property.billingAccount"></a>
+##### `BillingAccount`<sup>Required</sup> <a name="BillingAccount" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.property.billingAccount"></a>
 
 ```go
 func BillingAccount() *string
@@ -567,7 +567,7 @@ func BillingAccount() *string
 
 ---
 
-##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProject.property.deletionPolicy"></a>
+##### `DeletionPolicy`<sup>Required</sup> <a name="DeletionPolicy" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.property.deletionPolicy"></a>
 
 ```go
 func DeletionPolicy() *string
@@ -577,7 +577,7 @@ func DeletionPolicy() *string
 
 ---
 
-##### `EffectiveLabels`<sup>Required</sup> <a name="EffectiveLabels" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProject.property.effectiveLabels"></a>
+##### `EffectiveLabels`<sup>Required</sup> <a name="EffectiveLabels" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.property.effectiveLabels"></a>
 
 ```go
 func EffectiveLabels() StringMap
@@ -587,7 +587,7 @@ func EffectiveLabels() StringMap
 
 ---
 
-##### `FolderId`<sup>Required</sup> <a name="FolderId" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProject.property.folderId"></a>
+##### `FolderId`<sup>Required</sup> <a name="FolderId" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.property.folderId"></a>
 
 ```go
 func FolderId() *string
@@ -597,7 +597,7 @@ func FolderId() *string
 
 ---
 
-##### `Labels`<sup>Required</sup> <a name="Labels" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProject.property.labels"></a>
+##### `Labels`<sup>Required</sup> <a name="Labels" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.property.labels"></a>
 
 ```go
 func Labels() StringMap
@@ -607,7 +607,7 @@ func Labels() StringMap
 
 ---
 
-##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProject.property.name"></a>
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.property.name"></a>
 
 ```go
 func Name() *string
@@ -617,7 +617,7 @@ func Name() *string
 
 ---
 
-##### `Number`<sup>Required</sup> <a name="Number" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProject.property.number"></a>
+##### `Number`<sup>Required</sup> <a name="Number" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.property.number"></a>
 
 ```go
 func Number() *string
@@ -627,7 +627,7 @@ func Number() *string
 
 ---
 
-##### `OrgId`<sup>Required</sup> <a name="OrgId" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProject.property.orgId"></a>
+##### `OrgId`<sup>Required</sup> <a name="OrgId" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.property.orgId"></a>
 
 ```go
 func OrgId() *string
@@ -637,7 +637,7 @@ func OrgId() *string
 
 ---
 
-##### `Tags`<sup>Required</sup> <a name="Tags" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProject.property.tags"></a>
+##### `Tags`<sup>Required</sup> <a name="Tags" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.property.tags"></a>
 
 ```go
 func Tags() StringMap
@@ -647,7 +647,7 @@ func Tags() StringMap
 
 ---
 
-##### `TerraformLabels`<sup>Required</sup> <a name="TerraformLabels" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProject.property.terraformLabels"></a>
+##### `TerraformLabels`<sup>Required</sup> <a name="TerraformLabels" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.property.terraformLabels"></a>
 
 ```go
 func TerraformLabels() StringMap
@@ -657,7 +657,7 @@ func TerraformLabels() StringMap
 
 ---
 
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProject.property.idInput"></a>
+##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.property.idInput"></a>
 
 ```go
 func IdInput() *string
@@ -667,7 +667,7 @@ func IdInput() *string
 
 ---
 
-##### `ProjectIdInput`<sup>Optional</sup> <a name="ProjectIdInput" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProject.property.projectIdInput"></a>
+##### `ProjectIdInput`<sup>Optional</sup> <a name="ProjectIdInput" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.property.projectIdInput"></a>
 
 ```go
 func ProjectIdInput() *string
@@ -677,7 +677,7 @@ func ProjectIdInput() *string
 
 ---
 
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProject.property.id"></a>
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.property.id"></a>
 
 ```go
 func Id() *string
@@ -687,7 +687,7 @@ func Id() *string
 
 ---
 
-##### `ProjectId`<sup>Required</sup> <a name="ProjectId" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProject.property.projectId"></a>
+##### `ProjectId`<sup>Required</sup> <a name="ProjectId" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.property.projectId"></a>
 
 ```go
 func ProjectId() *string
@@ -701,11 +701,11 @@ func ProjectId() *string
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.dataGoogleProject.DataGoogleProject.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleProject.DataGoogleProject.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProject.property.tfResourceType"></a>
+##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProject.property.tfResourceType"></a>
 
 ```go
 func TfResourceType() *string
@@ -717,12 +717,12 @@ func TfResourceType() *string
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### DataGoogleProjectConfig <a name="DataGoogleProjectConfig" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProjectConfig"></a>
+### DataGoogleProjectConfig <a name="DataGoogleProjectConfig" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProjectConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProjectConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProjectConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagoogleproject"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/datagoogleproject"
 
 &datagoogleproject.DataGoogleProjectConfig {
 	Connection: interface{},
@@ -741,19 +741,19 @@ import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagoogleproject"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.dataGoogleProject.DataGoogleProjectConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleProject.DataGoogleProjectConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleProject.DataGoogleProjectConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleProject.DataGoogleProjectConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleProject.DataGoogleProjectConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleProject.DataGoogleProjectConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleProject.DataGoogleProjectConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleProject.DataGoogleProjectConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/project#id DataGoogleProject#id}. |
-| <code><a href="#@cdktf/provider-google.dataGoogleProject.DataGoogleProjectConfig.property.projectId">ProjectId</a></code> | <code>*string</code> | The project ID. Changing this forces a new project to be created. |
+| <code><a href="#@cdktn/provider-google.dataGoogleProject.DataGoogleProjectConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleProject.DataGoogleProjectConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleProject.DataGoogleProjectConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleProject.DataGoogleProjectConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleProject.DataGoogleProjectConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleProject.DataGoogleProjectConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleProject.DataGoogleProjectConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleProject.DataGoogleProjectConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/project#id DataGoogleProject#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleProject.DataGoogleProjectConfig.property.projectId">ProjectId</a></code> | <code>*string</code> | The project ID. Changing this forces a new project to be created. |
 
 ---
 
-##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProjectConfig.property.connection"></a>
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProjectConfig.property.connection"></a>
 
 ```go
 Connection interface{}
@@ -763,7 +763,7 @@ Connection interface{}
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProjectConfig.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProjectConfig.property.count"></a>
 
 ```go
 Count interface{}
@@ -773,7 +773,7 @@ Count interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProjectConfig.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProjectConfig.property.dependsOn"></a>
 
 ```go
 DependsOn *[]ITerraformDependable
@@ -783,7 +783,7 @@ DependsOn *[]ITerraformDependable
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProjectConfig.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProjectConfig.property.forEach"></a>
 
 ```go
 ForEach ITerraformIterator
@@ -793,7 +793,7 @@ ForEach ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProjectConfig.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProjectConfig.property.lifecycle"></a>
 
 ```go
 Lifecycle TerraformResourceLifecycle
@@ -803,7 +803,7 @@ Lifecycle TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProjectConfig.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProjectConfig.property.provider"></a>
 
 ```go
 Provider TerraformProvider
@@ -813,7 +813,7 @@ Provider TerraformProvider
 
 ---
 
-##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProjectConfig.property.provisioners"></a>
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProjectConfig.property.provisioners"></a>
 
 ```go
 Provisioners *[]interface{}
@@ -823,7 +823,7 @@ Provisioners *[]interface{}
 
 ---
 
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProjectConfig.property.id"></a>
+##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProjectConfig.property.id"></a>
 
 ```go
 Id *string
@@ -838,7 +838,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
-##### `ProjectId`<sup>Optional</sup> <a name="ProjectId" id="@cdktf/provider-google.dataGoogleProject.DataGoogleProjectConfig.property.projectId"></a>
+##### `ProjectId`<sup>Optional</sup> <a name="ProjectId" id="@cdktn/provider-google.dataGoogleProject.DataGoogleProjectConfig.property.projectId"></a>
 
 ```go
 ProjectId *string

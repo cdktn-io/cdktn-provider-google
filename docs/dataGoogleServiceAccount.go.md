@@ -1,28 +1,28 @@
-# `dataGoogleServiceAccount` Submodule <a name="`dataGoogleServiceAccount` Submodule" id="@cdktf/provider-google.dataGoogleServiceAccount"></a>
+# `dataGoogleServiceAccount` Submodule <a name="`dataGoogleServiceAccount` Submodule" id="@cdktn/provider-google.dataGoogleServiceAccount"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### DataGoogleServiceAccount <a name="DataGoogleServiceAccount" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount"></a>
+### DataGoogleServiceAccount <a name="DataGoogleServiceAccount" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount"></a>
 
 Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/service_account google_service_account}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagoogleserviceaccount"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/datagoogleserviceaccount"
 
 datagoogleserviceaccount.NewDataGoogleServiceAccount(scope Construct, id *string, config DataGoogleServiceAccountConfig) DataGoogleServiceAccount
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccountConfig">DataGoogleServiceAccountConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccountConfig">DataGoogleServiceAccountConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.Initializer.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.Initializer.parameter.id"></a>
 
 - *Type:* *string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.Initializer.parameter.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccountConfig">DataGoogleServiceAccountConfig</a>
+- *Type:* <a href="#@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccountConfig">DataGoogleServiceAccountConfig</a>
 
 ---
 
@@ -50,29 +50,29 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.toString">ToString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.addOverride">AddOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.toMetadata">ToMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.resetId">ResetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.resetProject">ResetProject</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.addOverride">AddOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.toMetadata">ToMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.resetProject">ResetProject</a></code> | *No description.* |
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.toString"></a>
 
 ```go
 func ToString() *string
@@ -80,25 +80,25 @@ func ToString() *string
 
 Returns a string representation of this construct.
 
-##### `AddOverride` <a name="AddOverride" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.addOverride"></a>
+##### `AddOverride` <a name="AddOverride" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.addOverride"></a>
 
 ```go
 func AddOverride(path *string, value interface{})
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.addOverride.parameter.path"></a>
 
 - *Type:* *string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.addOverride.parameter.value"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.overrideLogicalId"></a>
+##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.overrideLogicalId"></a>
 
 ```go
 func OverrideLogicalId(newLogicalId *string)
@@ -106,7 +106,7 @@ func OverrideLogicalId(newLogicalId *string)
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* *string
 
@@ -114,7 +114,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.resetOverrideLogicalId"></a>
+##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.resetOverrideLogicalId"></a>
 
 ```go
 func ResetOverrideLogicalId()
@@ -122,7 +122,7 @@ func ResetOverrideLogicalId()
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.toHclTerraform"></a>
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.toHclTerraform"></a>
 
 ```go
 func ToHclTerraform() interface{}
@@ -130,13 +130,13 @@ func ToHclTerraform() interface{}
 
 Adds this resource to the terraform JSON output.
 
-##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.toMetadata"></a>
+##### `ToMetadata` <a name="ToMetadata" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.toMetadata"></a>
 
 ```go
 func ToMetadata() interface{}
 ```
 
-##### `ToTerraform` <a name="ToTerraform" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.toTerraform"></a>
+##### `ToTerraform` <a name="ToTerraform" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.toTerraform"></a>
 
 ```go
 func ToTerraform() interface{}
@@ -144,133 +144,133 @@ func ToTerraform() interface{}
 
 Adds this resource to the terraform JSON output.
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.resetId"></a>
+##### `ResetId` <a name="ResetId" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.resetId"></a>
 
 ```go
 func ResetId()
 ```
 
-##### `ResetProject` <a name="ResetProject" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.resetProject"></a>
+##### `ResetProject` <a name="ResetProject" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.resetProject"></a>
 
 ```go
 func ResetProject()
@@ -280,17 +280,17 @@ func ResetProject()
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.isTerraformDataSource">IsTerraformDataSource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DataGoogleServiceAccount resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.isTerraformDataSource">IsTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DataGoogleServiceAccount resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.isConstruct"></a>
+##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagoogleserviceaccount"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/datagoogleserviceaccount"
 
 datagoogleserviceaccount.DataGoogleServiceAccount_IsConstruct(x interface{}) *bool
 ```
@@ -311,7 +311,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.isConstruct.parameter.x"></a>
 
 - *Type:* interface{}
 
@@ -319,45 +319,45 @@ Any object.
 
 ---
 
-##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.isTerraformElement"></a>
+##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagoogleserviceaccount"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/datagoogleserviceaccount"
 
 datagoogleserviceaccount.DataGoogleServiceAccount_IsTerraformElement(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.isTerraformElement.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.isTerraformDataSource"></a>
+##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagoogleserviceaccount"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/datagoogleserviceaccount"
 
 datagoogleserviceaccount.DataGoogleServiceAccount_IsTerraformDataSource(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.isTerraformDataSource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.generateConfigForImport"></a>
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagoogleserviceaccount"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/datagoogleserviceaccount"
 
 datagoogleserviceaccount.DataGoogleServiceAccount_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
 
 Generates CDKTF code for importing a DataGoogleServiceAccount resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -365,7 +365,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* *string
 
@@ -373,7 +373,7 @@ The construct id used in the generated config for the DataGoogleServiceAccount t
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* *string
 
@@ -383,7 +383,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
 
@@ -395,34 +395,34 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.disabled">Disabled</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.displayName">DisplayName</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.email">Email</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.member">Member</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.name">Name</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.uniqueId">UniqueId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.accountIdInput">AccountIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.projectInput">ProjectInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.accountId">AccountId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.id">Id</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.project">Project</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.disabled">Disabled</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.displayName">DisplayName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.email">Email</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.member">Member</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.uniqueId">UniqueId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.accountIdInput">AccountIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.projectInput">ProjectInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.accountId">AccountId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.project">Project</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `Node`<sup>Required</sup> <a name="Node" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.node"></a>
+##### `Node`<sup>Required</sup> <a name="Node" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.node"></a>
 
 ```go
 func Node() Node
@@ -434,7 +434,7 @@ The tree node.
 
 ---
 
-##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.cdktfStack"></a>
+##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.cdktfStack"></a>
 
 ```go
 func CdktfStack() TerraformStack
@@ -444,7 +444,7 @@ func CdktfStack() TerraformStack
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -454,7 +454,7 @@ func Fqn() *string
 
 ---
 
-##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.friendlyUniqueId"></a>
+##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.friendlyUniqueId"></a>
 
 ```go
 func FriendlyUniqueId() *string
@@ -464,7 +464,7 @@ func FriendlyUniqueId() *string
 
 ---
 
-##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.terraformMetaArguments"></a>
+##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.terraformMetaArguments"></a>
 
 ```go
 func TerraformMetaArguments() *map[string]interface{}
@@ -474,7 +474,7 @@ func TerraformMetaArguments() *map[string]interface{}
 
 ---
 
-##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.terraformResourceType"></a>
+##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.terraformResourceType"></a>
 
 ```go
 func TerraformResourceType() *string
@@ -484,7 +484,7 @@ func TerraformResourceType() *string
 
 ---
 
-##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.terraformGeneratorMetadata"></a>
+##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.terraformGeneratorMetadata"></a>
 
 ```go
 func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
@@ -494,7 +494,7 @@ func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.count"></a>
 
 ```go
 func Count() interface{}
@@ -504,7 +504,7 @@ func Count() interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.dependsOn"></a>
 
 ```go
 func DependsOn() *[]*string
@@ -514,7 +514,7 @@ func DependsOn() *[]*string
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.forEach"></a>
 
 ```go
 func ForEach() ITerraformIterator
@@ -524,7 +524,7 @@ func ForEach() ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.lifecycle"></a>
 
 ```go
 func Lifecycle() TerraformResourceLifecycle
@@ -534,7 +534,7 @@ func Lifecycle() TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.provider"></a>
 
 ```go
 func Provider() TerraformProvider
@@ -544,7 +544,7 @@ func Provider() TerraformProvider
 
 ---
 
-##### `Disabled`<sup>Required</sup> <a name="Disabled" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.disabled"></a>
+##### `Disabled`<sup>Required</sup> <a name="Disabled" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.disabled"></a>
 
 ```go
 func Disabled() IResolvable
@@ -554,7 +554,7 @@ func Disabled() IResolvable
 
 ---
 
-##### `DisplayName`<sup>Required</sup> <a name="DisplayName" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.displayName"></a>
+##### `DisplayName`<sup>Required</sup> <a name="DisplayName" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.displayName"></a>
 
 ```go
 func DisplayName() *string
@@ -564,7 +564,7 @@ func DisplayName() *string
 
 ---
 
-##### `Email`<sup>Required</sup> <a name="Email" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.email"></a>
+##### `Email`<sup>Required</sup> <a name="Email" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.email"></a>
 
 ```go
 func Email() *string
@@ -574,7 +574,7 @@ func Email() *string
 
 ---
 
-##### `Member`<sup>Required</sup> <a name="Member" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.member"></a>
+##### `Member`<sup>Required</sup> <a name="Member" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.member"></a>
 
 ```go
 func Member() *string
@@ -584,7 +584,7 @@ func Member() *string
 
 ---
 
-##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.name"></a>
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.name"></a>
 
 ```go
 func Name() *string
@@ -594,7 +594,7 @@ func Name() *string
 
 ---
 
-##### `UniqueId`<sup>Required</sup> <a name="UniqueId" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.uniqueId"></a>
+##### `UniqueId`<sup>Required</sup> <a name="UniqueId" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.uniqueId"></a>
 
 ```go
 func UniqueId() *string
@@ -604,7 +604,7 @@ func UniqueId() *string
 
 ---
 
-##### `AccountIdInput`<sup>Optional</sup> <a name="AccountIdInput" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.accountIdInput"></a>
+##### `AccountIdInput`<sup>Optional</sup> <a name="AccountIdInput" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.accountIdInput"></a>
 
 ```go
 func AccountIdInput() *string
@@ -614,7 +614,7 @@ func AccountIdInput() *string
 
 ---
 
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.idInput"></a>
+##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.idInput"></a>
 
 ```go
 func IdInput() *string
@@ -624,7 +624,7 @@ func IdInput() *string
 
 ---
 
-##### `ProjectInput`<sup>Optional</sup> <a name="ProjectInput" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.projectInput"></a>
+##### `ProjectInput`<sup>Optional</sup> <a name="ProjectInput" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.projectInput"></a>
 
 ```go
 func ProjectInput() *string
@@ -634,7 +634,7 @@ func ProjectInput() *string
 
 ---
 
-##### `AccountId`<sup>Required</sup> <a name="AccountId" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.accountId"></a>
+##### `AccountId`<sup>Required</sup> <a name="AccountId" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.accountId"></a>
 
 ```go
 func AccountId() *string
@@ -644,7 +644,7 @@ func AccountId() *string
 
 ---
 
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.id"></a>
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.id"></a>
 
 ```go
 func Id() *string
@@ -654,7 +654,7 @@ func Id() *string
 
 ---
 
-##### `Project`<sup>Required</sup> <a name="Project" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.project"></a>
+##### `Project`<sup>Required</sup> <a name="Project" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.project"></a>
 
 ```go
 func Project() *string
@@ -668,11 +668,11 @@ func Project() *string
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.tfResourceType"></a>
+##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccount.property.tfResourceType"></a>
 
 ```go
 func TfResourceType() *string
@@ -684,12 +684,12 @@ func TfResourceType() *string
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### DataGoogleServiceAccountConfig <a name="DataGoogleServiceAccountConfig" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccountConfig"></a>
+### DataGoogleServiceAccountConfig <a name="DataGoogleServiceAccountConfig" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccountConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccountConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagoogleserviceaccount"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/datagoogleserviceaccount"
 
 &datagoogleserviceaccount.DataGoogleServiceAccountConfig {
 	Connection: interface{},
@@ -709,20 +709,20 @@ import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagoogleserviceac
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccountConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccountConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccountConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccountConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccountConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccountConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccountConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccountConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/service_account#account_id DataGoogleServiceAccount#account_id}. |
-| <code><a href="#@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccountConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/service_account#id DataGoogleServiceAccount#id}. |
-| <code><a href="#@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccountConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/service_account#project DataGoogleServiceAccount#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccountConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccountConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccountConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccountConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccountConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccountConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccountConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccountConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/service_account#account_id DataGoogleServiceAccount#account_id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccountConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/service_account#id DataGoogleServiceAccount#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccountConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/service_account#project DataGoogleServiceAccount#project}. |
 
 ---
 
-##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccountConfig.property.connection"></a>
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccountConfig.property.connection"></a>
 
 ```go
 Connection interface{}
@@ -732,7 +732,7 @@ Connection interface{}
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccountConfig.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccountConfig.property.count"></a>
 
 ```go
 Count interface{}
@@ -742,7 +742,7 @@ Count interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccountConfig.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccountConfig.property.dependsOn"></a>
 
 ```go
 DependsOn *[]ITerraformDependable
@@ -752,7 +752,7 @@ DependsOn *[]ITerraformDependable
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccountConfig.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccountConfig.property.forEach"></a>
 
 ```go
 ForEach ITerraformIterator
@@ -762,7 +762,7 @@ ForEach ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccountConfig.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccountConfig.property.lifecycle"></a>
 
 ```go
 Lifecycle TerraformResourceLifecycle
@@ -772,7 +772,7 @@ Lifecycle TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccountConfig.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccountConfig.property.provider"></a>
 
 ```go
 Provider TerraformProvider
@@ -782,7 +782,7 @@ Provider TerraformProvider
 
 ---
 
-##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccountConfig.property.provisioners"></a>
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccountConfig.property.provisioners"></a>
 
 ```go
 Provisioners *[]interface{}
@@ -792,7 +792,7 @@ Provisioners *[]interface{}
 
 ---
 
-##### `AccountId`<sup>Required</sup> <a name="AccountId" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccountConfig.property.accountId"></a>
+##### `AccountId`<sup>Required</sup> <a name="AccountId" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccountConfig.property.accountId"></a>
 
 ```go
 AccountId *string
@@ -804,7 +804,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccountConfig.property.id"></a>
+##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccountConfig.property.id"></a>
 
 ```go
 Id *string
@@ -819,7 +819,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
-##### `Project`<sup>Optional</sup> <a name="Project" id="@cdktf/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccountConfig.property.project"></a>
+##### `Project`<sup>Optional</sup> <a name="Project" id="@cdktn/provider-google.dataGoogleServiceAccount.DataGoogleServiceAccountConfig.property.project"></a>
 
 ```go
 Project *string

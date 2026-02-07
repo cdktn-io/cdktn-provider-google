@@ -1,15 +1,15 @@
-# `storageBucket` Submodule <a name="`storageBucket` Submodule" id="@cdktf/provider-google.storageBucket"></a>
+# `storageBucket` Submodule <a name="`storageBucket` Submodule" id="@cdktn/provider-google.storageBucket"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### StorageBucket <a name="StorageBucket" id="@cdktf/provider-google.storageBucket.StorageBucket"></a>
+### StorageBucket <a name="StorageBucket" id="@cdktn/provider-google.storageBucket.StorageBucket"></a>
 
 Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket google_storage_bucket}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.storageBucket.StorageBucket.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.storageBucket.StorageBucket.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import storage_bucket
+from cdktn_provider_google import storage_bucket
 
 storageBucket.StorageBucket(
   scope: Construct,
@@ -52,45 +52,45 @@ storageBucket.StorageBucket(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.Initializer.parameter.location">location</a></code> | <code>str</code> | The Google Cloud Storage location or region. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of the bucket. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.Initializer.parameter.autoclass">autoclass</a></code> | <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketAutoclass">StorageBucketAutoclass</a></code> | autoclass block. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.Initializer.parameter.cors">cors</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-google.storageBucket.StorageBucketCors">StorageBucketCors</a>]</code> | cors block. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.Initializer.parameter.customPlacementConfig">custom_placement_config</a></code> | <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketCustomPlacementConfig">StorageBucketCustomPlacementConfig</a></code> | custom_placement_config block. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.Initializer.parameter.defaultEventBasedHold">default_event_based_hold</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether or not to automatically apply an eventBasedHold to new objects added to the bucket. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.Initializer.parameter.enableObjectRetention">enable_object_retention</a></code> | <code>bool \| cdktf.IResolvable</code> | Enables each object in the bucket to have its own retention policy, which prevents deletion until stored for a specific length of time. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.Initializer.parameter.encryption">encryption</a></code> | <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketEncryption">StorageBucketEncryption</a></code> | encryption block. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.Initializer.parameter.forceDestroy">force_destroy</a></code> | <code>bool \| cdktf.IResolvable</code> | When deleting a bucket, this boolean option will delete all contained objects, or anywhereCaches (if any). |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.Initializer.parameter.hierarchicalNamespace">hierarchical_namespace</a></code> | <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketHierarchicalNamespace">StorageBucketHierarchicalNamespace</a></code> | hierarchical_namespace block. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#id StorageBucket#id}. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.Initializer.parameter.ipFilter">ip_filter</a></code> | <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilter">StorageBucketIpFilter</a></code> | ip_filter block. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.Initializer.parameter.labels">labels</a></code> | <code>typing.Mapping[str]</code> | A set of key/value label pairs to assign to the bucket. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.Initializer.parameter.lifecycleRule">lifecycle_rule</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRule">StorageBucketLifecycleRule</a>]</code> | lifecycle_rule block. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.Initializer.parameter.logging">logging</a></code> | <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLogging">StorageBucketLogging</a></code> | logging block. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.Initializer.parameter.project">project</a></code> | <code>str</code> | The ID of the project in which the resource belongs. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.Initializer.parameter.publicAccessPrevention">public_access_prevention</a></code> | <code>str</code> | Prevents public access to a bucket. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.Initializer.parameter.requesterPays">requester_pays</a></code> | <code>bool \| cdktf.IResolvable</code> | Enables Requester Pays on a storage bucket. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.Initializer.parameter.retentionPolicy">retention_policy</a></code> | <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketRetentionPolicy">StorageBucketRetentionPolicy</a></code> | retention_policy block. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.Initializer.parameter.rpo">rpo</a></code> | <code>str</code> | Specifies the RPO setting of bucket. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.Initializer.parameter.softDeletePolicy">soft_delete_policy</a></code> | <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketSoftDeletePolicy">StorageBucketSoftDeletePolicy</a></code> | soft_delete_policy block. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.Initializer.parameter.storageClass">storage_class</a></code> | <code>str</code> | The Storage Class of the new bucket. Supported values include: STANDARD, MULTI_REGIONAL, REGIONAL, NEARLINE, COLDLINE, ARCHIVE. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketTimeouts">StorageBucketTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.Initializer.parameter.uniformBucketLevelAccess">uniform_bucket_level_access</a></code> | <code>bool \| cdktf.IResolvable</code> | Enables uniform bucket-level access on a bucket. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.Initializer.parameter.versioning">versioning</a></code> | <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketVersioning">StorageBucketVersioning</a></code> | versioning block. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.Initializer.parameter.website">website</a></code> | <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketWebsite">StorageBucketWebsite</a></code> | website block. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.location">location</a></code> | <code>str</code> | The Google Cloud Storage location or region. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of the bucket. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.autoclass">autoclass</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketAutoclass">StorageBucketAutoclass</a></code> | autoclass block. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.cors">cors</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.storageBucket.StorageBucketCors">StorageBucketCors</a>]</code> | cors block. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.customPlacementConfig">custom_placement_config</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCustomPlacementConfig">StorageBucketCustomPlacementConfig</a></code> | custom_placement_config block. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.defaultEventBasedHold">default_event_based_hold</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether or not to automatically apply an eventBasedHold to new objects added to the bucket. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.enableObjectRetention">enable_object_retention</a></code> | <code>bool \| cdktf.IResolvable</code> | Enables each object in the bucket to have its own retention policy, which prevents deletion until stored for a specific length of time. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.encryption">encryption</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryption">StorageBucketEncryption</a></code> | encryption block. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.forceDestroy">force_destroy</a></code> | <code>bool \| cdktf.IResolvable</code> | When deleting a bucket, this boolean option will delete all contained objects, or anywhereCaches (if any). |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.hierarchicalNamespace">hierarchical_namespace</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespace">StorageBucketHierarchicalNamespace</a></code> | hierarchical_namespace block. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#id StorageBucket#id}. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.ipFilter">ip_filter</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilter">StorageBucketIpFilter</a></code> | ip_filter block. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.labels">labels</a></code> | <code>typing.Mapping[str]</code> | A set of key/value label pairs to assign to the bucket. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.lifecycleRule">lifecycle_rule</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRule">StorageBucketLifecycleRule</a>]</code> | lifecycle_rule block. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.logging">logging</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLogging">StorageBucketLogging</a></code> | logging block. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.project">project</a></code> | <code>str</code> | The ID of the project in which the resource belongs. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.publicAccessPrevention">public_access_prevention</a></code> | <code>str</code> | Prevents public access to a bucket. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.requesterPays">requester_pays</a></code> | <code>bool \| cdktf.IResolvable</code> | Enables Requester Pays on a storage bucket. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.retentionPolicy">retention_policy</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicy">StorageBucketRetentionPolicy</a></code> | retention_policy block. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.rpo">rpo</a></code> | <code>str</code> | Specifies the RPO setting of bucket. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.softDeletePolicy">soft_delete_policy</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicy">StorageBucketSoftDeletePolicy</a></code> | soft_delete_policy block. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.storageClass">storage_class</a></code> | <code>str</code> | The Storage Class of the new bucket. Supported values include: STANDARD, MULTI_REGIONAL, REGIONAL, NEARLINE, COLDLINE, ARCHIVE. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketTimeouts">StorageBucketTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.uniformBucketLevelAccess">uniform_bucket_level_access</a></code> | <code>bool \| cdktf.IResolvable</code> | Enables uniform bucket-level access on a bucket. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.versioning">versioning</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketVersioning">StorageBucketVersioning</a></code> | versioning block. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.website">website</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketWebsite">StorageBucketWebsite</a></code> | website block. |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-google.storageBucket.StorageBucket.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -98,7 +98,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.storageBucket.StorageBucket.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -108,49 +108,49 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-google.storageBucket.StorageBucket.Initializer.parameter.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.connection"></a>
 
 - *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-google.storageBucket.StorageBucket.Initializer.parameter.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.count"></a>
 
 - *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-google.storageBucket.StorageBucket.Initializer.parameter.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.dependsOn"></a>
 
 - *Type:* typing.List[cdktf.ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-google.storageBucket.StorageBucket.Initializer.parameter.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.forEach"></a>
 
 - *Type:* cdktf.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-google.storageBucket.StorageBucket.Initializer.parameter.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.lifecycle"></a>
 
 - *Type:* cdktf.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.storageBucket.StorageBucket.Initializer.parameter.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-google.storageBucket.StorageBucket.Initializer.parameter.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.provisioners"></a>
 
 - *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
-##### `location`<sup>Required</sup> <a name="location" id="@cdktf/provider-google.storageBucket.StorageBucket.Initializer.parameter.location"></a>
+##### `location`<sup>Required</sup> <a name="location" id="@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.location"></a>
 
 - *Type:* str
 
@@ -160,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-google.storageBucket.StorageBucket.Initializer.parameter.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.name"></a>
 
 - *Type:* str
 
@@ -170,9 +170,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `autoclass`<sup>Optional</sup> <a name="autoclass" id="@cdktf/provider-google.storageBucket.StorageBucket.Initializer.parameter.autoclass"></a>
+##### `autoclass`<sup>Optional</sup> <a name="autoclass" id="@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.autoclass"></a>
 
-- *Type:* <a href="#@cdktf/provider-google.storageBucket.StorageBucketAutoclass">StorageBucketAutoclass</a>
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketAutoclass">StorageBucketAutoclass</a>
 
 autoclass block.
 
@@ -180,9 +180,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `cors`<sup>Optional</sup> <a name="cors" id="@cdktf/provider-google.storageBucket.StorageBucket.Initializer.parameter.cors"></a>
+##### `cors`<sup>Optional</sup> <a name="cors" id="@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.cors"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-google.storageBucket.StorageBucketCors">StorageBucketCors</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.storageBucket.StorageBucketCors">StorageBucketCors</a>]
 
 cors block.
 
@@ -190,9 +190,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `custom_placement_config`<sup>Optional</sup> <a name="custom_placement_config" id="@cdktf/provider-google.storageBucket.StorageBucket.Initializer.parameter.customPlacementConfig"></a>
+##### `custom_placement_config`<sup>Optional</sup> <a name="custom_placement_config" id="@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.customPlacementConfig"></a>
 
-- *Type:* <a href="#@cdktf/provider-google.storageBucket.StorageBucketCustomPlacementConfig">StorageBucketCustomPlacementConfig</a>
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketCustomPlacementConfig">StorageBucketCustomPlacementConfig</a>
 
 custom_placement_config block.
 
@@ -200,7 +200,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `default_event_based_hold`<sup>Optional</sup> <a name="default_event_based_hold" id="@cdktf/provider-google.storageBucket.StorageBucket.Initializer.parameter.defaultEventBasedHold"></a>
+##### `default_event_based_hold`<sup>Optional</sup> <a name="default_event_based_hold" id="@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.defaultEventBasedHold"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
@@ -210,7 +210,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `enable_object_retention`<sup>Optional</sup> <a name="enable_object_retention" id="@cdktf/provider-google.storageBucket.StorageBucket.Initializer.parameter.enableObjectRetention"></a>
+##### `enable_object_retention`<sup>Optional</sup> <a name="enable_object_retention" id="@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.enableObjectRetention"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
@@ -220,9 +220,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `encryption`<sup>Optional</sup> <a name="encryption" id="@cdktf/provider-google.storageBucket.StorageBucket.Initializer.parameter.encryption"></a>
+##### `encryption`<sup>Optional</sup> <a name="encryption" id="@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.encryption"></a>
 
-- *Type:* <a href="#@cdktf/provider-google.storageBucket.StorageBucketEncryption">StorageBucketEncryption</a>
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryption">StorageBucketEncryption</a>
 
 encryption block.
 
@@ -230,7 +230,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `force_destroy`<sup>Optional</sup> <a name="force_destroy" id="@cdktf/provider-google.storageBucket.StorageBucket.Initializer.parameter.forceDestroy"></a>
+##### `force_destroy`<sup>Optional</sup> <a name="force_destroy" id="@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.forceDestroy"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
@@ -242,9 +242,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `hierarchical_namespace`<sup>Optional</sup> <a name="hierarchical_namespace" id="@cdktf/provider-google.storageBucket.StorageBucket.Initializer.parameter.hierarchicalNamespace"></a>
+##### `hierarchical_namespace`<sup>Optional</sup> <a name="hierarchical_namespace" id="@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.hierarchicalNamespace"></a>
 
-- *Type:* <a href="#@cdktf/provider-google.storageBucket.StorageBucketHierarchicalNamespace">StorageBucketHierarchicalNamespace</a>
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespace">StorageBucketHierarchicalNamespace</a>
 
 hierarchical_namespace block.
 
@@ -252,7 +252,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-google.storageBucket.StorageBucket.Initializer.parameter.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -263,9 +263,9 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
-##### `ip_filter`<sup>Optional</sup> <a name="ip_filter" id="@cdktf/provider-google.storageBucket.StorageBucket.Initializer.parameter.ipFilter"></a>
+##### `ip_filter`<sup>Optional</sup> <a name="ip_filter" id="@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.ipFilter"></a>
 
-- *Type:* <a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilter">StorageBucketIpFilter</a>
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilter">StorageBucketIpFilter</a>
 
 ip_filter block.
 
@@ -273,7 +273,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `labels`<sup>Optional</sup> <a name="labels" id="@cdktf/provider-google.storageBucket.StorageBucket.Initializer.parameter.labels"></a>
+##### `labels`<sup>Optional</sup> <a name="labels" id="@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.labels"></a>
 
 - *Type:* typing.Mapping[str]
 
@@ -283,9 +283,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `lifecycle_rule`<sup>Optional</sup> <a name="lifecycle_rule" id="@cdktf/provider-google.storageBucket.StorageBucket.Initializer.parameter.lifecycleRule"></a>
+##### `lifecycle_rule`<sup>Optional</sup> <a name="lifecycle_rule" id="@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.lifecycleRule"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRule">StorageBucketLifecycleRule</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRule">StorageBucketLifecycleRule</a>]
 
 lifecycle_rule block.
 
@@ -293,9 +293,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `logging`<sup>Optional</sup> <a name="logging" id="@cdktf/provider-google.storageBucket.StorageBucket.Initializer.parameter.logging"></a>
+##### `logging`<sup>Optional</sup> <a name="logging" id="@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.logging"></a>
 
-- *Type:* <a href="#@cdktf/provider-google.storageBucket.StorageBucketLogging">StorageBucketLogging</a>
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketLogging">StorageBucketLogging</a>
 
 logging block.
 
@@ -303,7 +303,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `project`<sup>Optional</sup> <a name="project" id="@cdktf/provider-google.storageBucket.StorageBucket.Initializer.parameter.project"></a>
+##### `project`<sup>Optional</sup> <a name="project" id="@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.project"></a>
 
 - *Type:* str
 
@@ -315,7 +315,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `public_access_prevention`<sup>Optional</sup> <a name="public_access_prevention" id="@cdktf/provider-google.storageBucket.StorageBucket.Initializer.parameter.publicAccessPrevention"></a>
+##### `public_access_prevention`<sup>Optional</sup> <a name="public_access_prevention" id="@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.publicAccessPrevention"></a>
 
 - *Type:* str
 
@@ -325,7 +325,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `requester_pays`<sup>Optional</sup> <a name="requester_pays" id="@cdktf/provider-google.storageBucket.StorageBucket.Initializer.parameter.requesterPays"></a>
+##### `requester_pays`<sup>Optional</sup> <a name="requester_pays" id="@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.requesterPays"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
@@ -335,9 +335,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `retention_policy`<sup>Optional</sup> <a name="retention_policy" id="@cdktf/provider-google.storageBucket.StorageBucket.Initializer.parameter.retentionPolicy"></a>
+##### `retention_policy`<sup>Optional</sup> <a name="retention_policy" id="@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.retentionPolicy"></a>
 
-- *Type:* <a href="#@cdktf/provider-google.storageBucket.StorageBucketRetentionPolicy">StorageBucketRetentionPolicy</a>
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicy">StorageBucketRetentionPolicy</a>
 
 retention_policy block.
 
@@ -345,7 +345,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `rpo`<sup>Optional</sup> <a name="rpo" id="@cdktf/provider-google.storageBucket.StorageBucket.Initializer.parameter.rpo"></a>
+##### `rpo`<sup>Optional</sup> <a name="rpo" id="@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.rpo"></a>
 
 - *Type:* str
 
@@ -357,9 +357,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `soft_delete_policy`<sup>Optional</sup> <a name="soft_delete_policy" id="@cdktf/provider-google.storageBucket.StorageBucket.Initializer.parameter.softDeletePolicy"></a>
+##### `soft_delete_policy`<sup>Optional</sup> <a name="soft_delete_policy" id="@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.softDeletePolicy"></a>
 
-- *Type:* <a href="#@cdktf/provider-google.storageBucket.StorageBucketSoftDeletePolicy">StorageBucketSoftDeletePolicy</a>
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicy">StorageBucketSoftDeletePolicy</a>
 
 soft_delete_policy block.
 
@@ -367,7 +367,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `storage_class`<sup>Optional</sup> <a name="storage_class" id="@cdktf/provider-google.storageBucket.StorageBucket.Initializer.parameter.storageClass"></a>
+##### `storage_class`<sup>Optional</sup> <a name="storage_class" id="@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.storageClass"></a>
 
 - *Type:* str
 
@@ -377,9 +377,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-google.storageBucket.StorageBucket.Initializer.parameter.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.timeouts"></a>
 
-- *Type:* <a href="#@cdktf/provider-google.storageBucket.StorageBucketTimeouts">StorageBucketTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketTimeouts">StorageBucketTimeouts</a>
 
 timeouts block.
 
@@ -387,7 +387,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `uniform_bucket_level_access`<sup>Optional</sup> <a name="uniform_bucket_level_access" id="@cdktf/provider-google.storageBucket.StorageBucket.Initializer.parameter.uniformBucketLevelAccess"></a>
+##### `uniform_bucket_level_access`<sup>Optional</sup> <a name="uniform_bucket_level_access" id="@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.uniformBucketLevelAccess"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
@@ -397,9 +397,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `versioning`<sup>Optional</sup> <a name="versioning" id="@cdktf/provider-google.storageBucket.StorageBucket.Initializer.parameter.versioning"></a>
+##### `versioning`<sup>Optional</sup> <a name="versioning" id="@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.versioning"></a>
 
-- *Type:* <a href="#@cdktf/provider-google.storageBucket.StorageBucketVersioning">StorageBucketVersioning</a>
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketVersioning">StorageBucketVersioning</a>
 
 versioning block.
 
@@ -407,9 +407,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `website`<sup>Optional</sup> <a name="website" id="@cdktf/provider-google.storageBucket.StorageBucket.Initializer.parameter.website"></a>
+##### `website`<sup>Optional</sup> <a name="website" id="@cdktn/provider-google.storageBucket.StorageBucket.Initializer.parameter.website"></a>
 
-- *Type:* <a href="#@cdktf/provider-google.storageBucket.StorageBucketWebsite">StorageBucketWebsite</a>
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketWebsite">StorageBucketWebsite</a>
 
 website block.
 
@@ -421,70 +421,70 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.toString">to_string</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.addOverride">add_override</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.toMetadata">to_metadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.hasResourceMove">has_resource_move</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.importFrom">import_from</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.putAutoclass">put_autoclass</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.putCors">put_cors</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.putCustomPlacementConfig">put_custom_placement_config</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.putEncryption">put_encryption</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.putHierarchicalNamespace">put_hierarchical_namespace</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.putIpFilter">put_ip_filter</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.putLifecycleRule">put_lifecycle_rule</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.putLogging">put_logging</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.putRetentionPolicy">put_retention_policy</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.putSoftDeletePolicy">put_soft_delete_policy</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.putTimeouts">put_timeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.putVersioning">put_versioning</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.putWebsite">put_website</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.resetAutoclass">reset_autoclass</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.resetCors">reset_cors</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.resetCustomPlacementConfig">reset_custom_placement_config</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.resetDefaultEventBasedHold">reset_default_event_based_hold</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.resetEnableObjectRetention">reset_enable_object_retention</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.resetEncryption">reset_encryption</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.resetForceDestroy">reset_force_destroy</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.resetHierarchicalNamespace">reset_hierarchical_namespace</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.resetId">reset_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.resetIpFilter">reset_ip_filter</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.resetLabels">reset_labels</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.resetLifecycleRule">reset_lifecycle_rule</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.resetLogging">reset_logging</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.resetProject">reset_project</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.resetPublicAccessPrevention">reset_public_access_prevention</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.resetRequesterPays">reset_requester_pays</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.resetRetentionPolicy">reset_retention_policy</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.resetRpo">reset_rpo</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.resetSoftDeletePolicy">reset_soft_delete_policy</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.resetStorageClass">reset_storage_class</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.resetTimeouts">reset_timeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.resetUniformBucketLevelAccess">reset_uniform_bucket_level_access</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.resetVersioning">reset_versioning</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.resetWebsite">reset_website</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.toString">to_string</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.addOverride">add_override</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.toMetadata">to_metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.hasResourceMove">has_resource_move</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.importFrom">import_from</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.putAutoclass">put_autoclass</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.putCors">put_cors</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.putCustomPlacementConfig">put_custom_placement_config</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.putEncryption">put_encryption</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.putHierarchicalNamespace">put_hierarchical_namespace</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.putIpFilter">put_ip_filter</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.putLifecycleRule">put_lifecycle_rule</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.putLogging">put_logging</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.putRetentionPolicy">put_retention_policy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.putSoftDeletePolicy">put_soft_delete_policy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.putVersioning">put_versioning</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.putWebsite">put_website</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.resetAutoclass">reset_autoclass</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.resetCors">reset_cors</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.resetCustomPlacementConfig">reset_custom_placement_config</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.resetDefaultEventBasedHold">reset_default_event_based_hold</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.resetEnableObjectRetention">reset_enable_object_retention</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.resetEncryption">reset_encryption</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.resetForceDestroy">reset_force_destroy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.resetHierarchicalNamespace">reset_hierarchical_namespace</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.resetIpFilter">reset_ip_filter</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.resetLabels">reset_labels</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.resetLifecycleRule">reset_lifecycle_rule</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.resetLogging">reset_logging</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.resetProject">reset_project</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.resetPublicAccessPrevention">reset_public_access_prevention</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.resetRequesterPays">reset_requester_pays</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.resetRetentionPolicy">reset_retention_policy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.resetRpo">reset_rpo</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.resetSoftDeletePolicy">reset_soft_delete_policy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.resetStorageClass">reset_storage_class</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.resetTimeouts">reset_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.resetUniformBucketLevelAccess">reset_uniform_bucket_level_access</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.resetVersioning">reset_versioning</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.resetWebsite">reset_website</a></code> | *No description.* |
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-google.storageBucket.StorageBucket.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.storageBucket.StorageBucket.toString"></a>
 
 ```python
 def to_string() -> str
@@ -492,7 +492,7 @@ def to_string() -> str
 
 Returns a string representation of this construct.
 
-##### `add_override` <a name="add_override" id="@cdktf/provider-google.storageBucket.StorageBucket.addOverride"></a>
+##### `add_override` <a name="add_override" id="@cdktn/provider-google.storageBucket.StorageBucket.addOverride"></a>
 
 ```python
 def add_override(
@@ -501,19 +501,19 @@ def add_override(
 ) -> None
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-google.storageBucket.StorageBucket.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-google.storageBucket.StorageBucket.addOverride.parameter.path"></a>
 
 - *Type:* str
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google.storageBucket.StorageBucket.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.storageBucket.StorageBucket.addOverride.parameter.value"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `override_logical_id` <a name="override_logical_id" id="@cdktf/provider-google.storageBucket.StorageBucket.overrideLogicalId"></a>
+##### `override_logical_id` <a name="override_logical_id" id="@cdktn/provider-google.storageBucket.StorageBucket.overrideLogicalId"></a>
 
 ```python
 def override_logical_id(
@@ -523,7 +523,7 @@ def override_logical_id(
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktf/provider-google.storageBucket.StorageBucket.overrideLogicalId.parameter.newLogicalId"></a>
+###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktn/provider-google.storageBucket.StorageBucket.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* str
 
@@ -531,7 +531,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktf/provider-google.storageBucket.StorageBucket.resetOverrideLogicalId"></a>
+##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktn/provider-google.storageBucket.StorageBucket.resetOverrideLogicalId"></a>
 
 ```python
 def reset_override_logical_id() -> None
@@ -539,19 +539,19 @@ def reset_override_logical_id() -> None
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktf/provider-google.storageBucket.StorageBucket.toHclTerraform"></a>
+##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktn/provider-google.storageBucket.StorageBucket.toHclTerraform"></a>
 
 ```python
 def to_hcl_terraform() -> typing.Any
 ```
 
-##### `to_metadata` <a name="to_metadata" id="@cdktf/provider-google.storageBucket.StorageBucket.toMetadata"></a>
+##### `to_metadata` <a name="to_metadata" id="@cdktn/provider-google.storageBucket.StorageBucket.toMetadata"></a>
 
 ```python
 def to_metadata() -> typing.Any
 ```
 
-##### `to_terraform` <a name="to_terraform" id="@cdktf/provider-google.storageBucket.StorageBucket.toTerraform"></a>
+##### `to_terraform` <a name="to_terraform" id="@cdktn/provider-google.storageBucket.StorageBucket.toTerraform"></a>
 
 ```python
 def to_terraform() -> typing.Any
@@ -559,7 +559,7 @@ def to_terraform() -> typing.Any
 
 Adds this resource to the terraform JSON output.
 
-##### `add_move_target` <a name="add_move_target" id="@cdktf/provider-google.storageBucket.StorageBucket.addMoveTarget"></a>
+##### `add_move_target` <a name="add_move_target" id="@cdktn/provider-google.storageBucket.StorageBucket.addMoveTarget"></a>
 
 ```python
 def add_move_target(
@@ -569,7 +569,7 @@ def add_move_target(
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-google.storageBucket.StorageBucket.addMoveTarget.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-google.storageBucket.StorageBucket.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -577,7 +577,7 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-google.storageBucket.StorageBucket.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.storageBucket.StorageBucket.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -585,13 +585,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucket.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucket.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-google.storageBucket.StorageBucket.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.storageBucket.StorageBucket.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -599,13 +599,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucket.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucket.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-google.storageBucket.StorageBucket.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.storageBucket.StorageBucket.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -613,13 +613,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucket.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucket.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-google.storageBucket.StorageBucket.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.storageBucket.StorageBucket.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -627,13 +627,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucket.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucket.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-google.storageBucket.StorageBucket.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.storageBucket.StorageBucket.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -641,13 +641,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucket.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucket.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-google.storageBucket.StorageBucket.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.storageBucket.StorageBucket.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -655,13 +655,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucket.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucket.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-google.storageBucket.StorageBucket.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.storageBucket.StorageBucket.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -669,13 +669,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucket.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucket.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-google.storageBucket.StorageBucket.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.storageBucket.StorageBucket.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -683,13 +683,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucket.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucket.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-google.storageBucket.StorageBucket.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.storageBucket.StorageBucket.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -697,19 +697,19 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucket.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucket.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-google.storageBucket.StorageBucket.hasResourceMove"></a>
+##### `has_resource_move` <a name="has_resource_move" id="@cdktn/provider-google.storageBucket.StorageBucket.hasResourceMove"></a>
 
 ```python
 def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `import_from` <a name="import_from" id="@cdktf/provider-google.storageBucket.StorageBucket.importFrom"></a>
+##### `import_from` <a name="import_from" id="@cdktn/provider-google.storageBucket.StorageBucket.importFrom"></a>
 
 ```python
 def import_from(
@@ -718,19 +718,19 @@ def import_from(
 ) -> None
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.storageBucket.StorageBucket.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.storageBucket.StorageBucket.importFrom.parameter.id"></a>
 
 - *Type:* str
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.storageBucket.StorageBucket.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.storageBucket.StorageBucket.importFrom.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-google.storageBucket.StorageBucket.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.storageBucket.StorageBucket.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -738,13 +738,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucket.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucket.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `move_from_id` <a name="move_from_id" id="@cdktf/provider-google.storageBucket.StorageBucket.moveFromId"></a>
+##### `move_from_id` <a name="move_from_id" id="@cdktn/provider-google.storageBucket.StorageBucket.moveFromId"></a>
 
 ```python
 def move_from_id(
@@ -756,7 +756,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.storageBucket.StorageBucket.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.storageBucket.StorageBucket.moveFromId.parameter.id"></a>
 
 - *Type:* str
 
@@ -764,7 +764,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `move_to` <a name="move_to" id="@cdktf/provider-google.storageBucket.StorageBucket.moveTo"></a>
+##### `move_to` <a name="move_to" id="@cdktn/provider-google.storageBucket.StorageBucket.moveTo"></a>
 
 ```python
 def move_to(
@@ -775,7 +775,7 @@ def move_to(
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-google.storageBucket.StorageBucket.moveTo.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-google.storageBucket.StorageBucket.moveTo.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -783,7 +783,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-google.storageBucket.StorageBucket.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-google.storageBucket.StorageBucket.moveTo.parameter.index"></a>
 
 - *Type:* str | typing.Union[int, float]
 
@@ -791,7 +791,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `move_to_id` <a name="move_to_id" id="@cdktf/provider-google.storageBucket.StorageBucket.moveToId"></a>
+##### `move_to_id` <a name="move_to_id" id="@cdktn/provider-google.storageBucket.StorageBucket.moveToId"></a>
 
 ```python
 def move_to_id(
@@ -801,7 +801,7 @@ def move_to_id(
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.storageBucket.StorageBucket.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.storageBucket.StorageBucket.moveToId.parameter.id"></a>
 
 - *Type:* str
 
@@ -809,7 +809,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `put_autoclass` <a name="put_autoclass" id="@cdktf/provider-google.storageBucket.StorageBucket.putAutoclass"></a>
+##### `put_autoclass` <a name="put_autoclass" id="@cdktn/provider-google.storageBucket.StorageBucket.putAutoclass"></a>
 
 ```python
 def put_autoclass(
@@ -818,7 +818,7 @@ def put_autoclass(
 ) -> None
 ```
 
-###### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-google.storageBucket.StorageBucket.putAutoclass.parameter.enabled"></a>
+###### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktn/provider-google.storageBucket.StorageBucket.putAutoclass.parameter.enabled"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
@@ -828,7 +828,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `terminal_storage_class`<sup>Optional</sup> <a name="terminal_storage_class" id="@cdktf/provider-google.storageBucket.StorageBucket.putAutoclass.parameter.terminalStorageClass"></a>
+###### `terminal_storage_class`<sup>Optional</sup> <a name="terminal_storage_class" id="@cdktn/provider-google.storageBucket.StorageBucket.putAutoclass.parameter.terminalStorageClass"></a>
 
 - *Type:* str
 
@@ -840,7 +840,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `put_cors` <a name="put_cors" id="@cdktf/provider-google.storageBucket.StorageBucket.putCors"></a>
+##### `put_cors` <a name="put_cors" id="@cdktn/provider-google.storageBucket.StorageBucket.putCors"></a>
 
 ```python
 def put_cors(
@@ -848,13 +848,13 @@ def put_cors(
 ) -> None
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google.storageBucket.StorageBucket.putCors.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.storageBucket.StorageBucket.putCors.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-google.storageBucket.StorageBucketCors">StorageBucketCors</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.storageBucket.StorageBucketCors">StorageBucketCors</a>]
 
 ---
 
-##### `put_custom_placement_config` <a name="put_custom_placement_config" id="@cdktf/provider-google.storageBucket.StorageBucket.putCustomPlacementConfig"></a>
+##### `put_custom_placement_config` <a name="put_custom_placement_config" id="@cdktn/provider-google.storageBucket.StorageBucket.putCustomPlacementConfig"></a>
 
 ```python
 def put_custom_placement_config(
@@ -862,7 +862,7 @@ def put_custom_placement_config(
 ) -> None
 ```
 
-###### `data_locations`<sup>Required</sup> <a name="data_locations" id="@cdktf/provider-google.storageBucket.StorageBucket.putCustomPlacementConfig.parameter.dataLocations"></a>
+###### `data_locations`<sup>Required</sup> <a name="data_locations" id="@cdktn/provider-google.storageBucket.StorageBucket.putCustomPlacementConfig.parameter.dataLocations"></a>
 
 - *Type:* typing.List[str]
 
@@ -874,7 +874,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `put_encryption` <a name="put_encryption" id="@cdktf/provider-google.storageBucket.StorageBucket.putEncryption"></a>
+##### `put_encryption` <a name="put_encryption" id="@cdktn/provider-google.storageBucket.StorageBucket.putEncryption"></a>
 
 ```python
 def put_encryption(
@@ -882,7 +882,7 @@ def put_encryption(
 ) -> None
 ```
 
-###### `default_kms_key_name`<sup>Required</sup> <a name="default_kms_key_name" id="@cdktf/provider-google.storageBucket.StorageBucket.putEncryption.parameter.defaultKmsKeyName"></a>
+###### `default_kms_key_name`<sup>Required</sup> <a name="default_kms_key_name" id="@cdktn/provider-google.storageBucket.StorageBucket.putEncryption.parameter.defaultKmsKeyName"></a>
 
 - *Type:* str
 
@@ -894,7 +894,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `put_hierarchical_namespace` <a name="put_hierarchical_namespace" id="@cdktf/provider-google.storageBucket.StorageBucket.putHierarchicalNamespace"></a>
+##### `put_hierarchical_namespace` <a name="put_hierarchical_namespace" id="@cdktn/provider-google.storageBucket.StorageBucket.putHierarchicalNamespace"></a>
 
 ```python
 def put_hierarchical_namespace(
@@ -902,7 +902,7 @@ def put_hierarchical_namespace(
 ) -> None
 ```
 
-###### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-google.storageBucket.StorageBucket.putHierarchicalNamespace.parameter.enabled"></a>
+###### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktn/provider-google.storageBucket.StorageBucket.putHierarchicalNamespace.parameter.enabled"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
@@ -912,7 +912,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `put_ip_filter` <a name="put_ip_filter" id="@cdktf/provider-google.storageBucket.StorageBucket.putIpFilter"></a>
+##### `put_ip_filter` <a name="put_ip_filter" id="@cdktn/provider-google.storageBucket.StorageBucket.putIpFilter"></a>
 
 ```python
 def put_ip_filter(
@@ -924,7 +924,7 @@ def put_ip_filter(
 ) -> None
 ```
 
-###### `mode`<sup>Required</sup> <a name="mode" id="@cdktf/provider-google.storageBucket.StorageBucket.putIpFilter.parameter.mode"></a>
+###### `mode`<sup>Required</sup> <a name="mode" id="@cdktn/provider-google.storageBucket.StorageBucket.putIpFilter.parameter.mode"></a>
 
 - *Type:* str
 
@@ -934,7 +934,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `allow_all_service_agent_access`<sup>Optional</sup> <a name="allow_all_service_agent_access" id="@cdktf/provider-google.storageBucket.StorageBucket.putIpFilter.parameter.allowAllServiceAgentAccess"></a>
+###### `allow_all_service_agent_access`<sup>Optional</sup> <a name="allow_all_service_agent_access" id="@cdktn/provider-google.storageBucket.StorageBucket.putIpFilter.parameter.allowAllServiceAgentAccess"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
@@ -944,7 +944,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `allow_cross_org_vpcs`<sup>Optional</sup> <a name="allow_cross_org_vpcs" id="@cdktf/provider-google.storageBucket.StorageBucket.putIpFilter.parameter.allowCrossOrgVpcs"></a>
+###### `allow_cross_org_vpcs`<sup>Optional</sup> <a name="allow_cross_org_vpcs" id="@cdktn/provider-google.storageBucket.StorageBucket.putIpFilter.parameter.allowCrossOrgVpcs"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
@@ -954,9 +954,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `public_network_source`<sup>Optional</sup> <a name="public_network_source" id="@cdktf/provider-google.storageBucket.StorageBucket.putIpFilter.parameter.publicNetworkSource"></a>
+###### `public_network_source`<sup>Optional</sup> <a name="public_network_source" id="@cdktn/provider-google.storageBucket.StorageBucket.putIpFilter.parameter.publicNetworkSource"></a>
 
-- *Type:* <a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSource">StorageBucketIpFilterPublicNetworkSource</a>
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSource">StorageBucketIpFilterPublicNetworkSource</a>
 
 public_network_source block.
 
@@ -964,9 +964,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `vpc_network_sources`<sup>Optional</sup> <a name="vpc_network_sources" id="@cdktf/provider-google.storageBucket.StorageBucket.putIpFilter.parameter.vpcNetworkSources"></a>
+###### `vpc_network_sources`<sup>Optional</sup> <a name="vpc_network_sources" id="@cdktn/provider-google.storageBucket.StorageBucket.putIpFilter.parameter.vpcNetworkSources"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSources">StorageBucketIpFilterVpcNetworkSources</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSources">StorageBucketIpFilterVpcNetworkSources</a>]
 
 vpc_network_sources block.
 
@@ -974,7 +974,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `put_lifecycle_rule` <a name="put_lifecycle_rule" id="@cdktf/provider-google.storageBucket.StorageBucket.putLifecycleRule"></a>
+##### `put_lifecycle_rule` <a name="put_lifecycle_rule" id="@cdktn/provider-google.storageBucket.StorageBucket.putLifecycleRule"></a>
 
 ```python
 def put_lifecycle_rule(
@@ -982,13 +982,13 @@ def put_lifecycle_rule(
 ) -> None
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google.storageBucket.StorageBucket.putLifecycleRule.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.storageBucket.StorageBucket.putLifecycleRule.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRule">StorageBucketLifecycleRule</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRule">StorageBucketLifecycleRule</a>]
 
 ---
 
-##### `put_logging` <a name="put_logging" id="@cdktf/provider-google.storageBucket.StorageBucket.putLogging"></a>
+##### `put_logging` <a name="put_logging" id="@cdktn/provider-google.storageBucket.StorageBucket.putLogging"></a>
 
 ```python
 def put_logging(
@@ -997,7 +997,7 @@ def put_logging(
 ) -> None
 ```
 
-###### `log_bucket`<sup>Required</sup> <a name="log_bucket" id="@cdktf/provider-google.storageBucket.StorageBucket.putLogging.parameter.logBucket"></a>
+###### `log_bucket`<sup>Required</sup> <a name="log_bucket" id="@cdktn/provider-google.storageBucket.StorageBucket.putLogging.parameter.logBucket"></a>
 
 - *Type:* str
 
@@ -1007,7 +1007,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `log_object_prefix`<sup>Optional</sup> <a name="log_object_prefix" id="@cdktf/provider-google.storageBucket.StorageBucket.putLogging.parameter.logObjectPrefix"></a>
+###### `log_object_prefix`<sup>Optional</sup> <a name="log_object_prefix" id="@cdktn/provider-google.storageBucket.StorageBucket.putLogging.parameter.logObjectPrefix"></a>
 
 - *Type:* str
 
@@ -1019,7 +1019,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `put_retention_policy` <a name="put_retention_policy" id="@cdktf/provider-google.storageBucket.StorageBucket.putRetentionPolicy"></a>
+##### `put_retention_policy` <a name="put_retention_policy" id="@cdktn/provider-google.storageBucket.StorageBucket.putRetentionPolicy"></a>
 
 ```python
 def put_retention_policy(
@@ -1028,7 +1028,7 @@ def put_retention_policy(
 ) -> None
 ```
 
-###### `retention_period`<sup>Required</sup> <a name="retention_period" id="@cdktf/provider-google.storageBucket.StorageBucket.putRetentionPolicy.parameter.retentionPeriod"></a>
+###### `retention_period`<sup>Required</sup> <a name="retention_period" id="@cdktn/provider-google.storageBucket.StorageBucket.putRetentionPolicy.parameter.retentionPeriod"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -1040,7 +1040,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `is_locked`<sup>Optional</sup> <a name="is_locked" id="@cdktf/provider-google.storageBucket.StorageBucket.putRetentionPolicy.parameter.isLocked"></a>
+###### `is_locked`<sup>Optional</sup> <a name="is_locked" id="@cdktn/provider-google.storageBucket.StorageBucket.putRetentionPolicy.parameter.isLocked"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
@@ -1052,7 +1052,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `put_soft_delete_policy` <a name="put_soft_delete_policy" id="@cdktf/provider-google.storageBucket.StorageBucket.putSoftDeletePolicy"></a>
+##### `put_soft_delete_policy` <a name="put_soft_delete_policy" id="@cdktn/provider-google.storageBucket.StorageBucket.putSoftDeletePolicy"></a>
 
 ```python
 def put_soft_delete_policy(
@@ -1060,7 +1060,7 @@ def put_soft_delete_policy(
 ) -> None
 ```
 
-###### `retention_duration_seconds`<sup>Optional</sup> <a name="retention_duration_seconds" id="@cdktf/provider-google.storageBucket.StorageBucket.putSoftDeletePolicy.parameter.retentionDurationSeconds"></a>
+###### `retention_duration_seconds`<sup>Optional</sup> <a name="retention_duration_seconds" id="@cdktn/provider-google.storageBucket.StorageBucket.putSoftDeletePolicy.parameter.retentionDurationSeconds"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -1072,7 +1072,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `put_timeouts` <a name="put_timeouts" id="@cdktf/provider-google.storageBucket.StorageBucket.putTimeouts"></a>
+##### `put_timeouts` <a name="put_timeouts" id="@cdktn/provider-google.storageBucket.StorageBucket.putTimeouts"></a>
 
 ```python
 def put_timeouts(
@@ -1082,7 +1082,7 @@ def put_timeouts(
 ) -> None
 ```
 
-###### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-google.storageBucket.StorageBucket.putTimeouts.parameter.create"></a>
+###### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-google.storageBucket.StorageBucket.putTimeouts.parameter.create"></a>
 
 - *Type:* str
 
@@ -1090,7 +1090,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `read`<sup>Optional</sup> <a name="read" id="@cdktf/provider-google.storageBucket.StorageBucket.putTimeouts.parameter.read"></a>
+###### `read`<sup>Optional</sup> <a name="read" id="@cdktn/provider-google.storageBucket.StorageBucket.putTimeouts.parameter.read"></a>
 
 - *Type:* str
 
@@ -1098,7 +1098,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-google.storageBucket.StorageBucket.putTimeouts.parameter.update"></a>
+###### `update`<sup>Optional</sup> <a name="update" id="@cdktn/provider-google.storageBucket.StorageBucket.putTimeouts.parameter.update"></a>
 
 - *Type:* str
 
@@ -1106,7 +1106,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `put_versioning` <a name="put_versioning" id="@cdktf/provider-google.storageBucket.StorageBucket.putVersioning"></a>
+##### `put_versioning` <a name="put_versioning" id="@cdktn/provider-google.storageBucket.StorageBucket.putVersioning"></a>
 
 ```python
 def put_versioning(
@@ -1114,7 +1114,7 @@ def put_versioning(
 ) -> None
 ```
 
-###### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-google.storageBucket.StorageBucket.putVersioning.parameter.enabled"></a>
+###### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktn/provider-google.storageBucket.StorageBucket.putVersioning.parameter.enabled"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
@@ -1124,7 +1124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `put_website` <a name="put_website" id="@cdktf/provider-google.storageBucket.StorageBucket.putWebsite"></a>
+##### `put_website` <a name="put_website" id="@cdktn/provider-google.storageBucket.StorageBucket.putWebsite"></a>
 
 ```python
 def put_website(
@@ -1133,7 +1133,7 @@ def put_website(
 ) -> None
 ```
 
-###### `main_page_suffix`<sup>Optional</sup> <a name="main_page_suffix" id="@cdktf/provider-google.storageBucket.StorageBucket.putWebsite.parameter.mainPageSuffix"></a>
+###### `main_page_suffix`<sup>Optional</sup> <a name="main_page_suffix" id="@cdktn/provider-google.storageBucket.StorageBucket.putWebsite.parameter.mainPageSuffix"></a>
 
 - *Type:* str
 
@@ -1143,7 +1143,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `not_found_page`<sup>Optional</sup> <a name="not_found_page" id="@cdktf/provider-google.storageBucket.StorageBucket.putWebsite.parameter.notFoundPage"></a>
+###### `not_found_page`<sup>Optional</sup> <a name="not_found_page" id="@cdktn/provider-google.storageBucket.StorageBucket.putWebsite.parameter.notFoundPage"></a>
 
 - *Type:* str
 
@@ -1153,145 +1153,145 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `reset_autoclass` <a name="reset_autoclass" id="@cdktf/provider-google.storageBucket.StorageBucket.resetAutoclass"></a>
+##### `reset_autoclass` <a name="reset_autoclass" id="@cdktn/provider-google.storageBucket.StorageBucket.resetAutoclass"></a>
 
 ```python
 def reset_autoclass() -> None
 ```
 
-##### `reset_cors` <a name="reset_cors" id="@cdktf/provider-google.storageBucket.StorageBucket.resetCors"></a>
+##### `reset_cors` <a name="reset_cors" id="@cdktn/provider-google.storageBucket.StorageBucket.resetCors"></a>
 
 ```python
 def reset_cors() -> None
 ```
 
-##### `reset_custom_placement_config` <a name="reset_custom_placement_config" id="@cdktf/provider-google.storageBucket.StorageBucket.resetCustomPlacementConfig"></a>
+##### `reset_custom_placement_config` <a name="reset_custom_placement_config" id="@cdktn/provider-google.storageBucket.StorageBucket.resetCustomPlacementConfig"></a>
 
 ```python
 def reset_custom_placement_config() -> None
 ```
 
-##### `reset_default_event_based_hold` <a name="reset_default_event_based_hold" id="@cdktf/provider-google.storageBucket.StorageBucket.resetDefaultEventBasedHold"></a>
+##### `reset_default_event_based_hold` <a name="reset_default_event_based_hold" id="@cdktn/provider-google.storageBucket.StorageBucket.resetDefaultEventBasedHold"></a>
 
 ```python
 def reset_default_event_based_hold() -> None
 ```
 
-##### `reset_enable_object_retention` <a name="reset_enable_object_retention" id="@cdktf/provider-google.storageBucket.StorageBucket.resetEnableObjectRetention"></a>
+##### `reset_enable_object_retention` <a name="reset_enable_object_retention" id="@cdktn/provider-google.storageBucket.StorageBucket.resetEnableObjectRetention"></a>
 
 ```python
 def reset_enable_object_retention() -> None
 ```
 
-##### `reset_encryption` <a name="reset_encryption" id="@cdktf/provider-google.storageBucket.StorageBucket.resetEncryption"></a>
+##### `reset_encryption` <a name="reset_encryption" id="@cdktn/provider-google.storageBucket.StorageBucket.resetEncryption"></a>
 
 ```python
 def reset_encryption() -> None
 ```
 
-##### `reset_force_destroy` <a name="reset_force_destroy" id="@cdktf/provider-google.storageBucket.StorageBucket.resetForceDestroy"></a>
+##### `reset_force_destroy` <a name="reset_force_destroy" id="@cdktn/provider-google.storageBucket.StorageBucket.resetForceDestroy"></a>
 
 ```python
 def reset_force_destroy() -> None
 ```
 
-##### `reset_hierarchical_namespace` <a name="reset_hierarchical_namespace" id="@cdktf/provider-google.storageBucket.StorageBucket.resetHierarchicalNamespace"></a>
+##### `reset_hierarchical_namespace` <a name="reset_hierarchical_namespace" id="@cdktn/provider-google.storageBucket.StorageBucket.resetHierarchicalNamespace"></a>
 
 ```python
 def reset_hierarchical_namespace() -> None
 ```
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-google.storageBucket.StorageBucket.resetId"></a>
+##### `reset_id` <a name="reset_id" id="@cdktn/provider-google.storageBucket.StorageBucket.resetId"></a>
 
 ```python
 def reset_id() -> None
 ```
 
-##### `reset_ip_filter` <a name="reset_ip_filter" id="@cdktf/provider-google.storageBucket.StorageBucket.resetIpFilter"></a>
+##### `reset_ip_filter` <a name="reset_ip_filter" id="@cdktn/provider-google.storageBucket.StorageBucket.resetIpFilter"></a>
 
 ```python
 def reset_ip_filter() -> None
 ```
 
-##### `reset_labels` <a name="reset_labels" id="@cdktf/provider-google.storageBucket.StorageBucket.resetLabels"></a>
+##### `reset_labels` <a name="reset_labels" id="@cdktn/provider-google.storageBucket.StorageBucket.resetLabels"></a>
 
 ```python
 def reset_labels() -> None
 ```
 
-##### `reset_lifecycle_rule` <a name="reset_lifecycle_rule" id="@cdktf/provider-google.storageBucket.StorageBucket.resetLifecycleRule"></a>
+##### `reset_lifecycle_rule` <a name="reset_lifecycle_rule" id="@cdktn/provider-google.storageBucket.StorageBucket.resetLifecycleRule"></a>
 
 ```python
 def reset_lifecycle_rule() -> None
 ```
 
-##### `reset_logging` <a name="reset_logging" id="@cdktf/provider-google.storageBucket.StorageBucket.resetLogging"></a>
+##### `reset_logging` <a name="reset_logging" id="@cdktn/provider-google.storageBucket.StorageBucket.resetLogging"></a>
 
 ```python
 def reset_logging() -> None
 ```
 
-##### `reset_project` <a name="reset_project" id="@cdktf/provider-google.storageBucket.StorageBucket.resetProject"></a>
+##### `reset_project` <a name="reset_project" id="@cdktn/provider-google.storageBucket.StorageBucket.resetProject"></a>
 
 ```python
 def reset_project() -> None
 ```
 
-##### `reset_public_access_prevention` <a name="reset_public_access_prevention" id="@cdktf/provider-google.storageBucket.StorageBucket.resetPublicAccessPrevention"></a>
+##### `reset_public_access_prevention` <a name="reset_public_access_prevention" id="@cdktn/provider-google.storageBucket.StorageBucket.resetPublicAccessPrevention"></a>
 
 ```python
 def reset_public_access_prevention() -> None
 ```
 
-##### `reset_requester_pays` <a name="reset_requester_pays" id="@cdktf/provider-google.storageBucket.StorageBucket.resetRequesterPays"></a>
+##### `reset_requester_pays` <a name="reset_requester_pays" id="@cdktn/provider-google.storageBucket.StorageBucket.resetRequesterPays"></a>
 
 ```python
 def reset_requester_pays() -> None
 ```
 
-##### `reset_retention_policy` <a name="reset_retention_policy" id="@cdktf/provider-google.storageBucket.StorageBucket.resetRetentionPolicy"></a>
+##### `reset_retention_policy` <a name="reset_retention_policy" id="@cdktn/provider-google.storageBucket.StorageBucket.resetRetentionPolicy"></a>
 
 ```python
 def reset_retention_policy() -> None
 ```
 
-##### `reset_rpo` <a name="reset_rpo" id="@cdktf/provider-google.storageBucket.StorageBucket.resetRpo"></a>
+##### `reset_rpo` <a name="reset_rpo" id="@cdktn/provider-google.storageBucket.StorageBucket.resetRpo"></a>
 
 ```python
 def reset_rpo() -> None
 ```
 
-##### `reset_soft_delete_policy` <a name="reset_soft_delete_policy" id="@cdktf/provider-google.storageBucket.StorageBucket.resetSoftDeletePolicy"></a>
+##### `reset_soft_delete_policy` <a name="reset_soft_delete_policy" id="@cdktn/provider-google.storageBucket.StorageBucket.resetSoftDeletePolicy"></a>
 
 ```python
 def reset_soft_delete_policy() -> None
 ```
 
-##### `reset_storage_class` <a name="reset_storage_class" id="@cdktf/provider-google.storageBucket.StorageBucket.resetStorageClass"></a>
+##### `reset_storage_class` <a name="reset_storage_class" id="@cdktn/provider-google.storageBucket.StorageBucket.resetStorageClass"></a>
 
 ```python
 def reset_storage_class() -> None
 ```
 
-##### `reset_timeouts` <a name="reset_timeouts" id="@cdktf/provider-google.storageBucket.StorageBucket.resetTimeouts"></a>
+##### `reset_timeouts` <a name="reset_timeouts" id="@cdktn/provider-google.storageBucket.StorageBucket.resetTimeouts"></a>
 
 ```python
 def reset_timeouts() -> None
 ```
 
-##### `reset_uniform_bucket_level_access` <a name="reset_uniform_bucket_level_access" id="@cdktf/provider-google.storageBucket.StorageBucket.resetUniformBucketLevelAccess"></a>
+##### `reset_uniform_bucket_level_access` <a name="reset_uniform_bucket_level_access" id="@cdktn/provider-google.storageBucket.StorageBucket.resetUniformBucketLevelAccess"></a>
 
 ```python
 def reset_uniform_bucket_level_access() -> None
 ```
 
-##### `reset_versioning` <a name="reset_versioning" id="@cdktf/provider-google.storageBucket.StorageBucket.resetVersioning"></a>
+##### `reset_versioning` <a name="reset_versioning" id="@cdktn/provider-google.storageBucket.StorageBucket.resetVersioning"></a>
 
 ```python
 def reset_versioning() -> None
 ```
 
-##### `reset_website` <a name="reset_website" id="@cdktf/provider-google.storageBucket.StorageBucket.resetWebsite"></a>
+##### `reset_website` <a name="reset_website" id="@cdktn/provider-google.storageBucket.StorageBucket.resetWebsite"></a>
 
 ```python
 def reset_website() -> None
@@ -1301,17 +1301,17 @@ def reset_website() -> None
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.isTerraformElement">is_terraform_element</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a StorageBucket resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.isTerraformElement">is_terraform_element</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a StorageBucket resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `is_construct` <a name="is_construct" id="@cdktf/provider-google.storageBucket.StorageBucket.isConstruct"></a>
+##### `is_construct` <a name="is_construct" id="@cdktn/provider-google.storageBucket.StorageBucket.isConstruct"></a>
 
 ```python
-from cdktf_cdktf_provider_google import storage_bucket
+from cdktn_provider_google import storage_bucket
 
 storageBucket.StorageBucket.is_construct(
   x: typing.Any
@@ -1334,7 +1334,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.storageBucket.StorageBucket.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.storageBucket.StorageBucket.isConstruct.parameter.x"></a>
 
 - *Type:* typing.Any
 
@@ -1342,42 +1342,42 @@ Any object.
 
 ---
 
-##### `is_terraform_element` <a name="is_terraform_element" id="@cdktf/provider-google.storageBucket.StorageBucket.isTerraformElement"></a>
+##### `is_terraform_element` <a name="is_terraform_element" id="@cdktn/provider-google.storageBucket.StorageBucket.isTerraformElement"></a>
 
 ```python
-from cdktf_cdktf_provider_google import storage_bucket
+from cdktn_provider_google import storage_bucket
 
 storageBucket.StorageBucket.is_terraform_element(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.storageBucket.StorageBucket.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.storageBucket.StorageBucket.isTerraformElement.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktf/provider-google.storageBucket.StorageBucket.isTerraformResource"></a>
+##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktn/provider-google.storageBucket.StorageBucket.isTerraformResource"></a>
 
 ```python
-from cdktf_cdktf_provider_google import storage_bucket
+from cdktn_provider_google import storage_bucket
 
 storageBucket.StorageBucket.is_terraform_resource(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.storageBucket.StorageBucket.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.storageBucket.StorageBucket.isTerraformResource.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktf/provider-google.storageBucket.StorageBucket.generateConfigForImport"></a>
+##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktn/provider-google.storageBucket.StorageBucket.generateConfigForImport"></a>
 
 ```python
-from cdktf_cdktf_provider_google import storage_bucket
+from cdktn_provider_google import storage_bucket
 
 storageBucket.StorageBucket.generate_config_for_import(
   scope: Construct,
@@ -1389,7 +1389,7 @@ storageBucket.StorageBucket.generate_config_for_import(
 
 Generates CDKTF code for importing a StorageBucket resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-google.storageBucket.StorageBucket.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.storageBucket.StorageBucket.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -1397,7 +1397,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktf/provider-google.storageBucket.StorageBucket.generateConfigForImport.parameter.importToId"></a>
+###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktn/provider-google.storageBucket.StorageBucket.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* str
 
@@ -1405,7 +1405,7 @@ The construct id used in the generated config for the StorageBucket to import.
 
 ---
 
-###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktf/provider-google.storageBucket.StorageBucket.generateConfigForImport.parameter.importFromId"></a>
+###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktn/provider-google.storageBucket.StorageBucket.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* str
 
@@ -1415,7 +1415,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.storageBucket.StorageBucket.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.storageBucket.StorageBucket.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
@@ -1427,83 +1427,83 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.property.autoclass">autoclass</a></code> | <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketAutoclassOutputReference">StorageBucketAutoclassOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.property.cors">cors</a></code> | <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketCorsList">StorageBucketCorsList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.property.customPlacementConfig">custom_placement_config</a></code> | <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference">StorageBucketCustomPlacementConfigOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.property.effectiveLabels">effective_labels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.property.encryption">encryption</a></code> | <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketEncryptionOutputReference">StorageBucketEncryptionOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.property.hierarchicalNamespace">hierarchical_namespace</a></code> | <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference">StorageBucketHierarchicalNamespaceOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.property.ipFilter">ip_filter</a></code> | <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference">StorageBucketIpFilterOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.property.lifecycleRule">lifecycle_rule</a></code> | <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleList">StorageBucketLifecycleRuleList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.property.logging">logging</a></code> | <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLoggingOutputReference">StorageBucketLoggingOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.property.projectNumber">project_number</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.property.retentionPolicy">retention_policy</a></code> | <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference">StorageBucketRetentionPolicyOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.property.selfLink">self_link</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.property.softDeletePolicy">soft_delete_policy</a></code> | <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference">StorageBucketSoftDeletePolicyOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.property.terraformLabels">terraform_labels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.property.timeCreated">time_created</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketTimeoutsOutputReference">StorageBucketTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.property.updated">updated</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.property.url">url</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.property.versioning">versioning</a></code> | <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketVersioningOutputReference">StorageBucketVersioningOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.property.website">website</a></code> | <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketWebsiteOutputReference">StorageBucketWebsiteOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.property.autoclassInput">autoclass_input</a></code> | <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketAutoclass">StorageBucketAutoclass</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.property.corsInput">cors_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-google.storageBucket.StorageBucketCors">StorageBucketCors</a>]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.property.customPlacementConfigInput">custom_placement_config_input</a></code> | <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketCustomPlacementConfig">StorageBucketCustomPlacementConfig</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.property.defaultEventBasedHoldInput">default_event_based_hold_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.property.enableObjectRetentionInput">enable_object_retention_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.property.encryptionInput">encryption_input</a></code> | <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketEncryption">StorageBucketEncryption</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.property.forceDestroyInput">force_destroy_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.property.hierarchicalNamespaceInput">hierarchical_namespace_input</a></code> | <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketHierarchicalNamespace">StorageBucketHierarchicalNamespace</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.property.ipFilterInput">ip_filter_input</a></code> | <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilter">StorageBucketIpFilter</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.property.labelsInput">labels_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.property.lifecycleRuleInput">lifecycle_rule_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRule">StorageBucketLifecycleRule</a>]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.property.locationInput">location_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.property.loggingInput">logging_input</a></code> | <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLogging">StorageBucketLogging</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.property.publicAccessPreventionInput">public_access_prevention_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.property.requesterPaysInput">requester_pays_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.property.retentionPolicyInput">retention_policy_input</a></code> | <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketRetentionPolicy">StorageBucketRetentionPolicy</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.property.rpoInput">rpo_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.property.softDeletePolicyInput">soft_delete_policy_input</a></code> | <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketSoftDeletePolicy">StorageBucketSoftDeletePolicy</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.property.storageClassInput">storage_class_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-google.storageBucket.StorageBucketTimeouts">StorageBucketTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.property.uniformBucketLevelAccessInput">uniform_bucket_level_access_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.property.versioningInput">versioning_input</a></code> | <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketVersioning">StorageBucketVersioning</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.property.websiteInput">website_input</a></code> | <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketWebsite">StorageBucketWebsite</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.property.defaultEventBasedHold">default_event_based_hold</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.property.enableObjectRetention">enable_object_retention</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.property.forceDestroy">force_destroy</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.property.location">location</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.property.project">project</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.property.publicAccessPrevention">public_access_prevention</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.property.requesterPays">requester_pays</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.property.rpo">rpo</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.property.storageClass">storage_class</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.property.uniformBucketLevelAccess">uniform_bucket_level_access</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.autoclass">autoclass</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketAutoclassOutputReference">StorageBucketAutoclassOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.cors">cors</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCorsList">StorageBucketCorsList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.customPlacementConfig">custom_placement_config</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference">StorageBucketCustomPlacementConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.effectiveLabels">effective_labels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.encryption">encryption</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference">StorageBucketEncryptionOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.hierarchicalNamespace">hierarchical_namespace</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference">StorageBucketHierarchicalNamespaceOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.ipFilter">ip_filter</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference">StorageBucketIpFilterOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.lifecycleRule">lifecycle_rule</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleList">StorageBucketLifecycleRuleList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.logging">logging</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLoggingOutputReference">StorageBucketLoggingOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.projectNumber">project_number</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.retentionPolicy">retention_policy</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference">StorageBucketRetentionPolicyOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.selfLink">self_link</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.softDeletePolicy">soft_delete_policy</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference">StorageBucketSoftDeletePolicyOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.terraformLabels">terraform_labels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.timeCreated">time_created</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference">StorageBucketTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.updated">updated</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.url">url</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.versioning">versioning</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketVersioningOutputReference">StorageBucketVersioningOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.website">website</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketWebsiteOutputReference">StorageBucketWebsiteOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.autoclassInput">autoclass_input</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketAutoclass">StorageBucketAutoclass</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.corsInput">cors_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.storageBucket.StorageBucketCors">StorageBucketCors</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.customPlacementConfigInput">custom_placement_config_input</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCustomPlacementConfig">StorageBucketCustomPlacementConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.defaultEventBasedHoldInput">default_event_based_hold_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.enableObjectRetentionInput">enable_object_retention_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.encryptionInput">encryption_input</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryption">StorageBucketEncryption</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.forceDestroyInput">force_destroy_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.hierarchicalNamespaceInput">hierarchical_namespace_input</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespace">StorageBucketHierarchicalNamespace</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.ipFilterInput">ip_filter_input</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilter">StorageBucketIpFilter</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.labelsInput">labels_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.lifecycleRuleInput">lifecycle_rule_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRule">StorageBucketLifecycleRule</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.locationInput">location_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.loggingInput">logging_input</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLogging">StorageBucketLogging</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.publicAccessPreventionInput">public_access_prevention_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.requesterPaysInput">requester_pays_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.retentionPolicyInput">retention_policy_input</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicy">StorageBucketRetentionPolicy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.rpoInput">rpo_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.softDeletePolicyInput">soft_delete_policy_input</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicy">StorageBucketSoftDeletePolicy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.storageClassInput">storage_class_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.storageBucket.StorageBucketTimeouts">StorageBucketTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.uniformBucketLevelAccessInput">uniform_bucket_level_access_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.versioningInput">versioning_input</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketVersioning">StorageBucketVersioning</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.websiteInput">website_input</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketWebsite">StorageBucketWebsite</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.defaultEventBasedHold">default_event_based_hold</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.enableObjectRetention">enable_object_retention</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.forceDestroy">force_destroy</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.location">location</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.project">project</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.publicAccessPrevention">public_access_prevention</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.requesterPays">requester_pays</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.rpo">rpo</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.storageClass">storage_class</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.uniformBucketLevelAccess">uniform_bucket_level_access</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-google.storageBucket.StorageBucket.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-google.storageBucket.StorageBucket.property.node"></a>
 
 ```python
 node: Node
@@ -1515,7 +1515,7 @@ The tree node.
 
 ---
 
-##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktf/provider-google.storageBucket.StorageBucket.property.cdktfStack"></a>
+##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktn/provider-google.storageBucket.StorageBucket.property.cdktfStack"></a>
 
 ```python
 cdktf_stack: TerraformStack
@@ -1525,7 +1525,7 @@ cdktf_stack: TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google.storageBucket.StorageBucket.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.storageBucket.StorageBucket.property.fqn"></a>
 
 ```python
 fqn: str
@@ -1535,7 +1535,7 @@ fqn: str
 
 ---
 
-##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktf/provider-google.storageBucket.StorageBucket.property.friendlyUniqueId"></a>
+##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktn/provider-google.storageBucket.StorageBucket.property.friendlyUniqueId"></a>
 
 ```python
 friendly_unique_id: str
@@ -1545,7 +1545,7 @@ friendly_unique_id: str
 
 ---
 
-##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktf/provider-google.storageBucket.StorageBucket.property.terraformMetaArguments"></a>
+##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktn/provider-google.storageBucket.StorageBucket.property.terraformMetaArguments"></a>
 
 ```python
 terraform_meta_arguments: typing.Mapping[typing.Any]
@@ -1555,7 +1555,7 @@ terraform_meta_arguments: typing.Mapping[typing.Any]
 
 ---
 
-##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktf/provider-google.storageBucket.StorageBucket.property.terraformResourceType"></a>
+##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktn/provider-google.storageBucket.StorageBucket.property.terraformResourceType"></a>
 
 ```python
 terraform_resource_type: str
@@ -1565,7 +1565,7 @@ terraform_resource_type: str
 
 ---
 
-##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktf/provider-google.storageBucket.StorageBucket.property.terraformGeneratorMetadata"></a>
+##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktn/provider-google.storageBucket.StorageBucket.property.terraformGeneratorMetadata"></a>
 
 ```python
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
@@ -1575,7 +1575,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-google.storageBucket.StorageBucket.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.storageBucket.StorageBucket.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
@@ -1585,7 +1585,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-google.storageBucket.StorageBucket.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.storageBucket.StorageBucket.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -1595,7 +1595,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-google.storageBucket.StorageBucket.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.storageBucket.StorageBucket.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[str]
@@ -1605,7 +1605,7 @@ depends_on: typing.List[str]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-google.storageBucket.StorageBucket.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.storageBucket.StorageBucket.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -1615,7 +1615,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-google.storageBucket.StorageBucket.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.storageBucket.StorageBucket.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -1625,7 +1625,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.storageBucket.StorageBucket.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.storageBucket.StorageBucket.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -1635,7 +1635,7 @@ provider: TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-google.storageBucket.StorageBucket.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.storageBucket.StorageBucket.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
@@ -1645,37 +1645,37 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `autoclass`<sup>Required</sup> <a name="autoclass" id="@cdktf/provider-google.storageBucket.StorageBucket.property.autoclass"></a>
+##### `autoclass`<sup>Required</sup> <a name="autoclass" id="@cdktn/provider-google.storageBucket.StorageBucket.property.autoclass"></a>
 
 ```python
 autoclass: StorageBucketAutoclassOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.storageBucket.StorageBucketAutoclassOutputReference">StorageBucketAutoclassOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketAutoclassOutputReference">StorageBucketAutoclassOutputReference</a>
 
 ---
 
-##### `cors`<sup>Required</sup> <a name="cors" id="@cdktf/provider-google.storageBucket.StorageBucket.property.cors"></a>
+##### `cors`<sup>Required</sup> <a name="cors" id="@cdktn/provider-google.storageBucket.StorageBucket.property.cors"></a>
 
 ```python
 cors: StorageBucketCorsList
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.storageBucket.StorageBucketCorsList">StorageBucketCorsList</a>
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketCorsList">StorageBucketCorsList</a>
 
 ---
 
-##### `custom_placement_config`<sup>Required</sup> <a name="custom_placement_config" id="@cdktf/provider-google.storageBucket.StorageBucket.property.customPlacementConfig"></a>
+##### `custom_placement_config`<sup>Required</sup> <a name="custom_placement_config" id="@cdktn/provider-google.storageBucket.StorageBucket.property.customPlacementConfig"></a>
 
 ```python
 custom_placement_config: StorageBucketCustomPlacementConfigOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference">StorageBucketCustomPlacementConfigOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference">StorageBucketCustomPlacementConfigOutputReference</a>
 
 ---
 
-##### `effective_labels`<sup>Required</sup> <a name="effective_labels" id="@cdktf/provider-google.storageBucket.StorageBucket.property.effectiveLabels"></a>
+##### `effective_labels`<sup>Required</sup> <a name="effective_labels" id="@cdktn/provider-google.storageBucket.StorageBucket.property.effectiveLabels"></a>
 
 ```python
 effective_labels: StringMap
@@ -1685,57 +1685,57 @@ effective_labels: StringMap
 
 ---
 
-##### `encryption`<sup>Required</sup> <a name="encryption" id="@cdktf/provider-google.storageBucket.StorageBucket.property.encryption"></a>
+##### `encryption`<sup>Required</sup> <a name="encryption" id="@cdktn/provider-google.storageBucket.StorageBucket.property.encryption"></a>
 
 ```python
 encryption: StorageBucketEncryptionOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.storageBucket.StorageBucketEncryptionOutputReference">StorageBucketEncryptionOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference">StorageBucketEncryptionOutputReference</a>
 
 ---
 
-##### `hierarchical_namespace`<sup>Required</sup> <a name="hierarchical_namespace" id="@cdktf/provider-google.storageBucket.StorageBucket.property.hierarchicalNamespace"></a>
+##### `hierarchical_namespace`<sup>Required</sup> <a name="hierarchical_namespace" id="@cdktn/provider-google.storageBucket.StorageBucket.property.hierarchicalNamespace"></a>
 
 ```python
 hierarchical_namespace: StorageBucketHierarchicalNamespaceOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference">StorageBucketHierarchicalNamespaceOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference">StorageBucketHierarchicalNamespaceOutputReference</a>
 
 ---
 
-##### `ip_filter`<sup>Required</sup> <a name="ip_filter" id="@cdktf/provider-google.storageBucket.StorageBucket.property.ipFilter"></a>
+##### `ip_filter`<sup>Required</sup> <a name="ip_filter" id="@cdktn/provider-google.storageBucket.StorageBucket.property.ipFilter"></a>
 
 ```python
 ip_filter: StorageBucketIpFilterOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference">StorageBucketIpFilterOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference">StorageBucketIpFilterOutputReference</a>
 
 ---
 
-##### `lifecycle_rule`<sup>Required</sup> <a name="lifecycle_rule" id="@cdktf/provider-google.storageBucket.StorageBucket.property.lifecycleRule"></a>
+##### `lifecycle_rule`<sup>Required</sup> <a name="lifecycle_rule" id="@cdktn/provider-google.storageBucket.StorageBucket.property.lifecycleRule"></a>
 
 ```python
 lifecycle_rule: StorageBucketLifecycleRuleList
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleList">StorageBucketLifecycleRuleList</a>
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleList">StorageBucketLifecycleRuleList</a>
 
 ---
 
-##### `logging`<sup>Required</sup> <a name="logging" id="@cdktf/provider-google.storageBucket.StorageBucket.property.logging"></a>
+##### `logging`<sup>Required</sup> <a name="logging" id="@cdktn/provider-google.storageBucket.StorageBucket.property.logging"></a>
 
 ```python
 logging: StorageBucketLoggingOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.storageBucket.StorageBucketLoggingOutputReference">StorageBucketLoggingOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketLoggingOutputReference">StorageBucketLoggingOutputReference</a>
 
 ---
 
-##### `project_number`<sup>Required</sup> <a name="project_number" id="@cdktf/provider-google.storageBucket.StorageBucket.property.projectNumber"></a>
+##### `project_number`<sup>Required</sup> <a name="project_number" id="@cdktn/provider-google.storageBucket.StorageBucket.property.projectNumber"></a>
 
 ```python
 project_number: typing.Union[int, float]
@@ -1745,17 +1745,17 @@ project_number: typing.Union[int, float]
 
 ---
 
-##### `retention_policy`<sup>Required</sup> <a name="retention_policy" id="@cdktf/provider-google.storageBucket.StorageBucket.property.retentionPolicy"></a>
+##### `retention_policy`<sup>Required</sup> <a name="retention_policy" id="@cdktn/provider-google.storageBucket.StorageBucket.property.retentionPolicy"></a>
 
 ```python
 retention_policy: StorageBucketRetentionPolicyOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference">StorageBucketRetentionPolicyOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference">StorageBucketRetentionPolicyOutputReference</a>
 
 ---
 
-##### `self_link`<sup>Required</sup> <a name="self_link" id="@cdktf/provider-google.storageBucket.StorageBucket.property.selfLink"></a>
+##### `self_link`<sup>Required</sup> <a name="self_link" id="@cdktn/provider-google.storageBucket.StorageBucket.property.selfLink"></a>
 
 ```python
 self_link: str
@@ -1765,17 +1765,17 @@ self_link: str
 
 ---
 
-##### `soft_delete_policy`<sup>Required</sup> <a name="soft_delete_policy" id="@cdktf/provider-google.storageBucket.StorageBucket.property.softDeletePolicy"></a>
+##### `soft_delete_policy`<sup>Required</sup> <a name="soft_delete_policy" id="@cdktn/provider-google.storageBucket.StorageBucket.property.softDeletePolicy"></a>
 
 ```python
 soft_delete_policy: StorageBucketSoftDeletePolicyOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference">StorageBucketSoftDeletePolicyOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference">StorageBucketSoftDeletePolicyOutputReference</a>
 
 ---
 
-##### `terraform_labels`<sup>Required</sup> <a name="terraform_labels" id="@cdktf/provider-google.storageBucket.StorageBucket.property.terraformLabels"></a>
+##### `terraform_labels`<sup>Required</sup> <a name="terraform_labels" id="@cdktn/provider-google.storageBucket.StorageBucket.property.terraformLabels"></a>
 
 ```python
 terraform_labels: StringMap
@@ -1785,7 +1785,7 @@ terraform_labels: StringMap
 
 ---
 
-##### `time_created`<sup>Required</sup> <a name="time_created" id="@cdktf/provider-google.storageBucket.StorageBucket.property.timeCreated"></a>
+##### `time_created`<sup>Required</sup> <a name="time_created" id="@cdktn/provider-google.storageBucket.StorageBucket.property.timeCreated"></a>
 
 ```python
 time_created: str
@@ -1795,17 +1795,17 @@ time_created: str
 
 ---
 
-##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktf/provider-google.storageBucket.StorageBucket.property.timeouts"></a>
+##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktn/provider-google.storageBucket.StorageBucket.property.timeouts"></a>
 
 ```python
 timeouts: StorageBucketTimeoutsOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.storageBucket.StorageBucketTimeoutsOutputReference">StorageBucketTimeoutsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference">StorageBucketTimeoutsOutputReference</a>
 
 ---
 
-##### `updated`<sup>Required</sup> <a name="updated" id="@cdktf/provider-google.storageBucket.StorageBucket.property.updated"></a>
+##### `updated`<sup>Required</sup> <a name="updated" id="@cdktn/provider-google.storageBucket.StorageBucket.property.updated"></a>
 
 ```python
 updated: str
@@ -1815,7 +1815,7 @@ updated: str
 
 ---
 
-##### `url`<sup>Required</sup> <a name="url" id="@cdktf/provider-google.storageBucket.StorageBucket.property.url"></a>
+##### `url`<sup>Required</sup> <a name="url" id="@cdktn/provider-google.storageBucket.StorageBucket.property.url"></a>
 
 ```python
 url: str
@@ -1825,57 +1825,57 @@ url: str
 
 ---
 
-##### `versioning`<sup>Required</sup> <a name="versioning" id="@cdktf/provider-google.storageBucket.StorageBucket.property.versioning"></a>
+##### `versioning`<sup>Required</sup> <a name="versioning" id="@cdktn/provider-google.storageBucket.StorageBucket.property.versioning"></a>
 
 ```python
 versioning: StorageBucketVersioningOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.storageBucket.StorageBucketVersioningOutputReference">StorageBucketVersioningOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketVersioningOutputReference">StorageBucketVersioningOutputReference</a>
 
 ---
 
-##### `website`<sup>Required</sup> <a name="website" id="@cdktf/provider-google.storageBucket.StorageBucket.property.website"></a>
+##### `website`<sup>Required</sup> <a name="website" id="@cdktn/provider-google.storageBucket.StorageBucket.property.website"></a>
 
 ```python
 website: StorageBucketWebsiteOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.storageBucket.StorageBucketWebsiteOutputReference">StorageBucketWebsiteOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketWebsiteOutputReference">StorageBucketWebsiteOutputReference</a>
 
 ---
 
-##### `autoclass_input`<sup>Optional</sup> <a name="autoclass_input" id="@cdktf/provider-google.storageBucket.StorageBucket.property.autoclassInput"></a>
+##### `autoclass_input`<sup>Optional</sup> <a name="autoclass_input" id="@cdktn/provider-google.storageBucket.StorageBucket.property.autoclassInput"></a>
 
 ```python
 autoclass_input: StorageBucketAutoclass
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.storageBucket.StorageBucketAutoclass">StorageBucketAutoclass</a>
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketAutoclass">StorageBucketAutoclass</a>
 
 ---
 
-##### `cors_input`<sup>Optional</sup> <a name="cors_input" id="@cdktf/provider-google.storageBucket.StorageBucket.property.corsInput"></a>
+##### `cors_input`<sup>Optional</sup> <a name="cors_input" id="@cdktn/provider-google.storageBucket.StorageBucket.property.corsInput"></a>
 
 ```python
 cors_input: IResolvable | typing.List[StorageBucketCors]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-google.storageBucket.StorageBucketCors">StorageBucketCors</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.storageBucket.StorageBucketCors">StorageBucketCors</a>]
 
 ---
 
-##### `custom_placement_config_input`<sup>Optional</sup> <a name="custom_placement_config_input" id="@cdktf/provider-google.storageBucket.StorageBucket.property.customPlacementConfigInput"></a>
+##### `custom_placement_config_input`<sup>Optional</sup> <a name="custom_placement_config_input" id="@cdktn/provider-google.storageBucket.StorageBucket.property.customPlacementConfigInput"></a>
 
 ```python
 custom_placement_config_input: StorageBucketCustomPlacementConfig
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.storageBucket.StorageBucketCustomPlacementConfig">StorageBucketCustomPlacementConfig</a>
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketCustomPlacementConfig">StorageBucketCustomPlacementConfig</a>
 
 ---
 
-##### `default_event_based_hold_input`<sup>Optional</sup> <a name="default_event_based_hold_input" id="@cdktf/provider-google.storageBucket.StorageBucket.property.defaultEventBasedHoldInput"></a>
+##### `default_event_based_hold_input`<sup>Optional</sup> <a name="default_event_based_hold_input" id="@cdktn/provider-google.storageBucket.StorageBucket.property.defaultEventBasedHoldInput"></a>
 
 ```python
 default_event_based_hold_input: bool | IResolvable
@@ -1885,7 +1885,7 @@ default_event_based_hold_input: bool | IResolvable
 
 ---
 
-##### `enable_object_retention_input`<sup>Optional</sup> <a name="enable_object_retention_input" id="@cdktf/provider-google.storageBucket.StorageBucket.property.enableObjectRetentionInput"></a>
+##### `enable_object_retention_input`<sup>Optional</sup> <a name="enable_object_retention_input" id="@cdktn/provider-google.storageBucket.StorageBucket.property.enableObjectRetentionInput"></a>
 
 ```python
 enable_object_retention_input: bool | IResolvable
@@ -1895,17 +1895,17 @@ enable_object_retention_input: bool | IResolvable
 
 ---
 
-##### `encryption_input`<sup>Optional</sup> <a name="encryption_input" id="@cdktf/provider-google.storageBucket.StorageBucket.property.encryptionInput"></a>
+##### `encryption_input`<sup>Optional</sup> <a name="encryption_input" id="@cdktn/provider-google.storageBucket.StorageBucket.property.encryptionInput"></a>
 
 ```python
 encryption_input: StorageBucketEncryption
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.storageBucket.StorageBucketEncryption">StorageBucketEncryption</a>
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryption">StorageBucketEncryption</a>
 
 ---
 
-##### `force_destroy_input`<sup>Optional</sup> <a name="force_destroy_input" id="@cdktf/provider-google.storageBucket.StorageBucket.property.forceDestroyInput"></a>
+##### `force_destroy_input`<sup>Optional</sup> <a name="force_destroy_input" id="@cdktn/provider-google.storageBucket.StorageBucket.property.forceDestroyInput"></a>
 
 ```python
 force_destroy_input: bool | IResolvable
@@ -1915,17 +1915,17 @@ force_destroy_input: bool | IResolvable
 
 ---
 
-##### `hierarchical_namespace_input`<sup>Optional</sup> <a name="hierarchical_namespace_input" id="@cdktf/provider-google.storageBucket.StorageBucket.property.hierarchicalNamespaceInput"></a>
+##### `hierarchical_namespace_input`<sup>Optional</sup> <a name="hierarchical_namespace_input" id="@cdktn/provider-google.storageBucket.StorageBucket.property.hierarchicalNamespaceInput"></a>
 
 ```python
 hierarchical_namespace_input: StorageBucketHierarchicalNamespace
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.storageBucket.StorageBucketHierarchicalNamespace">StorageBucketHierarchicalNamespace</a>
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespace">StorageBucketHierarchicalNamespace</a>
 
 ---
 
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-google.storageBucket.StorageBucket.property.idInput"></a>
+##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-google.storageBucket.StorageBucket.property.idInput"></a>
 
 ```python
 id_input: str
@@ -1935,17 +1935,17 @@ id_input: str
 
 ---
 
-##### `ip_filter_input`<sup>Optional</sup> <a name="ip_filter_input" id="@cdktf/provider-google.storageBucket.StorageBucket.property.ipFilterInput"></a>
+##### `ip_filter_input`<sup>Optional</sup> <a name="ip_filter_input" id="@cdktn/provider-google.storageBucket.StorageBucket.property.ipFilterInput"></a>
 
 ```python
 ip_filter_input: StorageBucketIpFilter
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilter">StorageBucketIpFilter</a>
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilter">StorageBucketIpFilter</a>
 
 ---
 
-##### `labels_input`<sup>Optional</sup> <a name="labels_input" id="@cdktf/provider-google.storageBucket.StorageBucket.property.labelsInput"></a>
+##### `labels_input`<sup>Optional</sup> <a name="labels_input" id="@cdktn/provider-google.storageBucket.StorageBucket.property.labelsInput"></a>
 
 ```python
 labels_input: typing.Mapping[str]
@@ -1955,17 +1955,17 @@ labels_input: typing.Mapping[str]
 
 ---
 
-##### `lifecycle_rule_input`<sup>Optional</sup> <a name="lifecycle_rule_input" id="@cdktf/provider-google.storageBucket.StorageBucket.property.lifecycleRuleInput"></a>
+##### `lifecycle_rule_input`<sup>Optional</sup> <a name="lifecycle_rule_input" id="@cdktn/provider-google.storageBucket.StorageBucket.property.lifecycleRuleInput"></a>
 
 ```python
 lifecycle_rule_input: IResolvable | typing.List[StorageBucketLifecycleRule]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRule">StorageBucketLifecycleRule</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRule">StorageBucketLifecycleRule</a>]
 
 ---
 
-##### `location_input`<sup>Optional</sup> <a name="location_input" id="@cdktf/provider-google.storageBucket.StorageBucket.property.locationInput"></a>
+##### `location_input`<sup>Optional</sup> <a name="location_input" id="@cdktn/provider-google.storageBucket.StorageBucket.property.locationInput"></a>
 
 ```python
 location_input: str
@@ -1975,17 +1975,17 @@ location_input: str
 
 ---
 
-##### `logging_input`<sup>Optional</sup> <a name="logging_input" id="@cdktf/provider-google.storageBucket.StorageBucket.property.loggingInput"></a>
+##### `logging_input`<sup>Optional</sup> <a name="logging_input" id="@cdktn/provider-google.storageBucket.StorageBucket.property.loggingInput"></a>
 
 ```python
 logging_input: StorageBucketLogging
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.storageBucket.StorageBucketLogging">StorageBucketLogging</a>
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketLogging">StorageBucketLogging</a>
 
 ---
 
-##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktf/provider-google.storageBucket.StorageBucket.property.nameInput"></a>
+##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktn/provider-google.storageBucket.StorageBucket.property.nameInput"></a>
 
 ```python
 name_input: str
@@ -1995,7 +1995,7 @@ name_input: str
 
 ---
 
-##### `project_input`<sup>Optional</sup> <a name="project_input" id="@cdktf/provider-google.storageBucket.StorageBucket.property.projectInput"></a>
+##### `project_input`<sup>Optional</sup> <a name="project_input" id="@cdktn/provider-google.storageBucket.StorageBucket.property.projectInput"></a>
 
 ```python
 project_input: str
@@ -2005,7 +2005,7 @@ project_input: str
 
 ---
 
-##### `public_access_prevention_input`<sup>Optional</sup> <a name="public_access_prevention_input" id="@cdktf/provider-google.storageBucket.StorageBucket.property.publicAccessPreventionInput"></a>
+##### `public_access_prevention_input`<sup>Optional</sup> <a name="public_access_prevention_input" id="@cdktn/provider-google.storageBucket.StorageBucket.property.publicAccessPreventionInput"></a>
 
 ```python
 public_access_prevention_input: str
@@ -2015,7 +2015,7 @@ public_access_prevention_input: str
 
 ---
 
-##### `requester_pays_input`<sup>Optional</sup> <a name="requester_pays_input" id="@cdktf/provider-google.storageBucket.StorageBucket.property.requesterPaysInput"></a>
+##### `requester_pays_input`<sup>Optional</sup> <a name="requester_pays_input" id="@cdktn/provider-google.storageBucket.StorageBucket.property.requesterPaysInput"></a>
 
 ```python
 requester_pays_input: bool | IResolvable
@@ -2025,17 +2025,17 @@ requester_pays_input: bool | IResolvable
 
 ---
 
-##### `retention_policy_input`<sup>Optional</sup> <a name="retention_policy_input" id="@cdktf/provider-google.storageBucket.StorageBucket.property.retentionPolicyInput"></a>
+##### `retention_policy_input`<sup>Optional</sup> <a name="retention_policy_input" id="@cdktn/provider-google.storageBucket.StorageBucket.property.retentionPolicyInput"></a>
 
 ```python
 retention_policy_input: StorageBucketRetentionPolicy
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.storageBucket.StorageBucketRetentionPolicy">StorageBucketRetentionPolicy</a>
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicy">StorageBucketRetentionPolicy</a>
 
 ---
 
-##### `rpo_input`<sup>Optional</sup> <a name="rpo_input" id="@cdktf/provider-google.storageBucket.StorageBucket.property.rpoInput"></a>
+##### `rpo_input`<sup>Optional</sup> <a name="rpo_input" id="@cdktn/provider-google.storageBucket.StorageBucket.property.rpoInput"></a>
 
 ```python
 rpo_input: str
@@ -2045,17 +2045,17 @@ rpo_input: str
 
 ---
 
-##### `soft_delete_policy_input`<sup>Optional</sup> <a name="soft_delete_policy_input" id="@cdktf/provider-google.storageBucket.StorageBucket.property.softDeletePolicyInput"></a>
+##### `soft_delete_policy_input`<sup>Optional</sup> <a name="soft_delete_policy_input" id="@cdktn/provider-google.storageBucket.StorageBucket.property.softDeletePolicyInput"></a>
 
 ```python
 soft_delete_policy_input: StorageBucketSoftDeletePolicy
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.storageBucket.StorageBucketSoftDeletePolicy">StorageBucketSoftDeletePolicy</a>
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicy">StorageBucketSoftDeletePolicy</a>
 
 ---
 
-##### `storage_class_input`<sup>Optional</sup> <a name="storage_class_input" id="@cdktf/provider-google.storageBucket.StorageBucket.property.storageClassInput"></a>
+##### `storage_class_input`<sup>Optional</sup> <a name="storage_class_input" id="@cdktn/provider-google.storageBucket.StorageBucket.property.storageClassInput"></a>
 
 ```python
 storage_class_input: str
@@ -2065,17 +2065,17 @@ storage_class_input: str
 
 ---
 
-##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-google.storageBucket.StorageBucket.property.timeoutsInput"></a>
+##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktn/provider-google.storageBucket.StorageBucket.property.timeoutsInput"></a>
 
 ```python
 timeouts_input: IResolvable | StorageBucketTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-google.storageBucket.StorageBucketTimeouts">StorageBucketTimeouts</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.storageBucket.StorageBucketTimeouts">StorageBucketTimeouts</a>
 
 ---
 
-##### `uniform_bucket_level_access_input`<sup>Optional</sup> <a name="uniform_bucket_level_access_input" id="@cdktf/provider-google.storageBucket.StorageBucket.property.uniformBucketLevelAccessInput"></a>
+##### `uniform_bucket_level_access_input`<sup>Optional</sup> <a name="uniform_bucket_level_access_input" id="@cdktn/provider-google.storageBucket.StorageBucket.property.uniformBucketLevelAccessInput"></a>
 
 ```python
 uniform_bucket_level_access_input: bool | IResolvable
@@ -2085,27 +2085,27 @@ uniform_bucket_level_access_input: bool | IResolvable
 
 ---
 
-##### `versioning_input`<sup>Optional</sup> <a name="versioning_input" id="@cdktf/provider-google.storageBucket.StorageBucket.property.versioningInput"></a>
+##### `versioning_input`<sup>Optional</sup> <a name="versioning_input" id="@cdktn/provider-google.storageBucket.StorageBucket.property.versioningInput"></a>
 
 ```python
 versioning_input: StorageBucketVersioning
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.storageBucket.StorageBucketVersioning">StorageBucketVersioning</a>
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketVersioning">StorageBucketVersioning</a>
 
 ---
 
-##### `website_input`<sup>Optional</sup> <a name="website_input" id="@cdktf/provider-google.storageBucket.StorageBucket.property.websiteInput"></a>
+##### `website_input`<sup>Optional</sup> <a name="website_input" id="@cdktn/provider-google.storageBucket.StorageBucket.property.websiteInput"></a>
 
 ```python
 website_input: StorageBucketWebsite
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.storageBucket.StorageBucketWebsite">StorageBucketWebsite</a>
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketWebsite">StorageBucketWebsite</a>
 
 ---
 
-##### `default_event_based_hold`<sup>Required</sup> <a name="default_event_based_hold" id="@cdktf/provider-google.storageBucket.StorageBucket.property.defaultEventBasedHold"></a>
+##### `default_event_based_hold`<sup>Required</sup> <a name="default_event_based_hold" id="@cdktn/provider-google.storageBucket.StorageBucket.property.defaultEventBasedHold"></a>
 
 ```python
 default_event_based_hold: bool | IResolvable
@@ -2115,7 +2115,7 @@ default_event_based_hold: bool | IResolvable
 
 ---
 
-##### `enable_object_retention`<sup>Required</sup> <a name="enable_object_retention" id="@cdktf/provider-google.storageBucket.StorageBucket.property.enableObjectRetention"></a>
+##### `enable_object_retention`<sup>Required</sup> <a name="enable_object_retention" id="@cdktn/provider-google.storageBucket.StorageBucket.property.enableObjectRetention"></a>
 
 ```python
 enable_object_retention: bool | IResolvable
@@ -2125,7 +2125,7 @@ enable_object_retention: bool | IResolvable
 
 ---
 
-##### `force_destroy`<sup>Required</sup> <a name="force_destroy" id="@cdktf/provider-google.storageBucket.StorageBucket.property.forceDestroy"></a>
+##### `force_destroy`<sup>Required</sup> <a name="force_destroy" id="@cdktn/provider-google.storageBucket.StorageBucket.property.forceDestroy"></a>
 
 ```python
 force_destroy: bool | IResolvable
@@ -2135,7 +2135,7 @@ force_destroy: bool | IResolvable
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.storageBucket.StorageBucket.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.storageBucket.StorageBucket.property.id"></a>
 
 ```python
 id: str
@@ -2145,7 +2145,7 @@ id: str
 
 ---
 
-##### `labels`<sup>Required</sup> <a name="labels" id="@cdktf/provider-google.storageBucket.StorageBucket.property.labels"></a>
+##### `labels`<sup>Required</sup> <a name="labels" id="@cdktn/provider-google.storageBucket.StorageBucket.property.labels"></a>
 
 ```python
 labels: typing.Mapping[str]
@@ -2155,7 +2155,7 @@ labels: typing.Mapping[str]
 
 ---
 
-##### `location`<sup>Required</sup> <a name="location" id="@cdktf/provider-google.storageBucket.StorageBucket.property.location"></a>
+##### `location`<sup>Required</sup> <a name="location" id="@cdktn/provider-google.storageBucket.StorageBucket.property.location"></a>
 
 ```python
 location: str
@@ -2165,7 +2165,7 @@ location: str
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-google.storageBucket.StorageBucket.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-google.storageBucket.StorageBucket.property.name"></a>
 
 ```python
 name: str
@@ -2175,7 +2175,7 @@ name: str
 
 ---
 
-##### `project`<sup>Required</sup> <a name="project" id="@cdktf/provider-google.storageBucket.StorageBucket.property.project"></a>
+##### `project`<sup>Required</sup> <a name="project" id="@cdktn/provider-google.storageBucket.StorageBucket.property.project"></a>
 
 ```python
 project: str
@@ -2185,7 +2185,7 @@ project: str
 
 ---
 
-##### `public_access_prevention`<sup>Required</sup> <a name="public_access_prevention" id="@cdktf/provider-google.storageBucket.StorageBucket.property.publicAccessPrevention"></a>
+##### `public_access_prevention`<sup>Required</sup> <a name="public_access_prevention" id="@cdktn/provider-google.storageBucket.StorageBucket.property.publicAccessPrevention"></a>
 
 ```python
 public_access_prevention: str
@@ -2195,7 +2195,7 @@ public_access_prevention: str
 
 ---
 
-##### `requester_pays`<sup>Required</sup> <a name="requester_pays" id="@cdktf/provider-google.storageBucket.StorageBucket.property.requesterPays"></a>
+##### `requester_pays`<sup>Required</sup> <a name="requester_pays" id="@cdktn/provider-google.storageBucket.StorageBucket.property.requesterPays"></a>
 
 ```python
 requester_pays: bool | IResolvable
@@ -2205,7 +2205,7 @@ requester_pays: bool | IResolvable
 
 ---
 
-##### `rpo`<sup>Required</sup> <a name="rpo" id="@cdktf/provider-google.storageBucket.StorageBucket.property.rpo"></a>
+##### `rpo`<sup>Required</sup> <a name="rpo" id="@cdktn/provider-google.storageBucket.StorageBucket.property.rpo"></a>
 
 ```python
 rpo: str
@@ -2215,7 +2215,7 @@ rpo: str
 
 ---
 
-##### `storage_class`<sup>Required</sup> <a name="storage_class" id="@cdktf/provider-google.storageBucket.StorageBucket.property.storageClass"></a>
+##### `storage_class`<sup>Required</sup> <a name="storage_class" id="@cdktn/provider-google.storageBucket.StorageBucket.property.storageClass"></a>
 
 ```python
 storage_class: str
@@ -2225,7 +2225,7 @@ storage_class: str
 
 ---
 
-##### `uniform_bucket_level_access`<sup>Required</sup> <a name="uniform_bucket_level_access" id="@cdktf/provider-google.storageBucket.StorageBucket.property.uniformBucketLevelAccess"></a>
+##### `uniform_bucket_level_access`<sup>Required</sup> <a name="uniform_bucket_level_access" id="@cdktn/provider-google.storageBucket.StorageBucket.property.uniformBucketLevelAccess"></a>
 
 ```python
 uniform_bucket_level_access: bool | IResolvable
@@ -2239,11 +2239,11 @@ uniform_bucket_level_access: bool | IResolvable
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucket.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-google.storageBucket.StorageBucket.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-google.storageBucket.StorageBucket.property.tfResourceType"></a>
 
 ```python
 tfResourceType: str
@@ -2255,12 +2255,12 @@ tfResourceType: str
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### StorageBucketAutoclass <a name="StorageBucketAutoclass" id="@cdktf/provider-google.storageBucket.StorageBucketAutoclass"></a>
+### StorageBucketAutoclass <a name="StorageBucketAutoclass" id="@cdktn/provider-google.storageBucket.StorageBucketAutoclass"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-google.storageBucket.StorageBucketAutoclass.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.storageBucket.StorageBucketAutoclass.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import storage_bucket
+from cdktn_provider_google import storage_bucket
 
 storageBucket.StorageBucketAutoclass(
   enabled: bool | IResolvable,
@@ -2272,12 +2272,12 @@ storageBucket.StorageBucketAutoclass(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketAutoclass.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | While set to true, autoclass automatically transitions objects in your bucket to appropriate storage classes based on each object's access pattern. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketAutoclass.property.terminalStorageClass">terminal_storage_class</a></code> | <code>str</code> | The storage class that objects in the bucket eventually transition to if they are not read for a certain length of time. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketAutoclass.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | While set to true, autoclass automatically transitions objects in your bucket to appropriate storage classes based on each object's access pattern. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketAutoclass.property.terminalStorageClass">terminal_storage_class</a></code> | <code>str</code> | The storage class that objects in the bucket eventually transition to if they are not read for a certain length of time. |
 
 ---
 
-##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-google.storageBucket.StorageBucketAutoclass.property.enabled"></a>
+##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktn/provider-google.storageBucket.StorageBucketAutoclass.property.enabled"></a>
 
 ```python
 enabled: bool | IResolvable
@@ -2291,7 +2291,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `terminal_storage_class`<sup>Optional</sup> <a name="terminal_storage_class" id="@cdktf/provider-google.storageBucket.StorageBucketAutoclass.property.terminalStorageClass"></a>
+##### `terminal_storage_class`<sup>Optional</sup> <a name="terminal_storage_class" id="@cdktn/provider-google.storageBucket.StorageBucketAutoclass.property.terminalStorageClass"></a>
 
 ```python
 terminal_storage_class: str
@@ -2307,12 +2307,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### StorageBucketConfig <a name="StorageBucketConfig" id="@cdktf/provider-google.storageBucket.StorageBucketConfig"></a>
+### StorageBucketConfig <a name="StorageBucketConfig" id="@cdktn/provider-google.storageBucket.StorageBucketConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-google.storageBucket.StorageBucketConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.storageBucket.StorageBucketConfig.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import storage_bucket
+from cdktn_provider_google import storage_bucket
 
 storageBucket.StorageBucketConfig(
   connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
@@ -2355,43 +2355,43 @@ storageBucket.StorageBucketConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketConfig.property.location">location</a></code> | <code>str</code> | The Google Cloud Storage location or region. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketConfig.property.name">name</a></code> | <code>str</code> | The name of the bucket. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketConfig.property.autoclass">autoclass</a></code> | <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketAutoclass">StorageBucketAutoclass</a></code> | autoclass block. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketConfig.property.cors">cors</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-google.storageBucket.StorageBucketCors">StorageBucketCors</a>]</code> | cors block. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketConfig.property.customPlacementConfig">custom_placement_config</a></code> | <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketCustomPlacementConfig">StorageBucketCustomPlacementConfig</a></code> | custom_placement_config block. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketConfig.property.defaultEventBasedHold">default_event_based_hold</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether or not to automatically apply an eventBasedHold to new objects added to the bucket. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketConfig.property.enableObjectRetention">enable_object_retention</a></code> | <code>bool \| cdktf.IResolvable</code> | Enables each object in the bucket to have its own retention policy, which prevents deletion until stored for a specific length of time. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketConfig.property.encryption">encryption</a></code> | <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketEncryption">StorageBucketEncryption</a></code> | encryption block. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketConfig.property.forceDestroy">force_destroy</a></code> | <code>bool \| cdktf.IResolvable</code> | When deleting a bucket, this boolean option will delete all contained objects, or anywhereCaches (if any). |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketConfig.property.hierarchicalNamespace">hierarchical_namespace</a></code> | <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketHierarchicalNamespace">StorageBucketHierarchicalNamespace</a></code> | hierarchical_namespace block. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#id StorageBucket#id}. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketConfig.property.ipFilter">ip_filter</a></code> | <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilter">StorageBucketIpFilter</a></code> | ip_filter block. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketConfig.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | A set of key/value label pairs to assign to the bucket. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketConfig.property.lifecycleRule">lifecycle_rule</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRule">StorageBucketLifecycleRule</a>]</code> | lifecycle_rule block. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketConfig.property.logging">logging</a></code> | <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLogging">StorageBucketLogging</a></code> | logging block. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketConfig.property.project">project</a></code> | <code>str</code> | The ID of the project in which the resource belongs. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketConfig.property.publicAccessPrevention">public_access_prevention</a></code> | <code>str</code> | Prevents public access to a bucket. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketConfig.property.requesterPays">requester_pays</a></code> | <code>bool \| cdktf.IResolvable</code> | Enables Requester Pays on a storage bucket. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketConfig.property.retentionPolicy">retention_policy</a></code> | <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketRetentionPolicy">StorageBucketRetentionPolicy</a></code> | retention_policy block. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketConfig.property.rpo">rpo</a></code> | <code>str</code> | Specifies the RPO setting of bucket. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketConfig.property.softDeletePolicy">soft_delete_policy</a></code> | <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketSoftDeletePolicy">StorageBucketSoftDeletePolicy</a></code> | soft_delete_policy block. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketConfig.property.storageClass">storage_class</a></code> | <code>str</code> | The Storage Class of the new bucket. Supported values include: STANDARD, MULTI_REGIONAL, REGIONAL, NEARLINE, COLDLINE, ARCHIVE. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketTimeouts">StorageBucketTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketConfig.property.uniformBucketLevelAccess">uniform_bucket_level_access</a></code> | <code>bool \| cdktf.IResolvable</code> | Enables uniform bucket-level access on a bucket. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketConfig.property.versioning">versioning</a></code> | <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketVersioning">StorageBucketVersioning</a></code> | versioning block. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketConfig.property.website">website</a></code> | <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketWebsite">StorageBucketWebsite</a></code> | website block. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.location">location</a></code> | <code>str</code> | The Google Cloud Storage location or region. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.name">name</a></code> | <code>str</code> | The name of the bucket. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.autoclass">autoclass</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketAutoclass">StorageBucketAutoclass</a></code> | autoclass block. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.cors">cors</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.storageBucket.StorageBucketCors">StorageBucketCors</a>]</code> | cors block. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.customPlacementConfig">custom_placement_config</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCustomPlacementConfig">StorageBucketCustomPlacementConfig</a></code> | custom_placement_config block. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.defaultEventBasedHold">default_event_based_hold</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether or not to automatically apply an eventBasedHold to new objects added to the bucket. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.enableObjectRetention">enable_object_retention</a></code> | <code>bool \| cdktf.IResolvable</code> | Enables each object in the bucket to have its own retention policy, which prevents deletion until stored for a specific length of time. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.encryption">encryption</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryption">StorageBucketEncryption</a></code> | encryption block. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.forceDestroy">force_destroy</a></code> | <code>bool \| cdktf.IResolvable</code> | When deleting a bucket, this boolean option will delete all contained objects, or anywhereCaches (if any). |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.hierarchicalNamespace">hierarchical_namespace</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespace">StorageBucketHierarchicalNamespace</a></code> | hierarchical_namespace block. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#id StorageBucket#id}. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.ipFilter">ip_filter</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilter">StorageBucketIpFilter</a></code> | ip_filter block. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | A set of key/value label pairs to assign to the bucket. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.lifecycleRule">lifecycle_rule</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRule">StorageBucketLifecycleRule</a>]</code> | lifecycle_rule block. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.logging">logging</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLogging">StorageBucketLogging</a></code> | logging block. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.project">project</a></code> | <code>str</code> | The ID of the project in which the resource belongs. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.publicAccessPrevention">public_access_prevention</a></code> | <code>str</code> | Prevents public access to a bucket. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.requesterPays">requester_pays</a></code> | <code>bool \| cdktf.IResolvable</code> | Enables Requester Pays on a storage bucket. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.retentionPolicy">retention_policy</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicy">StorageBucketRetentionPolicy</a></code> | retention_policy block. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.rpo">rpo</a></code> | <code>str</code> | Specifies the RPO setting of bucket. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.softDeletePolicy">soft_delete_policy</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicy">StorageBucketSoftDeletePolicy</a></code> | soft_delete_policy block. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.storageClass">storage_class</a></code> | <code>str</code> | The Storage Class of the new bucket. Supported values include: STANDARD, MULTI_REGIONAL, REGIONAL, NEARLINE, COLDLINE, ARCHIVE. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketTimeouts">StorageBucketTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.uniformBucketLevelAccess">uniform_bucket_level_access</a></code> | <code>bool \| cdktf.IResolvable</code> | Enables uniform bucket-level access on a bucket. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.versioning">versioning</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketVersioning">StorageBucketVersioning</a></code> | versioning block. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.website">website</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketWebsite">StorageBucketWebsite</a></code> | website block. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-google.storageBucket.StorageBucketConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.storageBucket.StorageBucketConfig.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
@@ -2401,7 +2401,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-google.storageBucket.StorageBucketConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.storageBucket.StorageBucketConfig.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -2411,7 +2411,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-google.storageBucket.StorageBucketConfig.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.storageBucket.StorageBucketConfig.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[ITerraformDependable]
@@ -2421,7 +2421,7 @@ depends_on: typing.List[ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-google.storageBucket.StorageBucketConfig.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.storageBucket.StorageBucketConfig.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -2431,7 +2431,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-google.storageBucket.StorageBucketConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.storageBucket.StorageBucketConfig.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -2441,7 +2441,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.storageBucket.StorageBucketConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.storageBucket.StorageBucketConfig.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -2451,7 +2451,7 @@ provider: TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-google.storageBucket.StorageBucketConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.storageBucket.StorageBucketConfig.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
@@ -2461,7 +2461,7 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `location`<sup>Required</sup> <a name="location" id="@cdktf/provider-google.storageBucket.StorageBucketConfig.property.location"></a>
+##### `location`<sup>Required</sup> <a name="location" id="@cdktn/provider-google.storageBucket.StorageBucketConfig.property.location"></a>
 
 ```python
 location: str
@@ -2475,7 +2475,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-google.storageBucket.StorageBucketConfig.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-google.storageBucket.StorageBucketConfig.property.name"></a>
 
 ```python
 name: str
@@ -2489,13 +2489,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `autoclass`<sup>Optional</sup> <a name="autoclass" id="@cdktf/provider-google.storageBucket.StorageBucketConfig.property.autoclass"></a>
+##### `autoclass`<sup>Optional</sup> <a name="autoclass" id="@cdktn/provider-google.storageBucket.StorageBucketConfig.property.autoclass"></a>
 
 ```python
 autoclass: StorageBucketAutoclass
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.storageBucket.StorageBucketAutoclass">StorageBucketAutoclass</a>
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketAutoclass">StorageBucketAutoclass</a>
 
 autoclass block.
 
@@ -2503,13 +2503,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `cors`<sup>Optional</sup> <a name="cors" id="@cdktf/provider-google.storageBucket.StorageBucketConfig.property.cors"></a>
+##### `cors`<sup>Optional</sup> <a name="cors" id="@cdktn/provider-google.storageBucket.StorageBucketConfig.property.cors"></a>
 
 ```python
 cors: IResolvable | typing.List[StorageBucketCors]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-google.storageBucket.StorageBucketCors">StorageBucketCors</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.storageBucket.StorageBucketCors">StorageBucketCors</a>]
 
 cors block.
 
@@ -2517,13 +2517,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `custom_placement_config`<sup>Optional</sup> <a name="custom_placement_config" id="@cdktf/provider-google.storageBucket.StorageBucketConfig.property.customPlacementConfig"></a>
+##### `custom_placement_config`<sup>Optional</sup> <a name="custom_placement_config" id="@cdktn/provider-google.storageBucket.StorageBucketConfig.property.customPlacementConfig"></a>
 
 ```python
 custom_placement_config: StorageBucketCustomPlacementConfig
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.storageBucket.StorageBucketCustomPlacementConfig">StorageBucketCustomPlacementConfig</a>
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketCustomPlacementConfig">StorageBucketCustomPlacementConfig</a>
 
 custom_placement_config block.
 
@@ -2531,7 +2531,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `default_event_based_hold`<sup>Optional</sup> <a name="default_event_based_hold" id="@cdktf/provider-google.storageBucket.StorageBucketConfig.property.defaultEventBasedHold"></a>
+##### `default_event_based_hold`<sup>Optional</sup> <a name="default_event_based_hold" id="@cdktn/provider-google.storageBucket.StorageBucketConfig.property.defaultEventBasedHold"></a>
 
 ```python
 default_event_based_hold: bool | IResolvable
@@ -2545,7 +2545,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `enable_object_retention`<sup>Optional</sup> <a name="enable_object_retention" id="@cdktf/provider-google.storageBucket.StorageBucketConfig.property.enableObjectRetention"></a>
+##### `enable_object_retention`<sup>Optional</sup> <a name="enable_object_retention" id="@cdktn/provider-google.storageBucket.StorageBucketConfig.property.enableObjectRetention"></a>
 
 ```python
 enable_object_retention: bool | IResolvable
@@ -2559,13 +2559,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `encryption`<sup>Optional</sup> <a name="encryption" id="@cdktf/provider-google.storageBucket.StorageBucketConfig.property.encryption"></a>
+##### `encryption`<sup>Optional</sup> <a name="encryption" id="@cdktn/provider-google.storageBucket.StorageBucketConfig.property.encryption"></a>
 
 ```python
 encryption: StorageBucketEncryption
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.storageBucket.StorageBucketEncryption">StorageBucketEncryption</a>
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryption">StorageBucketEncryption</a>
 
 encryption block.
 
@@ -2573,7 +2573,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `force_destroy`<sup>Optional</sup> <a name="force_destroy" id="@cdktf/provider-google.storageBucket.StorageBucketConfig.property.forceDestroy"></a>
+##### `force_destroy`<sup>Optional</sup> <a name="force_destroy" id="@cdktn/provider-google.storageBucket.StorageBucketConfig.property.forceDestroy"></a>
 
 ```python
 force_destroy: bool | IResolvable
@@ -2589,13 +2589,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `hierarchical_namespace`<sup>Optional</sup> <a name="hierarchical_namespace" id="@cdktf/provider-google.storageBucket.StorageBucketConfig.property.hierarchicalNamespace"></a>
+##### `hierarchical_namespace`<sup>Optional</sup> <a name="hierarchical_namespace" id="@cdktn/provider-google.storageBucket.StorageBucketConfig.property.hierarchicalNamespace"></a>
 
 ```python
 hierarchical_namespace: StorageBucketHierarchicalNamespace
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.storageBucket.StorageBucketHierarchicalNamespace">StorageBucketHierarchicalNamespace</a>
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespace">StorageBucketHierarchicalNamespace</a>
 
 hierarchical_namespace block.
 
@@ -2603,7 +2603,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-google.storageBucket.StorageBucketConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-google.storageBucket.StorageBucketConfig.property.id"></a>
 
 ```python
 id: str
@@ -2618,13 +2618,13 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
-##### `ip_filter`<sup>Optional</sup> <a name="ip_filter" id="@cdktf/provider-google.storageBucket.StorageBucketConfig.property.ipFilter"></a>
+##### `ip_filter`<sup>Optional</sup> <a name="ip_filter" id="@cdktn/provider-google.storageBucket.StorageBucketConfig.property.ipFilter"></a>
 
 ```python
 ip_filter: StorageBucketIpFilter
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilter">StorageBucketIpFilter</a>
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilter">StorageBucketIpFilter</a>
 
 ip_filter block.
 
@@ -2632,7 +2632,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `labels`<sup>Optional</sup> <a name="labels" id="@cdktf/provider-google.storageBucket.StorageBucketConfig.property.labels"></a>
+##### `labels`<sup>Optional</sup> <a name="labels" id="@cdktn/provider-google.storageBucket.StorageBucketConfig.property.labels"></a>
 
 ```python
 labels: typing.Mapping[str]
@@ -2646,13 +2646,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `lifecycle_rule`<sup>Optional</sup> <a name="lifecycle_rule" id="@cdktf/provider-google.storageBucket.StorageBucketConfig.property.lifecycleRule"></a>
+##### `lifecycle_rule`<sup>Optional</sup> <a name="lifecycle_rule" id="@cdktn/provider-google.storageBucket.StorageBucketConfig.property.lifecycleRule"></a>
 
 ```python
 lifecycle_rule: IResolvable | typing.List[StorageBucketLifecycleRule]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRule">StorageBucketLifecycleRule</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRule">StorageBucketLifecycleRule</a>]
 
 lifecycle_rule block.
 
@@ -2660,13 +2660,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `logging`<sup>Optional</sup> <a name="logging" id="@cdktf/provider-google.storageBucket.StorageBucketConfig.property.logging"></a>
+##### `logging`<sup>Optional</sup> <a name="logging" id="@cdktn/provider-google.storageBucket.StorageBucketConfig.property.logging"></a>
 
 ```python
 logging: StorageBucketLogging
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.storageBucket.StorageBucketLogging">StorageBucketLogging</a>
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketLogging">StorageBucketLogging</a>
 
 logging block.
 
@@ -2674,7 +2674,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `project`<sup>Optional</sup> <a name="project" id="@cdktf/provider-google.storageBucket.StorageBucketConfig.property.project"></a>
+##### `project`<sup>Optional</sup> <a name="project" id="@cdktn/provider-google.storageBucket.StorageBucketConfig.property.project"></a>
 
 ```python
 project: str
@@ -2690,7 +2690,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `public_access_prevention`<sup>Optional</sup> <a name="public_access_prevention" id="@cdktf/provider-google.storageBucket.StorageBucketConfig.property.publicAccessPrevention"></a>
+##### `public_access_prevention`<sup>Optional</sup> <a name="public_access_prevention" id="@cdktn/provider-google.storageBucket.StorageBucketConfig.property.publicAccessPrevention"></a>
 
 ```python
 public_access_prevention: str
@@ -2704,7 +2704,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `requester_pays`<sup>Optional</sup> <a name="requester_pays" id="@cdktf/provider-google.storageBucket.StorageBucketConfig.property.requesterPays"></a>
+##### `requester_pays`<sup>Optional</sup> <a name="requester_pays" id="@cdktn/provider-google.storageBucket.StorageBucketConfig.property.requesterPays"></a>
 
 ```python
 requester_pays: bool | IResolvable
@@ -2718,13 +2718,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `retention_policy`<sup>Optional</sup> <a name="retention_policy" id="@cdktf/provider-google.storageBucket.StorageBucketConfig.property.retentionPolicy"></a>
+##### `retention_policy`<sup>Optional</sup> <a name="retention_policy" id="@cdktn/provider-google.storageBucket.StorageBucketConfig.property.retentionPolicy"></a>
 
 ```python
 retention_policy: StorageBucketRetentionPolicy
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.storageBucket.StorageBucketRetentionPolicy">StorageBucketRetentionPolicy</a>
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicy">StorageBucketRetentionPolicy</a>
 
 retention_policy block.
 
@@ -2732,7 +2732,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `rpo`<sup>Optional</sup> <a name="rpo" id="@cdktf/provider-google.storageBucket.StorageBucketConfig.property.rpo"></a>
+##### `rpo`<sup>Optional</sup> <a name="rpo" id="@cdktn/provider-google.storageBucket.StorageBucketConfig.property.rpo"></a>
 
 ```python
 rpo: str
@@ -2748,13 +2748,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `soft_delete_policy`<sup>Optional</sup> <a name="soft_delete_policy" id="@cdktf/provider-google.storageBucket.StorageBucketConfig.property.softDeletePolicy"></a>
+##### `soft_delete_policy`<sup>Optional</sup> <a name="soft_delete_policy" id="@cdktn/provider-google.storageBucket.StorageBucketConfig.property.softDeletePolicy"></a>
 
 ```python
 soft_delete_policy: StorageBucketSoftDeletePolicy
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.storageBucket.StorageBucketSoftDeletePolicy">StorageBucketSoftDeletePolicy</a>
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicy">StorageBucketSoftDeletePolicy</a>
 
 soft_delete_policy block.
 
@@ -2762,7 +2762,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `storage_class`<sup>Optional</sup> <a name="storage_class" id="@cdktf/provider-google.storageBucket.StorageBucketConfig.property.storageClass"></a>
+##### `storage_class`<sup>Optional</sup> <a name="storage_class" id="@cdktn/provider-google.storageBucket.StorageBucketConfig.property.storageClass"></a>
 
 ```python
 storage_class: str
@@ -2776,13 +2776,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-google.storageBucket.StorageBucketConfig.property.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-google.storageBucket.StorageBucketConfig.property.timeouts"></a>
 
 ```python
 timeouts: StorageBucketTimeouts
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.storageBucket.StorageBucketTimeouts">StorageBucketTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketTimeouts">StorageBucketTimeouts</a>
 
 timeouts block.
 
@@ -2790,7 +2790,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `uniform_bucket_level_access`<sup>Optional</sup> <a name="uniform_bucket_level_access" id="@cdktf/provider-google.storageBucket.StorageBucketConfig.property.uniformBucketLevelAccess"></a>
+##### `uniform_bucket_level_access`<sup>Optional</sup> <a name="uniform_bucket_level_access" id="@cdktn/provider-google.storageBucket.StorageBucketConfig.property.uniformBucketLevelAccess"></a>
 
 ```python
 uniform_bucket_level_access: bool | IResolvable
@@ -2804,13 +2804,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `versioning`<sup>Optional</sup> <a name="versioning" id="@cdktf/provider-google.storageBucket.StorageBucketConfig.property.versioning"></a>
+##### `versioning`<sup>Optional</sup> <a name="versioning" id="@cdktn/provider-google.storageBucket.StorageBucketConfig.property.versioning"></a>
 
 ```python
 versioning: StorageBucketVersioning
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.storageBucket.StorageBucketVersioning">StorageBucketVersioning</a>
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketVersioning">StorageBucketVersioning</a>
 
 versioning block.
 
@@ -2818,13 +2818,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `website`<sup>Optional</sup> <a name="website" id="@cdktf/provider-google.storageBucket.StorageBucketConfig.property.website"></a>
+##### `website`<sup>Optional</sup> <a name="website" id="@cdktn/provider-google.storageBucket.StorageBucketConfig.property.website"></a>
 
 ```python
 website: StorageBucketWebsite
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.storageBucket.StorageBucketWebsite">StorageBucketWebsite</a>
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketWebsite">StorageBucketWebsite</a>
 
 website block.
 
@@ -2832,12 +2832,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### StorageBucketCors <a name="StorageBucketCors" id="@cdktf/provider-google.storageBucket.StorageBucketCors"></a>
+### StorageBucketCors <a name="StorageBucketCors" id="@cdktn/provider-google.storageBucket.StorageBucketCors"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-google.storageBucket.StorageBucketCors.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.storageBucket.StorageBucketCors.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import storage_bucket
+from cdktn_provider_google import storage_bucket
 
 storageBucket.StorageBucketCors(
   max_age_seconds: typing.Union[int, float] = None,
@@ -2851,14 +2851,14 @@ storageBucket.StorageBucketCors(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketCors.property.maxAgeSeconds">max_age_seconds</a></code> | <code>typing.Union[int, float]</code> | The value, in seconds, to return in the Access-Control-Max-Age header used in preflight responses. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketCors.property.method">method</a></code> | <code>typing.List[str]</code> | The list of HTTP methods on which to include CORS response headers, (GET, OPTIONS, POST, etc) Note: "*" is permitted in the list of methods, and means "any method". |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketCors.property.origin">origin</a></code> | <code>typing.List[str]</code> | The list of Origins eligible to receive CORS response headers. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketCors.property.responseHeader">response_header</a></code> | <code>typing.List[str]</code> | The list of HTTP headers other than the simple response headers to give permission for the user-agent to share across domains. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCors.property.maxAgeSeconds">max_age_seconds</a></code> | <code>typing.Union[int, float]</code> | The value, in seconds, to return in the Access-Control-Max-Age header used in preflight responses. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCors.property.method">method</a></code> | <code>typing.List[str]</code> | The list of HTTP methods on which to include CORS response headers, (GET, OPTIONS, POST, etc) Note: "*" is permitted in the list of methods, and means "any method". |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCors.property.origin">origin</a></code> | <code>typing.List[str]</code> | The list of Origins eligible to receive CORS response headers. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCors.property.responseHeader">response_header</a></code> | <code>typing.List[str]</code> | The list of HTTP headers other than the simple response headers to give permission for the user-agent to share across domains. |
 
 ---
 
-##### `max_age_seconds`<sup>Optional</sup> <a name="max_age_seconds" id="@cdktf/provider-google.storageBucket.StorageBucketCors.property.maxAgeSeconds"></a>
+##### `max_age_seconds`<sup>Optional</sup> <a name="max_age_seconds" id="@cdktn/provider-google.storageBucket.StorageBucketCors.property.maxAgeSeconds"></a>
 
 ```python
 max_age_seconds: typing.Union[int, float]
@@ -2872,7 +2872,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `method`<sup>Optional</sup> <a name="method" id="@cdktf/provider-google.storageBucket.StorageBucketCors.property.method"></a>
+##### `method`<sup>Optional</sup> <a name="method" id="@cdktn/provider-google.storageBucket.StorageBucketCors.property.method"></a>
 
 ```python
 method: typing.List[str]
@@ -2886,7 +2886,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `origin`<sup>Optional</sup> <a name="origin" id="@cdktf/provider-google.storageBucket.StorageBucketCors.property.origin"></a>
+##### `origin`<sup>Optional</sup> <a name="origin" id="@cdktn/provider-google.storageBucket.StorageBucketCors.property.origin"></a>
 
 ```python
 origin: typing.List[str]
@@ -2902,7 +2902,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `response_header`<sup>Optional</sup> <a name="response_header" id="@cdktf/provider-google.storageBucket.StorageBucketCors.property.responseHeader"></a>
+##### `response_header`<sup>Optional</sup> <a name="response_header" id="@cdktn/provider-google.storageBucket.StorageBucketCors.property.responseHeader"></a>
 
 ```python
 response_header: typing.List[str]
@@ -2916,12 +2916,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### StorageBucketCustomPlacementConfig <a name="StorageBucketCustomPlacementConfig" id="@cdktf/provider-google.storageBucket.StorageBucketCustomPlacementConfig"></a>
+### StorageBucketCustomPlacementConfig <a name="StorageBucketCustomPlacementConfig" id="@cdktn/provider-google.storageBucket.StorageBucketCustomPlacementConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-google.storageBucket.StorageBucketCustomPlacementConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.storageBucket.StorageBucketCustomPlacementConfig.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import storage_bucket
+from cdktn_provider_google import storage_bucket
 
 storageBucket.StorageBucketCustomPlacementConfig(
   data_locations: typing.List[str]
@@ -2932,11 +2932,11 @@ storageBucket.StorageBucketCustomPlacementConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketCustomPlacementConfig.property.dataLocations">data_locations</a></code> | <code>typing.List[str]</code> | The list of individual regions that comprise a dual-region bucket. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCustomPlacementConfig.property.dataLocations">data_locations</a></code> | <code>typing.List[str]</code> | The list of individual regions that comprise a dual-region bucket. |
 
 ---
 
-##### `data_locations`<sup>Required</sup> <a name="data_locations" id="@cdktf/provider-google.storageBucket.StorageBucketCustomPlacementConfig.property.dataLocations"></a>
+##### `data_locations`<sup>Required</sup> <a name="data_locations" id="@cdktn/provider-google.storageBucket.StorageBucketCustomPlacementConfig.property.dataLocations"></a>
 
 ```python
 data_locations: typing.List[str]
@@ -2952,12 +2952,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### StorageBucketEncryption <a name="StorageBucketEncryption" id="@cdktf/provider-google.storageBucket.StorageBucketEncryption"></a>
+### StorageBucketEncryption <a name="StorageBucketEncryption" id="@cdktn/provider-google.storageBucket.StorageBucketEncryption"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-google.storageBucket.StorageBucketEncryption.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.storageBucket.StorageBucketEncryption.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import storage_bucket
+from cdktn_provider_google import storage_bucket
 
 storageBucket.StorageBucketEncryption(
   default_kms_key_name: str
@@ -2968,11 +2968,11 @@ storageBucket.StorageBucketEncryption(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketEncryption.property.defaultKmsKeyName">default_kms_key_name</a></code> | <code>str</code> | A Cloud KMS key that will be used to encrypt objects inserted into this bucket, if no encryption method is specified. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryption.property.defaultKmsKeyName">default_kms_key_name</a></code> | <code>str</code> | A Cloud KMS key that will be used to encrypt objects inserted into this bucket, if no encryption method is specified. |
 
 ---
 
-##### `default_kms_key_name`<sup>Required</sup> <a name="default_kms_key_name" id="@cdktf/provider-google.storageBucket.StorageBucketEncryption.property.defaultKmsKeyName"></a>
+##### `default_kms_key_name`<sup>Required</sup> <a name="default_kms_key_name" id="@cdktn/provider-google.storageBucket.StorageBucketEncryption.property.defaultKmsKeyName"></a>
 
 ```python
 default_kms_key_name: str
@@ -2988,12 +2988,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### StorageBucketHierarchicalNamespace <a name="StorageBucketHierarchicalNamespace" id="@cdktf/provider-google.storageBucket.StorageBucketHierarchicalNamespace"></a>
+### StorageBucketHierarchicalNamespace <a name="StorageBucketHierarchicalNamespace" id="@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespace"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-google.storageBucket.StorageBucketHierarchicalNamespace.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespace.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import storage_bucket
+from cdktn_provider_google import storage_bucket
 
 storageBucket.StorageBucketHierarchicalNamespace(
   enabled: bool | IResolvable
@@ -3004,11 +3004,11 @@ storageBucket.StorageBucketHierarchicalNamespace(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketHierarchicalNamespace.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Set this field true to organize bucket with logical file system structure. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespace.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | Set this field true to organize bucket with logical file system structure. |
 
 ---
 
-##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-google.storageBucket.StorageBucketHierarchicalNamespace.property.enabled"></a>
+##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespace.property.enabled"></a>
 
 ```python
 enabled: bool | IResolvable
@@ -3022,12 +3022,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### StorageBucketIpFilter <a name="StorageBucketIpFilter" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilter"></a>
+### StorageBucketIpFilter <a name="StorageBucketIpFilter" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilter"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilter.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilter.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import storage_bucket
+from cdktn_provider_google import storage_bucket
 
 storageBucket.StorageBucketIpFilter(
   mode: str,
@@ -3042,15 +3042,15 @@ storageBucket.StorageBucketIpFilter(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilter.property.mode">mode</a></code> | <code>str</code> | The mode of the IP filter. Valid values are 'Enabled' and 'Disabled'. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilter.property.allowAllServiceAgentAccess">allow_all_service_agent_access</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether to allow all service agents to access the bucket regardless of the IP filter configuration. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilter.property.allowCrossOrgVpcs">allow_cross_org_vpcs</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether to allow cross-org VPCs in the bucket's IP filter configuration. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilter.property.publicNetworkSource">public_network_source</a></code> | <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSource">StorageBucketIpFilterPublicNetworkSource</a></code> | public_network_source block. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilter.property.vpcNetworkSources">vpc_network_sources</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSources">StorageBucketIpFilterVpcNetworkSources</a>]</code> | vpc_network_sources block. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilter.property.mode">mode</a></code> | <code>str</code> | The mode of the IP filter. Valid values are 'Enabled' and 'Disabled'. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilter.property.allowAllServiceAgentAccess">allow_all_service_agent_access</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether to allow all service agents to access the bucket regardless of the IP filter configuration. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilter.property.allowCrossOrgVpcs">allow_cross_org_vpcs</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether to allow cross-org VPCs in the bucket's IP filter configuration. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilter.property.publicNetworkSource">public_network_source</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSource">StorageBucketIpFilterPublicNetworkSource</a></code> | public_network_source block. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilter.property.vpcNetworkSources">vpc_network_sources</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSources">StorageBucketIpFilterVpcNetworkSources</a>]</code> | vpc_network_sources block. |
 
 ---
 
-##### `mode`<sup>Required</sup> <a name="mode" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilter.property.mode"></a>
+##### `mode`<sup>Required</sup> <a name="mode" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilter.property.mode"></a>
 
 ```python
 mode: str
@@ -3064,7 +3064,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `allow_all_service_agent_access`<sup>Optional</sup> <a name="allow_all_service_agent_access" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilter.property.allowAllServiceAgentAccess"></a>
+##### `allow_all_service_agent_access`<sup>Optional</sup> <a name="allow_all_service_agent_access" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilter.property.allowAllServiceAgentAccess"></a>
 
 ```python
 allow_all_service_agent_access: bool | IResolvable
@@ -3078,7 +3078,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `allow_cross_org_vpcs`<sup>Optional</sup> <a name="allow_cross_org_vpcs" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilter.property.allowCrossOrgVpcs"></a>
+##### `allow_cross_org_vpcs`<sup>Optional</sup> <a name="allow_cross_org_vpcs" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilter.property.allowCrossOrgVpcs"></a>
 
 ```python
 allow_cross_org_vpcs: bool | IResolvable
@@ -3092,13 +3092,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `public_network_source`<sup>Optional</sup> <a name="public_network_source" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilter.property.publicNetworkSource"></a>
+##### `public_network_source`<sup>Optional</sup> <a name="public_network_source" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilter.property.publicNetworkSource"></a>
 
 ```python
 public_network_source: StorageBucketIpFilterPublicNetworkSource
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSource">StorageBucketIpFilterPublicNetworkSource</a>
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSource">StorageBucketIpFilterPublicNetworkSource</a>
 
 public_network_source block.
 
@@ -3106,13 +3106,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `vpc_network_sources`<sup>Optional</sup> <a name="vpc_network_sources" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilter.property.vpcNetworkSources"></a>
+##### `vpc_network_sources`<sup>Optional</sup> <a name="vpc_network_sources" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilter.property.vpcNetworkSources"></a>
 
 ```python
 vpc_network_sources: IResolvable | typing.List[StorageBucketIpFilterVpcNetworkSources]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSources">StorageBucketIpFilterVpcNetworkSources</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSources">StorageBucketIpFilterVpcNetworkSources</a>]
 
 vpc_network_sources block.
 
@@ -3120,12 +3120,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### StorageBucketIpFilterPublicNetworkSource <a name="StorageBucketIpFilterPublicNetworkSource" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSource"></a>
+### StorageBucketIpFilterPublicNetworkSource <a name="StorageBucketIpFilterPublicNetworkSource" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSource"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSource.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSource.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import storage_bucket
+from cdktn_provider_google import storage_bucket
 
 storageBucket.StorageBucketIpFilterPublicNetworkSource(
   allowed_ip_cidr_ranges: typing.List[str]
@@ -3136,11 +3136,11 @@ storageBucket.StorageBucketIpFilterPublicNetworkSource(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSource.property.allowedIpCidrRanges">allowed_ip_cidr_ranges</a></code> | <code>typing.List[str]</code> | The list of public IPv4, IPv6 cidr ranges that are allowed to access the bucket. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSource.property.allowedIpCidrRanges">allowed_ip_cidr_ranges</a></code> | <code>typing.List[str]</code> | The list of public IPv4, IPv6 cidr ranges that are allowed to access the bucket. |
 
 ---
 
-##### `allowed_ip_cidr_ranges`<sup>Required</sup> <a name="allowed_ip_cidr_ranges" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSource.property.allowedIpCidrRanges"></a>
+##### `allowed_ip_cidr_ranges`<sup>Required</sup> <a name="allowed_ip_cidr_ranges" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSource.property.allowedIpCidrRanges"></a>
 
 ```python
 allowed_ip_cidr_ranges: typing.List[str]
@@ -3154,12 +3154,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### StorageBucketIpFilterVpcNetworkSources <a name="StorageBucketIpFilterVpcNetworkSources" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSources"></a>
+### StorageBucketIpFilterVpcNetworkSources <a name="StorageBucketIpFilterVpcNetworkSources" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSources"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSources.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSources.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import storage_bucket
+from cdktn_provider_google import storage_bucket
 
 storageBucket.StorageBucketIpFilterVpcNetworkSources(
   allowed_ip_cidr_ranges: typing.List[str],
@@ -3171,12 +3171,12 @@ storageBucket.StorageBucketIpFilterVpcNetworkSources(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSources.property.allowedIpCidrRanges">allowed_ip_cidr_ranges</a></code> | <code>typing.List[str]</code> | The list of public or private IPv4 and IPv6 CIDR ranges that can access the bucket. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSources.property.network">network</a></code> | <code>str</code> | Name of the network. Format: projects/{PROJECT_ID}/global/networks/{NETWORK_NAME}. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSources.property.allowedIpCidrRanges">allowed_ip_cidr_ranges</a></code> | <code>typing.List[str]</code> | The list of public or private IPv4 and IPv6 CIDR ranges that can access the bucket. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSources.property.network">network</a></code> | <code>str</code> | Name of the network. Format: projects/{PROJECT_ID}/global/networks/{NETWORK_NAME}. |
 
 ---
 
-##### `allowed_ip_cidr_ranges`<sup>Required</sup> <a name="allowed_ip_cidr_ranges" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSources.property.allowedIpCidrRanges"></a>
+##### `allowed_ip_cidr_ranges`<sup>Required</sup> <a name="allowed_ip_cidr_ranges" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSources.property.allowedIpCidrRanges"></a>
 
 ```python
 allowed_ip_cidr_ranges: typing.List[str]
@@ -3190,7 +3190,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `network`<sup>Required</sup> <a name="network" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSources.property.network"></a>
+##### `network`<sup>Required</sup> <a name="network" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSources.property.network"></a>
 
 ```python
 network: str
@@ -3204,12 +3204,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### StorageBucketLifecycleRule <a name="StorageBucketLifecycleRule" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRule"></a>
+### StorageBucketLifecycleRule <a name="StorageBucketLifecycleRule" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRule"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRule.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRule.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import storage_bucket
+from cdktn_provider_google import storage_bucket
 
 storageBucket.StorageBucketLifecycleRule(
   action: StorageBucketLifecycleRuleAction,
@@ -3221,18 +3221,18 @@ storageBucket.StorageBucketLifecycleRule(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRule.property.action">action</a></code> | <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleAction">StorageBucketLifecycleRuleAction</a></code> | action block. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRule.property.condition">condition</a></code> | <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleCondition">StorageBucketLifecycleRuleCondition</a></code> | condition block. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRule.property.action">action</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleAction">StorageBucketLifecycleRuleAction</a></code> | action block. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRule.property.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleCondition">StorageBucketLifecycleRuleCondition</a></code> | condition block. |
 
 ---
 
-##### `action`<sup>Required</sup> <a name="action" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRule.property.action"></a>
+##### `action`<sup>Required</sup> <a name="action" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRule.property.action"></a>
 
 ```python
 action: StorageBucketLifecycleRuleAction
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleAction">StorageBucketLifecycleRuleAction</a>
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleAction">StorageBucketLifecycleRuleAction</a>
 
 action block.
 
@@ -3240,13 +3240,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `condition`<sup>Required</sup> <a name="condition" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRule.property.condition"></a>
+##### `condition`<sup>Required</sup> <a name="condition" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRule.property.condition"></a>
 
 ```python
 condition: StorageBucketLifecycleRuleCondition
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleCondition">StorageBucketLifecycleRuleCondition</a>
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleCondition">StorageBucketLifecycleRuleCondition</a>
 
 condition block.
 
@@ -3254,12 +3254,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### StorageBucketLifecycleRuleAction <a name="StorageBucketLifecycleRuleAction" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleAction"></a>
+### StorageBucketLifecycleRuleAction <a name="StorageBucketLifecycleRuleAction" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleAction"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleAction.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleAction.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import storage_bucket
+from cdktn_provider_google import storage_bucket
 
 storageBucket.StorageBucketLifecycleRuleAction(
   type: str,
@@ -3271,12 +3271,12 @@ storageBucket.StorageBucketLifecycleRuleAction(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleAction.property.type">type</a></code> | <code>str</code> | The type of the action of this Lifecycle Rule. Supported values include: Delete, SetStorageClass and AbortIncompleteMultipartUpload. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleAction.property.storageClass">storage_class</a></code> | <code>str</code> | The target Storage Class of objects affected by this Lifecycle Rule. Supported values include: MULTI_REGIONAL, REGIONAL, NEARLINE, COLDLINE, ARCHIVE. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleAction.property.type">type</a></code> | <code>str</code> | The type of the action of this Lifecycle Rule. Supported values include: Delete, SetStorageClass and AbortIncompleteMultipartUpload. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleAction.property.storageClass">storage_class</a></code> | <code>str</code> | The target Storage Class of objects affected by this Lifecycle Rule. Supported values include: MULTI_REGIONAL, REGIONAL, NEARLINE, COLDLINE, ARCHIVE. |
 
 ---
 
-##### `type`<sup>Required</sup> <a name="type" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleAction.property.type"></a>
+##### `type`<sup>Required</sup> <a name="type" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleAction.property.type"></a>
 
 ```python
 type: str
@@ -3290,7 +3290,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `storage_class`<sup>Optional</sup> <a name="storage_class" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleAction.property.storageClass"></a>
+##### `storage_class`<sup>Optional</sup> <a name="storage_class" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleAction.property.storageClass"></a>
 
 ```python
 storage_class: str
@@ -3304,12 +3304,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### StorageBucketLifecycleRuleCondition <a name="StorageBucketLifecycleRuleCondition" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleCondition"></a>
+### StorageBucketLifecycleRuleCondition <a name="StorageBucketLifecycleRuleCondition" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleCondition"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleCondition.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleCondition.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import storage_bucket
+from cdktn_provider_google import storage_bucket
 
 storageBucket.StorageBucketLifecycleRuleCondition(
   age: typing.Union[int, float] = None,
@@ -3334,25 +3334,25 @@ storageBucket.StorageBucketLifecycleRuleCondition(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleCondition.property.age">age</a></code> | <code>typing.Union[int, float]</code> | Minimum age of an object in days to satisfy this condition. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleCondition.property.createdBefore">created_before</a></code> | <code>str</code> | Creation date of an object in RFC 3339 (e.g. 2017-06-13) to satisfy this condition. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleCondition.property.customTimeBefore">custom_time_before</a></code> | <code>str</code> | Creation date of an object in RFC 3339 (e.g. 2017-06-13) to satisfy this condition. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleCondition.property.daysSinceCustomTime">days_since_custom_time</a></code> | <code>typing.Union[int, float]</code> | Number of days elapsed since the user-specified timestamp set on an object. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleCondition.property.daysSinceNoncurrentTime">days_since_noncurrent_time</a></code> | <code>typing.Union[int, float]</code> | Number of days elapsed since the noncurrent timestamp of an object. This 										condition is relevant only for versioned objects. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleCondition.property.matchesPrefix">matches_prefix</a></code> | <code>typing.List[str]</code> | One or more matching name prefixes to satisfy this condition. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleCondition.property.matchesStorageClass">matches_storage_class</a></code> | <code>typing.List[str]</code> | Storage Class of objects to satisfy this condition. Supported values include: MULTI_REGIONAL, REGIONAL, NEARLINE, COLDLINE, ARCHIVE, STANDARD, DURABLE_REDUCED_AVAILABILITY. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleCondition.property.matchesSuffix">matches_suffix</a></code> | <code>typing.List[str]</code> | One or more matching name suffixes to satisfy this condition. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleCondition.property.noncurrentTimeBefore">noncurrent_time_before</a></code> | <code>str</code> | Creation date of an object in RFC 3339 (e.g. 2017-06-13) to satisfy this condition. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleCondition.property.numNewerVersions">num_newer_versions</a></code> | <code>typing.Union[int, float]</code> | Relevant only for versioned objects. The number of newer versions of an object to satisfy this condition. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleCondition.property.sendAgeIfZero">send_age_if_zero</a></code> | <code>bool \| cdktf.IResolvable</code> | While set true, age value will be sent in the request even for zero value of the field. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleCondition.property.sendDaysSinceCustomTimeIfZero">send_days_since_custom_time_if_zero</a></code> | <code>bool \| cdktf.IResolvable</code> | While set true, days_since_custom_time value will be sent in the request even for zero value of the field. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleCondition.property.sendDaysSinceNoncurrentTimeIfZero">send_days_since_noncurrent_time_if_zero</a></code> | <code>bool \| cdktf.IResolvable</code> | While set true, days_since_noncurrent_time value will be sent in the request even for zero value of the field. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleCondition.property.sendNumNewerVersionsIfZero">send_num_newer_versions_if_zero</a></code> | <code>bool \| cdktf.IResolvable</code> | While set true, num_newer_versions value will be sent in the request even for zero value of the field. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleCondition.property.withState">with_state</a></code> | <code>str</code> | Match to live and/or archived objects. Unversioned buckets have only live objects. Supported values include: "LIVE", "ARCHIVED", "ANY". |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleCondition.property.age">age</a></code> | <code>typing.Union[int, float]</code> | Minimum age of an object in days to satisfy this condition. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleCondition.property.createdBefore">created_before</a></code> | <code>str</code> | Creation date of an object in RFC 3339 (e.g. 2017-06-13) to satisfy this condition. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleCondition.property.customTimeBefore">custom_time_before</a></code> | <code>str</code> | Creation date of an object in RFC 3339 (e.g. 2017-06-13) to satisfy this condition. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleCondition.property.daysSinceCustomTime">days_since_custom_time</a></code> | <code>typing.Union[int, float]</code> | Number of days elapsed since the user-specified timestamp set on an object. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleCondition.property.daysSinceNoncurrentTime">days_since_noncurrent_time</a></code> | <code>typing.Union[int, float]</code> | Number of days elapsed since the noncurrent timestamp of an object. This 										condition is relevant only for versioned objects. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleCondition.property.matchesPrefix">matches_prefix</a></code> | <code>typing.List[str]</code> | One or more matching name prefixes to satisfy this condition. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleCondition.property.matchesStorageClass">matches_storage_class</a></code> | <code>typing.List[str]</code> | Storage Class of objects to satisfy this condition. Supported values include: MULTI_REGIONAL, REGIONAL, NEARLINE, COLDLINE, ARCHIVE, STANDARD, DURABLE_REDUCED_AVAILABILITY. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleCondition.property.matchesSuffix">matches_suffix</a></code> | <code>typing.List[str]</code> | One or more matching name suffixes to satisfy this condition. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleCondition.property.noncurrentTimeBefore">noncurrent_time_before</a></code> | <code>str</code> | Creation date of an object in RFC 3339 (e.g. 2017-06-13) to satisfy this condition. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleCondition.property.numNewerVersions">num_newer_versions</a></code> | <code>typing.Union[int, float]</code> | Relevant only for versioned objects. The number of newer versions of an object to satisfy this condition. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleCondition.property.sendAgeIfZero">send_age_if_zero</a></code> | <code>bool \| cdktf.IResolvable</code> | While set true, age value will be sent in the request even for zero value of the field. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleCondition.property.sendDaysSinceCustomTimeIfZero">send_days_since_custom_time_if_zero</a></code> | <code>bool \| cdktf.IResolvable</code> | While set true, days_since_custom_time value will be sent in the request even for zero value of the field. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleCondition.property.sendDaysSinceNoncurrentTimeIfZero">send_days_since_noncurrent_time_if_zero</a></code> | <code>bool \| cdktf.IResolvable</code> | While set true, days_since_noncurrent_time value will be sent in the request even for zero value of the field. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleCondition.property.sendNumNewerVersionsIfZero">send_num_newer_versions_if_zero</a></code> | <code>bool \| cdktf.IResolvable</code> | While set true, num_newer_versions value will be sent in the request even for zero value of the field. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleCondition.property.withState">with_state</a></code> | <code>str</code> | Match to live and/or archived objects. Unversioned buckets have only live objects. Supported values include: "LIVE", "ARCHIVED", "ANY". |
 
 ---
 
-##### `age`<sup>Optional</sup> <a name="age" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleCondition.property.age"></a>
+##### `age`<sup>Optional</sup> <a name="age" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleCondition.property.age"></a>
 
 ```python
 age: typing.Union[int, float]
@@ -3366,7 +3366,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `created_before`<sup>Optional</sup> <a name="created_before" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleCondition.property.createdBefore"></a>
+##### `created_before`<sup>Optional</sup> <a name="created_before" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleCondition.property.createdBefore"></a>
 
 ```python
 created_before: str
@@ -3380,7 +3380,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `custom_time_before`<sup>Optional</sup> <a name="custom_time_before" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleCondition.property.customTimeBefore"></a>
+##### `custom_time_before`<sup>Optional</sup> <a name="custom_time_before" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleCondition.property.customTimeBefore"></a>
 
 ```python
 custom_time_before: str
@@ -3394,7 +3394,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `days_since_custom_time`<sup>Optional</sup> <a name="days_since_custom_time" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleCondition.property.daysSinceCustomTime"></a>
+##### `days_since_custom_time`<sup>Optional</sup> <a name="days_since_custom_time" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleCondition.property.daysSinceCustomTime"></a>
 
 ```python
 days_since_custom_time: typing.Union[int, float]
@@ -3408,7 +3408,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `days_since_noncurrent_time`<sup>Optional</sup> <a name="days_since_noncurrent_time" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleCondition.property.daysSinceNoncurrentTime"></a>
+##### `days_since_noncurrent_time`<sup>Optional</sup> <a name="days_since_noncurrent_time" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleCondition.property.daysSinceNoncurrentTime"></a>
 
 ```python
 days_since_noncurrent_time: typing.Union[int, float]
@@ -3422,7 +3422,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `matches_prefix`<sup>Optional</sup> <a name="matches_prefix" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleCondition.property.matchesPrefix"></a>
+##### `matches_prefix`<sup>Optional</sup> <a name="matches_prefix" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleCondition.property.matchesPrefix"></a>
 
 ```python
 matches_prefix: typing.List[str]
@@ -3436,7 +3436,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `matches_storage_class`<sup>Optional</sup> <a name="matches_storage_class" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleCondition.property.matchesStorageClass"></a>
+##### `matches_storage_class`<sup>Optional</sup> <a name="matches_storage_class" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleCondition.property.matchesStorageClass"></a>
 
 ```python
 matches_storage_class: typing.List[str]
@@ -3450,7 +3450,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `matches_suffix`<sup>Optional</sup> <a name="matches_suffix" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleCondition.property.matchesSuffix"></a>
+##### `matches_suffix`<sup>Optional</sup> <a name="matches_suffix" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleCondition.property.matchesSuffix"></a>
 
 ```python
 matches_suffix: typing.List[str]
@@ -3464,7 +3464,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `noncurrent_time_before`<sup>Optional</sup> <a name="noncurrent_time_before" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleCondition.property.noncurrentTimeBefore"></a>
+##### `noncurrent_time_before`<sup>Optional</sup> <a name="noncurrent_time_before" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleCondition.property.noncurrentTimeBefore"></a>
 
 ```python
 noncurrent_time_before: str
@@ -3478,7 +3478,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `num_newer_versions`<sup>Optional</sup> <a name="num_newer_versions" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleCondition.property.numNewerVersions"></a>
+##### `num_newer_versions`<sup>Optional</sup> <a name="num_newer_versions" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleCondition.property.numNewerVersions"></a>
 
 ```python
 num_newer_versions: typing.Union[int, float]
@@ -3492,7 +3492,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `send_age_if_zero`<sup>Optional</sup> <a name="send_age_if_zero" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleCondition.property.sendAgeIfZero"></a>
+##### `send_age_if_zero`<sup>Optional</sup> <a name="send_age_if_zero" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleCondition.property.sendAgeIfZero"></a>
 
 ```python
 send_age_if_zero: bool | IResolvable
@@ -3508,7 +3508,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `send_days_since_custom_time_if_zero`<sup>Optional</sup> <a name="send_days_since_custom_time_if_zero" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleCondition.property.sendDaysSinceCustomTimeIfZero"></a>
+##### `send_days_since_custom_time_if_zero`<sup>Optional</sup> <a name="send_days_since_custom_time_if_zero" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleCondition.property.sendDaysSinceCustomTimeIfZero"></a>
 
 ```python
 send_days_since_custom_time_if_zero: bool | IResolvable
@@ -3524,7 +3524,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `send_days_since_noncurrent_time_if_zero`<sup>Optional</sup> <a name="send_days_since_noncurrent_time_if_zero" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleCondition.property.sendDaysSinceNoncurrentTimeIfZero"></a>
+##### `send_days_since_noncurrent_time_if_zero`<sup>Optional</sup> <a name="send_days_since_noncurrent_time_if_zero" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleCondition.property.sendDaysSinceNoncurrentTimeIfZero"></a>
 
 ```python
 send_days_since_noncurrent_time_if_zero: bool | IResolvable
@@ -3540,7 +3540,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `send_num_newer_versions_if_zero`<sup>Optional</sup> <a name="send_num_newer_versions_if_zero" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleCondition.property.sendNumNewerVersionsIfZero"></a>
+##### `send_num_newer_versions_if_zero`<sup>Optional</sup> <a name="send_num_newer_versions_if_zero" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleCondition.property.sendNumNewerVersionsIfZero"></a>
 
 ```python
 send_num_newer_versions_if_zero: bool | IResolvable
@@ -3556,7 +3556,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `with_state`<sup>Optional</sup> <a name="with_state" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleCondition.property.withState"></a>
+##### `with_state`<sup>Optional</sup> <a name="with_state" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleCondition.property.withState"></a>
 
 ```python
 with_state: str
@@ -3570,12 +3570,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### StorageBucketLogging <a name="StorageBucketLogging" id="@cdktf/provider-google.storageBucket.StorageBucketLogging"></a>
+### StorageBucketLogging <a name="StorageBucketLogging" id="@cdktn/provider-google.storageBucket.StorageBucketLogging"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-google.storageBucket.StorageBucketLogging.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.storageBucket.StorageBucketLogging.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import storage_bucket
+from cdktn_provider_google import storage_bucket
 
 storageBucket.StorageBucketLogging(
   log_bucket: str,
@@ -3587,12 +3587,12 @@ storageBucket.StorageBucketLogging(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLogging.property.logBucket">log_bucket</a></code> | <code>str</code> | The bucket that will receive log objects. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLogging.property.logObjectPrefix">log_object_prefix</a></code> | <code>str</code> | The object prefix for log objects. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLogging.property.logBucket">log_bucket</a></code> | <code>str</code> | The bucket that will receive log objects. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLogging.property.logObjectPrefix">log_object_prefix</a></code> | <code>str</code> | The object prefix for log objects. |
 
 ---
 
-##### `log_bucket`<sup>Required</sup> <a name="log_bucket" id="@cdktf/provider-google.storageBucket.StorageBucketLogging.property.logBucket"></a>
+##### `log_bucket`<sup>Required</sup> <a name="log_bucket" id="@cdktn/provider-google.storageBucket.StorageBucketLogging.property.logBucket"></a>
 
 ```python
 log_bucket: str
@@ -3606,7 +3606,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `log_object_prefix`<sup>Optional</sup> <a name="log_object_prefix" id="@cdktf/provider-google.storageBucket.StorageBucketLogging.property.logObjectPrefix"></a>
+##### `log_object_prefix`<sup>Optional</sup> <a name="log_object_prefix" id="@cdktn/provider-google.storageBucket.StorageBucketLogging.property.logObjectPrefix"></a>
 
 ```python
 log_object_prefix: str
@@ -3622,12 +3622,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### StorageBucketRetentionPolicy <a name="StorageBucketRetentionPolicy" id="@cdktf/provider-google.storageBucket.StorageBucketRetentionPolicy"></a>
+### StorageBucketRetentionPolicy <a name="StorageBucketRetentionPolicy" id="@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicy"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-google.storageBucket.StorageBucketRetentionPolicy.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicy.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import storage_bucket
+from cdktn_provider_google import storage_bucket
 
 storageBucket.StorageBucketRetentionPolicy(
   retention_period: typing.Union[int, float],
@@ -3639,12 +3639,12 @@ storageBucket.StorageBucketRetentionPolicy(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketRetentionPolicy.property.retentionPeriod">retention_period</a></code> | <code>typing.Union[int, float]</code> | The period of time, in seconds, that objects in the bucket must be retained and cannot be deleted, overwritten, or archived. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketRetentionPolicy.property.isLocked">is_locked</a></code> | <code>bool \| cdktf.IResolvable</code> | If set to true, the bucket will be locked and permanently restrict edits to the bucket's retention policy. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicy.property.retentionPeriod">retention_period</a></code> | <code>typing.Union[int, float]</code> | The period of time, in seconds, that objects in the bucket must be retained and cannot be deleted, overwritten, or archived. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicy.property.isLocked">is_locked</a></code> | <code>bool \| cdktf.IResolvable</code> | If set to true, the bucket will be locked and permanently restrict edits to the bucket's retention policy. |
 
 ---
 
-##### `retention_period`<sup>Required</sup> <a name="retention_period" id="@cdktf/provider-google.storageBucket.StorageBucketRetentionPolicy.property.retentionPeriod"></a>
+##### `retention_period`<sup>Required</sup> <a name="retention_period" id="@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicy.property.retentionPeriod"></a>
 
 ```python
 retention_period: typing.Union[int, float]
@@ -3660,7 +3660,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `is_locked`<sup>Optional</sup> <a name="is_locked" id="@cdktf/provider-google.storageBucket.StorageBucketRetentionPolicy.property.isLocked"></a>
+##### `is_locked`<sup>Optional</sup> <a name="is_locked" id="@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicy.property.isLocked"></a>
 
 ```python
 is_locked: bool | IResolvable
@@ -3676,12 +3676,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### StorageBucketSoftDeletePolicy <a name="StorageBucketSoftDeletePolicy" id="@cdktf/provider-google.storageBucket.StorageBucketSoftDeletePolicy"></a>
+### StorageBucketSoftDeletePolicy <a name="StorageBucketSoftDeletePolicy" id="@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicy"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-google.storageBucket.StorageBucketSoftDeletePolicy.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicy.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import storage_bucket
+from cdktn_provider_google import storage_bucket
 
 storageBucket.StorageBucketSoftDeletePolicy(
   retention_duration_seconds: typing.Union[int, float] = None
@@ -3692,11 +3692,11 @@ storageBucket.StorageBucketSoftDeletePolicy(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketSoftDeletePolicy.property.retentionDurationSeconds">retention_duration_seconds</a></code> | <code>typing.Union[int, float]</code> | The duration in seconds that soft-deleted objects in the bucket will be retained and cannot be permanently deleted. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicy.property.retentionDurationSeconds">retention_duration_seconds</a></code> | <code>typing.Union[int, float]</code> | The duration in seconds that soft-deleted objects in the bucket will be retained and cannot be permanently deleted. |
 
 ---
 
-##### `retention_duration_seconds`<sup>Optional</sup> <a name="retention_duration_seconds" id="@cdktf/provider-google.storageBucket.StorageBucketSoftDeletePolicy.property.retentionDurationSeconds"></a>
+##### `retention_duration_seconds`<sup>Optional</sup> <a name="retention_duration_seconds" id="@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicy.property.retentionDurationSeconds"></a>
 
 ```python
 retention_duration_seconds: typing.Union[int, float]
@@ -3712,12 +3712,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### StorageBucketTimeouts <a name="StorageBucketTimeouts" id="@cdktf/provider-google.storageBucket.StorageBucketTimeouts"></a>
+### StorageBucketTimeouts <a name="StorageBucketTimeouts" id="@cdktn/provider-google.storageBucket.StorageBucketTimeouts"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-google.storageBucket.StorageBucketTimeouts.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.storageBucket.StorageBucketTimeouts.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import storage_bucket
+from cdktn_provider_google import storage_bucket
 
 storageBucket.StorageBucketTimeouts(
   create: str = None,
@@ -3730,13 +3730,13 @@ storageBucket.StorageBucketTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#create StorageBucket#create}. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#read StorageBucket#read}. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#update StorageBucket#update}. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#create StorageBucket#create}. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketTimeouts.property.read">read</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#read StorageBucket#read}. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#update StorageBucket#update}. |
 
 ---
 
-##### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-google.storageBucket.StorageBucketTimeouts.property.create"></a>
+##### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-google.storageBucket.StorageBucketTimeouts.property.create"></a>
 
 ```python
 create: str
@@ -3748,7 +3748,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `read`<sup>Optional</sup> <a name="read" id="@cdktf/provider-google.storageBucket.StorageBucketTimeouts.property.read"></a>
+##### `read`<sup>Optional</sup> <a name="read" id="@cdktn/provider-google.storageBucket.StorageBucketTimeouts.property.read"></a>
 
 ```python
 read: str
@@ -3760,7 +3760,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-google.storageBucket.StorageBucketTimeouts.property.update"></a>
+##### `update`<sup>Optional</sup> <a name="update" id="@cdktn/provider-google.storageBucket.StorageBucketTimeouts.property.update"></a>
 
 ```python
 update: str
@@ -3772,12 +3772,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### StorageBucketVersioning <a name="StorageBucketVersioning" id="@cdktf/provider-google.storageBucket.StorageBucketVersioning"></a>
+### StorageBucketVersioning <a name="StorageBucketVersioning" id="@cdktn/provider-google.storageBucket.StorageBucketVersioning"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-google.storageBucket.StorageBucketVersioning.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.storageBucket.StorageBucketVersioning.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import storage_bucket
+from cdktn_provider_google import storage_bucket
 
 storageBucket.StorageBucketVersioning(
   enabled: bool | IResolvable
@@ -3788,11 +3788,11 @@ storageBucket.StorageBucketVersioning(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketVersioning.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | While set to true, versioning is fully enabled for this bucket. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketVersioning.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | While set to true, versioning is fully enabled for this bucket. |
 
 ---
 
-##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-google.storageBucket.StorageBucketVersioning.property.enabled"></a>
+##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktn/provider-google.storageBucket.StorageBucketVersioning.property.enabled"></a>
 
 ```python
 enabled: bool | IResolvable
@@ -3806,12 +3806,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### StorageBucketWebsite <a name="StorageBucketWebsite" id="@cdktf/provider-google.storageBucket.StorageBucketWebsite"></a>
+### StorageBucketWebsite <a name="StorageBucketWebsite" id="@cdktn/provider-google.storageBucket.StorageBucketWebsite"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-google.storageBucket.StorageBucketWebsite.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.storageBucket.StorageBucketWebsite.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import storage_bucket
+from cdktn_provider_google import storage_bucket
 
 storageBucket.StorageBucketWebsite(
   main_page_suffix: str = None,
@@ -3823,12 +3823,12 @@ storageBucket.StorageBucketWebsite(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketWebsite.property.mainPageSuffix">main_page_suffix</a></code> | <code>str</code> | Behaves as the bucket's directory index where missing objects are treated as potential directories. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketWebsite.property.notFoundPage">not_found_page</a></code> | <code>str</code> | The custom object to return when a requested resource is not found. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketWebsite.property.mainPageSuffix">main_page_suffix</a></code> | <code>str</code> | Behaves as the bucket's directory index where missing objects are treated as potential directories. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketWebsite.property.notFoundPage">not_found_page</a></code> | <code>str</code> | The custom object to return when a requested resource is not found. |
 
 ---
 
-##### `main_page_suffix`<sup>Optional</sup> <a name="main_page_suffix" id="@cdktf/provider-google.storageBucket.StorageBucketWebsite.property.mainPageSuffix"></a>
+##### `main_page_suffix`<sup>Optional</sup> <a name="main_page_suffix" id="@cdktn/provider-google.storageBucket.StorageBucketWebsite.property.mainPageSuffix"></a>
 
 ```python
 main_page_suffix: str
@@ -3842,7 +3842,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `not_found_page`<sup>Optional</sup> <a name="not_found_page" id="@cdktf/provider-google.storageBucket.StorageBucketWebsite.property.notFoundPage"></a>
+##### `not_found_page`<sup>Optional</sup> <a name="not_found_page" id="@cdktn/provider-google.storageBucket.StorageBucketWebsite.property.notFoundPage"></a>
 
 ```python
 not_found_page: str
@@ -3858,12 +3858,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### StorageBucketAutoclassOutputReference <a name="StorageBucketAutoclassOutputReference" id="@cdktf/provider-google.storageBucket.StorageBucketAutoclassOutputReference"></a>
+### StorageBucketAutoclassOutputReference <a name="StorageBucketAutoclassOutputReference" id="@cdktn/provider-google.storageBucket.StorageBucketAutoclassOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.storageBucket.StorageBucketAutoclassOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.storageBucket.StorageBucketAutoclassOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import storage_bucket
+from cdktn_provider_google import storage_bucket
 
 storageBucket.StorageBucketAutoclassOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -3873,12 +3873,12 @@ storageBucket.StorageBucketAutoclassOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketAutoclassOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketAutoclassOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketAutoclassOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketAutoclassOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-google.storageBucket.StorageBucketAutoclassOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.storageBucket.StorageBucketAutoclassOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -3886,7 +3886,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketAutoclassOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketAutoclassOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -3898,30 +3898,30 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketAutoclassOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketAutoclassOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketAutoclassOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketAutoclassOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketAutoclassOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketAutoclassOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketAutoclassOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketAutoclassOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketAutoclassOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketAutoclassOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketAutoclassOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketAutoclassOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketAutoclassOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketAutoclassOutputReference.resetTerminalStorageClass">reset_terminal_storage_class</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketAutoclassOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketAutoclassOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketAutoclassOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketAutoclassOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketAutoclassOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketAutoclassOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketAutoclassOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketAutoclassOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketAutoclassOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketAutoclassOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketAutoclassOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketAutoclassOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketAutoclassOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketAutoclassOutputReference.resetTerminalStorageClass">reset_terminal_storage_class</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-google.storageBucket.StorageBucketAutoclassOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.storageBucket.StorageBucketAutoclassOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketAutoclassOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketAutoclassOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -3929,13 +3929,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketAutoclassOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketAutoclassOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketAutoclassOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketAutoclassOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -3943,13 +3943,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketAutoclassOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketAutoclassOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketAutoclassOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketAutoclassOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -3957,13 +3957,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketAutoclassOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketAutoclassOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketAutoclassOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketAutoclassOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -3971,13 +3971,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketAutoclassOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketAutoclassOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketAutoclassOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketAutoclassOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -3985,13 +3985,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketAutoclassOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketAutoclassOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketAutoclassOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketAutoclassOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -3999,13 +3999,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketAutoclassOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketAutoclassOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketAutoclassOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketAutoclassOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -4013,13 +4013,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketAutoclassOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketAutoclassOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketAutoclassOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketAutoclassOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -4027,13 +4027,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketAutoclassOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketAutoclassOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketAutoclassOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketAutoclassOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -4041,13 +4041,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketAutoclassOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketAutoclassOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketAutoclassOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketAutoclassOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -4055,13 +4055,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google.storageBucket.StorageBucketAutoclassOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.storageBucket.StorageBucketAutoclassOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-google.storageBucket.StorageBucketAutoclassOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.storageBucket.StorageBucketAutoclassOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -4071,13 +4071,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google.storageBucket.StorageBucketAutoclassOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.storageBucket.StorageBucketAutoclassOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-google.storageBucket.StorageBucketAutoclassOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.storageBucket.StorageBucketAutoclassOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -4087,7 +4087,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_terminal_storage_class` <a name="reset_terminal_storage_class" id="@cdktf/provider-google.storageBucket.StorageBucketAutoclassOutputReference.resetTerminalStorageClass"></a>
+##### `reset_terminal_storage_class` <a name="reset_terminal_storage_class" id="@cdktn/provider-google.storageBucket.StorageBucketAutoclassOutputReference.resetTerminalStorageClass"></a>
 
 ```python
 def reset_terminal_storage_class() -> None
@@ -4098,17 +4098,17 @@ def reset_terminal_storage_class() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketAutoclassOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketAutoclassOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketAutoclassOutputReference.property.enabledInput">enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketAutoclassOutputReference.property.terminalStorageClassInput">terminal_storage_class_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketAutoclassOutputReference.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketAutoclassOutputReference.property.terminalStorageClass">terminal_storage_class</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketAutoclassOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketAutoclass">StorageBucketAutoclass</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketAutoclassOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketAutoclassOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketAutoclassOutputReference.property.enabledInput">enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketAutoclassOutputReference.property.terminalStorageClassInput">terminal_storage_class_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketAutoclassOutputReference.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketAutoclassOutputReference.property.terminalStorageClass">terminal_storage_class</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketAutoclassOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketAutoclass">StorageBucketAutoclass</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-google.storageBucket.StorageBucketAutoclassOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.storageBucket.StorageBucketAutoclassOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -4122,7 +4122,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google.storageBucket.StorageBucketAutoclassOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.storageBucket.StorageBucketAutoclassOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -4132,7 +4132,7 @@ fqn: str
 
 ---
 
-##### `enabled_input`<sup>Optional</sup> <a name="enabled_input" id="@cdktf/provider-google.storageBucket.StorageBucketAutoclassOutputReference.property.enabledInput"></a>
+##### `enabled_input`<sup>Optional</sup> <a name="enabled_input" id="@cdktn/provider-google.storageBucket.StorageBucketAutoclassOutputReference.property.enabledInput"></a>
 
 ```python
 enabled_input: bool | IResolvable
@@ -4142,7 +4142,7 @@ enabled_input: bool | IResolvable
 
 ---
 
-##### `terminal_storage_class_input`<sup>Optional</sup> <a name="terminal_storage_class_input" id="@cdktf/provider-google.storageBucket.StorageBucketAutoclassOutputReference.property.terminalStorageClassInput"></a>
+##### `terminal_storage_class_input`<sup>Optional</sup> <a name="terminal_storage_class_input" id="@cdktn/provider-google.storageBucket.StorageBucketAutoclassOutputReference.property.terminalStorageClassInput"></a>
 
 ```python
 terminal_storage_class_input: str
@@ -4152,7 +4152,7 @@ terminal_storage_class_input: str
 
 ---
 
-##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-google.storageBucket.StorageBucketAutoclassOutputReference.property.enabled"></a>
+##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktn/provider-google.storageBucket.StorageBucketAutoclassOutputReference.property.enabled"></a>
 
 ```python
 enabled: bool | IResolvable
@@ -4162,7 +4162,7 @@ enabled: bool | IResolvable
 
 ---
 
-##### `terminal_storage_class`<sup>Required</sup> <a name="terminal_storage_class" id="@cdktf/provider-google.storageBucket.StorageBucketAutoclassOutputReference.property.terminalStorageClass"></a>
+##### `terminal_storage_class`<sup>Required</sup> <a name="terminal_storage_class" id="@cdktn/provider-google.storageBucket.StorageBucketAutoclassOutputReference.property.terminalStorageClass"></a>
 
 ```python
 terminal_storage_class: str
@@ -4172,23 +4172,23 @@ terminal_storage_class: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-google.storageBucket.StorageBucketAutoclassOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.storageBucket.StorageBucketAutoclassOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: StorageBucketAutoclass
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.storageBucket.StorageBucketAutoclass">StorageBucketAutoclass</a>
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketAutoclass">StorageBucketAutoclass</a>
 
 ---
 
 
-### StorageBucketCorsList <a name="StorageBucketCorsList" id="@cdktf/provider-google.storageBucket.StorageBucketCorsList"></a>
+### StorageBucketCorsList <a name="StorageBucketCorsList" id="@cdktn/provider-google.storageBucket.StorageBucketCorsList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.storageBucket.StorageBucketCorsList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.storageBucket.StorageBucketCorsList.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import storage_bucket
+from cdktn_provider_google import storage_bucket
 
 storageBucket.StorageBucketCorsList(
   terraform_resource: IInterpolatingParent,
@@ -4199,13 +4199,13 @@ storageBucket.StorageBucketCorsList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketCorsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketCorsList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketCorsList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCorsList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCorsList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCorsList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-google.storageBucket.StorageBucketCorsList.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.storageBucket.StorageBucketCorsList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -4213,7 +4213,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketCorsList.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketCorsList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -4221,7 +4221,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-google.storageBucket.StorageBucketCorsList.Initializer.parameter.wrapsSet"></a>
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-google.storageBucket.StorageBucketCorsList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* bool
 
@@ -4233,15 +4233,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketCorsList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketCorsList.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketCorsList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketCorsList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketCorsList.get">get</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCorsList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCorsList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCorsList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCorsList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCorsList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `all_with_map_key` <a name="all_with_map_key" id="@cdktf/provider-google.storageBucket.StorageBucketCorsList.allWithMapKey"></a>
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-google.storageBucket.StorageBucketCorsList.allWithMapKey"></a>
 
 ```python
 def all_with_map_key(
@@ -4253,19 +4253,19 @@ Creating an iterator for this complex list.
 
 The list will be converted into a map with the mapKeyAttributeName as the key.
 
-###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktf/provider-google.storageBucket.StorageBucketCorsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-google.storageBucket.StorageBucketCorsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
 
 - *Type:* str
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-google.storageBucket.StorageBucketCorsList.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.storageBucket.StorageBucketCorsList.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-google.storageBucket.StorageBucketCorsList.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.storageBucket.StorageBucketCorsList.resolve"></a>
 
 ```python
 def resolve(
@@ -4275,13 +4275,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google.storageBucket.StorageBucketCorsList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.storageBucket.StorageBucketCorsList.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-google.storageBucket.StorageBucketCorsList.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.storageBucket.StorageBucketCorsList.toString"></a>
 
 ```python
 def to_string() -> str
@@ -4291,7 +4291,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `get` <a name="get" id="@cdktf/provider-google.storageBucket.StorageBucketCorsList.get"></a>
+##### `get` <a name="get" id="@cdktn/provider-google.storageBucket.StorageBucketCorsList.get"></a>
 
 ```python
 def get(
@@ -4299,7 +4299,7 @@ def get(
 ) -> StorageBucketCorsOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-google.storageBucket.StorageBucketCorsList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.storageBucket.StorageBucketCorsList.get.parameter.index"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -4312,13 +4312,13 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketCorsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketCorsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketCorsList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-google.storageBucket.StorageBucketCors">StorageBucketCors</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCorsList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCorsList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCorsList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.storageBucket.StorageBucketCors">StorageBucketCors</a>]</code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-google.storageBucket.StorageBucketCorsList.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.storageBucket.StorageBucketCorsList.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -4332,7 +4332,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google.storageBucket.StorageBucketCorsList.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.storageBucket.StorageBucketCorsList.property.fqn"></a>
 
 ```python
 fqn: str
@@ -4342,23 +4342,23 @@ fqn: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-google.storageBucket.StorageBucketCorsList.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.storageBucket.StorageBucketCorsList.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | typing.List[StorageBucketCors]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-google.storageBucket.StorageBucketCors">StorageBucketCors</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.storageBucket.StorageBucketCors">StorageBucketCors</a>]
 
 ---
 
 
-### StorageBucketCorsOutputReference <a name="StorageBucketCorsOutputReference" id="@cdktf/provider-google.storageBucket.StorageBucketCorsOutputReference"></a>
+### StorageBucketCorsOutputReference <a name="StorageBucketCorsOutputReference" id="@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.storageBucket.StorageBucketCorsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import storage_bucket
+from cdktn_provider_google import storage_bucket
 
 storageBucket.StorageBucketCorsOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -4370,14 +4370,14 @@ storageBucket.StorageBucketCorsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketCorsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketCorsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketCorsOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketCorsOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-google.storageBucket.StorageBucketCorsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -4385,7 +4385,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketCorsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -4393,7 +4393,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-google.storageBucket.StorageBucketCorsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -4401,7 +4401,7 @@ the index of this item in the list.
 
 ---
 
-##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-google.storageBucket.StorageBucketCorsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* bool
 
@@ -4413,33 +4413,33 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketCorsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketCorsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketCorsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketCorsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketCorsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketCorsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketCorsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketCorsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketCorsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketCorsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketCorsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketCorsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketCorsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketCorsOutputReference.resetMaxAgeSeconds">reset_max_age_seconds</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketCorsOutputReference.resetMethod">reset_method</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketCorsOutputReference.resetOrigin">reset_origin</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketCorsOutputReference.resetResponseHeader">reset_response_header</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.resetMaxAgeSeconds">reset_max_age_seconds</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.resetMethod">reset_method</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.resetOrigin">reset_origin</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.resetResponseHeader">reset_response_header</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-google.storageBucket.StorageBucketCorsOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketCorsOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -4447,13 +4447,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketCorsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketCorsOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -4461,13 +4461,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketCorsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketCorsOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -4475,13 +4475,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketCorsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketCorsOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -4489,13 +4489,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketCorsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketCorsOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -4503,13 +4503,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketCorsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketCorsOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -4517,13 +4517,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketCorsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketCorsOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -4531,13 +4531,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketCorsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketCorsOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -4545,13 +4545,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketCorsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketCorsOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -4559,13 +4559,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketCorsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketCorsOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -4573,13 +4573,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google.storageBucket.StorageBucketCorsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-google.storageBucket.StorageBucketCorsOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -4589,13 +4589,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google.storageBucket.StorageBucketCorsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-google.storageBucket.StorageBucketCorsOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -4605,25 +4605,25 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_max_age_seconds` <a name="reset_max_age_seconds" id="@cdktf/provider-google.storageBucket.StorageBucketCorsOutputReference.resetMaxAgeSeconds"></a>
+##### `reset_max_age_seconds` <a name="reset_max_age_seconds" id="@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.resetMaxAgeSeconds"></a>
 
 ```python
 def reset_max_age_seconds() -> None
 ```
 
-##### `reset_method` <a name="reset_method" id="@cdktf/provider-google.storageBucket.StorageBucketCorsOutputReference.resetMethod"></a>
+##### `reset_method` <a name="reset_method" id="@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.resetMethod"></a>
 
 ```python
 def reset_method() -> None
 ```
 
-##### `reset_origin` <a name="reset_origin" id="@cdktf/provider-google.storageBucket.StorageBucketCorsOutputReference.resetOrigin"></a>
+##### `reset_origin` <a name="reset_origin" id="@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.resetOrigin"></a>
 
 ```python
 def reset_origin() -> None
 ```
 
-##### `reset_response_header` <a name="reset_response_header" id="@cdktf/provider-google.storageBucket.StorageBucketCorsOutputReference.resetResponseHeader"></a>
+##### `reset_response_header` <a name="reset_response_header" id="@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.resetResponseHeader"></a>
 
 ```python
 def reset_response_header() -> None
@@ -4634,21 +4634,21 @@ def reset_response_header() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketCorsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketCorsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketCorsOutputReference.property.maxAgeSecondsInput">max_age_seconds_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketCorsOutputReference.property.methodInput">method_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketCorsOutputReference.property.originInput">origin_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketCorsOutputReference.property.responseHeaderInput">response_header_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketCorsOutputReference.property.maxAgeSeconds">max_age_seconds</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketCorsOutputReference.property.method">method</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketCorsOutputReference.property.origin">origin</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketCorsOutputReference.property.responseHeader">response_header</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketCorsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-google.storageBucket.StorageBucketCors">StorageBucketCors</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.property.maxAgeSecondsInput">max_age_seconds_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.property.methodInput">method_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.property.originInput">origin_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.property.responseHeaderInput">response_header_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.property.maxAgeSeconds">max_age_seconds</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.property.method">method</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.property.origin">origin</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.property.responseHeader">response_header</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.storageBucket.StorageBucketCors">StorageBucketCors</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-google.storageBucket.StorageBucketCorsOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -4662,7 +4662,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google.storageBucket.StorageBucketCorsOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -4672,7 +4672,7 @@ fqn: str
 
 ---
 
-##### `max_age_seconds_input`<sup>Optional</sup> <a name="max_age_seconds_input" id="@cdktf/provider-google.storageBucket.StorageBucketCorsOutputReference.property.maxAgeSecondsInput"></a>
+##### `max_age_seconds_input`<sup>Optional</sup> <a name="max_age_seconds_input" id="@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.property.maxAgeSecondsInput"></a>
 
 ```python
 max_age_seconds_input: typing.Union[int, float]
@@ -4682,7 +4682,7 @@ max_age_seconds_input: typing.Union[int, float]
 
 ---
 
-##### `method_input`<sup>Optional</sup> <a name="method_input" id="@cdktf/provider-google.storageBucket.StorageBucketCorsOutputReference.property.methodInput"></a>
+##### `method_input`<sup>Optional</sup> <a name="method_input" id="@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.property.methodInput"></a>
 
 ```python
 method_input: typing.List[str]
@@ -4692,7 +4692,7 @@ method_input: typing.List[str]
 
 ---
 
-##### `origin_input`<sup>Optional</sup> <a name="origin_input" id="@cdktf/provider-google.storageBucket.StorageBucketCorsOutputReference.property.originInput"></a>
+##### `origin_input`<sup>Optional</sup> <a name="origin_input" id="@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.property.originInput"></a>
 
 ```python
 origin_input: typing.List[str]
@@ -4702,7 +4702,7 @@ origin_input: typing.List[str]
 
 ---
 
-##### `response_header_input`<sup>Optional</sup> <a name="response_header_input" id="@cdktf/provider-google.storageBucket.StorageBucketCorsOutputReference.property.responseHeaderInput"></a>
+##### `response_header_input`<sup>Optional</sup> <a name="response_header_input" id="@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.property.responseHeaderInput"></a>
 
 ```python
 response_header_input: typing.List[str]
@@ -4712,7 +4712,7 @@ response_header_input: typing.List[str]
 
 ---
 
-##### `max_age_seconds`<sup>Required</sup> <a name="max_age_seconds" id="@cdktf/provider-google.storageBucket.StorageBucketCorsOutputReference.property.maxAgeSeconds"></a>
+##### `max_age_seconds`<sup>Required</sup> <a name="max_age_seconds" id="@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.property.maxAgeSeconds"></a>
 
 ```python
 max_age_seconds: typing.Union[int, float]
@@ -4722,7 +4722,7 @@ max_age_seconds: typing.Union[int, float]
 
 ---
 
-##### `method`<sup>Required</sup> <a name="method" id="@cdktf/provider-google.storageBucket.StorageBucketCorsOutputReference.property.method"></a>
+##### `method`<sup>Required</sup> <a name="method" id="@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.property.method"></a>
 
 ```python
 method: typing.List[str]
@@ -4732,7 +4732,7 @@ method: typing.List[str]
 
 ---
 
-##### `origin`<sup>Required</sup> <a name="origin" id="@cdktf/provider-google.storageBucket.StorageBucketCorsOutputReference.property.origin"></a>
+##### `origin`<sup>Required</sup> <a name="origin" id="@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.property.origin"></a>
 
 ```python
 origin: typing.List[str]
@@ -4742,7 +4742,7 @@ origin: typing.List[str]
 
 ---
 
-##### `response_header`<sup>Required</sup> <a name="response_header" id="@cdktf/provider-google.storageBucket.StorageBucketCorsOutputReference.property.responseHeader"></a>
+##### `response_header`<sup>Required</sup> <a name="response_header" id="@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.property.responseHeader"></a>
 
 ```python
 response_header: typing.List[str]
@@ -4752,23 +4752,23 @@ response_header: typing.List[str]
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-google.storageBucket.StorageBucketCorsOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | StorageBucketCors
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-google.storageBucket.StorageBucketCors">StorageBucketCors</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.storageBucket.StorageBucketCors">StorageBucketCors</a>
 
 ---
 
 
-### StorageBucketCustomPlacementConfigOutputReference <a name="StorageBucketCustomPlacementConfigOutputReference" id="@cdktf/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference"></a>
+### StorageBucketCustomPlacementConfigOutputReference <a name="StorageBucketCustomPlacementConfigOutputReference" id="@cdktn/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import storage_bucket
+from cdktn_provider_google import storage_bucket
 
 storageBucket.StorageBucketCustomPlacementConfigOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -4778,12 +4778,12 @@ storageBucket.StorageBucketCustomPlacementConfigOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -4791,7 +4791,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -4803,29 +4803,29 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -4833,13 +4833,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -4847,13 +4847,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -4861,13 +4861,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -4875,13 +4875,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -4889,13 +4889,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -4903,13 +4903,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -4917,13 +4917,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -4931,13 +4931,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -4945,13 +4945,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -4959,13 +4959,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -4975,13 +4975,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -4996,15 +4996,15 @@ Returns a reversible string representation.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.property.dataLocationsInput">data_locations_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.property.dataLocations">data_locations</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketCustomPlacementConfig">StorageBucketCustomPlacementConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.property.dataLocationsInput">data_locations_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.property.dataLocations">data_locations</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCustomPlacementConfig">StorageBucketCustomPlacementConfig</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -5018,7 +5018,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -5028,7 +5028,7 @@ fqn: str
 
 ---
 
-##### `data_locations_input`<sup>Optional</sup> <a name="data_locations_input" id="@cdktf/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.property.dataLocationsInput"></a>
+##### `data_locations_input`<sup>Optional</sup> <a name="data_locations_input" id="@cdktn/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.property.dataLocationsInput"></a>
 
 ```python
 data_locations_input: typing.List[str]
@@ -5038,7 +5038,7 @@ data_locations_input: typing.List[str]
 
 ---
 
-##### `data_locations`<sup>Required</sup> <a name="data_locations" id="@cdktf/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.property.dataLocations"></a>
+##### `data_locations`<sup>Required</sup> <a name="data_locations" id="@cdktn/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.property.dataLocations"></a>
 
 ```python
 data_locations: typing.List[str]
@@ -5048,23 +5048,23 @@ data_locations: typing.List[str]
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: StorageBucketCustomPlacementConfig
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.storageBucket.StorageBucketCustomPlacementConfig">StorageBucketCustomPlacementConfig</a>
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketCustomPlacementConfig">StorageBucketCustomPlacementConfig</a>
 
 ---
 
 
-### StorageBucketEncryptionOutputReference <a name="StorageBucketEncryptionOutputReference" id="@cdktf/provider-google.storageBucket.StorageBucketEncryptionOutputReference"></a>
+### StorageBucketEncryptionOutputReference <a name="StorageBucketEncryptionOutputReference" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.storageBucket.StorageBucketEncryptionOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import storage_bucket
+from cdktn_provider_google import storage_bucket
 
 storageBucket.StorageBucketEncryptionOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -5074,12 +5074,12 @@ storageBucket.StorageBucketEncryptionOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketEncryptionOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketEncryptionOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-google.storageBucket.StorageBucketEncryptionOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -5087,7 +5087,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketEncryptionOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -5099,29 +5099,29 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketEncryptionOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketEncryptionOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketEncryptionOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketEncryptionOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketEncryptionOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketEncryptionOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketEncryptionOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketEncryptionOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketEncryptionOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketEncryptionOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketEncryptionOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketEncryptionOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketEncryptionOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-google.storageBucket.StorageBucketEncryptionOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketEncryptionOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -5129,13 +5129,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketEncryptionOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketEncryptionOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -5143,13 +5143,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketEncryptionOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketEncryptionOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -5157,13 +5157,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketEncryptionOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketEncryptionOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -5171,13 +5171,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketEncryptionOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketEncryptionOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -5185,13 +5185,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketEncryptionOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketEncryptionOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -5199,13 +5199,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketEncryptionOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketEncryptionOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -5213,13 +5213,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketEncryptionOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketEncryptionOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -5227,13 +5227,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketEncryptionOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketEncryptionOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -5241,13 +5241,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketEncryptionOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketEncryptionOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -5255,13 +5255,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google.storageBucket.StorageBucketEncryptionOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-google.storageBucket.StorageBucketEncryptionOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -5271,13 +5271,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google.storageBucket.StorageBucketEncryptionOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-google.storageBucket.StorageBucketEncryptionOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -5292,15 +5292,15 @@ Returns a reversible string representation.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketEncryptionOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketEncryptionOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketEncryptionOutputReference.property.defaultKmsKeyNameInput">default_kms_key_name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketEncryptionOutputReference.property.defaultKmsKeyName">default_kms_key_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketEncryptionOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketEncryption">StorageBucketEncryption</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.property.defaultKmsKeyNameInput">default_kms_key_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.property.defaultKmsKeyName">default_kms_key_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryption">StorageBucketEncryption</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-google.storageBucket.StorageBucketEncryptionOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -5314,7 +5314,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google.storageBucket.StorageBucketEncryptionOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -5324,7 +5324,7 @@ fqn: str
 
 ---
 
-##### `default_kms_key_name_input`<sup>Optional</sup> <a name="default_kms_key_name_input" id="@cdktf/provider-google.storageBucket.StorageBucketEncryptionOutputReference.property.defaultKmsKeyNameInput"></a>
+##### `default_kms_key_name_input`<sup>Optional</sup> <a name="default_kms_key_name_input" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.property.defaultKmsKeyNameInput"></a>
 
 ```python
 default_kms_key_name_input: str
@@ -5334,7 +5334,7 @@ default_kms_key_name_input: str
 
 ---
 
-##### `default_kms_key_name`<sup>Required</sup> <a name="default_kms_key_name" id="@cdktf/provider-google.storageBucket.StorageBucketEncryptionOutputReference.property.defaultKmsKeyName"></a>
+##### `default_kms_key_name`<sup>Required</sup> <a name="default_kms_key_name" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.property.defaultKmsKeyName"></a>
 
 ```python
 default_kms_key_name: str
@@ -5344,23 +5344,23 @@ default_kms_key_name: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-google.storageBucket.StorageBucketEncryptionOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: StorageBucketEncryption
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.storageBucket.StorageBucketEncryption">StorageBucketEncryption</a>
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryption">StorageBucketEncryption</a>
 
 ---
 
 
-### StorageBucketHierarchicalNamespaceOutputReference <a name="StorageBucketHierarchicalNamespaceOutputReference" id="@cdktf/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference"></a>
+### StorageBucketHierarchicalNamespaceOutputReference <a name="StorageBucketHierarchicalNamespaceOutputReference" id="@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import storage_bucket
+from cdktn_provider_google import storage_bucket
 
 storageBucket.StorageBucketHierarchicalNamespaceOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -5370,12 +5370,12 @@ storageBucket.StorageBucketHierarchicalNamespaceOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -5383,7 +5383,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -5395,29 +5395,29 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -5425,13 +5425,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -5439,13 +5439,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -5453,13 +5453,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -5467,13 +5467,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -5481,13 +5481,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -5495,13 +5495,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -5509,13 +5509,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -5523,13 +5523,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -5537,13 +5537,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -5551,13 +5551,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -5567,13 +5567,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -5588,15 +5588,15 @@ Returns a reversible string representation.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.property.enabledInput">enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketHierarchicalNamespace">StorageBucketHierarchicalNamespace</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.property.enabledInput">enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespace">StorageBucketHierarchicalNamespace</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -5610,7 +5610,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -5620,7 +5620,7 @@ fqn: str
 
 ---
 
-##### `enabled_input`<sup>Optional</sup> <a name="enabled_input" id="@cdktf/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.property.enabledInput"></a>
+##### `enabled_input`<sup>Optional</sup> <a name="enabled_input" id="@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.property.enabledInput"></a>
 
 ```python
 enabled_input: bool | IResolvable
@@ -5630,7 +5630,7 @@ enabled_input: bool | IResolvable
 
 ---
 
-##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.property.enabled"></a>
+##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.property.enabled"></a>
 
 ```python
 enabled: bool | IResolvable
@@ -5640,23 +5640,23 @@ enabled: bool | IResolvable
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: StorageBucketHierarchicalNamespace
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.storageBucket.StorageBucketHierarchicalNamespace">StorageBucketHierarchicalNamespace</a>
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespace">StorageBucketHierarchicalNamespace</a>
 
 ---
 
 
-### StorageBucketIpFilterOutputReference <a name="StorageBucketIpFilterOutputReference" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference"></a>
+### StorageBucketIpFilterOutputReference <a name="StorageBucketIpFilterOutputReference" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import storage_bucket
+from cdktn_provider_google import storage_bucket
 
 storageBucket.StorageBucketIpFilterOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -5666,12 +5666,12 @@ storageBucket.StorageBucketIpFilterOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -5679,7 +5679,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -5691,35 +5691,35 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.putPublicNetworkSource">put_public_network_source</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.putVpcNetworkSources">put_vpc_network_sources</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.resetAllowAllServiceAgentAccess">reset_allow_all_service_agent_access</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.resetAllowCrossOrgVpcs">reset_allow_cross_org_vpcs</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.resetPublicNetworkSource">reset_public_network_source</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.resetVpcNetworkSources">reset_vpc_network_sources</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.putPublicNetworkSource">put_public_network_source</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.putVpcNetworkSources">put_vpc_network_sources</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.resetAllowAllServiceAgentAccess">reset_allow_all_service_agent_access</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.resetAllowCrossOrgVpcs">reset_allow_cross_org_vpcs</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.resetPublicNetworkSource">reset_public_network_source</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.resetVpcNetworkSources">reset_vpc_network_sources</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -5727,13 +5727,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -5741,13 +5741,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -5755,13 +5755,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -5769,13 +5769,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -5783,13 +5783,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -5797,13 +5797,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -5811,13 +5811,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -5825,13 +5825,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -5839,13 +5839,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -5853,13 +5853,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -5869,13 +5869,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -5885,7 +5885,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `put_public_network_source` <a name="put_public_network_source" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.putPublicNetworkSource"></a>
+##### `put_public_network_source` <a name="put_public_network_source" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.putPublicNetworkSource"></a>
 
 ```python
 def put_public_network_source(
@@ -5893,7 +5893,7 @@ def put_public_network_source(
 ) -> None
 ```
 
-###### `allowed_ip_cidr_ranges`<sup>Required</sup> <a name="allowed_ip_cidr_ranges" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.putPublicNetworkSource.parameter.allowedIpCidrRanges"></a>
+###### `allowed_ip_cidr_ranges`<sup>Required</sup> <a name="allowed_ip_cidr_ranges" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.putPublicNetworkSource.parameter.allowedIpCidrRanges"></a>
 
 - *Type:* typing.List[str]
 
@@ -5903,7 +5903,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `put_vpc_network_sources` <a name="put_vpc_network_sources" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.putVpcNetworkSources"></a>
+##### `put_vpc_network_sources` <a name="put_vpc_network_sources" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.putVpcNetworkSources"></a>
 
 ```python
 def put_vpc_network_sources(
@@ -5911,31 +5911,31 @@ def put_vpc_network_sources(
 ) -> None
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.putVpcNetworkSources.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.putVpcNetworkSources.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSources">StorageBucketIpFilterVpcNetworkSources</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSources">StorageBucketIpFilterVpcNetworkSources</a>]
 
 ---
 
-##### `reset_allow_all_service_agent_access` <a name="reset_allow_all_service_agent_access" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.resetAllowAllServiceAgentAccess"></a>
+##### `reset_allow_all_service_agent_access` <a name="reset_allow_all_service_agent_access" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.resetAllowAllServiceAgentAccess"></a>
 
 ```python
 def reset_allow_all_service_agent_access() -> None
 ```
 
-##### `reset_allow_cross_org_vpcs` <a name="reset_allow_cross_org_vpcs" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.resetAllowCrossOrgVpcs"></a>
+##### `reset_allow_cross_org_vpcs` <a name="reset_allow_cross_org_vpcs" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.resetAllowCrossOrgVpcs"></a>
 
 ```python
 def reset_allow_cross_org_vpcs() -> None
 ```
 
-##### `reset_public_network_source` <a name="reset_public_network_source" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.resetPublicNetworkSource"></a>
+##### `reset_public_network_source` <a name="reset_public_network_source" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.resetPublicNetworkSource"></a>
 
 ```python
 def reset_public_network_source() -> None
 ```
 
-##### `reset_vpc_network_sources` <a name="reset_vpc_network_sources" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.resetVpcNetworkSources"></a>
+##### `reset_vpc_network_sources` <a name="reset_vpc_network_sources" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.resetVpcNetworkSources"></a>
 
 ```python
 def reset_vpc_network_sources() -> None
@@ -5946,23 +5946,23 @@ def reset_vpc_network_sources() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.property.publicNetworkSource">public_network_source</a></code> | <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference">StorageBucketIpFilterPublicNetworkSourceOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.property.vpcNetworkSources">vpc_network_sources</a></code> | <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesList">StorageBucketIpFilterVpcNetworkSourcesList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.property.allowAllServiceAgentAccessInput">allow_all_service_agent_access_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.property.allowCrossOrgVpcsInput">allow_cross_org_vpcs_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.property.modeInput">mode_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.property.publicNetworkSourceInput">public_network_source_input</a></code> | <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSource">StorageBucketIpFilterPublicNetworkSource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.property.vpcNetworkSourcesInput">vpc_network_sources_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSources">StorageBucketIpFilterVpcNetworkSources</a>]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.property.allowAllServiceAgentAccess">allow_all_service_agent_access</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.property.allowCrossOrgVpcs">allow_cross_org_vpcs</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.property.mode">mode</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilter">StorageBucketIpFilter</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.property.publicNetworkSource">public_network_source</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference">StorageBucketIpFilterPublicNetworkSourceOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.property.vpcNetworkSources">vpc_network_sources</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesList">StorageBucketIpFilterVpcNetworkSourcesList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.property.allowAllServiceAgentAccessInput">allow_all_service_agent_access_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.property.allowCrossOrgVpcsInput">allow_cross_org_vpcs_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.property.modeInput">mode_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.property.publicNetworkSourceInput">public_network_source_input</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSource">StorageBucketIpFilterPublicNetworkSource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.property.vpcNetworkSourcesInput">vpc_network_sources_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSources">StorageBucketIpFilterVpcNetworkSources</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.property.allowAllServiceAgentAccess">allow_all_service_agent_access</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.property.allowCrossOrgVpcs">allow_cross_org_vpcs</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.property.mode">mode</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilter">StorageBucketIpFilter</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -5976,7 +5976,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -5986,27 +5986,27 @@ fqn: str
 
 ---
 
-##### `public_network_source`<sup>Required</sup> <a name="public_network_source" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.property.publicNetworkSource"></a>
+##### `public_network_source`<sup>Required</sup> <a name="public_network_source" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.property.publicNetworkSource"></a>
 
 ```python
 public_network_source: StorageBucketIpFilterPublicNetworkSourceOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference">StorageBucketIpFilterPublicNetworkSourceOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference">StorageBucketIpFilterPublicNetworkSourceOutputReference</a>
 
 ---
 
-##### `vpc_network_sources`<sup>Required</sup> <a name="vpc_network_sources" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.property.vpcNetworkSources"></a>
+##### `vpc_network_sources`<sup>Required</sup> <a name="vpc_network_sources" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.property.vpcNetworkSources"></a>
 
 ```python
 vpc_network_sources: StorageBucketIpFilterVpcNetworkSourcesList
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesList">StorageBucketIpFilterVpcNetworkSourcesList</a>
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesList">StorageBucketIpFilterVpcNetworkSourcesList</a>
 
 ---
 
-##### `allow_all_service_agent_access_input`<sup>Optional</sup> <a name="allow_all_service_agent_access_input" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.property.allowAllServiceAgentAccessInput"></a>
+##### `allow_all_service_agent_access_input`<sup>Optional</sup> <a name="allow_all_service_agent_access_input" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.property.allowAllServiceAgentAccessInput"></a>
 
 ```python
 allow_all_service_agent_access_input: bool | IResolvable
@@ -6016,7 +6016,7 @@ allow_all_service_agent_access_input: bool | IResolvable
 
 ---
 
-##### `allow_cross_org_vpcs_input`<sup>Optional</sup> <a name="allow_cross_org_vpcs_input" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.property.allowCrossOrgVpcsInput"></a>
+##### `allow_cross_org_vpcs_input`<sup>Optional</sup> <a name="allow_cross_org_vpcs_input" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.property.allowCrossOrgVpcsInput"></a>
 
 ```python
 allow_cross_org_vpcs_input: bool | IResolvable
@@ -6026,7 +6026,7 @@ allow_cross_org_vpcs_input: bool | IResolvable
 
 ---
 
-##### `mode_input`<sup>Optional</sup> <a name="mode_input" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.property.modeInput"></a>
+##### `mode_input`<sup>Optional</sup> <a name="mode_input" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.property.modeInput"></a>
 
 ```python
 mode_input: str
@@ -6036,27 +6036,27 @@ mode_input: str
 
 ---
 
-##### `public_network_source_input`<sup>Optional</sup> <a name="public_network_source_input" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.property.publicNetworkSourceInput"></a>
+##### `public_network_source_input`<sup>Optional</sup> <a name="public_network_source_input" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.property.publicNetworkSourceInput"></a>
 
 ```python
 public_network_source_input: StorageBucketIpFilterPublicNetworkSource
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSource">StorageBucketIpFilterPublicNetworkSource</a>
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSource">StorageBucketIpFilterPublicNetworkSource</a>
 
 ---
 
-##### `vpc_network_sources_input`<sup>Optional</sup> <a name="vpc_network_sources_input" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.property.vpcNetworkSourcesInput"></a>
+##### `vpc_network_sources_input`<sup>Optional</sup> <a name="vpc_network_sources_input" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.property.vpcNetworkSourcesInput"></a>
 
 ```python
 vpc_network_sources_input: IResolvable | typing.List[StorageBucketIpFilterVpcNetworkSources]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSources">StorageBucketIpFilterVpcNetworkSources</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSources">StorageBucketIpFilterVpcNetworkSources</a>]
 
 ---
 
-##### `allow_all_service_agent_access`<sup>Required</sup> <a name="allow_all_service_agent_access" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.property.allowAllServiceAgentAccess"></a>
+##### `allow_all_service_agent_access`<sup>Required</sup> <a name="allow_all_service_agent_access" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.property.allowAllServiceAgentAccess"></a>
 
 ```python
 allow_all_service_agent_access: bool | IResolvable
@@ -6066,7 +6066,7 @@ allow_all_service_agent_access: bool | IResolvable
 
 ---
 
-##### `allow_cross_org_vpcs`<sup>Required</sup> <a name="allow_cross_org_vpcs" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.property.allowCrossOrgVpcs"></a>
+##### `allow_cross_org_vpcs`<sup>Required</sup> <a name="allow_cross_org_vpcs" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.property.allowCrossOrgVpcs"></a>
 
 ```python
 allow_cross_org_vpcs: bool | IResolvable
@@ -6076,7 +6076,7 @@ allow_cross_org_vpcs: bool | IResolvable
 
 ---
 
-##### `mode`<sup>Required</sup> <a name="mode" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.property.mode"></a>
+##### `mode`<sup>Required</sup> <a name="mode" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.property.mode"></a>
 
 ```python
 mode: str
@@ -6086,23 +6086,23 @@ mode: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: StorageBucketIpFilter
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilter">StorageBucketIpFilter</a>
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilter">StorageBucketIpFilter</a>
 
 ---
 
 
-### StorageBucketIpFilterPublicNetworkSourceOutputReference <a name="StorageBucketIpFilterPublicNetworkSourceOutputReference" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference"></a>
+### StorageBucketIpFilterPublicNetworkSourceOutputReference <a name="StorageBucketIpFilterPublicNetworkSourceOutputReference" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import storage_bucket
+from cdktn_provider_google import storage_bucket
 
 storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -6112,12 +6112,12 @@ storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -6125,7 +6125,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -6137,29 +6137,29 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -6167,13 +6167,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -6181,13 +6181,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -6195,13 +6195,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -6209,13 +6209,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -6223,13 +6223,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -6237,13 +6237,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -6251,13 +6251,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -6265,13 +6265,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -6279,13 +6279,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -6293,13 +6293,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -6309,13 +6309,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -6330,15 +6330,15 @@ Returns a reversible string representation.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.property.allowedIpCidrRangesInput">allowed_ip_cidr_ranges_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.property.allowedIpCidrRanges">allowed_ip_cidr_ranges</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSource">StorageBucketIpFilterPublicNetworkSource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.property.allowedIpCidrRangesInput">allowed_ip_cidr_ranges_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.property.allowedIpCidrRanges">allowed_ip_cidr_ranges</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSource">StorageBucketIpFilterPublicNetworkSource</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -6352,7 +6352,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -6362,7 +6362,7 @@ fqn: str
 
 ---
 
-##### `allowed_ip_cidr_ranges_input`<sup>Optional</sup> <a name="allowed_ip_cidr_ranges_input" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.property.allowedIpCidrRangesInput"></a>
+##### `allowed_ip_cidr_ranges_input`<sup>Optional</sup> <a name="allowed_ip_cidr_ranges_input" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.property.allowedIpCidrRangesInput"></a>
 
 ```python
 allowed_ip_cidr_ranges_input: typing.List[str]
@@ -6372,7 +6372,7 @@ allowed_ip_cidr_ranges_input: typing.List[str]
 
 ---
 
-##### `allowed_ip_cidr_ranges`<sup>Required</sup> <a name="allowed_ip_cidr_ranges" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.property.allowedIpCidrRanges"></a>
+##### `allowed_ip_cidr_ranges`<sup>Required</sup> <a name="allowed_ip_cidr_ranges" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.property.allowedIpCidrRanges"></a>
 
 ```python
 allowed_ip_cidr_ranges: typing.List[str]
@@ -6382,23 +6382,23 @@ allowed_ip_cidr_ranges: typing.List[str]
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: StorageBucketIpFilterPublicNetworkSource
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSource">StorageBucketIpFilterPublicNetworkSource</a>
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSource">StorageBucketIpFilterPublicNetworkSource</a>
 
 ---
 
 
-### StorageBucketIpFilterVpcNetworkSourcesList <a name="StorageBucketIpFilterVpcNetworkSourcesList" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesList"></a>
+### StorageBucketIpFilterVpcNetworkSourcesList <a name="StorageBucketIpFilterVpcNetworkSourcesList" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesList.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import storage_bucket
+from cdktn_provider_google import storage_bucket
 
 storageBucket.StorageBucketIpFilterVpcNetworkSourcesList(
   terraform_resource: IInterpolatingParent,
@@ -6409,13 +6409,13 @@ storageBucket.StorageBucketIpFilterVpcNetworkSourcesList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesList.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -6423,7 +6423,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesList.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -6431,7 +6431,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesList.Initializer.parameter.wrapsSet"></a>
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* bool
 
@@ -6443,15 +6443,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesList.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesList.get">get</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `all_with_map_key` <a name="all_with_map_key" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesList.allWithMapKey"></a>
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesList.allWithMapKey"></a>
 
 ```python
 def all_with_map_key(
@@ -6463,19 +6463,19 @@ Creating an iterator for this complex list.
 
 The list will be converted into a map with the mapKeyAttributeName as the key.
 
-###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
 
 - *Type:* str
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesList.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesList.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesList.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesList.resolve"></a>
 
 ```python
 def resolve(
@@ -6485,13 +6485,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesList.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesList.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesList.toString"></a>
 
 ```python
 def to_string() -> str
@@ -6501,7 +6501,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `get` <a name="get" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesList.get"></a>
+##### `get` <a name="get" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesList.get"></a>
 
 ```python
 def get(
@@ -6509,7 +6509,7 @@ def get(
 ) -> StorageBucketIpFilterVpcNetworkSourcesOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesList.get.parameter.index"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -6522,13 +6522,13 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSources">StorageBucketIpFilterVpcNetworkSources</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSources">StorageBucketIpFilterVpcNetworkSources</a>]</code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesList.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesList.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -6542,7 +6542,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesList.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesList.property.fqn"></a>
 
 ```python
 fqn: str
@@ -6552,23 +6552,23 @@ fqn: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesList.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesList.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | typing.List[StorageBucketIpFilterVpcNetworkSources]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSources">StorageBucketIpFilterVpcNetworkSources</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSources">StorageBucketIpFilterVpcNetworkSources</a>]
 
 ---
 
 
-### StorageBucketIpFilterVpcNetworkSourcesOutputReference <a name="StorageBucketIpFilterVpcNetworkSourcesOutputReference" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference"></a>
+### StorageBucketIpFilterVpcNetworkSourcesOutputReference <a name="StorageBucketIpFilterVpcNetworkSourcesOutputReference" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import storage_bucket
+from cdktn_provider_google import storage_bucket
 
 storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -6580,14 +6580,14 @@ storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -6595,7 +6595,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -6603,7 +6603,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -6611,7 +6611,7 @@ the index of this item in the list.
 
 ---
 
-##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* bool
 
@@ -6623,29 +6623,29 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -6653,13 +6653,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -6667,13 +6667,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -6681,13 +6681,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -6695,13 +6695,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -6709,13 +6709,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -6723,13 +6723,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -6737,13 +6737,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -6751,13 +6751,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -6765,13 +6765,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -6779,13 +6779,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -6795,13 +6795,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -6816,17 +6816,17 @@ Returns a reversible string representation.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.property.allowedIpCidrRangesInput">allowed_ip_cidr_ranges_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.property.networkInput">network_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.property.allowedIpCidrRanges">allowed_ip_cidr_ranges</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.property.network">network</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSources">StorageBucketIpFilterVpcNetworkSources</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.property.allowedIpCidrRangesInput">allowed_ip_cidr_ranges_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.property.networkInput">network_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.property.allowedIpCidrRanges">allowed_ip_cidr_ranges</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.property.network">network</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSources">StorageBucketIpFilterVpcNetworkSources</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -6840,7 +6840,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -6850,7 +6850,7 @@ fqn: str
 
 ---
 
-##### `allowed_ip_cidr_ranges_input`<sup>Optional</sup> <a name="allowed_ip_cidr_ranges_input" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.property.allowedIpCidrRangesInput"></a>
+##### `allowed_ip_cidr_ranges_input`<sup>Optional</sup> <a name="allowed_ip_cidr_ranges_input" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.property.allowedIpCidrRangesInput"></a>
 
 ```python
 allowed_ip_cidr_ranges_input: typing.List[str]
@@ -6860,7 +6860,7 @@ allowed_ip_cidr_ranges_input: typing.List[str]
 
 ---
 
-##### `network_input`<sup>Optional</sup> <a name="network_input" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.property.networkInput"></a>
+##### `network_input`<sup>Optional</sup> <a name="network_input" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.property.networkInput"></a>
 
 ```python
 network_input: str
@@ -6870,7 +6870,7 @@ network_input: str
 
 ---
 
-##### `allowed_ip_cidr_ranges`<sup>Required</sup> <a name="allowed_ip_cidr_ranges" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.property.allowedIpCidrRanges"></a>
+##### `allowed_ip_cidr_ranges`<sup>Required</sup> <a name="allowed_ip_cidr_ranges" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.property.allowedIpCidrRanges"></a>
 
 ```python
 allowed_ip_cidr_ranges: typing.List[str]
@@ -6880,7 +6880,7 @@ allowed_ip_cidr_ranges: typing.List[str]
 
 ---
 
-##### `network`<sup>Required</sup> <a name="network" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.property.network"></a>
+##### `network`<sup>Required</sup> <a name="network" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.property.network"></a>
 
 ```python
 network: str
@@ -6890,23 +6890,23 @@ network: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | StorageBucketIpFilterVpcNetworkSources
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSources">StorageBucketIpFilterVpcNetworkSources</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSources">StorageBucketIpFilterVpcNetworkSources</a>
 
 ---
 
 
-### StorageBucketLifecycleRuleActionOutputReference <a name="StorageBucketLifecycleRuleActionOutputReference" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference"></a>
+### StorageBucketLifecycleRuleActionOutputReference <a name="StorageBucketLifecycleRuleActionOutputReference" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import storage_bucket
+from cdktn_provider_google import storage_bucket
 
 storageBucket.StorageBucketLifecycleRuleActionOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -6916,12 +6916,12 @@ storageBucket.StorageBucketLifecycleRuleActionOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -6929,7 +6929,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -6941,30 +6941,30 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.resetStorageClass">reset_storage_class</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.resetStorageClass">reset_storage_class</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -6972,13 +6972,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -6986,13 +6986,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -7000,13 +7000,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -7014,13 +7014,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -7028,13 +7028,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -7042,13 +7042,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -7056,13 +7056,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -7070,13 +7070,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -7084,13 +7084,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -7098,13 +7098,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -7114,13 +7114,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -7130,7 +7130,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_storage_class` <a name="reset_storage_class" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.resetStorageClass"></a>
+##### `reset_storage_class` <a name="reset_storage_class" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.resetStorageClass"></a>
 
 ```python
 def reset_storage_class() -> None
@@ -7141,17 +7141,17 @@ def reset_storage_class() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.property.storageClassInput">storage_class_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.property.storageClass">storage_class</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleAction">StorageBucketLifecycleRuleAction</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.property.storageClassInput">storage_class_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.property.storageClass">storage_class</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleAction">StorageBucketLifecycleRuleAction</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -7165,7 +7165,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -7175,7 +7175,7 @@ fqn: str
 
 ---
 
-##### `storage_class_input`<sup>Optional</sup> <a name="storage_class_input" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.property.storageClassInput"></a>
+##### `storage_class_input`<sup>Optional</sup> <a name="storage_class_input" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.property.storageClassInput"></a>
 
 ```python
 storage_class_input: str
@@ -7185,7 +7185,7 @@ storage_class_input: str
 
 ---
 
-##### `type_input`<sup>Optional</sup> <a name="type_input" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.property.typeInput"></a>
+##### `type_input`<sup>Optional</sup> <a name="type_input" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.property.typeInput"></a>
 
 ```python
 type_input: str
@@ -7195,7 +7195,7 @@ type_input: str
 
 ---
 
-##### `storage_class`<sup>Required</sup> <a name="storage_class" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.property.storageClass"></a>
+##### `storage_class`<sup>Required</sup> <a name="storage_class" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.property.storageClass"></a>
 
 ```python
 storage_class: str
@@ -7205,7 +7205,7 @@ storage_class: str
 
 ---
 
-##### `type`<sup>Required</sup> <a name="type" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.property.type"></a>
+##### `type`<sup>Required</sup> <a name="type" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.property.type"></a>
 
 ```python
 type: str
@@ -7215,23 +7215,23 @@ type: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: StorageBucketLifecycleRuleAction
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleAction">StorageBucketLifecycleRuleAction</a>
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleAction">StorageBucketLifecycleRuleAction</a>
 
 ---
 
 
-### StorageBucketLifecycleRuleConditionOutputReference <a name="StorageBucketLifecycleRuleConditionOutputReference" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference"></a>
+### StorageBucketLifecycleRuleConditionOutputReference <a name="StorageBucketLifecycleRuleConditionOutputReference" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import storage_bucket
+from cdktn_provider_google import storage_bucket
 
 storageBucket.StorageBucketLifecycleRuleConditionOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -7241,12 +7241,12 @@ storageBucket.StorageBucketLifecycleRuleConditionOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -7254,7 +7254,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -7266,44 +7266,44 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.resetAge">reset_age</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.resetCreatedBefore">reset_created_before</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.resetCustomTimeBefore">reset_custom_time_before</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.resetDaysSinceCustomTime">reset_days_since_custom_time</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.resetDaysSinceNoncurrentTime">reset_days_since_noncurrent_time</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.resetMatchesPrefix">reset_matches_prefix</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.resetMatchesStorageClass">reset_matches_storage_class</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.resetMatchesSuffix">reset_matches_suffix</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.resetNoncurrentTimeBefore">reset_noncurrent_time_before</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.resetNumNewerVersions">reset_num_newer_versions</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.resetSendAgeIfZero">reset_send_age_if_zero</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.resetSendDaysSinceCustomTimeIfZero">reset_send_days_since_custom_time_if_zero</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.resetSendDaysSinceNoncurrentTimeIfZero">reset_send_days_since_noncurrent_time_if_zero</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.resetSendNumNewerVersionsIfZero">reset_send_num_newer_versions_if_zero</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.resetWithState">reset_with_state</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.resetAge">reset_age</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.resetCreatedBefore">reset_created_before</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.resetCustomTimeBefore">reset_custom_time_before</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.resetDaysSinceCustomTime">reset_days_since_custom_time</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.resetDaysSinceNoncurrentTime">reset_days_since_noncurrent_time</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.resetMatchesPrefix">reset_matches_prefix</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.resetMatchesStorageClass">reset_matches_storage_class</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.resetMatchesSuffix">reset_matches_suffix</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.resetNoncurrentTimeBefore">reset_noncurrent_time_before</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.resetNumNewerVersions">reset_num_newer_versions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.resetSendAgeIfZero">reset_send_age_if_zero</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.resetSendDaysSinceCustomTimeIfZero">reset_send_days_since_custom_time_if_zero</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.resetSendDaysSinceNoncurrentTimeIfZero">reset_send_days_since_noncurrent_time_if_zero</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.resetSendNumNewerVersionsIfZero">reset_send_num_newer_versions_if_zero</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.resetWithState">reset_with_state</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -7311,13 +7311,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -7325,13 +7325,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -7339,13 +7339,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -7353,13 +7353,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -7367,13 +7367,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -7381,13 +7381,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -7395,13 +7395,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -7409,13 +7409,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -7423,13 +7423,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -7437,13 +7437,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -7453,13 +7453,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -7469,91 +7469,91 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_age` <a name="reset_age" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.resetAge"></a>
+##### `reset_age` <a name="reset_age" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.resetAge"></a>
 
 ```python
 def reset_age() -> None
 ```
 
-##### `reset_created_before` <a name="reset_created_before" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.resetCreatedBefore"></a>
+##### `reset_created_before` <a name="reset_created_before" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.resetCreatedBefore"></a>
 
 ```python
 def reset_created_before() -> None
 ```
 
-##### `reset_custom_time_before` <a name="reset_custom_time_before" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.resetCustomTimeBefore"></a>
+##### `reset_custom_time_before` <a name="reset_custom_time_before" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.resetCustomTimeBefore"></a>
 
 ```python
 def reset_custom_time_before() -> None
 ```
 
-##### `reset_days_since_custom_time` <a name="reset_days_since_custom_time" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.resetDaysSinceCustomTime"></a>
+##### `reset_days_since_custom_time` <a name="reset_days_since_custom_time" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.resetDaysSinceCustomTime"></a>
 
 ```python
 def reset_days_since_custom_time() -> None
 ```
 
-##### `reset_days_since_noncurrent_time` <a name="reset_days_since_noncurrent_time" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.resetDaysSinceNoncurrentTime"></a>
+##### `reset_days_since_noncurrent_time` <a name="reset_days_since_noncurrent_time" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.resetDaysSinceNoncurrentTime"></a>
 
 ```python
 def reset_days_since_noncurrent_time() -> None
 ```
 
-##### `reset_matches_prefix` <a name="reset_matches_prefix" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.resetMatchesPrefix"></a>
+##### `reset_matches_prefix` <a name="reset_matches_prefix" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.resetMatchesPrefix"></a>
 
 ```python
 def reset_matches_prefix() -> None
 ```
 
-##### `reset_matches_storage_class` <a name="reset_matches_storage_class" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.resetMatchesStorageClass"></a>
+##### `reset_matches_storage_class` <a name="reset_matches_storage_class" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.resetMatchesStorageClass"></a>
 
 ```python
 def reset_matches_storage_class() -> None
 ```
 
-##### `reset_matches_suffix` <a name="reset_matches_suffix" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.resetMatchesSuffix"></a>
+##### `reset_matches_suffix` <a name="reset_matches_suffix" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.resetMatchesSuffix"></a>
 
 ```python
 def reset_matches_suffix() -> None
 ```
 
-##### `reset_noncurrent_time_before` <a name="reset_noncurrent_time_before" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.resetNoncurrentTimeBefore"></a>
+##### `reset_noncurrent_time_before` <a name="reset_noncurrent_time_before" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.resetNoncurrentTimeBefore"></a>
 
 ```python
 def reset_noncurrent_time_before() -> None
 ```
 
-##### `reset_num_newer_versions` <a name="reset_num_newer_versions" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.resetNumNewerVersions"></a>
+##### `reset_num_newer_versions` <a name="reset_num_newer_versions" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.resetNumNewerVersions"></a>
 
 ```python
 def reset_num_newer_versions() -> None
 ```
 
-##### `reset_send_age_if_zero` <a name="reset_send_age_if_zero" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.resetSendAgeIfZero"></a>
+##### `reset_send_age_if_zero` <a name="reset_send_age_if_zero" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.resetSendAgeIfZero"></a>
 
 ```python
 def reset_send_age_if_zero() -> None
 ```
 
-##### `reset_send_days_since_custom_time_if_zero` <a name="reset_send_days_since_custom_time_if_zero" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.resetSendDaysSinceCustomTimeIfZero"></a>
+##### `reset_send_days_since_custom_time_if_zero` <a name="reset_send_days_since_custom_time_if_zero" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.resetSendDaysSinceCustomTimeIfZero"></a>
 
 ```python
 def reset_send_days_since_custom_time_if_zero() -> None
 ```
 
-##### `reset_send_days_since_noncurrent_time_if_zero` <a name="reset_send_days_since_noncurrent_time_if_zero" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.resetSendDaysSinceNoncurrentTimeIfZero"></a>
+##### `reset_send_days_since_noncurrent_time_if_zero` <a name="reset_send_days_since_noncurrent_time_if_zero" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.resetSendDaysSinceNoncurrentTimeIfZero"></a>
 
 ```python
 def reset_send_days_since_noncurrent_time_if_zero() -> None
 ```
 
-##### `reset_send_num_newer_versions_if_zero` <a name="reset_send_num_newer_versions_if_zero" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.resetSendNumNewerVersionsIfZero"></a>
+##### `reset_send_num_newer_versions_if_zero` <a name="reset_send_num_newer_versions_if_zero" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.resetSendNumNewerVersionsIfZero"></a>
 
 ```python
 def reset_send_num_newer_versions_if_zero() -> None
 ```
 
-##### `reset_with_state` <a name="reset_with_state" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.resetWithState"></a>
+##### `reset_with_state` <a name="reset_with_state" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.resetWithState"></a>
 
 ```python
 def reset_with_state() -> None
@@ -7564,43 +7564,43 @@ def reset_with_state() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.ageInput">age_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.createdBeforeInput">created_before_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.customTimeBeforeInput">custom_time_before_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.daysSinceCustomTimeInput">days_since_custom_time_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.daysSinceNoncurrentTimeInput">days_since_noncurrent_time_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.matchesPrefixInput">matches_prefix_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.matchesStorageClassInput">matches_storage_class_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.matchesSuffixInput">matches_suffix_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.noncurrentTimeBeforeInput">noncurrent_time_before_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.numNewerVersionsInput">num_newer_versions_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.sendAgeIfZeroInput">send_age_if_zero_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.sendDaysSinceCustomTimeIfZeroInput">send_days_since_custom_time_if_zero_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.sendDaysSinceNoncurrentTimeIfZeroInput">send_days_since_noncurrent_time_if_zero_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.sendNumNewerVersionsIfZeroInput">send_num_newer_versions_if_zero_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.withStateInput">with_state_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.age">age</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.createdBefore">created_before</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.customTimeBefore">custom_time_before</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.daysSinceCustomTime">days_since_custom_time</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.daysSinceNoncurrentTime">days_since_noncurrent_time</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.matchesPrefix">matches_prefix</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.matchesStorageClass">matches_storage_class</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.matchesSuffix">matches_suffix</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.noncurrentTimeBefore">noncurrent_time_before</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.numNewerVersions">num_newer_versions</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.sendAgeIfZero">send_age_if_zero</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.sendDaysSinceCustomTimeIfZero">send_days_since_custom_time_if_zero</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.sendDaysSinceNoncurrentTimeIfZero">send_days_since_noncurrent_time_if_zero</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.sendNumNewerVersionsIfZero">send_num_newer_versions_if_zero</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.withState">with_state</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleCondition">StorageBucketLifecycleRuleCondition</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.ageInput">age_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.createdBeforeInput">created_before_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.customTimeBeforeInput">custom_time_before_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.daysSinceCustomTimeInput">days_since_custom_time_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.daysSinceNoncurrentTimeInput">days_since_noncurrent_time_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.matchesPrefixInput">matches_prefix_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.matchesStorageClassInput">matches_storage_class_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.matchesSuffixInput">matches_suffix_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.noncurrentTimeBeforeInput">noncurrent_time_before_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.numNewerVersionsInput">num_newer_versions_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.sendAgeIfZeroInput">send_age_if_zero_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.sendDaysSinceCustomTimeIfZeroInput">send_days_since_custom_time_if_zero_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.sendDaysSinceNoncurrentTimeIfZeroInput">send_days_since_noncurrent_time_if_zero_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.sendNumNewerVersionsIfZeroInput">send_num_newer_versions_if_zero_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.withStateInput">with_state_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.age">age</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.createdBefore">created_before</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.customTimeBefore">custom_time_before</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.daysSinceCustomTime">days_since_custom_time</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.daysSinceNoncurrentTime">days_since_noncurrent_time</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.matchesPrefix">matches_prefix</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.matchesStorageClass">matches_storage_class</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.matchesSuffix">matches_suffix</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.noncurrentTimeBefore">noncurrent_time_before</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.numNewerVersions">num_newer_versions</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.sendAgeIfZero">send_age_if_zero</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.sendDaysSinceCustomTimeIfZero">send_days_since_custom_time_if_zero</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.sendDaysSinceNoncurrentTimeIfZero">send_days_since_noncurrent_time_if_zero</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.sendNumNewerVersionsIfZero">send_num_newer_versions_if_zero</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.withState">with_state</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleCondition">StorageBucketLifecycleRuleCondition</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -7614,7 +7614,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -7624,7 +7624,7 @@ fqn: str
 
 ---
 
-##### `age_input`<sup>Optional</sup> <a name="age_input" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.ageInput"></a>
+##### `age_input`<sup>Optional</sup> <a name="age_input" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.ageInput"></a>
 
 ```python
 age_input: typing.Union[int, float]
@@ -7634,7 +7634,7 @@ age_input: typing.Union[int, float]
 
 ---
 
-##### `created_before_input`<sup>Optional</sup> <a name="created_before_input" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.createdBeforeInput"></a>
+##### `created_before_input`<sup>Optional</sup> <a name="created_before_input" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.createdBeforeInput"></a>
 
 ```python
 created_before_input: str
@@ -7644,7 +7644,7 @@ created_before_input: str
 
 ---
 
-##### `custom_time_before_input`<sup>Optional</sup> <a name="custom_time_before_input" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.customTimeBeforeInput"></a>
+##### `custom_time_before_input`<sup>Optional</sup> <a name="custom_time_before_input" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.customTimeBeforeInput"></a>
 
 ```python
 custom_time_before_input: str
@@ -7654,7 +7654,7 @@ custom_time_before_input: str
 
 ---
 
-##### `days_since_custom_time_input`<sup>Optional</sup> <a name="days_since_custom_time_input" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.daysSinceCustomTimeInput"></a>
+##### `days_since_custom_time_input`<sup>Optional</sup> <a name="days_since_custom_time_input" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.daysSinceCustomTimeInput"></a>
 
 ```python
 days_since_custom_time_input: typing.Union[int, float]
@@ -7664,7 +7664,7 @@ days_since_custom_time_input: typing.Union[int, float]
 
 ---
 
-##### `days_since_noncurrent_time_input`<sup>Optional</sup> <a name="days_since_noncurrent_time_input" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.daysSinceNoncurrentTimeInput"></a>
+##### `days_since_noncurrent_time_input`<sup>Optional</sup> <a name="days_since_noncurrent_time_input" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.daysSinceNoncurrentTimeInput"></a>
 
 ```python
 days_since_noncurrent_time_input: typing.Union[int, float]
@@ -7674,7 +7674,7 @@ days_since_noncurrent_time_input: typing.Union[int, float]
 
 ---
 
-##### `matches_prefix_input`<sup>Optional</sup> <a name="matches_prefix_input" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.matchesPrefixInput"></a>
+##### `matches_prefix_input`<sup>Optional</sup> <a name="matches_prefix_input" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.matchesPrefixInput"></a>
 
 ```python
 matches_prefix_input: typing.List[str]
@@ -7684,7 +7684,7 @@ matches_prefix_input: typing.List[str]
 
 ---
 
-##### `matches_storage_class_input`<sup>Optional</sup> <a name="matches_storage_class_input" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.matchesStorageClassInput"></a>
+##### `matches_storage_class_input`<sup>Optional</sup> <a name="matches_storage_class_input" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.matchesStorageClassInput"></a>
 
 ```python
 matches_storage_class_input: typing.List[str]
@@ -7694,7 +7694,7 @@ matches_storage_class_input: typing.List[str]
 
 ---
 
-##### `matches_suffix_input`<sup>Optional</sup> <a name="matches_suffix_input" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.matchesSuffixInput"></a>
+##### `matches_suffix_input`<sup>Optional</sup> <a name="matches_suffix_input" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.matchesSuffixInput"></a>
 
 ```python
 matches_suffix_input: typing.List[str]
@@ -7704,7 +7704,7 @@ matches_suffix_input: typing.List[str]
 
 ---
 
-##### `noncurrent_time_before_input`<sup>Optional</sup> <a name="noncurrent_time_before_input" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.noncurrentTimeBeforeInput"></a>
+##### `noncurrent_time_before_input`<sup>Optional</sup> <a name="noncurrent_time_before_input" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.noncurrentTimeBeforeInput"></a>
 
 ```python
 noncurrent_time_before_input: str
@@ -7714,7 +7714,7 @@ noncurrent_time_before_input: str
 
 ---
 
-##### `num_newer_versions_input`<sup>Optional</sup> <a name="num_newer_versions_input" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.numNewerVersionsInput"></a>
+##### `num_newer_versions_input`<sup>Optional</sup> <a name="num_newer_versions_input" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.numNewerVersionsInput"></a>
 
 ```python
 num_newer_versions_input: typing.Union[int, float]
@@ -7724,7 +7724,7 @@ num_newer_versions_input: typing.Union[int, float]
 
 ---
 
-##### `send_age_if_zero_input`<sup>Optional</sup> <a name="send_age_if_zero_input" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.sendAgeIfZeroInput"></a>
+##### `send_age_if_zero_input`<sup>Optional</sup> <a name="send_age_if_zero_input" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.sendAgeIfZeroInput"></a>
 
 ```python
 send_age_if_zero_input: bool | IResolvable
@@ -7734,7 +7734,7 @@ send_age_if_zero_input: bool | IResolvable
 
 ---
 
-##### `send_days_since_custom_time_if_zero_input`<sup>Optional</sup> <a name="send_days_since_custom_time_if_zero_input" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.sendDaysSinceCustomTimeIfZeroInput"></a>
+##### `send_days_since_custom_time_if_zero_input`<sup>Optional</sup> <a name="send_days_since_custom_time_if_zero_input" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.sendDaysSinceCustomTimeIfZeroInput"></a>
 
 ```python
 send_days_since_custom_time_if_zero_input: bool | IResolvable
@@ -7744,7 +7744,7 @@ send_days_since_custom_time_if_zero_input: bool | IResolvable
 
 ---
 
-##### `send_days_since_noncurrent_time_if_zero_input`<sup>Optional</sup> <a name="send_days_since_noncurrent_time_if_zero_input" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.sendDaysSinceNoncurrentTimeIfZeroInput"></a>
+##### `send_days_since_noncurrent_time_if_zero_input`<sup>Optional</sup> <a name="send_days_since_noncurrent_time_if_zero_input" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.sendDaysSinceNoncurrentTimeIfZeroInput"></a>
 
 ```python
 send_days_since_noncurrent_time_if_zero_input: bool | IResolvable
@@ -7754,7 +7754,7 @@ send_days_since_noncurrent_time_if_zero_input: bool | IResolvable
 
 ---
 
-##### `send_num_newer_versions_if_zero_input`<sup>Optional</sup> <a name="send_num_newer_versions_if_zero_input" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.sendNumNewerVersionsIfZeroInput"></a>
+##### `send_num_newer_versions_if_zero_input`<sup>Optional</sup> <a name="send_num_newer_versions_if_zero_input" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.sendNumNewerVersionsIfZeroInput"></a>
 
 ```python
 send_num_newer_versions_if_zero_input: bool | IResolvable
@@ -7764,7 +7764,7 @@ send_num_newer_versions_if_zero_input: bool | IResolvable
 
 ---
 
-##### `with_state_input`<sup>Optional</sup> <a name="with_state_input" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.withStateInput"></a>
+##### `with_state_input`<sup>Optional</sup> <a name="with_state_input" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.withStateInput"></a>
 
 ```python
 with_state_input: str
@@ -7774,7 +7774,7 @@ with_state_input: str
 
 ---
 
-##### `age`<sup>Required</sup> <a name="age" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.age"></a>
+##### `age`<sup>Required</sup> <a name="age" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.age"></a>
 
 ```python
 age: typing.Union[int, float]
@@ -7784,7 +7784,7 @@ age: typing.Union[int, float]
 
 ---
 
-##### `created_before`<sup>Required</sup> <a name="created_before" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.createdBefore"></a>
+##### `created_before`<sup>Required</sup> <a name="created_before" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.createdBefore"></a>
 
 ```python
 created_before: str
@@ -7794,7 +7794,7 @@ created_before: str
 
 ---
 
-##### `custom_time_before`<sup>Required</sup> <a name="custom_time_before" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.customTimeBefore"></a>
+##### `custom_time_before`<sup>Required</sup> <a name="custom_time_before" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.customTimeBefore"></a>
 
 ```python
 custom_time_before: str
@@ -7804,7 +7804,7 @@ custom_time_before: str
 
 ---
 
-##### `days_since_custom_time`<sup>Required</sup> <a name="days_since_custom_time" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.daysSinceCustomTime"></a>
+##### `days_since_custom_time`<sup>Required</sup> <a name="days_since_custom_time" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.daysSinceCustomTime"></a>
 
 ```python
 days_since_custom_time: typing.Union[int, float]
@@ -7814,7 +7814,7 @@ days_since_custom_time: typing.Union[int, float]
 
 ---
 
-##### `days_since_noncurrent_time`<sup>Required</sup> <a name="days_since_noncurrent_time" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.daysSinceNoncurrentTime"></a>
+##### `days_since_noncurrent_time`<sup>Required</sup> <a name="days_since_noncurrent_time" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.daysSinceNoncurrentTime"></a>
 
 ```python
 days_since_noncurrent_time: typing.Union[int, float]
@@ -7824,7 +7824,7 @@ days_since_noncurrent_time: typing.Union[int, float]
 
 ---
 
-##### `matches_prefix`<sup>Required</sup> <a name="matches_prefix" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.matchesPrefix"></a>
+##### `matches_prefix`<sup>Required</sup> <a name="matches_prefix" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.matchesPrefix"></a>
 
 ```python
 matches_prefix: typing.List[str]
@@ -7834,7 +7834,7 @@ matches_prefix: typing.List[str]
 
 ---
 
-##### `matches_storage_class`<sup>Required</sup> <a name="matches_storage_class" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.matchesStorageClass"></a>
+##### `matches_storage_class`<sup>Required</sup> <a name="matches_storage_class" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.matchesStorageClass"></a>
 
 ```python
 matches_storage_class: typing.List[str]
@@ -7844,7 +7844,7 @@ matches_storage_class: typing.List[str]
 
 ---
 
-##### `matches_suffix`<sup>Required</sup> <a name="matches_suffix" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.matchesSuffix"></a>
+##### `matches_suffix`<sup>Required</sup> <a name="matches_suffix" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.matchesSuffix"></a>
 
 ```python
 matches_suffix: typing.List[str]
@@ -7854,7 +7854,7 @@ matches_suffix: typing.List[str]
 
 ---
 
-##### `noncurrent_time_before`<sup>Required</sup> <a name="noncurrent_time_before" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.noncurrentTimeBefore"></a>
+##### `noncurrent_time_before`<sup>Required</sup> <a name="noncurrent_time_before" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.noncurrentTimeBefore"></a>
 
 ```python
 noncurrent_time_before: str
@@ -7864,7 +7864,7 @@ noncurrent_time_before: str
 
 ---
 
-##### `num_newer_versions`<sup>Required</sup> <a name="num_newer_versions" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.numNewerVersions"></a>
+##### `num_newer_versions`<sup>Required</sup> <a name="num_newer_versions" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.numNewerVersions"></a>
 
 ```python
 num_newer_versions: typing.Union[int, float]
@@ -7874,7 +7874,7 @@ num_newer_versions: typing.Union[int, float]
 
 ---
 
-##### `send_age_if_zero`<sup>Required</sup> <a name="send_age_if_zero" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.sendAgeIfZero"></a>
+##### `send_age_if_zero`<sup>Required</sup> <a name="send_age_if_zero" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.sendAgeIfZero"></a>
 
 ```python
 send_age_if_zero: bool | IResolvable
@@ -7884,7 +7884,7 @@ send_age_if_zero: bool | IResolvable
 
 ---
 
-##### `send_days_since_custom_time_if_zero`<sup>Required</sup> <a name="send_days_since_custom_time_if_zero" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.sendDaysSinceCustomTimeIfZero"></a>
+##### `send_days_since_custom_time_if_zero`<sup>Required</sup> <a name="send_days_since_custom_time_if_zero" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.sendDaysSinceCustomTimeIfZero"></a>
 
 ```python
 send_days_since_custom_time_if_zero: bool | IResolvable
@@ -7894,7 +7894,7 @@ send_days_since_custom_time_if_zero: bool | IResolvable
 
 ---
 
-##### `send_days_since_noncurrent_time_if_zero`<sup>Required</sup> <a name="send_days_since_noncurrent_time_if_zero" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.sendDaysSinceNoncurrentTimeIfZero"></a>
+##### `send_days_since_noncurrent_time_if_zero`<sup>Required</sup> <a name="send_days_since_noncurrent_time_if_zero" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.sendDaysSinceNoncurrentTimeIfZero"></a>
 
 ```python
 send_days_since_noncurrent_time_if_zero: bool | IResolvable
@@ -7904,7 +7904,7 @@ send_days_since_noncurrent_time_if_zero: bool | IResolvable
 
 ---
 
-##### `send_num_newer_versions_if_zero`<sup>Required</sup> <a name="send_num_newer_versions_if_zero" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.sendNumNewerVersionsIfZero"></a>
+##### `send_num_newer_versions_if_zero`<sup>Required</sup> <a name="send_num_newer_versions_if_zero" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.sendNumNewerVersionsIfZero"></a>
 
 ```python
 send_num_newer_versions_if_zero: bool | IResolvable
@@ -7914,7 +7914,7 @@ send_num_newer_versions_if_zero: bool | IResolvable
 
 ---
 
-##### `with_state`<sup>Required</sup> <a name="with_state" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.withState"></a>
+##### `with_state`<sup>Required</sup> <a name="with_state" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.withState"></a>
 
 ```python
 with_state: str
@@ -7924,23 +7924,23 @@ with_state: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: StorageBucketLifecycleRuleCondition
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleCondition">StorageBucketLifecycleRuleCondition</a>
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleCondition">StorageBucketLifecycleRuleCondition</a>
 
 ---
 
 
-### StorageBucketLifecycleRuleList <a name="StorageBucketLifecycleRuleList" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleList"></a>
+### StorageBucketLifecycleRuleList <a name="StorageBucketLifecycleRuleList" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleList.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import storage_bucket
+from cdktn_provider_google import storage_bucket
 
 storageBucket.StorageBucketLifecycleRuleList(
   terraform_resource: IInterpolatingParent,
@@ -7951,13 +7951,13 @@ storageBucket.StorageBucketLifecycleRuleList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleList.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -7965,7 +7965,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleList.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -7973,7 +7973,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleList.Initializer.parameter.wrapsSet"></a>
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* bool
 
@@ -7985,15 +7985,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleList.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleList.get">get</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `all_with_map_key` <a name="all_with_map_key" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleList.allWithMapKey"></a>
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleList.allWithMapKey"></a>
 
 ```python
 def all_with_map_key(
@@ -8005,19 +8005,19 @@ Creating an iterator for this complex list.
 
 The list will be converted into a map with the mapKeyAttributeName as the key.
 
-###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleList.allWithMapKey.parameter.mapKeyAttributeName"></a>
 
 - *Type:* str
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleList.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleList.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleList.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleList.resolve"></a>
 
 ```python
 def resolve(
@@ -8027,13 +8027,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleList.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleList.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleList.toString"></a>
 
 ```python
 def to_string() -> str
@@ -8043,7 +8043,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `get` <a name="get" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleList.get"></a>
+##### `get` <a name="get" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleList.get"></a>
 
 ```python
 def get(
@@ -8051,7 +8051,7 @@ def get(
 ) -> StorageBucketLifecycleRuleOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleList.get.parameter.index"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -8064,13 +8064,13 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRule">StorageBucketLifecycleRule</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRule">StorageBucketLifecycleRule</a>]</code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleList.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleList.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -8084,7 +8084,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleList.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleList.property.fqn"></a>
 
 ```python
 fqn: str
@@ -8094,23 +8094,23 @@ fqn: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleList.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleList.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | typing.List[StorageBucketLifecycleRule]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRule">StorageBucketLifecycleRule</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRule">StorageBucketLifecycleRule</a>]
 
 ---
 
 
-### StorageBucketLifecycleRuleOutputReference <a name="StorageBucketLifecycleRuleOutputReference" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference"></a>
+### StorageBucketLifecycleRuleOutputReference <a name="StorageBucketLifecycleRuleOutputReference" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import storage_bucket
+from cdktn_provider_google import storage_bucket
 
 storageBucket.StorageBucketLifecycleRuleOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -8122,14 +8122,14 @@ storageBucket.StorageBucketLifecycleRuleOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -8137,7 +8137,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -8145,7 +8145,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -8153,7 +8153,7 @@ the index of this item in the list.
 
 ---
 
-##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* bool
 
@@ -8165,31 +8165,31 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.putAction">put_action</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.putCondition">put_condition</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.putAction">put_action</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.putCondition">put_condition</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -8197,13 +8197,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -8211,13 +8211,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -8225,13 +8225,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -8239,13 +8239,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -8253,13 +8253,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -8267,13 +8267,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -8281,13 +8281,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -8295,13 +8295,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -8309,13 +8309,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -8323,13 +8323,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -8339,13 +8339,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -8355,7 +8355,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `put_action` <a name="put_action" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.putAction"></a>
+##### `put_action` <a name="put_action" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.putAction"></a>
 
 ```python
 def put_action(
@@ -8364,7 +8364,7 @@ def put_action(
 ) -> None
 ```
 
-###### `type`<sup>Required</sup> <a name="type" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.putAction.parameter.type"></a>
+###### `type`<sup>Required</sup> <a name="type" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.putAction.parameter.type"></a>
 
 - *Type:* str
 
@@ -8374,7 +8374,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `storage_class`<sup>Optional</sup> <a name="storage_class" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.putAction.parameter.storageClass"></a>
+###### `storage_class`<sup>Optional</sup> <a name="storage_class" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.putAction.parameter.storageClass"></a>
 
 - *Type:* str
 
@@ -8384,7 +8384,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `put_condition` <a name="put_condition" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.putCondition"></a>
+##### `put_condition` <a name="put_condition" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.putCondition"></a>
 
 ```python
 def put_condition(
@@ -8406,7 +8406,7 @@ def put_condition(
 ) -> None
 ```
 
-###### `age`<sup>Optional</sup> <a name="age" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.putCondition.parameter.age"></a>
+###### `age`<sup>Optional</sup> <a name="age" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.putCondition.parameter.age"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -8416,7 +8416,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `created_before`<sup>Optional</sup> <a name="created_before" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.putCondition.parameter.createdBefore"></a>
+###### `created_before`<sup>Optional</sup> <a name="created_before" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.putCondition.parameter.createdBefore"></a>
 
 - *Type:* str
 
@@ -8426,7 +8426,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `custom_time_before`<sup>Optional</sup> <a name="custom_time_before" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.putCondition.parameter.customTimeBefore"></a>
+###### `custom_time_before`<sup>Optional</sup> <a name="custom_time_before" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.putCondition.parameter.customTimeBefore"></a>
 
 - *Type:* str
 
@@ -8436,7 +8436,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `days_since_custom_time`<sup>Optional</sup> <a name="days_since_custom_time" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.putCondition.parameter.daysSinceCustomTime"></a>
+###### `days_since_custom_time`<sup>Optional</sup> <a name="days_since_custom_time" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.putCondition.parameter.daysSinceCustomTime"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -8446,7 +8446,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `days_since_noncurrent_time`<sup>Optional</sup> <a name="days_since_noncurrent_time" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.putCondition.parameter.daysSinceNoncurrentTime"></a>
+###### `days_since_noncurrent_time`<sup>Optional</sup> <a name="days_since_noncurrent_time" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.putCondition.parameter.daysSinceNoncurrentTime"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -8456,7 +8456,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `matches_prefix`<sup>Optional</sup> <a name="matches_prefix" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.putCondition.parameter.matchesPrefix"></a>
+###### `matches_prefix`<sup>Optional</sup> <a name="matches_prefix" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.putCondition.parameter.matchesPrefix"></a>
 
 - *Type:* typing.List[str]
 
@@ -8466,7 +8466,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `matches_storage_class`<sup>Optional</sup> <a name="matches_storage_class" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.putCondition.parameter.matchesStorageClass"></a>
+###### `matches_storage_class`<sup>Optional</sup> <a name="matches_storage_class" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.putCondition.parameter.matchesStorageClass"></a>
 
 - *Type:* typing.List[str]
 
@@ -8476,7 +8476,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `matches_suffix`<sup>Optional</sup> <a name="matches_suffix" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.putCondition.parameter.matchesSuffix"></a>
+###### `matches_suffix`<sup>Optional</sup> <a name="matches_suffix" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.putCondition.parameter.matchesSuffix"></a>
 
 - *Type:* typing.List[str]
 
@@ -8486,7 +8486,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `noncurrent_time_before`<sup>Optional</sup> <a name="noncurrent_time_before" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.putCondition.parameter.noncurrentTimeBefore"></a>
+###### `noncurrent_time_before`<sup>Optional</sup> <a name="noncurrent_time_before" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.putCondition.parameter.noncurrentTimeBefore"></a>
 
 - *Type:* str
 
@@ -8496,7 +8496,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `num_newer_versions`<sup>Optional</sup> <a name="num_newer_versions" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.putCondition.parameter.numNewerVersions"></a>
+###### `num_newer_versions`<sup>Optional</sup> <a name="num_newer_versions" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.putCondition.parameter.numNewerVersions"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -8506,7 +8506,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `send_age_if_zero`<sup>Optional</sup> <a name="send_age_if_zero" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.putCondition.parameter.sendAgeIfZero"></a>
+###### `send_age_if_zero`<sup>Optional</sup> <a name="send_age_if_zero" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.putCondition.parameter.sendAgeIfZero"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
@@ -8518,7 +8518,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `send_days_since_custom_time_if_zero`<sup>Optional</sup> <a name="send_days_since_custom_time_if_zero" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.putCondition.parameter.sendDaysSinceCustomTimeIfZero"></a>
+###### `send_days_since_custom_time_if_zero`<sup>Optional</sup> <a name="send_days_since_custom_time_if_zero" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.putCondition.parameter.sendDaysSinceCustomTimeIfZero"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
@@ -8530,7 +8530,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `send_days_since_noncurrent_time_if_zero`<sup>Optional</sup> <a name="send_days_since_noncurrent_time_if_zero" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.putCondition.parameter.sendDaysSinceNoncurrentTimeIfZero"></a>
+###### `send_days_since_noncurrent_time_if_zero`<sup>Optional</sup> <a name="send_days_since_noncurrent_time_if_zero" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.putCondition.parameter.sendDaysSinceNoncurrentTimeIfZero"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
@@ -8542,7 +8542,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `send_num_newer_versions_if_zero`<sup>Optional</sup> <a name="send_num_newer_versions_if_zero" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.putCondition.parameter.sendNumNewerVersionsIfZero"></a>
+###### `send_num_newer_versions_if_zero`<sup>Optional</sup> <a name="send_num_newer_versions_if_zero" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.putCondition.parameter.sendNumNewerVersionsIfZero"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
@@ -8554,7 +8554,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `with_state`<sup>Optional</sup> <a name="with_state" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.putCondition.parameter.withState"></a>
+###### `with_state`<sup>Optional</sup> <a name="with_state" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.putCondition.parameter.withState"></a>
 
 - *Type:* str
 
@@ -8569,17 +8569,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.property.action">action</a></code> | <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference">StorageBucketLifecycleRuleActionOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.property.condition">condition</a></code> | <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference">StorageBucketLifecycleRuleConditionOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.property.actionInput">action_input</a></code> | <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleAction">StorageBucketLifecycleRuleAction</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.property.conditionInput">condition_input</a></code> | <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleCondition">StorageBucketLifecycleRuleCondition</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRule">StorageBucketLifecycleRule</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.property.action">action</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference">StorageBucketLifecycleRuleActionOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.property.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference">StorageBucketLifecycleRuleConditionOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.property.actionInput">action_input</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleAction">StorageBucketLifecycleRuleAction</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.property.conditionInput">condition_input</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleCondition">StorageBucketLifecycleRuleCondition</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRule">StorageBucketLifecycleRule</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -8593,7 +8593,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -8603,63 +8603,63 @@ fqn: str
 
 ---
 
-##### `action`<sup>Required</sup> <a name="action" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.property.action"></a>
+##### `action`<sup>Required</sup> <a name="action" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.property.action"></a>
 
 ```python
 action: StorageBucketLifecycleRuleActionOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference">StorageBucketLifecycleRuleActionOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference">StorageBucketLifecycleRuleActionOutputReference</a>
 
 ---
 
-##### `condition`<sup>Required</sup> <a name="condition" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.property.condition"></a>
+##### `condition`<sup>Required</sup> <a name="condition" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.property.condition"></a>
 
 ```python
 condition: StorageBucketLifecycleRuleConditionOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference">StorageBucketLifecycleRuleConditionOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference">StorageBucketLifecycleRuleConditionOutputReference</a>
 
 ---
 
-##### `action_input`<sup>Optional</sup> <a name="action_input" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.property.actionInput"></a>
+##### `action_input`<sup>Optional</sup> <a name="action_input" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.property.actionInput"></a>
 
 ```python
 action_input: StorageBucketLifecycleRuleAction
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleAction">StorageBucketLifecycleRuleAction</a>
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleAction">StorageBucketLifecycleRuleAction</a>
 
 ---
 
-##### `condition_input`<sup>Optional</sup> <a name="condition_input" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.property.conditionInput"></a>
+##### `condition_input`<sup>Optional</sup> <a name="condition_input" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.property.conditionInput"></a>
 
 ```python
 condition_input: StorageBucketLifecycleRuleCondition
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleCondition">StorageBucketLifecycleRuleCondition</a>
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleCondition">StorageBucketLifecycleRuleCondition</a>
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | StorageBucketLifecycleRule
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-google.storageBucket.StorageBucketLifecycleRule">StorageBucketLifecycleRule</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRule">StorageBucketLifecycleRule</a>
 
 ---
 
 
-### StorageBucketLoggingOutputReference <a name="StorageBucketLoggingOutputReference" id="@cdktf/provider-google.storageBucket.StorageBucketLoggingOutputReference"></a>
+### StorageBucketLoggingOutputReference <a name="StorageBucketLoggingOutputReference" id="@cdktn/provider-google.storageBucket.StorageBucketLoggingOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.storageBucket.StorageBucketLoggingOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.storageBucket.StorageBucketLoggingOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import storage_bucket
+from cdktn_provider_google import storage_bucket
 
 storageBucket.StorageBucketLoggingOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -8669,12 +8669,12 @@ storageBucket.StorageBucketLoggingOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLoggingOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLoggingOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLoggingOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLoggingOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-google.storageBucket.StorageBucketLoggingOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.storageBucket.StorageBucketLoggingOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -8682,7 +8682,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLoggingOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLoggingOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -8694,30 +8694,30 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLoggingOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLoggingOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLoggingOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLoggingOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLoggingOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLoggingOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLoggingOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLoggingOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLoggingOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLoggingOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLoggingOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLoggingOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLoggingOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLoggingOutputReference.resetLogObjectPrefix">reset_log_object_prefix</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLoggingOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLoggingOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLoggingOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLoggingOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLoggingOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLoggingOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLoggingOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLoggingOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLoggingOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLoggingOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLoggingOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLoggingOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLoggingOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLoggingOutputReference.resetLogObjectPrefix">reset_log_object_prefix</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-google.storageBucket.StorageBucketLoggingOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.storageBucket.StorageBucketLoggingOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLoggingOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLoggingOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -8725,13 +8725,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLoggingOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLoggingOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLoggingOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLoggingOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -8739,13 +8739,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLoggingOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLoggingOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLoggingOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLoggingOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -8753,13 +8753,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLoggingOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLoggingOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLoggingOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLoggingOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -8767,13 +8767,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLoggingOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLoggingOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLoggingOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLoggingOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -8781,13 +8781,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLoggingOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLoggingOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLoggingOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLoggingOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -8795,13 +8795,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLoggingOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLoggingOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLoggingOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLoggingOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -8809,13 +8809,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLoggingOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLoggingOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLoggingOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLoggingOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -8823,13 +8823,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLoggingOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLoggingOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLoggingOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLoggingOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -8837,13 +8837,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLoggingOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLoggingOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketLoggingOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketLoggingOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -8851,13 +8851,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google.storageBucket.StorageBucketLoggingOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.storageBucket.StorageBucketLoggingOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-google.storageBucket.StorageBucketLoggingOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.storageBucket.StorageBucketLoggingOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -8867,13 +8867,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google.storageBucket.StorageBucketLoggingOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.storageBucket.StorageBucketLoggingOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-google.storageBucket.StorageBucketLoggingOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.storageBucket.StorageBucketLoggingOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -8883,7 +8883,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_log_object_prefix` <a name="reset_log_object_prefix" id="@cdktf/provider-google.storageBucket.StorageBucketLoggingOutputReference.resetLogObjectPrefix"></a>
+##### `reset_log_object_prefix` <a name="reset_log_object_prefix" id="@cdktn/provider-google.storageBucket.StorageBucketLoggingOutputReference.resetLogObjectPrefix"></a>
 
 ```python
 def reset_log_object_prefix() -> None
@@ -8894,17 +8894,17 @@ def reset_log_object_prefix() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLoggingOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLoggingOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLoggingOutputReference.property.logBucketInput">log_bucket_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLoggingOutputReference.property.logObjectPrefixInput">log_object_prefix_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLoggingOutputReference.property.logBucket">log_bucket</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLoggingOutputReference.property.logObjectPrefix">log_object_prefix</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLoggingOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketLogging">StorageBucketLogging</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLoggingOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLoggingOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLoggingOutputReference.property.logBucketInput">log_bucket_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLoggingOutputReference.property.logObjectPrefixInput">log_object_prefix_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLoggingOutputReference.property.logBucket">log_bucket</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLoggingOutputReference.property.logObjectPrefix">log_object_prefix</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLoggingOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLogging">StorageBucketLogging</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-google.storageBucket.StorageBucketLoggingOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.storageBucket.StorageBucketLoggingOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -8918,7 +8918,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google.storageBucket.StorageBucketLoggingOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.storageBucket.StorageBucketLoggingOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -8928,7 +8928,7 @@ fqn: str
 
 ---
 
-##### `log_bucket_input`<sup>Optional</sup> <a name="log_bucket_input" id="@cdktf/provider-google.storageBucket.StorageBucketLoggingOutputReference.property.logBucketInput"></a>
+##### `log_bucket_input`<sup>Optional</sup> <a name="log_bucket_input" id="@cdktn/provider-google.storageBucket.StorageBucketLoggingOutputReference.property.logBucketInput"></a>
 
 ```python
 log_bucket_input: str
@@ -8938,7 +8938,7 @@ log_bucket_input: str
 
 ---
 
-##### `log_object_prefix_input`<sup>Optional</sup> <a name="log_object_prefix_input" id="@cdktf/provider-google.storageBucket.StorageBucketLoggingOutputReference.property.logObjectPrefixInput"></a>
+##### `log_object_prefix_input`<sup>Optional</sup> <a name="log_object_prefix_input" id="@cdktn/provider-google.storageBucket.StorageBucketLoggingOutputReference.property.logObjectPrefixInput"></a>
 
 ```python
 log_object_prefix_input: str
@@ -8948,7 +8948,7 @@ log_object_prefix_input: str
 
 ---
 
-##### `log_bucket`<sup>Required</sup> <a name="log_bucket" id="@cdktf/provider-google.storageBucket.StorageBucketLoggingOutputReference.property.logBucket"></a>
+##### `log_bucket`<sup>Required</sup> <a name="log_bucket" id="@cdktn/provider-google.storageBucket.StorageBucketLoggingOutputReference.property.logBucket"></a>
 
 ```python
 log_bucket: str
@@ -8958,7 +8958,7 @@ log_bucket: str
 
 ---
 
-##### `log_object_prefix`<sup>Required</sup> <a name="log_object_prefix" id="@cdktf/provider-google.storageBucket.StorageBucketLoggingOutputReference.property.logObjectPrefix"></a>
+##### `log_object_prefix`<sup>Required</sup> <a name="log_object_prefix" id="@cdktn/provider-google.storageBucket.StorageBucketLoggingOutputReference.property.logObjectPrefix"></a>
 
 ```python
 log_object_prefix: str
@@ -8968,23 +8968,23 @@ log_object_prefix: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-google.storageBucket.StorageBucketLoggingOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.storageBucket.StorageBucketLoggingOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: StorageBucketLogging
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.storageBucket.StorageBucketLogging">StorageBucketLogging</a>
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketLogging">StorageBucketLogging</a>
 
 ---
 
 
-### StorageBucketRetentionPolicyOutputReference <a name="StorageBucketRetentionPolicyOutputReference" id="@cdktf/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference"></a>
+### StorageBucketRetentionPolicyOutputReference <a name="StorageBucketRetentionPolicyOutputReference" id="@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import storage_bucket
+from cdktn_provider_google import storage_bucket
 
 storageBucket.StorageBucketRetentionPolicyOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -8994,12 +8994,12 @@ storageBucket.StorageBucketRetentionPolicyOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -9007,7 +9007,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -9019,30 +9019,30 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.resetIsLocked">reset_is_locked</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.resetIsLocked">reset_is_locked</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -9050,13 +9050,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -9064,13 +9064,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -9078,13 +9078,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -9092,13 +9092,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -9106,13 +9106,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -9120,13 +9120,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -9134,13 +9134,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -9148,13 +9148,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -9162,13 +9162,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -9176,13 +9176,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -9192,13 +9192,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -9208,7 +9208,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_is_locked` <a name="reset_is_locked" id="@cdktf/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.resetIsLocked"></a>
+##### `reset_is_locked` <a name="reset_is_locked" id="@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.resetIsLocked"></a>
 
 ```python
 def reset_is_locked() -> None
@@ -9219,17 +9219,17 @@ def reset_is_locked() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.property.isLockedInput">is_locked_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.property.retentionPeriodInput">retention_period_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.property.isLocked">is_locked</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.property.retentionPeriod">retention_period</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketRetentionPolicy">StorageBucketRetentionPolicy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.property.isLockedInput">is_locked_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.property.retentionPeriodInput">retention_period_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.property.isLocked">is_locked</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.property.retentionPeriod">retention_period</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicy">StorageBucketRetentionPolicy</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -9243,7 +9243,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -9253,7 +9253,7 @@ fqn: str
 
 ---
 
-##### `is_locked_input`<sup>Optional</sup> <a name="is_locked_input" id="@cdktf/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.property.isLockedInput"></a>
+##### `is_locked_input`<sup>Optional</sup> <a name="is_locked_input" id="@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.property.isLockedInput"></a>
 
 ```python
 is_locked_input: bool | IResolvable
@@ -9263,7 +9263,7 @@ is_locked_input: bool | IResolvable
 
 ---
 
-##### `retention_period_input`<sup>Optional</sup> <a name="retention_period_input" id="@cdktf/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.property.retentionPeriodInput"></a>
+##### `retention_period_input`<sup>Optional</sup> <a name="retention_period_input" id="@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.property.retentionPeriodInput"></a>
 
 ```python
 retention_period_input: typing.Union[int, float]
@@ -9273,7 +9273,7 @@ retention_period_input: typing.Union[int, float]
 
 ---
 
-##### `is_locked`<sup>Required</sup> <a name="is_locked" id="@cdktf/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.property.isLocked"></a>
+##### `is_locked`<sup>Required</sup> <a name="is_locked" id="@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.property.isLocked"></a>
 
 ```python
 is_locked: bool | IResolvable
@@ -9283,7 +9283,7 @@ is_locked: bool | IResolvable
 
 ---
 
-##### `retention_period`<sup>Required</sup> <a name="retention_period" id="@cdktf/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.property.retentionPeriod"></a>
+##### `retention_period`<sup>Required</sup> <a name="retention_period" id="@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.property.retentionPeriod"></a>
 
 ```python
 retention_period: typing.Union[int, float]
@@ -9293,23 +9293,23 @@ retention_period: typing.Union[int, float]
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: StorageBucketRetentionPolicy
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.storageBucket.StorageBucketRetentionPolicy">StorageBucketRetentionPolicy</a>
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicy">StorageBucketRetentionPolicy</a>
 
 ---
 
 
-### StorageBucketSoftDeletePolicyOutputReference <a name="StorageBucketSoftDeletePolicyOutputReference" id="@cdktf/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference"></a>
+### StorageBucketSoftDeletePolicyOutputReference <a name="StorageBucketSoftDeletePolicyOutputReference" id="@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import storage_bucket
+from cdktn_provider_google import storage_bucket
 
 storageBucket.StorageBucketSoftDeletePolicyOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -9319,12 +9319,12 @@ storageBucket.StorageBucketSoftDeletePolicyOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -9332,7 +9332,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -9344,30 +9344,30 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.resetRetentionDurationSeconds">reset_retention_duration_seconds</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.resetRetentionDurationSeconds">reset_retention_duration_seconds</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -9375,13 +9375,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -9389,13 +9389,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -9403,13 +9403,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -9417,13 +9417,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -9431,13 +9431,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -9445,13 +9445,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -9459,13 +9459,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -9473,13 +9473,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -9487,13 +9487,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -9501,13 +9501,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -9517,13 +9517,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -9533,7 +9533,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_retention_duration_seconds` <a name="reset_retention_duration_seconds" id="@cdktf/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.resetRetentionDurationSeconds"></a>
+##### `reset_retention_duration_seconds` <a name="reset_retention_duration_seconds" id="@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.resetRetentionDurationSeconds"></a>
 
 ```python
 def reset_retention_duration_seconds() -> None
@@ -9544,16 +9544,16 @@ def reset_retention_duration_seconds() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.property.effectiveTime">effective_time</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.property.retentionDurationSecondsInput">retention_duration_seconds_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.property.retentionDurationSeconds">retention_duration_seconds</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketSoftDeletePolicy">StorageBucketSoftDeletePolicy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.property.effectiveTime">effective_time</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.property.retentionDurationSecondsInput">retention_duration_seconds_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.property.retentionDurationSeconds">retention_duration_seconds</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicy">StorageBucketSoftDeletePolicy</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -9567,7 +9567,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -9577,7 +9577,7 @@ fqn: str
 
 ---
 
-##### `effective_time`<sup>Required</sup> <a name="effective_time" id="@cdktf/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.property.effectiveTime"></a>
+##### `effective_time`<sup>Required</sup> <a name="effective_time" id="@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.property.effectiveTime"></a>
 
 ```python
 effective_time: str
@@ -9587,7 +9587,7 @@ effective_time: str
 
 ---
 
-##### `retention_duration_seconds_input`<sup>Optional</sup> <a name="retention_duration_seconds_input" id="@cdktf/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.property.retentionDurationSecondsInput"></a>
+##### `retention_duration_seconds_input`<sup>Optional</sup> <a name="retention_duration_seconds_input" id="@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.property.retentionDurationSecondsInput"></a>
 
 ```python
 retention_duration_seconds_input: typing.Union[int, float]
@@ -9597,7 +9597,7 @@ retention_duration_seconds_input: typing.Union[int, float]
 
 ---
 
-##### `retention_duration_seconds`<sup>Required</sup> <a name="retention_duration_seconds" id="@cdktf/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.property.retentionDurationSeconds"></a>
+##### `retention_duration_seconds`<sup>Required</sup> <a name="retention_duration_seconds" id="@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.property.retentionDurationSeconds"></a>
 
 ```python
 retention_duration_seconds: typing.Union[int, float]
@@ -9607,23 +9607,23 @@ retention_duration_seconds: typing.Union[int, float]
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: StorageBucketSoftDeletePolicy
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.storageBucket.StorageBucketSoftDeletePolicy">StorageBucketSoftDeletePolicy</a>
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicy">StorageBucketSoftDeletePolicy</a>
 
 ---
 
 
-### StorageBucketTimeoutsOutputReference <a name="StorageBucketTimeoutsOutputReference" id="@cdktf/provider-google.storageBucket.StorageBucketTimeoutsOutputReference"></a>
+### StorageBucketTimeoutsOutputReference <a name="StorageBucketTimeoutsOutputReference" id="@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import storage_bucket
+from cdktn_provider_google import storage_bucket
 
 storageBucket.StorageBucketTimeoutsOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -9633,12 +9633,12 @@ storageBucket.StorageBucketTimeoutsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -9646,7 +9646,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -9658,32 +9658,32 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.resetCreate">reset_create</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.resetRead">reset_read</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.resetUpdate">reset_update</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.resetCreate">reset_create</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.resetRead">reset_read</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.resetUpdate">reset_update</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -9691,13 +9691,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -9705,13 +9705,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -9719,13 +9719,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -9733,13 +9733,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -9747,13 +9747,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -9761,13 +9761,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -9775,13 +9775,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -9789,13 +9789,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -9803,13 +9803,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -9817,13 +9817,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -9833,13 +9833,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -9849,19 +9849,19 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_create` <a name="reset_create" id="@cdktf/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.resetCreate"></a>
+##### `reset_create` <a name="reset_create" id="@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.resetCreate"></a>
 
 ```python
 def reset_create() -> None
 ```
 
-##### `reset_read` <a name="reset_read" id="@cdktf/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.resetRead"></a>
+##### `reset_read` <a name="reset_read" id="@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.resetRead"></a>
 
 ```python
 def reset_read() -> None
 ```
 
-##### `reset_update` <a name="reset_update" id="@cdktf/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.resetUpdate"></a>
+##### `reset_update` <a name="reset_update" id="@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.resetUpdate"></a>
 
 ```python
 def reset_update() -> None
@@ -9872,19 +9872,19 @@ def reset_update() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.property.createInput">create_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.property.readInput">read_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.property.updateInput">update_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.property.read">read</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-google.storageBucket.StorageBucketTimeouts">StorageBucketTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.property.createInput">create_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.property.readInput">read_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.property.updateInput">update_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.property.read">read</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.storageBucket.StorageBucketTimeouts">StorageBucketTimeouts</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -9898,7 +9898,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -9908,7 +9908,7 @@ fqn: str
 
 ---
 
-##### `create_input`<sup>Optional</sup> <a name="create_input" id="@cdktf/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.property.createInput"></a>
+##### `create_input`<sup>Optional</sup> <a name="create_input" id="@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.property.createInput"></a>
 
 ```python
 create_input: str
@@ -9918,7 +9918,7 @@ create_input: str
 
 ---
 
-##### `read_input`<sup>Optional</sup> <a name="read_input" id="@cdktf/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.property.readInput"></a>
+##### `read_input`<sup>Optional</sup> <a name="read_input" id="@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.property.readInput"></a>
 
 ```python
 read_input: str
@@ -9928,7 +9928,7 @@ read_input: str
 
 ---
 
-##### `update_input`<sup>Optional</sup> <a name="update_input" id="@cdktf/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.property.updateInput"></a>
+##### `update_input`<sup>Optional</sup> <a name="update_input" id="@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.property.updateInput"></a>
 
 ```python
 update_input: str
@@ -9938,7 +9938,7 @@ update_input: str
 
 ---
 
-##### `create`<sup>Required</sup> <a name="create" id="@cdktf/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.property.create"></a>
+##### `create`<sup>Required</sup> <a name="create" id="@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.property.create"></a>
 
 ```python
 create: str
@@ -9948,7 +9948,7 @@ create: str
 
 ---
 
-##### `read`<sup>Required</sup> <a name="read" id="@cdktf/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.property.read"></a>
+##### `read`<sup>Required</sup> <a name="read" id="@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.property.read"></a>
 
 ```python
 read: str
@@ -9958,7 +9958,7 @@ read: str
 
 ---
 
-##### `update`<sup>Required</sup> <a name="update" id="@cdktf/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.property.update"></a>
+##### `update`<sup>Required</sup> <a name="update" id="@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.property.update"></a>
 
 ```python
 update: str
@@ -9968,23 +9968,23 @@ update: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | StorageBucketTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-google.storageBucket.StorageBucketTimeouts">StorageBucketTimeouts</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.storageBucket.StorageBucketTimeouts">StorageBucketTimeouts</a>
 
 ---
 
 
-### StorageBucketVersioningOutputReference <a name="StorageBucketVersioningOutputReference" id="@cdktf/provider-google.storageBucket.StorageBucketVersioningOutputReference"></a>
+### StorageBucketVersioningOutputReference <a name="StorageBucketVersioningOutputReference" id="@cdktn/provider-google.storageBucket.StorageBucketVersioningOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.storageBucket.StorageBucketVersioningOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.storageBucket.StorageBucketVersioningOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import storage_bucket
+from cdktn_provider_google import storage_bucket
 
 storageBucket.StorageBucketVersioningOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -9994,12 +9994,12 @@ storageBucket.StorageBucketVersioningOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketVersioningOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketVersioningOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketVersioningOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketVersioningOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-google.storageBucket.StorageBucketVersioningOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.storageBucket.StorageBucketVersioningOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -10007,7 +10007,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketVersioningOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketVersioningOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -10019,29 +10019,29 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketVersioningOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketVersioningOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketVersioningOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketVersioningOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketVersioningOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketVersioningOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketVersioningOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketVersioningOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketVersioningOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketVersioningOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketVersioningOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketVersioningOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketVersioningOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketVersioningOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketVersioningOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketVersioningOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketVersioningOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketVersioningOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketVersioningOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketVersioningOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketVersioningOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketVersioningOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketVersioningOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketVersioningOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketVersioningOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketVersioningOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-google.storageBucket.StorageBucketVersioningOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.storageBucket.StorageBucketVersioningOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketVersioningOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketVersioningOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -10049,13 +10049,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketVersioningOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketVersioningOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketVersioningOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketVersioningOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -10063,13 +10063,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketVersioningOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketVersioningOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketVersioningOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketVersioningOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -10077,13 +10077,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketVersioningOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketVersioningOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketVersioningOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketVersioningOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -10091,13 +10091,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketVersioningOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketVersioningOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketVersioningOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketVersioningOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -10105,13 +10105,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketVersioningOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketVersioningOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketVersioningOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketVersioningOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -10119,13 +10119,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketVersioningOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketVersioningOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketVersioningOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketVersioningOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -10133,13 +10133,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketVersioningOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketVersioningOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketVersioningOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketVersioningOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -10147,13 +10147,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketVersioningOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketVersioningOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketVersioningOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketVersioningOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -10161,13 +10161,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketVersioningOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketVersioningOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketVersioningOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketVersioningOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -10175,13 +10175,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google.storageBucket.StorageBucketVersioningOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.storageBucket.StorageBucketVersioningOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-google.storageBucket.StorageBucketVersioningOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.storageBucket.StorageBucketVersioningOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -10191,13 +10191,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google.storageBucket.StorageBucketVersioningOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.storageBucket.StorageBucketVersioningOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-google.storageBucket.StorageBucketVersioningOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.storageBucket.StorageBucketVersioningOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -10212,15 +10212,15 @@ Returns a reversible string representation.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketVersioningOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketVersioningOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketVersioningOutputReference.property.enabledInput">enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketVersioningOutputReference.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketVersioningOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketVersioning">StorageBucketVersioning</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketVersioningOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketVersioningOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketVersioningOutputReference.property.enabledInput">enabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketVersioningOutputReference.property.enabled">enabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketVersioningOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketVersioning">StorageBucketVersioning</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-google.storageBucket.StorageBucketVersioningOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.storageBucket.StorageBucketVersioningOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -10234,7 +10234,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google.storageBucket.StorageBucketVersioningOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.storageBucket.StorageBucketVersioningOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -10244,7 +10244,7 @@ fqn: str
 
 ---
 
-##### `enabled_input`<sup>Optional</sup> <a name="enabled_input" id="@cdktf/provider-google.storageBucket.StorageBucketVersioningOutputReference.property.enabledInput"></a>
+##### `enabled_input`<sup>Optional</sup> <a name="enabled_input" id="@cdktn/provider-google.storageBucket.StorageBucketVersioningOutputReference.property.enabledInput"></a>
 
 ```python
 enabled_input: bool | IResolvable
@@ -10254,7 +10254,7 @@ enabled_input: bool | IResolvable
 
 ---
 
-##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-google.storageBucket.StorageBucketVersioningOutputReference.property.enabled"></a>
+##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktn/provider-google.storageBucket.StorageBucketVersioningOutputReference.property.enabled"></a>
 
 ```python
 enabled: bool | IResolvable
@@ -10264,23 +10264,23 @@ enabled: bool | IResolvable
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-google.storageBucket.StorageBucketVersioningOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.storageBucket.StorageBucketVersioningOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: StorageBucketVersioning
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.storageBucket.StorageBucketVersioning">StorageBucketVersioning</a>
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketVersioning">StorageBucketVersioning</a>
 
 ---
 
 
-### StorageBucketWebsiteOutputReference <a name="StorageBucketWebsiteOutputReference" id="@cdktf/provider-google.storageBucket.StorageBucketWebsiteOutputReference"></a>
+### StorageBucketWebsiteOutputReference <a name="StorageBucketWebsiteOutputReference" id="@cdktn/provider-google.storageBucket.StorageBucketWebsiteOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.storageBucket.StorageBucketWebsiteOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.storageBucket.StorageBucketWebsiteOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import storage_bucket
+from cdktn_provider_google import storage_bucket
 
 storageBucket.StorageBucketWebsiteOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -10290,12 +10290,12 @@ storageBucket.StorageBucketWebsiteOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketWebsiteOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketWebsiteOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketWebsiteOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketWebsiteOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-google.storageBucket.StorageBucketWebsiteOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.storageBucket.StorageBucketWebsiteOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -10303,7 +10303,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketWebsiteOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketWebsiteOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -10315,31 +10315,31 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketWebsiteOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketWebsiteOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketWebsiteOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketWebsiteOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketWebsiteOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketWebsiteOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketWebsiteOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketWebsiteOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketWebsiteOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketWebsiteOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketWebsiteOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketWebsiteOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketWebsiteOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketWebsiteOutputReference.resetMainPageSuffix">reset_main_page_suffix</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketWebsiteOutputReference.resetNotFoundPage">reset_not_found_page</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketWebsiteOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketWebsiteOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketWebsiteOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketWebsiteOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketWebsiteOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketWebsiteOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketWebsiteOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketWebsiteOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketWebsiteOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketWebsiteOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketWebsiteOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketWebsiteOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketWebsiteOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketWebsiteOutputReference.resetMainPageSuffix">reset_main_page_suffix</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketWebsiteOutputReference.resetNotFoundPage">reset_not_found_page</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-google.storageBucket.StorageBucketWebsiteOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.storageBucket.StorageBucketWebsiteOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketWebsiteOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketWebsiteOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -10347,13 +10347,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketWebsiteOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketWebsiteOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketWebsiteOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketWebsiteOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -10361,13 +10361,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketWebsiteOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketWebsiteOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketWebsiteOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketWebsiteOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -10375,13 +10375,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketWebsiteOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketWebsiteOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketWebsiteOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketWebsiteOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -10389,13 +10389,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketWebsiteOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketWebsiteOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketWebsiteOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketWebsiteOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -10403,13 +10403,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketWebsiteOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketWebsiteOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketWebsiteOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketWebsiteOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -10417,13 +10417,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketWebsiteOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketWebsiteOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketWebsiteOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketWebsiteOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -10431,13 +10431,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketWebsiteOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketWebsiteOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketWebsiteOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketWebsiteOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -10445,13 +10445,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketWebsiteOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketWebsiteOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketWebsiteOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketWebsiteOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -10459,13 +10459,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketWebsiteOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketWebsiteOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-google.storageBucket.StorageBucketWebsiteOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.storageBucket.StorageBucketWebsiteOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -10473,13 +10473,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google.storageBucket.StorageBucketWebsiteOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.storageBucket.StorageBucketWebsiteOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-google.storageBucket.StorageBucketWebsiteOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.storageBucket.StorageBucketWebsiteOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -10489,13 +10489,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google.storageBucket.StorageBucketWebsiteOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.storageBucket.StorageBucketWebsiteOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-google.storageBucket.StorageBucketWebsiteOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.storageBucket.StorageBucketWebsiteOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -10505,13 +10505,13 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_main_page_suffix` <a name="reset_main_page_suffix" id="@cdktf/provider-google.storageBucket.StorageBucketWebsiteOutputReference.resetMainPageSuffix"></a>
+##### `reset_main_page_suffix` <a name="reset_main_page_suffix" id="@cdktn/provider-google.storageBucket.StorageBucketWebsiteOutputReference.resetMainPageSuffix"></a>
 
 ```python
 def reset_main_page_suffix() -> None
 ```
 
-##### `reset_not_found_page` <a name="reset_not_found_page" id="@cdktf/provider-google.storageBucket.StorageBucketWebsiteOutputReference.resetNotFoundPage"></a>
+##### `reset_not_found_page` <a name="reset_not_found_page" id="@cdktn/provider-google.storageBucket.StorageBucketWebsiteOutputReference.resetNotFoundPage"></a>
 
 ```python
 def reset_not_found_page() -> None
@@ -10522,17 +10522,17 @@ def reset_not_found_page() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketWebsiteOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketWebsiteOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketWebsiteOutputReference.property.mainPageSuffixInput">main_page_suffix_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketWebsiteOutputReference.property.notFoundPageInput">not_found_page_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketWebsiteOutputReference.property.mainPageSuffix">main_page_suffix</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketWebsiteOutputReference.property.notFoundPage">not_found_page</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketWebsiteOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-google.storageBucket.StorageBucketWebsite">StorageBucketWebsite</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketWebsiteOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketWebsiteOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketWebsiteOutputReference.property.mainPageSuffixInput">main_page_suffix_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketWebsiteOutputReference.property.notFoundPageInput">not_found_page_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketWebsiteOutputReference.property.mainPageSuffix">main_page_suffix</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketWebsiteOutputReference.property.notFoundPage">not_found_page</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketWebsiteOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketWebsite">StorageBucketWebsite</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-google.storageBucket.StorageBucketWebsiteOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.storageBucket.StorageBucketWebsiteOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -10546,7 +10546,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google.storageBucket.StorageBucketWebsiteOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.storageBucket.StorageBucketWebsiteOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -10556,7 +10556,7 @@ fqn: str
 
 ---
 
-##### `main_page_suffix_input`<sup>Optional</sup> <a name="main_page_suffix_input" id="@cdktf/provider-google.storageBucket.StorageBucketWebsiteOutputReference.property.mainPageSuffixInput"></a>
+##### `main_page_suffix_input`<sup>Optional</sup> <a name="main_page_suffix_input" id="@cdktn/provider-google.storageBucket.StorageBucketWebsiteOutputReference.property.mainPageSuffixInput"></a>
 
 ```python
 main_page_suffix_input: str
@@ -10566,7 +10566,7 @@ main_page_suffix_input: str
 
 ---
 
-##### `not_found_page_input`<sup>Optional</sup> <a name="not_found_page_input" id="@cdktf/provider-google.storageBucket.StorageBucketWebsiteOutputReference.property.notFoundPageInput"></a>
+##### `not_found_page_input`<sup>Optional</sup> <a name="not_found_page_input" id="@cdktn/provider-google.storageBucket.StorageBucketWebsiteOutputReference.property.notFoundPageInput"></a>
 
 ```python
 not_found_page_input: str
@@ -10576,7 +10576,7 @@ not_found_page_input: str
 
 ---
 
-##### `main_page_suffix`<sup>Required</sup> <a name="main_page_suffix" id="@cdktf/provider-google.storageBucket.StorageBucketWebsiteOutputReference.property.mainPageSuffix"></a>
+##### `main_page_suffix`<sup>Required</sup> <a name="main_page_suffix" id="@cdktn/provider-google.storageBucket.StorageBucketWebsiteOutputReference.property.mainPageSuffix"></a>
 
 ```python
 main_page_suffix: str
@@ -10586,7 +10586,7 @@ main_page_suffix: str
 
 ---
 
-##### `not_found_page`<sup>Required</sup> <a name="not_found_page" id="@cdktf/provider-google.storageBucket.StorageBucketWebsiteOutputReference.property.notFoundPage"></a>
+##### `not_found_page`<sup>Required</sup> <a name="not_found_page" id="@cdktn/provider-google.storageBucket.StorageBucketWebsiteOutputReference.property.notFoundPage"></a>
 
 ```python
 not_found_page: str
@@ -10596,13 +10596,13 @@ not_found_page: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-google.storageBucket.StorageBucketWebsiteOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.storageBucket.StorageBucketWebsiteOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: StorageBucketWebsite
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.storageBucket.StorageBucketWebsite">StorageBucketWebsite</a>
+- *Type:* <a href="#@cdktn/provider-google.storageBucket.StorageBucketWebsite">StorageBucketWebsite</a>
 
 ---
 

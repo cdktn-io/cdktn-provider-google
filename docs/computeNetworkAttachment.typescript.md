@@ -1,28 +1,28 @@
-# `computeNetworkAttachment` Submodule <a name="`computeNetworkAttachment` Submodule" id="@cdktf/provider-google.computeNetworkAttachment"></a>
+# `computeNetworkAttachment` Submodule <a name="`computeNetworkAttachment` Submodule" id="@cdktn/provider-google.computeNetworkAttachment"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### ComputeNetworkAttachment <a name="ComputeNetworkAttachment" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment"></a>
+### ComputeNetworkAttachment <a name="ComputeNetworkAttachment" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment"></a>
 
 Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_network_attachment google_compute_network_attachment}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.Initializer"></a>
 
 ```typescript
-import { computeNetworkAttachment } from '@cdktf/provider-google'
+import { computeNetworkAttachment } from '@cdktn/provider-google'
 
 new computeNetworkAttachment.ComputeNetworkAttachment(scope: Construct, id: string, config: ComputeNetworkAttachmentConfig)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConfig">ComputeNetworkAttachmentConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConfig">ComputeNetworkAttachmentConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.Initializer.parameter.id"></a>
 
 - *Type:* string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.Initializer.parameter.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConfig">ComputeNetworkAttachmentConfig</a>
+- *Type:* <a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConfig">ComputeNetworkAttachmentConfig</a>
 
 ---
 
@@ -50,40 +50,40 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.toString">toString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.addOverride">addOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.toHclTerraform">toHclTerraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.toMetadata">toMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.hasResourceMove">hasResourceMove</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.importFrom">importFrom</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.putTimeouts">putTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.resetDescription">resetDescription</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.resetProducerAcceptLists">resetProducerAcceptLists</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.resetProducerRejectLists">resetProducerRejectLists</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.resetProject">resetProject</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.resetRegion">resetRegion</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.resetTimeouts">resetTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.addOverride">addOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.toHclTerraform">toHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.toMetadata">toMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.hasResourceMove">hasResourceMove</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.importFrom">importFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.resetDescription">resetDescription</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.resetProducerAcceptLists">resetProducerAcceptLists</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.resetProducerRejectLists">resetProducerRejectLists</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.resetProject">resetProject</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.resetRegion">resetRegion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.resetTimeouts">resetTimeouts</a></code> | *No description.* |
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.toString"></a>
 
 ```typescript
 public toString(): string
@@ -91,25 +91,25 @@ public toString(): string
 
 Returns a string representation of this construct.
 
-##### `addOverride` <a name="addOverride" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.addOverride"></a>
+##### `addOverride` <a name="addOverride" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.addOverride"></a>
 
 ```typescript
 public addOverride(path: string, value: any): void
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.addOverride.parameter.path"></a>
 
 - *Type:* string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.addOverride.parameter.value"></a>
 
 - *Type:* any
 
 ---
 
-##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.overrideLogicalId"></a>
+##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.overrideLogicalId"></a>
 
 ```typescript
 public overrideLogicalId(newLogicalId: string): void
@@ -117,7 +117,7 @@ public overrideLogicalId(newLogicalId: string): void
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* string
 
@@ -125,7 +125,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.resetOverrideLogicalId"></a>
+##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.resetOverrideLogicalId"></a>
 
 ```typescript
 public resetOverrideLogicalId(): void
@@ -133,19 +133,19 @@ public resetOverrideLogicalId(): void
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `toHclTerraform` <a name="toHclTerraform" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.toHclTerraform"></a>
+##### `toHclTerraform` <a name="toHclTerraform" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.toHclTerraform"></a>
 
 ```typescript
 public toHclTerraform(): any
 ```
 
-##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.toMetadata"></a>
+##### `toMetadata` <a name="toMetadata" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.toMetadata"></a>
 
 ```typescript
 public toMetadata(): any
 ```
 
-##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.toTerraform"></a>
+##### `toTerraform` <a name="toTerraform" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.toTerraform"></a>
 
 ```typescript
 public toTerraform(): any
@@ -153,7 +153,7 @@ public toTerraform(): any
 
 Adds this resource to the terraform JSON output.
 
-##### `addMoveTarget` <a name="addMoveTarget" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.addMoveTarget"></a>
+##### `addMoveTarget` <a name="addMoveTarget" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.addMoveTarget"></a>
 
 ```typescript
 public addMoveTarget(moveTarget: string): void
@@ -161,7 +161,7 @@ public addMoveTarget(moveTarget: string): void
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.addMoveTarget.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* string
 
@@ -169,151 +169,151 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `hasResourceMove` <a name="hasResourceMove" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.hasResourceMove"></a>
+##### `hasResourceMove` <a name="hasResourceMove" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.hasResourceMove"></a>
 
 ```typescript
 public hasResourceMove(): TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `importFrom` <a name="importFrom" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.importFrom"></a>
+##### `importFrom` <a name="importFrom" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.importFrom"></a>
 
 ```typescript
 public importFrom(id: string, provider?: TerraformProvider): void
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.importFrom.parameter.id"></a>
 
 - *Type:* string
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.importFrom.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `moveFromId` <a name="moveFromId" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.moveFromId"></a>
+##### `moveFromId` <a name="moveFromId" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.moveFromId"></a>
 
 ```typescript
 public moveFromId(id: string): void
@@ -323,7 +323,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.moveFromId.parameter.id"></a>
 
 - *Type:* string
 
@@ -331,7 +331,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `moveTo` <a name="moveTo" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.moveTo"></a>
+##### `moveTo` <a name="moveTo" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.moveTo"></a>
 
 ```typescript
 public moveTo(moveTarget: string, index?: string | number): void
@@ -339,7 +339,7 @@ public moveTo(moveTarget: string, index?: string | number): void
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.moveTo.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.moveTo.parameter.moveTarget"></a>
 
 - *Type:* string
 
@@ -347,7 +347,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.moveTo.parameter.index"></a>
 
 - *Type:* string | number
 
@@ -355,7 +355,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `moveToId` <a name="moveToId" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.moveToId"></a>
+##### `moveToId` <a name="moveToId" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.moveToId"></a>
 
 ```typescript
 public moveToId(id: string): void
@@ -363,7 +363,7 @@ public moveToId(id: string): void
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.moveToId.parameter.id"></a>
 
 - *Type:* string
 
@@ -371,49 +371,49 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `putTimeouts` <a name="putTimeouts" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.putTimeouts"></a>
+##### `putTimeouts` <a name="putTimeouts" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.putTimeouts"></a>
 
 ```typescript
 public putTimeouts(value: ComputeNetworkAttachmentTimeouts): void
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.putTimeouts.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.putTimeouts.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeouts">ComputeNetworkAttachmentTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeouts">ComputeNetworkAttachmentTimeouts</a>
 
 ---
 
-##### `resetDescription` <a name="resetDescription" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.resetDescription"></a>
+##### `resetDescription` <a name="resetDescription" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.resetDescription"></a>
 
 ```typescript
 public resetDescription(): void
 ```
 
-##### `resetProducerAcceptLists` <a name="resetProducerAcceptLists" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.resetProducerAcceptLists"></a>
+##### `resetProducerAcceptLists` <a name="resetProducerAcceptLists" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.resetProducerAcceptLists"></a>
 
 ```typescript
 public resetProducerAcceptLists(): void
 ```
 
-##### `resetProducerRejectLists` <a name="resetProducerRejectLists" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.resetProducerRejectLists"></a>
+##### `resetProducerRejectLists` <a name="resetProducerRejectLists" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.resetProducerRejectLists"></a>
 
 ```typescript
 public resetProducerRejectLists(): void
 ```
 
-##### `resetProject` <a name="resetProject" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.resetProject"></a>
+##### `resetProject` <a name="resetProject" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.resetProject"></a>
 
 ```typescript
 public resetProject(): void
 ```
 
-##### `resetRegion` <a name="resetRegion" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.resetRegion"></a>
+##### `resetRegion` <a name="resetRegion" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.resetRegion"></a>
 
 ```typescript
 public resetRegion(): void
 ```
 
-##### `resetTimeouts` <a name="resetTimeouts" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.resetTimeouts"></a>
+##### `resetTimeouts` <a name="resetTimeouts" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.resetTimeouts"></a>
 
 ```typescript
 public resetTimeouts(): void
@@ -423,17 +423,17 @@ public resetTimeouts(): void
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.isTerraformElement">isTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a ComputeNetworkAttachment resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.isTerraformResource">isTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a ComputeNetworkAttachment resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.isConstruct"></a>
 
 ```typescript
-import { computeNetworkAttachment } from '@cdktf/provider-google'
+import { computeNetworkAttachment } from '@cdktn/provider-google'
 
 computeNetworkAttachment.ComputeNetworkAttachment.isConstruct(x: any)
 ```
@@ -454,7 +454,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.isConstruct.parameter.x"></a>
 
 - *Type:* any
 
@@ -462,45 +462,45 @@ Any object.
 
 ---
 
-##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.isTerraformElement"></a>
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.isTerraformElement"></a>
 
 ```typescript
-import { computeNetworkAttachment } from '@cdktf/provider-google'
+import { computeNetworkAttachment } from '@cdktn/provider-google'
 
 computeNetworkAttachment.ComputeNetworkAttachment.isTerraformElement(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.isTerraformElement.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.isTerraformResource"></a>
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.isTerraformResource"></a>
 
 ```typescript
-import { computeNetworkAttachment } from '@cdktf/provider-google'
+import { computeNetworkAttachment } from '@cdktn/provider-google'
 
 computeNetworkAttachment.ComputeNetworkAttachment.isTerraformResource(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.isTerraformResource.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.generateConfigForImport"></a>
+##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.generateConfigForImport"></a>
 
 ```typescript
-import { computeNetworkAttachment } from '@cdktf/provider-google'
+import { computeNetworkAttachment } from '@cdktn/provider-google'
 
 computeNetworkAttachment.ComputeNetworkAttachment.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
 Generates CDKTF code for importing a ComputeNetworkAttachment resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -508,7 +508,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* string
 
@@ -516,7 +516,7 @@ The construct id used in the generated config for the ComputeNetworkAttachment t
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* string
 
@@ -526,7 +526,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
@@ -538,50 +538,50 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.connectionEndpoints">connectionEndpoints</a></code> | <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsList">ComputeNetworkAttachmentConnectionEndpointsList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.creationTimestamp">creationTimestamp</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.fingerprint">fingerprint</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.kind">kind</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.network">network</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.selfLink">selfLink</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.selfLinkWithId">selfLinkWithId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference">ComputeNetworkAttachmentTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.connectionPreferenceInput">connectionPreferenceInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.producerAcceptListsInput">producerAcceptListsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.producerRejectListsInput">producerRejectListsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.subnetworksInput">subnetworksInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeouts">ComputeNetworkAttachmentTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.connectionPreference">connectionPreference</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.description">description</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.producerAcceptLists">producerAcceptLists</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.producerRejectLists">producerRejectLists</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.project">project</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.region">region</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.subnetworks">subnetworks</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.connectionEndpoints">connectionEndpoints</a></code> | <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsList">ComputeNetworkAttachmentConnectionEndpointsList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.creationTimestamp">creationTimestamp</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.fingerprint">fingerprint</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.kind">kind</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.network">network</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.selfLink">selfLink</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.selfLinkWithId">selfLinkWithId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference">ComputeNetworkAttachmentTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.connectionPreferenceInput">connectionPreferenceInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.producerAcceptListsInput">producerAcceptListsInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.producerRejectListsInput">producerRejectListsInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.subnetworksInput">subnetworksInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeouts">ComputeNetworkAttachmentTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.connectionPreference">connectionPreference</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.description">description</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.producerAcceptLists">producerAcceptLists</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.producerRejectLists">producerRejectLists</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.project">project</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.region">region</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.subnetworks">subnetworks</a></code> | <code>string[]</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.node"></a>
 
 ```typescript
 public readonly node: Node;
@@ -593,7 +593,7 @@ The tree node.
 
 ---
 
-##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.cdktfStack"></a>
+##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.cdktfStack"></a>
 
 ```typescript
 public readonly cdktfStack: TerraformStack;
@@ -603,7 +603,7 @@ public readonly cdktfStack: TerraformStack;
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -613,7 +613,7 @@ public readonly fqn: string;
 
 ---
 
-##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.friendlyUniqueId"></a>
+##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.friendlyUniqueId"></a>
 
 ```typescript
 public readonly friendlyUniqueId: string;
@@ -623,7 +623,7 @@ public readonly friendlyUniqueId: string;
 
 ---
 
-##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.terraformMetaArguments"></a>
+##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.terraformMetaArguments"></a>
 
 ```typescript
 public readonly terraformMetaArguments: {[ key: string ]: any};
@@ -633,7 +633,7 @@ public readonly terraformMetaArguments: {[ key: string ]: any};
 
 ---
 
-##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.terraformResourceType"></a>
+##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.terraformResourceType"></a>
 
 ```typescript
 public readonly terraformResourceType: string;
@@ -643,7 +643,7 @@ public readonly terraformResourceType: string;
 
 ---
 
-##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.terraformGeneratorMetadata"></a>
+##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.terraformGeneratorMetadata"></a>
 
 ```typescript
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
@@ -653,7 +653,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.connection"></a>
 
 ```typescript
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
@@ -663,7 +663,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.count"></a>
 
 ```typescript
 public readonly count: number | TerraformCount;
@@ -673,7 +673,7 @@ public readonly count: number | TerraformCount;
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: string[];
@@ -683,7 +683,7 @@ public readonly dependsOn: string[];
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
@@ -693,7 +693,7 @@ public readonly forEach: ITerraformIterator;
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
@@ -703,7 +703,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
@@ -713,7 +713,7 @@ public readonly provider: TerraformProvider;
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.provisioners"></a>
 
 ```typescript
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
@@ -723,17 +723,17 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `connectionEndpoints`<sup>Required</sup> <a name="connectionEndpoints" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.connectionEndpoints"></a>
+##### `connectionEndpoints`<sup>Required</sup> <a name="connectionEndpoints" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.connectionEndpoints"></a>
 
 ```typescript
 public readonly connectionEndpoints: ComputeNetworkAttachmentConnectionEndpointsList;
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsList">ComputeNetworkAttachmentConnectionEndpointsList</a>
+- *Type:* <a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsList">ComputeNetworkAttachmentConnectionEndpointsList</a>
 
 ---
 
-##### `creationTimestamp`<sup>Required</sup> <a name="creationTimestamp" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.creationTimestamp"></a>
+##### `creationTimestamp`<sup>Required</sup> <a name="creationTimestamp" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.creationTimestamp"></a>
 
 ```typescript
 public readonly creationTimestamp: string;
@@ -743,7 +743,7 @@ public readonly creationTimestamp: string;
 
 ---
 
-##### `fingerprint`<sup>Required</sup> <a name="fingerprint" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.fingerprint"></a>
+##### `fingerprint`<sup>Required</sup> <a name="fingerprint" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.fingerprint"></a>
 
 ```typescript
 public readonly fingerprint: string;
@@ -753,7 +753,7 @@ public readonly fingerprint: string;
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -763,7 +763,7 @@ public readonly id: string;
 
 ---
 
-##### `kind`<sup>Required</sup> <a name="kind" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.kind"></a>
+##### `kind`<sup>Required</sup> <a name="kind" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.kind"></a>
 
 ```typescript
 public readonly kind: string;
@@ -773,7 +773,7 @@ public readonly kind: string;
 
 ---
 
-##### `network`<sup>Required</sup> <a name="network" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.network"></a>
+##### `network`<sup>Required</sup> <a name="network" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.network"></a>
 
 ```typescript
 public readonly network: string;
@@ -783,7 +783,7 @@ public readonly network: string;
 
 ---
 
-##### `selfLink`<sup>Required</sup> <a name="selfLink" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.selfLink"></a>
+##### `selfLink`<sup>Required</sup> <a name="selfLink" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.selfLink"></a>
 
 ```typescript
 public readonly selfLink: string;
@@ -793,7 +793,7 @@ public readonly selfLink: string;
 
 ---
 
-##### `selfLinkWithId`<sup>Required</sup> <a name="selfLinkWithId" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.selfLinkWithId"></a>
+##### `selfLinkWithId`<sup>Required</sup> <a name="selfLinkWithId" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.selfLinkWithId"></a>
 
 ```typescript
 public readonly selfLinkWithId: string;
@@ -803,17 +803,17 @@ public readonly selfLinkWithId: string;
 
 ---
 
-##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.timeouts"></a>
+##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.timeouts"></a>
 
 ```typescript
 public readonly timeouts: ComputeNetworkAttachmentTimeoutsOutputReference;
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference">ComputeNetworkAttachmentTimeoutsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference">ComputeNetworkAttachmentTimeoutsOutputReference</a>
 
 ---
 
-##### `connectionPreferenceInput`<sup>Optional</sup> <a name="connectionPreferenceInput" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.connectionPreferenceInput"></a>
+##### `connectionPreferenceInput`<sup>Optional</sup> <a name="connectionPreferenceInput" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.connectionPreferenceInput"></a>
 
 ```typescript
 public readonly connectionPreferenceInput: string;
@@ -823,7 +823,7 @@ public readonly connectionPreferenceInput: string;
 
 ---
 
-##### `descriptionInput`<sup>Optional</sup> <a name="descriptionInput" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.descriptionInput"></a>
+##### `descriptionInput`<sup>Optional</sup> <a name="descriptionInput" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.descriptionInput"></a>
 
 ```typescript
 public readonly descriptionInput: string;
@@ -833,7 +833,7 @@ public readonly descriptionInput: string;
 
 ---
 
-##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.nameInput"></a>
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.nameInput"></a>
 
 ```typescript
 public readonly nameInput: string;
@@ -843,7 +843,7 @@ public readonly nameInput: string;
 
 ---
 
-##### `producerAcceptListsInput`<sup>Optional</sup> <a name="producerAcceptListsInput" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.producerAcceptListsInput"></a>
+##### `producerAcceptListsInput`<sup>Optional</sup> <a name="producerAcceptListsInput" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.producerAcceptListsInput"></a>
 
 ```typescript
 public readonly producerAcceptListsInput: string[];
@@ -853,7 +853,7 @@ public readonly producerAcceptListsInput: string[];
 
 ---
 
-##### `producerRejectListsInput`<sup>Optional</sup> <a name="producerRejectListsInput" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.producerRejectListsInput"></a>
+##### `producerRejectListsInput`<sup>Optional</sup> <a name="producerRejectListsInput" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.producerRejectListsInput"></a>
 
 ```typescript
 public readonly producerRejectListsInput: string[];
@@ -863,7 +863,7 @@ public readonly producerRejectListsInput: string[];
 
 ---
 
-##### `projectInput`<sup>Optional</sup> <a name="projectInput" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.projectInput"></a>
+##### `projectInput`<sup>Optional</sup> <a name="projectInput" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.projectInput"></a>
 
 ```typescript
 public readonly projectInput: string;
@@ -873,7 +873,7 @@ public readonly projectInput: string;
 
 ---
 
-##### `regionInput`<sup>Optional</sup> <a name="regionInput" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.regionInput"></a>
+##### `regionInput`<sup>Optional</sup> <a name="regionInput" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.regionInput"></a>
 
 ```typescript
 public readonly regionInput: string;
@@ -883,7 +883,7 @@ public readonly regionInput: string;
 
 ---
 
-##### `subnetworksInput`<sup>Optional</sup> <a name="subnetworksInput" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.subnetworksInput"></a>
+##### `subnetworksInput`<sup>Optional</sup> <a name="subnetworksInput" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.subnetworksInput"></a>
 
 ```typescript
 public readonly subnetworksInput: string[];
@@ -893,17 +893,17 @@ public readonly subnetworksInput: string[];
 
 ---
 
-##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.timeoutsInput"></a>
+##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.timeoutsInput"></a>
 
 ```typescript
 public readonly timeoutsInput: IResolvable | ComputeNetworkAttachmentTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeouts">ComputeNetworkAttachmentTimeouts</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeouts">ComputeNetworkAttachmentTimeouts</a>
 
 ---
 
-##### `connectionPreference`<sup>Required</sup> <a name="connectionPreference" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.connectionPreference"></a>
+##### `connectionPreference`<sup>Required</sup> <a name="connectionPreference" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.connectionPreference"></a>
 
 ```typescript
 public readonly connectionPreference: string;
@@ -913,7 +913,7 @@ public readonly connectionPreference: string;
 
 ---
 
-##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.description"></a>
+##### `description`<sup>Required</sup> <a name="description" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.description"></a>
 
 ```typescript
 public readonly description: string;
@@ -923,7 +923,7 @@ public readonly description: string;
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -933,7 +933,7 @@ public readonly name: string;
 
 ---
 
-##### `producerAcceptLists`<sup>Required</sup> <a name="producerAcceptLists" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.producerAcceptLists"></a>
+##### `producerAcceptLists`<sup>Required</sup> <a name="producerAcceptLists" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.producerAcceptLists"></a>
 
 ```typescript
 public readonly producerAcceptLists: string[];
@@ -943,7 +943,7 @@ public readonly producerAcceptLists: string[];
 
 ---
 
-##### `producerRejectLists`<sup>Required</sup> <a name="producerRejectLists" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.producerRejectLists"></a>
+##### `producerRejectLists`<sup>Required</sup> <a name="producerRejectLists" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.producerRejectLists"></a>
 
 ```typescript
 public readonly producerRejectLists: string[];
@@ -953,7 +953,7 @@ public readonly producerRejectLists: string[];
 
 ---
 
-##### `project`<sup>Required</sup> <a name="project" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.project"></a>
+##### `project`<sup>Required</sup> <a name="project" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.project"></a>
 
 ```typescript
 public readonly project: string;
@@ -963,7 +963,7 @@ public readonly project: string;
 
 ---
 
-##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.region"></a>
+##### `region`<sup>Required</sup> <a name="region" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.region"></a>
 
 ```typescript
 public readonly region: string;
@@ -973,7 +973,7 @@ public readonly region: string;
 
 ---
 
-##### `subnetworks`<sup>Required</sup> <a name="subnetworks" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.subnetworks"></a>
+##### `subnetworks`<sup>Required</sup> <a name="subnetworks" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.subnetworks"></a>
 
 ```typescript
 public readonly subnetworks: string[];
@@ -987,11 +987,11 @@ public readonly subnetworks: string[];
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachment.property.tfResourceType"></a>
 
 ```typescript
 public readonly tfResourceType: string;
@@ -1003,12 +1003,12 @@ public readonly tfResourceType: string;
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### ComputeNetworkAttachmentConfig <a name="ComputeNetworkAttachmentConfig" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConfig"></a>
+### ComputeNetworkAttachmentConfig <a name="ComputeNetworkAttachmentConfig" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConfig.Initializer"></a>
 
 ```typescript
-import { computeNetworkAttachment } from '@cdktf/provider-google'
+import { computeNetworkAttachment } from '@cdktn/provider-google'
 
 const computeNetworkAttachmentConfig: computeNetworkAttachment.ComputeNetworkAttachmentConfig = { ... }
 ```
@@ -1017,26 +1017,26 @@ const computeNetworkAttachmentConfig: computeNetworkAttachment.ComputeNetworkAtt
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConfig.property.connectionPreference">connectionPreference</a></code> | <code>string</code> | The connection preference of service attachment. |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConfig.property.name">name</a></code> | <code>string</code> | Name of the resource. |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConfig.property.subnetworks">subnetworks</a></code> | <code>string[]</code> | An array of URLs where each entry is the URL of a subnet provided by the service consumer to use for endpoints in the producers that connect to this network attachment. |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConfig.property.description">description</a></code> | <code>string</code> | An optional description of this resource. Provide this property when you create the resource. |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConfig.property.producerAcceptLists">producerAcceptLists</a></code> | <code>string[]</code> | Projects that are allowed to connect to this network attachment. |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConfig.property.producerRejectLists">producerRejectLists</a></code> | <code>string[]</code> | Projects that are not allowed to connect to this network attachment. |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_network_attachment#project ComputeNetworkAttachment#project}. |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConfig.property.region">region</a></code> | <code>string</code> | URL of the region where the network attachment resides. |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeouts">ComputeNetworkAttachmentTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConfig.property.connectionPreference">connectionPreference</a></code> | <code>string</code> | The connection preference of service attachment. |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConfig.property.name">name</a></code> | <code>string</code> | Name of the resource. |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConfig.property.subnetworks">subnetworks</a></code> | <code>string[]</code> | An array of URLs where each entry is the URL of a subnet provided by the service consumer to use for endpoints in the producers that connect to this network attachment. |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConfig.property.description">description</a></code> | <code>string</code> | An optional description of this resource. Provide this property when you create the resource. |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConfig.property.producerAcceptLists">producerAcceptLists</a></code> | <code>string[]</code> | Projects that are allowed to connect to this network attachment. |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConfig.property.producerRejectLists">producerRejectLists</a></code> | <code>string[]</code> | Projects that are not allowed to connect to this network attachment. |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_network_attachment#project ComputeNetworkAttachment#project}. |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConfig.property.region">region</a></code> | <code>string</code> | URL of the region where the network attachment resides. |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeouts">ComputeNetworkAttachmentTimeouts</a></code> | timeouts block. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConfig.property.connection"></a>
 
 ```typescript
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
@@ -1046,7 +1046,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConfig.property.count"></a>
 
 ```typescript
 public readonly count: number | TerraformCount;
@@ -1056,7 +1056,7 @@ public readonly count: number | TerraformCount;
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConfig.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConfig.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: ITerraformDependable[];
@@ -1066,7 +1066,7 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConfig.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConfig.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
@@ -1076,7 +1076,7 @@ public readonly forEach: ITerraformIterator;
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConfig.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
@@ -1086,7 +1086,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConfig.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
@@ -1096,7 +1096,7 @@ public readonly provider: TerraformProvider;
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConfig.property.provisioners"></a>
 
 ```typescript
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
@@ -1106,7 +1106,7 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `connectionPreference`<sup>Required</sup> <a name="connectionPreference" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConfig.property.connectionPreference"></a>
+##### `connectionPreference`<sup>Required</sup> <a name="connectionPreference" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConfig.property.connectionPreference"></a>
 
 ```typescript
 public readonly connectionPreference: string;
@@ -1122,7 +1122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConfig.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConfig.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -1138,7 +1138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `subnetworks`<sup>Required</sup> <a name="subnetworks" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConfig.property.subnetworks"></a>
+##### `subnetworks`<sup>Required</sup> <a name="subnetworks" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConfig.property.subnetworks"></a>
 
 ```typescript
 public readonly subnetworks: string[];
@@ -1152,7 +1152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConfig.property.description"></a>
+##### `description`<sup>Optional</sup> <a name="description" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConfig.property.description"></a>
 
 ```typescript
 public readonly description: string;
@@ -1166,7 +1166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `producerAcceptLists`<sup>Optional</sup> <a name="producerAcceptLists" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConfig.property.producerAcceptLists"></a>
+##### `producerAcceptLists`<sup>Optional</sup> <a name="producerAcceptLists" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConfig.property.producerAcceptLists"></a>
 
 ```typescript
 public readonly producerAcceptLists: string[];
@@ -1182,7 +1182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `producerRejectLists`<sup>Optional</sup> <a name="producerRejectLists" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConfig.property.producerRejectLists"></a>
+##### `producerRejectLists`<sup>Optional</sup> <a name="producerRejectLists" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConfig.property.producerRejectLists"></a>
 
 ```typescript
 public readonly producerRejectLists: string[];
@@ -1198,7 +1198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `project`<sup>Optional</sup> <a name="project" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConfig.property.project"></a>
+##### `project`<sup>Optional</sup> <a name="project" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConfig.property.project"></a>
 
 ```typescript
 public readonly project: string;
@@ -1210,7 +1210,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConfig.property.region"></a>
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConfig.property.region"></a>
 
 ```typescript
 public readonly region: string;
@@ -1226,13 +1226,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConfig.property.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConfig.property.timeouts"></a>
 
 ```typescript
 public readonly timeouts: ComputeNetworkAttachmentTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeouts">ComputeNetworkAttachmentTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeouts">ComputeNetworkAttachmentTimeouts</a>
 
 timeouts block.
 
@@ -1240,23 +1240,23 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### ComputeNetworkAttachmentConnectionEndpoints <a name="ComputeNetworkAttachmentConnectionEndpoints" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpoints"></a>
+### ComputeNetworkAttachmentConnectionEndpoints <a name="ComputeNetworkAttachmentConnectionEndpoints" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpoints"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpoints.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpoints.Initializer"></a>
 
 ```typescript
-import { computeNetworkAttachment } from '@cdktf/provider-google'
+import { computeNetworkAttachment } from '@cdktn/provider-google'
 
 const computeNetworkAttachmentConnectionEndpoints: computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpoints = { ... }
 ```
 
 
-### ComputeNetworkAttachmentTimeouts <a name="ComputeNetworkAttachmentTimeouts" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeouts"></a>
+### ComputeNetworkAttachmentTimeouts <a name="ComputeNetworkAttachmentTimeouts" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeouts"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeouts.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeouts.Initializer"></a>
 
 ```typescript
-import { computeNetworkAttachment } from '@cdktf/provider-google'
+import { computeNetworkAttachment } from '@cdktn/provider-google'
 
 const computeNetworkAttachmentTimeouts: computeNetworkAttachment.ComputeNetworkAttachmentTimeouts = { ... }
 ```
@@ -1265,13 +1265,13 @@ const computeNetworkAttachmentTimeouts: computeNetworkAttachment.ComputeNetworkA
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_network_attachment#create ComputeNetworkAttachment#create}. |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_network_attachment#delete ComputeNetworkAttachment#delete}. |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_network_attachment#update ComputeNetworkAttachment#update}. |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_network_attachment#create ComputeNetworkAttachment#create}. |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_network_attachment#delete ComputeNetworkAttachment#delete}. |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_network_attachment#update ComputeNetworkAttachment#update}. |
 
 ---
 
-##### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeouts.property.create"></a>
+##### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeouts.property.create"></a>
 
 ```typescript
 public readonly create: string;
@@ -1283,7 +1283,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeouts.property.delete"></a>
+##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeouts.property.delete"></a>
 
 ```typescript
 public readonly delete: string;
@@ -1295,7 +1295,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeouts.property.update"></a>
+##### `update`<sup>Optional</sup> <a name="update" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeouts.property.update"></a>
 
 ```typescript
 public readonly update: string;
@@ -1309,25 +1309,25 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### ComputeNetworkAttachmentConnectionEndpointsList <a name="ComputeNetworkAttachmentConnectionEndpointsList" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsList"></a>
+### ComputeNetworkAttachmentConnectionEndpointsList <a name="ComputeNetworkAttachmentConnectionEndpointsList" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsList.Initializer"></a>
 
 ```typescript
-import { computeNetworkAttachment } from '@cdktf/provider-google'
+import { computeNetworkAttachment } from '@cdktn/provider-google'
 
 new computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsList.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -1335,7 +1335,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsList.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
@@ -1343,7 +1343,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsList.Initializer.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* boolean
 
@@ -1355,15 +1355,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsList.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsList.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsList.get">get</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `allWithMapKey` <a name="allWithMapKey" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsList.allWithMapKey"></a>
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsList.allWithMapKey"></a>
 
 ```typescript
 public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
@@ -1373,19 +1373,19 @@ Creating an iterator for this complex list.
 
 The list will be converted into a map with the mapKeyAttributeName as the key.
 
-###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
 
 - *Type:* string
 
 ---
 
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsList.computeFqn"></a>
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsList.computeFqn"></a>
 
 ```typescript
 public computeFqn(): string
 ```
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsList.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsList.resolve"></a>
 
 ```typescript
 public resolve(_context: IResolveContext): any
@@ -1393,13 +1393,13 @@ public resolve(_context: IResolveContext): any
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsList.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsList.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsList.toString"></a>
 
 ```typescript
 public toString(): string
@@ -1409,13 +1409,13 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `get` <a name="get" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsList.get"></a>
+##### `get` <a name="get" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsList.get"></a>
 
 ```typescript
 public get(index: number): ComputeNetworkAttachmentConnectionEndpointsOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsList.get.parameter.index"></a>
 
 - *Type:* number
 
@@ -1428,12 +1428,12 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsList.property.creationStack"></a>
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsList.property.creationStack"></a>
 
 ```typescript
 public readonly creationStack: string[];
@@ -1447,7 +1447,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsList.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsList.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -1458,26 +1458,26 @@ public readonly fqn: string;
 ---
 
 
-### ComputeNetworkAttachmentConnectionEndpointsOutputReference <a name="ComputeNetworkAttachmentConnectionEndpointsOutputReference" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference"></a>
+### ComputeNetworkAttachmentConnectionEndpointsOutputReference <a name="ComputeNetworkAttachmentConnectionEndpointsOutputReference" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.Initializer"></a>
 
 ```typescript
-import { computeNetworkAttachment } from '@cdktf/provider-google'
+import { computeNetworkAttachment } from '@cdktn/provider-google'
 
 new computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -1485,7 +1485,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
@@ -1493,7 +1493,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* number
 
@@ -1501,7 +1501,7 @@ the index of this item in the list.
 
 ---
 
-##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* boolean
 
@@ -1513,149 +1513,149 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 
 ---
 
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.computeFqn"></a>
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.computeFqn"></a>
 
 ```typescript
 public computeFqn(): string
 ```
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(property: string): IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* string
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.resolve"></a>
 
 ```typescript
 public resolve(_context: IResolveContext): any
@@ -1663,13 +1663,13 @@ public resolve(_context: IResolveContext): any
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.toString"></a>
 
 ```typescript
 public toString(): string
@@ -1684,18 +1684,18 @@ Returns a reversible string representation.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.property.ipAddress">ipAddress</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.property.projectIdOrNum">projectIdOrNum</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.property.secondaryIpCidrRanges">secondaryIpCidrRanges</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.property.status">status</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.property.subnetwork">subnetwork</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpoints">ComputeNetworkAttachmentConnectionEndpoints</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.property.ipAddress">ipAddress</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.property.projectIdOrNum">projectIdOrNum</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.property.secondaryIpCidrRanges">secondaryIpCidrRanges</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.property.status">status</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.property.subnetwork">subnetwork</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpoints">ComputeNetworkAttachmentConnectionEndpoints</a></code> | *No description.* |
 
 ---
 
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.property.creationStack"></a>
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.property.creationStack"></a>
 
 ```typescript
 public readonly creationStack: string[];
@@ -1709,7 +1709,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -1719,7 +1719,7 @@ public readonly fqn: string;
 
 ---
 
-##### `ipAddress`<sup>Required</sup> <a name="ipAddress" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.property.ipAddress"></a>
+##### `ipAddress`<sup>Required</sup> <a name="ipAddress" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.property.ipAddress"></a>
 
 ```typescript
 public readonly ipAddress: string;
@@ -1729,7 +1729,7 @@ public readonly ipAddress: string;
 
 ---
 
-##### `projectIdOrNum`<sup>Required</sup> <a name="projectIdOrNum" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.property.projectIdOrNum"></a>
+##### `projectIdOrNum`<sup>Required</sup> <a name="projectIdOrNum" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.property.projectIdOrNum"></a>
 
 ```typescript
 public readonly projectIdOrNum: string;
@@ -1739,7 +1739,7 @@ public readonly projectIdOrNum: string;
 
 ---
 
-##### `secondaryIpCidrRanges`<sup>Required</sup> <a name="secondaryIpCidrRanges" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.property.secondaryIpCidrRanges"></a>
+##### `secondaryIpCidrRanges`<sup>Required</sup> <a name="secondaryIpCidrRanges" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.property.secondaryIpCidrRanges"></a>
 
 ```typescript
 public readonly secondaryIpCidrRanges: string;
@@ -1749,7 +1749,7 @@ public readonly secondaryIpCidrRanges: string;
 
 ---
 
-##### `status`<sup>Required</sup> <a name="status" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.property.status"></a>
+##### `status`<sup>Required</sup> <a name="status" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.property.status"></a>
 
 ```typescript
 public readonly status: string;
@@ -1759,7 +1759,7 @@ public readonly status: string;
 
 ---
 
-##### `subnetwork`<sup>Required</sup> <a name="subnetwork" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.property.subnetwork"></a>
+##### `subnetwork`<sup>Required</sup> <a name="subnetwork" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.property.subnetwork"></a>
 
 ```typescript
 public readonly subnetwork: string;
@@ -1769,35 +1769,35 @@ public readonly subnetwork: string;
 
 ---
 
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.property.internalValue"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpointsOutputReference.property.internalValue"></a>
 
 ```typescript
 public readonly internalValue: ComputeNetworkAttachmentConnectionEndpoints;
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpoints">ComputeNetworkAttachmentConnectionEndpoints</a>
+- *Type:* <a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentConnectionEndpoints">ComputeNetworkAttachmentConnectionEndpoints</a>
 
 ---
 
 
-### ComputeNetworkAttachmentTimeoutsOutputReference <a name="ComputeNetworkAttachmentTimeoutsOutputReference" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference"></a>
+### ComputeNetworkAttachmentTimeoutsOutputReference <a name="ComputeNetworkAttachmentTimeoutsOutputReference" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.Initializer"></a>
 
 ```typescript
-import { computeNetworkAttachment } from '@cdktf/provider-google'
+import { computeNetworkAttachment } from '@cdktn/provider-google'
 
 new computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -1805,7 +1805,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
@@ -1817,152 +1817,152 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.resetCreate">resetCreate</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.resetDelete">resetDelete</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.resetUpdate">resetUpdate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.resetCreate">resetCreate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.resetDelete">resetDelete</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.resetUpdate">resetUpdate</a></code> | *No description.* |
 
 ---
 
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.computeFqn"></a>
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.computeFqn"></a>
 
 ```typescript
 public computeFqn(): string
 ```
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(property: string): IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* string
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.resolve"></a>
 
 ```typescript
 public resolve(_context: IResolveContext): any
@@ -1970,13 +1970,13 @@ public resolve(_context: IResolveContext): any
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.toString"></a>
 
 ```typescript
 public toString(): string
@@ -1986,19 +1986,19 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `resetCreate` <a name="resetCreate" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.resetCreate"></a>
+##### `resetCreate` <a name="resetCreate" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.resetCreate"></a>
 
 ```typescript
 public resetCreate(): void
 ```
 
-##### `resetDelete` <a name="resetDelete" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.resetDelete"></a>
+##### `resetDelete` <a name="resetDelete" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.resetDelete"></a>
 
 ```typescript
 public resetDelete(): void
 ```
 
-##### `resetUpdate` <a name="resetUpdate" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.resetUpdate"></a>
+##### `resetUpdate` <a name="resetUpdate" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.resetUpdate"></a>
 
 ```typescript
 public resetUpdate(): void
@@ -2009,19 +2009,19 @@ public resetUpdate(): void
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.property.createInput">createInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.property.deleteInput">deleteInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.property.updateInput">updateInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeouts">ComputeNetworkAttachmentTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.property.createInput">createInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.property.deleteInput">deleteInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.property.updateInput">updateInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeouts">ComputeNetworkAttachmentTimeouts</a></code> | *No description.* |
 
 ---
 
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.property.creationStack"></a>
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.property.creationStack"></a>
 
 ```typescript
 public readonly creationStack: string[];
@@ -2035,7 +2035,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -2045,7 +2045,7 @@ public readonly fqn: string;
 
 ---
 
-##### `createInput`<sup>Optional</sup> <a name="createInput" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.property.createInput"></a>
+##### `createInput`<sup>Optional</sup> <a name="createInput" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.property.createInput"></a>
 
 ```typescript
 public readonly createInput: string;
@@ -2055,7 +2055,7 @@ public readonly createInput: string;
 
 ---
 
-##### `deleteInput`<sup>Optional</sup> <a name="deleteInput" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.property.deleteInput"></a>
+##### `deleteInput`<sup>Optional</sup> <a name="deleteInput" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.property.deleteInput"></a>
 
 ```typescript
 public readonly deleteInput: string;
@@ -2065,7 +2065,7 @@ public readonly deleteInput: string;
 
 ---
 
-##### `updateInput`<sup>Optional</sup> <a name="updateInput" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.property.updateInput"></a>
+##### `updateInput`<sup>Optional</sup> <a name="updateInput" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.property.updateInput"></a>
 
 ```typescript
 public readonly updateInput: string;
@@ -2075,7 +2075,7 @@ public readonly updateInput: string;
 
 ---
 
-##### `create`<sup>Required</sup> <a name="create" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.property.create"></a>
+##### `create`<sup>Required</sup> <a name="create" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.property.create"></a>
 
 ```typescript
 public readonly create: string;
@@ -2085,7 +2085,7 @@ public readonly create: string;
 
 ---
 
-##### `delete`<sup>Required</sup> <a name="delete" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.property.delete"></a>
+##### `delete`<sup>Required</sup> <a name="delete" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.property.delete"></a>
 
 ```typescript
 public readonly delete: string;
@@ -2095,7 +2095,7 @@ public readonly delete: string;
 
 ---
 
-##### `update`<sup>Required</sup> <a name="update" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.property.update"></a>
+##### `update`<sup>Required</sup> <a name="update" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.property.update"></a>
 
 ```typescript
 public readonly update: string;
@@ -2105,13 +2105,13 @@ public readonly update: string;
 
 ---
 
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.property.internalValue"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
 public readonly internalValue: IResolvable | ComputeNetworkAttachmentTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeouts">ComputeNetworkAttachmentTimeouts</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeNetworkAttachment.ComputeNetworkAttachmentTimeouts">ComputeNetworkAttachmentTimeouts</a>
 
 ---
 

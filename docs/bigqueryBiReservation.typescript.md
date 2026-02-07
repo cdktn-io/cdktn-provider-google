@@ -1,28 +1,28 @@
-# `bigqueryBiReservation` Submodule <a name="`bigqueryBiReservation` Submodule" id="@cdktf/provider-google.bigqueryBiReservation"></a>
+# `bigqueryBiReservation` Submodule <a name="`bigqueryBiReservation` Submodule" id="@cdktn/provider-google.bigqueryBiReservation"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### BigqueryBiReservation <a name="BigqueryBiReservation" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation"></a>
+### BigqueryBiReservation <a name="BigqueryBiReservation" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation"></a>
 
 Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_bi_reservation google_bigquery_bi_reservation}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.Initializer"></a>
 
 ```typescript
-import { bigqueryBiReservation } from '@cdktf/provider-google'
+import { bigqueryBiReservation } from '@cdktn/provider-google'
 
 new bigqueryBiReservation.BigqueryBiReservation(scope: Construct, id: string, config: BigqueryBiReservationConfig)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationConfig">BigqueryBiReservationConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationConfig">BigqueryBiReservationConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.Initializer.parameter.id"></a>
 
 - *Type:* string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.Initializer.parameter.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationConfig">BigqueryBiReservationConfig</a>
+- *Type:* <a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationConfig">BigqueryBiReservationConfig</a>
 
 ---
 
@@ -50,40 +50,40 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.toString">toString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.addOverride">addOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.toHclTerraform">toHclTerraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.toMetadata">toMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.hasResourceMove">hasResourceMove</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.importFrom">importFrom</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.putPreferredTables">putPreferredTables</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.putTimeouts">putTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.resetId">resetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.resetPreferredTables">resetPreferredTables</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.resetProject">resetProject</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.resetSize">resetSize</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.resetTimeouts">resetTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.addOverride">addOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.toHclTerraform">toHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.toMetadata">toMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.hasResourceMove">hasResourceMove</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.importFrom">importFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.putPreferredTables">putPreferredTables</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.putTimeouts">putTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.resetPreferredTables">resetPreferredTables</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.resetProject">resetProject</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.resetSize">resetSize</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.resetTimeouts">resetTimeouts</a></code> | *No description.* |
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.toString"></a>
 
 ```typescript
 public toString(): string
@@ -91,25 +91,25 @@ public toString(): string
 
 Returns a string representation of this construct.
 
-##### `addOverride` <a name="addOverride" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.addOverride"></a>
+##### `addOverride` <a name="addOverride" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.addOverride"></a>
 
 ```typescript
 public addOverride(path: string, value: any): void
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.addOverride.parameter.path"></a>
 
 - *Type:* string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.addOverride.parameter.value"></a>
 
 - *Type:* any
 
 ---
 
-##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.overrideLogicalId"></a>
+##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.overrideLogicalId"></a>
 
 ```typescript
 public overrideLogicalId(newLogicalId: string): void
@@ -117,7 +117,7 @@ public overrideLogicalId(newLogicalId: string): void
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* string
 
@@ -125,7 +125,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.resetOverrideLogicalId"></a>
+##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.resetOverrideLogicalId"></a>
 
 ```typescript
 public resetOverrideLogicalId(): void
@@ -133,19 +133,19 @@ public resetOverrideLogicalId(): void
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `toHclTerraform` <a name="toHclTerraform" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.toHclTerraform"></a>
+##### `toHclTerraform` <a name="toHclTerraform" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.toHclTerraform"></a>
 
 ```typescript
 public toHclTerraform(): any
 ```
 
-##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.toMetadata"></a>
+##### `toMetadata` <a name="toMetadata" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.toMetadata"></a>
 
 ```typescript
 public toMetadata(): any
 ```
 
-##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.toTerraform"></a>
+##### `toTerraform` <a name="toTerraform" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.toTerraform"></a>
 
 ```typescript
 public toTerraform(): any
@@ -153,7 +153,7 @@ public toTerraform(): any
 
 Adds this resource to the terraform JSON output.
 
-##### `addMoveTarget` <a name="addMoveTarget" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.addMoveTarget"></a>
+##### `addMoveTarget` <a name="addMoveTarget" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.addMoveTarget"></a>
 
 ```typescript
 public addMoveTarget(moveTarget: string): void
@@ -161,7 +161,7 @@ public addMoveTarget(moveTarget: string): void
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.addMoveTarget.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* string
 
@@ -169,151 +169,151 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `hasResourceMove` <a name="hasResourceMove" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.hasResourceMove"></a>
+##### `hasResourceMove` <a name="hasResourceMove" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.hasResourceMove"></a>
 
 ```typescript
 public hasResourceMove(): TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `importFrom` <a name="importFrom" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.importFrom"></a>
+##### `importFrom` <a name="importFrom" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.importFrom"></a>
 
 ```typescript
 public importFrom(id: string, provider?: TerraformProvider): void
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.importFrom.parameter.id"></a>
 
 - *Type:* string
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.importFrom.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `moveFromId` <a name="moveFromId" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.moveFromId"></a>
+##### `moveFromId` <a name="moveFromId" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.moveFromId"></a>
 
 ```typescript
 public moveFromId(id: string): void
@@ -323,7 +323,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.moveFromId.parameter.id"></a>
 
 - *Type:* string
 
@@ -331,7 +331,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `moveTo` <a name="moveTo" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.moveTo"></a>
+##### `moveTo` <a name="moveTo" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.moveTo"></a>
 
 ```typescript
 public moveTo(moveTarget: string, index?: string | number): void
@@ -339,7 +339,7 @@ public moveTo(moveTarget: string, index?: string | number): void
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.moveTo.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.moveTo.parameter.moveTarget"></a>
 
 - *Type:* string
 
@@ -347,7 +347,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.moveTo.parameter.index"></a>
 
 - *Type:* string | number
 
@@ -355,7 +355,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `moveToId` <a name="moveToId" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.moveToId"></a>
+##### `moveToId` <a name="moveToId" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.moveToId"></a>
 
 ```typescript
 public moveToId(id: string): void
@@ -363,7 +363,7 @@ public moveToId(id: string): void
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.moveToId.parameter.id"></a>
 
 - *Type:* string
 
@@ -371,55 +371,55 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `putPreferredTables` <a name="putPreferredTables" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.putPreferredTables"></a>
+##### `putPreferredTables` <a name="putPreferredTables" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.putPreferredTables"></a>
 
 ```typescript
 public putPreferredTables(value: IResolvable | BigqueryBiReservationPreferredTables[]): void
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.putPreferredTables.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.putPreferredTables.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTables">BigqueryBiReservationPreferredTables</a>[]
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTables">BigqueryBiReservationPreferredTables</a>[]
 
 ---
 
-##### `putTimeouts` <a name="putTimeouts" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.putTimeouts"></a>
+##### `putTimeouts` <a name="putTimeouts" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.putTimeouts"></a>
 
 ```typescript
 public putTimeouts(value: BigqueryBiReservationTimeouts): void
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.putTimeouts.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.putTimeouts.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeouts">BigqueryBiReservationTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeouts">BigqueryBiReservationTimeouts</a>
 
 ---
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.resetId"></a>
+##### `resetId` <a name="resetId" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.resetId"></a>
 
 ```typescript
 public resetId(): void
 ```
 
-##### `resetPreferredTables` <a name="resetPreferredTables" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.resetPreferredTables"></a>
+##### `resetPreferredTables` <a name="resetPreferredTables" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.resetPreferredTables"></a>
 
 ```typescript
 public resetPreferredTables(): void
 ```
 
-##### `resetProject` <a name="resetProject" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.resetProject"></a>
+##### `resetProject` <a name="resetProject" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.resetProject"></a>
 
 ```typescript
 public resetProject(): void
 ```
 
-##### `resetSize` <a name="resetSize" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.resetSize"></a>
+##### `resetSize` <a name="resetSize" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.resetSize"></a>
 
 ```typescript
 public resetSize(): void
 ```
 
-##### `resetTimeouts` <a name="resetTimeouts" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.resetTimeouts"></a>
+##### `resetTimeouts` <a name="resetTimeouts" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.resetTimeouts"></a>
 
 ```typescript
 public resetTimeouts(): void
@@ -429,17 +429,17 @@ public resetTimeouts(): void
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.isTerraformElement">isTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a BigqueryBiReservation resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.isTerraformResource">isTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a BigqueryBiReservation resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.isConstruct"></a>
 
 ```typescript
-import { bigqueryBiReservation } from '@cdktf/provider-google'
+import { bigqueryBiReservation } from '@cdktn/provider-google'
 
 bigqueryBiReservation.BigqueryBiReservation.isConstruct(x: any)
 ```
@@ -460,7 +460,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.isConstruct.parameter.x"></a>
 
 - *Type:* any
 
@@ -468,45 +468,45 @@ Any object.
 
 ---
 
-##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.isTerraformElement"></a>
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.isTerraformElement"></a>
 
 ```typescript
-import { bigqueryBiReservation } from '@cdktf/provider-google'
+import { bigqueryBiReservation } from '@cdktn/provider-google'
 
 bigqueryBiReservation.BigqueryBiReservation.isTerraformElement(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.isTerraformElement.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.isTerraformResource"></a>
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.isTerraformResource"></a>
 
 ```typescript
-import { bigqueryBiReservation } from '@cdktf/provider-google'
+import { bigqueryBiReservation } from '@cdktn/provider-google'
 
 bigqueryBiReservation.BigqueryBiReservation.isTerraformResource(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.isTerraformResource.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.generateConfigForImport"></a>
+##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.generateConfigForImport"></a>
 
 ```typescript
-import { bigqueryBiReservation } from '@cdktf/provider-google'
+import { bigqueryBiReservation } from '@cdktn/provider-google'
 
 bigqueryBiReservation.BigqueryBiReservation.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
 Generates CDKTF code for importing a BigqueryBiReservation resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -514,7 +514,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* string
 
@@ -522,7 +522,7 @@ The construct id used in the generated config for the BigqueryBiReservation to i
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* string
 
@@ -532,7 +532,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
@@ -544,38 +544,38 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.preferredTables">preferredTables</a></code> | <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesList">BigqueryBiReservationPreferredTablesList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference">BigqueryBiReservationTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.updateTime">updateTime</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.locationInput">locationInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.preferredTablesInput">preferredTablesInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTables">BigqueryBiReservationPreferredTables</a>[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.sizeInput">sizeInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeouts">BigqueryBiReservationTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.location">location</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.project">project</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.size">size</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.preferredTables">preferredTables</a></code> | <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesList">BigqueryBiReservationPreferredTablesList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference">BigqueryBiReservationTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.updateTime">updateTime</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.locationInput">locationInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.preferredTablesInput">preferredTablesInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTables">BigqueryBiReservationPreferredTables</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.sizeInput">sizeInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeouts">BigqueryBiReservationTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.location">location</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.project">project</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.size">size</a></code> | <code>number</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.node"></a>
 
 ```typescript
 public readonly node: Node;
@@ -587,7 +587,7 @@ The tree node.
 
 ---
 
-##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.cdktfStack"></a>
+##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.cdktfStack"></a>
 
 ```typescript
 public readonly cdktfStack: TerraformStack;
@@ -597,7 +597,7 @@ public readonly cdktfStack: TerraformStack;
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -607,7 +607,7 @@ public readonly fqn: string;
 
 ---
 
-##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.friendlyUniqueId"></a>
+##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.friendlyUniqueId"></a>
 
 ```typescript
 public readonly friendlyUniqueId: string;
@@ -617,7 +617,7 @@ public readonly friendlyUniqueId: string;
 
 ---
 
-##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.terraformMetaArguments"></a>
+##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.terraformMetaArguments"></a>
 
 ```typescript
 public readonly terraformMetaArguments: {[ key: string ]: any};
@@ -627,7 +627,7 @@ public readonly terraformMetaArguments: {[ key: string ]: any};
 
 ---
 
-##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.terraformResourceType"></a>
+##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.terraformResourceType"></a>
 
 ```typescript
 public readonly terraformResourceType: string;
@@ -637,7 +637,7 @@ public readonly terraformResourceType: string;
 
 ---
 
-##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.terraformGeneratorMetadata"></a>
+##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.terraformGeneratorMetadata"></a>
 
 ```typescript
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
@@ -647,7 +647,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.connection"></a>
 
 ```typescript
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
@@ -657,7 +657,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.count"></a>
 
 ```typescript
 public readonly count: number | TerraformCount;
@@ -667,7 +667,7 @@ public readonly count: number | TerraformCount;
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: string[];
@@ -677,7 +677,7 @@ public readonly dependsOn: string[];
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
@@ -687,7 +687,7 @@ public readonly forEach: ITerraformIterator;
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
@@ -697,7 +697,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
@@ -707,7 +707,7 @@ public readonly provider: TerraformProvider;
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.provisioners"></a>
 
 ```typescript
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
@@ -717,7 +717,7 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -727,27 +727,27 @@ public readonly name: string;
 
 ---
 
-##### `preferredTables`<sup>Required</sup> <a name="preferredTables" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.preferredTables"></a>
+##### `preferredTables`<sup>Required</sup> <a name="preferredTables" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.preferredTables"></a>
 
 ```typescript
 public readonly preferredTables: BigqueryBiReservationPreferredTablesList;
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesList">BigqueryBiReservationPreferredTablesList</a>
+- *Type:* <a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesList">BigqueryBiReservationPreferredTablesList</a>
 
 ---
 
-##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.timeouts"></a>
+##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.timeouts"></a>
 
 ```typescript
 public readonly timeouts: BigqueryBiReservationTimeoutsOutputReference;
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference">BigqueryBiReservationTimeoutsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference">BigqueryBiReservationTimeoutsOutputReference</a>
 
 ---
 
-##### `updateTime`<sup>Required</sup> <a name="updateTime" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.updateTime"></a>
+##### `updateTime`<sup>Required</sup> <a name="updateTime" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.updateTime"></a>
 
 ```typescript
 public readonly updateTime: string;
@@ -757,7 +757,7 @@ public readonly updateTime: string;
 
 ---
 
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.idInput"></a>
+##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.idInput"></a>
 
 ```typescript
 public readonly idInput: string;
@@ -767,7 +767,7 @@ public readonly idInput: string;
 
 ---
 
-##### `locationInput`<sup>Optional</sup> <a name="locationInput" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.locationInput"></a>
+##### `locationInput`<sup>Optional</sup> <a name="locationInput" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.locationInput"></a>
 
 ```typescript
 public readonly locationInput: string;
@@ -777,17 +777,17 @@ public readonly locationInput: string;
 
 ---
 
-##### `preferredTablesInput`<sup>Optional</sup> <a name="preferredTablesInput" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.preferredTablesInput"></a>
+##### `preferredTablesInput`<sup>Optional</sup> <a name="preferredTablesInput" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.preferredTablesInput"></a>
 
 ```typescript
 public readonly preferredTablesInput: IResolvable | BigqueryBiReservationPreferredTables[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTables">BigqueryBiReservationPreferredTables</a>[]
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTables">BigqueryBiReservationPreferredTables</a>[]
 
 ---
 
-##### `projectInput`<sup>Optional</sup> <a name="projectInput" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.projectInput"></a>
+##### `projectInput`<sup>Optional</sup> <a name="projectInput" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.projectInput"></a>
 
 ```typescript
 public readonly projectInput: string;
@@ -797,7 +797,7 @@ public readonly projectInput: string;
 
 ---
 
-##### `sizeInput`<sup>Optional</sup> <a name="sizeInput" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.sizeInput"></a>
+##### `sizeInput`<sup>Optional</sup> <a name="sizeInput" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.sizeInput"></a>
 
 ```typescript
 public readonly sizeInput: number;
@@ -807,17 +807,17 @@ public readonly sizeInput: number;
 
 ---
 
-##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.timeoutsInput"></a>
+##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.timeoutsInput"></a>
 
 ```typescript
 public readonly timeoutsInput: IResolvable | BigqueryBiReservationTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeouts">BigqueryBiReservationTimeouts</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeouts">BigqueryBiReservationTimeouts</a>
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -827,7 +827,7 @@ public readonly id: string;
 
 ---
 
-##### `location`<sup>Required</sup> <a name="location" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.location"></a>
+##### `location`<sup>Required</sup> <a name="location" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.location"></a>
 
 ```typescript
 public readonly location: string;
@@ -837,7 +837,7 @@ public readonly location: string;
 
 ---
 
-##### `project`<sup>Required</sup> <a name="project" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.project"></a>
+##### `project`<sup>Required</sup> <a name="project" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.project"></a>
 
 ```typescript
 public readonly project: string;
@@ -847,7 +847,7 @@ public readonly project: string;
 
 ---
 
-##### `size`<sup>Required</sup> <a name="size" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.size"></a>
+##### `size`<sup>Required</sup> <a name="size" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.size"></a>
 
 ```typescript
 public readonly size: number;
@@ -861,11 +861,11 @@ public readonly size: number;
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservation.property.tfResourceType"></a>
 
 ```typescript
 public readonly tfResourceType: string;
@@ -877,12 +877,12 @@ public readonly tfResourceType: string;
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### BigqueryBiReservationConfig <a name="BigqueryBiReservationConfig" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationConfig"></a>
+### BigqueryBiReservationConfig <a name="BigqueryBiReservationConfig" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationConfig.Initializer"></a>
 
 ```typescript
-import { bigqueryBiReservation } from '@cdktf/provider-google'
+import { bigqueryBiReservation } from '@cdktn/provider-google'
 
 const bigqueryBiReservationConfig: bigqueryBiReservation.BigqueryBiReservationConfig = { ... }
 ```
@@ -891,23 +891,23 @@ const bigqueryBiReservationConfig: bigqueryBiReservation.BigqueryBiReservationCo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationConfig.property.location">location</a></code> | <code>string</code> | LOCATION_DESCRIPTION. |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_bi_reservation#id BigqueryBiReservation#id}. |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationConfig.property.preferredTables">preferredTables</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTables">BigqueryBiReservationPreferredTables</a>[]</code> | preferred_tables block. |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_bi_reservation#project BigqueryBiReservation#project}. |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationConfig.property.size">size</a></code> | <code>number</code> | Size of a reservation, in bytes. |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeouts">BigqueryBiReservationTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationConfig.property.location">location</a></code> | <code>string</code> | LOCATION_DESCRIPTION. |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_bi_reservation#id BigqueryBiReservation#id}. |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationConfig.property.preferredTables">preferredTables</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTables">BigqueryBiReservationPreferredTables</a>[]</code> | preferred_tables block. |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_bi_reservation#project BigqueryBiReservation#project}. |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationConfig.property.size">size</a></code> | <code>number</code> | Size of a reservation, in bytes. |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeouts">BigqueryBiReservationTimeouts</a></code> | timeouts block. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationConfig.property.connection"></a>
 
 ```typescript
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
@@ -917,7 +917,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationConfig.property.count"></a>
 
 ```typescript
 public readonly count: number | TerraformCount;
@@ -927,7 +927,7 @@ public readonly count: number | TerraformCount;
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationConfig.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationConfig.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: ITerraformDependable[];
@@ -937,7 +937,7 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationConfig.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationConfig.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
@@ -947,7 +947,7 @@ public readonly forEach: ITerraformIterator;
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationConfig.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
@@ -957,7 +957,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationConfig.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
@@ -967,7 +967,7 @@ public readonly provider: TerraformProvider;
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationConfig.property.provisioners"></a>
 
 ```typescript
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
@@ -977,7 +977,7 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `location`<sup>Required</sup> <a name="location" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationConfig.property.location"></a>
+##### `location`<sup>Required</sup> <a name="location" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationConfig.property.location"></a>
 
 ```typescript
 public readonly location: string;
@@ -991,7 +991,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationConfig.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -1006,13 +1006,13 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
-##### `preferredTables`<sup>Optional</sup> <a name="preferredTables" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationConfig.property.preferredTables"></a>
+##### `preferredTables`<sup>Optional</sup> <a name="preferredTables" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationConfig.property.preferredTables"></a>
 
 ```typescript
 public readonly preferredTables: IResolvable | BigqueryBiReservationPreferredTables[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTables">BigqueryBiReservationPreferredTables</a>[]
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTables">BigqueryBiReservationPreferredTables</a>[]
 
 preferred_tables block.
 
@@ -1020,7 +1020,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `project`<sup>Optional</sup> <a name="project" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationConfig.property.project"></a>
+##### `project`<sup>Optional</sup> <a name="project" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationConfig.property.project"></a>
 
 ```typescript
 public readonly project: string;
@@ -1032,7 +1032,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `size`<sup>Optional</sup> <a name="size" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationConfig.property.size"></a>
+##### `size`<sup>Optional</sup> <a name="size" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationConfig.property.size"></a>
 
 ```typescript
 public readonly size: number;
@@ -1046,13 +1046,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationConfig.property.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationConfig.property.timeouts"></a>
 
 ```typescript
 public readonly timeouts: BigqueryBiReservationTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeouts">BigqueryBiReservationTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeouts">BigqueryBiReservationTimeouts</a>
 
 timeouts block.
 
@@ -1060,12 +1060,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### BigqueryBiReservationPreferredTables <a name="BigqueryBiReservationPreferredTables" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTables"></a>
+### BigqueryBiReservationPreferredTables <a name="BigqueryBiReservationPreferredTables" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTables"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTables.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTables.Initializer"></a>
 
 ```typescript
-import { bigqueryBiReservation } from '@cdktf/provider-google'
+import { bigqueryBiReservation } from '@cdktn/provider-google'
 
 const bigqueryBiReservationPreferredTables: bigqueryBiReservation.BigqueryBiReservationPreferredTables = { ... }
 ```
@@ -1074,13 +1074,13 @@ const bigqueryBiReservationPreferredTables: bigqueryBiReservation.BigqueryBiRese
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTables.property.datasetId">datasetId</a></code> | <code>string</code> | The ID of the dataset in the above project. |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTables.property.projectId">projectId</a></code> | <code>string</code> | The assigned project ID of the project. |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTables.property.tableId">tableId</a></code> | <code>string</code> | The ID of the table in the above dataset. |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTables.property.datasetId">datasetId</a></code> | <code>string</code> | The ID of the dataset in the above project. |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTables.property.projectId">projectId</a></code> | <code>string</code> | The assigned project ID of the project. |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTables.property.tableId">tableId</a></code> | <code>string</code> | The ID of the table in the above dataset. |
 
 ---
 
-##### `datasetId`<sup>Optional</sup> <a name="datasetId" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTables.property.datasetId"></a>
+##### `datasetId`<sup>Optional</sup> <a name="datasetId" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTables.property.datasetId"></a>
 
 ```typescript
 public readonly datasetId: string;
@@ -1094,7 +1094,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `projectId`<sup>Optional</sup> <a name="projectId" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTables.property.projectId"></a>
+##### `projectId`<sup>Optional</sup> <a name="projectId" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTables.property.projectId"></a>
 
 ```typescript
 public readonly projectId: string;
@@ -1108,7 +1108,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `tableId`<sup>Optional</sup> <a name="tableId" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTables.property.tableId"></a>
+##### `tableId`<sup>Optional</sup> <a name="tableId" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTables.property.tableId"></a>
 
 ```typescript
 public readonly tableId: string;
@@ -1122,12 +1122,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### BigqueryBiReservationTimeouts <a name="BigqueryBiReservationTimeouts" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeouts"></a>
+### BigqueryBiReservationTimeouts <a name="BigqueryBiReservationTimeouts" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeouts"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeouts.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeouts.Initializer"></a>
 
 ```typescript
-import { bigqueryBiReservation } from '@cdktf/provider-google'
+import { bigqueryBiReservation } from '@cdktn/provider-google'
 
 const bigqueryBiReservationTimeouts: bigqueryBiReservation.BigqueryBiReservationTimeouts = { ... }
 ```
@@ -1136,13 +1136,13 @@ const bigqueryBiReservationTimeouts: bigqueryBiReservation.BigqueryBiReservation
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_bi_reservation#create BigqueryBiReservation#create}. |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_bi_reservation#delete BigqueryBiReservation#delete}. |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_bi_reservation#update BigqueryBiReservation#update}. |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_bi_reservation#create BigqueryBiReservation#create}. |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_bi_reservation#delete BigqueryBiReservation#delete}. |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_bi_reservation#update BigqueryBiReservation#update}. |
 
 ---
 
-##### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeouts.property.create"></a>
+##### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeouts.property.create"></a>
 
 ```typescript
 public readonly create: string;
@@ -1154,7 +1154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeouts.property.delete"></a>
+##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeouts.property.delete"></a>
 
 ```typescript
 public readonly delete: string;
@@ -1166,7 +1166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeouts.property.update"></a>
+##### `update`<sup>Optional</sup> <a name="update" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeouts.property.update"></a>
 
 ```typescript
 public readonly update: string;
@@ -1180,25 +1180,25 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### BigqueryBiReservationPreferredTablesList <a name="BigqueryBiReservationPreferredTablesList" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesList"></a>
+### BigqueryBiReservationPreferredTablesList <a name="BigqueryBiReservationPreferredTablesList" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesList.Initializer"></a>
 
 ```typescript
-import { bigqueryBiReservation } from '@cdktf/provider-google'
+import { bigqueryBiReservation } from '@cdktn/provider-google'
 
 new bigqueryBiReservation.BigqueryBiReservationPreferredTablesList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesList.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -1206,7 +1206,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesList.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
@@ -1214,7 +1214,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesList.Initializer.parameter.wrapsSet"></a>
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* boolean
 
@@ -1226,15 +1226,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesList.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesList.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesList.get">get</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `allWithMapKey` <a name="allWithMapKey" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesList.allWithMapKey"></a>
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesList.allWithMapKey"></a>
 
 ```typescript
 public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
@@ -1244,19 +1244,19 @@ Creating an iterator for this complex list.
 
 The list will be converted into a map with the mapKeyAttributeName as the key.
 
-###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
 
 - *Type:* string
 
 ---
 
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesList.computeFqn"></a>
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesList.computeFqn"></a>
 
 ```typescript
 public computeFqn(): string
 ```
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesList.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesList.resolve"></a>
 
 ```typescript
 public resolve(_context: IResolveContext): any
@@ -1264,13 +1264,13 @@ public resolve(_context: IResolveContext): any
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesList.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesList.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesList.toString"></a>
 
 ```typescript
 public toString(): string
@@ -1280,13 +1280,13 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `get` <a name="get" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesList.get"></a>
+##### `get` <a name="get" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesList.get"></a>
 
 ```typescript
 public get(index: number): BigqueryBiReservationPreferredTablesOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesList.get.parameter.index"></a>
 
 - *Type:* number
 
@@ -1299,13 +1299,13 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTables">BigqueryBiReservationPreferredTables</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTables">BigqueryBiReservationPreferredTables</a>[]</code> | *No description.* |
 
 ---
 
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesList.property.creationStack"></a>
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesList.property.creationStack"></a>
 
 ```typescript
 public readonly creationStack: string[];
@@ -1319,7 +1319,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesList.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesList.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -1329,37 +1329,37 @@ public readonly fqn: string;
 
 ---
 
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesList.property.internalValue"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesList.property.internalValue"></a>
 
 ```typescript
 public readonly internalValue: IResolvable | BigqueryBiReservationPreferredTables[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTables">BigqueryBiReservationPreferredTables</a>[]
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTables">BigqueryBiReservationPreferredTables</a>[]
 
 ---
 
 
-### BigqueryBiReservationPreferredTablesOutputReference <a name="BigqueryBiReservationPreferredTablesOutputReference" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference"></a>
+### BigqueryBiReservationPreferredTablesOutputReference <a name="BigqueryBiReservationPreferredTablesOutputReference" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.Initializer"></a>
 
 ```typescript
-import { bigqueryBiReservation } from '@cdktf/provider-google'
+import { bigqueryBiReservation } from '@cdktn/provider-google'
 
 new bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -1367,7 +1367,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
@@ -1375,7 +1375,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* number
 
@@ -1383,7 +1383,7 @@ the index of this item in the list.
 
 ---
 
-##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* boolean
 
@@ -1395,152 +1395,152 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.resetDatasetId">resetDatasetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.resetProjectId">resetProjectId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.resetTableId">resetTableId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.resetDatasetId">resetDatasetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.resetProjectId">resetProjectId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.resetTableId">resetTableId</a></code> | *No description.* |
 
 ---
 
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.computeFqn"></a>
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.computeFqn"></a>
 
 ```typescript
 public computeFqn(): string
 ```
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(property: string): IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* string
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.resolve"></a>
 
 ```typescript
 public resolve(_context: IResolveContext): any
@@ -1548,13 +1548,13 @@ public resolve(_context: IResolveContext): any
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.toString"></a>
 
 ```typescript
 public toString(): string
@@ -1564,19 +1564,19 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `resetDatasetId` <a name="resetDatasetId" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.resetDatasetId"></a>
+##### `resetDatasetId` <a name="resetDatasetId" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.resetDatasetId"></a>
 
 ```typescript
 public resetDatasetId(): void
 ```
 
-##### `resetProjectId` <a name="resetProjectId" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.resetProjectId"></a>
+##### `resetProjectId` <a name="resetProjectId" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.resetProjectId"></a>
 
 ```typescript
 public resetProjectId(): void
 ```
 
-##### `resetTableId` <a name="resetTableId" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.resetTableId"></a>
+##### `resetTableId` <a name="resetTableId" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.resetTableId"></a>
 
 ```typescript
 public resetTableId(): void
@@ -1587,19 +1587,19 @@ public resetTableId(): void
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.property.datasetIdInput">datasetIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.property.projectIdInput">projectIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.property.tableIdInput">tableIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.property.datasetId">datasetId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.property.projectId">projectId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.property.tableId">tableId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTables">BigqueryBiReservationPreferredTables</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.property.datasetIdInput">datasetIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.property.projectIdInput">projectIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.property.tableIdInput">tableIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.property.datasetId">datasetId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.property.projectId">projectId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.property.tableId">tableId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTables">BigqueryBiReservationPreferredTables</a></code> | *No description.* |
 
 ---
 
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.property.creationStack"></a>
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.property.creationStack"></a>
 
 ```typescript
 public readonly creationStack: string[];
@@ -1613,7 +1613,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -1623,7 +1623,7 @@ public readonly fqn: string;
 
 ---
 
-##### `datasetIdInput`<sup>Optional</sup> <a name="datasetIdInput" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.property.datasetIdInput"></a>
+##### `datasetIdInput`<sup>Optional</sup> <a name="datasetIdInput" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.property.datasetIdInput"></a>
 
 ```typescript
 public readonly datasetIdInput: string;
@@ -1633,7 +1633,7 @@ public readonly datasetIdInput: string;
 
 ---
 
-##### `projectIdInput`<sup>Optional</sup> <a name="projectIdInput" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.property.projectIdInput"></a>
+##### `projectIdInput`<sup>Optional</sup> <a name="projectIdInput" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.property.projectIdInput"></a>
 
 ```typescript
 public readonly projectIdInput: string;
@@ -1643,7 +1643,7 @@ public readonly projectIdInput: string;
 
 ---
 
-##### `tableIdInput`<sup>Optional</sup> <a name="tableIdInput" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.property.tableIdInput"></a>
+##### `tableIdInput`<sup>Optional</sup> <a name="tableIdInput" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.property.tableIdInput"></a>
 
 ```typescript
 public readonly tableIdInput: string;
@@ -1653,7 +1653,7 @@ public readonly tableIdInput: string;
 
 ---
 
-##### `datasetId`<sup>Required</sup> <a name="datasetId" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.property.datasetId"></a>
+##### `datasetId`<sup>Required</sup> <a name="datasetId" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.property.datasetId"></a>
 
 ```typescript
 public readonly datasetId: string;
@@ -1663,7 +1663,7 @@ public readonly datasetId: string;
 
 ---
 
-##### `projectId`<sup>Required</sup> <a name="projectId" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.property.projectId"></a>
+##### `projectId`<sup>Required</sup> <a name="projectId" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.property.projectId"></a>
 
 ```typescript
 public readonly projectId: string;
@@ -1673,7 +1673,7 @@ public readonly projectId: string;
 
 ---
 
-##### `tableId`<sup>Required</sup> <a name="tableId" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.property.tableId"></a>
+##### `tableId`<sup>Required</sup> <a name="tableId" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.property.tableId"></a>
 
 ```typescript
 public readonly tableId: string;
@@ -1683,35 +1683,35 @@ public readonly tableId: string;
 
 ---
 
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.property.internalValue"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTablesOutputReference.property.internalValue"></a>
 
 ```typescript
 public readonly internalValue: IResolvable | BigqueryBiReservationPreferredTables;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTables">BigqueryBiReservationPreferredTables</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationPreferredTables">BigqueryBiReservationPreferredTables</a>
 
 ---
 
 
-### BigqueryBiReservationTimeoutsOutputReference <a name="BigqueryBiReservationTimeoutsOutputReference" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference"></a>
+### BigqueryBiReservationTimeoutsOutputReference <a name="BigqueryBiReservationTimeoutsOutputReference" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.Initializer"></a>
 
 ```typescript
-import { bigqueryBiReservation } from '@cdktf/provider-google'
+import { bigqueryBiReservation } from '@cdktn/provider-google'
 
 new bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -1719,7 +1719,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
@@ -1731,152 +1731,152 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.resetCreate">resetCreate</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.resetDelete">resetDelete</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.resetUpdate">resetUpdate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.resetCreate">resetCreate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.resetDelete">resetDelete</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.resetUpdate">resetUpdate</a></code> | *No description.* |
 
 ---
 
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.computeFqn"></a>
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.computeFqn"></a>
 
 ```typescript
 public computeFqn(): string
 ```
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(property: string): IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* string
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.resolve"></a>
 
 ```typescript
 public resolve(_context: IResolveContext): any
@@ -1884,13 +1884,13 @@ public resolve(_context: IResolveContext): any
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.toString"></a>
 
 ```typescript
 public toString(): string
@@ -1900,19 +1900,19 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `resetCreate` <a name="resetCreate" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.resetCreate"></a>
+##### `resetCreate` <a name="resetCreate" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.resetCreate"></a>
 
 ```typescript
 public resetCreate(): void
 ```
 
-##### `resetDelete` <a name="resetDelete" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.resetDelete"></a>
+##### `resetDelete` <a name="resetDelete" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.resetDelete"></a>
 
 ```typescript
 public resetDelete(): void
 ```
 
-##### `resetUpdate` <a name="resetUpdate" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.resetUpdate"></a>
+##### `resetUpdate` <a name="resetUpdate" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.resetUpdate"></a>
 
 ```typescript
 public resetUpdate(): void
@@ -1923,19 +1923,19 @@ public resetUpdate(): void
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.property.createInput">createInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.property.deleteInput">deleteInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.property.updateInput">updateInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeouts">BigqueryBiReservationTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.property.createInput">createInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.property.deleteInput">deleteInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.property.updateInput">updateInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeouts">BigqueryBiReservationTimeouts</a></code> | *No description.* |
 
 ---
 
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.property.creationStack"></a>
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.property.creationStack"></a>
 
 ```typescript
 public readonly creationStack: string[];
@@ -1949,7 +1949,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -1959,7 +1959,7 @@ public readonly fqn: string;
 
 ---
 
-##### `createInput`<sup>Optional</sup> <a name="createInput" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.property.createInput"></a>
+##### `createInput`<sup>Optional</sup> <a name="createInput" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.property.createInput"></a>
 
 ```typescript
 public readonly createInput: string;
@@ -1969,7 +1969,7 @@ public readonly createInput: string;
 
 ---
 
-##### `deleteInput`<sup>Optional</sup> <a name="deleteInput" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.property.deleteInput"></a>
+##### `deleteInput`<sup>Optional</sup> <a name="deleteInput" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.property.deleteInput"></a>
 
 ```typescript
 public readonly deleteInput: string;
@@ -1979,7 +1979,7 @@ public readonly deleteInput: string;
 
 ---
 
-##### `updateInput`<sup>Optional</sup> <a name="updateInput" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.property.updateInput"></a>
+##### `updateInput`<sup>Optional</sup> <a name="updateInput" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.property.updateInput"></a>
 
 ```typescript
 public readonly updateInput: string;
@@ -1989,7 +1989,7 @@ public readonly updateInput: string;
 
 ---
 
-##### `create`<sup>Required</sup> <a name="create" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.property.create"></a>
+##### `create`<sup>Required</sup> <a name="create" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.property.create"></a>
 
 ```typescript
 public readonly create: string;
@@ -1999,7 +1999,7 @@ public readonly create: string;
 
 ---
 
-##### `delete`<sup>Required</sup> <a name="delete" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.property.delete"></a>
+##### `delete`<sup>Required</sup> <a name="delete" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.property.delete"></a>
 
 ```typescript
 public readonly delete: string;
@@ -2009,7 +2009,7 @@ public readonly delete: string;
 
 ---
 
-##### `update`<sup>Required</sup> <a name="update" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.property.update"></a>
+##### `update`<sup>Required</sup> <a name="update" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.property.update"></a>
 
 ```typescript
 public readonly update: string;
@@ -2019,13 +2019,13 @@ public readonly update: string;
 
 ---
 
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.property.internalValue"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
 public readonly internalValue: IResolvable | BigqueryBiReservationTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeouts">BigqueryBiReservationTimeouts</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.bigqueryBiReservation.BigqueryBiReservationTimeouts">BigqueryBiReservationTimeouts</a>
 
 ---
 

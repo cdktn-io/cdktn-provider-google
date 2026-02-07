@@ -1,15 +1,15 @@
-# `dataGoogleAccessApprovalOrganizationServiceAccount` Submodule <a name="`dataGoogleAccessApprovalOrganizationServiceAccount` Submodule" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount"></a>
+# `dataGoogleAccessApprovalOrganizationServiceAccount` Submodule <a name="`dataGoogleAccessApprovalOrganizationServiceAccount` Submodule" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### DataGoogleAccessApprovalOrganizationServiceAccount <a name="DataGoogleAccessApprovalOrganizationServiceAccount" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount"></a>
+### DataGoogleAccessApprovalOrganizationServiceAccount <a name="DataGoogleAccessApprovalOrganizationServiceAccount" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount"></a>
 
 Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/access_approval_organization_service_account google_access_approval_organization_service_account}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import data_google_access_approval_organization_service_account
+from cdktn_provider_google import data_google_access_approval_organization_service_account
 
 dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount(
   scope: Construct,
@@ -28,21 +28,21 @@ dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrgan
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.Initializer.parameter.organizationId">organization_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/access_approval_organization_service_account#organization_id DataGoogleAccessApprovalOrganizationServiceAccount#organization_id}. |
-| <code><a href="#@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/access_approval_organization_service_account#id DataGoogleAccessApprovalOrganizationServiceAccount#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.Initializer.parameter.organizationId">organization_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/access_approval_organization_service_account#organization_id DataGoogleAccessApprovalOrganizationServiceAccount#organization_id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/access_approval_organization_service_account#id DataGoogleAccessApprovalOrganizationServiceAccount#id}. |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -50,7 +50,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -60,49 +60,49 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.Initializer.parameter.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.Initializer.parameter.connection"></a>
 
 - *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.Initializer.parameter.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.Initializer.parameter.count"></a>
 
 - *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.Initializer.parameter.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.Initializer.parameter.dependsOn"></a>
 
 - *Type:* typing.List[cdktf.ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.Initializer.parameter.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.Initializer.parameter.forEach"></a>
 
 - *Type:* cdktf.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.Initializer.parameter.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.Initializer.parameter.lifecycle"></a>
 
 - *Type:* cdktf.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.Initializer.parameter.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.Initializer.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.Initializer.parameter.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.Initializer.parameter.provisioners"></a>
 
 - *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
-##### `organization_id`<sup>Required</sup> <a name="organization_id" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.Initializer.parameter.organizationId"></a>
+##### `organization_id`<sup>Required</sup> <a name="organization_id" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.Initializer.parameter.organizationId"></a>
 
 - *Type:* str
 
@@ -110,7 +110,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.Initializer.parameter.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -125,28 +125,28 @@ If you experience problems setting this value it might not be settable. Please t
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.toString">to_string</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.addOverride">add_override</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.toHclTerraform">to_hcl_terraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.toMetadata">to_metadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.toString">to_string</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.addOverride">add_override</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.toHclTerraform">to_hcl_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.toMetadata">to_metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.resetId">reset_id</a></code> | *No description.* |
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.toString"></a>
 
 ```python
 def to_string() -> str
@@ -154,7 +154,7 @@ def to_string() -> str
 
 Returns a string representation of this construct.
 
-##### `add_override` <a name="add_override" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.addOverride"></a>
+##### `add_override` <a name="add_override" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.addOverride"></a>
 
 ```python
 def add_override(
@@ -163,19 +163,19 @@ def add_override(
 ) -> None
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.addOverride.parameter.path"></a>
 
 - *Type:* str
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.addOverride.parameter.value"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `override_logical_id` <a name="override_logical_id" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.overrideLogicalId"></a>
+##### `override_logical_id` <a name="override_logical_id" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.overrideLogicalId"></a>
 
 ```python
 def override_logical_id(
@@ -185,7 +185,7 @@ def override_logical_id(
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.overrideLogicalId.parameter.newLogicalId"></a>
+###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* str
 
@@ -193,7 +193,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.resetOverrideLogicalId"></a>
+##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.resetOverrideLogicalId"></a>
 
 ```python
 def reset_override_logical_id() -> None
@@ -201,7 +201,7 @@ def reset_override_logical_id() -> None
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.toHclTerraform"></a>
+##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.toHclTerraform"></a>
 
 ```python
 def to_hcl_terraform() -> typing.Any
@@ -209,13 +209,13 @@ def to_hcl_terraform() -> typing.Any
 
 Adds this resource to the terraform JSON output.
 
-##### `to_metadata` <a name="to_metadata" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.toMetadata"></a>
+##### `to_metadata` <a name="to_metadata" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.toMetadata"></a>
 
 ```python
 def to_metadata() -> typing.Any
 ```
 
-##### `to_terraform` <a name="to_terraform" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.toTerraform"></a>
+##### `to_terraform` <a name="to_terraform" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.toTerraform"></a>
 
 ```python
 def to_terraform() -> typing.Any
@@ -223,7 +223,7 @@ def to_terraform() -> typing.Any
 
 Adds this resource to the terraform JSON output.
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -231,13 +231,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -245,13 +245,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -259,13 +259,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -273,13 +273,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -287,13 +287,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -301,13 +301,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -315,13 +315,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -329,13 +329,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -343,13 +343,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -357,13 +357,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.resetId"></a>
+##### `reset_id` <a name="reset_id" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.resetId"></a>
 
 ```python
 def reset_id() -> None
@@ -373,17 +373,17 @@ def reset_id() -> None
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.isTerraformElement">is_terraform_element</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.isTerraformDataSource">is_terraform_data_source</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a DataGoogleAccessApprovalOrganizationServiceAccount resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.isTerraformElement">is_terraform_element</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.isTerraformDataSource">is_terraform_data_source</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a DataGoogleAccessApprovalOrganizationServiceAccount resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `is_construct` <a name="is_construct" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.isConstruct"></a>
+##### `is_construct` <a name="is_construct" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.isConstruct"></a>
 
 ```python
-from cdktf_cdktf_provider_google import data_google_access_approval_organization_service_account
+from cdktn_provider_google import data_google_access_approval_organization_service_account
 
 dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.is_construct(
   x: typing.Any
@@ -406,7 +406,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.isConstruct.parameter.x"></a>
 
 - *Type:* typing.Any
 
@@ -414,42 +414,42 @@ Any object.
 
 ---
 
-##### `is_terraform_element` <a name="is_terraform_element" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.isTerraformElement"></a>
+##### `is_terraform_element` <a name="is_terraform_element" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.isTerraformElement"></a>
 
 ```python
-from cdktf_cdktf_provider_google import data_google_access_approval_organization_service_account
+from cdktn_provider_google import data_google_access_approval_organization_service_account
 
 dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.is_terraform_element(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.isTerraformElement.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `is_terraform_data_source` <a name="is_terraform_data_source" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.isTerraformDataSource"></a>
+##### `is_terraform_data_source` <a name="is_terraform_data_source" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.isTerraformDataSource"></a>
 
 ```python
-from cdktf_cdktf_provider_google import data_google_access_approval_organization_service_account
+from cdktn_provider_google import data_google_access_approval_organization_service_account
 
 dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.is_terraform_data_source(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.isTerraformDataSource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.generateConfigForImport"></a>
+##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.generateConfigForImport"></a>
 
 ```python
-from cdktf_cdktf_provider_google import data_google_access_approval_organization_service_account
+from cdktn_provider_google import data_google_access_approval_organization_service_account
 
 dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.generate_config_for_import(
   scope: Construct,
@@ -461,7 +461,7 @@ dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrgan
 
 Generates CDKTF code for importing a DataGoogleAccessApprovalOrganizationServiceAccount resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -469,7 +469,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.generateConfigForImport.parameter.importToId"></a>
+###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* str
 
@@ -477,7 +477,7 @@ The construct id used in the generated config for the DataGoogleAccessApprovalOr
 
 ---
 
-###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.generateConfigForImport.parameter.importFromId"></a>
+###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* str
 
@@ -487,7 +487,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
@@ -499,28 +499,28 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.property.accountEmail">account_email</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.property.organizationIdInput">organization_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.property.organizationId">organization_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.property.accountEmail">account_email</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.property.organizationIdInput">organization_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.property.organizationId">organization_id</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.property.node"></a>
 
 ```python
 node: Node
@@ -532,7 +532,7 @@ The tree node.
 
 ---
 
-##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.property.cdktfStack"></a>
+##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.property.cdktfStack"></a>
 
 ```python
 cdktf_stack: TerraformStack
@@ -542,7 +542,7 @@ cdktf_stack: TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.property.fqn"></a>
 
 ```python
 fqn: str
@@ -552,7 +552,7 @@ fqn: str
 
 ---
 
-##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.property.friendlyUniqueId"></a>
+##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.property.friendlyUniqueId"></a>
 
 ```python
 friendly_unique_id: str
@@ -562,7 +562,7 @@ friendly_unique_id: str
 
 ---
 
-##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.property.terraformMetaArguments"></a>
+##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.property.terraformMetaArguments"></a>
 
 ```python
 terraform_meta_arguments: typing.Mapping[typing.Any]
@@ -572,7 +572,7 @@ terraform_meta_arguments: typing.Mapping[typing.Any]
 
 ---
 
-##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.property.terraformResourceType"></a>
+##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.property.terraformResourceType"></a>
 
 ```python
 terraform_resource_type: str
@@ -582,7 +582,7 @@ terraform_resource_type: str
 
 ---
 
-##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.property.terraformGeneratorMetadata"></a>
+##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.property.terraformGeneratorMetadata"></a>
 
 ```python
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
@@ -592,7 +592,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -602,7 +602,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[str]
@@ -612,7 +612,7 @@ depends_on: typing.List[str]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -622,7 +622,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -632,7 +632,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -642,7 +642,7 @@ provider: TerraformProvider
 
 ---
 
-##### `account_email`<sup>Required</sup> <a name="account_email" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.property.accountEmail"></a>
+##### `account_email`<sup>Required</sup> <a name="account_email" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.property.accountEmail"></a>
 
 ```python
 account_email: str
@@ -652,7 +652,7 @@ account_email: str
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.property.name"></a>
 
 ```python
 name: str
@@ -662,7 +662,7 @@ name: str
 
 ---
 
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.property.idInput"></a>
+##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.property.idInput"></a>
 
 ```python
 id_input: str
@@ -672,7 +672,7 @@ id_input: str
 
 ---
 
-##### `organization_id_input`<sup>Optional</sup> <a name="organization_id_input" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.property.organizationIdInput"></a>
+##### `organization_id_input`<sup>Optional</sup> <a name="organization_id_input" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.property.organizationIdInput"></a>
 
 ```python
 organization_id_input: str
@@ -682,7 +682,7 @@ organization_id_input: str
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.property.id"></a>
 
 ```python
 id: str
@@ -692,7 +692,7 @@ id: str
 
 ---
 
-##### `organization_id`<sup>Required</sup> <a name="organization_id" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.property.organizationId"></a>
+##### `organization_id`<sup>Required</sup> <a name="organization_id" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.property.organizationId"></a>
 
 ```python
 organization_id: str
@@ -706,11 +706,11 @@ organization_id: str
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccount.property.tfResourceType"></a>
 
 ```python
 tfResourceType: str
@@ -722,12 +722,12 @@ tfResourceType: str
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### DataGoogleAccessApprovalOrganizationServiceAccountConfig <a name="DataGoogleAccessApprovalOrganizationServiceAccountConfig" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccountConfig"></a>
+### DataGoogleAccessApprovalOrganizationServiceAccountConfig <a name="DataGoogleAccessApprovalOrganizationServiceAccountConfig" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccountConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccountConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccountConfig.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import data_google_access_approval_organization_service_account
+from cdktn_provider_google import data_google_access_approval_organization_service_account
 
 dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccountConfig(
   connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
@@ -746,19 +746,19 @@ dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrgan
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccountConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccountConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccountConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccountConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccountConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccountConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccountConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccountConfig.property.organizationId">organization_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/access_approval_organization_service_account#organization_id DataGoogleAccessApprovalOrganizationServiceAccount#organization_id}. |
-| <code><a href="#@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccountConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/access_approval_organization_service_account#id DataGoogleAccessApprovalOrganizationServiceAccount#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccountConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccountConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccountConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccountConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccountConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccountConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccountConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccountConfig.property.organizationId">organization_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/access_approval_organization_service_account#organization_id DataGoogleAccessApprovalOrganizationServiceAccount#organization_id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccountConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/access_approval_organization_service_account#id DataGoogleAccessApprovalOrganizationServiceAccount#id}. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccountConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccountConfig.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
@@ -768,7 +768,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccountConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccountConfig.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -778,7 +778,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccountConfig.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccountConfig.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[ITerraformDependable]
@@ -788,7 +788,7 @@ depends_on: typing.List[ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccountConfig.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccountConfig.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -798,7 +798,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccountConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccountConfig.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -808,7 +808,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccountConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccountConfig.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -818,7 +818,7 @@ provider: TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccountConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccountConfig.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
@@ -828,7 +828,7 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `organization_id`<sup>Required</sup> <a name="organization_id" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccountConfig.property.organizationId"></a>
+##### `organization_id`<sup>Required</sup> <a name="organization_id" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccountConfig.property.organizationId"></a>
 
 ```python
 organization_id: str
@@ -840,7 +840,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccountConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-google.dataGoogleAccessApprovalOrganizationServiceAccount.DataGoogleAccessApprovalOrganizationServiceAccountConfig.property.id"></a>
 
 ```python
 id: str

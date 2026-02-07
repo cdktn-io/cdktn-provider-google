@@ -1,28 +1,28 @@
-# `dataGoogleContainerRegistryImage` Submodule <a name="`dataGoogleContainerRegistryImage` Submodule" id="@cdktf/provider-google.dataGoogleContainerRegistryImage"></a>
+# `dataGoogleContainerRegistryImage` Submodule <a name="`dataGoogleContainerRegistryImage` Submodule" id="@cdktn/provider-google.dataGoogleContainerRegistryImage"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### DataGoogleContainerRegistryImage <a name="DataGoogleContainerRegistryImage" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage"></a>
+### DataGoogleContainerRegistryImage <a name="DataGoogleContainerRegistryImage" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage"></a>
 
 Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/container_registry_image google_container_registry_image}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.Initializer"></a>
 
 ```typescript
-import { dataGoogleContainerRegistryImage } from '@cdktf/provider-google'
+import { dataGoogleContainerRegistryImage } from '@cdktn/provider-google'
 
 new dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage(scope: Construct, id: string, config: DataGoogleContainerRegistryImageConfig)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImageConfig">DataGoogleContainerRegistryImageConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImageConfig">DataGoogleContainerRegistryImageConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.Initializer.parameter.id"></a>
 
 - *Type:* string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.Initializer.parameter.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImageConfig">DataGoogleContainerRegistryImageConfig</a>
+- *Type:* <a href="#@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImageConfig">DataGoogleContainerRegistryImageConfig</a>
 
 ---
 
@@ -50,32 +50,32 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.toString">toString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.addOverride">addOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.toHclTerraform">toHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.toMetadata">toMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.resetDigest">resetDigest</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.resetId">resetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.resetProject">resetProject</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.resetRegion">resetRegion</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.resetTag">resetTag</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.addOverride">addOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.toHclTerraform">toHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.toMetadata">toMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.resetDigest">resetDigest</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.resetId">resetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.resetProject">resetProject</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.resetRegion">resetRegion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.resetTag">resetTag</a></code> | *No description.* |
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.toString"></a>
 
 ```typescript
 public toString(): string
@@ -83,25 +83,25 @@ public toString(): string
 
 Returns a string representation of this construct.
 
-##### `addOverride` <a name="addOverride" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.addOverride"></a>
+##### `addOverride` <a name="addOverride" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.addOverride"></a>
 
 ```typescript
 public addOverride(path: string, value: any): void
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.addOverride.parameter.path"></a>
 
 - *Type:* string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.addOverride.parameter.value"></a>
 
 - *Type:* any
 
 ---
 
-##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.overrideLogicalId"></a>
+##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.overrideLogicalId"></a>
 
 ```typescript
 public overrideLogicalId(newLogicalId: string): void
@@ -109,7 +109,7 @@ public overrideLogicalId(newLogicalId: string): void
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* string
 
@@ -117,7 +117,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.resetOverrideLogicalId"></a>
+##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.resetOverrideLogicalId"></a>
 
 ```typescript
 public resetOverrideLogicalId(): void
@@ -125,7 +125,7 @@ public resetOverrideLogicalId(): void
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `toHclTerraform` <a name="toHclTerraform" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.toHclTerraform"></a>
+##### `toHclTerraform` <a name="toHclTerraform" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.toHclTerraform"></a>
 
 ```typescript
 public toHclTerraform(): any
@@ -133,13 +133,13 @@ public toHclTerraform(): any
 
 Adds this resource to the terraform JSON output.
 
-##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.toMetadata"></a>
+##### `toMetadata` <a name="toMetadata" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.toMetadata"></a>
 
 ```typescript
 public toMetadata(): any
 ```
 
-##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.toTerraform"></a>
+##### `toTerraform` <a name="toTerraform" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.toTerraform"></a>
 
 ```typescript
 public toTerraform(): any
@@ -147,151 +147,151 @@ public toTerraform(): any
 
 Adds this resource to the terraform JSON output.
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `resetDigest` <a name="resetDigest" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.resetDigest"></a>
+##### `resetDigest` <a name="resetDigest" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.resetDigest"></a>
 
 ```typescript
 public resetDigest(): void
 ```
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.resetId"></a>
+##### `resetId` <a name="resetId" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.resetId"></a>
 
 ```typescript
 public resetId(): void
 ```
 
-##### `resetProject` <a name="resetProject" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.resetProject"></a>
+##### `resetProject` <a name="resetProject" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.resetProject"></a>
 
 ```typescript
 public resetProject(): void
 ```
 
-##### `resetRegion` <a name="resetRegion" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.resetRegion"></a>
+##### `resetRegion` <a name="resetRegion" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.resetRegion"></a>
 
 ```typescript
 public resetRegion(): void
 ```
 
-##### `resetTag` <a name="resetTag" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.resetTag"></a>
+##### `resetTag` <a name="resetTag" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.resetTag"></a>
 
 ```typescript
 public resetTag(): void
@@ -301,17 +301,17 @@ public resetTag(): void
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.isTerraformElement">isTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a DataGoogleContainerRegistryImage resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a DataGoogleContainerRegistryImage resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.isConstruct"></a>
 
 ```typescript
-import { dataGoogleContainerRegistryImage } from '@cdktf/provider-google'
+import { dataGoogleContainerRegistryImage } from '@cdktn/provider-google'
 
 dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.isConstruct(x: any)
 ```
@@ -332,7 +332,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.isConstruct.parameter.x"></a>
 
 - *Type:* any
 
@@ -340,45 +340,45 @@ Any object.
 
 ---
 
-##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.isTerraformElement"></a>
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.isTerraformElement"></a>
 
 ```typescript
-import { dataGoogleContainerRegistryImage } from '@cdktf/provider-google'
+import { dataGoogleContainerRegistryImage } from '@cdktn/provider-google'
 
 dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.isTerraformElement(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.isTerraformElement.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.isTerraformDataSource"></a>
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.isTerraformDataSource"></a>
 
 ```typescript
-import { dataGoogleContainerRegistryImage } from '@cdktf/provider-google'
+import { dataGoogleContainerRegistryImage } from '@cdktn/provider-google'
 
 dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.isTerraformDataSource(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.isTerraformDataSource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.generateConfigForImport"></a>
+##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.generateConfigForImport"></a>
 
 ```typescript
-import { dataGoogleContainerRegistryImage } from '@cdktf/provider-google'
+import { dataGoogleContainerRegistryImage } from '@cdktn/provider-google'
 
 dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
 Generates CDKTF code for importing a DataGoogleContainerRegistryImage resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -386,7 +386,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* string
 
@@ -394,7 +394,7 @@ The construct id used in the generated config for the DataGoogleContainerRegistr
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* string
 
@@ -404,7 +404,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
@@ -416,35 +416,35 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.imageUrl">imageUrl</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.digestInput">digestInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.tagInput">tagInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.digest">digest</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.project">project</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.region">region</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.tag">tag</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.imageUrl">imageUrl</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.digestInput">digestInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.tagInput">tagInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.digest">digest</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.project">project</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.region">region</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.tag">tag</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.node"></a>
 
 ```typescript
 public readonly node: Node;
@@ -456,7 +456,7 @@ The tree node.
 
 ---
 
-##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.cdktfStack"></a>
+##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.cdktfStack"></a>
 
 ```typescript
 public readonly cdktfStack: TerraformStack;
@@ -466,7 +466,7 @@ public readonly cdktfStack: TerraformStack;
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -476,7 +476,7 @@ public readonly fqn: string;
 
 ---
 
-##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.friendlyUniqueId"></a>
+##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.friendlyUniqueId"></a>
 
 ```typescript
 public readonly friendlyUniqueId: string;
@@ -486,7 +486,7 @@ public readonly friendlyUniqueId: string;
 
 ---
 
-##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.terraformMetaArguments"></a>
+##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.terraformMetaArguments"></a>
 
 ```typescript
 public readonly terraformMetaArguments: {[ key: string ]: any};
@@ -496,7 +496,7 @@ public readonly terraformMetaArguments: {[ key: string ]: any};
 
 ---
 
-##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.terraformResourceType"></a>
+##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.terraformResourceType"></a>
 
 ```typescript
 public readonly terraformResourceType: string;
@@ -506,7 +506,7 @@ public readonly terraformResourceType: string;
 
 ---
 
-##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.terraformGeneratorMetadata"></a>
+##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.terraformGeneratorMetadata"></a>
 
 ```typescript
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
@@ -516,7 +516,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.count"></a>
 
 ```typescript
 public readonly count: number | TerraformCount;
@@ -526,7 +526,7 @@ public readonly count: number | TerraformCount;
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: string[];
@@ -536,7 +536,7 @@ public readonly dependsOn: string[];
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
@@ -546,7 +546,7 @@ public readonly forEach: ITerraformIterator;
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
@@ -556,7 +556,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
@@ -566,7 +566,7 @@ public readonly provider: TerraformProvider;
 
 ---
 
-##### `imageUrl`<sup>Required</sup> <a name="imageUrl" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.imageUrl"></a>
+##### `imageUrl`<sup>Required</sup> <a name="imageUrl" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.imageUrl"></a>
 
 ```typescript
 public readonly imageUrl: string;
@@ -576,7 +576,7 @@ public readonly imageUrl: string;
 
 ---
 
-##### `digestInput`<sup>Optional</sup> <a name="digestInput" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.digestInput"></a>
+##### `digestInput`<sup>Optional</sup> <a name="digestInput" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.digestInput"></a>
 
 ```typescript
 public readonly digestInput: string;
@@ -586,7 +586,7 @@ public readonly digestInput: string;
 
 ---
 
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.idInput"></a>
+##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.idInput"></a>
 
 ```typescript
 public readonly idInput: string;
@@ -596,7 +596,7 @@ public readonly idInput: string;
 
 ---
 
-##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.nameInput"></a>
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.nameInput"></a>
 
 ```typescript
 public readonly nameInput: string;
@@ -606,7 +606,7 @@ public readonly nameInput: string;
 
 ---
 
-##### `projectInput`<sup>Optional</sup> <a name="projectInput" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.projectInput"></a>
+##### `projectInput`<sup>Optional</sup> <a name="projectInput" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.projectInput"></a>
 
 ```typescript
 public readonly projectInput: string;
@@ -616,7 +616,7 @@ public readonly projectInput: string;
 
 ---
 
-##### `regionInput`<sup>Optional</sup> <a name="regionInput" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.regionInput"></a>
+##### `regionInput`<sup>Optional</sup> <a name="regionInput" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.regionInput"></a>
 
 ```typescript
 public readonly regionInput: string;
@@ -626,7 +626,7 @@ public readonly regionInput: string;
 
 ---
 
-##### `tagInput`<sup>Optional</sup> <a name="tagInput" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.tagInput"></a>
+##### `tagInput`<sup>Optional</sup> <a name="tagInput" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.tagInput"></a>
 
 ```typescript
 public readonly tagInput: string;
@@ -636,7 +636,7 @@ public readonly tagInput: string;
 
 ---
 
-##### `digest`<sup>Required</sup> <a name="digest" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.digest"></a>
+##### `digest`<sup>Required</sup> <a name="digest" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.digest"></a>
 
 ```typescript
 public readonly digest: string;
@@ -646,7 +646,7 @@ public readonly digest: string;
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -656,7 +656,7 @@ public readonly id: string;
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -666,7 +666,7 @@ public readonly name: string;
 
 ---
 
-##### `project`<sup>Required</sup> <a name="project" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.project"></a>
+##### `project`<sup>Required</sup> <a name="project" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.project"></a>
 
 ```typescript
 public readonly project: string;
@@ -676,7 +676,7 @@ public readonly project: string;
 
 ---
 
-##### `region`<sup>Required</sup> <a name="region" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.region"></a>
+##### `region`<sup>Required</sup> <a name="region" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.region"></a>
 
 ```typescript
 public readonly region: string;
@@ -686,7 +686,7 @@ public readonly region: string;
 
 ---
 
-##### `tag`<sup>Required</sup> <a name="tag" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.tag"></a>
+##### `tag`<sup>Required</sup> <a name="tag" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.tag"></a>
 
 ```typescript
 public readonly tag: string;
@@ -700,11 +700,11 @@ public readonly tag: string;
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImage.property.tfResourceType"></a>
 
 ```typescript
 public readonly tfResourceType: string;
@@ -716,12 +716,12 @@ public readonly tfResourceType: string;
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### DataGoogleContainerRegistryImageConfig <a name="DataGoogleContainerRegistryImageConfig" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImageConfig"></a>
+### DataGoogleContainerRegistryImageConfig <a name="DataGoogleContainerRegistryImageConfig" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImageConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImageConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImageConfig.Initializer"></a>
 
 ```typescript
-import { dataGoogleContainerRegistryImage } from '@cdktf/provider-google'
+import { dataGoogleContainerRegistryImage } from '@cdktn/provider-google'
 
 const dataGoogleContainerRegistryImageConfig: dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImageConfig = { ... }
 ```
@@ -730,23 +730,23 @@ const dataGoogleContainerRegistryImageConfig: dataGoogleContainerRegistryImage.D
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImageConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImageConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImageConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImageConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImageConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImageConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImageConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImageConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/container_registry_image#name DataGoogleContainerRegistryImage#name}. |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImageConfig.property.digest">digest</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/container_registry_image#digest DataGoogleContainerRegistryImage#digest}. |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImageConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/container_registry_image#id DataGoogleContainerRegistryImage#id}. |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImageConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/container_registry_image#project DataGoogleContainerRegistryImage#project}. |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImageConfig.property.region">region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/container_registry_image#region DataGoogleContainerRegistryImage#region}. |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImageConfig.property.tag">tag</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/container_registry_image#tag DataGoogleContainerRegistryImage#tag}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImageConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImageConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImageConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImageConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImageConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImageConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImageConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImageConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/container_registry_image#name DataGoogleContainerRegistryImage#name}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImageConfig.property.digest">digest</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/container_registry_image#digest DataGoogleContainerRegistryImage#digest}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImageConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/container_registry_image#id DataGoogleContainerRegistryImage#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImageConfig.property.project">project</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/container_registry_image#project DataGoogleContainerRegistryImage#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImageConfig.property.region">region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/container_registry_image#region DataGoogleContainerRegistryImage#region}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImageConfig.property.tag">tag</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/container_registry_image#tag DataGoogleContainerRegistryImage#tag}. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImageConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImageConfig.property.connection"></a>
 
 ```typescript
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
@@ -756,7 +756,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImageConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImageConfig.property.count"></a>
 
 ```typescript
 public readonly count: number | TerraformCount;
@@ -766,7 +766,7 @@ public readonly count: number | TerraformCount;
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImageConfig.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImageConfig.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: ITerraformDependable[];
@@ -776,7 +776,7 @@ public readonly dependsOn: ITerraformDependable[];
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImageConfig.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImageConfig.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
@@ -786,7 +786,7 @@ public readonly forEach: ITerraformIterator;
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImageConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImageConfig.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
@@ -796,7 +796,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImageConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImageConfig.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
@@ -806,7 +806,7 @@ public readonly provider: TerraformProvider;
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImageConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImageConfig.property.provisioners"></a>
 
 ```typescript
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
@@ -816,7 +816,7 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImageConfig.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImageConfig.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -828,7 +828,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `digest`<sup>Optional</sup> <a name="digest" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImageConfig.property.digest"></a>
+##### `digest`<sup>Optional</sup> <a name="digest" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImageConfig.property.digest"></a>
 
 ```typescript
 public readonly digest: string;
@@ -840,7 +840,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImageConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImageConfig.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -855,7 +855,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
-##### `project`<sup>Optional</sup> <a name="project" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImageConfig.property.project"></a>
+##### `project`<sup>Optional</sup> <a name="project" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImageConfig.property.project"></a>
 
 ```typescript
 public readonly project: string;
@@ -867,7 +867,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `region`<sup>Optional</sup> <a name="region" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImageConfig.property.region"></a>
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImageConfig.property.region"></a>
 
 ```typescript
 public readonly region: string;
@@ -879,7 +879,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `tag`<sup>Optional</sup> <a name="tag" id="@cdktf/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImageConfig.property.tag"></a>
+##### `tag`<sup>Optional</sup> <a name="tag" id="@cdktn/provider-google.dataGoogleContainerRegistryImage.DataGoogleContainerRegistryImageConfig.property.tag"></a>
 
 ```typescript
 public readonly tag: string;

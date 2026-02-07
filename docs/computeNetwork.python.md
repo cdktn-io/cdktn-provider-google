@@ -1,15 +1,15 @@
-# `computeNetwork` Submodule <a name="`computeNetwork` Submodule" id="@cdktf/provider-google.computeNetwork"></a>
+# `computeNetwork` Submodule <a name="`computeNetwork` Submodule" id="@cdktn/provider-google.computeNetwork"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### ComputeNetwork <a name="ComputeNetwork" id="@cdktf/provider-google.computeNetwork.ComputeNetwork"></a>
+### ComputeNetwork <a name="ComputeNetwork" id="@cdktn/provider-google.computeNetwork.ComputeNetwork"></a>
 
 Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_network google_compute_network}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import compute_network
+from cdktn_provider_google import compute_network
 
 computeNetwork.ComputeNetwork(
   scope: Construct,
@@ -43,36 +43,36 @@ computeNetwork.ComputeNetwork(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.name">name</a></code> | <code>str</code> | Name of the resource. |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.autoCreateSubnetworks">auto_create_subnetworks</a></code> | <code>bool \| cdktf.IResolvable</code> | When set to 'true', the network is created in "auto subnet mode" and it will create a subnet for each region automatically across the '10.128.0.0/9' address range. |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.bgpAlwaysCompareMed">bgp_always_compare_med</a></code> | <code>bool \| cdktf.IResolvable</code> | Enables/disables the comparison of MED across routes with different Neighbor ASNs. |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.bgpBestPathSelectionMode">bgp_best_path_selection_mode</a></code> | <code>str</code> | The BGP best selection algorithm to be employed. MODE can be LEGACY or STANDARD. Possible values: ["LEGACY", "STANDARD"]. |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.bgpInterRegionCost">bgp_inter_region_cost</a></code> | <code>str</code> | Choice of the behavior of inter-regional cost and MED in the BPS algorithm. Possible values: ["DEFAULT", "ADD_COST_TO_MED"]. |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.deleteDefaultRoutesOnCreate">delete_default_routes_on_create</a></code> | <code>bool \| cdktf.IResolvable</code> | If set to 'true', default routes ('0.0.0.0/0') will be deleted immediately after network creation. Defaults to 'false'. |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.description">description</a></code> | <code>str</code> | An optional description of this resource. The resource must be recreated to modify this field. |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.enableUlaInternalIpv6">enable_ula_internal_ipv6</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable ULA internal ipv6 on this network. Enabling this feature will assign a /48 from google defined ULA prefix fd20::/20. |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_network#id ComputeNetwork#id}. |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.internalIpv6Range">internal_ipv6_range</a></code> | <code>str</code> | When enabling ula internal ipv6, caller optionally can specify the /48 range they want from the google defined ULA prefix fd20::/20. |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.mtu">mtu</a></code> | <code>typing.Union[int, float]</code> | Maximum Transmission Unit in bytes. |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.networkFirewallPolicyEnforcementOrder">network_firewall_policy_enforcement_order</a></code> | <code>str</code> | Set the order that Firewall Rules and Firewall Policies are evaluated. Default value: "AFTER_CLASSIC_FIREWALL" Possible values: ["BEFORE_CLASSIC_FIREWALL", "AFTER_CLASSIC_FIREWALL"]. |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.networkProfile">network_profile</a></code> | <code>str</code> | A full or partial URL of the network profile to apply to this network. |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.params">params</a></code> | <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkParams">ComputeNetworkParams</a></code> | params block. |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_network#project ComputeNetwork#project}. |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.routingMode">routing_mode</a></code> | <code>str</code> | The network-wide routing mode to use. |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkTimeouts">ComputeNetworkTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.name">name</a></code> | <code>str</code> | Name of the resource. |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.autoCreateSubnetworks">auto_create_subnetworks</a></code> | <code>bool \| cdktf.IResolvable</code> | When set to 'true', the network is created in "auto subnet mode" and it will create a subnet for each region automatically across the '10.128.0.0/9' address range. |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.bgpAlwaysCompareMed">bgp_always_compare_med</a></code> | <code>bool \| cdktf.IResolvable</code> | Enables/disables the comparison of MED across routes with different Neighbor ASNs. |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.bgpBestPathSelectionMode">bgp_best_path_selection_mode</a></code> | <code>str</code> | The BGP best selection algorithm to be employed. MODE can be LEGACY or STANDARD. Possible values: ["LEGACY", "STANDARD"]. |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.bgpInterRegionCost">bgp_inter_region_cost</a></code> | <code>str</code> | Choice of the behavior of inter-regional cost and MED in the BPS algorithm. Possible values: ["DEFAULT", "ADD_COST_TO_MED"]. |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.deleteDefaultRoutesOnCreate">delete_default_routes_on_create</a></code> | <code>bool \| cdktf.IResolvable</code> | If set to 'true', default routes ('0.0.0.0/0') will be deleted immediately after network creation. Defaults to 'false'. |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.description">description</a></code> | <code>str</code> | An optional description of this resource. The resource must be recreated to modify this field. |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.enableUlaInternalIpv6">enable_ula_internal_ipv6</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable ULA internal ipv6 on this network. Enabling this feature will assign a /48 from google defined ULA prefix fd20::/20. |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_network#id ComputeNetwork#id}. |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.internalIpv6Range">internal_ipv6_range</a></code> | <code>str</code> | When enabling ula internal ipv6, caller optionally can specify the /48 range they want from the google defined ULA prefix fd20::/20. |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.mtu">mtu</a></code> | <code>typing.Union[int, float]</code> | Maximum Transmission Unit in bytes. |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.networkFirewallPolicyEnforcementOrder">network_firewall_policy_enforcement_order</a></code> | <code>str</code> | Set the order that Firewall Rules and Firewall Policies are evaluated. Default value: "AFTER_CLASSIC_FIREWALL" Possible values: ["BEFORE_CLASSIC_FIREWALL", "AFTER_CLASSIC_FIREWALL"]. |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.networkProfile">network_profile</a></code> | <code>str</code> | A full or partial URL of the network profile to apply to this network. |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.params">params</a></code> | <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkParams">ComputeNetworkParams</a></code> | params block. |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_network#project ComputeNetwork#project}. |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.routingMode">routing_mode</a></code> | <code>str</code> | The network-wide routing mode to use. |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkTimeouts">ComputeNetworkTimeouts</a></code> | timeouts block. |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -80,7 +80,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -90,49 +90,49 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.connection"></a>
 
 - *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.count"></a>
 
 - *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.dependsOn"></a>
 
 - *Type:* typing.List[cdktf.ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.forEach"></a>
 
 - *Type:* cdktf.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.lifecycle"></a>
 
 - *Type:* cdktf.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.provisioners"></a>
 
 - *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.name"></a>
 
 - *Type:* str
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `auto_create_subnetworks`<sup>Optional</sup> <a name="auto_create_subnetworks" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.autoCreateSubnetworks"></a>
+##### `auto_create_subnetworks`<sup>Optional</sup> <a name="auto_create_subnetworks" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.autoCreateSubnetworks"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
@@ -163,7 +163,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `bgp_always_compare_med`<sup>Optional</sup> <a name="bgp_always_compare_med" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.bgpAlwaysCompareMed"></a>
+##### `bgp_always_compare_med`<sup>Optional</sup> <a name="bgp_always_compare_med" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.bgpAlwaysCompareMed"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
@@ -175,7 +175,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `bgp_best_path_selection_mode`<sup>Optional</sup> <a name="bgp_best_path_selection_mode" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.bgpBestPathSelectionMode"></a>
+##### `bgp_best_path_selection_mode`<sup>Optional</sup> <a name="bgp_best_path_selection_mode" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.bgpBestPathSelectionMode"></a>
 
 - *Type:* str
 
@@ -185,7 +185,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `bgp_inter_region_cost`<sup>Optional</sup> <a name="bgp_inter_region_cost" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.bgpInterRegionCost"></a>
+##### `bgp_inter_region_cost`<sup>Optional</sup> <a name="bgp_inter_region_cost" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.bgpInterRegionCost"></a>
 
 - *Type:* str
 
@@ -195,7 +195,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `delete_default_routes_on_create`<sup>Optional</sup> <a name="delete_default_routes_on_create" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.deleteDefaultRoutesOnCreate"></a>
+##### `delete_default_routes_on_create`<sup>Optional</sup> <a name="delete_default_routes_on_create" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.deleteDefaultRoutesOnCreate"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
@@ -205,7 +205,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.description"></a>
+##### `description`<sup>Optional</sup> <a name="description" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.description"></a>
 
 - *Type:* str
 
@@ -215,7 +215,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `enable_ula_internal_ipv6`<sup>Optional</sup> <a name="enable_ula_internal_ipv6" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.enableUlaInternalIpv6"></a>
+##### `enable_ula_internal_ipv6`<sup>Optional</sup> <a name="enable_ula_internal_ipv6" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.enableUlaInternalIpv6"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
@@ -225,7 +225,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -236,7 +236,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
-##### `internal_ipv6_range`<sup>Optional</sup> <a name="internal_ipv6_range" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.internalIpv6Range"></a>
+##### `internal_ipv6_range`<sup>Optional</sup> <a name="internal_ipv6_range" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.internalIpv6Range"></a>
 
 - *Type:* str
 
@@ -251,7 +251,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `mtu`<sup>Optional</sup> <a name="mtu" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.mtu"></a>
+##### `mtu`<sup>Optional</sup> <a name="mtu" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.mtu"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -267,7 +267,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `network_firewall_policy_enforcement_order`<sup>Optional</sup> <a name="network_firewall_policy_enforcement_order" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.networkFirewallPolicyEnforcementOrder"></a>
+##### `network_firewall_policy_enforcement_order`<sup>Optional</sup> <a name="network_firewall_policy_enforcement_order" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.networkFirewallPolicyEnforcementOrder"></a>
 
 - *Type:* str
 
@@ -277,7 +277,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `network_profile`<sup>Optional</sup> <a name="network_profile" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.networkProfile"></a>
+##### `network_profile`<sup>Optional</sup> <a name="network_profile" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.networkProfile"></a>
 
 - *Type:* str
 
@@ -293,9 +293,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `params`<sup>Optional</sup> <a name="params" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.params"></a>
+##### `params`<sup>Optional</sup> <a name="params" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.params"></a>
 
-- *Type:* <a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkParams">ComputeNetworkParams</a>
+- *Type:* <a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkParams">ComputeNetworkParams</a>
 
 params block.
 
@@ -303,7 +303,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `project`<sup>Optional</sup> <a name="project" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.project"></a>
+##### `project`<sup>Optional</sup> <a name="project" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.project"></a>
 
 - *Type:* str
 
@@ -311,7 +311,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `routing_mode`<sup>Optional</sup> <a name="routing_mode" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.routingMode"></a>
+##### `routing_mode`<sup>Optional</sup> <a name="routing_mode" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.routingMode"></a>
 
 - *Type:* str
 
@@ -327,9 +327,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.Initializer.parameter.timeouts"></a>
 
-- *Type:* <a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkTimeouts">ComputeNetworkTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkTimeouts">ComputeNetworkTimeouts</a>
 
 timeouts block.
 
@@ -341,51 +341,51 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.toString">to_string</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.addOverride">add_override</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.toMetadata">to_metadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.hasResourceMove">has_resource_move</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.importFrom">import_from</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.putParams">put_params</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.putTimeouts">put_timeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.resetAutoCreateSubnetworks">reset_auto_create_subnetworks</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.resetBgpAlwaysCompareMed">reset_bgp_always_compare_med</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.resetBgpBestPathSelectionMode">reset_bgp_best_path_selection_mode</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.resetBgpInterRegionCost">reset_bgp_inter_region_cost</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.resetDeleteDefaultRoutesOnCreate">reset_delete_default_routes_on_create</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.resetDescription">reset_description</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.resetEnableUlaInternalIpv6">reset_enable_ula_internal_ipv6</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.resetId">reset_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.resetInternalIpv6Range">reset_internal_ipv6_range</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.resetMtu">reset_mtu</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.resetNetworkFirewallPolicyEnforcementOrder">reset_network_firewall_policy_enforcement_order</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.resetNetworkProfile">reset_network_profile</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.resetParams">reset_params</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.resetProject">reset_project</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.resetRoutingMode">reset_routing_mode</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.resetTimeouts">reset_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.toString">to_string</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.addOverride">add_override</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.toMetadata">to_metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.hasResourceMove">has_resource_move</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.importFrom">import_from</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.putParams">put_params</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.resetAutoCreateSubnetworks">reset_auto_create_subnetworks</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.resetBgpAlwaysCompareMed">reset_bgp_always_compare_med</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.resetBgpBestPathSelectionMode">reset_bgp_best_path_selection_mode</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.resetBgpInterRegionCost">reset_bgp_inter_region_cost</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.resetDeleteDefaultRoutesOnCreate">reset_delete_default_routes_on_create</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.resetDescription">reset_description</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.resetEnableUlaInternalIpv6">reset_enable_ula_internal_ipv6</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.resetInternalIpv6Range">reset_internal_ipv6_range</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.resetMtu">reset_mtu</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.resetNetworkFirewallPolicyEnforcementOrder">reset_network_firewall_policy_enforcement_order</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.resetNetworkProfile">reset_network_profile</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.resetParams">reset_params</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.resetProject">reset_project</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.resetRoutingMode">reset_routing_mode</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.resetTimeouts">reset_timeouts</a></code> | *No description.* |
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.toString"></a>
 
 ```python
 def to_string() -> str
@@ -393,7 +393,7 @@ def to_string() -> str
 
 Returns a string representation of this construct.
 
-##### `add_override` <a name="add_override" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.addOverride"></a>
+##### `add_override` <a name="add_override" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.addOverride"></a>
 
 ```python
 def add_override(
@@ -402,19 +402,19 @@ def add_override(
 ) -> None
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.addOverride.parameter.path"></a>
 
 - *Type:* str
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.addOverride.parameter.value"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `override_logical_id` <a name="override_logical_id" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.overrideLogicalId"></a>
+##### `override_logical_id` <a name="override_logical_id" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.overrideLogicalId"></a>
 
 ```python
 def override_logical_id(
@@ -424,7 +424,7 @@ def override_logical_id(
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.overrideLogicalId.parameter.newLogicalId"></a>
+###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* str
 
@@ -432,7 +432,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.resetOverrideLogicalId"></a>
+##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.resetOverrideLogicalId"></a>
 
 ```python
 def reset_override_logical_id() -> None
@@ -440,19 +440,19 @@ def reset_override_logical_id() -> None
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.toHclTerraform"></a>
+##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.toHclTerraform"></a>
 
 ```python
 def to_hcl_terraform() -> typing.Any
 ```
 
-##### `to_metadata` <a name="to_metadata" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.toMetadata"></a>
+##### `to_metadata` <a name="to_metadata" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.toMetadata"></a>
 
 ```python
 def to_metadata() -> typing.Any
 ```
 
-##### `to_terraform` <a name="to_terraform" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.toTerraform"></a>
+##### `to_terraform` <a name="to_terraform" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.toTerraform"></a>
 
 ```python
 def to_terraform() -> typing.Any
@@ -460,7 +460,7 @@ def to_terraform() -> typing.Any
 
 Adds this resource to the terraform JSON output.
 
-##### `add_move_target` <a name="add_move_target" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.addMoveTarget"></a>
+##### `add_move_target` <a name="add_move_target" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.addMoveTarget"></a>
 
 ```python
 def add_move_target(
@@ -470,7 +470,7 @@ def add_move_target(
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.addMoveTarget.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -478,7 +478,7 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -486,13 +486,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -500,13 +500,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -514,13 +514,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -528,13 +528,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -542,13 +542,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -556,13 +556,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -570,13 +570,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -584,13 +584,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -598,19 +598,19 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.hasResourceMove"></a>
+##### `has_resource_move` <a name="has_resource_move" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.hasResourceMove"></a>
 
 ```python
 def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `import_from` <a name="import_from" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.importFrom"></a>
+##### `import_from` <a name="import_from" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.importFrom"></a>
 
 ```python
 def import_from(
@@ -619,19 +619,19 @@ def import_from(
 ) -> None
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.importFrom.parameter.id"></a>
 
 - *Type:* str
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.importFrom.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -639,13 +639,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `move_from_id` <a name="move_from_id" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.moveFromId"></a>
+##### `move_from_id` <a name="move_from_id" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.moveFromId"></a>
 
 ```python
 def move_from_id(
@@ -657,7 +657,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.moveFromId.parameter.id"></a>
 
 - *Type:* str
 
@@ -665,7 +665,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `move_to` <a name="move_to" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.moveTo"></a>
+##### `move_to` <a name="move_to" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.moveTo"></a>
 
 ```python
 def move_to(
@@ -676,7 +676,7 @@ def move_to(
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.moveTo.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.moveTo.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -684,7 +684,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.moveTo.parameter.index"></a>
 
 - *Type:* str | typing.Union[int, float]
 
@@ -692,7 +692,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `move_to_id` <a name="move_to_id" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.moveToId"></a>
+##### `move_to_id` <a name="move_to_id" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.moveToId"></a>
 
 ```python
 def move_to_id(
@@ -702,7 +702,7 @@ def move_to_id(
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.moveToId.parameter.id"></a>
 
 - *Type:* str
 
@@ -710,7 +710,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `put_params` <a name="put_params" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.putParams"></a>
+##### `put_params` <a name="put_params" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.putParams"></a>
 
 ```python
 def put_params(
@@ -718,7 +718,7 @@ def put_params(
 ) -> None
 ```
 
-###### `resource_manager_tags`<sup>Optional</sup> <a name="resource_manager_tags" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.putParams.parameter.resourceManagerTags"></a>
+###### `resource_manager_tags`<sup>Optional</sup> <a name="resource_manager_tags" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.putParams.parameter.resourceManagerTags"></a>
 
 - *Type:* typing.Mapping[str]
 
@@ -732,7 +732,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `put_timeouts` <a name="put_timeouts" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.putTimeouts"></a>
+##### `put_timeouts` <a name="put_timeouts" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.putTimeouts"></a>
 
 ```python
 def put_timeouts(
@@ -742,7 +742,7 @@ def put_timeouts(
 ) -> None
 ```
 
-###### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.putTimeouts.parameter.create"></a>
+###### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.putTimeouts.parameter.create"></a>
 
 - *Type:* str
 
@@ -750,7 +750,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.putTimeouts.parameter.delete"></a>
+###### `delete`<sup>Optional</sup> <a name="delete" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.putTimeouts.parameter.delete"></a>
 
 - *Type:* str
 
@@ -758,7 +758,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.putTimeouts.parameter.update"></a>
+###### `update`<sup>Optional</sup> <a name="update" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.putTimeouts.parameter.update"></a>
 
 - *Type:* str
 
@@ -766,97 +766,97 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `reset_auto_create_subnetworks` <a name="reset_auto_create_subnetworks" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.resetAutoCreateSubnetworks"></a>
+##### `reset_auto_create_subnetworks` <a name="reset_auto_create_subnetworks" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.resetAutoCreateSubnetworks"></a>
 
 ```python
 def reset_auto_create_subnetworks() -> None
 ```
 
-##### `reset_bgp_always_compare_med` <a name="reset_bgp_always_compare_med" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.resetBgpAlwaysCompareMed"></a>
+##### `reset_bgp_always_compare_med` <a name="reset_bgp_always_compare_med" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.resetBgpAlwaysCompareMed"></a>
 
 ```python
 def reset_bgp_always_compare_med() -> None
 ```
 
-##### `reset_bgp_best_path_selection_mode` <a name="reset_bgp_best_path_selection_mode" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.resetBgpBestPathSelectionMode"></a>
+##### `reset_bgp_best_path_selection_mode` <a name="reset_bgp_best_path_selection_mode" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.resetBgpBestPathSelectionMode"></a>
 
 ```python
 def reset_bgp_best_path_selection_mode() -> None
 ```
 
-##### `reset_bgp_inter_region_cost` <a name="reset_bgp_inter_region_cost" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.resetBgpInterRegionCost"></a>
+##### `reset_bgp_inter_region_cost` <a name="reset_bgp_inter_region_cost" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.resetBgpInterRegionCost"></a>
 
 ```python
 def reset_bgp_inter_region_cost() -> None
 ```
 
-##### `reset_delete_default_routes_on_create` <a name="reset_delete_default_routes_on_create" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.resetDeleteDefaultRoutesOnCreate"></a>
+##### `reset_delete_default_routes_on_create` <a name="reset_delete_default_routes_on_create" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.resetDeleteDefaultRoutesOnCreate"></a>
 
 ```python
 def reset_delete_default_routes_on_create() -> None
 ```
 
-##### `reset_description` <a name="reset_description" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.resetDescription"></a>
+##### `reset_description` <a name="reset_description" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.resetDescription"></a>
 
 ```python
 def reset_description() -> None
 ```
 
-##### `reset_enable_ula_internal_ipv6` <a name="reset_enable_ula_internal_ipv6" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.resetEnableUlaInternalIpv6"></a>
+##### `reset_enable_ula_internal_ipv6` <a name="reset_enable_ula_internal_ipv6" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.resetEnableUlaInternalIpv6"></a>
 
 ```python
 def reset_enable_ula_internal_ipv6() -> None
 ```
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.resetId"></a>
+##### `reset_id` <a name="reset_id" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.resetId"></a>
 
 ```python
 def reset_id() -> None
 ```
 
-##### `reset_internal_ipv6_range` <a name="reset_internal_ipv6_range" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.resetInternalIpv6Range"></a>
+##### `reset_internal_ipv6_range` <a name="reset_internal_ipv6_range" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.resetInternalIpv6Range"></a>
 
 ```python
 def reset_internal_ipv6_range() -> None
 ```
 
-##### `reset_mtu` <a name="reset_mtu" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.resetMtu"></a>
+##### `reset_mtu` <a name="reset_mtu" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.resetMtu"></a>
 
 ```python
 def reset_mtu() -> None
 ```
 
-##### `reset_network_firewall_policy_enforcement_order` <a name="reset_network_firewall_policy_enforcement_order" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.resetNetworkFirewallPolicyEnforcementOrder"></a>
+##### `reset_network_firewall_policy_enforcement_order` <a name="reset_network_firewall_policy_enforcement_order" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.resetNetworkFirewallPolicyEnforcementOrder"></a>
 
 ```python
 def reset_network_firewall_policy_enforcement_order() -> None
 ```
 
-##### `reset_network_profile` <a name="reset_network_profile" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.resetNetworkProfile"></a>
+##### `reset_network_profile` <a name="reset_network_profile" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.resetNetworkProfile"></a>
 
 ```python
 def reset_network_profile() -> None
 ```
 
-##### `reset_params` <a name="reset_params" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.resetParams"></a>
+##### `reset_params` <a name="reset_params" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.resetParams"></a>
 
 ```python
 def reset_params() -> None
 ```
 
-##### `reset_project` <a name="reset_project" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.resetProject"></a>
+##### `reset_project` <a name="reset_project" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.resetProject"></a>
 
 ```python
 def reset_project() -> None
 ```
 
-##### `reset_routing_mode` <a name="reset_routing_mode" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.resetRoutingMode"></a>
+##### `reset_routing_mode` <a name="reset_routing_mode" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.resetRoutingMode"></a>
 
 ```python
 def reset_routing_mode() -> None
 ```
 
-##### `reset_timeouts` <a name="reset_timeouts" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.resetTimeouts"></a>
+##### `reset_timeouts` <a name="reset_timeouts" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.resetTimeouts"></a>
 
 ```python
 def reset_timeouts() -> None
@@ -866,17 +866,17 @@ def reset_timeouts() -> None
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.isTerraformElement">is_terraform_element</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a ComputeNetwork resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.isTerraformElement">is_terraform_element</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a ComputeNetwork resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `is_construct` <a name="is_construct" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.isConstruct"></a>
+##### `is_construct` <a name="is_construct" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.isConstruct"></a>
 
 ```python
-from cdktf_cdktf_provider_google import compute_network
+from cdktn_provider_google import compute_network
 
 computeNetwork.ComputeNetwork.is_construct(
   x: typing.Any
@@ -899,7 +899,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.isConstruct.parameter.x"></a>
 
 - *Type:* typing.Any
 
@@ -907,42 +907,42 @@ Any object.
 
 ---
 
-##### `is_terraform_element` <a name="is_terraform_element" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.isTerraformElement"></a>
+##### `is_terraform_element` <a name="is_terraform_element" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.isTerraformElement"></a>
 
 ```python
-from cdktf_cdktf_provider_google import compute_network
+from cdktn_provider_google import compute_network
 
 computeNetwork.ComputeNetwork.is_terraform_element(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.isTerraformElement.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.isTerraformResource"></a>
+##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.isTerraformResource"></a>
 
 ```python
-from cdktf_cdktf_provider_google import compute_network
+from cdktn_provider_google import compute_network
 
 computeNetwork.ComputeNetwork.is_terraform_resource(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.isTerraformResource.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.generateConfigForImport"></a>
+##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.generateConfigForImport"></a>
 
 ```python
-from cdktf_cdktf_provider_google import compute_network
+from cdktn_provider_google import compute_network
 
 computeNetwork.ComputeNetwork.generate_config_for_import(
   scope: Construct,
@@ -954,7 +954,7 @@ computeNetwork.ComputeNetwork.generate_config_for_import(
 
 Generates CDKTF code for importing a ComputeNetwork resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -962,7 +962,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.generateConfigForImport.parameter.importToId"></a>
+###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* str
 
@@ -970,7 +970,7 @@ The construct id used in the generated config for the ComputeNetwork to import.
 
 ---
 
-###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.generateConfigForImport.parameter.importFromId"></a>
+###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* str
 
@@ -980,7 +980,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
@@ -992,62 +992,62 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.property.gatewayIpv4">gateway_ipv4</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.property.networkId">network_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.property.numericId">numeric_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.property.params">params</a></code> | <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkParamsOutputReference">ComputeNetworkParamsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.property.selfLink">self_link</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference">ComputeNetworkTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.property.autoCreateSubnetworksInput">auto_create_subnetworks_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.property.bgpAlwaysCompareMedInput">bgp_always_compare_med_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.property.bgpBestPathSelectionModeInput">bgp_best_path_selection_mode_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.property.bgpInterRegionCostInput">bgp_inter_region_cost_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.property.deleteDefaultRoutesOnCreateInput">delete_default_routes_on_create_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.property.enableUlaInternalIpv6Input">enable_ula_internal_ipv6_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.property.internalIpv6RangeInput">internal_ipv6_range_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.property.mtuInput">mtu_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.property.networkFirewallPolicyEnforcementOrderInput">network_firewall_policy_enforcement_order_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.property.networkProfileInput">network_profile_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.property.paramsInput">params_input</a></code> | <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkParams">ComputeNetworkParams</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.property.routingModeInput">routing_mode_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkTimeouts">ComputeNetworkTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.property.autoCreateSubnetworks">auto_create_subnetworks</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.property.bgpAlwaysCompareMed">bgp_always_compare_med</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.property.bgpBestPathSelectionMode">bgp_best_path_selection_mode</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.property.bgpInterRegionCost">bgp_inter_region_cost</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.property.deleteDefaultRoutesOnCreate">delete_default_routes_on_create</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.property.description">description</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.property.enableUlaInternalIpv6">enable_ula_internal_ipv6</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.property.internalIpv6Range">internal_ipv6_range</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.property.mtu">mtu</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.property.networkFirewallPolicyEnforcementOrder">network_firewall_policy_enforcement_order</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.property.networkProfile">network_profile</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.property.project">project</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.property.routingMode">routing_mode</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.property.gatewayIpv4">gateway_ipv4</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.property.networkId">network_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.property.numericId">numeric_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.property.params">params</a></code> | <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkParamsOutputReference">ComputeNetworkParamsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.property.selfLink">self_link</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference">ComputeNetworkTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.property.autoCreateSubnetworksInput">auto_create_subnetworks_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.property.bgpAlwaysCompareMedInput">bgp_always_compare_med_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.property.bgpBestPathSelectionModeInput">bgp_best_path_selection_mode_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.property.bgpInterRegionCostInput">bgp_inter_region_cost_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.property.deleteDefaultRoutesOnCreateInput">delete_default_routes_on_create_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.property.enableUlaInternalIpv6Input">enable_ula_internal_ipv6_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.property.internalIpv6RangeInput">internal_ipv6_range_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.property.mtuInput">mtu_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.property.networkFirewallPolicyEnforcementOrderInput">network_firewall_policy_enforcement_order_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.property.networkProfileInput">network_profile_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.property.paramsInput">params_input</a></code> | <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkParams">ComputeNetworkParams</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.property.routingModeInput">routing_mode_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkTimeouts">ComputeNetworkTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.property.autoCreateSubnetworks">auto_create_subnetworks</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.property.bgpAlwaysCompareMed">bgp_always_compare_med</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.property.bgpBestPathSelectionMode">bgp_best_path_selection_mode</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.property.bgpInterRegionCost">bgp_inter_region_cost</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.property.deleteDefaultRoutesOnCreate">delete_default_routes_on_create</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.property.description">description</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.property.enableUlaInternalIpv6">enable_ula_internal_ipv6</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.property.internalIpv6Range">internal_ipv6_range</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.property.mtu">mtu</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.property.networkFirewallPolicyEnforcementOrder">network_firewall_policy_enforcement_order</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.property.networkProfile">network_profile</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.property.project">project</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.property.routingMode">routing_mode</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.property.node"></a>
 
 ```python
 node: Node
@@ -1059,7 +1059,7 @@ The tree node.
 
 ---
 
-##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.property.cdktfStack"></a>
+##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.property.cdktfStack"></a>
 
 ```python
 cdktf_stack: TerraformStack
@@ -1069,7 +1069,7 @@ cdktf_stack: TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.property.fqn"></a>
 
 ```python
 fqn: str
@@ -1079,7 +1079,7 @@ fqn: str
 
 ---
 
-##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.property.friendlyUniqueId"></a>
+##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.property.friendlyUniqueId"></a>
 
 ```python
 friendly_unique_id: str
@@ -1089,7 +1089,7 @@ friendly_unique_id: str
 
 ---
 
-##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.property.terraformMetaArguments"></a>
+##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.property.terraformMetaArguments"></a>
 
 ```python
 terraform_meta_arguments: typing.Mapping[typing.Any]
@@ -1099,7 +1099,7 @@ terraform_meta_arguments: typing.Mapping[typing.Any]
 
 ---
 
-##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.property.terraformResourceType"></a>
+##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.property.terraformResourceType"></a>
 
 ```python
 terraform_resource_type: str
@@ -1109,7 +1109,7 @@ terraform_resource_type: str
 
 ---
 
-##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.property.terraformGeneratorMetadata"></a>
+##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.property.terraformGeneratorMetadata"></a>
 
 ```python
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
@@ -1119,7 +1119,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
@@ -1129,7 +1129,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -1139,7 +1139,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[str]
@@ -1149,7 +1149,7 @@ depends_on: typing.List[str]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -1159,7 +1159,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -1169,7 +1169,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -1179,7 +1179,7 @@ provider: TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
@@ -1189,7 +1189,7 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `gateway_ipv4`<sup>Required</sup> <a name="gateway_ipv4" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.property.gatewayIpv4"></a>
+##### `gateway_ipv4`<sup>Required</sup> <a name="gateway_ipv4" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.property.gatewayIpv4"></a>
 
 ```python
 gateway_ipv4: str
@@ -1199,7 +1199,7 @@ gateway_ipv4: str
 
 ---
 
-##### `network_id`<sup>Required</sup> <a name="network_id" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.property.networkId"></a>
+##### `network_id`<sup>Required</sup> <a name="network_id" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.property.networkId"></a>
 
 ```python
 network_id: str
@@ -1209,7 +1209,7 @@ network_id: str
 
 ---
 
-##### `numeric_id`<sup>Required</sup> <a name="numeric_id" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.property.numericId"></a>
+##### `numeric_id`<sup>Required</sup> <a name="numeric_id" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.property.numericId"></a>
 
 ```python
 numeric_id: str
@@ -1219,17 +1219,17 @@ numeric_id: str
 
 ---
 
-##### `params`<sup>Required</sup> <a name="params" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.property.params"></a>
+##### `params`<sup>Required</sup> <a name="params" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.property.params"></a>
 
 ```python
 params: ComputeNetworkParamsOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkParamsOutputReference">ComputeNetworkParamsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkParamsOutputReference">ComputeNetworkParamsOutputReference</a>
 
 ---
 
-##### `self_link`<sup>Required</sup> <a name="self_link" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.property.selfLink"></a>
+##### `self_link`<sup>Required</sup> <a name="self_link" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.property.selfLink"></a>
 
 ```python
 self_link: str
@@ -1239,17 +1239,17 @@ self_link: str
 
 ---
 
-##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.property.timeouts"></a>
+##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.property.timeouts"></a>
 
 ```python
 timeouts: ComputeNetworkTimeoutsOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference">ComputeNetworkTimeoutsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference">ComputeNetworkTimeoutsOutputReference</a>
 
 ---
 
-##### `auto_create_subnetworks_input`<sup>Optional</sup> <a name="auto_create_subnetworks_input" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.property.autoCreateSubnetworksInput"></a>
+##### `auto_create_subnetworks_input`<sup>Optional</sup> <a name="auto_create_subnetworks_input" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.property.autoCreateSubnetworksInput"></a>
 
 ```python
 auto_create_subnetworks_input: bool | IResolvable
@@ -1259,7 +1259,7 @@ auto_create_subnetworks_input: bool | IResolvable
 
 ---
 
-##### `bgp_always_compare_med_input`<sup>Optional</sup> <a name="bgp_always_compare_med_input" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.property.bgpAlwaysCompareMedInput"></a>
+##### `bgp_always_compare_med_input`<sup>Optional</sup> <a name="bgp_always_compare_med_input" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.property.bgpAlwaysCompareMedInput"></a>
 
 ```python
 bgp_always_compare_med_input: bool | IResolvable
@@ -1269,7 +1269,7 @@ bgp_always_compare_med_input: bool | IResolvable
 
 ---
 
-##### `bgp_best_path_selection_mode_input`<sup>Optional</sup> <a name="bgp_best_path_selection_mode_input" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.property.bgpBestPathSelectionModeInput"></a>
+##### `bgp_best_path_selection_mode_input`<sup>Optional</sup> <a name="bgp_best_path_selection_mode_input" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.property.bgpBestPathSelectionModeInput"></a>
 
 ```python
 bgp_best_path_selection_mode_input: str
@@ -1279,7 +1279,7 @@ bgp_best_path_selection_mode_input: str
 
 ---
 
-##### `bgp_inter_region_cost_input`<sup>Optional</sup> <a name="bgp_inter_region_cost_input" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.property.bgpInterRegionCostInput"></a>
+##### `bgp_inter_region_cost_input`<sup>Optional</sup> <a name="bgp_inter_region_cost_input" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.property.bgpInterRegionCostInput"></a>
 
 ```python
 bgp_inter_region_cost_input: str
@@ -1289,7 +1289,7 @@ bgp_inter_region_cost_input: str
 
 ---
 
-##### `delete_default_routes_on_create_input`<sup>Optional</sup> <a name="delete_default_routes_on_create_input" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.property.deleteDefaultRoutesOnCreateInput"></a>
+##### `delete_default_routes_on_create_input`<sup>Optional</sup> <a name="delete_default_routes_on_create_input" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.property.deleteDefaultRoutesOnCreateInput"></a>
 
 ```python
 delete_default_routes_on_create_input: bool | IResolvable
@@ -1299,7 +1299,7 @@ delete_default_routes_on_create_input: bool | IResolvable
 
 ---
 
-##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.property.descriptionInput"></a>
+##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.property.descriptionInput"></a>
 
 ```python
 description_input: str
@@ -1309,7 +1309,7 @@ description_input: str
 
 ---
 
-##### `enable_ula_internal_ipv6_input`<sup>Optional</sup> <a name="enable_ula_internal_ipv6_input" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.property.enableUlaInternalIpv6Input"></a>
+##### `enable_ula_internal_ipv6_input`<sup>Optional</sup> <a name="enable_ula_internal_ipv6_input" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.property.enableUlaInternalIpv6Input"></a>
 
 ```python
 enable_ula_internal_ipv6_input: bool | IResolvable
@@ -1319,7 +1319,7 @@ enable_ula_internal_ipv6_input: bool | IResolvable
 
 ---
 
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.property.idInput"></a>
+##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.property.idInput"></a>
 
 ```python
 id_input: str
@@ -1329,7 +1329,7 @@ id_input: str
 
 ---
 
-##### `internal_ipv6_range_input`<sup>Optional</sup> <a name="internal_ipv6_range_input" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.property.internalIpv6RangeInput"></a>
+##### `internal_ipv6_range_input`<sup>Optional</sup> <a name="internal_ipv6_range_input" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.property.internalIpv6RangeInput"></a>
 
 ```python
 internal_ipv6_range_input: str
@@ -1339,7 +1339,7 @@ internal_ipv6_range_input: str
 
 ---
 
-##### `mtu_input`<sup>Optional</sup> <a name="mtu_input" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.property.mtuInput"></a>
+##### `mtu_input`<sup>Optional</sup> <a name="mtu_input" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.property.mtuInput"></a>
 
 ```python
 mtu_input: typing.Union[int, float]
@@ -1349,7 +1349,7 @@ mtu_input: typing.Union[int, float]
 
 ---
 
-##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.property.nameInput"></a>
+##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.property.nameInput"></a>
 
 ```python
 name_input: str
@@ -1359,7 +1359,7 @@ name_input: str
 
 ---
 
-##### `network_firewall_policy_enforcement_order_input`<sup>Optional</sup> <a name="network_firewall_policy_enforcement_order_input" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.property.networkFirewallPolicyEnforcementOrderInput"></a>
+##### `network_firewall_policy_enforcement_order_input`<sup>Optional</sup> <a name="network_firewall_policy_enforcement_order_input" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.property.networkFirewallPolicyEnforcementOrderInput"></a>
 
 ```python
 network_firewall_policy_enforcement_order_input: str
@@ -1369,7 +1369,7 @@ network_firewall_policy_enforcement_order_input: str
 
 ---
 
-##### `network_profile_input`<sup>Optional</sup> <a name="network_profile_input" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.property.networkProfileInput"></a>
+##### `network_profile_input`<sup>Optional</sup> <a name="network_profile_input" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.property.networkProfileInput"></a>
 
 ```python
 network_profile_input: str
@@ -1379,17 +1379,17 @@ network_profile_input: str
 
 ---
 
-##### `params_input`<sup>Optional</sup> <a name="params_input" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.property.paramsInput"></a>
+##### `params_input`<sup>Optional</sup> <a name="params_input" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.property.paramsInput"></a>
 
 ```python
 params_input: ComputeNetworkParams
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkParams">ComputeNetworkParams</a>
+- *Type:* <a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkParams">ComputeNetworkParams</a>
 
 ---
 
-##### `project_input`<sup>Optional</sup> <a name="project_input" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.property.projectInput"></a>
+##### `project_input`<sup>Optional</sup> <a name="project_input" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.property.projectInput"></a>
 
 ```python
 project_input: str
@@ -1399,7 +1399,7 @@ project_input: str
 
 ---
 
-##### `routing_mode_input`<sup>Optional</sup> <a name="routing_mode_input" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.property.routingModeInput"></a>
+##### `routing_mode_input`<sup>Optional</sup> <a name="routing_mode_input" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.property.routingModeInput"></a>
 
 ```python
 routing_mode_input: str
@@ -1409,17 +1409,17 @@ routing_mode_input: str
 
 ---
 
-##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.property.timeoutsInput"></a>
+##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.property.timeoutsInput"></a>
 
 ```python
 timeouts_input: IResolvable | ComputeNetworkTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkTimeouts">ComputeNetworkTimeouts</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkTimeouts">ComputeNetworkTimeouts</a>
 
 ---
 
-##### `auto_create_subnetworks`<sup>Required</sup> <a name="auto_create_subnetworks" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.property.autoCreateSubnetworks"></a>
+##### `auto_create_subnetworks`<sup>Required</sup> <a name="auto_create_subnetworks" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.property.autoCreateSubnetworks"></a>
 
 ```python
 auto_create_subnetworks: bool | IResolvable
@@ -1429,7 +1429,7 @@ auto_create_subnetworks: bool | IResolvable
 
 ---
 
-##### `bgp_always_compare_med`<sup>Required</sup> <a name="bgp_always_compare_med" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.property.bgpAlwaysCompareMed"></a>
+##### `bgp_always_compare_med`<sup>Required</sup> <a name="bgp_always_compare_med" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.property.bgpAlwaysCompareMed"></a>
 
 ```python
 bgp_always_compare_med: bool | IResolvable
@@ -1439,7 +1439,7 @@ bgp_always_compare_med: bool | IResolvable
 
 ---
 
-##### `bgp_best_path_selection_mode`<sup>Required</sup> <a name="bgp_best_path_selection_mode" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.property.bgpBestPathSelectionMode"></a>
+##### `bgp_best_path_selection_mode`<sup>Required</sup> <a name="bgp_best_path_selection_mode" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.property.bgpBestPathSelectionMode"></a>
 
 ```python
 bgp_best_path_selection_mode: str
@@ -1449,7 +1449,7 @@ bgp_best_path_selection_mode: str
 
 ---
 
-##### `bgp_inter_region_cost`<sup>Required</sup> <a name="bgp_inter_region_cost" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.property.bgpInterRegionCost"></a>
+##### `bgp_inter_region_cost`<sup>Required</sup> <a name="bgp_inter_region_cost" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.property.bgpInterRegionCost"></a>
 
 ```python
 bgp_inter_region_cost: str
@@ -1459,7 +1459,7 @@ bgp_inter_region_cost: str
 
 ---
 
-##### `delete_default_routes_on_create`<sup>Required</sup> <a name="delete_default_routes_on_create" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.property.deleteDefaultRoutesOnCreate"></a>
+##### `delete_default_routes_on_create`<sup>Required</sup> <a name="delete_default_routes_on_create" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.property.deleteDefaultRoutesOnCreate"></a>
 
 ```python
 delete_default_routes_on_create: bool | IResolvable
@@ -1469,7 +1469,7 @@ delete_default_routes_on_create: bool | IResolvable
 
 ---
 
-##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.property.description"></a>
+##### `description`<sup>Required</sup> <a name="description" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.property.description"></a>
 
 ```python
 description: str
@@ -1479,7 +1479,7 @@ description: str
 
 ---
 
-##### `enable_ula_internal_ipv6`<sup>Required</sup> <a name="enable_ula_internal_ipv6" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.property.enableUlaInternalIpv6"></a>
+##### `enable_ula_internal_ipv6`<sup>Required</sup> <a name="enable_ula_internal_ipv6" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.property.enableUlaInternalIpv6"></a>
 
 ```python
 enable_ula_internal_ipv6: bool | IResolvable
@@ -1489,7 +1489,7 @@ enable_ula_internal_ipv6: bool | IResolvable
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.property.id"></a>
 
 ```python
 id: str
@@ -1499,7 +1499,7 @@ id: str
 
 ---
 
-##### `internal_ipv6_range`<sup>Required</sup> <a name="internal_ipv6_range" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.property.internalIpv6Range"></a>
+##### `internal_ipv6_range`<sup>Required</sup> <a name="internal_ipv6_range" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.property.internalIpv6Range"></a>
 
 ```python
 internal_ipv6_range: str
@@ -1509,7 +1509,7 @@ internal_ipv6_range: str
 
 ---
 
-##### `mtu`<sup>Required</sup> <a name="mtu" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.property.mtu"></a>
+##### `mtu`<sup>Required</sup> <a name="mtu" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.property.mtu"></a>
 
 ```python
 mtu: typing.Union[int, float]
@@ -1519,7 +1519,7 @@ mtu: typing.Union[int, float]
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.property.name"></a>
 
 ```python
 name: str
@@ -1529,7 +1529,7 @@ name: str
 
 ---
 
-##### `network_firewall_policy_enforcement_order`<sup>Required</sup> <a name="network_firewall_policy_enforcement_order" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.property.networkFirewallPolicyEnforcementOrder"></a>
+##### `network_firewall_policy_enforcement_order`<sup>Required</sup> <a name="network_firewall_policy_enforcement_order" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.property.networkFirewallPolicyEnforcementOrder"></a>
 
 ```python
 network_firewall_policy_enforcement_order: str
@@ -1539,7 +1539,7 @@ network_firewall_policy_enforcement_order: str
 
 ---
 
-##### `network_profile`<sup>Required</sup> <a name="network_profile" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.property.networkProfile"></a>
+##### `network_profile`<sup>Required</sup> <a name="network_profile" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.property.networkProfile"></a>
 
 ```python
 network_profile: str
@@ -1549,7 +1549,7 @@ network_profile: str
 
 ---
 
-##### `project`<sup>Required</sup> <a name="project" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.property.project"></a>
+##### `project`<sup>Required</sup> <a name="project" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.property.project"></a>
 
 ```python
 project: str
@@ -1559,7 +1559,7 @@ project: str
 
 ---
 
-##### `routing_mode`<sup>Required</sup> <a name="routing_mode" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.property.routingMode"></a>
+##### `routing_mode`<sup>Required</sup> <a name="routing_mode" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.property.routingMode"></a>
 
 ```python
 routing_mode: str
@@ -1573,11 +1573,11 @@ routing_mode: str
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetwork.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetwork.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-google.computeNetwork.ComputeNetwork.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-google.computeNetwork.ComputeNetwork.property.tfResourceType"></a>
 
 ```python
 tfResourceType: str
@@ -1589,12 +1589,12 @@ tfResourceType: str
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### ComputeNetworkConfig <a name="ComputeNetworkConfig" id="@cdktf/provider-google.computeNetwork.ComputeNetworkConfig"></a>
+### ComputeNetworkConfig <a name="ComputeNetworkConfig" id="@cdktn/provider-google.computeNetwork.ComputeNetworkConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-google.computeNetwork.ComputeNetworkConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.computeNetwork.ComputeNetworkConfig.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import compute_network
+from cdktn_provider_google import compute_network
 
 computeNetwork.ComputeNetworkConfig(
   connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
@@ -1628,34 +1628,34 @@ computeNetwork.ComputeNetworkConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkConfig.property.name">name</a></code> | <code>str</code> | Name of the resource. |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkConfig.property.autoCreateSubnetworks">auto_create_subnetworks</a></code> | <code>bool \| cdktf.IResolvable</code> | When set to 'true', the network is created in "auto subnet mode" and it will create a subnet for each region automatically across the '10.128.0.0/9' address range. |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkConfig.property.bgpAlwaysCompareMed">bgp_always_compare_med</a></code> | <code>bool \| cdktf.IResolvable</code> | Enables/disables the comparison of MED across routes with different Neighbor ASNs. |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkConfig.property.bgpBestPathSelectionMode">bgp_best_path_selection_mode</a></code> | <code>str</code> | The BGP best selection algorithm to be employed. MODE can be LEGACY or STANDARD. Possible values: ["LEGACY", "STANDARD"]. |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkConfig.property.bgpInterRegionCost">bgp_inter_region_cost</a></code> | <code>str</code> | Choice of the behavior of inter-regional cost and MED in the BPS algorithm. Possible values: ["DEFAULT", "ADD_COST_TO_MED"]. |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkConfig.property.deleteDefaultRoutesOnCreate">delete_default_routes_on_create</a></code> | <code>bool \| cdktf.IResolvable</code> | If set to 'true', default routes ('0.0.0.0/0') will be deleted immediately after network creation. Defaults to 'false'. |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkConfig.property.description">description</a></code> | <code>str</code> | An optional description of this resource. The resource must be recreated to modify this field. |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkConfig.property.enableUlaInternalIpv6">enable_ula_internal_ipv6</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable ULA internal ipv6 on this network. Enabling this feature will assign a /48 from google defined ULA prefix fd20::/20. |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_network#id ComputeNetwork#id}. |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkConfig.property.internalIpv6Range">internal_ipv6_range</a></code> | <code>str</code> | When enabling ula internal ipv6, caller optionally can specify the /48 range they want from the google defined ULA prefix fd20::/20. |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkConfig.property.mtu">mtu</a></code> | <code>typing.Union[int, float]</code> | Maximum Transmission Unit in bytes. |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkConfig.property.networkFirewallPolicyEnforcementOrder">network_firewall_policy_enforcement_order</a></code> | <code>str</code> | Set the order that Firewall Rules and Firewall Policies are evaluated. Default value: "AFTER_CLASSIC_FIREWALL" Possible values: ["BEFORE_CLASSIC_FIREWALL", "AFTER_CLASSIC_FIREWALL"]. |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkConfig.property.networkProfile">network_profile</a></code> | <code>str</code> | A full or partial URL of the network profile to apply to this network. |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkConfig.property.params">params</a></code> | <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkParams">ComputeNetworkParams</a></code> | params block. |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_network#project ComputeNetwork#project}. |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkConfig.property.routingMode">routing_mode</a></code> | <code>str</code> | The network-wide routing mode to use. |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkTimeouts">ComputeNetworkTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkConfig.property.name">name</a></code> | <code>str</code> | Name of the resource. |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkConfig.property.autoCreateSubnetworks">auto_create_subnetworks</a></code> | <code>bool \| cdktf.IResolvable</code> | When set to 'true', the network is created in "auto subnet mode" and it will create a subnet for each region automatically across the '10.128.0.0/9' address range. |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkConfig.property.bgpAlwaysCompareMed">bgp_always_compare_med</a></code> | <code>bool \| cdktf.IResolvable</code> | Enables/disables the comparison of MED across routes with different Neighbor ASNs. |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkConfig.property.bgpBestPathSelectionMode">bgp_best_path_selection_mode</a></code> | <code>str</code> | The BGP best selection algorithm to be employed. MODE can be LEGACY or STANDARD. Possible values: ["LEGACY", "STANDARD"]. |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkConfig.property.bgpInterRegionCost">bgp_inter_region_cost</a></code> | <code>str</code> | Choice of the behavior of inter-regional cost and MED in the BPS algorithm. Possible values: ["DEFAULT", "ADD_COST_TO_MED"]. |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkConfig.property.deleteDefaultRoutesOnCreate">delete_default_routes_on_create</a></code> | <code>bool \| cdktf.IResolvable</code> | If set to 'true', default routes ('0.0.0.0/0') will be deleted immediately after network creation. Defaults to 'false'. |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkConfig.property.description">description</a></code> | <code>str</code> | An optional description of this resource. The resource must be recreated to modify this field. |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkConfig.property.enableUlaInternalIpv6">enable_ula_internal_ipv6</a></code> | <code>bool \| cdktf.IResolvable</code> | Enable ULA internal ipv6 on this network. Enabling this feature will assign a /48 from google defined ULA prefix fd20::/20. |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_network#id ComputeNetwork#id}. |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkConfig.property.internalIpv6Range">internal_ipv6_range</a></code> | <code>str</code> | When enabling ula internal ipv6, caller optionally can specify the /48 range they want from the google defined ULA prefix fd20::/20. |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkConfig.property.mtu">mtu</a></code> | <code>typing.Union[int, float]</code> | Maximum Transmission Unit in bytes. |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkConfig.property.networkFirewallPolicyEnforcementOrder">network_firewall_policy_enforcement_order</a></code> | <code>str</code> | Set the order that Firewall Rules and Firewall Policies are evaluated. Default value: "AFTER_CLASSIC_FIREWALL" Possible values: ["BEFORE_CLASSIC_FIREWALL", "AFTER_CLASSIC_FIREWALL"]. |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkConfig.property.networkProfile">network_profile</a></code> | <code>str</code> | A full or partial URL of the network profile to apply to this network. |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkConfig.property.params">params</a></code> | <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkParams">ComputeNetworkParams</a></code> | params block. |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_network#project ComputeNetwork#project}. |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkConfig.property.routingMode">routing_mode</a></code> | <code>str</code> | The network-wide routing mode to use. |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkTimeouts">ComputeNetworkTimeouts</a></code> | timeouts block. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-google.computeNetwork.ComputeNetworkConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.computeNetwork.ComputeNetworkConfig.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
@@ -1665,7 +1665,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-google.computeNetwork.ComputeNetworkConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.computeNetwork.ComputeNetworkConfig.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -1675,7 +1675,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-google.computeNetwork.ComputeNetworkConfig.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.computeNetwork.ComputeNetworkConfig.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[ITerraformDependable]
@@ -1685,7 +1685,7 @@ depends_on: typing.List[ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-google.computeNetwork.ComputeNetworkConfig.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.computeNetwork.ComputeNetworkConfig.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -1695,7 +1695,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-google.computeNetwork.ComputeNetworkConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.computeNetwork.ComputeNetworkConfig.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -1705,7 +1705,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.computeNetwork.ComputeNetworkConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.computeNetwork.ComputeNetworkConfig.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -1715,7 +1715,7 @@ provider: TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-google.computeNetwork.ComputeNetworkConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.computeNetwork.ComputeNetworkConfig.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
@@ -1725,7 +1725,7 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-google.computeNetwork.ComputeNetworkConfig.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-google.computeNetwork.ComputeNetworkConfig.property.name"></a>
 
 ```python
 name: str
@@ -1747,7 +1747,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `auto_create_subnetworks`<sup>Optional</sup> <a name="auto_create_subnetworks" id="@cdktf/provider-google.computeNetwork.ComputeNetworkConfig.property.autoCreateSubnetworks"></a>
+##### `auto_create_subnetworks`<sup>Optional</sup> <a name="auto_create_subnetworks" id="@cdktn/provider-google.computeNetwork.ComputeNetworkConfig.property.autoCreateSubnetworks"></a>
 
 ```python
 auto_create_subnetworks: bool | IResolvable
@@ -1764,7 +1764,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `bgp_always_compare_med`<sup>Optional</sup> <a name="bgp_always_compare_med" id="@cdktf/provider-google.computeNetwork.ComputeNetworkConfig.property.bgpAlwaysCompareMed"></a>
+##### `bgp_always_compare_med`<sup>Optional</sup> <a name="bgp_always_compare_med" id="@cdktn/provider-google.computeNetwork.ComputeNetworkConfig.property.bgpAlwaysCompareMed"></a>
 
 ```python
 bgp_always_compare_med: bool | IResolvable
@@ -1780,7 +1780,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `bgp_best_path_selection_mode`<sup>Optional</sup> <a name="bgp_best_path_selection_mode" id="@cdktf/provider-google.computeNetwork.ComputeNetworkConfig.property.bgpBestPathSelectionMode"></a>
+##### `bgp_best_path_selection_mode`<sup>Optional</sup> <a name="bgp_best_path_selection_mode" id="@cdktn/provider-google.computeNetwork.ComputeNetworkConfig.property.bgpBestPathSelectionMode"></a>
 
 ```python
 bgp_best_path_selection_mode: str
@@ -1794,7 +1794,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `bgp_inter_region_cost`<sup>Optional</sup> <a name="bgp_inter_region_cost" id="@cdktf/provider-google.computeNetwork.ComputeNetworkConfig.property.bgpInterRegionCost"></a>
+##### `bgp_inter_region_cost`<sup>Optional</sup> <a name="bgp_inter_region_cost" id="@cdktn/provider-google.computeNetwork.ComputeNetworkConfig.property.bgpInterRegionCost"></a>
 
 ```python
 bgp_inter_region_cost: str
@@ -1808,7 +1808,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `delete_default_routes_on_create`<sup>Optional</sup> <a name="delete_default_routes_on_create" id="@cdktf/provider-google.computeNetwork.ComputeNetworkConfig.property.deleteDefaultRoutesOnCreate"></a>
+##### `delete_default_routes_on_create`<sup>Optional</sup> <a name="delete_default_routes_on_create" id="@cdktn/provider-google.computeNetwork.ComputeNetworkConfig.property.deleteDefaultRoutesOnCreate"></a>
 
 ```python
 delete_default_routes_on_create: bool | IResolvable
@@ -1822,7 +1822,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-google.computeNetwork.ComputeNetworkConfig.property.description"></a>
+##### `description`<sup>Optional</sup> <a name="description" id="@cdktn/provider-google.computeNetwork.ComputeNetworkConfig.property.description"></a>
 
 ```python
 description: str
@@ -1836,7 +1836,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `enable_ula_internal_ipv6`<sup>Optional</sup> <a name="enable_ula_internal_ipv6" id="@cdktf/provider-google.computeNetwork.ComputeNetworkConfig.property.enableUlaInternalIpv6"></a>
+##### `enable_ula_internal_ipv6`<sup>Optional</sup> <a name="enable_ula_internal_ipv6" id="@cdktn/provider-google.computeNetwork.ComputeNetworkConfig.property.enableUlaInternalIpv6"></a>
 
 ```python
 enable_ula_internal_ipv6: bool | IResolvable
@@ -1850,7 +1850,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-google.computeNetwork.ComputeNetworkConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-google.computeNetwork.ComputeNetworkConfig.property.id"></a>
 
 ```python
 id: str
@@ -1865,7 +1865,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
-##### `internal_ipv6_range`<sup>Optional</sup> <a name="internal_ipv6_range" id="@cdktf/provider-google.computeNetwork.ComputeNetworkConfig.property.internalIpv6Range"></a>
+##### `internal_ipv6_range`<sup>Optional</sup> <a name="internal_ipv6_range" id="@cdktn/provider-google.computeNetwork.ComputeNetworkConfig.property.internalIpv6Range"></a>
 
 ```python
 internal_ipv6_range: str
@@ -1884,7 +1884,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `mtu`<sup>Optional</sup> <a name="mtu" id="@cdktf/provider-google.computeNetwork.ComputeNetworkConfig.property.mtu"></a>
+##### `mtu`<sup>Optional</sup> <a name="mtu" id="@cdktn/provider-google.computeNetwork.ComputeNetworkConfig.property.mtu"></a>
 
 ```python
 mtu: typing.Union[int, float]
@@ -1904,7 +1904,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `network_firewall_policy_enforcement_order`<sup>Optional</sup> <a name="network_firewall_policy_enforcement_order" id="@cdktf/provider-google.computeNetwork.ComputeNetworkConfig.property.networkFirewallPolicyEnforcementOrder"></a>
+##### `network_firewall_policy_enforcement_order`<sup>Optional</sup> <a name="network_firewall_policy_enforcement_order" id="@cdktn/provider-google.computeNetwork.ComputeNetworkConfig.property.networkFirewallPolicyEnforcementOrder"></a>
 
 ```python
 network_firewall_policy_enforcement_order: str
@@ -1918,7 +1918,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `network_profile`<sup>Optional</sup> <a name="network_profile" id="@cdktf/provider-google.computeNetwork.ComputeNetworkConfig.property.networkProfile"></a>
+##### `network_profile`<sup>Optional</sup> <a name="network_profile" id="@cdktn/provider-google.computeNetwork.ComputeNetworkConfig.property.networkProfile"></a>
 
 ```python
 network_profile: str
@@ -1938,13 +1938,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `params`<sup>Optional</sup> <a name="params" id="@cdktf/provider-google.computeNetwork.ComputeNetworkConfig.property.params"></a>
+##### `params`<sup>Optional</sup> <a name="params" id="@cdktn/provider-google.computeNetwork.ComputeNetworkConfig.property.params"></a>
 
 ```python
 params: ComputeNetworkParams
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkParams">ComputeNetworkParams</a>
+- *Type:* <a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkParams">ComputeNetworkParams</a>
 
 params block.
 
@@ -1952,7 +1952,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `project`<sup>Optional</sup> <a name="project" id="@cdktf/provider-google.computeNetwork.ComputeNetworkConfig.property.project"></a>
+##### `project`<sup>Optional</sup> <a name="project" id="@cdktn/provider-google.computeNetwork.ComputeNetworkConfig.property.project"></a>
 
 ```python
 project: str
@@ -1964,7 +1964,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `routing_mode`<sup>Optional</sup> <a name="routing_mode" id="@cdktf/provider-google.computeNetwork.ComputeNetworkConfig.property.routingMode"></a>
+##### `routing_mode`<sup>Optional</sup> <a name="routing_mode" id="@cdktn/provider-google.computeNetwork.ComputeNetworkConfig.property.routingMode"></a>
 
 ```python
 routing_mode: str
@@ -1984,13 +1984,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-google.computeNetwork.ComputeNetworkConfig.property.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-google.computeNetwork.ComputeNetworkConfig.property.timeouts"></a>
 
 ```python
 timeouts: ComputeNetworkTimeouts
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkTimeouts">ComputeNetworkTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkTimeouts">ComputeNetworkTimeouts</a>
 
 timeouts block.
 
@@ -1998,12 +1998,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### ComputeNetworkParams <a name="ComputeNetworkParams" id="@cdktf/provider-google.computeNetwork.ComputeNetworkParams"></a>
+### ComputeNetworkParams <a name="ComputeNetworkParams" id="@cdktn/provider-google.computeNetwork.ComputeNetworkParams"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-google.computeNetwork.ComputeNetworkParams.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.computeNetwork.ComputeNetworkParams.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import compute_network
+from cdktn_provider_google import compute_network
 
 computeNetwork.ComputeNetworkParams(
   resource_manager_tags: typing.Mapping[str] = None
@@ -2014,11 +2014,11 @@ computeNetwork.ComputeNetworkParams(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkParams.property.resourceManagerTags">resource_manager_tags</a></code> | <code>typing.Mapping[str]</code> | Resource manager tags to be bound to the network. |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkParams.property.resourceManagerTags">resource_manager_tags</a></code> | <code>typing.Mapping[str]</code> | Resource manager tags to be bound to the network. |
 
 ---
 
-##### `resource_manager_tags`<sup>Optional</sup> <a name="resource_manager_tags" id="@cdktf/provider-google.computeNetwork.ComputeNetworkParams.property.resourceManagerTags"></a>
+##### `resource_manager_tags`<sup>Optional</sup> <a name="resource_manager_tags" id="@cdktn/provider-google.computeNetwork.ComputeNetworkParams.property.resourceManagerTags"></a>
 
 ```python
 resource_manager_tags: typing.Mapping[str]
@@ -2036,12 +2036,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### ComputeNetworkTimeouts <a name="ComputeNetworkTimeouts" id="@cdktf/provider-google.computeNetwork.ComputeNetworkTimeouts"></a>
+### ComputeNetworkTimeouts <a name="ComputeNetworkTimeouts" id="@cdktn/provider-google.computeNetwork.ComputeNetworkTimeouts"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-google.computeNetwork.ComputeNetworkTimeouts.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.computeNetwork.ComputeNetworkTimeouts.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import compute_network
+from cdktn_provider_google import compute_network
 
 computeNetwork.ComputeNetworkTimeouts(
   create: str = None,
@@ -2054,13 +2054,13 @@ computeNetwork.ComputeNetworkTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_network#create ComputeNetwork#create}. |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_network#delete ComputeNetwork#delete}. |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_network#update ComputeNetwork#update}. |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_network#create ComputeNetwork#create}. |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_network#delete ComputeNetwork#delete}. |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/compute_network#update ComputeNetwork#update}. |
 
 ---
 
-##### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-google.computeNetwork.ComputeNetworkTimeouts.property.create"></a>
+##### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-google.computeNetwork.ComputeNetworkTimeouts.property.create"></a>
 
 ```python
 create: str
@@ -2072,7 +2072,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-google.computeNetwork.ComputeNetworkTimeouts.property.delete"></a>
+##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktn/provider-google.computeNetwork.ComputeNetworkTimeouts.property.delete"></a>
 
 ```python
 delete: str
@@ -2084,7 +2084,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-google.computeNetwork.ComputeNetworkTimeouts.property.update"></a>
+##### `update`<sup>Optional</sup> <a name="update" id="@cdktn/provider-google.computeNetwork.ComputeNetworkTimeouts.property.update"></a>
 
 ```python
 update: str
@@ -2098,12 +2098,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### ComputeNetworkParamsOutputReference <a name="ComputeNetworkParamsOutputReference" id="@cdktf/provider-google.computeNetwork.ComputeNetworkParamsOutputReference"></a>
+### ComputeNetworkParamsOutputReference <a name="ComputeNetworkParamsOutputReference" id="@cdktn/provider-google.computeNetwork.ComputeNetworkParamsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import compute_network
+from cdktn_provider_google import compute_network
 
 computeNetwork.ComputeNetworkParamsOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -2113,12 +2113,12 @@ computeNetwork.ComputeNetworkParamsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -2126,7 +2126,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -2138,30 +2138,30 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.resetResourceManagerTags">reset_resource_manager_tags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.resetResourceManagerTags">reset_resource_manager_tags</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -2169,13 +2169,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -2183,13 +2183,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -2197,13 +2197,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -2211,13 +2211,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -2225,13 +2225,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -2239,13 +2239,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -2253,13 +2253,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -2267,13 +2267,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -2281,13 +2281,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -2295,13 +2295,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -2311,13 +2311,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -2327,7 +2327,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_resource_manager_tags` <a name="reset_resource_manager_tags" id="@cdktf/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.resetResourceManagerTags"></a>
+##### `reset_resource_manager_tags` <a name="reset_resource_manager_tags" id="@cdktn/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.resetResourceManagerTags"></a>
 
 ```python
 def reset_resource_manager_tags() -> None
@@ -2338,15 +2338,15 @@ def reset_resource_manager_tags() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.property.resourceManagerTagsInput">resource_manager_tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.property.resourceManagerTags">resource_manager_tags</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkParams">ComputeNetworkParams</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.property.resourceManagerTagsInput">resource_manager_tags_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.property.resourceManagerTags">resource_manager_tags</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkParams">ComputeNetworkParams</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -2360,7 +2360,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -2370,7 +2370,7 @@ fqn: str
 
 ---
 
-##### `resource_manager_tags_input`<sup>Optional</sup> <a name="resource_manager_tags_input" id="@cdktf/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.property.resourceManagerTagsInput"></a>
+##### `resource_manager_tags_input`<sup>Optional</sup> <a name="resource_manager_tags_input" id="@cdktn/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.property.resourceManagerTagsInput"></a>
 
 ```python
 resource_manager_tags_input: typing.Mapping[str]
@@ -2380,7 +2380,7 @@ resource_manager_tags_input: typing.Mapping[str]
 
 ---
 
-##### `resource_manager_tags`<sup>Required</sup> <a name="resource_manager_tags" id="@cdktf/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.property.resourceManagerTags"></a>
+##### `resource_manager_tags`<sup>Required</sup> <a name="resource_manager_tags" id="@cdktn/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.property.resourceManagerTags"></a>
 
 ```python
 resource_manager_tags: typing.Mapping[str]
@@ -2390,23 +2390,23 @@ resource_manager_tags: typing.Mapping[str]
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.computeNetwork.ComputeNetworkParamsOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: ComputeNetworkParams
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkParams">ComputeNetworkParams</a>
+- *Type:* <a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkParams">ComputeNetworkParams</a>
 
 ---
 
 
-### ComputeNetworkTimeoutsOutputReference <a name="ComputeNetworkTimeoutsOutputReference" id="@cdktf/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference"></a>
+### ComputeNetworkTimeoutsOutputReference <a name="ComputeNetworkTimeoutsOutputReference" id="@cdktn/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import compute_network
+from cdktn_provider_google import compute_network
 
 computeNetwork.ComputeNetworkTimeoutsOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -2416,12 +2416,12 @@ computeNetwork.ComputeNetworkTimeoutsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -2429,7 +2429,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -2441,32 +2441,32 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.resetCreate">reset_create</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.resetDelete">reset_delete</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.resetUpdate">reset_update</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.resetCreate">reset_create</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.resetDelete">reset_delete</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.resetUpdate">reset_update</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -2474,13 +2474,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -2488,13 +2488,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -2502,13 +2502,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -2516,13 +2516,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -2530,13 +2530,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -2544,13 +2544,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -2558,13 +2558,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -2572,13 +2572,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -2586,13 +2586,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -2600,13 +2600,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -2616,13 +2616,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -2632,19 +2632,19 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_create` <a name="reset_create" id="@cdktf/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.resetCreate"></a>
+##### `reset_create` <a name="reset_create" id="@cdktn/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.resetCreate"></a>
 
 ```python
 def reset_create() -> None
 ```
 
-##### `reset_delete` <a name="reset_delete" id="@cdktf/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.resetDelete"></a>
+##### `reset_delete` <a name="reset_delete" id="@cdktn/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.resetDelete"></a>
 
 ```python
 def reset_delete() -> None
 ```
 
-##### `reset_update` <a name="reset_update" id="@cdktf/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.resetUpdate"></a>
+##### `reset_update` <a name="reset_update" id="@cdktn/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.resetUpdate"></a>
 
 ```python
 def reset_update() -> None
@@ -2655,19 +2655,19 @@ def reset_update() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.property.createInput">create_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.property.updateInput">update_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkTimeouts">ComputeNetworkTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.property.createInput">create_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.property.updateInput">update_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkTimeouts">ComputeNetworkTimeouts</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -2681,7 +2681,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -2691,7 +2691,7 @@ fqn: str
 
 ---
 
-##### `create_input`<sup>Optional</sup> <a name="create_input" id="@cdktf/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.property.createInput"></a>
+##### `create_input`<sup>Optional</sup> <a name="create_input" id="@cdktn/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.property.createInput"></a>
 
 ```python
 create_input: str
@@ -2701,7 +2701,7 @@ create_input: str
 
 ---
 
-##### `delete_input`<sup>Optional</sup> <a name="delete_input" id="@cdktf/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.property.deleteInput"></a>
+##### `delete_input`<sup>Optional</sup> <a name="delete_input" id="@cdktn/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.property.deleteInput"></a>
 
 ```python
 delete_input: str
@@ -2711,7 +2711,7 @@ delete_input: str
 
 ---
 
-##### `update_input`<sup>Optional</sup> <a name="update_input" id="@cdktf/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.property.updateInput"></a>
+##### `update_input`<sup>Optional</sup> <a name="update_input" id="@cdktn/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.property.updateInput"></a>
 
 ```python
 update_input: str
@@ -2721,7 +2721,7 @@ update_input: str
 
 ---
 
-##### `create`<sup>Required</sup> <a name="create" id="@cdktf/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.property.create"></a>
+##### `create`<sup>Required</sup> <a name="create" id="@cdktn/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.property.create"></a>
 
 ```python
 create: str
@@ -2731,7 +2731,7 @@ create: str
 
 ---
 
-##### `delete`<sup>Required</sup> <a name="delete" id="@cdktf/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.property.delete"></a>
+##### `delete`<sup>Required</sup> <a name="delete" id="@cdktn/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.property.delete"></a>
 
 ```python
 delete: str
@@ -2741,7 +2741,7 @@ delete: str
 
 ---
 
-##### `update`<sup>Required</sup> <a name="update" id="@cdktf/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.property.update"></a>
+##### `update`<sup>Required</sup> <a name="update" id="@cdktn/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.property.update"></a>
 
 ```python
 update: str
@@ -2751,13 +2751,13 @@ update: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.computeNetwork.ComputeNetworkTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | ComputeNetworkTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-google.computeNetwork.ComputeNetworkTimeouts">ComputeNetworkTimeouts</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.computeNetwork.ComputeNetworkTimeouts">ComputeNetworkTimeouts</a>
 
 ---
 

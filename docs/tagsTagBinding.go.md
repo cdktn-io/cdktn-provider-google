@@ -1,28 +1,28 @@
-# `tagsTagBinding` Submodule <a name="`tagsTagBinding` Submodule" id="@cdktf/provider-google.tagsTagBinding"></a>
+# `tagsTagBinding` Submodule <a name="`tagsTagBinding` Submodule" id="@cdktn/provider-google.tagsTagBinding"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### TagsTagBinding <a name="TagsTagBinding" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding"></a>
+### TagsTagBinding <a name="TagsTagBinding" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding"></a>
 
 Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/tags_tag_binding google_tags_tag_binding}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/tagstagbinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/tagstagbinding"
 
 tagstagbinding.NewTagsTagBinding(scope Construct, id *string, config TagsTagBindingConfig) TagsTagBinding
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBinding.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBinding.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBinding.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBindingConfig">TagsTagBindingConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBinding.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBinding.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBinding.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBindingConfig">TagsTagBindingConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.Initializer.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.Initializer.parameter.id"></a>
 
 - *Type:* *string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.Initializer.parameter.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBindingConfig">TagsTagBindingConfig</a>
+- *Type:* <a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBindingConfig">TagsTagBindingConfig</a>
 
 ---
 
@@ -50,36 +50,36 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBinding.toString">ToString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBinding.addOverride">AddOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBinding.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBinding.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBinding.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBinding.toMetadata">ToMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBinding.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBinding.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBinding.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBinding.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBinding.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBinding.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBinding.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBinding.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBinding.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBinding.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBinding.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBinding.hasResourceMove">HasResourceMove</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBinding.importFrom">ImportFrom</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBinding.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBinding.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBinding.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBinding.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBinding.putTimeouts">PutTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBinding.resetId">ResetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBinding.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBinding.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBinding.addOverride">AddOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBinding.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBinding.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBinding.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBinding.toMetadata">ToMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBinding.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBinding.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBinding.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBinding.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBinding.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBinding.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBinding.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBinding.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBinding.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBinding.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBinding.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBinding.hasResourceMove">HasResourceMove</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBinding.importFrom">ImportFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBinding.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBinding.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBinding.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBinding.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBinding.putTimeouts">PutTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBinding.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBinding.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.toString"></a>
 
 ```go
 func ToString() *string
@@ -87,25 +87,25 @@ func ToString() *string
 
 Returns a string representation of this construct.
 
-##### `AddOverride` <a name="AddOverride" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.addOverride"></a>
+##### `AddOverride` <a name="AddOverride" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.addOverride"></a>
 
 ```go
 func AddOverride(path *string, value interface{})
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.addOverride.parameter.path"></a>
 
 - *Type:* *string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.addOverride.parameter.value"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.overrideLogicalId"></a>
+##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.overrideLogicalId"></a>
 
 ```go
 func OverrideLogicalId(newLogicalId *string)
@@ -113,7 +113,7 @@ func OverrideLogicalId(newLogicalId *string)
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* *string
 
@@ -121,7 +121,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.resetOverrideLogicalId"></a>
+##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.resetOverrideLogicalId"></a>
 
 ```go
 func ResetOverrideLogicalId()
@@ -129,19 +129,19 @@ func ResetOverrideLogicalId()
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.toHclTerraform"></a>
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.toHclTerraform"></a>
 
 ```go
 func ToHclTerraform() interface{}
 ```
 
-##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.toMetadata"></a>
+##### `ToMetadata` <a name="ToMetadata" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.toMetadata"></a>
 
 ```go
 func ToMetadata() interface{}
 ```
 
-##### `ToTerraform` <a name="ToTerraform" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.toTerraform"></a>
+##### `ToTerraform` <a name="ToTerraform" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.toTerraform"></a>
 
 ```go
 func ToTerraform() interface{}
@@ -149,7 +149,7 @@ func ToTerraform() interface{}
 
 Adds this resource to the terraform JSON output.
 
-##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.addMoveTarget"></a>
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.addMoveTarget"></a>
 
 ```go
 func AddMoveTarget(moveTarget *string)
@@ -157,7 +157,7 @@ func AddMoveTarget(moveTarget *string)
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.addMoveTarget.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* *string
 
@@ -165,151 +165,151 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.hasResourceMove"></a>
+##### `HasResourceMove` <a name="HasResourceMove" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.hasResourceMove"></a>
 
 ```go
 func HasResourceMove() interface{}
 ```
 
-##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.importFrom"></a>
+##### `ImportFrom` <a name="ImportFrom" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.importFrom"></a>
 
 ```go
 func ImportFrom(id *string, provider TerraformProvider)
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.importFrom.parameter.id"></a>
 
 - *Type:* *string
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.importFrom.parameter.provider"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `MoveFromId` <a name="MoveFromId" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.moveFromId"></a>
+##### `MoveFromId` <a name="MoveFromId" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.moveFromId"></a>
 
 ```go
 func MoveFromId(id *string)
@@ -319,7 +319,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.moveFromId.parameter.id"></a>
 
 - *Type:* *string
 
@@ -327,7 +327,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.moveTo"></a>
+##### `MoveTo` <a name="MoveTo" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.moveTo"></a>
 
 ```go
 func MoveTo(moveTarget *string, index interface{})
@@ -335,7 +335,7 @@ func MoveTo(moveTarget *string, index interface{})
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.moveTo.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.moveTo.parameter.moveTarget"></a>
 
 - *Type:* *string
 
@@ -343,7 +343,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.moveTo.parameter.index"></a>
 
 - *Type:* interface{}
 
@@ -351,7 +351,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `MoveToId` <a name="MoveToId" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.moveToId"></a>
+##### `MoveToId` <a name="MoveToId" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.moveToId"></a>
 
 ```go
 func MoveToId(id *string)
@@ -359,7 +359,7 @@ func MoveToId(id *string)
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.moveToId.parameter.id"></a>
 
 - *Type:* *string
 
@@ -367,25 +367,25 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `PutTimeouts` <a name="PutTimeouts" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.putTimeouts"></a>
+##### `PutTimeouts` <a name="PutTimeouts" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.putTimeouts"></a>
 
 ```go
 func PutTimeouts(value TagsTagBindingTimeouts)
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.putTimeouts.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.putTimeouts.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBindingTimeouts">TagsTagBindingTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBindingTimeouts">TagsTagBindingTimeouts</a>
 
 ---
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.resetId"></a>
+##### `ResetId` <a name="ResetId" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.resetId"></a>
 
 ```go
 func ResetId()
 ```
 
-##### `ResetTimeouts` <a name="ResetTimeouts" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.resetTimeouts"></a>
+##### `ResetTimeouts` <a name="ResetTimeouts" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.resetTimeouts"></a>
 
 ```go
 func ResetTimeouts()
@@ -395,17 +395,17 @@ func ResetTimeouts()
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBinding.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBinding.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBinding.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBinding.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a TagsTagBinding resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBinding.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBinding.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBinding.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBinding.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a TagsTagBinding resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.isConstruct"></a>
+##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/tagstagbinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/tagstagbinding"
 
 tagstagbinding.TagsTagBinding_IsConstruct(x interface{}) *bool
 ```
@@ -426,7 +426,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.isConstruct.parameter.x"></a>
 
 - *Type:* interface{}
 
@@ -434,45 +434,45 @@ Any object.
 
 ---
 
-##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.isTerraformElement"></a>
+##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/tagstagbinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/tagstagbinding"
 
 tagstagbinding.TagsTagBinding_IsTerraformElement(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.isTerraformElement.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.isTerraformResource"></a>
+##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/tagstagbinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/tagstagbinding"
 
 tagstagbinding.TagsTagBinding_IsTerraformResource(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.generateConfigForImport"></a>
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/tagstagbinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/tagstagbinding"
 
 tagstagbinding.TagsTagBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
 
 Generates CDKTF code for importing a TagsTagBinding resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -480,7 +480,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* *string
 
@@ -488,7 +488,7 @@ The construct id used in the generated config for the TagsTagBinding to import.
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* *string
 
@@ -498,7 +498,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
 
@@ -510,33 +510,33 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBinding.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBinding.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBinding.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBinding.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBinding.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBinding.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBinding.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBinding.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBinding.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBinding.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBinding.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBinding.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBinding.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBinding.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBinding.property.name">Name</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBinding.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference">TagsTagBindingTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBinding.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBinding.property.parentInput">ParentInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBinding.property.tagValueInput">TagValueInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBinding.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBinding.property.id">Id</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBinding.property.parent">Parent</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBinding.property.tagValue">TagValue</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBinding.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBinding.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBinding.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBinding.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBinding.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBinding.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBinding.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBinding.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBinding.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBinding.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBinding.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBinding.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBinding.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBinding.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBinding.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBinding.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference">TagsTagBindingTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBinding.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBinding.property.parentInput">ParentInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBinding.property.tagValueInput">TagValueInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBinding.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBinding.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBinding.property.parent">Parent</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBinding.property.tagValue">TagValue</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `Node`<sup>Required</sup> <a name="Node" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.property.node"></a>
+##### `Node`<sup>Required</sup> <a name="Node" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.property.node"></a>
 
 ```go
 func Node() Node
@@ -548,7 +548,7 @@ The tree node.
 
 ---
 
-##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.property.cdktfStack"></a>
+##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.property.cdktfStack"></a>
 
 ```go
 func CdktfStack() TerraformStack
@@ -558,7 +558,7 @@ func CdktfStack() TerraformStack
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -568,7 +568,7 @@ func Fqn() *string
 
 ---
 
-##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.property.friendlyUniqueId"></a>
+##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.property.friendlyUniqueId"></a>
 
 ```go
 func FriendlyUniqueId() *string
@@ -578,7 +578,7 @@ func FriendlyUniqueId() *string
 
 ---
 
-##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.property.terraformMetaArguments"></a>
+##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.property.terraformMetaArguments"></a>
 
 ```go
 func TerraformMetaArguments() *map[string]interface{}
@@ -588,7 +588,7 @@ func TerraformMetaArguments() *map[string]interface{}
 
 ---
 
-##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.property.terraformResourceType"></a>
+##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.property.terraformResourceType"></a>
 
 ```go
 func TerraformResourceType() *string
@@ -598,7 +598,7 @@ func TerraformResourceType() *string
 
 ---
 
-##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.property.terraformGeneratorMetadata"></a>
+##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.property.terraformGeneratorMetadata"></a>
 
 ```go
 func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
@@ -608,7 +608,7 @@ func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 
 ---
 
-##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.property.connection"></a>
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.property.connection"></a>
 
 ```go
 func Connection() interface{}
@@ -618,7 +618,7 @@ func Connection() interface{}
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.property.count"></a>
 
 ```go
 func Count() interface{}
@@ -628,7 +628,7 @@ func Count() interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.property.dependsOn"></a>
 
 ```go
 func DependsOn() *[]*string
@@ -638,7 +638,7 @@ func DependsOn() *[]*string
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.property.forEach"></a>
 
 ```go
 func ForEach() ITerraformIterator
@@ -648,7 +648,7 @@ func ForEach() ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.property.lifecycle"></a>
 
 ```go
 func Lifecycle() TerraformResourceLifecycle
@@ -658,7 +658,7 @@ func Lifecycle() TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.property.provider"></a>
 
 ```go
 func Provider() TerraformProvider
@@ -668,7 +668,7 @@ func Provider() TerraformProvider
 
 ---
 
-##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.property.provisioners"></a>
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.property.provisioners"></a>
 
 ```go
 func Provisioners() *[]interface{}
@@ -678,7 +678,7 @@ func Provisioners() *[]interface{}
 
 ---
 
-##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.property.name"></a>
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.property.name"></a>
 
 ```go
 func Name() *string
@@ -688,17 +688,17 @@ func Name() *string
 
 ---
 
-##### `Timeouts`<sup>Required</sup> <a name="Timeouts" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.property.timeouts"></a>
+##### `Timeouts`<sup>Required</sup> <a name="Timeouts" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.property.timeouts"></a>
 
 ```go
 func Timeouts() TagsTagBindingTimeoutsOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference">TagsTagBindingTimeoutsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference">TagsTagBindingTimeoutsOutputReference</a>
 
 ---
 
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.property.idInput"></a>
+##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.property.idInput"></a>
 
 ```go
 func IdInput() *string
@@ -708,7 +708,7 @@ func IdInput() *string
 
 ---
 
-##### `ParentInput`<sup>Optional</sup> <a name="ParentInput" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.property.parentInput"></a>
+##### `ParentInput`<sup>Optional</sup> <a name="ParentInput" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.property.parentInput"></a>
 
 ```go
 func ParentInput() *string
@@ -718,7 +718,7 @@ func ParentInput() *string
 
 ---
 
-##### `TagValueInput`<sup>Optional</sup> <a name="TagValueInput" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.property.tagValueInput"></a>
+##### `TagValueInput`<sup>Optional</sup> <a name="TagValueInput" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.property.tagValueInput"></a>
 
 ```go
 func TagValueInput() *string
@@ -728,7 +728,7 @@ func TagValueInput() *string
 
 ---
 
-##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.property.timeoutsInput"></a>
+##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.property.timeoutsInput"></a>
 
 ```go
 func TimeoutsInput() interface{}
@@ -738,7 +738,7 @@ func TimeoutsInput() interface{}
 
 ---
 
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.property.id"></a>
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.property.id"></a>
 
 ```go
 func Id() *string
@@ -748,7 +748,7 @@ func Id() *string
 
 ---
 
-##### `Parent`<sup>Required</sup> <a name="Parent" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.property.parent"></a>
+##### `Parent`<sup>Required</sup> <a name="Parent" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.property.parent"></a>
 
 ```go
 func Parent() *string
@@ -758,7 +758,7 @@ func Parent() *string
 
 ---
 
-##### `TagValue`<sup>Required</sup> <a name="TagValue" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.property.tagValue"></a>
+##### `TagValue`<sup>Required</sup> <a name="TagValue" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.property.tagValue"></a>
 
 ```go
 func TagValue() *string
@@ -772,11 +772,11 @@ func TagValue() *string
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBinding.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBinding.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktf/provider-google.tagsTagBinding.TagsTagBinding.property.tfResourceType"></a>
+##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktn/provider-google.tagsTagBinding.TagsTagBinding.property.tfResourceType"></a>
 
 ```go
 func TfResourceType() *string
@@ -788,12 +788,12 @@ func TfResourceType() *string
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### TagsTagBindingConfig <a name="TagsTagBindingConfig" id="@cdktf/provider-google.tagsTagBinding.TagsTagBindingConfig"></a>
+### TagsTagBindingConfig <a name="TagsTagBindingConfig" id="@cdktn/provider-google.tagsTagBinding.TagsTagBindingConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-google.tagsTagBinding.TagsTagBindingConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.tagsTagBinding.TagsTagBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/tagstagbinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/tagstagbinding"
 
 &tagstagbinding.TagsTagBindingConfig {
 	Connection: interface{},
@@ -806,7 +806,7 @@ import "github.com/cdktf/cdktf-provider-google-go/google/v16/tagstagbinding"
 	Parent: *string,
 	TagValue: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-google-go/google/v16.tagsTagBinding.TagsTagBindingTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google.tagsTagBinding.TagsTagBindingTimeouts,
 }
 ```
 
@@ -814,21 +814,21 @@ import "github.com/cdktf/cdktf-provider-google-go/google/v16/tagstagbinding"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBindingConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBindingConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBindingConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBindingConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBindingConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBindingConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBindingConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBindingConfig.property.parent">Parent</a></code> | <code>*string</code> | The full resource name of the resource the TagValue is bound to. E.g. //cloudresourcemanager.googleapis.com/projects/123. |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBindingConfig.property.tagValue">TagValue</a></code> | <code>*string</code> | The TagValue of the TagBinding. Must be of the form tagValues/456. |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBindingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/tags_tag_binding#id TagsTagBinding#id}. |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBindingConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBindingTimeouts">TagsTagBindingTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBindingConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBindingConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBindingConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBindingConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBindingConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBindingConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBindingConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBindingConfig.property.parent">Parent</a></code> | <code>*string</code> | The full resource name of the resource the TagValue is bound to. E.g. //cloudresourcemanager.googleapis.com/projects/123. |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBindingConfig.property.tagValue">TagValue</a></code> | <code>*string</code> | The TagValue of the TagBinding. Must be of the form tagValues/456. |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBindingConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/tags_tag_binding#id TagsTagBinding#id}. |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBindingConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBindingTimeouts">TagsTagBindingTimeouts</a></code> | timeouts block. |
 
 ---
 
-##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-google.tagsTagBinding.TagsTagBindingConfig.property.connection"></a>
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-google.tagsTagBinding.TagsTagBindingConfig.property.connection"></a>
 
 ```go
 Connection interface{}
@@ -838,7 +838,7 @@ Connection interface{}
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-google.tagsTagBinding.TagsTagBindingConfig.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-google.tagsTagBinding.TagsTagBindingConfig.property.count"></a>
 
 ```go
 Count interface{}
@@ -848,7 +848,7 @@ Count interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-google.tagsTagBinding.TagsTagBindingConfig.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-google.tagsTagBinding.TagsTagBindingConfig.property.dependsOn"></a>
 
 ```go
 DependsOn *[]ITerraformDependable
@@ -858,7 +858,7 @@ DependsOn *[]ITerraformDependable
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-google.tagsTagBinding.TagsTagBindingConfig.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-google.tagsTagBinding.TagsTagBindingConfig.property.forEach"></a>
 
 ```go
 ForEach ITerraformIterator
@@ -868,7 +868,7 @@ ForEach ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-google.tagsTagBinding.TagsTagBindingConfig.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-google.tagsTagBinding.TagsTagBindingConfig.property.lifecycle"></a>
 
 ```go
 Lifecycle TerraformResourceLifecycle
@@ -878,7 +878,7 @@ Lifecycle TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-google.tagsTagBinding.TagsTagBindingConfig.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-google.tagsTagBinding.TagsTagBindingConfig.property.provider"></a>
 
 ```go
 Provider TerraformProvider
@@ -888,7 +888,7 @@ Provider TerraformProvider
 
 ---
 
-##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-google.tagsTagBinding.TagsTagBindingConfig.property.provisioners"></a>
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-google.tagsTagBinding.TagsTagBindingConfig.property.provisioners"></a>
 
 ```go
 Provisioners *[]interface{}
@@ -898,7 +898,7 @@ Provisioners *[]interface{}
 
 ---
 
-##### `Parent`<sup>Required</sup> <a name="Parent" id="@cdktf/provider-google.tagsTagBinding.TagsTagBindingConfig.property.parent"></a>
+##### `Parent`<sup>Required</sup> <a name="Parent" id="@cdktn/provider-google.tagsTagBinding.TagsTagBindingConfig.property.parent"></a>
 
 ```go
 Parent *string
@@ -912,7 +912,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `TagValue`<sup>Required</sup> <a name="TagValue" id="@cdktf/provider-google.tagsTagBinding.TagsTagBindingConfig.property.tagValue"></a>
+##### `TagValue`<sup>Required</sup> <a name="TagValue" id="@cdktn/provider-google.tagsTagBinding.TagsTagBindingConfig.property.tagValue"></a>
 
 ```go
 TagValue *string
@@ -926,7 +926,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-google.tagsTagBinding.TagsTagBindingConfig.property.id"></a>
+##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktn/provider-google.tagsTagBinding.TagsTagBindingConfig.property.id"></a>
 
 ```go
 Id *string
@@ -941,13 +941,13 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
-##### `Timeouts`<sup>Optional</sup> <a name="Timeouts" id="@cdktf/provider-google.tagsTagBinding.TagsTagBindingConfig.property.timeouts"></a>
+##### `Timeouts`<sup>Optional</sup> <a name="Timeouts" id="@cdktn/provider-google.tagsTagBinding.TagsTagBindingConfig.property.timeouts"></a>
 
 ```go
 Timeouts TagsTagBindingTimeouts
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBindingTimeouts">TagsTagBindingTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBindingTimeouts">TagsTagBindingTimeouts</a>
 
 timeouts block.
 
@@ -955,12 +955,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### TagsTagBindingTimeouts <a name="TagsTagBindingTimeouts" id="@cdktf/provider-google.tagsTagBinding.TagsTagBindingTimeouts"></a>
+### TagsTagBindingTimeouts <a name="TagsTagBindingTimeouts" id="@cdktn/provider-google.tagsTagBinding.TagsTagBindingTimeouts"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-google.tagsTagBinding.TagsTagBindingTimeouts.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.tagsTagBinding.TagsTagBindingTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/tagstagbinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/tagstagbinding"
 
 &tagstagbinding.TagsTagBindingTimeouts {
 	Create: *string,
@@ -972,12 +972,12 @@ import "github.com/cdktf/cdktf-provider-google-go/google/v16/tagstagbinding"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBindingTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/tags_tag_binding#create TagsTagBinding#create}. |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBindingTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/tags_tag_binding#delete TagsTagBinding#delete}. |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBindingTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/tags_tag_binding#create TagsTagBinding#create}. |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBindingTimeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/tags_tag_binding#delete TagsTagBinding#delete}. |
 
 ---
 
-##### `Create`<sup>Optional</sup> <a name="Create" id="@cdktf/provider-google.tagsTagBinding.TagsTagBindingTimeouts.property.create"></a>
+##### `Create`<sup>Optional</sup> <a name="Create" id="@cdktn/provider-google.tagsTagBinding.TagsTagBindingTimeouts.property.create"></a>
 
 ```go
 Create *string
@@ -989,7 +989,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Delete`<sup>Optional</sup> <a name="Delete" id="@cdktf/provider-google.tagsTagBinding.TagsTagBindingTimeouts.property.delete"></a>
+##### `Delete`<sup>Optional</sup> <a name="Delete" id="@cdktn/provider-google.tagsTagBinding.TagsTagBindingTimeouts.property.delete"></a>
 
 ```go
 Delete *string
@@ -1003,24 +1003,24 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### TagsTagBindingTimeoutsOutputReference <a name="TagsTagBindingTimeoutsOutputReference" id="@cdktf/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference"></a>
+### TagsTagBindingTimeoutsOutputReference <a name="TagsTagBindingTimeoutsOutputReference" id="@cdktn/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/tagstagbinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/tagstagbinding"
 
 tagstagbinding.NewTagsTagBindingTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TagsTagBindingTimeoutsOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
 
@@ -1028,7 +1028,7 @@ The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -1040,151 +1040,151 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.resetCreate">ResetCreate</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.resetDelete">ResetDelete</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.resetCreate">ResetCreate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.resetDelete">ResetDelete</a></code> | *No description.* |
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(property *string) IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* *string
 
 ---
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -1192,13 +1192,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.resolve.parameter._context"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.toString"></a>
 
 ```go
 func ToString() *string
@@ -1208,13 +1208,13 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `ResetCreate` <a name="ResetCreate" id="@cdktf/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.resetCreate"></a>
+##### `ResetCreate` <a name="ResetCreate" id="@cdktn/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.resetCreate"></a>
 
 ```go
 func ResetCreate()
 ```
 
-##### `ResetDelete` <a name="ResetDelete" id="@cdktf/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.resetDelete"></a>
+##### `ResetDelete` <a name="ResetDelete" id="@cdktn/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.resetDelete"></a>
 
 ```go
 func ResetDelete()
@@ -1225,17 +1225,17 @@ func ResetDelete()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.property.createInput">CreateInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.property.deleteInput">DeleteInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.property.create">Create</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.property.delete">Delete</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.property.createInput">CreateInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.property.deleteInput">DeleteInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.property.create">Create</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.property.delete">Delete</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -1249,7 +1249,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -1259,7 +1259,7 @@ func Fqn() *string
 
 ---
 
-##### `CreateInput`<sup>Optional</sup> <a name="CreateInput" id="@cdktf/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.property.createInput"></a>
+##### `CreateInput`<sup>Optional</sup> <a name="CreateInput" id="@cdktn/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.property.createInput"></a>
 
 ```go
 func CreateInput() *string
@@ -1269,7 +1269,7 @@ func CreateInput() *string
 
 ---
 
-##### `DeleteInput`<sup>Optional</sup> <a name="DeleteInput" id="@cdktf/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.property.deleteInput"></a>
+##### `DeleteInput`<sup>Optional</sup> <a name="DeleteInput" id="@cdktn/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.property.deleteInput"></a>
 
 ```go
 func DeleteInput() *string
@@ -1279,7 +1279,7 @@ func DeleteInput() *string
 
 ---
 
-##### `Create`<sup>Required</sup> <a name="Create" id="@cdktf/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.property.create"></a>
+##### `Create`<sup>Required</sup> <a name="Create" id="@cdktn/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.property.create"></a>
 
 ```go
 func Create() *string
@@ -1289,7 +1289,7 @@ func Create() *string
 
 ---
 
-##### `Delete`<sup>Required</sup> <a name="Delete" id="@cdktf/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.property.delete"></a>
+##### `Delete`<sup>Required</sup> <a name="Delete" id="@cdktn/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.property.delete"></a>
 
 ```go
 func Delete() *string
@@ -1299,7 +1299,7 @@ func Delete() *string
 
 ---
 
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.property.internalValue"></a>
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-google.tagsTagBinding.TagsTagBindingTimeoutsOutputReference.property.internalValue"></a>
 
 ```go
 func InternalValue() interface{}

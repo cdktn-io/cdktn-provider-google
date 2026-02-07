@@ -1,15 +1,15 @@
-# `dataGoogleSecretManagerSecretVersion` Submodule <a name="`dataGoogleSecretManagerSecretVersion` Submodule" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion"></a>
+# `dataGoogleSecretManagerSecretVersion` Submodule <a name="`dataGoogleSecretManagerSecretVersion` Submodule" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### DataGoogleSecretManagerSecretVersion <a name="DataGoogleSecretManagerSecretVersion" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion"></a>
+### DataGoogleSecretManagerSecretVersion <a name="DataGoogleSecretManagerSecretVersion" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion"></a>
 
 Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/secret_manager_secret_version google_secret_manager_secret_version}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import data_google_secret_manager_secret_version
+from cdktn_provider_google import data_google_secret_manager_secret_version
 
 dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion(
   scope: Construct,
@@ -32,25 +32,25 @@ dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.Initializer.parameter.secret">secret</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/secret_manager_secret_version#secret DataGoogleSecretManagerSecretVersion#secret}. |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.Initializer.parameter.fetchSecretData">fetch_secret_data</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/secret_manager_secret_version#fetch_secret_data DataGoogleSecretManagerSecretVersion#fetch_secret_data}. |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/secret_manager_secret_version#id DataGoogleSecretManagerSecretVersion#id}. |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.Initializer.parameter.isSecretDataBase64">is_secret_data_base64</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/secret_manager_secret_version#is_secret_data_base64 DataGoogleSecretManagerSecretVersion#is_secret_data_base64}. |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/secret_manager_secret_version#project DataGoogleSecretManagerSecretVersion#project}. |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.Initializer.parameter.version">version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/secret_manager_secret_version#version DataGoogleSecretManagerSecretVersion#version}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.Initializer.parameter.secret">secret</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/secret_manager_secret_version#secret DataGoogleSecretManagerSecretVersion#secret}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.Initializer.parameter.fetchSecretData">fetch_secret_data</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/secret_manager_secret_version#fetch_secret_data DataGoogleSecretManagerSecretVersion#fetch_secret_data}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/secret_manager_secret_version#id DataGoogleSecretManagerSecretVersion#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.Initializer.parameter.isSecretDataBase64">is_secret_data_base64</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/secret_manager_secret_version#is_secret_data_base64 DataGoogleSecretManagerSecretVersion#is_secret_data_base64}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/secret_manager_secret_version#project DataGoogleSecretManagerSecretVersion#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.Initializer.parameter.version">version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/secret_manager_secret_version#version DataGoogleSecretManagerSecretVersion#version}. |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -58,7 +58,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -68,49 +68,49 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.Initializer.parameter.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.Initializer.parameter.connection"></a>
 
 - *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.Initializer.parameter.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.Initializer.parameter.count"></a>
 
 - *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.Initializer.parameter.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.Initializer.parameter.dependsOn"></a>
 
 - *Type:* typing.List[cdktf.ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.Initializer.parameter.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.Initializer.parameter.forEach"></a>
 
 - *Type:* cdktf.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.Initializer.parameter.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.Initializer.parameter.lifecycle"></a>
 
 - *Type:* cdktf.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.Initializer.parameter.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.Initializer.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.Initializer.parameter.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.Initializer.parameter.provisioners"></a>
 
 - *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
-##### `secret`<sup>Required</sup> <a name="secret" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.Initializer.parameter.secret"></a>
+##### `secret`<sup>Required</sup> <a name="secret" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.Initializer.parameter.secret"></a>
 
 - *Type:* str
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `fetch_secret_data`<sup>Optional</sup> <a name="fetch_secret_data" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.Initializer.parameter.fetchSecretData"></a>
+##### `fetch_secret_data`<sup>Optional</sup> <a name="fetch_secret_data" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.Initializer.parameter.fetchSecretData"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.Initializer.parameter.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -137,7 +137,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
-##### `is_secret_data_base64`<sup>Optional</sup> <a name="is_secret_data_base64" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.Initializer.parameter.isSecretDataBase64"></a>
+##### `is_secret_data_base64`<sup>Optional</sup> <a name="is_secret_data_base64" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.Initializer.parameter.isSecretDataBase64"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
@@ -145,7 +145,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `project`<sup>Optional</sup> <a name="project" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.Initializer.parameter.project"></a>
+##### `project`<sup>Optional</sup> <a name="project" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.Initializer.parameter.project"></a>
 
 - *Type:* str
 
@@ -153,7 +153,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `version`<sup>Optional</sup> <a name="version" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.Initializer.parameter.version"></a>
+##### `version`<sup>Optional</sup> <a name="version" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.Initializer.parameter.version"></a>
 
 - *Type:* str
 
@@ -165,32 +165,32 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.toString">to_string</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.addOverride">add_override</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.toHclTerraform">to_hcl_terraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.toMetadata">to_metadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.resetFetchSecretData">reset_fetch_secret_data</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.resetId">reset_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.resetIsSecretDataBase64">reset_is_secret_data_base64</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.resetProject">reset_project</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.resetVersion">reset_version</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.toString">to_string</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.addOverride">add_override</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.toHclTerraform">to_hcl_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.toMetadata">to_metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.resetFetchSecretData">reset_fetch_secret_data</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.resetIsSecretDataBase64">reset_is_secret_data_base64</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.resetProject">reset_project</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.resetVersion">reset_version</a></code> | *No description.* |
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.toString"></a>
 
 ```python
 def to_string() -> str
@@ -198,7 +198,7 @@ def to_string() -> str
 
 Returns a string representation of this construct.
 
-##### `add_override` <a name="add_override" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.addOverride"></a>
+##### `add_override` <a name="add_override" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.addOverride"></a>
 
 ```python
 def add_override(
@@ -207,19 +207,19 @@ def add_override(
 ) -> None
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.addOverride.parameter.path"></a>
 
 - *Type:* str
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.addOverride.parameter.value"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `override_logical_id` <a name="override_logical_id" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.overrideLogicalId"></a>
+##### `override_logical_id` <a name="override_logical_id" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.overrideLogicalId"></a>
 
 ```python
 def override_logical_id(
@@ -229,7 +229,7 @@ def override_logical_id(
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.overrideLogicalId.parameter.newLogicalId"></a>
+###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* str
 
@@ -237,7 +237,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.resetOverrideLogicalId"></a>
+##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.resetOverrideLogicalId"></a>
 
 ```python
 def reset_override_logical_id() -> None
@@ -245,7 +245,7 @@ def reset_override_logical_id() -> None
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.toHclTerraform"></a>
+##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.toHclTerraform"></a>
 
 ```python
 def to_hcl_terraform() -> typing.Any
@@ -253,13 +253,13 @@ def to_hcl_terraform() -> typing.Any
 
 Adds this resource to the terraform JSON output.
 
-##### `to_metadata` <a name="to_metadata" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.toMetadata"></a>
+##### `to_metadata` <a name="to_metadata" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.toMetadata"></a>
 
 ```python
 def to_metadata() -> typing.Any
 ```
 
-##### `to_terraform` <a name="to_terraform" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.toTerraform"></a>
+##### `to_terraform` <a name="to_terraform" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.toTerraform"></a>
 
 ```python
 def to_terraform() -> typing.Any
@@ -267,7 +267,7 @@ def to_terraform() -> typing.Any
 
 Adds this resource to the terraform JSON output.
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -275,13 +275,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -289,13 +289,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -303,13 +303,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -317,13 +317,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -331,13 +331,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -345,13 +345,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -359,13 +359,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -373,13 +373,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -387,13 +387,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -401,37 +401,37 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `reset_fetch_secret_data` <a name="reset_fetch_secret_data" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.resetFetchSecretData"></a>
+##### `reset_fetch_secret_data` <a name="reset_fetch_secret_data" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.resetFetchSecretData"></a>
 
 ```python
 def reset_fetch_secret_data() -> None
 ```
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.resetId"></a>
+##### `reset_id` <a name="reset_id" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.resetId"></a>
 
 ```python
 def reset_id() -> None
 ```
 
-##### `reset_is_secret_data_base64` <a name="reset_is_secret_data_base64" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.resetIsSecretDataBase64"></a>
+##### `reset_is_secret_data_base64` <a name="reset_is_secret_data_base64" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.resetIsSecretDataBase64"></a>
 
 ```python
 def reset_is_secret_data_base64() -> None
 ```
 
-##### `reset_project` <a name="reset_project" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.resetProject"></a>
+##### `reset_project` <a name="reset_project" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.resetProject"></a>
 
 ```python
 def reset_project() -> None
 ```
 
-##### `reset_version` <a name="reset_version" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.resetVersion"></a>
+##### `reset_version` <a name="reset_version" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.resetVersion"></a>
 
 ```python
 def reset_version() -> None
@@ -441,17 +441,17 @@ def reset_version() -> None
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.isTerraformElement">is_terraform_element</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.isTerraformDataSource">is_terraform_data_source</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a DataGoogleSecretManagerSecretVersion resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.isTerraformElement">is_terraform_element</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.isTerraformDataSource">is_terraform_data_source</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a DataGoogleSecretManagerSecretVersion resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `is_construct` <a name="is_construct" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.isConstruct"></a>
+##### `is_construct` <a name="is_construct" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.isConstruct"></a>
 
 ```python
-from cdktf_cdktf_provider_google import data_google_secret_manager_secret_version
+from cdktn_provider_google import data_google_secret_manager_secret_version
 
 dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.is_construct(
   x: typing.Any
@@ -474,7 +474,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.isConstruct.parameter.x"></a>
 
 - *Type:* typing.Any
 
@@ -482,42 +482,42 @@ Any object.
 
 ---
 
-##### `is_terraform_element` <a name="is_terraform_element" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.isTerraformElement"></a>
+##### `is_terraform_element` <a name="is_terraform_element" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.isTerraformElement"></a>
 
 ```python
-from cdktf_cdktf_provider_google import data_google_secret_manager_secret_version
+from cdktn_provider_google import data_google_secret_manager_secret_version
 
 dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.is_terraform_element(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.isTerraformElement.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `is_terraform_data_source` <a name="is_terraform_data_source" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.isTerraformDataSource"></a>
+##### `is_terraform_data_source` <a name="is_terraform_data_source" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.isTerraformDataSource"></a>
 
 ```python
-from cdktf_cdktf_provider_google import data_google_secret_manager_secret_version
+from cdktn_provider_google import data_google_secret_manager_secret_version
 
 dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.is_terraform_data_source(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.isTerraformDataSource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.generateConfigForImport"></a>
+##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.generateConfigForImport"></a>
 
 ```python
-from cdktf_cdktf_provider_google import data_google_secret_manager_secret_version
+from cdktn_provider_google import data_google_secret_manager_secret_version
 
 dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.generate_config_for_import(
   scope: Construct,
@@ -529,7 +529,7 @@ dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.genera
 
 Generates CDKTF code for importing a DataGoogleSecretManagerSecretVersion resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -537,7 +537,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.generateConfigForImport.parameter.importToId"></a>
+###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* str
 
@@ -545,7 +545,7 @@ The construct id used in the generated config for the DataGoogleSecretManagerSec
 
 ---
 
-###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.generateConfigForImport.parameter.importFromId"></a>
+###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* str
 
@@ -555,7 +555,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
@@ -567,39 +567,39 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.createTime">create_time</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.destroyTime">destroy_time</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.enabled">enabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.secretData">secret_data</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.fetchSecretDataInput">fetch_secret_data_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.isSecretDataBase64Input">is_secret_data_base64_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.secretInput">secret_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.versionInput">version_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.fetchSecretData">fetch_secret_data</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.isSecretDataBase64">is_secret_data_base64</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.project">project</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.secret">secret</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.version">version</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.createTime">create_time</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.destroyTime">destroy_time</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.enabled">enabled</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.secretData">secret_data</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.fetchSecretDataInput">fetch_secret_data_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.isSecretDataBase64Input">is_secret_data_base64_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.secretInput">secret_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.versionInput">version_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.fetchSecretData">fetch_secret_data</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.isSecretDataBase64">is_secret_data_base64</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.project">project</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.secret">secret</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.version">version</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.node"></a>
 
 ```python
 node: Node
@@ -611,7 +611,7 @@ The tree node.
 
 ---
 
-##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.cdktfStack"></a>
+##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.cdktfStack"></a>
 
 ```python
 cdktf_stack: TerraformStack
@@ -621,7 +621,7 @@ cdktf_stack: TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.fqn"></a>
 
 ```python
 fqn: str
@@ -631,7 +631,7 @@ fqn: str
 
 ---
 
-##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.friendlyUniqueId"></a>
+##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.friendlyUniqueId"></a>
 
 ```python
 friendly_unique_id: str
@@ -641,7 +641,7 @@ friendly_unique_id: str
 
 ---
 
-##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.terraformMetaArguments"></a>
+##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.terraformMetaArguments"></a>
 
 ```python
 terraform_meta_arguments: typing.Mapping[typing.Any]
@@ -651,7 +651,7 @@ terraform_meta_arguments: typing.Mapping[typing.Any]
 
 ---
 
-##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.terraformResourceType"></a>
+##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.terraformResourceType"></a>
 
 ```python
 terraform_resource_type: str
@@ -661,7 +661,7 @@ terraform_resource_type: str
 
 ---
 
-##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.terraformGeneratorMetadata"></a>
+##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.terraformGeneratorMetadata"></a>
 
 ```python
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
@@ -671,7 +671,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -681,7 +681,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[str]
@@ -691,7 +691,7 @@ depends_on: typing.List[str]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -701,7 +701,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -711,7 +711,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -721,7 +721,7 @@ provider: TerraformProvider
 
 ---
 
-##### `create_time`<sup>Required</sup> <a name="create_time" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.createTime"></a>
+##### `create_time`<sup>Required</sup> <a name="create_time" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.createTime"></a>
 
 ```python
 create_time: str
@@ -731,7 +731,7 @@ create_time: str
 
 ---
 
-##### `destroy_time`<sup>Required</sup> <a name="destroy_time" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.destroyTime"></a>
+##### `destroy_time`<sup>Required</sup> <a name="destroy_time" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.destroyTime"></a>
 
 ```python
 destroy_time: str
@@ -741,7 +741,7 @@ destroy_time: str
 
 ---
 
-##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.enabled"></a>
+##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.enabled"></a>
 
 ```python
 enabled: IResolvable
@@ -751,7 +751,7 @@ enabled: IResolvable
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.name"></a>
 
 ```python
 name: str
@@ -761,7 +761,7 @@ name: str
 
 ---
 
-##### `secret_data`<sup>Required</sup> <a name="secret_data" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.secretData"></a>
+##### `secret_data`<sup>Required</sup> <a name="secret_data" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.secretData"></a>
 
 ```python
 secret_data: str
@@ -771,7 +771,7 @@ secret_data: str
 
 ---
 
-##### `fetch_secret_data_input`<sup>Optional</sup> <a name="fetch_secret_data_input" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.fetchSecretDataInput"></a>
+##### `fetch_secret_data_input`<sup>Optional</sup> <a name="fetch_secret_data_input" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.fetchSecretDataInput"></a>
 
 ```python
 fetch_secret_data_input: bool | IResolvable
@@ -781,7 +781,7 @@ fetch_secret_data_input: bool | IResolvable
 
 ---
 
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.idInput"></a>
+##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.idInput"></a>
 
 ```python
 id_input: str
@@ -791,7 +791,7 @@ id_input: str
 
 ---
 
-##### `is_secret_data_base64_input`<sup>Optional</sup> <a name="is_secret_data_base64_input" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.isSecretDataBase64Input"></a>
+##### `is_secret_data_base64_input`<sup>Optional</sup> <a name="is_secret_data_base64_input" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.isSecretDataBase64Input"></a>
 
 ```python
 is_secret_data_base64_input: bool | IResolvable
@@ -801,7 +801,7 @@ is_secret_data_base64_input: bool | IResolvable
 
 ---
 
-##### `project_input`<sup>Optional</sup> <a name="project_input" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.projectInput"></a>
+##### `project_input`<sup>Optional</sup> <a name="project_input" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.projectInput"></a>
 
 ```python
 project_input: str
@@ -811,7 +811,7 @@ project_input: str
 
 ---
 
-##### `secret_input`<sup>Optional</sup> <a name="secret_input" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.secretInput"></a>
+##### `secret_input`<sup>Optional</sup> <a name="secret_input" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.secretInput"></a>
 
 ```python
 secret_input: str
@@ -821,7 +821,7 @@ secret_input: str
 
 ---
 
-##### `version_input`<sup>Optional</sup> <a name="version_input" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.versionInput"></a>
+##### `version_input`<sup>Optional</sup> <a name="version_input" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.versionInput"></a>
 
 ```python
 version_input: str
@@ -831,7 +831,7 @@ version_input: str
 
 ---
 
-##### `fetch_secret_data`<sup>Required</sup> <a name="fetch_secret_data" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.fetchSecretData"></a>
+##### `fetch_secret_data`<sup>Required</sup> <a name="fetch_secret_data" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.fetchSecretData"></a>
 
 ```python
 fetch_secret_data: bool | IResolvable
@@ -841,7 +841,7 @@ fetch_secret_data: bool | IResolvable
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.id"></a>
 
 ```python
 id: str
@@ -851,7 +851,7 @@ id: str
 
 ---
 
-##### `is_secret_data_base64`<sup>Required</sup> <a name="is_secret_data_base64" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.isSecretDataBase64"></a>
+##### `is_secret_data_base64`<sup>Required</sup> <a name="is_secret_data_base64" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.isSecretDataBase64"></a>
 
 ```python
 is_secret_data_base64: bool | IResolvable
@@ -861,7 +861,7 @@ is_secret_data_base64: bool | IResolvable
 
 ---
 
-##### `project`<sup>Required</sup> <a name="project" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.project"></a>
+##### `project`<sup>Required</sup> <a name="project" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.project"></a>
 
 ```python
 project: str
@@ -871,7 +871,7 @@ project: str
 
 ---
 
-##### `secret`<sup>Required</sup> <a name="secret" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.secret"></a>
+##### `secret`<sup>Required</sup> <a name="secret" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.secret"></a>
 
 ```python
 secret: str
@@ -881,7 +881,7 @@ secret: str
 
 ---
 
-##### `version`<sup>Required</sup> <a name="version" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.version"></a>
+##### `version`<sup>Required</sup> <a name="version" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.version"></a>
 
 ```python
 version: str
@@ -895,11 +895,11 @@ version: str
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersion.property.tfResourceType"></a>
 
 ```python
 tfResourceType: str
@@ -911,12 +911,12 @@ tfResourceType: str
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### DataGoogleSecretManagerSecretVersionConfig <a name="DataGoogleSecretManagerSecretVersionConfig" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersionConfig"></a>
+### DataGoogleSecretManagerSecretVersionConfig <a name="DataGoogleSecretManagerSecretVersionConfig" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersionConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersionConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersionConfig.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import data_google_secret_manager_secret_version
+from cdktn_provider_google import data_google_secret_manager_secret_version
 
 dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersionConfig(
   connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
@@ -939,23 +939,23 @@ dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersionConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersionConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersionConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersionConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersionConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersionConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersionConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersionConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersionConfig.property.secret">secret</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/secret_manager_secret_version#secret DataGoogleSecretManagerSecretVersion#secret}. |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersionConfig.property.fetchSecretData">fetch_secret_data</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/secret_manager_secret_version#fetch_secret_data DataGoogleSecretManagerSecretVersion#fetch_secret_data}. |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/secret_manager_secret_version#id DataGoogleSecretManagerSecretVersion#id}. |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersionConfig.property.isSecretDataBase64">is_secret_data_base64</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/secret_manager_secret_version#is_secret_data_base64 DataGoogleSecretManagerSecretVersion#is_secret_data_base64}. |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersionConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/secret_manager_secret_version#project DataGoogleSecretManagerSecretVersion#project}. |
-| <code><a href="#@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersionConfig.property.version">version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/secret_manager_secret_version#version DataGoogleSecretManagerSecretVersion#version}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersionConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersionConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersionConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersionConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersionConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersionConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersionConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersionConfig.property.secret">secret</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/secret_manager_secret_version#secret DataGoogleSecretManagerSecretVersion#secret}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersionConfig.property.fetchSecretData">fetch_secret_data</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/secret_manager_secret_version#fetch_secret_data DataGoogleSecretManagerSecretVersion#fetch_secret_data}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/secret_manager_secret_version#id DataGoogleSecretManagerSecretVersion#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersionConfig.property.isSecretDataBase64">is_secret_data_base64</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/secret_manager_secret_version#is_secret_data_base64 DataGoogleSecretManagerSecretVersion#is_secret_data_base64}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersionConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/secret_manager_secret_version#project DataGoogleSecretManagerSecretVersion#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersionConfig.property.version">version</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/secret_manager_secret_version#version DataGoogleSecretManagerSecretVersion#version}. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersionConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersionConfig.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
@@ -965,7 +965,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersionConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersionConfig.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -975,7 +975,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersionConfig.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersionConfig.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[ITerraformDependable]
@@ -985,7 +985,7 @@ depends_on: typing.List[ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersionConfig.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersionConfig.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -995,7 +995,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersionConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersionConfig.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -1005,7 +1005,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersionConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersionConfig.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -1015,7 +1015,7 @@ provider: TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersionConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersionConfig.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
@@ -1025,7 +1025,7 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `secret`<sup>Required</sup> <a name="secret" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersionConfig.property.secret"></a>
+##### `secret`<sup>Required</sup> <a name="secret" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersionConfig.property.secret"></a>
 
 ```python
 secret: str
@@ -1037,7 +1037,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `fetch_secret_data`<sup>Optional</sup> <a name="fetch_secret_data" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersionConfig.property.fetchSecretData"></a>
+##### `fetch_secret_data`<sup>Optional</sup> <a name="fetch_secret_data" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersionConfig.property.fetchSecretData"></a>
 
 ```python
 fetch_secret_data: bool | IResolvable
@@ -1049,7 +1049,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersionConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersionConfig.property.id"></a>
 
 ```python
 id: str
@@ -1064,7 +1064,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
-##### `is_secret_data_base64`<sup>Optional</sup> <a name="is_secret_data_base64" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersionConfig.property.isSecretDataBase64"></a>
+##### `is_secret_data_base64`<sup>Optional</sup> <a name="is_secret_data_base64" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersionConfig.property.isSecretDataBase64"></a>
 
 ```python
 is_secret_data_base64: bool | IResolvable
@@ -1076,7 +1076,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `project`<sup>Optional</sup> <a name="project" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersionConfig.property.project"></a>
+##### `project`<sup>Optional</sup> <a name="project" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersionConfig.property.project"></a>
 
 ```python
 project: str
@@ -1088,7 +1088,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `version`<sup>Optional</sup> <a name="version" id="@cdktf/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersionConfig.property.version"></a>
+##### `version`<sup>Optional</sup> <a name="version" id="@cdktn/provider-google.dataGoogleSecretManagerSecretVersion.DataGoogleSecretManagerSecretVersionConfig.property.version"></a>
 
 ```python
 version: str

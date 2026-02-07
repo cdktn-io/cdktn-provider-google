@@ -1,28 +1,28 @@
-# `dataGoogleArtifactRegistryPackage` Submodule <a name="`dataGoogleArtifactRegistryPackage` Submodule" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage"></a>
+# `dataGoogleArtifactRegistryPackage` Submodule <a name="`dataGoogleArtifactRegistryPackage` Submodule" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### DataGoogleArtifactRegistryPackage <a name="DataGoogleArtifactRegistryPackage" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage"></a>
+### DataGoogleArtifactRegistryPackage <a name="DataGoogleArtifactRegistryPackage" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage"></a>
 
 Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/artifact_registry_package google_artifact_registry_package}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagoogleartifactregistrypackage"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/datagoogleartifactregistrypackage"
 
 datagoogleartifactregistrypackage.NewDataGoogleArtifactRegistryPackage(scope Construct, id *string, config DataGoogleArtifactRegistryPackageConfig) DataGoogleArtifactRegistryPackage
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackageConfig">DataGoogleArtifactRegistryPackageConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackageConfig">DataGoogleArtifactRegistryPackageConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.Initializer.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.Initializer.parameter.id"></a>
 
 - *Type:* *string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.Initializer.parameter.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackageConfig">DataGoogleArtifactRegistryPackageConfig</a>
+- *Type:* <a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackageConfig">DataGoogleArtifactRegistryPackageConfig</a>
 
 ---
 
@@ -50,29 +50,29 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.toString">ToString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.addOverride">AddOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.toMetadata">ToMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.resetId">ResetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.resetProject">ResetProject</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.addOverride">AddOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.toMetadata">ToMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.resetProject">ResetProject</a></code> | *No description.* |
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.toString"></a>
 
 ```go
 func ToString() *string
@@ -80,25 +80,25 @@ func ToString() *string
 
 Returns a string representation of this construct.
 
-##### `AddOverride` <a name="AddOverride" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.addOverride"></a>
+##### `AddOverride` <a name="AddOverride" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.addOverride"></a>
 
 ```go
 func AddOverride(path *string, value interface{})
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.addOverride.parameter.path"></a>
 
 - *Type:* *string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.addOverride.parameter.value"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.overrideLogicalId"></a>
+##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.overrideLogicalId"></a>
 
 ```go
 func OverrideLogicalId(newLogicalId *string)
@@ -106,7 +106,7 @@ func OverrideLogicalId(newLogicalId *string)
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* *string
 
@@ -114,7 +114,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.resetOverrideLogicalId"></a>
+##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.resetOverrideLogicalId"></a>
 
 ```go
 func ResetOverrideLogicalId()
@@ -122,7 +122,7 @@ func ResetOverrideLogicalId()
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.toHclTerraform"></a>
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.toHclTerraform"></a>
 
 ```go
 func ToHclTerraform() interface{}
@@ -130,13 +130,13 @@ func ToHclTerraform() interface{}
 
 Adds this resource to the terraform JSON output.
 
-##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.toMetadata"></a>
+##### `ToMetadata` <a name="ToMetadata" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.toMetadata"></a>
 
 ```go
 func ToMetadata() interface{}
 ```
 
-##### `ToTerraform` <a name="ToTerraform" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.toTerraform"></a>
+##### `ToTerraform` <a name="ToTerraform" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.toTerraform"></a>
 
 ```go
 func ToTerraform() interface{}
@@ -144,133 +144,133 @@ func ToTerraform() interface{}
 
 Adds this resource to the terraform JSON output.
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.resetId"></a>
+##### `ResetId` <a name="ResetId" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.resetId"></a>
 
 ```go
 func ResetId()
 ```
 
-##### `ResetProject` <a name="ResetProject" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.resetProject"></a>
+##### `ResetProject` <a name="ResetProject" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.resetProject"></a>
 
 ```go
 func ResetProject()
@@ -280,17 +280,17 @@ func ResetProject()
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.isTerraformDataSource">IsTerraformDataSource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DataGoogleArtifactRegistryPackage resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.isTerraformDataSource">IsTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DataGoogleArtifactRegistryPackage resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.isConstruct"></a>
+##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagoogleartifactregistrypackage"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/datagoogleartifactregistrypackage"
 
 datagoogleartifactregistrypackage.DataGoogleArtifactRegistryPackage_IsConstruct(x interface{}) *bool
 ```
@@ -311,7 +311,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.isConstruct.parameter.x"></a>
 
 - *Type:* interface{}
 
@@ -319,45 +319,45 @@ Any object.
 
 ---
 
-##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.isTerraformElement"></a>
+##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagoogleartifactregistrypackage"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/datagoogleartifactregistrypackage"
 
 datagoogleartifactregistrypackage.DataGoogleArtifactRegistryPackage_IsTerraformElement(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.isTerraformElement.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.isTerraformDataSource"></a>
+##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagoogleartifactregistrypackage"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/datagoogleartifactregistrypackage"
 
 datagoogleartifactregistrypackage.DataGoogleArtifactRegistryPackage_IsTerraformDataSource(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.isTerraformDataSource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.generateConfigForImport"></a>
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagoogleartifactregistrypackage"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/datagoogleartifactregistrypackage"
 
 datagoogleartifactregistrypackage.DataGoogleArtifactRegistryPackage_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
 
 Generates CDKTF code for importing a DataGoogleArtifactRegistryPackage resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -365,7 +365,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* *string
 
@@ -373,7 +373,7 @@ The construct id used in the generated config for the DataGoogleArtifactRegistry
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* *string
 
@@ -383,7 +383,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
 
@@ -395,36 +395,36 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.annotations">Annotations</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.StringMap</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.createTime">CreateTime</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.displayName">DisplayName</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.updateTime">UpdateTime</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.locationInput">LocationInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.projectInput">ProjectInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.repositoryIdInput">RepositoryIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.id">Id</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.location">Location</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.name">Name</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.project">Project</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.repositoryId">RepositoryId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.annotations">Annotations</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.createTime">CreateTime</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.displayName">DisplayName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.updateTime">UpdateTime</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.locationInput">LocationInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.projectInput">ProjectInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.repositoryIdInput">RepositoryIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.location">Location</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.project">Project</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.repositoryId">RepositoryId</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `Node`<sup>Required</sup> <a name="Node" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.node"></a>
+##### `Node`<sup>Required</sup> <a name="Node" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.node"></a>
 
 ```go
 func Node() Node
@@ -436,7 +436,7 @@ The tree node.
 
 ---
 
-##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.cdktfStack"></a>
+##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.cdktfStack"></a>
 
 ```go
 func CdktfStack() TerraformStack
@@ -446,7 +446,7 @@ func CdktfStack() TerraformStack
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -456,7 +456,7 @@ func Fqn() *string
 
 ---
 
-##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.friendlyUniqueId"></a>
+##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.friendlyUniqueId"></a>
 
 ```go
 func FriendlyUniqueId() *string
@@ -466,7 +466,7 @@ func FriendlyUniqueId() *string
 
 ---
 
-##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.terraformMetaArguments"></a>
+##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.terraformMetaArguments"></a>
 
 ```go
 func TerraformMetaArguments() *map[string]interface{}
@@ -476,7 +476,7 @@ func TerraformMetaArguments() *map[string]interface{}
 
 ---
 
-##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.terraformResourceType"></a>
+##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.terraformResourceType"></a>
 
 ```go
 func TerraformResourceType() *string
@@ -486,7 +486,7 @@ func TerraformResourceType() *string
 
 ---
 
-##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.terraformGeneratorMetadata"></a>
+##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.terraformGeneratorMetadata"></a>
 
 ```go
 func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
@@ -496,7 +496,7 @@ func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.count"></a>
 
 ```go
 func Count() interface{}
@@ -506,7 +506,7 @@ func Count() interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.dependsOn"></a>
 
 ```go
 func DependsOn() *[]*string
@@ -516,7 +516,7 @@ func DependsOn() *[]*string
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.forEach"></a>
 
 ```go
 func ForEach() ITerraformIterator
@@ -526,7 +526,7 @@ func ForEach() ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.lifecycle"></a>
 
 ```go
 func Lifecycle() TerraformResourceLifecycle
@@ -536,7 +536,7 @@ func Lifecycle() TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.provider"></a>
 
 ```go
 func Provider() TerraformProvider
@@ -546,7 +546,7 @@ func Provider() TerraformProvider
 
 ---
 
-##### `Annotations`<sup>Required</sup> <a name="Annotations" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.annotations"></a>
+##### `Annotations`<sup>Required</sup> <a name="Annotations" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.annotations"></a>
 
 ```go
 func Annotations() StringMap
@@ -556,7 +556,7 @@ func Annotations() StringMap
 
 ---
 
-##### `CreateTime`<sup>Required</sup> <a name="CreateTime" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.createTime"></a>
+##### `CreateTime`<sup>Required</sup> <a name="CreateTime" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.createTime"></a>
 
 ```go
 func CreateTime() *string
@@ -566,7 +566,7 @@ func CreateTime() *string
 
 ---
 
-##### `DisplayName`<sup>Required</sup> <a name="DisplayName" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.displayName"></a>
+##### `DisplayName`<sup>Required</sup> <a name="DisplayName" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.displayName"></a>
 
 ```go
 func DisplayName() *string
@@ -576,7 +576,7 @@ func DisplayName() *string
 
 ---
 
-##### `UpdateTime`<sup>Required</sup> <a name="UpdateTime" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.updateTime"></a>
+##### `UpdateTime`<sup>Required</sup> <a name="UpdateTime" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.updateTime"></a>
 
 ```go
 func UpdateTime() *string
@@ -586,7 +586,7 @@ func UpdateTime() *string
 
 ---
 
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.idInput"></a>
+##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.idInput"></a>
 
 ```go
 func IdInput() *string
@@ -596,7 +596,7 @@ func IdInput() *string
 
 ---
 
-##### `LocationInput`<sup>Optional</sup> <a name="LocationInput" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.locationInput"></a>
+##### `LocationInput`<sup>Optional</sup> <a name="LocationInput" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.locationInput"></a>
 
 ```go
 func LocationInput() *string
@@ -606,7 +606,7 @@ func LocationInput() *string
 
 ---
 
-##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.nameInput"></a>
+##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.nameInput"></a>
 
 ```go
 func NameInput() *string
@@ -616,7 +616,7 @@ func NameInput() *string
 
 ---
 
-##### `ProjectInput`<sup>Optional</sup> <a name="ProjectInput" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.projectInput"></a>
+##### `ProjectInput`<sup>Optional</sup> <a name="ProjectInput" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.projectInput"></a>
 
 ```go
 func ProjectInput() *string
@@ -626,7 +626,7 @@ func ProjectInput() *string
 
 ---
 
-##### `RepositoryIdInput`<sup>Optional</sup> <a name="RepositoryIdInput" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.repositoryIdInput"></a>
+##### `RepositoryIdInput`<sup>Optional</sup> <a name="RepositoryIdInput" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.repositoryIdInput"></a>
 
 ```go
 func RepositoryIdInput() *string
@@ -636,7 +636,7 @@ func RepositoryIdInput() *string
 
 ---
 
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.id"></a>
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.id"></a>
 
 ```go
 func Id() *string
@@ -646,7 +646,7 @@ func Id() *string
 
 ---
 
-##### `Location`<sup>Required</sup> <a name="Location" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.location"></a>
+##### `Location`<sup>Required</sup> <a name="Location" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.location"></a>
 
 ```go
 func Location() *string
@@ -656,7 +656,7 @@ func Location() *string
 
 ---
 
-##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.name"></a>
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.name"></a>
 
 ```go
 func Name() *string
@@ -666,7 +666,7 @@ func Name() *string
 
 ---
 
-##### `Project`<sup>Required</sup> <a name="Project" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.project"></a>
+##### `Project`<sup>Required</sup> <a name="Project" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.project"></a>
 
 ```go
 func Project() *string
@@ -676,7 +676,7 @@ func Project() *string
 
 ---
 
-##### `RepositoryId`<sup>Required</sup> <a name="RepositoryId" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.repositoryId"></a>
+##### `RepositoryId`<sup>Required</sup> <a name="RepositoryId" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.repositoryId"></a>
 
 ```go
 func RepositoryId() *string
@@ -690,11 +690,11 @@ func RepositoryId() *string
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.tfResourceType"></a>
+##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackage.property.tfResourceType"></a>
 
 ```go
 func TfResourceType() *string
@@ -706,12 +706,12 @@ func TfResourceType() *string
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### DataGoogleArtifactRegistryPackageConfig <a name="DataGoogleArtifactRegistryPackageConfig" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackageConfig"></a>
+### DataGoogleArtifactRegistryPackageConfig <a name="DataGoogleArtifactRegistryPackageConfig" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackageConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackageConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackageConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagoogleartifactregistrypackage"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/datagoogleartifactregistrypackage"
 
 &datagoogleartifactregistrypackage.DataGoogleArtifactRegistryPackageConfig {
 	Connection: interface{},
@@ -733,22 +733,22 @@ import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagoogleartifactr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackageConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackageConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackageConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackageConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackageConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackageConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackageConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackageConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/artifact_registry_package#location DataGoogleArtifactRegistryPackage#location}. |
-| <code><a href="#@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackageConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/artifact_registry_package#name DataGoogleArtifactRegistryPackage#name}. |
-| <code><a href="#@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackageConfig.property.repositoryId">RepositoryId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/artifact_registry_package#repository_id DataGoogleArtifactRegistryPackage#repository_id}. |
-| <code><a href="#@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackageConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/artifact_registry_package#id DataGoogleArtifactRegistryPackage#id}. |
-| <code><a href="#@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackageConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/artifact_registry_package#project DataGoogleArtifactRegistryPackage#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackageConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackageConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackageConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackageConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackageConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackageConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackageConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackageConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/artifact_registry_package#location DataGoogleArtifactRegistryPackage#location}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackageConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/artifact_registry_package#name DataGoogleArtifactRegistryPackage#name}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackageConfig.property.repositoryId">RepositoryId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/artifact_registry_package#repository_id DataGoogleArtifactRegistryPackage#repository_id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackageConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/artifact_registry_package#id DataGoogleArtifactRegistryPackage#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackageConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/artifact_registry_package#project DataGoogleArtifactRegistryPackage#project}. |
 
 ---
 
-##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackageConfig.property.connection"></a>
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackageConfig.property.connection"></a>
 
 ```go
 Connection interface{}
@@ -758,7 +758,7 @@ Connection interface{}
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackageConfig.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackageConfig.property.count"></a>
 
 ```go
 Count interface{}
@@ -768,7 +768,7 @@ Count interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackageConfig.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackageConfig.property.dependsOn"></a>
 
 ```go
 DependsOn *[]ITerraformDependable
@@ -778,7 +778,7 @@ DependsOn *[]ITerraformDependable
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackageConfig.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackageConfig.property.forEach"></a>
 
 ```go
 ForEach ITerraformIterator
@@ -788,7 +788,7 @@ ForEach ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackageConfig.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackageConfig.property.lifecycle"></a>
 
 ```go
 Lifecycle TerraformResourceLifecycle
@@ -798,7 +798,7 @@ Lifecycle TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackageConfig.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackageConfig.property.provider"></a>
 
 ```go
 Provider TerraformProvider
@@ -808,7 +808,7 @@ Provider TerraformProvider
 
 ---
 
-##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackageConfig.property.provisioners"></a>
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackageConfig.property.provisioners"></a>
 
 ```go
 Provisioners *[]interface{}
@@ -818,7 +818,7 @@ Provisioners *[]interface{}
 
 ---
 
-##### `Location`<sup>Required</sup> <a name="Location" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackageConfig.property.location"></a>
+##### `Location`<sup>Required</sup> <a name="Location" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackageConfig.property.location"></a>
 
 ```go
 Location *string
@@ -830,7 +830,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackageConfig.property.name"></a>
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackageConfig.property.name"></a>
 
 ```go
 Name *string
@@ -842,7 +842,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `RepositoryId`<sup>Required</sup> <a name="RepositoryId" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackageConfig.property.repositoryId"></a>
+##### `RepositoryId`<sup>Required</sup> <a name="RepositoryId" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackageConfig.property.repositoryId"></a>
 
 ```go
 RepositoryId *string
@@ -854,7 +854,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackageConfig.property.id"></a>
+##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackageConfig.property.id"></a>
 
 ```go
 Id *string
@@ -869,7 +869,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
-##### `Project`<sup>Optional</sup> <a name="Project" id="@cdktf/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackageConfig.property.project"></a>
+##### `Project`<sup>Optional</sup> <a name="Project" id="@cdktn/provider-google.dataGoogleArtifactRegistryPackage.DataGoogleArtifactRegistryPackageConfig.property.project"></a>
 
 ```go
 Project *string

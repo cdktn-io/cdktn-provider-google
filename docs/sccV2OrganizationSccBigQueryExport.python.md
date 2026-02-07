@@ -1,15 +1,15 @@
-# `sccV2OrganizationSccBigQueryExport` Submodule <a name="`sccV2OrganizationSccBigQueryExport` Submodule" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport"></a>
+# `sccV2OrganizationSccBigQueryExport` Submodule <a name="`sccV2OrganizationSccBigQueryExport` Submodule" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### SccV2OrganizationSccBigQueryExport <a name="SccV2OrganizationSccBigQueryExport" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport"></a>
+### SccV2OrganizationSccBigQueryExport <a name="SccV2OrganizationSccBigQueryExport" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport"></a>
 
 Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_v2_organization_scc_big_query_export google_scc_v2_organization_scc_big_query_export}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import scc_v2_organization_scc_big_query_export
+from cdktn_provider_google import scc_v2_organization_scc_big_query_export
 
 sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport(
   scope: Construct,
@@ -35,28 +35,28 @@ sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.Initializer.parameter.bigQueryExportId">big_query_export_id</a></code> | <code>str</code> | This must be unique within the organization. |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.Initializer.parameter.organization">organization</a></code> | <code>str</code> | The organization whose Cloud Security Command Center the Big Query Export Config lives in. |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.Initializer.parameter.dataset">dataset</a></code> | <code>str</code> | The dataset to write findings' updates to. |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.Initializer.parameter.description">description</a></code> | <code>str</code> | The description of the notification config (max of 1024 characters). |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.Initializer.parameter.filter">filter</a></code> | <code>str</code> | Expression that defines the filter to apply across create/update events of findings. |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_v2_organization_scc_big_query_export#id SccV2OrganizationSccBigQueryExport#id}. |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.Initializer.parameter.location">location</a></code> | <code>str</code> | location Id is provided by organization. If not provided, Use global as default. |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.Initializer.parameter.name">name</a></code> | <code>str</code> | The resource name of this export, in the format 'organizations/{{organization}}/locations/{{location}}/bigQueryExports/{{big_query_export_id}}'. |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeouts">SccV2OrganizationSccBigQueryExportTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.Initializer.parameter.bigQueryExportId">big_query_export_id</a></code> | <code>str</code> | This must be unique within the organization. |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.Initializer.parameter.organization">organization</a></code> | <code>str</code> | The organization whose Cloud Security Command Center the Big Query Export Config lives in. |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.Initializer.parameter.dataset">dataset</a></code> | <code>str</code> | The dataset to write findings' updates to. |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.Initializer.parameter.description">description</a></code> | <code>str</code> | The description of the notification config (max of 1024 characters). |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.Initializer.parameter.filter">filter</a></code> | <code>str</code> | Expression that defines the filter to apply across create/update events of findings. |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_v2_organization_scc_big_query_export#id SccV2OrganizationSccBigQueryExport#id}. |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.Initializer.parameter.location">location</a></code> | <code>str</code> | location Id is provided by organization. If not provided, Use global as default. |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.Initializer.parameter.name">name</a></code> | <code>str</code> | The resource name of this export, in the format 'organizations/{{organization}}/locations/{{location}}/bigQueryExports/{{big_query_export_id}}'. |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeouts">SccV2OrganizationSccBigQueryExportTimeouts</a></code> | timeouts block. |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -64,7 +64,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -74,49 +74,49 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.Initializer.parameter.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.Initializer.parameter.connection"></a>
 
 - *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.Initializer.parameter.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.Initializer.parameter.count"></a>
 
 - *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.Initializer.parameter.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.Initializer.parameter.dependsOn"></a>
 
 - *Type:* typing.List[cdktf.ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.Initializer.parameter.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.Initializer.parameter.forEach"></a>
 
 - *Type:* cdktf.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.Initializer.parameter.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.Initializer.parameter.lifecycle"></a>
 
 - *Type:* cdktf.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.Initializer.parameter.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.Initializer.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.Initializer.parameter.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.Initializer.parameter.provisioners"></a>
 
 - *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
-##### `big_query_export_id`<sup>Required</sup> <a name="big_query_export_id" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.Initializer.parameter.bigQueryExportId"></a>
+##### `big_query_export_id`<sup>Required</sup> <a name="big_query_export_id" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.Initializer.parameter.bigQueryExportId"></a>
 
 - *Type:* str
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `organization`<sup>Required</sup> <a name="organization" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.Initializer.parameter.organization"></a>
+##### `organization`<sup>Required</sup> <a name="organization" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.Initializer.parameter.organization"></a>
 
 - *Type:* str
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `dataset`<sup>Optional</sup> <a name="dataset" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.Initializer.parameter.dataset"></a>
+##### `dataset`<sup>Optional</sup> <a name="dataset" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.Initializer.parameter.dataset"></a>
 
 - *Type:* str
 
@@ -149,7 +149,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.Initializer.parameter.description"></a>
+##### `description`<sup>Optional</sup> <a name="description" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.Initializer.parameter.description"></a>
 
 - *Type:* str
 
@@ -159,7 +159,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `filter`<sup>Optional</sup> <a name="filter" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.Initializer.parameter.filter"></a>
+##### `filter`<sup>Optional</sup> <a name="filter" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.Initializer.parameter.filter"></a>
 
 - *Type:* str
 
@@ -194,7 +194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.Initializer.parameter.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -205,7 +205,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
-##### `location`<sup>Optional</sup> <a name="location" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.Initializer.parameter.location"></a>
+##### `location`<sup>Optional</sup> <a name="location" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.Initializer.parameter.location"></a>
 
 - *Type:* str
 
@@ -215,7 +215,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `name`<sup>Optional</sup> <a name="name" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.Initializer.parameter.name"></a>
+##### `name`<sup>Optional</sup> <a name="name" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.Initializer.parameter.name"></a>
 
 - *Type:* str
 
@@ -227,9 +227,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.Initializer.parameter.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.Initializer.parameter.timeouts"></a>
 
-- *Type:* <a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeouts">SccV2OrganizationSccBigQueryExportTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeouts">SccV2OrganizationSccBigQueryExportTimeouts</a>
 
 timeouts block.
 
@@ -241,41 +241,41 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.toString">to_string</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.addOverride">add_override</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.toMetadata">to_metadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.hasResourceMove">has_resource_move</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.importFrom">import_from</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.putTimeouts">put_timeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.resetDataset">reset_dataset</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.resetDescription">reset_description</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.resetFilter">reset_filter</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.resetId">reset_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.resetLocation">reset_location</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.resetName">reset_name</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.resetTimeouts">reset_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.toString">to_string</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.addOverride">add_override</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.toMetadata">to_metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.hasResourceMove">has_resource_move</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.importFrom">import_from</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.resetDataset">reset_dataset</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.resetDescription">reset_description</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.resetFilter">reset_filter</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.resetLocation">reset_location</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.resetName">reset_name</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.resetTimeouts">reset_timeouts</a></code> | *No description.* |
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.toString"></a>
 
 ```python
 def to_string() -> str
@@ -283,7 +283,7 @@ def to_string() -> str
 
 Returns a string representation of this construct.
 
-##### `add_override` <a name="add_override" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.addOverride"></a>
+##### `add_override` <a name="add_override" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.addOverride"></a>
 
 ```python
 def add_override(
@@ -292,19 +292,19 @@ def add_override(
 ) -> None
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.addOverride.parameter.path"></a>
 
 - *Type:* str
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.addOverride.parameter.value"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `override_logical_id` <a name="override_logical_id" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.overrideLogicalId"></a>
+##### `override_logical_id` <a name="override_logical_id" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.overrideLogicalId"></a>
 
 ```python
 def override_logical_id(
@@ -314,7 +314,7 @@ def override_logical_id(
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.overrideLogicalId.parameter.newLogicalId"></a>
+###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* str
 
@@ -322,7 +322,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.resetOverrideLogicalId"></a>
+##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.resetOverrideLogicalId"></a>
 
 ```python
 def reset_override_logical_id() -> None
@@ -330,19 +330,19 @@ def reset_override_logical_id() -> None
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.toHclTerraform"></a>
+##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.toHclTerraform"></a>
 
 ```python
 def to_hcl_terraform() -> typing.Any
 ```
 
-##### `to_metadata` <a name="to_metadata" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.toMetadata"></a>
+##### `to_metadata` <a name="to_metadata" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.toMetadata"></a>
 
 ```python
 def to_metadata() -> typing.Any
 ```
 
-##### `to_terraform` <a name="to_terraform" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.toTerraform"></a>
+##### `to_terraform` <a name="to_terraform" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.toTerraform"></a>
 
 ```python
 def to_terraform() -> typing.Any
@@ -350,7 +350,7 @@ def to_terraform() -> typing.Any
 
 Adds this resource to the terraform JSON output.
 
-##### `add_move_target` <a name="add_move_target" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.addMoveTarget"></a>
+##### `add_move_target` <a name="add_move_target" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.addMoveTarget"></a>
 
 ```python
 def add_move_target(
@@ -360,7 +360,7 @@ def add_move_target(
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.addMoveTarget.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -368,7 +368,7 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -376,13 +376,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -390,13 +390,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -404,13 +404,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -418,13 +418,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -432,13 +432,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -446,13 +446,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -460,13 +460,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -474,13 +474,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -488,19 +488,19 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.hasResourceMove"></a>
+##### `has_resource_move` <a name="has_resource_move" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.hasResourceMove"></a>
 
 ```python
 def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `import_from` <a name="import_from" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.importFrom"></a>
+##### `import_from` <a name="import_from" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.importFrom"></a>
 
 ```python
 def import_from(
@@ -509,19 +509,19 @@ def import_from(
 ) -> None
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.importFrom.parameter.id"></a>
 
 - *Type:* str
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.importFrom.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -529,13 +529,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `move_from_id` <a name="move_from_id" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.moveFromId"></a>
+##### `move_from_id` <a name="move_from_id" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.moveFromId"></a>
 
 ```python
 def move_from_id(
@@ -547,7 +547,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.moveFromId.parameter.id"></a>
 
 - *Type:* str
 
@@ -555,7 +555,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `move_to` <a name="move_to" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.moveTo"></a>
+##### `move_to` <a name="move_to" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.moveTo"></a>
 
 ```python
 def move_to(
@@ -566,7 +566,7 @@ def move_to(
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.moveTo.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.moveTo.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -574,7 +574,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.moveTo.parameter.index"></a>
 
 - *Type:* str | typing.Union[int, float]
 
@@ -582,7 +582,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `move_to_id` <a name="move_to_id" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.moveToId"></a>
+##### `move_to_id` <a name="move_to_id" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.moveToId"></a>
 
 ```python
 def move_to_id(
@@ -592,7 +592,7 @@ def move_to_id(
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.moveToId.parameter.id"></a>
 
 - *Type:* str
 
@@ -600,7 +600,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `put_timeouts` <a name="put_timeouts" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.putTimeouts"></a>
+##### `put_timeouts` <a name="put_timeouts" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.putTimeouts"></a>
 
 ```python
 def put_timeouts(
@@ -610,7 +610,7 @@ def put_timeouts(
 ) -> None
 ```
 
-###### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.putTimeouts.parameter.create"></a>
+###### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.putTimeouts.parameter.create"></a>
 
 - *Type:* str
 
@@ -618,7 +618,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.putTimeouts.parameter.delete"></a>
+###### `delete`<sup>Optional</sup> <a name="delete" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.putTimeouts.parameter.delete"></a>
 
 - *Type:* str
 
@@ -626,7 +626,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.putTimeouts.parameter.update"></a>
+###### `update`<sup>Optional</sup> <a name="update" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.putTimeouts.parameter.update"></a>
 
 - *Type:* str
 
@@ -634,43 +634,43 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `reset_dataset` <a name="reset_dataset" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.resetDataset"></a>
+##### `reset_dataset` <a name="reset_dataset" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.resetDataset"></a>
 
 ```python
 def reset_dataset() -> None
 ```
 
-##### `reset_description` <a name="reset_description" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.resetDescription"></a>
+##### `reset_description` <a name="reset_description" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.resetDescription"></a>
 
 ```python
 def reset_description() -> None
 ```
 
-##### `reset_filter` <a name="reset_filter" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.resetFilter"></a>
+##### `reset_filter` <a name="reset_filter" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.resetFilter"></a>
 
 ```python
 def reset_filter() -> None
 ```
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.resetId"></a>
+##### `reset_id` <a name="reset_id" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.resetId"></a>
 
 ```python
 def reset_id() -> None
 ```
 
-##### `reset_location` <a name="reset_location" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.resetLocation"></a>
+##### `reset_location` <a name="reset_location" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.resetLocation"></a>
 
 ```python
 def reset_location() -> None
 ```
 
-##### `reset_name` <a name="reset_name" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.resetName"></a>
+##### `reset_name` <a name="reset_name" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.resetName"></a>
 
 ```python
 def reset_name() -> None
 ```
 
-##### `reset_timeouts` <a name="reset_timeouts" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.resetTimeouts"></a>
+##### `reset_timeouts` <a name="reset_timeouts" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.resetTimeouts"></a>
 
 ```python
 def reset_timeouts() -> None
@@ -680,17 +680,17 @@ def reset_timeouts() -> None
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.isTerraformElement">is_terraform_element</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a SccV2OrganizationSccBigQueryExport resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.isTerraformElement">is_terraform_element</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a SccV2OrganizationSccBigQueryExport resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `is_construct` <a name="is_construct" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.isConstruct"></a>
+##### `is_construct` <a name="is_construct" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.isConstruct"></a>
 
 ```python
-from cdktf_cdktf_provider_google import scc_v2_organization_scc_big_query_export
+from cdktn_provider_google import scc_v2_organization_scc_big_query_export
 
 sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.is_construct(
   x: typing.Any
@@ -713,7 +713,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.isConstruct.parameter.x"></a>
 
 - *Type:* typing.Any
 
@@ -721,42 +721,42 @@ Any object.
 
 ---
 
-##### `is_terraform_element` <a name="is_terraform_element" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.isTerraformElement"></a>
+##### `is_terraform_element` <a name="is_terraform_element" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.isTerraformElement"></a>
 
 ```python
-from cdktf_cdktf_provider_google import scc_v2_organization_scc_big_query_export
+from cdktn_provider_google import scc_v2_organization_scc_big_query_export
 
 sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.is_terraform_element(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.isTerraformElement.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.isTerraformResource"></a>
+##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.isTerraformResource"></a>
 
 ```python
-from cdktf_cdktf_provider_google import scc_v2_organization_scc_big_query_export
+from cdktn_provider_google import scc_v2_organization_scc_big_query_export
 
 sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.is_terraform_resource(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.isTerraformResource.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.generateConfigForImport"></a>
+##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.generateConfigForImport"></a>
 
 ```python
-from cdktf_cdktf_provider_google import scc_v2_organization_scc_big_query_export
+from cdktn_provider_google import scc_v2_organization_scc_big_query_export
 
 sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.generate_config_for_import(
   scope: Construct,
@@ -768,7 +768,7 @@ sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.generate_c
 
 Generates CDKTF code for importing a SccV2OrganizationSccBigQueryExport resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -776,7 +776,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.generateConfigForImport.parameter.importToId"></a>
+###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* str
 
@@ -784,7 +784,7 @@ The construct id used in the generated config for the SccV2OrganizationSccBigQue
 
 ---
 
-###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.generateConfigForImport.parameter.importFromId"></a>
+###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* str
 
@@ -794,7 +794,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
@@ -806,46 +806,46 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.createTime">create_time</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.mostRecentEditor">most_recent_editor</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.principal">principal</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference">SccV2OrganizationSccBigQueryExportTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.updateTime">update_time</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.bigQueryExportIdInput">big_query_export_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.datasetInput">dataset_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.filterInput">filter_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.locationInput">location_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.organizationInput">organization_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeouts">SccV2OrganizationSccBigQueryExportTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.bigQueryExportId">big_query_export_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.dataset">dataset</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.description">description</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.filter">filter</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.location">location</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.organization">organization</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.createTime">create_time</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.mostRecentEditor">most_recent_editor</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.principal">principal</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference">SccV2OrganizationSccBigQueryExportTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.updateTime">update_time</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.bigQueryExportIdInput">big_query_export_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.datasetInput">dataset_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.filterInput">filter_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.locationInput">location_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.organizationInput">organization_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeouts">SccV2OrganizationSccBigQueryExportTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.bigQueryExportId">big_query_export_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.dataset">dataset</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.description">description</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.filter">filter</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.location">location</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.organization">organization</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.node"></a>
 
 ```python
 node: Node
@@ -857,7 +857,7 @@ The tree node.
 
 ---
 
-##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.cdktfStack"></a>
+##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.cdktfStack"></a>
 
 ```python
 cdktf_stack: TerraformStack
@@ -867,7 +867,7 @@ cdktf_stack: TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.fqn"></a>
 
 ```python
 fqn: str
@@ -877,7 +877,7 @@ fqn: str
 
 ---
 
-##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.friendlyUniqueId"></a>
+##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.friendlyUniqueId"></a>
 
 ```python
 friendly_unique_id: str
@@ -887,7 +887,7 @@ friendly_unique_id: str
 
 ---
 
-##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.terraformMetaArguments"></a>
+##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.terraformMetaArguments"></a>
 
 ```python
 terraform_meta_arguments: typing.Mapping[typing.Any]
@@ -897,7 +897,7 @@ terraform_meta_arguments: typing.Mapping[typing.Any]
 
 ---
 
-##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.terraformResourceType"></a>
+##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.terraformResourceType"></a>
 
 ```python
 terraform_resource_type: str
@@ -907,7 +907,7 @@ terraform_resource_type: str
 
 ---
 
-##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.terraformGeneratorMetadata"></a>
+##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.terraformGeneratorMetadata"></a>
 
 ```python
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
@@ -917,7 +917,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
@@ -927,7 +927,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -937,7 +937,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[str]
@@ -947,7 +947,7 @@ depends_on: typing.List[str]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -957,7 +957,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -967,7 +967,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -977,7 +977,7 @@ provider: TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
@@ -987,7 +987,7 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `create_time`<sup>Required</sup> <a name="create_time" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.createTime"></a>
+##### `create_time`<sup>Required</sup> <a name="create_time" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.createTime"></a>
 
 ```python
 create_time: str
@@ -997,7 +997,7 @@ create_time: str
 
 ---
 
-##### `most_recent_editor`<sup>Required</sup> <a name="most_recent_editor" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.mostRecentEditor"></a>
+##### `most_recent_editor`<sup>Required</sup> <a name="most_recent_editor" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.mostRecentEditor"></a>
 
 ```python
 most_recent_editor: str
@@ -1007,7 +1007,7 @@ most_recent_editor: str
 
 ---
 
-##### `principal`<sup>Required</sup> <a name="principal" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.principal"></a>
+##### `principal`<sup>Required</sup> <a name="principal" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.principal"></a>
 
 ```python
 principal: str
@@ -1017,17 +1017,17 @@ principal: str
 
 ---
 
-##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.timeouts"></a>
+##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.timeouts"></a>
 
 ```python
 timeouts: SccV2OrganizationSccBigQueryExportTimeoutsOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference">SccV2OrganizationSccBigQueryExportTimeoutsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference">SccV2OrganizationSccBigQueryExportTimeoutsOutputReference</a>
 
 ---
 
-##### `update_time`<sup>Required</sup> <a name="update_time" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.updateTime"></a>
+##### `update_time`<sup>Required</sup> <a name="update_time" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.updateTime"></a>
 
 ```python
 update_time: str
@@ -1037,7 +1037,7 @@ update_time: str
 
 ---
 
-##### `big_query_export_id_input`<sup>Optional</sup> <a name="big_query_export_id_input" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.bigQueryExportIdInput"></a>
+##### `big_query_export_id_input`<sup>Optional</sup> <a name="big_query_export_id_input" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.bigQueryExportIdInput"></a>
 
 ```python
 big_query_export_id_input: str
@@ -1047,7 +1047,7 @@ big_query_export_id_input: str
 
 ---
 
-##### `dataset_input`<sup>Optional</sup> <a name="dataset_input" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.datasetInput"></a>
+##### `dataset_input`<sup>Optional</sup> <a name="dataset_input" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.datasetInput"></a>
 
 ```python
 dataset_input: str
@@ -1057,7 +1057,7 @@ dataset_input: str
 
 ---
 
-##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.descriptionInput"></a>
+##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.descriptionInput"></a>
 
 ```python
 description_input: str
@@ -1067,7 +1067,7 @@ description_input: str
 
 ---
 
-##### `filter_input`<sup>Optional</sup> <a name="filter_input" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.filterInput"></a>
+##### `filter_input`<sup>Optional</sup> <a name="filter_input" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.filterInput"></a>
 
 ```python
 filter_input: str
@@ -1077,7 +1077,7 @@ filter_input: str
 
 ---
 
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.idInput"></a>
+##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.idInput"></a>
 
 ```python
 id_input: str
@@ -1087,7 +1087,7 @@ id_input: str
 
 ---
 
-##### `location_input`<sup>Optional</sup> <a name="location_input" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.locationInput"></a>
+##### `location_input`<sup>Optional</sup> <a name="location_input" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.locationInput"></a>
 
 ```python
 location_input: str
@@ -1097,7 +1097,7 @@ location_input: str
 
 ---
 
-##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.nameInput"></a>
+##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.nameInput"></a>
 
 ```python
 name_input: str
@@ -1107,7 +1107,7 @@ name_input: str
 
 ---
 
-##### `organization_input`<sup>Optional</sup> <a name="organization_input" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.organizationInput"></a>
+##### `organization_input`<sup>Optional</sup> <a name="organization_input" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.organizationInput"></a>
 
 ```python
 organization_input: str
@@ -1117,17 +1117,17 @@ organization_input: str
 
 ---
 
-##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.timeoutsInput"></a>
+##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.timeoutsInput"></a>
 
 ```python
 timeouts_input: IResolvable | SccV2OrganizationSccBigQueryExportTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeouts">SccV2OrganizationSccBigQueryExportTimeouts</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeouts">SccV2OrganizationSccBigQueryExportTimeouts</a>
 
 ---
 
-##### `big_query_export_id`<sup>Required</sup> <a name="big_query_export_id" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.bigQueryExportId"></a>
+##### `big_query_export_id`<sup>Required</sup> <a name="big_query_export_id" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.bigQueryExportId"></a>
 
 ```python
 big_query_export_id: str
@@ -1137,7 +1137,7 @@ big_query_export_id: str
 
 ---
 
-##### `dataset`<sup>Required</sup> <a name="dataset" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.dataset"></a>
+##### `dataset`<sup>Required</sup> <a name="dataset" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.dataset"></a>
 
 ```python
 dataset: str
@@ -1147,7 +1147,7 @@ dataset: str
 
 ---
 
-##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.description"></a>
+##### `description`<sup>Required</sup> <a name="description" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.description"></a>
 
 ```python
 description: str
@@ -1157,7 +1157,7 @@ description: str
 
 ---
 
-##### `filter`<sup>Required</sup> <a name="filter" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.filter"></a>
+##### `filter`<sup>Required</sup> <a name="filter" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.filter"></a>
 
 ```python
 filter: str
@@ -1167,7 +1167,7 @@ filter: str
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.id"></a>
 
 ```python
 id: str
@@ -1177,7 +1177,7 @@ id: str
 
 ---
 
-##### `location`<sup>Required</sup> <a name="location" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.location"></a>
+##### `location`<sup>Required</sup> <a name="location" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.location"></a>
 
 ```python
 location: str
@@ -1187,7 +1187,7 @@ location: str
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.name"></a>
 
 ```python
 name: str
@@ -1197,7 +1197,7 @@ name: str
 
 ---
 
-##### `organization`<sup>Required</sup> <a name="organization" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.organization"></a>
+##### `organization`<sup>Required</sup> <a name="organization" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.organization"></a>
 
 ```python
 organization: str
@@ -1211,11 +1211,11 @@ organization: str
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExport.property.tfResourceType"></a>
 
 ```python
 tfResourceType: str
@@ -1227,12 +1227,12 @@ tfResourceType: str
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### SccV2OrganizationSccBigQueryExportConfig <a name="SccV2OrganizationSccBigQueryExportConfig" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportConfig"></a>
+### SccV2OrganizationSccBigQueryExportConfig <a name="SccV2OrganizationSccBigQueryExportConfig" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportConfig.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import scc_v2_organization_scc_big_query_export
+from cdktn_provider_google import scc_v2_organization_scc_big_query_export
 
 sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportConfig(
   connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
@@ -1258,26 +1258,26 @@ sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportConfig.property.bigQueryExportId">big_query_export_id</a></code> | <code>str</code> | This must be unique within the organization. |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportConfig.property.organization">organization</a></code> | <code>str</code> | The organization whose Cloud Security Command Center the Big Query Export Config lives in. |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportConfig.property.dataset">dataset</a></code> | <code>str</code> | The dataset to write findings' updates to. |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportConfig.property.description">description</a></code> | <code>str</code> | The description of the notification config (max of 1024 characters). |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportConfig.property.filter">filter</a></code> | <code>str</code> | Expression that defines the filter to apply across create/update events of findings. |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_v2_organization_scc_big_query_export#id SccV2OrganizationSccBigQueryExport#id}. |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportConfig.property.location">location</a></code> | <code>str</code> | location Id is provided by organization. If not provided, Use global as default. |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportConfig.property.name">name</a></code> | <code>str</code> | The resource name of this export, in the format 'organizations/{{organization}}/locations/{{location}}/bigQueryExports/{{big_query_export_id}}'. |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeouts">SccV2OrganizationSccBigQueryExportTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportConfig.property.bigQueryExportId">big_query_export_id</a></code> | <code>str</code> | This must be unique within the organization. |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportConfig.property.organization">organization</a></code> | <code>str</code> | The organization whose Cloud Security Command Center the Big Query Export Config lives in. |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportConfig.property.dataset">dataset</a></code> | <code>str</code> | The dataset to write findings' updates to. |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportConfig.property.description">description</a></code> | <code>str</code> | The description of the notification config (max of 1024 characters). |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportConfig.property.filter">filter</a></code> | <code>str</code> | Expression that defines the filter to apply across create/update events of findings. |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_v2_organization_scc_big_query_export#id SccV2OrganizationSccBigQueryExport#id}. |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportConfig.property.location">location</a></code> | <code>str</code> | location Id is provided by organization. If not provided, Use global as default. |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportConfig.property.name">name</a></code> | <code>str</code> | The resource name of this export, in the format 'organizations/{{organization}}/locations/{{location}}/bigQueryExports/{{big_query_export_id}}'. |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeouts">SccV2OrganizationSccBigQueryExportTimeouts</a></code> | timeouts block. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportConfig.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
@@ -1287,7 +1287,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportConfig.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -1297,7 +1297,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportConfig.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportConfig.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[ITerraformDependable]
@@ -1307,7 +1307,7 @@ depends_on: typing.List[ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportConfig.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportConfig.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -1317,7 +1317,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportConfig.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -1327,7 +1327,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportConfig.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -1337,7 +1337,7 @@ provider: TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportConfig.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
@@ -1347,7 +1347,7 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `big_query_export_id`<sup>Required</sup> <a name="big_query_export_id" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportConfig.property.bigQueryExportId"></a>
+##### `big_query_export_id`<sup>Required</sup> <a name="big_query_export_id" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportConfig.property.bigQueryExportId"></a>
 
 ```python
 big_query_export_id: str
@@ -1361,7 +1361,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `organization`<sup>Required</sup> <a name="organization" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportConfig.property.organization"></a>
+##### `organization`<sup>Required</sup> <a name="organization" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportConfig.property.organization"></a>
 
 ```python
 organization: str
@@ -1375,7 +1375,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `dataset`<sup>Optional</sup> <a name="dataset" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportConfig.property.dataset"></a>
+##### `dataset`<sup>Optional</sup> <a name="dataset" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportConfig.property.dataset"></a>
 
 ```python
 dataset: str
@@ -1392,7 +1392,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportConfig.property.description"></a>
+##### `description`<sup>Optional</sup> <a name="description" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportConfig.property.description"></a>
 
 ```python
 description: str
@@ -1406,7 +1406,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `filter`<sup>Optional</sup> <a name="filter" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportConfig.property.filter"></a>
+##### `filter`<sup>Optional</sup> <a name="filter" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportConfig.property.filter"></a>
 
 ```python
 filter: str
@@ -1445,7 +1445,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportConfig.property.id"></a>
 
 ```python
 id: str
@@ -1460,7 +1460,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
-##### `location`<sup>Optional</sup> <a name="location" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportConfig.property.location"></a>
+##### `location`<sup>Optional</sup> <a name="location" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportConfig.property.location"></a>
 
 ```python
 location: str
@@ -1474,7 +1474,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `name`<sup>Optional</sup> <a name="name" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportConfig.property.name"></a>
+##### `name`<sup>Optional</sup> <a name="name" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportConfig.property.name"></a>
 
 ```python
 name: str
@@ -1490,13 +1490,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportConfig.property.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportConfig.property.timeouts"></a>
 
 ```python
 timeouts: SccV2OrganizationSccBigQueryExportTimeouts
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeouts">SccV2OrganizationSccBigQueryExportTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeouts">SccV2OrganizationSccBigQueryExportTimeouts</a>
 
 timeouts block.
 
@@ -1504,12 +1504,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### SccV2OrganizationSccBigQueryExportTimeouts <a name="SccV2OrganizationSccBigQueryExportTimeouts" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeouts"></a>
+### SccV2OrganizationSccBigQueryExportTimeouts <a name="SccV2OrganizationSccBigQueryExportTimeouts" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeouts"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeouts.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeouts.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import scc_v2_organization_scc_big_query_export
+from cdktn_provider_google import scc_v2_organization_scc_big_query_export
 
 sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeouts(
   create: str = None,
@@ -1522,13 +1522,13 @@ sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_v2_organization_scc_big_query_export#create SccV2OrganizationSccBigQueryExport#create}. |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_v2_organization_scc_big_query_export#delete SccV2OrganizationSccBigQueryExport#delete}. |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_v2_organization_scc_big_query_export#update SccV2OrganizationSccBigQueryExport#update}. |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_v2_organization_scc_big_query_export#create SccV2OrganizationSccBigQueryExport#create}. |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_v2_organization_scc_big_query_export#delete SccV2OrganizationSccBigQueryExport#delete}. |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_v2_organization_scc_big_query_export#update SccV2OrganizationSccBigQueryExport#update}. |
 
 ---
 
-##### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeouts.property.create"></a>
+##### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeouts.property.create"></a>
 
 ```python
 create: str
@@ -1540,7 +1540,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeouts.property.delete"></a>
+##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeouts.property.delete"></a>
 
 ```python
 delete: str
@@ -1552,7 +1552,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeouts.property.update"></a>
+##### `update`<sup>Optional</sup> <a name="update" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeouts.property.update"></a>
 
 ```python
 update: str
@@ -1566,12 +1566,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### SccV2OrganizationSccBigQueryExportTimeoutsOutputReference <a name="SccV2OrganizationSccBigQueryExportTimeoutsOutputReference" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference"></a>
+### SccV2OrganizationSccBigQueryExportTimeoutsOutputReference <a name="SccV2OrganizationSccBigQueryExportTimeoutsOutputReference" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import scc_v2_organization_scc_big_query_export
+from cdktn_provider_google import scc_v2_organization_scc_big_query_export
 
 sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -1581,12 +1581,12 @@ sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOut
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -1594,7 +1594,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -1606,32 +1606,32 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.resetCreate">reset_create</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.resetDelete">reset_delete</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.resetUpdate">reset_update</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.resetCreate">reset_create</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.resetDelete">reset_delete</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.resetUpdate">reset_update</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -1639,13 +1639,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -1653,13 +1653,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -1667,13 +1667,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -1681,13 +1681,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -1695,13 +1695,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -1709,13 +1709,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -1723,13 +1723,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -1737,13 +1737,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -1751,13 +1751,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -1765,13 +1765,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -1781,13 +1781,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -1797,19 +1797,19 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_create` <a name="reset_create" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.resetCreate"></a>
+##### `reset_create` <a name="reset_create" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.resetCreate"></a>
 
 ```python
 def reset_create() -> None
 ```
 
-##### `reset_delete` <a name="reset_delete" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.resetDelete"></a>
+##### `reset_delete` <a name="reset_delete" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.resetDelete"></a>
 
 ```python
 def reset_delete() -> None
 ```
 
-##### `reset_update` <a name="reset_update" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.resetUpdate"></a>
+##### `reset_update` <a name="reset_update" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.resetUpdate"></a>
 
 ```python
 def reset_update() -> None
@@ -1820,19 +1820,19 @@ def reset_update() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.property.createInput">create_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.property.updateInput">update_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeouts">SccV2OrganizationSccBigQueryExportTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.property.createInput">create_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.property.updateInput">update_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeouts">SccV2OrganizationSccBigQueryExportTimeouts</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -1846,7 +1846,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -1856,7 +1856,7 @@ fqn: str
 
 ---
 
-##### `create_input`<sup>Optional</sup> <a name="create_input" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.property.createInput"></a>
+##### `create_input`<sup>Optional</sup> <a name="create_input" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.property.createInput"></a>
 
 ```python
 create_input: str
@@ -1866,7 +1866,7 @@ create_input: str
 
 ---
 
-##### `delete_input`<sup>Optional</sup> <a name="delete_input" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.property.deleteInput"></a>
+##### `delete_input`<sup>Optional</sup> <a name="delete_input" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.property.deleteInput"></a>
 
 ```python
 delete_input: str
@@ -1876,7 +1876,7 @@ delete_input: str
 
 ---
 
-##### `update_input`<sup>Optional</sup> <a name="update_input" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.property.updateInput"></a>
+##### `update_input`<sup>Optional</sup> <a name="update_input" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.property.updateInput"></a>
 
 ```python
 update_input: str
@@ -1886,7 +1886,7 @@ update_input: str
 
 ---
 
-##### `create`<sup>Required</sup> <a name="create" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.property.create"></a>
+##### `create`<sup>Required</sup> <a name="create" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.property.create"></a>
 
 ```python
 create: str
@@ -1896,7 +1896,7 @@ create: str
 
 ---
 
-##### `delete`<sup>Required</sup> <a name="delete" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.property.delete"></a>
+##### `delete`<sup>Required</sup> <a name="delete" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.property.delete"></a>
 
 ```python
 delete: str
@@ -1906,7 +1906,7 @@ delete: str
 
 ---
 
-##### `update`<sup>Required</sup> <a name="update" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.property.update"></a>
+##### `update`<sup>Required</sup> <a name="update" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.property.update"></a>
 
 ```python
 update: str
@@ -1916,13 +1916,13 @@ update: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | SccV2OrganizationSccBigQueryExportTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeouts">SccV2OrganizationSccBigQueryExportTimeouts</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.sccV2OrganizationSccBigQueryExport.SccV2OrganizationSccBigQueryExportTimeouts">SccV2OrganizationSccBigQueryExportTimeouts</a>
 
 ---
 
