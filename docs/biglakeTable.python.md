@@ -1,15 +1,15 @@
-# `biglakeTable` Submodule <a name="`biglakeTable` Submodule" id="@cdktf/provider-google.biglakeTable"></a>
+# `biglakeTable` Submodule <a name="`biglakeTable` Submodule" id="@cdktn/provider-google.biglakeTable"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### BiglakeTable <a name="BiglakeTable" id="@cdktf/provider-google.biglakeTable.BiglakeTable"></a>
+### BiglakeTable <a name="BiglakeTable" id="@cdktn/provider-google.biglakeTable.BiglakeTable"></a>
 
 Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/biglake_table google_biglake_table}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.biglakeTable.BiglakeTable.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.biglakeTable.BiglakeTable.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import biglake_table
+from cdktn_provider_google import biglake_table
 
 biglakeTable.BiglakeTable(
   scope: Construct,
@@ -32,25 +32,25 @@ biglakeTable.BiglakeTable(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.Initializer.parameter.name">name</a></code> | <code>str</code> | Output only. The name of the Table. Format: projects/{project_id_or_number}/locations/{locationId}/catalogs/{catalogId}/databases/{databaseId}/tables/{tableId}. |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.Initializer.parameter.database">database</a></code> | <code>str</code> | The id of the parent database. |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.Initializer.parameter.hiveOptions">hive_options</a></code> | <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptions">BiglakeTableHiveOptions</a></code> | hive_options block. |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/biglake_table#id BiglakeTable#id}. |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableTimeouts">BiglakeTableTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.Initializer.parameter.type">type</a></code> | <code>str</code> | The database type. Possible values: ["HIVE"]. |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.Initializer.parameter.name">name</a></code> | <code>str</code> | Output only. The name of the Table. Format: projects/{project_id_or_number}/locations/{locationId}/catalogs/{catalogId}/databases/{databaseId}/tables/{tableId}. |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.Initializer.parameter.database">database</a></code> | <code>str</code> | The id of the parent database. |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.Initializer.parameter.hiveOptions">hive_options</a></code> | <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptions">BiglakeTableHiveOptions</a></code> | hive_options block. |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/biglake_table#id BiglakeTable#id}. |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableTimeouts">BiglakeTableTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.Initializer.parameter.type">type</a></code> | <code>str</code> | The database type. Possible values: ["HIVE"]. |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-google.biglakeTable.BiglakeTable.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.biglakeTable.BiglakeTable.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -58,7 +58,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.biglakeTable.BiglakeTable.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.biglakeTable.BiglakeTable.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -68,49 +68,49 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-google.biglakeTable.BiglakeTable.Initializer.parameter.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.biglakeTable.BiglakeTable.Initializer.parameter.connection"></a>
 
 - *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-google.biglakeTable.BiglakeTable.Initializer.parameter.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.biglakeTable.BiglakeTable.Initializer.parameter.count"></a>
 
 - *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-google.biglakeTable.BiglakeTable.Initializer.parameter.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.biglakeTable.BiglakeTable.Initializer.parameter.dependsOn"></a>
 
 - *Type:* typing.List[cdktf.ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-google.biglakeTable.BiglakeTable.Initializer.parameter.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.biglakeTable.BiglakeTable.Initializer.parameter.forEach"></a>
 
 - *Type:* cdktf.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-google.biglakeTable.BiglakeTable.Initializer.parameter.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.biglakeTable.BiglakeTable.Initializer.parameter.lifecycle"></a>
 
 - *Type:* cdktf.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.biglakeTable.BiglakeTable.Initializer.parameter.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.biglakeTable.BiglakeTable.Initializer.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-google.biglakeTable.BiglakeTable.Initializer.parameter.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.biglakeTable.BiglakeTable.Initializer.parameter.provisioners"></a>
 
 - *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-google.biglakeTable.BiglakeTable.Initializer.parameter.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-google.biglakeTable.BiglakeTable.Initializer.parameter.name"></a>
 
 - *Type:* str
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `database`<sup>Optional</sup> <a name="database" id="@cdktf/provider-google.biglakeTable.BiglakeTable.Initializer.parameter.database"></a>
+##### `database`<sup>Optional</sup> <a name="database" id="@cdktn/provider-google.biglakeTable.BiglakeTable.Initializer.parameter.database"></a>
 
 - *Type:* str
 
@@ -130,9 +130,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `hive_options`<sup>Optional</sup> <a name="hive_options" id="@cdktf/provider-google.biglakeTable.BiglakeTable.Initializer.parameter.hiveOptions"></a>
+##### `hive_options`<sup>Optional</sup> <a name="hive_options" id="@cdktn/provider-google.biglakeTable.BiglakeTable.Initializer.parameter.hiveOptions"></a>
 
-- *Type:* <a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptions">BiglakeTableHiveOptions</a>
+- *Type:* <a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptions">BiglakeTableHiveOptions</a>
 
 hive_options block.
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-google.biglakeTable.BiglakeTable.Initializer.parameter.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-google.biglakeTable.BiglakeTable.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -151,9 +151,9 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-google.biglakeTable.BiglakeTable.Initializer.parameter.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-google.biglakeTable.BiglakeTable.Initializer.parameter.timeouts"></a>
 
-- *Type:* <a href="#@cdktf/provider-google.biglakeTable.BiglakeTableTimeouts">BiglakeTableTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-google.biglakeTable.BiglakeTableTimeouts">BiglakeTableTimeouts</a>
 
 timeouts block.
 
@@ -161,7 +161,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `type`<sup>Optional</sup> <a name="type" id="@cdktf/provider-google.biglakeTable.BiglakeTable.Initializer.parameter.type"></a>
+##### `type`<sup>Optional</sup> <a name="type" id="@cdktn/provider-google.biglakeTable.BiglakeTable.Initializer.parameter.type"></a>
 
 - *Type:* str
 
@@ -175,40 +175,40 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.toString">to_string</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.addOverride">add_override</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.toMetadata">to_metadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.hasResourceMove">has_resource_move</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.importFrom">import_from</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.putHiveOptions">put_hive_options</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.putTimeouts">put_timeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.resetDatabase">reset_database</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.resetHiveOptions">reset_hive_options</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.resetId">reset_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.resetTimeouts">reset_timeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.resetType">reset_type</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.toString">to_string</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.addOverride">add_override</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.toMetadata">to_metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.hasResourceMove">has_resource_move</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.importFrom">import_from</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.putHiveOptions">put_hive_options</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.resetDatabase">reset_database</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.resetHiveOptions">reset_hive_options</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.resetTimeouts">reset_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.resetType">reset_type</a></code> | *No description.* |
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-google.biglakeTable.BiglakeTable.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.biglakeTable.BiglakeTable.toString"></a>
 
 ```python
 def to_string() -> str
@@ -216,7 +216,7 @@ def to_string() -> str
 
 Returns a string representation of this construct.
 
-##### `add_override` <a name="add_override" id="@cdktf/provider-google.biglakeTable.BiglakeTable.addOverride"></a>
+##### `add_override` <a name="add_override" id="@cdktn/provider-google.biglakeTable.BiglakeTable.addOverride"></a>
 
 ```python
 def add_override(
@@ -225,19 +225,19 @@ def add_override(
 ) -> None
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-google.biglakeTable.BiglakeTable.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-google.biglakeTable.BiglakeTable.addOverride.parameter.path"></a>
 
 - *Type:* str
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google.biglakeTable.BiglakeTable.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.biglakeTable.BiglakeTable.addOverride.parameter.value"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `override_logical_id` <a name="override_logical_id" id="@cdktf/provider-google.biglakeTable.BiglakeTable.overrideLogicalId"></a>
+##### `override_logical_id` <a name="override_logical_id" id="@cdktn/provider-google.biglakeTable.BiglakeTable.overrideLogicalId"></a>
 
 ```python
 def override_logical_id(
@@ -247,7 +247,7 @@ def override_logical_id(
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktf/provider-google.biglakeTable.BiglakeTable.overrideLogicalId.parameter.newLogicalId"></a>
+###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktn/provider-google.biglakeTable.BiglakeTable.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* str
 
@@ -255,7 +255,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktf/provider-google.biglakeTable.BiglakeTable.resetOverrideLogicalId"></a>
+##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktn/provider-google.biglakeTable.BiglakeTable.resetOverrideLogicalId"></a>
 
 ```python
 def reset_override_logical_id() -> None
@@ -263,19 +263,19 @@ def reset_override_logical_id() -> None
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktf/provider-google.biglakeTable.BiglakeTable.toHclTerraform"></a>
+##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktn/provider-google.biglakeTable.BiglakeTable.toHclTerraform"></a>
 
 ```python
 def to_hcl_terraform() -> typing.Any
 ```
 
-##### `to_metadata` <a name="to_metadata" id="@cdktf/provider-google.biglakeTable.BiglakeTable.toMetadata"></a>
+##### `to_metadata` <a name="to_metadata" id="@cdktn/provider-google.biglakeTable.BiglakeTable.toMetadata"></a>
 
 ```python
 def to_metadata() -> typing.Any
 ```
 
-##### `to_terraform` <a name="to_terraform" id="@cdktf/provider-google.biglakeTable.BiglakeTable.toTerraform"></a>
+##### `to_terraform` <a name="to_terraform" id="@cdktn/provider-google.biglakeTable.BiglakeTable.toTerraform"></a>
 
 ```python
 def to_terraform() -> typing.Any
@@ -283,7 +283,7 @@ def to_terraform() -> typing.Any
 
 Adds this resource to the terraform JSON output.
 
-##### `add_move_target` <a name="add_move_target" id="@cdktf/provider-google.biglakeTable.BiglakeTable.addMoveTarget"></a>
+##### `add_move_target` <a name="add_move_target" id="@cdktn/provider-google.biglakeTable.BiglakeTable.addMoveTarget"></a>
 
 ```python
 def add_move_target(
@@ -293,7 +293,7 @@ def add_move_target(
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-google.biglakeTable.BiglakeTable.addMoveTarget.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-google.biglakeTable.BiglakeTable.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -301,7 +301,7 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTable.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTable.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -309,13 +309,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTable.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTable.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTable.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTable.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -323,13 +323,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTable.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTable.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTable.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTable.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -337,13 +337,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTable.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTable.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTable.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTable.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -351,13 +351,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTable.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTable.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTable.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTable.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -365,13 +365,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTable.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTable.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTable.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTable.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -379,13 +379,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTable.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTable.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTable.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTable.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -393,13 +393,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTable.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTable.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTable.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTable.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -407,13 +407,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTable.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTable.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTable.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTable.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -421,19 +421,19 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTable.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTable.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-google.biglakeTable.BiglakeTable.hasResourceMove"></a>
+##### `has_resource_move` <a name="has_resource_move" id="@cdktn/provider-google.biglakeTable.BiglakeTable.hasResourceMove"></a>
 
 ```python
 def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `import_from` <a name="import_from" id="@cdktf/provider-google.biglakeTable.BiglakeTable.importFrom"></a>
+##### `import_from` <a name="import_from" id="@cdktn/provider-google.biglakeTable.BiglakeTable.importFrom"></a>
 
 ```python
 def import_from(
@@ -442,19 +442,19 @@ def import_from(
 ) -> None
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.biglakeTable.BiglakeTable.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.biglakeTable.BiglakeTable.importFrom.parameter.id"></a>
 
 - *Type:* str
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.biglakeTable.BiglakeTable.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.biglakeTable.BiglakeTable.importFrom.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTable.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTable.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -462,13 +462,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTable.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTable.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `move_from_id` <a name="move_from_id" id="@cdktf/provider-google.biglakeTable.BiglakeTable.moveFromId"></a>
+##### `move_from_id` <a name="move_from_id" id="@cdktn/provider-google.biglakeTable.BiglakeTable.moveFromId"></a>
 
 ```python
 def move_from_id(
@@ -480,7 +480,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.biglakeTable.BiglakeTable.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.biglakeTable.BiglakeTable.moveFromId.parameter.id"></a>
 
 - *Type:* str
 
@@ -488,7 +488,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `move_to` <a name="move_to" id="@cdktf/provider-google.biglakeTable.BiglakeTable.moveTo"></a>
+##### `move_to` <a name="move_to" id="@cdktn/provider-google.biglakeTable.BiglakeTable.moveTo"></a>
 
 ```python
 def move_to(
@@ -499,7 +499,7 @@ def move_to(
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-google.biglakeTable.BiglakeTable.moveTo.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-google.biglakeTable.BiglakeTable.moveTo.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -507,7 +507,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-google.biglakeTable.BiglakeTable.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-google.biglakeTable.BiglakeTable.moveTo.parameter.index"></a>
 
 - *Type:* str | typing.Union[int, float]
 
@@ -515,7 +515,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `move_to_id` <a name="move_to_id" id="@cdktf/provider-google.biglakeTable.BiglakeTable.moveToId"></a>
+##### `move_to_id` <a name="move_to_id" id="@cdktn/provider-google.biglakeTable.BiglakeTable.moveToId"></a>
 
 ```python
 def move_to_id(
@@ -525,7 +525,7 @@ def move_to_id(
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.biglakeTable.BiglakeTable.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.biglakeTable.BiglakeTable.moveToId.parameter.id"></a>
 
 - *Type:* str
 
@@ -533,7 +533,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `put_hive_options` <a name="put_hive_options" id="@cdktf/provider-google.biglakeTable.BiglakeTable.putHiveOptions"></a>
+##### `put_hive_options` <a name="put_hive_options" id="@cdktn/provider-google.biglakeTable.BiglakeTable.putHiveOptions"></a>
 
 ```python
 def put_hive_options(
@@ -543,7 +543,7 @@ def put_hive_options(
 ) -> None
 ```
 
-###### `parameters`<sup>Optional</sup> <a name="parameters" id="@cdktf/provider-google.biglakeTable.BiglakeTable.putHiveOptions.parameter.parameters"></a>
+###### `parameters`<sup>Optional</sup> <a name="parameters" id="@cdktn/provider-google.biglakeTable.BiglakeTable.putHiveOptions.parameter.parameters"></a>
 
 - *Type:* typing.Mapping[str]
 
@@ -557,9 +557,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `storage_descriptor`<sup>Optional</sup> <a name="storage_descriptor" id="@cdktf/provider-google.biglakeTable.BiglakeTable.putHiveOptions.parameter.storageDescriptor"></a>
+###### `storage_descriptor`<sup>Optional</sup> <a name="storage_descriptor" id="@cdktn/provider-google.biglakeTable.BiglakeTable.putHiveOptions.parameter.storageDescriptor"></a>
 
-- *Type:* <a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptor">BiglakeTableHiveOptionsStorageDescriptor</a>
+- *Type:* <a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptor">BiglakeTableHiveOptionsStorageDescriptor</a>
 
 storage_descriptor block.
 
@@ -567,7 +567,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `table_type`<sup>Optional</sup> <a name="table_type" id="@cdktf/provider-google.biglakeTable.BiglakeTable.putHiveOptions.parameter.tableType"></a>
+###### `table_type`<sup>Optional</sup> <a name="table_type" id="@cdktn/provider-google.biglakeTable.BiglakeTable.putHiveOptions.parameter.tableType"></a>
 
 - *Type:* str
 
@@ -577,7 +577,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `put_timeouts` <a name="put_timeouts" id="@cdktf/provider-google.biglakeTable.BiglakeTable.putTimeouts"></a>
+##### `put_timeouts` <a name="put_timeouts" id="@cdktn/provider-google.biglakeTable.BiglakeTable.putTimeouts"></a>
 
 ```python
 def put_timeouts(
@@ -587,7 +587,7 @@ def put_timeouts(
 ) -> None
 ```
 
-###### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-google.biglakeTable.BiglakeTable.putTimeouts.parameter.create"></a>
+###### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-google.biglakeTable.BiglakeTable.putTimeouts.parameter.create"></a>
 
 - *Type:* str
 
@@ -595,7 +595,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-google.biglakeTable.BiglakeTable.putTimeouts.parameter.delete"></a>
+###### `delete`<sup>Optional</sup> <a name="delete" id="@cdktn/provider-google.biglakeTable.BiglakeTable.putTimeouts.parameter.delete"></a>
 
 - *Type:* str
 
@@ -603,7 +603,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-google.biglakeTable.BiglakeTable.putTimeouts.parameter.update"></a>
+###### `update`<sup>Optional</sup> <a name="update" id="@cdktn/provider-google.biglakeTable.BiglakeTable.putTimeouts.parameter.update"></a>
 
 - *Type:* str
 
@@ -611,31 +611,31 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `reset_database` <a name="reset_database" id="@cdktf/provider-google.biglakeTable.BiglakeTable.resetDatabase"></a>
+##### `reset_database` <a name="reset_database" id="@cdktn/provider-google.biglakeTable.BiglakeTable.resetDatabase"></a>
 
 ```python
 def reset_database() -> None
 ```
 
-##### `reset_hive_options` <a name="reset_hive_options" id="@cdktf/provider-google.biglakeTable.BiglakeTable.resetHiveOptions"></a>
+##### `reset_hive_options` <a name="reset_hive_options" id="@cdktn/provider-google.biglakeTable.BiglakeTable.resetHiveOptions"></a>
 
 ```python
 def reset_hive_options() -> None
 ```
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-google.biglakeTable.BiglakeTable.resetId"></a>
+##### `reset_id` <a name="reset_id" id="@cdktn/provider-google.biglakeTable.BiglakeTable.resetId"></a>
 
 ```python
 def reset_id() -> None
 ```
 
-##### `reset_timeouts` <a name="reset_timeouts" id="@cdktf/provider-google.biglakeTable.BiglakeTable.resetTimeouts"></a>
+##### `reset_timeouts` <a name="reset_timeouts" id="@cdktn/provider-google.biglakeTable.BiglakeTable.resetTimeouts"></a>
 
 ```python
 def reset_timeouts() -> None
 ```
 
-##### `reset_type` <a name="reset_type" id="@cdktf/provider-google.biglakeTable.BiglakeTable.resetType"></a>
+##### `reset_type` <a name="reset_type" id="@cdktn/provider-google.biglakeTable.BiglakeTable.resetType"></a>
 
 ```python
 def reset_type() -> None
@@ -645,17 +645,17 @@ def reset_type() -> None
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.isTerraformElement">is_terraform_element</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a BiglakeTable resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.isTerraformElement">is_terraform_element</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a BiglakeTable resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `is_construct` <a name="is_construct" id="@cdktf/provider-google.biglakeTable.BiglakeTable.isConstruct"></a>
+##### `is_construct` <a name="is_construct" id="@cdktn/provider-google.biglakeTable.BiglakeTable.isConstruct"></a>
 
 ```python
-from cdktf_cdktf_provider_google import biglake_table
+from cdktn_provider_google import biglake_table
 
 biglakeTable.BiglakeTable.is_construct(
   x: typing.Any
@@ -678,7 +678,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.biglakeTable.BiglakeTable.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.biglakeTable.BiglakeTable.isConstruct.parameter.x"></a>
 
 - *Type:* typing.Any
 
@@ -686,42 +686,42 @@ Any object.
 
 ---
 
-##### `is_terraform_element` <a name="is_terraform_element" id="@cdktf/provider-google.biglakeTable.BiglakeTable.isTerraformElement"></a>
+##### `is_terraform_element` <a name="is_terraform_element" id="@cdktn/provider-google.biglakeTable.BiglakeTable.isTerraformElement"></a>
 
 ```python
-from cdktf_cdktf_provider_google import biglake_table
+from cdktn_provider_google import biglake_table
 
 biglakeTable.BiglakeTable.is_terraform_element(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.biglakeTable.BiglakeTable.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.biglakeTable.BiglakeTable.isTerraformElement.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktf/provider-google.biglakeTable.BiglakeTable.isTerraformResource"></a>
+##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktn/provider-google.biglakeTable.BiglakeTable.isTerraformResource"></a>
 
 ```python
-from cdktf_cdktf_provider_google import biglake_table
+from cdktn_provider_google import biglake_table
 
 biglakeTable.BiglakeTable.is_terraform_resource(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.biglakeTable.BiglakeTable.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.biglakeTable.BiglakeTable.isTerraformResource.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktf/provider-google.biglakeTable.BiglakeTable.generateConfigForImport"></a>
+##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktn/provider-google.biglakeTable.BiglakeTable.generateConfigForImport"></a>
 
 ```python
-from cdktf_cdktf_provider_google import biglake_table
+from cdktn_provider_google import biglake_table
 
 biglakeTable.BiglakeTable.generate_config_for_import(
   scope: Construct,
@@ -733,7 +733,7 @@ biglakeTable.BiglakeTable.generate_config_for_import(
 
 Generates CDKTF code for importing a BiglakeTable resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-google.biglakeTable.BiglakeTable.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.biglakeTable.BiglakeTable.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -741,7 +741,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktf/provider-google.biglakeTable.BiglakeTable.generateConfigForImport.parameter.importToId"></a>
+###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktn/provider-google.biglakeTable.BiglakeTable.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* str
 
@@ -749,7 +749,7 @@ The construct id used in the generated config for the BiglakeTable to import.
 
 ---
 
-###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktf/provider-google.biglakeTable.BiglakeTable.generateConfigForImport.parameter.importFromId"></a>
+###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktn/provider-google.biglakeTable.BiglakeTable.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* str
 
@@ -759,7 +759,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.biglakeTable.BiglakeTable.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.biglakeTable.BiglakeTable.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
@@ -771,41 +771,41 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.property.createTime">create_time</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.property.deleteTime">delete_time</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.property.etag">etag</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.property.expireTime">expire_time</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.property.hiveOptions">hive_options</a></code> | <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference">BiglakeTableHiveOptionsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference">BiglakeTableTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.property.updateTime">update_time</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.property.databaseInput">database_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.property.hiveOptionsInput">hive_options_input</a></code> | <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptions">BiglakeTableHiveOptions</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-google.biglakeTable.BiglakeTableTimeouts">BiglakeTableTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.property.database">database</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.property.type">type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.property.createTime">create_time</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.property.deleteTime">delete_time</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.property.etag">etag</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.property.expireTime">expire_time</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.property.hiveOptions">hive_options</a></code> | <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference">BiglakeTableHiveOptionsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference">BiglakeTableTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.property.updateTime">update_time</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.property.databaseInput">database_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.property.hiveOptionsInput">hive_options_input</a></code> | <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptions">BiglakeTableHiveOptions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.biglakeTable.BiglakeTableTimeouts">BiglakeTableTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.property.database">database</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.property.type">type</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-google.biglakeTable.BiglakeTable.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-google.biglakeTable.BiglakeTable.property.node"></a>
 
 ```python
 node: Node
@@ -817,7 +817,7 @@ The tree node.
 
 ---
 
-##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktf/provider-google.biglakeTable.BiglakeTable.property.cdktfStack"></a>
+##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktn/provider-google.biglakeTable.BiglakeTable.property.cdktfStack"></a>
 
 ```python
 cdktf_stack: TerraformStack
@@ -827,7 +827,7 @@ cdktf_stack: TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google.biglakeTable.BiglakeTable.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.biglakeTable.BiglakeTable.property.fqn"></a>
 
 ```python
 fqn: str
@@ -837,7 +837,7 @@ fqn: str
 
 ---
 
-##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktf/provider-google.biglakeTable.BiglakeTable.property.friendlyUniqueId"></a>
+##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktn/provider-google.biglakeTable.BiglakeTable.property.friendlyUniqueId"></a>
 
 ```python
 friendly_unique_id: str
@@ -847,7 +847,7 @@ friendly_unique_id: str
 
 ---
 
-##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktf/provider-google.biglakeTable.BiglakeTable.property.terraformMetaArguments"></a>
+##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktn/provider-google.biglakeTable.BiglakeTable.property.terraformMetaArguments"></a>
 
 ```python
 terraform_meta_arguments: typing.Mapping[typing.Any]
@@ -857,7 +857,7 @@ terraform_meta_arguments: typing.Mapping[typing.Any]
 
 ---
 
-##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktf/provider-google.biglakeTable.BiglakeTable.property.terraformResourceType"></a>
+##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktn/provider-google.biglakeTable.BiglakeTable.property.terraformResourceType"></a>
 
 ```python
 terraform_resource_type: str
@@ -867,7 +867,7 @@ terraform_resource_type: str
 
 ---
 
-##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktf/provider-google.biglakeTable.BiglakeTable.property.terraformGeneratorMetadata"></a>
+##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktn/provider-google.biglakeTable.BiglakeTable.property.terraformGeneratorMetadata"></a>
 
 ```python
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
@@ -877,7 +877,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-google.biglakeTable.BiglakeTable.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.biglakeTable.BiglakeTable.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
@@ -887,7 +887,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-google.biglakeTable.BiglakeTable.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.biglakeTable.BiglakeTable.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -897,7 +897,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-google.biglakeTable.BiglakeTable.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.biglakeTable.BiglakeTable.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[str]
@@ -907,7 +907,7 @@ depends_on: typing.List[str]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-google.biglakeTable.BiglakeTable.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.biglakeTable.BiglakeTable.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -917,7 +917,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-google.biglakeTable.BiglakeTable.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.biglakeTable.BiglakeTable.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -927,7 +927,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.biglakeTable.BiglakeTable.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.biglakeTable.BiglakeTable.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -937,7 +937,7 @@ provider: TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-google.biglakeTable.BiglakeTable.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.biglakeTable.BiglakeTable.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
@@ -947,7 +947,7 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `create_time`<sup>Required</sup> <a name="create_time" id="@cdktf/provider-google.biglakeTable.BiglakeTable.property.createTime"></a>
+##### `create_time`<sup>Required</sup> <a name="create_time" id="@cdktn/provider-google.biglakeTable.BiglakeTable.property.createTime"></a>
 
 ```python
 create_time: str
@@ -957,7 +957,7 @@ create_time: str
 
 ---
 
-##### `delete_time`<sup>Required</sup> <a name="delete_time" id="@cdktf/provider-google.biglakeTable.BiglakeTable.property.deleteTime"></a>
+##### `delete_time`<sup>Required</sup> <a name="delete_time" id="@cdktn/provider-google.biglakeTable.BiglakeTable.property.deleteTime"></a>
 
 ```python
 delete_time: str
@@ -967,7 +967,7 @@ delete_time: str
 
 ---
 
-##### `etag`<sup>Required</sup> <a name="etag" id="@cdktf/provider-google.biglakeTable.BiglakeTable.property.etag"></a>
+##### `etag`<sup>Required</sup> <a name="etag" id="@cdktn/provider-google.biglakeTable.BiglakeTable.property.etag"></a>
 
 ```python
 etag: str
@@ -977,7 +977,7 @@ etag: str
 
 ---
 
-##### `expire_time`<sup>Required</sup> <a name="expire_time" id="@cdktf/provider-google.biglakeTable.BiglakeTable.property.expireTime"></a>
+##### `expire_time`<sup>Required</sup> <a name="expire_time" id="@cdktn/provider-google.biglakeTable.BiglakeTable.property.expireTime"></a>
 
 ```python
 expire_time: str
@@ -987,27 +987,27 @@ expire_time: str
 
 ---
 
-##### `hive_options`<sup>Required</sup> <a name="hive_options" id="@cdktf/provider-google.biglakeTable.BiglakeTable.property.hiveOptions"></a>
+##### `hive_options`<sup>Required</sup> <a name="hive_options" id="@cdktn/provider-google.biglakeTable.BiglakeTable.property.hiveOptions"></a>
 
 ```python
 hive_options: BiglakeTableHiveOptionsOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference">BiglakeTableHiveOptionsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference">BiglakeTableHiveOptionsOutputReference</a>
 
 ---
 
-##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktf/provider-google.biglakeTable.BiglakeTable.property.timeouts"></a>
+##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktn/provider-google.biglakeTable.BiglakeTable.property.timeouts"></a>
 
 ```python
 timeouts: BiglakeTableTimeoutsOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference">BiglakeTableTimeoutsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference">BiglakeTableTimeoutsOutputReference</a>
 
 ---
 
-##### `update_time`<sup>Required</sup> <a name="update_time" id="@cdktf/provider-google.biglakeTable.BiglakeTable.property.updateTime"></a>
+##### `update_time`<sup>Required</sup> <a name="update_time" id="@cdktn/provider-google.biglakeTable.BiglakeTable.property.updateTime"></a>
 
 ```python
 update_time: str
@@ -1017,7 +1017,7 @@ update_time: str
 
 ---
 
-##### `database_input`<sup>Optional</sup> <a name="database_input" id="@cdktf/provider-google.biglakeTable.BiglakeTable.property.databaseInput"></a>
+##### `database_input`<sup>Optional</sup> <a name="database_input" id="@cdktn/provider-google.biglakeTable.BiglakeTable.property.databaseInput"></a>
 
 ```python
 database_input: str
@@ -1027,17 +1027,17 @@ database_input: str
 
 ---
 
-##### `hive_options_input`<sup>Optional</sup> <a name="hive_options_input" id="@cdktf/provider-google.biglakeTable.BiglakeTable.property.hiveOptionsInput"></a>
+##### `hive_options_input`<sup>Optional</sup> <a name="hive_options_input" id="@cdktn/provider-google.biglakeTable.BiglakeTable.property.hiveOptionsInput"></a>
 
 ```python
 hive_options_input: BiglakeTableHiveOptions
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptions">BiglakeTableHiveOptions</a>
+- *Type:* <a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptions">BiglakeTableHiveOptions</a>
 
 ---
 
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-google.biglakeTable.BiglakeTable.property.idInput"></a>
+##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-google.biglakeTable.BiglakeTable.property.idInput"></a>
 
 ```python
 id_input: str
@@ -1047,7 +1047,7 @@ id_input: str
 
 ---
 
-##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktf/provider-google.biglakeTable.BiglakeTable.property.nameInput"></a>
+##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktn/provider-google.biglakeTable.BiglakeTable.property.nameInput"></a>
 
 ```python
 name_input: str
@@ -1057,17 +1057,17 @@ name_input: str
 
 ---
 
-##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-google.biglakeTable.BiglakeTable.property.timeoutsInput"></a>
+##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktn/provider-google.biglakeTable.BiglakeTable.property.timeoutsInput"></a>
 
 ```python
 timeouts_input: IResolvable | BiglakeTableTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-google.biglakeTable.BiglakeTableTimeouts">BiglakeTableTimeouts</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.biglakeTable.BiglakeTableTimeouts">BiglakeTableTimeouts</a>
 
 ---
 
-##### `type_input`<sup>Optional</sup> <a name="type_input" id="@cdktf/provider-google.biglakeTable.BiglakeTable.property.typeInput"></a>
+##### `type_input`<sup>Optional</sup> <a name="type_input" id="@cdktn/provider-google.biglakeTable.BiglakeTable.property.typeInput"></a>
 
 ```python
 type_input: str
@@ -1077,7 +1077,7 @@ type_input: str
 
 ---
 
-##### `database`<sup>Required</sup> <a name="database" id="@cdktf/provider-google.biglakeTable.BiglakeTable.property.database"></a>
+##### `database`<sup>Required</sup> <a name="database" id="@cdktn/provider-google.biglakeTable.BiglakeTable.property.database"></a>
 
 ```python
 database: str
@@ -1087,7 +1087,7 @@ database: str
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.biglakeTable.BiglakeTable.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.biglakeTable.BiglakeTable.property.id"></a>
 
 ```python
 id: str
@@ -1097,7 +1097,7 @@ id: str
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-google.biglakeTable.BiglakeTable.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-google.biglakeTable.BiglakeTable.property.name"></a>
 
 ```python
 name: str
@@ -1107,7 +1107,7 @@ name: str
 
 ---
 
-##### `type`<sup>Required</sup> <a name="type" id="@cdktf/provider-google.biglakeTable.BiglakeTable.property.type"></a>
+##### `type`<sup>Required</sup> <a name="type" id="@cdktn/provider-google.biglakeTable.BiglakeTable.property.type"></a>
 
 ```python
 type: str
@@ -1121,11 +1121,11 @@ type: str
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTable.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTable.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-google.biglakeTable.BiglakeTable.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-google.biglakeTable.BiglakeTable.property.tfResourceType"></a>
 
 ```python
 tfResourceType: str
@@ -1137,12 +1137,12 @@ tfResourceType: str
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### BiglakeTableConfig <a name="BiglakeTableConfig" id="@cdktf/provider-google.biglakeTable.BiglakeTableConfig"></a>
+### BiglakeTableConfig <a name="BiglakeTableConfig" id="@cdktn/provider-google.biglakeTable.BiglakeTableConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-google.biglakeTable.BiglakeTableConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.biglakeTable.BiglakeTableConfig.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import biglake_table
+from cdktn_provider_google import biglake_table
 
 biglakeTable.BiglakeTableConfig(
   connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
@@ -1165,23 +1165,23 @@ biglakeTable.BiglakeTableConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableConfig.property.name">name</a></code> | <code>str</code> | Output only. The name of the Table. Format: projects/{project_id_or_number}/locations/{locationId}/catalogs/{catalogId}/databases/{databaseId}/tables/{tableId}. |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableConfig.property.database">database</a></code> | <code>str</code> | The id of the parent database. |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableConfig.property.hiveOptions">hive_options</a></code> | <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptions">BiglakeTableHiveOptions</a></code> | hive_options block. |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/biglake_table#id BiglakeTable#id}. |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableTimeouts">BiglakeTableTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableConfig.property.type">type</a></code> | <code>str</code> | The database type. Possible values: ["HIVE"]. |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableConfig.property.name">name</a></code> | <code>str</code> | Output only. The name of the Table. Format: projects/{project_id_or_number}/locations/{locationId}/catalogs/{catalogId}/databases/{databaseId}/tables/{tableId}. |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableConfig.property.database">database</a></code> | <code>str</code> | The id of the parent database. |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableConfig.property.hiveOptions">hive_options</a></code> | <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptions">BiglakeTableHiveOptions</a></code> | hive_options block. |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/biglake_table#id BiglakeTable#id}. |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableTimeouts">BiglakeTableTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableConfig.property.type">type</a></code> | <code>str</code> | The database type. Possible values: ["HIVE"]. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-google.biglakeTable.BiglakeTableConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.biglakeTable.BiglakeTableConfig.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
@@ -1191,7 +1191,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-google.biglakeTable.BiglakeTableConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.biglakeTable.BiglakeTableConfig.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -1201,7 +1201,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-google.biglakeTable.BiglakeTableConfig.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.biglakeTable.BiglakeTableConfig.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[ITerraformDependable]
@@ -1211,7 +1211,7 @@ depends_on: typing.List[ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-google.biglakeTable.BiglakeTableConfig.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.biglakeTable.BiglakeTableConfig.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -1221,7 +1221,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-google.biglakeTable.BiglakeTableConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.biglakeTable.BiglakeTableConfig.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -1231,7 +1231,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.biglakeTable.BiglakeTableConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.biglakeTable.BiglakeTableConfig.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -1241,7 +1241,7 @@ provider: TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-google.biglakeTable.BiglakeTableConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.biglakeTable.BiglakeTableConfig.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
@@ -1251,7 +1251,7 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-google.biglakeTable.BiglakeTableConfig.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-google.biglakeTable.BiglakeTableConfig.property.name"></a>
 
 ```python
 name: str
@@ -1265,7 +1265,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `database`<sup>Optional</sup> <a name="database" id="@cdktf/provider-google.biglakeTable.BiglakeTableConfig.property.database"></a>
+##### `database`<sup>Optional</sup> <a name="database" id="@cdktn/provider-google.biglakeTable.BiglakeTableConfig.property.database"></a>
 
 ```python
 database: str
@@ -1279,13 +1279,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `hive_options`<sup>Optional</sup> <a name="hive_options" id="@cdktf/provider-google.biglakeTable.BiglakeTableConfig.property.hiveOptions"></a>
+##### `hive_options`<sup>Optional</sup> <a name="hive_options" id="@cdktn/provider-google.biglakeTable.BiglakeTableConfig.property.hiveOptions"></a>
 
 ```python
 hive_options: BiglakeTableHiveOptions
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptions">BiglakeTableHiveOptions</a>
+- *Type:* <a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptions">BiglakeTableHiveOptions</a>
 
 hive_options block.
 
@@ -1293,7 +1293,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-google.biglakeTable.BiglakeTableConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-google.biglakeTable.BiglakeTableConfig.property.id"></a>
 
 ```python
 id: str
@@ -1308,13 +1308,13 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-google.biglakeTable.BiglakeTableConfig.property.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-google.biglakeTable.BiglakeTableConfig.property.timeouts"></a>
 
 ```python
 timeouts: BiglakeTableTimeouts
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.biglakeTable.BiglakeTableTimeouts">BiglakeTableTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-google.biglakeTable.BiglakeTableTimeouts">BiglakeTableTimeouts</a>
 
 timeouts block.
 
@@ -1322,7 +1322,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `type`<sup>Optional</sup> <a name="type" id="@cdktf/provider-google.biglakeTable.BiglakeTableConfig.property.type"></a>
+##### `type`<sup>Optional</sup> <a name="type" id="@cdktn/provider-google.biglakeTable.BiglakeTableConfig.property.type"></a>
 
 ```python
 type: str
@@ -1336,12 +1336,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### BiglakeTableHiveOptions <a name="BiglakeTableHiveOptions" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptions"></a>
+### BiglakeTableHiveOptions <a name="BiglakeTableHiveOptions" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptions"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptions.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptions.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import biglake_table
+from cdktn_provider_google import biglake_table
 
 biglakeTable.BiglakeTableHiveOptions(
   parameters: typing.Mapping[str] = None,
@@ -1354,13 +1354,13 @@ biglakeTable.BiglakeTableHiveOptions(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptions.property.parameters">parameters</a></code> | <code>typing.Mapping[str]</code> | Stores user supplied Hive table parameters. |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptions.property.storageDescriptor">storage_descriptor</a></code> | <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptor">BiglakeTableHiveOptionsStorageDescriptor</a></code> | storage_descriptor block. |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptions.property.tableType">table_type</a></code> | <code>str</code> | Hive table type. For example, MANAGED_TABLE, EXTERNAL_TABLE. |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptions.property.parameters">parameters</a></code> | <code>typing.Mapping[str]</code> | Stores user supplied Hive table parameters. |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptions.property.storageDescriptor">storage_descriptor</a></code> | <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptor">BiglakeTableHiveOptionsStorageDescriptor</a></code> | storage_descriptor block. |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptions.property.tableType">table_type</a></code> | <code>str</code> | Hive table type. For example, MANAGED_TABLE, EXTERNAL_TABLE. |
 
 ---
 
-##### `parameters`<sup>Optional</sup> <a name="parameters" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptions.property.parameters"></a>
+##### `parameters`<sup>Optional</sup> <a name="parameters" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptions.property.parameters"></a>
 
 ```python
 parameters: typing.Mapping[str]
@@ -1378,13 +1378,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `storage_descriptor`<sup>Optional</sup> <a name="storage_descriptor" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptions.property.storageDescriptor"></a>
+##### `storage_descriptor`<sup>Optional</sup> <a name="storage_descriptor" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptions.property.storageDescriptor"></a>
 
 ```python
 storage_descriptor: BiglakeTableHiveOptionsStorageDescriptor
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptor">BiglakeTableHiveOptionsStorageDescriptor</a>
+- *Type:* <a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptor">BiglakeTableHiveOptionsStorageDescriptor</a>
 
 storage_descriptor block.
 
@@ -1392,7 +1392,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `table_type`<sup>Optional</sup> <a name="table_type" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptions.property.tableType"></a>
+##### `table_type`<sup>Optional</sup> <a name="table_type" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptions.property.tableType"></a>
 
 ```python
 table_type: str
@@ -1406,12 +1406,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### BiglakeTableHiveOptionsStorageDescriptor <a name="BiglakeTableHiveOptionsStorageDescriptor" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptor"></a>
+### BiglakeTableHiveOptionsStorageDescriptor <a name="BiglakeTableHiveOptionsStorageDescriptor" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptor"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptor.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptor.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import biglake_table
+from cdktn_provider_google import biglake_table
 
 biglakeTable.BiglakeTableHiveOptionsStorageDescriptor(
   input_format: str = None,
@@ -1424,13 +1424,13 @@ biglakeTable.BiglakeTableHiveOptionsStorageDescriptor(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptor.property.inputFormat">input_format</a></code> | <code>str</code> | The fully qualified Java class name of the input format. |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptor.property.locationUri">location_uri</a></code> | <code>str</code> | Cloud Storage folder URI where the table data is stored, starting with "gs://". |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptor.property.outputFormat">output_format</a></code> | <code>str</code> | The fully qualified Java class name of the output format. |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptor.property.inputFormat">input_format</a></code> | <code>str</code> | The fully qualified Java class name of the input format. |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptor.property.locationUri">location_uri</a></code> | <code>str</code> | Cloud Storage folder URI where the table data is stored, starting with "gs://". |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptor.property.outputFormat">output_format</a></code> | <code>str</code> | The fully qualified Java class name of the output format. |
 
 ---
 
-##### `input_format`<sup>Optional</sup> <a name="input_format" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptor.property.inputFormat"></a>
+##### `input_format`<sup>Optional</sup> <a name="input_format" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptor.property.inputFormat"></a>
 
 ```python
 input_format: str
@@ -1444,7 +1444,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `location_uri`<sup>Optional</sup> <a name="location_uri" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptor.property.locationUri"></a>
+##### `location_uri`<sup>Optional</sup> <a name="location_uri" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptor.property.locationUri"></a>
 
 ```python
 location_uri: str
@@ -1458,7 +1458,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `output_format`<sup>Optional</sup> <a name="output_format" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptor.property.outputFormat"></a>
+##### `output_format`<sup>Optional</sup> <a name="output_format" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptor.property.outputFormat"></a>
 
 ```python
 output_format: str
@@ -1472,12 +1472,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### BiglakeTableTimeouts <a name="BiglakeTableTimeouts" id="@cdktf/provider-google.biglakeTable.BiglakeTableTimeouts"></a>
+### BiglakeTableTimeouts <a name="BiglakeTableTimeouts" id="@cdktn/provider-google.biglakeTable.BiglakeTableTimeouts"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-google.biglakeTable.BiglakeTableTimeouts.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.biglakeTable.BiglakeTableTimeouts.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import biglake_table
+from cdktn_provider_google import biglake_table
 
 biglakeTable.BiglakeTableTimeouts(
   create: str = None,
@@ -1490,13 +1490,13 @@ biglakeTable.BiglakeTableTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/biglake_table#create BiglakeTable#create}. |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/biglake_table#delete BiglakeTable#delete}. |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/biglake_table#update BiglakeTable#update}. |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/biglake_table#create BiglakeTable#create}. |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/biglake_table#delete BiglakeTable#delete}. |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/biglake_table#update BiglakeTable#update}. |
 
 ---
 
-##### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-google.biglakeTable.BiglakeTableTimeouts.property.create"></a>
+##### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-google.biglakeTable.BiglakeTableTimeouts.property.create"></a>
 
 ```python
 create: str
@@ -1508,7 +1508,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-google.biglakeTable.BiglakeTableTimeouts.property.delete"></a>
+##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktn/provider-google.biglakeTable.BiglakeTableTimeouts.property.delete"></a>
 
 ```python
 delete: str
@@ -1520,7 +1520,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-google.biglakeTable.BiglakeTableTimeouts.property.update"></a>
+##### `update`<sup>Optional</sup> <a name="update" id="@cdktn/provider-google.biglakeTable.BiglakeTableTimeouts.property.update"></a>
 
 ```python
 update: str
@@ -1534,12 +1534,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### BiglakeTableHiveOptionsOutputReference <a name="BiglakeTableHiveOptionsOutputReference" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference"></a>
+### BiglakeTableHiveOptionsOutputReference <a name="BiglakeTableHiveOptionsOutputReference" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import biglake_table
+from cdktn_provider_google import biglake_table
 
 biglakeTable.BiglakeTableHiveOptionsOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -1549,12 +1549,12 @@ biglakeTable.BiglakeTableHiveOptionsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -1562,7 +1562,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -1574,33 +1574,33 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.putStorageDescriptor">put_storage_descriptor</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.resetParameters">reset_parameters</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.resetStorageDescriptor">reset_storage_descriptor</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.resetTableType">reset_table_type</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.putStorageDescriptor">put_storage_descriptor</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.resetParameters">reset_parameters</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.resetStorageDescriptor">reset_storage_descriptor</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.resetTableType">reset_table_type</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -1608,13 +1608,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -1622,13 +1622,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -1636,13 +1636,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -1650,13 +1650,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -1664,13 +1664,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -1678,13 +1678,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -1692,13 +1692,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -1706,13 +1706,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -1720,13 +1720,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -1734,13 +1734,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -1750,13 +1750,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -1766,7 +1766,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `put_storage_descriptor` <a name="put_storage_descriptor" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.putStorageDescriptor"></a>
+##### `put_storage_descriptor` <a name="put_storage_descriptor" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.putStorageDescriptor"></a>
 
 ```python
 def put_storage_descriptor(
@@ -1776,7 +1776,7 @@ def put_storage_descriptor(
 ) -> None
 ```
 
-###### `input_format`<sup>Optional</sup> <a name="input_format" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.putStorageDescriptor.parameter.inputFormat"></a>
+###### `input_format`<sup>Optional</sup> <a name="input_format" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.putStorageDescriptor.parameter.inputFormat"></a>
 
 - *Type:* str
 
@@ -1786,7 +1786,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `location_uri`<sup>Optional</sup> <a name="location_uri" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.putStorageDescriptor.parameter.locationUri"></a>
+###### `location_uri`<sup>Optional</sup> <a name="location_uri" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.putStorageDescriptor.parameter.locationUri"></a>
 
 - *Type:* str
 
@@ -1796,7 +1796,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `output_format`<sup>Optional</sup> <a name="output_format" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.putStorageDescriptor.parameter.outputFormat"></a>
+###### `output_format`<sup>Optional</sup> <a name="output_format" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.putStorageDescriptor.parameter.outputFormat"></a>
 
 - *Type:* str
 
@@ -1806,19 +1806,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `reset_parameters` <a name="reset_parameters" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.resetParameters"></a>
+##### `reset_parameters` <a name="reset_parameters" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.resetParameters"></a>
 
 ```python
 def reset_parameters() -> None
 ```
 
-##### `reset_storage_descriptor` <a name="reset_storage_descriptor" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.resetStorageDescriptor"></a>
+##### `reset_storage_descriptor` <a name="reset_storage_descriptor" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.resetStorageDescriptor"></a>
 
 ```python
 def reset_storage_descriptor() -> None
 ```
 
-##### `reset_table_type` <a name="reset_table_type" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.resetTableType"></a>
+##### `reset_table_type` <a name="reset_table_type" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.resetTableType"></a>
 
 ```python
 def reset_table_type() -> None
@@ -1829,19 +1829,19 @@ def reset_table_type() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.property.storageDescriptor">storage_descriptor</a></code> | <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference">BiglakeTableHiveOptionsStorageDescriptorOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.property.parametersInput">parameters_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.property.storageDescriptorInput">storage_descriptor_input</a></code> | <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptor">BiglakeTableHiveOptionsStorageDescriptor</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.property.tableTypeInput">table_type_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.property.parameters">parameters</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.property.tableType">table_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptions">BiglakeTableHiveOptions</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.property.storageDescriptor">storage_descriptor</a></code> | <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference">BiglakeTableHiveOptionsStorageDescriptorOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.property.parametersInput">parameters_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.property.storageDescriptorInput">storage_descriptor_input</a></code> | <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptor">BiglakeTableHiveOptionsStorageDescriptor</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.property.tableTypeInput">table_type_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.property.parameters">parameters</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.property.tableType">table_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptions">BiglakeTableHiveOptions</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -1855,7 +1855,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -1865,17 +1865,17 @@ fqn: str
 
 ---
 
-##### `storage_descriptor`<sup>Required</sup> <a name="storage_descriptor" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.property.storageDescriptor"></a>
+##### `storage_descriptor`<sup>Required</sup> <a name="storage_descriptor" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.property.storageDescriptor"></a>
 
 ```python
 storage_descriptor: BiglakeTableHiveOptionsStorageDescriptorOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference">BiglakeTableHiveOptionsStorageDescriptorOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference">BiglakeTableHiveOptionsStorageDescriptorOutputReference</a>
 
 ---
 
-##### `parameters_input`<sup>Optional</sup> <a name="parameters_input" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.property.parametersInput"></a>
+##### `parameters_input`<sup>Optional</sup> <a name="parameters_input" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.property.parametersInput"></a>
 
 ```python
 parameters_input: typing.Mapping[str]
@@ -1885,17 +1885,17 @@ parameters_input: typing.Mapping[str]
 
 ---
 
-##### `storage_descriptor_input`<sup>Optional</sup> <a name="storage_descriptor_input" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.property.storageDescriptorInput"></a>
+##### `storage_descriptor_input`<sup>Optional</sup> <a name="storage_descriptor_input" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.property.storageDescriptorInput"></a>
 
 ```python
 storage_descriptor_input: BiglakeTableHiveOptionsStorageDescriptor
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptor">BiglakeTableHiveOptionsStorageDescriptor</a>
+- *Type:* <a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptor">BiglakeTableHiveOptionsStorageDescriptor</a>
 
 ---
 
-##### `table_type_input`<sup>Optional</sup> <a name="table_type_input" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.property.tableTypeInput"></a>
+##### `table_type_input`<sup>Optional</sup> <a name="table_type_input" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.property.tableTypeInput"></a>
 
 ```python
 table_type_input: str
@@ -1905,7 +1905,7 @@ table_type_input: str
 
 ---
 
-##### `parameters`<sup>Required</sup> <a name="parameters" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.property.parameters"></a>
+##### `parameters`<sup>Required</sup> <a name="parameters" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.property.parameters"></a>
 
 ```python
 parameters: typing.Mapping[str]
@@ -1915,7 +1915,7 @@ parameters: typing.Mapping[str]
 
 ---
 
-##### `table_type`<sup>Required</sup> <a name="table_type" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.property.tableType"></a>
+##### `table_type`<sup>Required</sup> <a name="table_type" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.property.tableType"></a>
 
 ```python
 table_type: str
@@ -1925,23 +1925,23 @@ table_type: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: BiglakeTableHiveOptions
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptions">BiglakeTableHiveOptions</a>
+- *Type:* <a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptions">BiglakeTableHiveOptions</a>
 
 ---
 
 
-### BiglakeTableHiveOptionsStorageDescriptorOutputReference <a name="BiglakeTableHiveOptionsStorageDescriptorOutputReference" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference"></a>
+### BiglakeTableHiveOptionsStorageDescriptorOutputReference <a name="BiglakeTableHiveOptionsStorageDescriptorOutputReference" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import biglake_table
+from cdktn_provider_google import biglake_table
 
 biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -1951,12 +1951,12 @@ biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -1964,7 +1964,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -1976,32 +1976,32 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.resetInputFormat">reset_input_format</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.resetLocationUri">reset_location_uri</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.resetOutputFormat">reset_output_format</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.resetInputFormat">reset_input_format</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.resetLocationUri">reset_location_uri</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.resetOutputFormat">reset_output_format</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -2009,13 +2009,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -2023,13 +2023,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -2037,13 +2037,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -2051,13 +2051,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -2065,13 +2065,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -2079,13 +2079,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -2093,13 +2093,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -2107,13 +2107,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -2121,13 +2121,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -2135,13 +2135,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -2151,13 +2151,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -2167,19 +2167,19 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_input_format` <a name="reset_input_format" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.resetInputFormat"></a>
+##### `reset_input_format` <a name="reset_input_format" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.resetInputFormat"></a>
 
 ```python
 def reset_input_format() -> None
 ```
 
-##### `reset_location_uri` <a name="reset_location_uri" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.resetLocationUri"></a>
+##### `reset_location_uri` <a name="reset_location_uri" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.resetLocationUri"></a>
 
 ```python
 def reset_location_uri() -> None
 ```
 
-##### `reset_output_format` <a name="reset_output_format" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.resetOutputFormat"></a>
+##### `reset_output_format` <a name="reset_output_format" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.resetOutputFormat"></a>
 
 ```python
 def reset_output_format() -> None
@@ -2190,19 +2190,19 @@ def reset_output_format() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.property.inputFormatInput">input_format_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.property.locationUriInput">location_uri_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.property.outputFormatInput">output_format_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.property.inputFormat">input_format</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.property.locationUri">location_uri</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.property.outputFormat">output_format</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptor">BiglakeTableHiveOptionsStorageDescriptor</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.property.inputFormatInput">input_format_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.property.locationUriInput">location_uri_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.property.outputFormatInput">output_format_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.property.inputFormat">input_format</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.property.locationUri">location_uri</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.property.outputFormat">output_format</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptor">BiglakeTableHiveOptionsStorageDescriptor</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -2216,7 +2216,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -2226,7 +2226,7 @@ fqn: str
 
 ---
 
-##### `input_format_input`<sup>Optional</sup> <a name="input_format_input" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.property.inputFormatInput"></a>
+##### `input_format_input`<sup>Optional</sup> <a name="input_format_input" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.property.inputFormatInput"></a>
 
 ```python
 input_format_input: str
@@ -2236,7 +2236,7 @@ input_format_input: str
 
 ---
 
-##### `location_uri_input`<sup>Optional</sup> <a name="location_uri_input" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.property.locationUriInput"></a>
+##### `location_uri_input`<sup>Optional</sup> <a name="location_uri_input" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.property.locationUriInput"></a>
 
 ```python
 location_uri_input: str
@@ -2246,7 +2246,7 @@ location_uri_input: str
 
 ---
 
-##### `output_format_input`<sup>Optional</sup> <a name="output_format_input" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.property.outputFormatInput"></a>
+##### `output_format_input`<sup>Optional</sup> <a name="output_format_input" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.property.outputFormatInput"></a>
 
 ```python
 output_format_input: str
@@ -2256,7 +2256,7 @@ output_format_input: str
 
 ---
 
-##### `input_format`<sup>Required</sup> <a name="input_format" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.property.inputFormat"></a>
+##### `input_format`<sup>Required</sup> <a name="input_format" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.property.inputFormat"></a>
 
 ```python
 input_format: str
@@ -2266,7 +2266,7 @@ input_format: str
 
 ---
 
-##### `location_uri`<sup>Required</sup> <a name="location_uri" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.property.locationUri"></a>
+##### `location_uri`<sup>Required</sup> <a name="location_uri" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.property.locationUri"></a>
 
 ```python
 location_uri: str
@@ -2276,7 +2276,7 @@ location_uri: str
 
 ---
 
-##### `output_format`<sup>Required</sup> <a name="output_format" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.property.outputFormat"></a>
+##### `output_format`<sup>Required</sup> <a name="output_format" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.property.outputFormat"></a>
 
 ```python
 output_format: str
@@ -2286,23 +2286,23 @@ output_format: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptorOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: BiglakeTableHiveOptionsStorageDescriptor
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptor">BiglakeTableHiveOptionsStorageDescriptor</a>
+- *Type:* <a href="#@cdktn/provider-google.biglakeTable.BiglakeTableHiveOptionsStorageDescriptor">BiglakeTableHiveOptionsStorageDescriptor</a>
 
 ---
 
 
-### BiglakeTableTimeoutsOutputReference <a name="BiglakeTableTimeoutsOutputReference" id="@cdktf/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference"></a>
+### BiglakeTableTimeoutsOutputReference <a name="BiglakeTableTimeoutsOutputReference" id="@cdktn/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import biglake_table
+from cdktn_provider_google import biglake_table
 
 biglakeTable.BiglakeTableTimeoutsOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -2312,12 +2312,12 @@ biglakeTable.BiglakeTableTimeoutsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -2325,7 +2325,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -2337,32 +2337,32 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.resetCreate">reset_create</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.resetDelete">reset_delete</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.resetUpdate">reset_update</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.resetCreate">reset_create</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.resetDelete">reset_delete</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.resetUpdate">reset_update</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -2370,13 +2370,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -2384,13 +2384,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -2398,13 +2398,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -2412,13 +2412,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -2426,13 +2426,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -2440,13 +2440,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -2454,13 +2454,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -2468,13 +2468,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -2482,13 +2482,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -2496,13 +2496,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -2512,13 +2512,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -2528,19 +2528,19 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_create` <a name="reset_create" id="@cdktf/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.resetCreate"></a>
+##### `reset_create` <a name="reset_create" id="@cdktn/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.resetCreate"></a>
 
 ```python
 def reset_create() -> None
 ```
 
-##### `reset_delete` <a name="reset_delete" id="@cdktf/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.resetDelete"></a>
+##### `reset_delete` <a name="reset_delete" id="@cdktn/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.resetDelete"></a>
 
 ```python
 def reset_delete() -> None
 ```
 
-##### `reset_update` <a name="reset_update" id="@cdktf/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.resetUpdate"></a>
+##### `reset_update` <a name="reset_update" id="@cdktn/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.resetUpdate"></a>
 
 ```python
 def reset_update() -> None
@@ -2551,19 +2551,19 @@ def reset_update() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.property.createInput">create_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.property.updateInput">update_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-google.biglakeTable.BiglakeTableTimeouts">BiglakeTableTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.property.createInput">create_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.property.updateInput">update_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.biglakeTable.BiglakeTableTimeouts">BiglakeTableTimeouts</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -2577,7 +2577,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -2587,7 +2587,7 @@ fqn: str
 
 ---
 
-##### `create_input`<sup>Optional</sup> <a name="create_input" id="@cdktf/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.property.createInput"></a>
+##### `create_input`<sup>Optional</sup> <a name="create_input" id="@cdktn/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.property.createInput"></a>
 
 ```python
 create_input: str
@@ -2597,7 +2597,7 @@ create_input: str
 
 ---
 
-##### `delete_input`<sup>Optional</sup> <a name="delete_input" id="@cdktf/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.property.deleteInput"></a>
+##### `delete_input`<sup>Optional</sup> <a name="delete_input" id="@cdktn/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.property.deleteInput"></a>
 
 ```python
 delete_input: str
@@ -2607,7 +2607,7 @@ delete_input: str
 
 ---
 
-##### `update_input`<sup>Optional</sup> <a name="update_input" id="@cdktf/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.property.updateInput"></a>
+##### `update_input`<sup>Optional</sup> <a name="update_input" id="@cdktn/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.property.updateInput"></a>
 
 ```python
 update_input: str
@@ -2617,7 +2617,7 @@ update_input: str
 
 ---
 
-##### `create`<sup>Required</sup> <a name="create" id="@cdktf/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.property.create"></a>
+##### `create`<sup>Required</sup> <a name="create" id="@cdktn/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.property.create"></a>
 
 ```python
 create: str
@@ -2627,7 +2627,7 @@ create: str
 
 ---
 
-##### `delete`<sup>Required</sup> <a name="delete" id="@cdktf/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.property.delete"></a>
+##### `delete`<sup>Required</sup> <a name="delete" id="@cdktn/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.property.delete"></a>
 
 ```python
 delete: str
@@ -2637,7 +2637,7 @@ delete: str
 
 ---
 
-##### `update`<sup>Required</sup> <a name="update" id="@cdktf/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.property.update"></a>
+##### `update`<sup>Required</sup> <a name="update" id="@cdktn/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.property.update"></a>
 
 ```python
 update: str
@@ -2647,13 +2647,13 @@ update: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.biglakeTable.BiglakeTableTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | BiglakeTableTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-google.biglakeTable.BiglakeTableTimeouts">BiglakeTableTimeouts</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.biglakeTable.BiglakeTableTimeouts">BiglakeTableTimeouts</a>
 
 ---
 

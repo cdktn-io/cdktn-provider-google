@@ -1,28 +1,28 @@
-# `dataGoogleContainerRegistryRepository` Submodule <a name="`dataGoogleContainerRegistryRepository` Submodule" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository"></a>
+# `dataGoogleContainerRegistryRepository` Submodule <a name="`dataGoogleContainerRegistryRepository` Submodule" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### DataGoogleContainerRegistryRepository <a name="DataGoogleContainerRegistryRepository" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository"></a>
+### DataGoogleContainerRegistryRepository <a name="DataGoogleContainerRegistryRepository" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository"></a>
 
 Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/container_registry_repository google_container_registry_repository}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagooglecontainerregistryrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglecontainerregistryrepository"
 
 datagooglecontainerregistryrepository.NewDataGoogleContainerRegistryRepository(scope Construct, id *string, config DataGoogleContainerRegistryRepositoryConfig) DataGoogleContainerRegistryRepository
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepositoryConfig">DataGoogleContainerRegistryRepositoryConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepositoryConfig">DataGoogleContainerRegistryRepositoryConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.Initializer.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.Initializer.parameter.id"></a>
 
 - *Type:* *string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Optional</sup> <a name="config" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.Initializer.parameter.config"></a>
+##### `config`<sup>Optional</sup> <a name="config" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepositoryConfig">DataGoogleContainerRegistryRepositoryConfig</a>
+- *Type:* <a href="#@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepositoryConfig">DataGoogleContainerRegistryRepositoryConfig</a>
 
 ---
 
@@ -50,30 +50,30 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.toString">ToString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.addOverride">AddOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.toMetadata">ToMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.resetId">ResetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.resetProject">ResetProject</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.resetRegion">ResetRegion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.addOverride">AddOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.toMetadata">ToMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.resetProject">ResetProject</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.resetRegion">ResetRegion</a></code> | *No description.* |
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.toString"></a>
 
 ```go
 func ToString() *string
@@ -81,25 +81,25 @@ func ToString() *string
 
 Returns a string representation of this construct.
 
-##### `AddOverride` <a name="AddOverride" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.addOverride"></a>
+##### `AddOverride` <a name="AddOverride" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.addOverride"></a>
 
 ```go
 func AddOverride(path *string, value interface{})
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.addOverride.parameter.path"></a>
 
 - *Type:* *string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.addOverride.parameter.value"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.overrideLogicalId"></a>
+##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.overrideLogicalId"></a>
 
 ```go
 func OverrideLogicalId(newLogicalId *string)
@@ -107,7 +107,7 @@ func OverrideLogicalId(newLogicalId *string)
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* *string
 
@@ -115,7 +115,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.resetOverrideLogicalId"></a>
+##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.resetOverrideLogicalId"></a>
 
 ```go
 func ResetOverrideLogicalId()
@@ -123,7 +123,7 @@ func ResetOverrideLogicalId()
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.toHclTerraform"></a>
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.toHclTerraform"></a>
 
 ```go
 func ToHclTerraform() interface{}
@@ -131,13 +131,13 @@ func ToHclTerraform() interface{}
 
 Adds this resource to the terraform JSON output.
 
-##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.toMetadata"></a>
+##### `ToMetadata` <a name="ToMetadata" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.toMetadata"></a>
 
 ```go
 func ToMetadata() interface{}
 ```
 
-##### `ToTerraform` <a name="ToTerraform" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.toTerraform"></a>
+##### `ToTerraform` <a name="ToTerraform" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.toTerraform"></a>
 
 ```go
 func ToTerraform() interface{}
@@ -145,139 +145,139 @@ func ToTerraform() interface{}
 
 Adds this resource to the terraform JSON output.
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.resetId"></a>
+##### `ResetId` <a name="ResetId" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.resetId"></a>
 
 ```go
 func ResetId()
 ```
 
-##### `ResetProject` <a name="ResetProject" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.resetProject"></a>
+##### `ResetProject` <a name="ResetProject" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.resetProject"></a>
 
 ```go
 func ResetProject()
 ```
 
-##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.resetRegion"></a>
+##### `ResetRegion` <a name="ResetRegion" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.resetRegion"></a>
 
 ```go
 func ResetRegion()
@@ -287,17 +287,17 @@ func ResetRegion()
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.isTerraformDataSource">IsTerraformDataSource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DataGoogleContainerRegistryRepository resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.isTerraformDataSource">IsTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DataGoogleContainerRegistryRepository resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.isConstruct"></a>
+##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagooglecontainerregistryrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglecontainerregistryrepository"
 
 datagooglecontainerregistryrepository.DataGoogleContainerRegistryRepository_IsConstruct(x interface{}) *bool
 ```
@@ -318,7 +318,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.isConstruct.parameter.x"></a>
 
 - *Type:* interface{}
 
@@ -326,45 +326,45 @@ Any object.
 
 ---
 
-##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.isTerraformElement"></a>
+##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagooglecontainerregistryrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglecontainerregistryrepository"
 
 datagooglecontainerregistryrepository.DataGoogleContainerRegistryRepository_IsTerraformElement(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.isTerraformElement.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.isTerraformDataSource"></a>
+##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagooglecontainerregistryrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglecontainerregistryrepository"
 
 datagooglecontainerregistryrepository.DataGoogleContainerRegistryRepository_IsTerraformDataSource(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.isTerraformDataSource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.generateConfigForImport"></a>
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagooglecontainerregistryrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglecontainerregistryrepository"
 
 datagooglecontainerregistryrepository.DataGoogleContainerRegistryRepository_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
 
 Generates CDKTF code for importing a DataGoogleContainerRegistryRepository resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -372,7 +372,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* *string
 
@@ -380,7 +380,7 @@ The construct id used in the generated config for the DataGoogleContainerRegistr
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* *string
 
@@ -390,7 +390,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
 
@@ -402,29 +402,29 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.repositoryUrl">RepositoryUrl</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.projectInput">ProjectInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.id">Id</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.project">Project</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.region">Region</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.repositoryUrl">RepositoryUrl</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.projectInput">ProjectInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.regionInput">RegionInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.project">Project</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.region">Region</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `Node`<sup>Required</sup> <a name="Node" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.node"></a>
+##### `Node`<sup>Required</sup> <a name="Node" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.node"></a>
 
 ```go
 func Node() Node
@@ -436,7 +436,7 @@ The tree node.
 
 ---
 
-##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.cdktfStack"></a>
+##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.cdktfStack"></a>
 
 ```go
 func CdktfStack() TerraformStack
@@ -446,7 +446,7 @@ func CdktfStack() TerraformStack
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -456,7 +456,7 @@ func Fqn() *string
 
 ---
 
-##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.friendlyUniqueId"></a>
+##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.friendlyUniqueId"></a>
 
 ```go
 func FriendlyUniqueId() *string
@@ -466,7 +466,7 @@ func FriendlyUniqueId() *string
 
 ---
 
-##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.terraformMetaArguments"></a>
+##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.terraformMetaArguments"></a>
 
 ```go
 func TerraformMetaArguments() *map[string]interface{}
@@ -476,7 +476,7 @@ func TerraformMetaArguments() *map[string]interface{}
 
 ---
 
-##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.terraformResourceType"></a>
+##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.terraformResourceType"></a>
 
 ```go
 func TerraformResourceType() *string
@@ -486,7 +486,7 @@ func TerraformResourceType() *string
 
 ---
 
-##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.terraformGeneratorMetadata"></a>
+##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.terraformGeneratorMetadata"></a>
 
 ```go
 func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
@@ -496,7 +496,7 @@ func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.count"></a>
 
 ```go
 func Count() interface{}
@@ -506,7 +506,7 @@ func Count() interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.dependsOn"></a>
 
 ```go
 func DependsOn() *[]*string
@@ -516,7 +516,7 @@ func DependsOn() *[]*string
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.forEach"></a>
 
 ```go
 func ForEach() ITerraformIterator
@@ -526,7 +526,7 @@ func ForEach() ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.lifecycle"></a>
 
 ```go
 func Lifecycle() TerraformResourceLifecycle
@@ -536,7 +536,7 @@ func Lifecycle() TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.provider"></a>
 
 ```go
 func Provider() TerraformProvider
@@ -546,7 +546,7 @@ func Provider() TerraformProvider
 
 ---
 
-##### `RepositoryUrl`<sup>Required</sup> <a name="RepositoryUrl" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.repositoryUrl"></a>
+##### `RepositoryUrl`<sup>Required</sup> <a name="RepositoryUrl" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.repositoryUrl"></a>
 
 ```go
 func RepositoryUrl() *string
@@ -556,7 +556,7 @@ func RepositoryUrl() *string
 
 ---
 
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.idInput"></a>
+##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.idInput"></a>
 
 ```go
 func IdInput() *string
@@ -566,7 +566,7 @@ func IdInput() *string
 
 ---
 
-##### `ProjectInput`<sup>Optional</sup> <a name="ProjectInput" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.projectInput"></a>
+##### `ProjectInput`<sup>Optional</sup> <a name="ProjectInput" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.projectInput"></a>
 
 ```go
 func ProjectInput() *string
@@ -576,7 +576,7 @@ func ProjectInput() *string
 
 ---
 
-##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.regionInput"></a>
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.regionInput"></a>
 
 ```go
 func RegionInput() *string
@@ -586,7 +586,7 @@ func RegionInput() *string
 
 ---
 
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.id"></a>
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.id"></a>
 
 ```go
 func Id() *string
@@ -596,7 +596,7 @@ func Id() *string
 
 ---
 
-##### `Project`<sup>Required</sup> <a name="Project" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.project"></a>
+##### `Project`<sup>Required</sup> <a name="Project" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.project"></a>
 
 ```go
 func Project() *string
@@ -606,7 +606,7 @@ func Project() *string
 
 ---
 
-##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.region"></a>
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.region"></a>
 
 ```go
 func Region() *string
@@ -620,11 +620,11 @@ func Region() *string
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.tfResourceType"></a>
+##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepository.property.tfResourceType"></a>
 
 ```go
 func TfResourceType() *string
@@ -636,12 +636,12 @@ func TfResourceType() *string
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### DataGoogleContainerRegistryRepositoryConfig <a name="DataGoogleContainerRegistryRepositoryConfig" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepositoryConfig"></a>
+### DataGoogleContainerRegistryRepositoryConfig <a name="DataGoogleContainerRegistryRepositoryConfig" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepositoryConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepositoryConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepositoryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagooglecontainerregistryrepository"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglecontainerregistryrepository"
 
 &datagooglecontainerregistryrepository.DataGoogleContainerRegistryRepositoryConfig {
 	Connection: interface{},
@@ -661,20 +661,20 @@ import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagooglecontainer
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepositoryConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepositoryConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepositoryConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepositoryConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepositoryConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepositoryConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepositoryConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepositoryConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/container_registry_repository#id DataGoogleContainerRegistryRepository#id}. |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepositoryConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/container_registry_repository#project DataGoogleContainerRegistryRepository#project}. |
-| <code><a href="#@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepositoryConfig.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/container_registry_repository#region DataGoogleContainerRegistryRepository#region}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepositoryConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepositoryConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepositoryConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepositoryConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepositoryConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepositoryConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepositoryConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepositoryConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/container_registry_repository#id DataGoogleContainerRegistryRepository#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepositoryConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/container_registry_repository#project DataGoogleContainerRegistryRepository#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepositoryConfig.property.region">Region</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/container_registry_repository#region DataGoogleContainerRegistryRepository#region}. |
 
 ---
 
-##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepositoryConfig.property.connection"></a>
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepositoryConfig.property.connection"></a>
 
 ```go
 Connection interface{}
@@ -684,7 +684,7 @@ Connection interface{}
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepositoryConfig.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepositoryConfig.property.count"></a>
 
 ```go
 Count interface{}
@@ -694,7 +694,7 @@ Count interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepositoryConfig.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepositoryConfig.property.dependsOn"></a>
 
 ```go
 DependsOn *[]ITerraformDependable
@@ -704,7 +704,7 @@ DependsOn *[]ITerraformDependable
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepositoryConfig.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepositoryConfig.property.forEach"></a>
 
 ```go
 ForEach ITerraformIterator
@@ -714,7 +714,7 @@ ForEach ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepositoryConfig.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepositoryConfig.property.lifecycle"></a>
 
 ```go
 Lifecycle TerraformResourceLifecycle
@@ -724,7 +724,7 @@ Lifecycle TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepositoryConfig.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepositoryConfig.property.provider"></a>
 
 ```go
 Provider TerraformProvider
@@ -734,7 +734,7 @@ Provider TerraformProvider
 
 ---
 
-##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepositoryConfig.property.provisioners"></a>
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepositoryConfig.property.provisioners"></a>
 
 ```go
 Provisioners *[]interface{}
@@ -744,7 +744,7 @@ Provisioners *[]interface{}
 
 ---
 
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepositoryConfig.property.id"></a>
+##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepositoryConfig.property.id"></a>
 
 ```go
 Id *string
@@ -759,7 +759,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
-##### `Project`<sup>Optional</sup> <a name="Project" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepositoryConfig.property.project"></a>
+##### `Project`<sup>Optional</sup> <a name="Project" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepositoryConfig.property.project"></a>
 
 ```go
 Project *string
@@ -771,7 +771,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepositoryConfig.property.region"></a>
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktn/provider-google.dataGoogleContainerRegistryRepository.DataGoogleContainerRegistryRepositoryConfig.property.region"></a>
 
 ```go
 Region *string

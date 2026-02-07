@@ -1,15 +1,15 @@
-# `dataGoogleBigqueryDefaultServiceAccount` Submodule <a name="`dataGoogleBigqueryDefaultServiceAccount` Submodule" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount"></a>
+# `dataGoogleBigqueryDefaultServiceAccount` Submodule <a name="`dataGoogleBigqueryDefaultServiceAccount` Submodule" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### DataGoogleBigqueryDefaultServiceAccount <a name="DataGoogleBigqueryDefaultServiceAccount" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount"></a>
+### DataGoogleBigqueryDefaultServiceAccount <a name="DataGoogleBigqueryDefaultServiceAccount" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount"></a>
 
 Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/bigquery_default_service_account google_bigquery_default_service_account}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import data_google_bigquery_default_service_account
+from cdktn_provider_google import data_google_bigquery_default_service_account
 
 dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount(
   scope: Construct,
@@ -28,21 +28,21 @@ dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/bigquery_default_service_account#id DataGoogleBigqueryDefaultServiceAccount#id}. |
-| <code><a href="#@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/bigquery_default_service_account#project DataGoogleBigqueryDefaultServiceAccount#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/bigquery_default_service_account#id DataGoogleBigqueryDefaultServiceAccount#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/bigquery_default_service_account#project DataGoogleBigqueryDefaultServiceAccount#project}. |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -50,7 +50,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -60,49 +60,49 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.Initializer.parameter.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.Initializer.parameter.connection"></a>
 
 - *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.Initializer.parameter.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.Initializer.parameter.count"></a>
 
 - *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.Initializer.parameter.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.Initializer.parameter.dependsOn"></a>
 
 - *Type:* typing.List[cdktf.ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.Initializer.parameter.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.Initializer.parameter.forEach"></a>
 
 - *Type:* cdktf.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.Initializer.parameter.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.Initializer.parameter.lifecycle"></a>
 
 - *Type:* cdktf.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.Initializer.parameter.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.Initializer.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.Initializer.parameter.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.Initializer.parameter.provisioners"></a>
 
 - *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.Initializer.parameter.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -113,7 +113,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
-##### `project`<sup>Optional</sup> <a name="project" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.Initializer.parameter.project"></a>
+##### `project`<sup>Optional</sup> <a name="project" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.Initializer.parameter.project"></a>
 
 - *Type:* str
 
@@ -125,29 +125,29 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.toString">to_string</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.addOverride">add_override</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.toHclTerraform">to_hcl_terraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.toMetadata">to_metadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.resetId">reset_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.resetProject">reset_project</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.toString">to_string</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.addOverride">add_override</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.toHclTerraform">to_hcl_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.toMetadata">to_metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.resetProject">reset_project</a></code> | *No description.* |
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.toString"></a>
 
 ```python
 def to_string() -> str
@@ -155,7 +155,7 @@ def to_string() -> str
 
 Returns a string representation of this construct.
 
-##### `add_override` <a name="add_override" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.addOverride"></a>
+##### `add_override` <a name="add_override" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.addOverride"></a>
 
 ```python
 def add_override(
@@ -164,19 +164,19 @@ def add_override(
 ) -> None
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.addOverride.parameter.path"></a>
 
 - *Type:* str
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.addOverride.parameter.value"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `override_logical_id` <a name="override_logical_id" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.overrideLogicalId"></a>
+##### `override_logical_id` <a name="override_logical_id" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.overrideLogicalId"></a>
 
 ```python
 def override_logical_id(
@@ -186,7 +186,7 @@ def override_logical_id(
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.overrideLogicalId.parameter.newLogicalId"></a>
+###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* str
 
@@ -194,7 +194,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.resetOverrideLogicalId"></a>
+##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.resetOverrideLogicalId"></a>
 
 ```python
 def reset_override_logical_id() -> None
@@ -202,7 +202,7 @@ def reset_override_logical_id() -> None
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.toHclTerraform"></a>
+##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.toHclTerraform"></a>
 
 ```python
 def to_hcl_terraform() -> typing.Any
@@ -210,13 +210,13 @@ def to_hcl_terraform() -> typing.Any
 
 Adds this resource to the terraform JSON output.
 
-##### `to_metadata` <a name="to_metadata" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.toMetadata"></a>
+##### `to_metadata` <a name="to_metadata" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.toMetadata"></a>
 
 ```python
 def to_metadata() -> typing.Any
 ```
 
-##### `to_terraform` <a name="to_terraform" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.toTerraform"></a>
+##### `to_terraform` <a name="to_terraform" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.toTerraform"></a>
 
 ```python
 def to_terraform() -> typing.Any
@@ -224,7 +224,7 @@ def to_terraform() -> typing.Any
 
 Adds this resource to the terraform JSON output.
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -232,13 +232,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -246,13 +246,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -260,13 +260,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -274,13 +274,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -288,13 +288,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -302,13 +302,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -316,13 +316,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -330,13 +330,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -344,13 +344,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -358,19 +358,19 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.resetId"></a>
+##### `reset_id` <a name="reset_id" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.resetId"></a>
 
 ```python
 def reset_id() -> None
 ```
 
-##### `reset_project` <a name="reset_project" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.resetProject"></a>
+##### `reset_project` <a name="reset_project" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.resetProject"></a>
 
 ```python
 def reset_project() -> None
@@ -380,17 +380,17 @@ def reset_project() -> None
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.isTerraformElement">is_terraform_element</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.isTerraformDataSource">is_terraform_data_source</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a DataGoogleBigqueryDefaultServiceAccount resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.isTerraformElement">is_terraform_element</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.isTerraformDataSource">is_terraform_data_source</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a DataGoogleBigqueryDefaultServiceAccount resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `is_construct` <a name="is_construct" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.isConstruct"></a>
+##### `is_construct` <a name="is_construct" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.isConstruct"></a>
 
 ```python
-from cdktf_cdktf_provider_google import data_google_bigquery_default_service_account
+from cdktn_provider_google import data_google_bigquery_default_service_account
 
 dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.is_construct(
   x: typing.Any
@@ -413,7 +413,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.isConstruct.parameter.x"></a>
 
 - *Type:* typing.Any
 
@@ -421,42 +421,42 @@ Any object.
 
 ---
 
-##### `is_terraform_element` <a name="is_terraform_element" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.isTerraformElement"></a>
+##### `is_terraform_element` <a name="is_terraform_element" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.isTerraformElement"></a>
 
 ```python
-from cdktf_cdktf_provider_google import data_google_bigquery_default_service_account
+from cdktn_provider_google import data_google_bigquery_default_service_account
 
 dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.is_terraform_element(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.isTerraformElement.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `is_terraform_data_source` <a name="is_terraform_data_source" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.isTerraformDataSource"></a>
+##### `is_terraform_data_source` <a name="is_terraform_data_source" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.isTerraformDataSource"></a>
 
 ```python
-from cdktf_cdktf_provider_google import data_google_bigquery_default_service_account
+from cdktn_provider_google import data_google_bigquery_default_service_account
 
 dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.is_terraform_data_source(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.isTerraformDataSource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.generateConfigForImport"></a>
+##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.generateConfigForImport"></a>
 
 ```python
-from cdktf_cdktf_provider_google import data_google_bigquery_default_service_account
+from cdktn_provider_google import data_google_bigquery_default_service_account
 
 dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.generate_config_for_import(
   scope: Construct,
@@ -468,7 +468,7 @@ dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.
 
 Generates CDKTF code for importing a DataGoogleBigqueryDefaultServiceAccount resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -476,7 +476,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.generateConfigForImport.parameter.importToId"></a>
+###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* str
 
@@ -484,7 +484,7 @@ The construct id used in the generated config for the DataGoogleBigqueryDefaultS
 
 ---
 
-###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.generateConfigForImport.parameter.importFromId"></a>
+###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* str
 
@@ -494,7 +494,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
@@ -506,28 +506,28 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.property.email">email</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.property.member">member</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.property.project">project</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.property.email">email</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.property.member">member</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.property.project">project</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.property.node"></a>
 
 ```python
 node: Node
@@ -539,7 +539,7 @@ The tree node.
 
 ---
 
-##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.property.cdktfStack"></a>
+##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.property.cdktfStack"></a>
 
 ```python
 cdktf_stack: TerraformStack
@@ -549,7 +549,7 @@ cdktf_stack: TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.property.fqn"></a>
 
 ```python
 fqn: str
@@ -559,7 +559,7 @@ fqn: str
 
 ---
 
-##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.property.friendlyUniqueId"></a>
+##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.property.friendlyUniqueId"></a>
 
 ```python
 friendly_unique_id: str
@@ -569,7 +569,7 @@ friendly_unique_id: str
 
 ---
 
-##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.property.terraformMetaArguments"></a>
+##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.property.terraformMetaArguments"></a>
 
 ```python
 terraform_meta_arguments: typing.Mapping[typing.Any]
@@ -579,7 +579,7 @@ terraform_meta_arguments: typing.Mapping[typing.Any]
 
 ---
 
-##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.property.terraformResourceType"></a>
+##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.property.terraformResourceType"></a>
 
 ```python
 terraform_resource_type: str
@@ -589,7 +589,7 @@ terraform_resource_type: str
 
 ---
 
-##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.property.terraformGeneratorMetadata"></a>
+##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.property.terraformGeneratorMetadata"></a>
 
 ```python
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
@@ -599,7 +599,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -609,7 +609,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[str]
@@ -619,7 +619,7 @@ depends_on: typing.List[str]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -629,7 +629,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -639,7 +639,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -649,7 +649,7 @@ provider: TerraformProvider
 
 ---
 
-##### `email`<sup>Required</sup> <a name="email" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.property.email"></a>
+##### `email`<sup>Required</sup> <a name="email" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.property.email"></a>
 
 ```python
 email: str
@@ -659,7 +659,7 @@ email: str
 
 ---
 
-##### `member`<sup>Required</sup> <a name="member" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.property.member"></a>
+##### `member`<sup>Required</sup> <a name="member" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.property.member"></a>
 
 ```python
 member: str
@@ -669,7 +669,7 @@ member: str
 
 ---
 
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.property.idInput"></a>
+##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.property.idInput"></a>
 
 ```python
 id_input: str
@@ -679,7 +679,7 @@ id_input: str
 
 ---
 
-##### `project_input`<sup>Optional</sup> <a name="project_input" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.property.projectInput"></a>
+##### `project_input`<sup>Optional</sup> <a name="project_input" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.property.projectInput"></a>
 
 ```python
 project_input: str
@@ -689,7 +689,7 @@ project_input: str
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.property.id"></a>
 
 ```python
 id: str
@@ -699,7 +699,7 @@ id: str
 
 ---
 
-##### `project`<sup>Required</sup> <a name="project" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.property.project"></a>
+##### `project`<sup>Required</sup> <a name="project" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.property.project"></a>
 
 ```python
 project: str
@@ -713,11 +713,11 @@ project: str
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccount.property.tfResourceType"></a>
 
 ```python
 tfResourceType: str
@@ -729,12 +729,12 @@ tfResourceType: str
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### DataGoogleBigqueryDefaultServiceAccountConfig <a name="DataGoogleBigqueryDefaultServiceAccountConfig" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccountConfig"></a>
+### DataGoogleBigqueryDefaultServiceAccountConfig <a name="DataGoogleBigqueryDefaultServiceAccountConfig" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccountConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccountConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccountConfig.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import data_google_bigquery_default_service_account
+from cdktn_provider_google import data_google_bigquery_default_service_account
 
 dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccountConfig(
   connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
@@ -753,19 +753,19 @@ dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccountC
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccountConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccountConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccountConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccountConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccountConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccountConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccountConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccountConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/bigquery_default_service_account#id DataGoogleBigqueryDefaultServiceAccount#id}. |
-| <code><a href="#@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccountConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/bigquery_default_service_account#project DataGoogleBigqueryDefaultServiceAccount#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccountConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccountConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccountConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccountConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccountConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccountConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccountConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccountConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/bigquery_default_service_account#id DataGoogleBigqueryDefaultServiceAccount#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccountConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/bigquery_default_service_account#project DataGoogleBigqueryDefaultServiceAccount#project}. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccountConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccountConfig.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
@@ -775,7 +775,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccountConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccountConfig.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -785,7 +785,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccountConfig.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccountConfig.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[ITerraformDependable]
@@ -795,7 +795,7 @@ depends_on: typing.List[ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccountConfig.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccountConfig.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -805,7 +805,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccountConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccountConfig.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -815,7 +815,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccountConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccountConfig.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -825,7 +825,7 @@ provider: TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccountConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccountConfig.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
@@ -835,7 +835,7 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccountConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccountConfig.property.id"></a>
 
 ```python
 id: str
@@ -850,7 +850,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
-##### `project`<sup>Optional</sup> <a name="project" id="@cdktf/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccountConfig.property.project"></a>
+##### `project`<sup>Optional</sup> <a name="project" id="@cdktn/provider-google.dataGoogleBigqueryDefaultServiceAccount.DataGoogleBigqueryDefaultServiceAccountConfig.property.project"></a>
 
 ```python
 project: str

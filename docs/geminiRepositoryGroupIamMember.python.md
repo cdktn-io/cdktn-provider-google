@@ -1,15 +1,15 @@
-# `geminiRepositoryGroupIamMember` Submodule <a name="`geminiRepositoryGroupIamMember` Submodule" id="@cdktf/provider-google.geminiRepositoryGroupIamMember"></a>
+# `geminiRepositoryGroupIamMember` Submodule <a name="`geminiRepositoryGroupIamMember` Submodule" id="@cdktn/provider-google.geminiRepositoryGroupIamMember"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### GeminiRepositoryGroupIamMember <a name="GeminiRepositoryGroupIamMember" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember"></a>
+### GeminiRepositoryGroupIamMember <a name="GeminiRepositoryGroupIamMember" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember"></a>
 
 Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/gemini_repository_group_iam_member google_gemini_repository_group_iam_member}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import gemini_repository_group_iam_member
+from cdktn_provider_google import gemini_repository_group_iam_member
 
 geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember(
   scope: Construct,
@@ -34,27 +34,27 @@ geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.Initializer.parameter.codeRepositoryIndex">code_repository_index</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/gemini_repository_group_iam_member#code_repository_index GeminiRepositoryGroupIamMember#code_repository_index}. |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.Initializer.parameter.member">member</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/gemini_repository_group_iam_member#member GeminiRepositoryGroupIamMember#member}. |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.Initializer.parameter.repositoryGroupId">repository_group_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/gemini_repository_group_iam_member#repository_group_id GeminiRepositoryGroupIamMember#repository_group_id}. |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.Initializer.parameter.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/gemini_repository_group_iam_member#role GeminiRepositoryGroupIamMember#role}. |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.Initializer.parameter.condition">condition</a></code> | <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberCondition">GeminiRepositoryGroupIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/gemini_repository_group_iam_member#id GeminiRepositoryGroupIamMember#id}. |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.Initializer.parameter.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/gemini_repository_group_iam_member#location GeminiRepositoryGroupIamMember#location}. |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/gemini_repository_group_iam_member#project GeminiRepositoryGroupIamMember#project}. |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.Initializer.parameter.codeRepositoryIndex">code_repository_index</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/gemini_repository_group_iam_member#code_repository_index GeminiRepositoryGroupIamMember#code_repository_index}. |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.Initializer.parameter.member">member</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/gemini_repository_group_iam_member#member GeminiRepositoryGroupIamMember#member}. |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.Initializer.parameter.repositoryGroupId">repository_group_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/gemini_repository_group_iam_member#repository_group_id GeminiRepositoryGroupIamMember#repository_group_id}. |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.Initializer.parameter.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/gemini_repository_group_iam_member#role GeminiRepositoryGroupIamMember#role}. |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.Initializer.parameter.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberCondition">GeminiRepositoryGroupIamMemberCondition</a></code> | condition block. |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/gemini_repository_group_iam_member#id GeminiRepositoryGroupIamMember#id}. |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.Initializer.parameter.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/gemini_repository_group_iam_member#location GeminiRepositoryGroupIamMember#location}. |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/gemini_repository_group_iam_member#project GeminiRepositoryGroupIamMember#project}. |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -62,7 +62,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -72,49 +72,49 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.Initializer.parameter.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.Initializer.parameter.connection"></a>
 
 - *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.Initializer.parameter.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.Initializer.parameter.count"></a>
 
 - *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.Initializer.parameter.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.Initializer.parameter.dependsOn"></a>
 
 - *Type:* typing.List[cdktf.ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.Initializer.parameter.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.Initializer.parameter.forEach"></a>
 
 - *Type:* cdktf.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.Initializer.parameter.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.Initializer.parameter.lifecycle"></a>
 
 - *Type:* cdktf.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.Initializer.parameter.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.Initializer.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.Initializer.parameter.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.Initializer.parameter.provisioners"></a>
 
 - *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
-##### `code_repository_index`<sup>Required</sup> <a name="code_repository_index" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.Initializer.parameter.codeRepositoryIndex"></a>
+##### `code_repository_index`<sup>Required</sup> <a name="code_repository_index" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.Initializer.parameter.codeRepositoryIndex"></a>
 
 - *Type:* str
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `member`<sup>Required</sup> <a name="member" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.Initializer.parameter.member"></a>
+##### `member`<sup>Required</sup> <a name="member" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.Initializer.parameter.member"></a>
 
 - *Type:* str
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `repository_group_id`<sup>Required</sup> <a name="repository_group_id" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.Initializer.parameter.repositoryGroupId"></a>
+##### `repository_group_id`<sup>Required</sup> <a name="repository_group_id" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.Initializer.parameter.repositoryGroupId"></a>
 
 - *Type:* str
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `role`<sup>Required</sup> <a name="role" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.Initializer.parameter.role"></a>
+##### `role`<sup>Required</sup> <a name="role" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.Initializer.parameter.role"></a>
 
 - *Type:* str
 
@@ -146,9 +146,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `condition`<sup>Optional</sup> <a name="condition" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.Initializer.parameter.condition"></a>
+##### `condition`<sup>Optional</sup> <a name="condition" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.Initializer.parameter.condition"></a>
 
-- *Type:* <a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberCondition">GeminiRepositoryGroupIamMemberCondition</a>
+- *Type:* <a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberCondition">GeminiRepositoryGroupIamMemberCondition</a>
 
 condition block.
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.Initializer.parameter.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -167,7 +167,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
-##### `location`<sup>Optional</sup> <a name="location" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.Initializer.parameter.location"></a>
+##### `location`<sup>Optional</sup> <a name="location" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.Initializer.parameter.location"></a>
 
 - *Type:* str
 
@@ -175,7 +175,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `project`<sup>Optional</sup> <a name="project" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.Initializer.parameter.project"></a>
+##### `project`<sup>Optional</sup> <a name="project" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.Initializer.parameter.project"></a>
 
 - *Type:* str
 
@@ -187,38 +187,38 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.toString">to_string</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.addOverride">add_override</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.toMetadata">to_metadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.hasResourceMove">has_resource_move</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.importFrom">import_from</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.putCondition">put_condition</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.resetCondition">reset_condition</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.resetId">reset_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.resetLocation">reset_location</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.resetProject">reset_project</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.toString">to_string</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.addOverride">add_override</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.toMetadata">to_metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.hasResourceMove">has_resource_move</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.importFrom">import_from</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.putCondition">put_condition</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.resetCondition">reset_condition</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.resetLocation">reset_location</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.resetProject">reset_project</a></code> | *No description.* |
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.toString"></a>
 
 ```python
 def to_string() -> str
@@ -226,7 +226,7 @@ def to_string() -> str
 
 Returns a string representation of this construct.
 
-##### `add_override` <a name="add_override" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.addOverride"></a>
+##### `add_override` <a name="add_override" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.addOverride"></a>
 
 ```python
 def add_override(
@@ -235,19 +235,19 @@ def add_override(
 ) -> None
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.addOverride.parameter.path"></a>
 
 - *Type:* str
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.addOverride.parameter.value"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `override_logical_id` <a name="override_logical_id" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.overrideLogicalId"></a>
+##### `override_logical_id` <a name="override_logical_id" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.overrideLogicalId"></a>
 
 ```python
 def override_logical_id(
@@ -257,7 +257,7 @@ def override_logical_id(
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.overrideLogicalId.parameter.newLogicalId"></a>
+###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* str
 
@@ -265,7 +265,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.resetOverrideLogicalId"></a>
+##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.resetOverrideLogicalId"></a>
 
 ```python
 def reset_override_logical_id() -> None
@@ -273,19 +273,19 @@ def reset_override_logical_id() -> None
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.toHclTerraform"></a>
+##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.toHclTerraform"></a>
 
 ```python
 def to_hcl_terraform() -> typing.Any
 ```
 
-##### `to_metadata` <a name="to_metadata" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.toMetadata"></a>
+##### `to_metadata` <a name="to_metadata" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.toMetadata"></a>
 
 ```python
 def to_metadata() -> typing.Any
 ```
 
-##### `to_terraform` <a name="to_terraform" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.toTerraform"></a>
+##### `to_terraform` <a name="to_terraform" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.toTerraform"></a>
 
 ```python
 def to_terraform() -> typing.Any
@@ -293,7 +293,7 @@ def to_terraform() -> typing.Any
 
 Adds this resource to the terraform JSON output.
 
-##### `add_move_target` <a name="add_move_target" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.addMoveTarget"></a>
+##### `add_move_target` <a name="add_move_target" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.addMoveTarget"></a>
 
 ```python
 def add_move_target(
@@ -303,7 +303,7 @@ def add_move_target(
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.addMoveTarget.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -311,7 +311,7 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -319,13 +319,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -333,13 +333,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -347,13 +347,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -361,13 +361,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -375,13 +375,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -389,13 +389,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -403,13 +403,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -417,13 +417,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -431,19 +431,19 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.hasResourceMove"></a>
+##### `has_resource_move` <a name="has_resource_move" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.hasResourceMove"></a>
 
 ```python
 def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `import_from` <a name="import_from" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.importFrom"></a>
+##### `import_from` <a name="import_from" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.importFrom"></a>
 
 ```python
 def import_from(
@@ -452,19 +452,19 @@ def import_from(
 ) -> None
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.importFrom.parameter.id"></a>
 
 - *Type:* str
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.importFrom.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -472,13 +472,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `move_from_id` <a name="move_from_id" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.moveFromId"></a>
+##### `move_from_id` <a name="move_from_id" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.moveFromId"></a>
 
 ```python
 def move_from_id(
@@ -490,7 +490,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.moveFromId.parameter.id"></a>
 
 - *Type:* str
 
@@ -498,7 +498,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `move_to` <a name="move_to" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.moveTo"></a>
+##### `move_to` <a name="move_to" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.moveTo"></a>
 
 ```python
 def move_to(
@@ -509,7 +509,7 @@ def move_to(
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.moveTo.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.moveTo.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -517,7 +517,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.moveTo.parameter.index"></a>
 
 - *Type:* str | typing.Union[int, float]
 
@@ -525,7 +525,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `move_to_id` <a name="move_to_id" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.moveToId"></a>
+##### `move_to_id` <a name="move_to_id" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.moveToId"></a>
 
 ```python
 def move_to_id(
@@ -535,7 +535,7 @@ def move_to_id(
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.moveToId.parameter.id"></a>
 
 - *Type:* str
 
@@ -543,7 +543,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `put_condition` <a name="put_condition" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.putCondition"></a>
+##### `put_condition` <a name="put_condition" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.putCondition"></a>
 
 ```python
 def put_condition(
@@ -553,7 +553,7 @@ def put_condition(
 ) -> None
 ```
 
-###### `expression`<sup>Required</sup> <a name="expression" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.putCondition.parameter.expression"></a>
+###### `expression`<sup>Required</sup> <a name="expression" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.putCondition.parameter.expression"></a>
 
 - *Type:* str
 
@@ -561,7 +561,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `title`<sup>Required</sup> <a name="title" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.putCondition.parameter.title"></a>
+###### `title`<sup>Required</sup> <a name="title" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.putCondition.parameter.title"></a>
 
 - *Type:* str
 
@@ -569,7 +569,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.putCondition.parameter.description"></a>
+###### `description`<sup>Optional</sup> <a name="description" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.putCondition.parameter.description"></a>
 
 - *Type:* str
 
@@ -577,25 +577,25 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `reset_condition` <a name="reset_condition" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.resetCondition"></a>
+##### `reset_condition` <a name="reset_condition" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.resetCondition"></a>
 
 ```python
 def reset_condition() -> None
 ```
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.resetId"></a>
+##### `reset_id` <a name="reset_id" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.resetId"></a>
 
 ```python
 def reset_id() -> None
 ```
 
-##### `reset_location` <a name="reset_location" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.resetLocation"></a>
+##### `reset_location` <a name="reset_location" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.resetLocation"></a>
 
 ```python
 def reset_location() -> None
 ```
 
-##### `reset_project` <a name="reset_project" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.resetProject"></a>
+##### `reset_project` <a name="reset_project" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.resetProject"></a>
 
 ```python
 def reset_project() -> None
@@ -605,17 +605,17 @@ def reset_project() -> None
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.isTerraformElement">is_terraform_element</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a GeminiRepositoryGroupIamMember resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.isTerraformElement">is_terraform_element</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a GeminiRepositoryGroupIamMember resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `is_construct` <a name="is_construct" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.isConstruct"></a>
+##### `is_construct` <a name="is_construct" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.isConstruct"></a>
 
 ```python
-from cdktf_cdktf_provider_google import gemini_repository_group_iam_member
+from cdktn_provider_google import gemini_repository_group_iam_member
 
 geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.is_construct(
   x: typing.Any
@@ -638,7 +638,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.isConstruct.parameter.x"></a>
 
 - *Type:* typing.Any
 
@@ -646,42 +646,42 @@ Any object.
 
 ---
 
-##### `is_terraform_element` <a name="is_terraform_element" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.isTerraformElement"></a>
+##### `is_terraform_element` <a name="is_terraform_element" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.isTerraformElement"></a>
 
 ```python
-from cdktf_cdktf_provider_google import gemini_repository_group_iam_member
+from cdktn_provider_google import gemini_repository_group_iam_member
 
 geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.is_terraform_element(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.isTerraformElement.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.isTerraformResource"></a>
+##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.isTerraformResource"></a>
 
 ```python
-from cdktf_cdktf_provider_google import gemini_repository_group_iam_member
+from cdktn_provider_google import gemini_repository_group_iam_member
 
 geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.is_terraform_resource(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.isTerraformResource.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.generateConfigForImport"></a>
+##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.generateConfigForImport"></a>
 
 ```python
-from cdktf_cdktf_provider_google import gemini_repository_group_iam_member
+from cdktn_provider_google import gemini_repository_group_iam_member
 
 geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.generate_config_for_import(
   scope: Construct,
@@ -693,7 +693,7 @@ geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.generate_config_fo
 
 Generates CDKTF code for importing a GeminiRepositoryGroupIamMember resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -701,7 +701,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.generateConfigForImport.parameter.importToId"></a>
+###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* str
 
@@ -709,7 +709,7 @@ The construct id used in the generated config for the GeminiRepositoryGroupIamMe
 
 ---
 
-###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.generateConfigForImport.parameter.importFromId"></a>
+###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* str
 
@@ -719,7 +719,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
@@ -731,41 +731,41 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.condition">condition</a></code> | <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference">GeminiRepositoryGroupIamMemberConditionOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.etag">etag</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.codeRepositoryIndexInput">code_repository_index_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.conditionInput">condition_input</a></code> | <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberCondition">GeminiRepositoryGroupIamMemberCondition</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.locationInput">location_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.memberInput">member_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.repositoryGroupIdInput">repository_group_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.roleInput">role_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.codeRepositoryIndex">code_repository_index</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.location">location</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.member">member</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.project">project</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.repositoryGroupId">repository_group_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.role">role</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference">GeminiRepositoryGroupIamMemberConditionOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.etag">etag</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.codeRepositoryIndexInput">code_repository_index_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.conditionInput">condition_input</a></code> | <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberCondition">GeminiRepositoryGroupIamMemberCondition</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.locationInput">location_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.memberInput">member_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.repositoryGroupIdInput">repository_group_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.roleInput">role_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.codeRepositoryIndex">code_repository_index</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.location">location</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.member">member</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.project">project</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.repositoryGroupId">repository_group_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.role">role</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.node"></a>
 
 ```python
 node: Node
@@ -777,7 +777,7 @@ The tree node.
 
 ---
 
-##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.cdktfStack"></a>
+##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.cdktfStack"></a>
 
 ```python
 cdktf_stack: TerraformStack
@@ -787,7 +787,7 @@ cdktf_stack: TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.fqn"></a>
 
 ```python
 fqn: str
@@ -797,7 +797,7 @@ fqn: str
 
 ---
 
-##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.friendlyUniqueId"></a>
+##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.friendlyUniqueId"></a>
 
 ```python
 friendly_unique_id: str
@@ -807,7 +807,7 @@ friendly_unique_id: str
 
 ---
 
-##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.terraformMetaArguments"></a>
+##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.terraformMetaArguments"></a>
 
 ```python
 terraform_meta_arguments: typing.Mapping[typing.Any]
@@ -817,7 +817,7 @@ terraform_meta_arguments: typing.Mapping[typing.Any]
 
 ---
 
-##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.terraformResourceType"></a>
+##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.terraformResourceType"></a>
 
 ```python
 terraform_resource_type: str
@@ -827,7 +827,7 @@ terraform_resource_type: str
 
 ---
 
-##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.terraformGeneratorMetadata"></a>
+##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.terraformGeneratorMetadata"></a>
 
 ```python
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
@@ -837,7 +837,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
@@ -847,7 +847,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -857,7 +857,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[str]
@@ -867,7 +867,7 @@ depends_on: typing.List[str]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -877,7 +877,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -887,7 +887,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -897,7 +897,7 @@ provider: TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
@@ -907,17 +907,17 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `condition`<sup>Required</sup> <a name="condition" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.condition"></a>
+##### `condition`<sup>Required</sup> <a name="condition" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.condition"></a>
 
 ```python
 condition: GeminiRepositoryGroupIamMemberConditionOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference">GeminiRepositoryGroupIamMemberConditionOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference">GeminiRepositoryGroupIamMemberConditionOutputReference</a>
 
 ---
 
-##### `etag`<sup>Required</sup> <a name="etag" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.etag"></a>
+##### `etag`<sup>Required</sup> <a name="etag" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.etag"></a>
 
 ```python
 etag: str
@@ -927,7 +927,7 @@ etag: str
 
 ---
 
-##### `code_repository_index_input`<sup>Optional</sup> <a name="code_repository_index_input" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.codeRepositoryIndexInput"></a>
+##### `code_repository_index_input`<sup>Optional</sup> <a name="code_repository_index_input" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.codeRepositoryIndexInput"></a>
 
 ```python
 code_repository_index_input: str
@@ -937,17 +937,17 @@ code_repository_index_input: str
 
 ---
 
-##### `condition_input`<sup>Optional</sup> <a name="condition_input" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.conditionInput"></a>
+##### `condition_input`<sup>Optional</sup> <a name="condition_input" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.conditionInput"></a>
 
 ```python
 condition_input: GeminiRepositoryGroupIamMemberCondition
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberCondition">GeminiRepositoryGroupIamMemberCondition</a>
+- *Type:* <a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberCondition">GeminiRepositoryGroupIamMemberCondition</a>
 
 ---
 
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.idInput"></a>
+##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.idInput"></a>
 
 ```python
 id_input: str
@@ -957,7 +957,7 @@ id_input: str
 
 ---
 
-##### `location_input`<sup>Optional</sup> <a name="location_input" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.locationInput"></a>
+##### `location_input`<sup>Optional</sup> <a name="location_input" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.locationInput"></a>
 
 ```python
 location_input: str
@@ -967,7 +967,7 @@ location_input: str
 
 ---
 
-##### `member_input`<sup>Optional</sup> <a name="member_input" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.memberInput"></a>
+##### `member_input`<sup>Optional</sup> <a name="member_input" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.memberInput"></a>
 
 ```python
 member_input: str
@@ -977,7 +977,7 @@ member_input: str
 
 ---
 
-##### `project_input`<sup>Optional</sup> <a name="project_input" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.projectInput"></a>
+##### `project_input`<sup>Optional</sup> <a name="project_input" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.projectInput"></a>
 
 ```python
 project_input: str
@@ -987,7 +987,7 @@ project_input: str
 
 ---
 
-##### `repository_group_id_input`<sup>Optional</sup> <a name="repository_group_id_input" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.repositoryGroupIdInput"></a>
+##### `repository_group_id_input`<sup>Optional</sup> <a name="repository_group_id_input" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.repositoryGroupIdInput"></a>
 
 ```python
 repository_group_id_input: str
@@ -997,7 +997,7 @@ repository_group_id_input: str
 
 ---
 
-##### `role_input`<sup>Optional</sup> <a name="role_input" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.roleInput"></a>
+##### `role_input`<sup>Optional</sup> <a name="role_input" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.roleInput"></a>
 
 ```python
 role_input: str
@@ -1007,7 +1007,7 @@ role_input: str
 
 ---
 
-##### `code_repository_index`<sup>Required</sup> <a name="code_repository_index" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.codeRepositoryIndex"></a>
+##### `code_repository_index`<sup>Required</sup> <a name="code_repository_index" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.codeRepositoryIndex"></a>
 
 ```python
 code_repository_index: str
@@ -1017,7 +1017,7 @@ code_repository_index: str
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.id"></a>
 
 ```python
 id: str
@@ -1027,7 +1027,7 @@ id: str
 
 ---
 
-##### `location`<sup>Required</sup> <a name="location" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.location"></a>
+##### `location`<sup>Required</sup> <a name="location" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.location"></a>
 
 ```python
 location: str
@@ -1037,7 +1037,7 @@ location: str
 
 ---
 
-##### `member`<sup>Required</sup> <a name="member" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.member"></a>
+##### `member`<sup>Required</sup> <a name="member" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.member"></a>
 
 ```python
 member: str
@@ -1047,7 +1047,7 @@ member: str
 
 ---
 
-##### `project`<sup>Required</sup> <a name="project" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.project"></a>
+##### `project`<sup>Required</sup> <a name="project" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.project"></a>
 
 ```python
 project: str
@@ -1057,7 +1057,7 @@ project: str
 
 ---
 
-##### `repository_group_id`<sup>Required</sup> <a name="repository_group_id" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.repositoryGroupId"></a>
+##### `repository_group_id`<sup>Required</sup> <a name="repository_group_id" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.repositoryGroupId"></a>
 
 ```python
 repository_group_id: str
@@ -1067,7 +1067,7 @@ repository_group_id: str
 
 ---
 
-##### `role`<sup>Required</sup> <a name="role" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.role"></a>
+##### `role`<sup>Required</sup> <a name="role" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.role"></a>
 
 ```python
 role: str
@@ -1081,11 +1081,11 @@ role: str
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMember.property.tfResourceType"></a>
 
 ```python
 tfResourceType: str
@@ -1097,12 +1097,12 @@ tfResourceType: str
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### GeminiRepositoryGroupIamMemberCondition <a name="GeminiRepositoryGroupIamMemberCondition" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberCondition"></a>
+### GeminiRepositoryGroupIamMemberCondition <a name="GeminiRepositoryGroupIamMemberCondition" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberCondition"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberCondition.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberCondition.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import gemini_repository_group_iam_member
+from cdktn_provider_google import gemini_repository_group_iam_member
 
 geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberCondition(
   expression: str,
@@ -1115,13 +1115,13 @@ geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberCondition(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberCondition.property.expression">expression</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/gemini_repository_group_iam_member#expression GeminiRepositoryGroupIamMember#expression}. |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberCondition.property.title">title</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/gemini_repository_group_iam_member#title GeminiRepositoryGroupIamMember#title}. |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberCondition.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/gemini_repository_group_iam_member#description GeminiRepositoryGroupIamMember#description}. |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberCondition.property.expression">expression</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/gemini_repository_group_iam_member#expression GeminiRepositoryGroupIamMember#expression}. |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberCondition.property.title">title</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/gemini_repository_group_iam_member#title GeminiRepositoryGroupIamMember#title}. |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberCondition.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/gemini_repository_group_iam_member#description GeminiRepositoryGroupIamMember#description}. |
 
 ---
 
-##### `expression`<sup>Required</sup> <a name="expression" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberCondition.property.expression"></a>
+##### `expression`<sup>Required</sup> <a name="expression" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberCondition.property.expression"></a>
 
 ```python
 expression: str
@@ -1133,7 +1133,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `title`<sup>Required</sup> <a name="title" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberCondition.property.title"></a>
+##### `title`<sup>Required</sup> <a name="title" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberCondition.property.title"></a>
 
 ```python
 title: str
@@ -1145,7 +1145,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberCondition.property.description"></a>
+##### `description`<sup>Optional</sup> <a name="description" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberCondition.property.description"></a>
 
 ```python
 description: str
@@ -1157,12 +1157,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### GeminiRepositoryGroupIamMemberConfig <a name="GeminiRepositoryGroupIamMemberConfig" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConfig"></a>
+### GeminiRepositoryGroupIamMemberConfig <a name="GeminiRepositoryGroupIamMemberConfig" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConfig.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import gemini_repository_group_iam_member
+from cdktn_provider_google import gemini_repository_group_iam_member
 
 geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConfig(
   connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
@@ -1187,25 +1187,25 @@ geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConfig.property.codeRepositoryIndex">code_repository_index</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/gemini_repository_group_iam_member#code_repository_index GeminiRepositoryGroupIamMember#code_repository_index}. |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConfig.property.member">member</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/gemini_repository_group_iam_member#member GeminiRepositoryGroupIamMember#member}. |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConfig.property.repositoryGroupId">repository_group_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/gemini_repository_group_iam_member#repository_group_id GeminiRepositoryGroupIamMember#repository_group_id}. |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConfig.property.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/gemini_repository_group_iam_member#role GeminiRepositoryGroupIamMember#role}. |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConfig.property.condition">condition</a></code> | <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberCondition">GeminiRepositoryGroupIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/gemini_repository_group_iam_member#id GeminiRepositoryGroupIamMember#id}. |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConfig.property.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/gemini_repository_group_iam_member#location GeminiRepositoryGroupIamMember#location}. |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/gemini_repository_group_iam_member#project GeminiRepositoryGroupIamMember#project}. |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConfig.property.codeRepositoryIndex">code_repository_index</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/gemini_repository_group_iam_member#code_repository_index GeminiRepositoryGroupIamMember#code_repository_index}. |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConfig.property.member">member</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/gemini_repository_group_iam_member#member GeminiRepositoryGroupIamMember#member}. |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConfig.property.repositoryGroupId">repository_group_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/gemini_repository_group_iam_member#repository_group_id GeminiRepositoryGroupIamMember#repository_group_id}. |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConfig.property.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/gemini_repository_group_iam_member#role GeminiRepositoryGroupIamMember#role}. |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConfig.property.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberCondition">GeminiRepositoryGroupIamMemberCondition</a></code> | condition block. |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/gemini_repository_group_iam_member#id GeminiRepositoryGroupIamMember#id}. |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConfig.property.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/gemini_repository_group_iam_member#location GeminiRepositoryGroupIamMember#location}. |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/gemini_repository_group_iam_member#project GeminiRepositoryGroupIamMember#project}. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConfig.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
@@ -1215,7 +1215,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConfig.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -1225,7 +1225,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConfig.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConfig.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[ITerraformDependable]
@@ -1235,7 +1235,7 @@ depends_on: typing.List[ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConfig.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConfig.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -1245,7 +1245,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConfig.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -1255,7 +1255,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConfig.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -1265,7 +1265,7 @@ provider: TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConfig.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
@@ -1275,7 +1275,7 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `code_repository_index`<sup>Required</sup> <a name="code_repository_index" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConfig.property.codeRepositoryIndex"></a>
+##### `code_repository_index`<sup>Required</sup> <a name="code_repository_index" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConfig.property.codeRepositoryIndex"></a>
 
 ```python
 code_repository_index: str
@@ -1287,7 +1287,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `member`<sup>Required</sup> <a name="member" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConfig.property.member"></a>
+##### `member`<sup>Required</sup> <a name="member" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConfig.property.member"></a>
 
 ```python
 member: str
@@ -1299,7 +1299,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `repository_group_id`<sup>Required</sup> <a name="repository_group_id" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConfig.property.repositoryGroupId"></a>
+##### `repository_group_id`<sup>Required</sup> <a name="repository_group_id" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConfig.property.repositoryGroupId"></a>
 
 ```python
 repository_group_id: str
@@ -1311,7 +1311,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `role`<sup>Required</sup> <a name="role" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConfig.property.role"></a>
+##### `role`<sup>Required</sup> <a name="role" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConfig.property.role"></a>
 
 ```python
 role: str
@@ -1323,13 +1323,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `condition`<sup>Optional</sup> <a name="condition" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConfig.property.condition"></a>
+##### `condition`<sup>Optional</sup> <a name="condition" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConfig.property.condition"></a>
 
 ```python
 condition: GeminiRepositoryGroupIamMemberCondition
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberCondition">GeminiRepositoryGroupIamMemberCondition</a>
+- *Type:* <a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberCondition">GeminiRepositoryGroupIamMemberCondition</a>
 
 condition block.
 
@@ -1337,7 +1337,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConfig.property.id"></a>
 
 ```python
 id: str
@@ -1352,7 +1352,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
-##### `location`<sup>Optional</sup> <a name="location" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConfig.property.location"></a>
+##### `location`<sup>Optional</sup> <a name="location" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConfig.property.location"></a>
 
 ```python
 location: str
@@ -1364,7 +1364,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `project`<sup>Optional</sup> <a name="project" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConfig.property.project"></a>
+##### `project`<sup>Optional</sup> <a name="project" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConfig.property.project"></a>
 
 ```python
 project: str
@@ -1378,12 +1378,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### GeminiRepositoryGroupIamMemberConditionOutputReference <a name="GeminiRepositoryGroupIamMemberConditionOutputReference" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference"></a>
+### GeminiRepositoryGroupIamMemberConditionOutputReference <a name="GeminiRepositoryGroupIamMemberConditionOutputReference" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import gemini_repository_group_iam_member
+from cdktn_provider_google import gemini_repository_group_iam_member
 
 geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -1393,12 +1393,12 @@ geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputRefe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -1406,7 +1406,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -1418,30 +1418,30 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.resetDescription">reset_description</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.resetDescription">reset_description</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -1449,13 +1449,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -1463,13 +1463,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -1477,13 +1477,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -1491,13 +1491,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -1505,13 +1505,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -1519,13 +1519,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -1533,13 +1533,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -1547,13 +1547,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -1561,13 +1561,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -1575,13 +1575,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -1591,13 +1591,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -1607,7 +1607,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_description` <a name="reset_description" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.resetDescription"></a>
+##### `reset_description` <a name="reset_description" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.resetDescription"></a>
 
 ```python
 def reset_description() -> None
@@ -1618,19 +1618,19 @@ def reset_description() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.property.expressionInput">expression_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.property.titleInput">title_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.property.description">description</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.property.expression">expression</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.property.title">title</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberCondition">GeminiRepositoryGroupIamMemberCondition</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.property.expressionInput">expression_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.property.titleInput">title_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.property.description">description</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.property.expression">expression</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.property.title">title</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberCondition">GeminiRepositoryGroupIamMemberCondition</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -1644,7 +1644,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -1654,7 +1654,7 @@ fqn: str
 
 ---
 
-##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.property.descriptionInput"></a>
+##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.property.descriptionInput"></a>
 
 ```python
 description_input: str
@@ -1664,7 +1664,7 @@ description_input: str
 
 ---
 
-##### `expression_input`<sup>Optional</sup> <a name="expression_input" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.property.expressionInput"></a>
+##### `expression_input`<sup>Optional</sup> <a name="expression_input" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.property.expressionInput"></a>
 
 ```python
 expression_input: str
@@ -1674,7 +1674,7 @@ expression_input: str
 
 ---
 
-##### `title_input`<sup>Optional</sup> <a name="title_input" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.property.titleInput"></a>
+##### `title_input`<sup>Optional</sup> <a name="title_input" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.property.titleInput"></a>
 
 ```python
 title_input: str
@@ -1684,7 +1684,7 @@ title_input: str
 
 ---
 
-##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.property.description"></a>
+##### `description`<sup>Required</sup> <a name="description" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.property.description"></a>
 
 ```python
 description: str
@@ -1694,7 +1694,7 @@ description: str
 
 ---
 
-##### `expression`<sup>Required</sup> <a name="expression" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.property.expression"></a>
+##### `expression`<sup>Required</sup> <a name="expression" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.property.expression"></a>
 
 ```python
 expression: str
@@ -1704,7 +1704,7 @@ expression: str
 
 ---
 
-##### `title`<sup>Required</sup> <a name="title" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.property.title"></a>
+##### `title`<sup>Required</sup> <a name="title" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.property.title"></a>
 
 ```python
 title: str
@@ -1714,13 +1714,13 @@ title: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberConditionOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: GeminiRepositoryGroupIamMemberCondition
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberCondition">GeminiRepositoryGroupIamMemberCondition</a>
+- *Type:* <a href="#@cdktn/provider-google.geminiRepositoryGroupIamMember.GeminiRepositoryGroupIamMemberCondition">GeminiRepositoryGroupIamMemberCondition</a>
 
 ---
 

@@ -1,15 +1,15 @@
-# `bigqueryReservationAssignment` Submodule <a name="`bigqueryReservationAssignment` Submodule" id="@cdktf/provider-google.bigqueryReservationAssignment"></a>
+# `bigqueryReservationAssignment` Submodule <a name="`bigqueryReservationAssignment` Submodule" id="@cdktn/provider-google.bigqueryReservationAssignment"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### BigqueryReservationAssignment <a name="BigqueryReservationAssignment" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment"></a>
+### BigqueryReservationAssignment <a name="BigqueryReservationAssignment" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment"></a>
 
 Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_reservation_assignment google_bigquery_reservation_assignment}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import bigquery_reservation_assignment
+from cdktn_provider_google import bigquery_reservation_assignment
 
 bigqueryReservationAssignment.BigqueryReservationAssignment(
   scope: Construct,
@@ -33,26 +33,26 @@ bigqueryReservationAssignment.BigqueryReservationAssignment(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.Initializer.parameter.assignee">assignee</a></code> | <code>str</code> | The resource which will use the reservation. E.g. projects/myproject, folders/123, organizations/456. |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.Initializer.parameter.jobType">job_type</a></code> | <code>str</code> | Types of job, which could be specified when using the reservation. Possible values: JOB_TYPE_UNSPECIFIED, PIPELINE, QUERY, CONTINUOUS. |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.Initializer.parameter.reservation">reservation</a></code> | <code>str</code> | The reservation for the resource. |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_reservation_assignment#id BigqueryReservationAssignment#id}. |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.Initializer.parameter.location">location</a></code> | <code>str</code> | The location for the resource. |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_reservation_assignment#project BigqueryReservationAssignment#project}. |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeouts">BigqueryReservationAssignmentTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.Initializer.parameter.assignee">assignee</a></code> | <code>str</code> | The resource which will use the reservation. E.g. projects/myproject, folders/123, organizations/456. |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.Initializer.parameter.jobType">job_type</a></code> | <code>str</code> | Types of job, which could be specified when using the reservation. Possible values: JOB_TYPE_UNSPECIFIED, PIPELINE, QUERY, CONTINUOUS. |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.Initializer.parameter.reservation">reservation</a></code> | <code>str</code> | The reservation for the resource. |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_reservation_assignment#id BigqueryReservationAssignment#id}. |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.Initializer.parameter.location">location</a></code> | <code>str</code> | The location for the resource. |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_reservation_assignment#project BigqueryReservationAssignment#project}. |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeouts">BigqueryReservationAssignmentTimeouts</a></code> | timeouts block. |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -60,7 +60,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -70,49 +70,49 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.Initializer.parameter.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.Initializer.parameter.connection"></a>
 
 - *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.Initializer.parameter.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.Initializer.parameter.count"></a>
 
 - *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.Initializer.parameter.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.Initializer.parameter.dependsOn"></a>
 
 - *Type:* typing.List[cdktf.ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.Initializer.parameter.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.Initializer.parameter.forEach"></a>
 
 - *Type:* cdktf.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.Initializer.parameter.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.Initializer.parameter.lifecycle"></a>
 
 - *Type:* cdktf.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.Initializer.parameter.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.Initializer.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.Initializer.parameter.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.Initializer.parameter.provisioners"></a>
 
 - *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
-##### `assignee`<sup>Required</sup> <a name="assignee" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.Initializer.parameter.assignee"></a>
+##### `assignee`<sup>Required</sup> <a name="assignee" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.Initializer.parameter.assignee"></a>
 
 - *Type:* str
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `job_type`<sup>Required</sup> <a name="job_type" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.Initializer.parameter.jobType"></a>
+##### `job_type`<sup>Required</sup> <a name="job_type" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.Initializer.parameter.jobType"></a>
 
 - *Type:* str
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `reservation`<sup>Required</sup> <a name="reservation" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.Initializer.parameter.reservation"></a>
+##### `reservation`<sup>Required</sup> <a name="reservation" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.Initializer.parameter.reservation"></a>
 
 - *Type:* str
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.Initializer.parameter.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -153,7 +153,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
-##### `location`<sup>Optional</sup> <a name="location" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.Initializer.parameter.location"></a>
+##### `location`<sup>Optional</sup> <a name="location" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.Initializer.parameter.location"></a>
 
 - *Type:* str
 
@@ -163,7 +163,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `project`<sup>Optional</sup> <a name="project" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.Initializer.parameter.project"></a>
+##### `project`<sup>Optional</sup> <a name="project" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.Initializer.parameter.project"></a>
 
 - *Type:* str
 
@@ -171,9 +171,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.Initializer.parameter.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.Initializer.parameter.timeouts"></a>
 
-- *Type:* <a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeouts">BigqueryReservationAssignmentTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeouts">BigqueryReservationAssignmentTimeouts</a>
 
 timeouts block.
 
@@ -185,38 +185,38 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.toString">to_string</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.addOverride">add_override</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.toMetadata">to_metadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.hasResourceMove">has_resource_move</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.importFrom">import_from</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.putTimeouts">put_timeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.resetId">reset_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.resetLocation">reset_location</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.resetProject">reset_project</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.resetTimeouts">reset_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.toString">to_string</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.addOverride">add_override</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.toMetadata">to_metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.hasResourceMove">has_resource_move</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.importFrom">import_from</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.resetLocation">reset_location</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.resetProject">reset_project</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.resetTimeouts">reset_timeouts</a></code> | *No description.* |
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.toString"></a>
 
 ```python
 def to_string() -> str
@@ -224,7 +224,7 @@ def to_string() -> str
 
 Returns a string representation of this construct.
 
-##### `add_override` <a name="add_override" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.addOverride"></a>
+##### `add_override` <a name="add_override" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.addOverride"></a>
 
 ```python
 def add_override(
@@ -233,19 +233,19 @@ def add_override(
 ) -> None
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.addOverride.parameter.path"></a>
 
 - *Type:* str
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.addOverride.parameter.value"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `override_logical_id` <a name="override_logical_id" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.overrideLogicalId"></a>
+##### `override_logical_id` <a name="override_logical_id" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.overrideLogicalId"></a>
 
 ```python
 def override_logical_id(
@@ -255,7 +255,7 @@ def override_logical_id(
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.overrideLogicalId.parameter.newLogicalId"></a>
+###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* str
 
@@ -263,7 +263,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.resetOverrideLogicalId"></a>
+##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.resetOverrideLogicalId"></a>
 
 ```python
 def reset_override_logical_id() -> None
@@ -271,19 +271,19 @@ def reset_override_logical_id() -> None
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.toHclTerraform"></a>
+##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.toHclTerraform"></a>
 
 ```python
 def to_hcl_terraform() -> typing.Any
 ```
 
-##### `to_metadata` <a name="to_metadata" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.toMetadata"></a>
+##### `to_metadata` <a name="to_metadata" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.toMetadata"></a>
 
 ```python
 def to_metadata() -> typing.Any
 ```
 
-##### `to_terraform` <a name="to_terraform" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.toTerraform"></a>
+##### `to_terraform` <a name="to_terraform" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.toTerraform"></a>
 
 ```python
 def to_terraform() -> typing.Any
@@ -291,7 +291,7 @@ def to_terraform() -> typing.Any
 
 Adds this resource to the terraform JSON output.
 
-##### `add_move_target` <a name="add_move_target" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.addMoveTarget"></a>
+##### `add_move_target` <a name="add_move_target" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.addMoveTarget"></a>
 
 ```python
 def add_move_target(
@@ -301,7 +301,7 @@ def add_move_target(
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.addMoveTarget.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -309,7 +309,7 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -317,13 +317,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -331,13 +331,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -345,13 +345,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -359,13 +359,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -373,13 +373,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -387,13 +387,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -401,13 +401,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -415,13 +415,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -429,19 +429,19 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.hasResourceMove"></a>
+##### `has_resource_move` <a name="has_resource_move" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.hasResourceMove"></a>
 
 ```python
 def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `import_from` <a name="import_from" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.importFrom"></a>
+##### `import_from` <a name="import_from" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.importFrom"></a>
 
 ```python
 def import_from(
@@ -450,19 +450,19 @@ def import_from(
 ) -> None
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.importFrom.parameter.id"></a>
 
 - *Type:* str
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.importFrom.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -470,13 +470,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `move_from_id` <a name="move_from_id" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.moveFromId"></a>
+##### `move_from_id` <a name="move_from_id" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.moveFromId"></a>
 
 ```python
 def move_from_id(
@@ -488,7 +488,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.moveFromId.parameter.id"></a>
 
 - *Type:* str
 
@@ -496,7 +496,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `move_to` <a name="move_to" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.moveTo"></a>
+##### `move_to` <a name="move_to" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.moveTo"></a>
 
 ```python
 def move_to(
@@ -507,7 +507,7 @@ def move_to(
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.moveTo.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.moveTo.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -515,7 +515,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.moveTo.parameter.index"></a>
 
 - *Type:* str | typing.Union[int, float]
 
@@ -523,7 +523,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `move_to_id` <a name="move_to_id" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.moveToId"></a>
+##### `move_to_id` <a name="move_to_id" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.moveToId"></a>
 
 ```python
 def move_to_id(
@@ -533,7 +533,7 @@ def move_to_id(
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.moveToId.parameter.id"></a>
 
 - *Type:* str
 
@@ -541,7 +541,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `put_timeouts` <a name="put_timeouts" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.putTimeouts"></a>
+##### `put_timeouts` <a name="put_timeouts" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.putTimeouts"></a>
 
 ```python
 def put_timeouts(
@@ -550,7 +550,7 @@ def put_timeouts(
 ) -> None
 ```
 
-###### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.putTimeouts.parameter.create"></a>
+###### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.putTimeouts.parameter.create"></a>
 
 - *Type:* str
 
@@ -558,7 +558,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.putTimeouts.parameter.delete"></a>
+###### `delete`<sup>Optional</sup> <a name="delete" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.putTimeouts.parameter.delete"></a>
 
 - *Type:* str
 
@@ -566,25 +566,25 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.resetId"></a>
+##### `reset_id` <a name="reset_id" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.resetId"></a>
 
 ```python
 def reset_id() -> None
 ```
 
-##### `reset_location` <a name="reset_location" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.resetLocation"></a>
+##### `reset_location` <a name="reset_location" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.resetLocation"></a>
 
 ```python
 def reset_location() -> None
 ```
 
-##### `reset_project` <a name="reset_project" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.resetProject"></a>
+##### `reset_project` <a name="reset_project" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.resetProject"></a>
 
 ```python
 def reset_project() -> None
 ```
 
-##### `reset_timeouts` <a name="reset_timeouts" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.resetTimeouts"></a>
+##### `reset_timeouts` <a name="reset_timeouts" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.resetTimeouts"></a>
 
 ```python
 def reset_timeouts() -> None
@@ -594,17 +594,17 @@ def reset_timeouts() -> None
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.isTerraformElement">is_terraform_element</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a BigqueryReservationAssignment resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.isTerraformElement">is_terraform_element</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a BigqueryReservationAssignment resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `is_construct` <a name="is_construct" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.isConstruct"></a>
+##### `is_construct` <a name="is_construct" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.isConstruct"></a>
 
 ```python
-from cdktf_cdktf_provider_google import bigquery_reservation_assignment
+from cdktn_provider_google import bigquery_reservation_assignment
 
 bigqueryReservationAssignment.BigqueryReservationAssignment.is_construct(
   x: typing.Any
@@ -627,7 +627,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.isConstruct.parameter.x"></a>
 
 - *Type:* typing.Any
 
@@ -635,42 +635,42 @@ Any object.
 
 ---
 
-##### `is_terraform_element` <a name="is_terraform_element" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.isTerraformElement"></a>
+##### `is_terraform_element` <a name="is_terraform_element" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.isTerraformElement"></a>
 
 ```python
-from cdktf_cdktf_provider_google import bigquery_reservation_assignment
+from cdktn_provider_google import bigquery_reservation_assignment
 
 bigqueryReservationAssignment.BigqueryReservationAssignment.is_terraform_element(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.isTerraformElement.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.isTerraformResource"></a>
+##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.isTerraformResource"></a>
 
 ```python
-from cdktf_cdktf_provider_google import bigquery_reservation_assignment
+from cdktn_provider_google import bigquery_reservation_assignment
 
 bigqueryReservationAssignment.BigqueryReservationAssignment.is_terraform_resource(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.isTerraformResource.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.generateConfigForImport"></a>
+##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.generateConfigForImport"></a>
 
 ```python
-from cdktf_cdktf_provider_google import bigquery_reservation_assignment
+from cdktn_provider_google import bigquery_reservation_assignment
 
 bigqueryReservationAssignment.BigqueryReservationAssignment.generate_config_for_import(
   scope: Construct,
@@ -682,7 +682,7 @@ bigqueryReservationAssignment.BigqueryReservationAssignment.generate_config_for_
 
 Generates CDKTF code for importing a BigqueryReservationAssignment resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -690,7 +690,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.generateConfigForImport.parameter.importToId"></a>
+###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* str
 
@@ -698,7 +698,7 @@ The construct id used in the generated config for the BigqueryReservationAssignm
 
 ---
 
-###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.generateConfigForImport.parameter.importFromId"></a>
+###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* str
 
@@ -708,7 +708,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
@@ -720,40 +720,40 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.state">state</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference">BigqueryReservationAssignmentTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.assigneeInput">assignee_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.jobTypeInput">job_type_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.locationInput">location_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.reservationInput">reservation_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeouts">BigqueryReservationAssignmentTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.assignee">assignee</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.jobType">job_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.location">location</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.project">project</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.reservation">reservation</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.state">state</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference">BigqueryReservationAssignmentTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.assigneeInput">assignee_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.jobTypeInput">job_type_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.locationInput">location_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.reservationInput">reservation_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeouts">BigqueryReservationAssignmentTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.assignee">assignee</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.jobType">job_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.location">location</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.project">project</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.reservation">reservation</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.node"></a>
 
 ```python
 node: Node
@@ -765,7 +765,7 @@ The tree node.
 
 ---
 
-##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.cdktfStack"></a>
+##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.cdktfStack"></a>
 
 ```python
 cdktf_stack: TerraformStack
@@ -775,7 +775,7 @@ cdktf_stack: TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.fqn"></a>
 
 ```python
 fqn: str
@@ -785,7 +785,7 @@ fqn: str
 
 ---
 
-##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.friendlyUniqueId"></a>
+##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.friendlyUniqueId"></a>
 
 ```python
 friendly_unique_id: str
@@ -795,7 +795,7 @@ friendly_unique_id: str
 
 ---
 
-##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.terraformMetaArguments"></a>
+##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.terraformMetaArguments"></a>
 
 ```python
 terraform_meta_arguments: typing.Mapping[typing.Any]
@@ -805,7 +805,7 @@ terraform_meta_arguments: typing.Mapping[typing.Any]
 
 ---
 
-##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.terraformResourceType"></a>
+##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.terraformResourceType"></a>
 
 ```python
 terraform_resource_type: str
@@ -815,7 +815,7 @@ terraform_resource_type: str
 
 ---
 
-##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.terraformGeneratorMetadata"></a>
+##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.terraformGeneratorMetadata"></a>
 
 ```python
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
@@ -825,7 +825,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
@@ -835,7 +835,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -845,7 +845,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[str]
@@ -855,7 +855,7 @@ depends_on: typing.List[str]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -865,7 +865,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -875,7 +875,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -885,7 +885,7 @@ provider: TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
@@ -895,7 +895,7 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.name"></a>
 
 ```python
 name: str
@@ -905,7 +905,7 @@ name: str
 
 ---
 
-##### `state`<sup>Required</sup> <a name="state" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.state"></a>
+##### `state`<sup>Required</sup> <a name="state" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.state"></a>
 
 ```python
 state: str
@@ -915,17 +915,17 @@ state: str
 
 ---
 
-##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.timeouts"></a>
+##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.timeouts"></a>
 
 ```python
 timeouts: BigqueryReservationAssignmentTimeoutsOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference">BigqueryReservationAssignmentTimeoutsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference">BigqueryReservationAssignmentTimeoutsOutputReference</a>
 
 ---
 
-##### `assignee_input`<sup>Optional</sup> <a name="assignee_input" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.assigneeInput"></a>
+##### `assignee_input`<sup>Optional</sup> <a name="assignee_input" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.assigneeInput"></a>
 
 ```python
 assignee_input: str
@@ -935,7 +935,7 @@ assignee_input: str
 
 ---
 
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.idInput"></a>
+##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.idInput"></a>
 
 ```python
 id_input: str
@@ -945,7 +945,7 @@ id_input: str
 
 ---
 
-##### `job_type_input`<sup>Optional</sup> <a name="job_type_input" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.jobTypeInput"></a>
+##### `job_type_input`<sup>Optional</sup> <a name="job_type_input" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.jobTypeInput"></a>
 
 ```python
 job_type_input: str
@@ -955,7 +955,7 @@ job_type_input: str
 
 ---
 
-##### `location_input`<sup>Optional</sup> <a name="location_input" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.locationInput"></a>
+##### `location_input`<sup>Optional</sup> <a name="location_input" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.locationInput"></a>
 
 ```python
 location_input: str
@@ -965,7 +965,7 @@ location_input: str
 
 ---
 
-##### `project_input`<sup>Optional</sup> <a name="project_input" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.projectInput"></a>
+##### `project_input`<sup>Optional</sup> <a name="project_input" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.projectInput"></a>
 
 ```python
 project_input: str
@@ -975,7 +975,7 @@ project_input: str
 
 ---
 
-##### `reservation_input`<sup>Optional</sup> <a name="reservation_input" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.reservationInput"></a>
+##### `reservation_input`<sup>Optional</sup> <a name="reservation_input" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.reservationInput"></a>
 
 ```python
 reservation_input: str
@@ -985,17 +985,17 @@ reservation_input: str
 
 ---
 
-##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.timeoutsInput"></a>
+##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.timeoutsInput"></a>
 
 ```python
 timeouts_input: IResolvable | BigqueryReservationAssignmentTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeouts">BigqueryReservationAssignmentTimeouts</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeouts">BigqueryReservationAssignmentTimeouts</a>
 
 ---
 
-##### `assignee`<sup>Required</sup> <a name="assignee" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.assignee"></a>
+##### `assignee`<sup>Required</sup> <a name="assignee" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.assignee"></a>
 
 ```python
 assignee: str
@@ -1005,7 +1005,7 @@ assignee: str
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.id"></a>
 
 ```python
 id: str
@@ -1015,7 +1015,7 @@ id: str
 
 ---
 
-##### `job_type`<sup>Required</sup> <a name="job_type" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.jobType"></a>
+##### `job_type`<sup>Required</sup> <a name="job_type" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.jobType"></a>
 
 ```python
 job_type: str
@@ -1025,7 +1025,7 @@ job_type: str
 
 ---
 
-##### `location`<sup>Required</sup> <a name="location" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.location"></a>
+##### `location`<sup>Required</sup> <a name="location" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.location"></a>
 
 ```python
 location: str
@@ -1035,7 +1035,7 @@ location: str
 
 ---
 
-##### `project`<sup>Required</sup> <a name="project" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.project"></a>
+##### `project`<sup>Required</sup> <a name="project" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.project"></a>
 
 ```python
 project: str
@@ -1045,7 +1045,7 @@ project: str
 
 ---
 
-##### `reservation`<sup>Required</sup> <a name="reservation" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.reservation"></a>
+##### `reservation`<sup>Required</sup> <a name="reservation" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.reservation"></a>
 
 ```python
 reservation: str
@@ -1059,11 +1059,11 @@ reservation: str
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignment.property.tfResourceType"></a>
 
 ```python
 tfResourceType: str
@@ -1075,12 +1075,12 @@ tfResourceType: str
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### BigqueryReservationAssignmentConfig <a name="BigqueryReservationAssignmentConfig" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentConfig"></a>
+### BigqueryReservationAssignmentConfig <a name="BigqueryReservationAssignmentConfig" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentConfig.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import bigquery_reservation_assignment
+from cdktn_provider_google import bigquery_reservation_assignment
 
 bigqueryReservationAssignment.BigqueryReservationAssignmentConfig(
   connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
@@ -1104,24 +1104,24 @@ bigqueryReservationAssignment.BigqueryReservationAssignmentConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentConfig.property.assignee">assignee</a></code> | <code>str</code> | The resource which will use the reservation. E.g. projects/myproject, folders/123, organizations/456. |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentConfig.property.jobType">job_type</a></code> | <code>str</code> | Types of job, which could be specified when using the reservation. Possible values: JOB_TYPE_UNSPECIFIED, PIPELINE, QUERY, CONTINUOUS. |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentConfig.property.reservation">reservation</a></code> | <code>str</code> | The reservation for the resource. |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_reservation_assignment#id BigqueryReservationAssignment#id}. |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentConfig.property.location">location</a></code> | <code>str</code> | The location for the resource. |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_reservation_assignment#project BigqueryReservationAssignment#project}. |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeouts">BigqueryReservationAssignmentTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentConfig.property.assignee">assignee</a></code> | <code>str</code> | The resource which will use the reservation. E.g. projects/myproject, folders/123, organizations/456. |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentConfig.property.jobType">job_type</a></code> | <code>str</code> | Types of job, which could be specified when using the reservation. Possible values: JOB_TYPE_UNSPECIFIED, PIPELINE, QUERY, CONTINUOUS. |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentConfig.property.reservation">reservation</a></code> | <code>str</code> | The reservation for the resource. |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_reservation_assignment#id BigqueryReservationAssignment#id}. |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentConfig.property.location">location</a></code> | <code>str</code> | The location for the resource. |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_reservation_assignment#project BigqueryReservationAssignment#project}. |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeouts">BigqueryReservationAssignmentTimeouts</a></code> | timeouts block. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentConfig.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
@@ -1131,7 +1131,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentConfig.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -1141,7 +1141,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentConfig.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentConfig.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[ITerraformDependable]
@@ -1151,7 +1151,7 @@ depends_on: typing.List[ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentConfig.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentConfig.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -1161,7 +1161,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentConfig.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -1171,7 +1171,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentConfig.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -1181,7 +1181,7 @@ provider: TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentConfig.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
@@ -1191,7 +1191,7 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `assignee`<sup>Required</sup> <a name="assignee" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentConfig.property.assignee"></a>
+##### `assignee`<sup>Required</sup> <a name="assignee" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentConfig.property.assignee"></a>
 
 ```python
 assignee: str
@@ -1205,7 +1205,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `job_type`<sup>Required</sup> <a name="job_type" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentConfig.property.jobType"></a>
+##### `job_type`<sup>Required</sup> <a name="job_type" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentConfig.property.jobType"></a>
 
 ```python
 job_type: str
@@ -1219,7 +1219,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `reservation`<sup>Required</sup> <a name="reservation" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentConfig.property.reservation"></a>
+##### `reservation`<sup>Required</sup> <a name="reservation" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentConfig.property.reservation"></a>
 
 ```python
 reservation: str
@@ -1233,7 +1233,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentConfig.property.id"></a>
 
 ```python
 id: str
@@ -1248,7 +1248,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
-##### `location`<sup>Optional</sup> <a name="location" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentConfig.property.location"></a>
+##### `location`<sup>Optional</sup> <a name="location" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentConfig.property.location"></a>
 
 ```python
 location: str
@@ -1262,7 +1262,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `project`<sup>Optional</sup> <a name="project" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentConfig.property.project"></a>
+##### `project`<sup>Optional</sup> <a name="project" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentConfig.property.project"></a>
 
 ```python
 project: str
@@ -1274,13 +1274,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentConfig.property.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentConfig.property.timeouts"></a>
 
 ```python
 timeouts: BigqueryReservationAssignmentTimeouts
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeouts">BigqueryReservationAssignmentTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeouts">BigqueryReservationAssignmentTimeouts</a>
 
 timeouts block.
 
@@ -1288,12 +1288,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### BigqueryReservationAssignmentTimeouts <a name="BigqueryReservationAssignmentTimeouts" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeouts"></a>
+### BigqueryReservationAssignmentTimeouts <a name="BigqueryReservationAssignmentTimeouts" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeouts"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeouts.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeouts.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import bigquery_reservation_assignment
+from cdktn_provider_google import bigquery_reservation_assignment
 
 bigqueryReservationAssignment.BigqueryReservationAssignmentTimeouts(
   create: str = None,
@@ -1305,12 +1305,12 @@ bigqueryReservationAssignment.BigqueryReservationAssignmentTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_reservation_assignment#create BigqueryReservationAssignment#create}. |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_reservation_assignment#delete BigqueryReservationAssignment#delete}. |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_reservation_assignment#create BigqueryReservationAssignment#create}. |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/bigquery_reservation_assignment#delete BigqueryReservationAssignment#delete}. |
 
 ---
 
-##### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeouts.property.create"></a>
+##### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeouts.property.create"></a>
 
 ```python
 create: str
@@ -1322,7 +1322,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeouts.property.delete"></a>
+##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeouts.property.delete"></a>
 
 ```python
 delete: str
@@ -1336,12 +1336,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### BigqueryReservationAssignmentTimeoutsOutputReference <a name="BigqueryReservationAssignmentTimeoutsOutputReference" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference"></a>
+### BigqueryReservationAssignmentTimeoutsOutputReference <a name="BigqueryReservationAssignmentTimeoutsOutputReference" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import bigquery_reservation_assignment
+from cdktn_provider_google import bigquery_reservation_assignment
 
 bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -1351,12 +1351,12 @@ bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReferen
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -1364,7 +1364,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -1376,31 +1376,31 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.resetCreate">reset_create</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.resetDelete">reset_delete</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.resetCreate">reset_create</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.resetDelete">reset_delete</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -1408,13 +1408,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -1422,13 +1422,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -1436,13 +1436,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -1450,13 +1450,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -1464,13 +1464,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -1478,13 +1478,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -1492,13 +1492,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -1506,13 +1506,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -1520,13 +1520,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -1534,13 +1534,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -1550,13 +1550,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -1566,13 +1566,13 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_create` <a name="reset_create" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.resetCreate"></a>
+##### `reset_create` <a name="reset_create" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.resetCreate"></a>
 
 ```python
 def reset_create() -> None
 ```
 
-##### `reset_delete` <a name="reset_delete" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.resetDelete"></a>
+##### `reset_delete` <a name="reset_delete" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.resetDelete"></a>
 
 ```python
 def reset_delete() -> None
@@ -1583,17 +1583,17 @@ def reset_delete() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.property.createInput">create_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeouts">BigqueryReservationAssignmentTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.property.createInput">create_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeouts">BigqueryReservationAssignmentTimeouts</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -1607,7 +1607,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -1617,7 +1617,7 @@ fqn: str
 
 ---
 
-##### `create_input`<sup>Optional</sup> <a name="create_input" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.property.createInput"></a>
+##### `create_input`<sup>Optional</sup> <a name="create_input" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.property.createInput"></a>
 
 ```python
 create_input: str
@@ -1627,7 +1627,7 @@ create_input: str
 
 ---
 
-##### `delete_input`<sup>Optional</sup> <a name="delete_input" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.property.deleteInput"></a>
+##### `delete_input`<sup>Optional</sup> <a name="delete_input" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.property.deleteInput"></a>
 
 ```python
 delete_input: str
@@ -1637,7 +1637,7 @@ delete_input: str
 
 ---
 
-##### `create`<sup>Required</sup> <a name="create" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.property.create"></a>
+##### `create`<sup>Required</sup> <a name="create" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.property.create"></a>
 
 ```python
 create: str
@@ -1647,7 +1647,7 @@ create: str
 
 ---
 
-##### `delete`<sup>Required</sup> <a name="delete" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.property.delete"></a>
+##### `delete`<sup>Required</sup> <a name="delete" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.property.delete"></a>
 
 ```python
 delete: str
@@ -1657,13 +1657,13 @@ delete: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | BigqueryReservationAssignmentTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeouts">BigqueryReservationAssignmentTimeouts</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.bigqueryReservationAssignment.BigqueryReservationAssignmentTimeouts">BigqueryReservationAssignmentTimeouts</a>
 
 ---
 

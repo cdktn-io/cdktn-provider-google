@@ -1,15 +1,15 @@
-# `dataprocMetastoreDatabaseIamMember` Submodule <a name="`dataprocMetastoreDatabaseIamMember` Submodule" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember"></a>
+# `dataprocMetastoreDatabaseIamMember` Submodule <a name="`dataprocMetastoreDatabaseIamMember` Submodule" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### DataprocMetastoreDatabaseIamMember <a name="DataprocMetastoreDatabaseIamMember" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember"></a>
+### DataprocMetastoreDatabaseIamMember <a name="DataprocMetastoreDatabaseIamMember" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember"></a>
 
 Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_metastore_database_iam_member google_dataproc_metastore_database_iam_member}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import dataproc_metastore_database_iam_member
+from cdktn_provider_google import dataproc_metastore_database_iam_member
 
 dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember(
   scope: Construct,
@@ -34,27 +34,27 @@ dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.Initializer.parameter.database">database</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_metastore_database_iam_member#database DataprocMetastoreDatabaseIamMember#database}. |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.Initializer.parameter.member">member</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_metastore_database_iam_member#member DataprocMetastoreDatabaseIamMember#member}. |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.Initializer.parameter.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_metastore_database_iam_member#role DataprocMetastoreDatabaseIamMember#role}. |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.Initializer.parameter.serviceId">service_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_metastore_database_iam_member#service_id DataprocMetastoreDatabaseIamMember#service_id}. |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.Initializer.parameter.condition">condition</a></code> | <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberCondition">DataprocMetastoreDatabaseIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_metastore_database_iam_member#id DataprocMetastoreDatabaseIamMember#id}. |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.Initializer.parameter.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_metastore_database_iam_member#location DataprocMetastoreDatabaseIamMember#location}. |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_metastore_database_iam_member#project DataprocMetastoreDatabaseIamMember#project}. |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.Initializer.parameter.database">database</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_metastore_database_iam_member#database DataprocMetastoreDatabaseIamMember#database}. |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.Initializer.parameter.member">member</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_metastore_database_iam_member#member DataprocMetastoreDatabaseIamMember#member}. |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.Initializer.parameter.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_metastore_database_iam_member#role DataprocMetastoreDatabaseIamMember#role}. |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.Initializer.parameter.serviceId">service_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_metastore_database_iam_member#service_id DataprocMetastoreDatabaseIamMember#service_id}. |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.Initializer.parameter.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberCondition">DataprocMetastoreDatabaseIamMemberCondition</a></code> | condition block. |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_metastore_database_iam_member#id DataprocMetastoreDatabaseIamMember#id}. |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.Initializer.parameter.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_metastore_database_iam_member#location DataprocMetastoreDatabaseIamMember#location}. |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_metastore_database_iam_member#project DataprocMetastoreDatabaseIamMember#project}. |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -62,7 +62,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -72,49 +72,49 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.Initializer.parameter.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.Initializer.parameter.connection"></a>
 
 - *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.Initializer.parameter.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.Initializer.parameter.count"></a>
 
 - *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.Initializer.parameter.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.Initializer.parameter.dependsOn"></a>
 
 - *Type:* typing.List[cdktf.ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.Initializer.parameter.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.Initializer.parameter.forEach"></a>
 
 - *Type:* cdktf.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.Initializer.parameter.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.Initializer.parameter.lifecycle"></a>
 
 - *Type:* cdktf.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.Initializer.parameter.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.Initializer.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.Initializer.parameter.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.Initializer.parameter.provisioners"></a>
 
 - *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
-##### `database`<sup>Required</sup> <a name="database" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.Initializer.parameter.database"></a>
+##### `database`<sup>Required</sup> <a name="database" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.Initializer.parameter.database"></a>
 
 - *Type:* str
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `member`<sup>Required</sup> <a name="member" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.Initializer.parameter.member"></a>
+##### `member`<sup>Required</sup> <a name="member" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.Initializer.parameter.member"></a>
 
 - *Type:* str
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `role`<sup>Required</sup> <a name="role" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.Initializer.parameter.role"></a>
+##### `role`<sup>Required</sup> <a name="role" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.Initializer.parameter.role"></a>
 
 - *Type:* str
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `service_id`<sup>Required</sup> <a name="service_id" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.Initializer.parameter.serviceId"></a>
+##### `service_id`<sup>Required</sup> <a name="service_id" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.Initializer.parameter.serviceId"></a>
 
 - *Type:* str
 
@@ -146,9 +146,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `condition`<sup>Optional</sup> <a name="condition" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.Initializer.parameter.condition"></a>
+##### `condition`<sup>Optional</sup> <a name="condition" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.Initializer.parameter.condition"></a>
 
-- *Type:* <a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberCondition">DataprocMetastoreDatabaseIamMemberCondition</a>
+- *Type:* <a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberCondition">DataprocMetastoreDatabaseIamMemberCondition</a>
 
 condition block.
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.Initializer.parameter.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -167,7 +167,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
-##### `location`<sup>Optional</sup> <a name="location" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.Initializer.parameter.location"></a>
+##### `location`<sup>Optional</sup> <a name="location" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.Initializer.parameter.location"></a>
 
 - *Type:* str
 
@@ -175,7 +175,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `project`<sup>Optional</sup> <a name="project" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.Initializer.parameter.project"></a>
+##### `project`<sup>Optional</sup> <a name="project" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.Initializer.parameter.project"></a>
 
 - *Type:* str
 
@@ -187,38 +187,38 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.toString">to_string</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.addOverride">add_override</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.toMetadata">to_metadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.hasResourceMove">has_resource_move</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.importFrom">import_from</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.putCondition">put_condition</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.resetCondition">reset_condition</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.resetId">reset_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.resetLocation">reset_location</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.resetProject">reset_project</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.toString">to_string</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.addOverride">add_override</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.toMetadata">to_metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.hasResourceMove">has_resource_move</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.importFrom">import_from</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.putCondition">put_condition</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.resetCondition">reset_condition</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.resetLocation">reset_location</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.resetProject">reset_project</a></code> | *No description.* |
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.toString"></a>
 
 ```python
 def to_string() -> str
@@ -226,7 +226,7 @@ def to_string() -> str
 
 Returns a string representation of this construct.
 
-##### `add_override` <a name="add_override" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.addOverride"></a>
+##### `add_override` <a name="add_override" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.addOverride"></a>
 
 ```python
 def add_override(
@@ -235,19 +235,19 @@ def add_override(
 ) -> None
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.addOverride.parameter.path"></a>
 
 - *Type:* str
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.addOverride.parameter.value"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `override_logical_id` <a name="override_logical_id" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.overrideLogicalId"></a>
+##### `override_logical_id` <a name="override_logical_id" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.overrideLogicalId"></a>
 
 ```python
 def override_logical_id(
@@ -257,7 +257,7 @@ def override_logical_id(
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.overrideLogicalId.parameter.newLogicalId"></a>
+###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* str
 
@@ -265,7 +265,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.resetOverrideLogicalId"></a>
+##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.resetOverrideLogicalId"></a>
 
 ```python
 def reset_override_logical_id() -> None
@@ -273,19 +273,19 @@ def reset_override_logical_id() -> None
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.toHclTerraform"></a>
+##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.toHclTerraform"></a>
 
 ```python
 def to_hcl_terraform() -> typing.Any
 ```
 
-##### `to_metadata` <a name="to_metadata" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.toMetadata"></a>
+##### `to_metadata` <a name="to_metadata" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.toMetadata"></a>
 
 ```python
 def to_metadata() -> typing.Any
 ```
 
-##### `to_terraform` <a name="to_terraform" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.toTerraform"></a>
+##### `to_terraform` <a name="to_terraform" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.toTerraform"></a>
 
 ```python
 def to_terraform() -> typing.Any
@@ -293,7 +293,7 @@ def to_terraform() -> typing.Any
 
 Adds this resource to the terraform JSON output.
 
-##### `add_move_target` <a name="add_move_target" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.addMoveTarget"></a>
+##### `add_move_target` <a name="add_move_target" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.addMoveTarget"></a>
 
 ```python
 def add_move_target(
@@ -303,7 +303,7 @@ def add_move_target(
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.addMoveTarget.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -311,7 +311,7 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -319,13 +319,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -333,13 +333,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -347,13 +347,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -361,13 +361,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -375,13 +375,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -389,13 +389,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -403,13 +403,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -417,13 +417,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -431,19 +431,19 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.hasResourceMove"></a>
+##### `has_resource_move` <a name="has_resource_move" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.hasResourceMove"></a>
 
 ```python
 def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `import_from` <a name="import_from" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.importFrom"></a>
+##### `import_from` <a name="import_from" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.importFrom"></a>
 
 ```python
 def import_from(
@@ -452,19 +452,19 @@ def import_from(
 ) -> None
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.importFrom.parameter.id"></a>
 
 - *Type:* str
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.importFrom.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -472,13 +472,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `move_from_id` <a name="move_from_id" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.moveFromId"></a>
+##### `move_from_id` <a name="move_from_id" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.moveFromId"></a>
 
 ```python
 def move_from_id(
@@ -490,7 +490,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.moveFromId.parameter.id"></a>
 
 - *Type:* str
 
@@ -498,7 +498,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `move_to` <a name="move_to" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.moveTo"></a>
+##### `move_to` <a name="move_to" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.moveTo"></a>
 
 ```python
 def move_to(
@@ -509,7 +509,7 @@ def move_to(
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.moveTo.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.moveTo.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -517,7 +517,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.moveTo.parameter.index"></a>
 
 - *Type:* str | typing.Union[int, float]
 
@@ -525,7 +525,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `move_to_id` <a name="move_to_id" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.moveToId"></a>
+##### `move_to_id` <a name="move_to_id" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.moveToId"></a>
 
 ```python
 def move_to_id(
@@ -535,7 +535,7 @@ def move_to_id(
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.moveToId.parameter.id"></a>
 
 - *Type:* str
 
@@ -543,7 +543,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `put_condition` <a name="put_condition" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.putCondition"></a>
+##### `put_condition` <a name="put_condition" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.putCondition"></a>
 
 ```python
 def put_condition(
@@ -553,7 +553,7 @@ def put_condition(
 ) -> None
 ```
 
-###### `expression`<sup>Required</sup> <a name="expression" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.putCondition.parameter.expression"></a>
+###### `expression`<sup>Required</sup> <a name="expression" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.putCondition.parameter.expression"></a>
 
 - *Type:* str
 
@@ -561,7 +561,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `title`<sup>Required</sup> <a name="title" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.putCondition.parameter.title"></a>
+###### `title`<sup>Required</sup> <a name="title" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.putCondition.parameter.title"></a>
 
 - *Type:* str
 
@@ -569,7 +569,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.putCondition.parameter.description"></a>
+###### `description`<sup>Optional</sup> <a name="description" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.putCondition.parameter.description"></a>
 
 - *Type:* str
 
@@ -577,25 +577,25 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `reset_condition` <a name="reset_condition" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.resetCondition"></a>
+##### `reset_condition` <a name="reset_condition" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.resetCondition"></a>
 
 ```python
 def reset_condition() -> None
 ```
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.resetId"></a>
+##### `reset_id` <a name="reset_id" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.resetId"></a>
 
 ```python
 def reset_id() -> None
 ```
 
-##### `reset_location` <a name="reset_location" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.resetLocation"></a>
+##### `reset_location` <a name="reset_location" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.resetLocation"></a>
 
 ```python
 def reset_location() -> None
 ```
 
-##### `reset_project` <a name="reset_project" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.resetProject"></a>
+##### `reset_project` <a name="reset_project" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.resetProject"></a>
 
 ```python
 def reset_project() -> None
@@ -605,17 +605,17 @@ def reset_project() -> None
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.isTerraformElement">is_terraform_element</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a DataprocMetastoreDatabaseIamMember resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.isTerraformElement">is_terraform_element</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a DataprocMetastoreDatabaseIamMember resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `is_construct` <a name="is_construct" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.isConstruct"></a>
+##### `is_construct` <a name="is_construct" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.isConstruct"></a>
 
 ```python
-from cdktf_cdktf_provider_google import dataproc_metastore_database_iam_member
+from cdktn_provider_google import dataproc_metastore_database_iam_member
 
 dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.is_construct(
   x: typing.Any
@@ -638,7 +638,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.isConstruct.parameter.x"></a>
 
 - *Type:* typing.Any
 
@@ -646,42 +646,42 @@ Any object.
 
 ---
 
-##### `is_terraform_element` <a name="is_terraform_element" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.isTerraformElement"></a>
+##### `is_terraform_element` <a name="is_terraform_element" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.isTerraformElement"></a>
 
 ```python
-from cdktf_cdktf_provider_google import dataproc_metastore_database_iam_member
+from cdktn_provider_google import dataproc_metastore_database_iam_member
 
 dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.is_terraform_element(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.isTerraformElement.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.isTerraformResource"></a>
+##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.isTerraformResource"></a>
 
 ```python
-from cdktf_cdktf_provider_google import dataproc_metastore_database_iam_member
+from cdktn_provider_google import dataproc_metastore_database_iam_member
 
 dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.is_terraform_resource(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.isTerraformResource.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.generateConfigForImport"></a>
+##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.generateConfigForImport"></a>
 
 ```python
-from cdktf_cdktf_provider_google import dataproc_metastore_database_iam_member
+from cdktn_provider_google import dataproc_metastore_database_iam_member
 
 dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.generate_config_for_import(
   scope: Construct,
@@ -693,7 +693,7 @@ dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.generate_c
 
 Generates CDKTF code for importing a DataprocMetastoreDatabaseIamMember resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -701,7 +701,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.generateConfigForImport.parameter.importToId"></a>
+###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* str
 
@@ -709,7 +709,7 @@ The construct id used in the generated config for the DataprocMetastoreDatabaseI
 
 ---
 
-###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.generateConfigForImport.parameter.importFromId"></a>
+###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* str
 
@@ -719,7 +719,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
@@ -731,41 +731,41 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.condition">condition</a></code> | <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference">DataprocMetastoreDatabaseIamMemberConditionOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.etag">etag</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.conditionInput">condition_input</a></code> | <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberCondition">DataprocMetastoreDatabaseIamMemberCondition</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.databaseInput">database_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.locationInput">location_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.memberInput">member_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.roleInput">role_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.serviceIdInput">service_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.database">database</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.location">location</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.member">member</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.project">project</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.role">role</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.serviceId">service_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference">DataprocMetastoreDatabaseIamMemberConditionOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.etag">etag</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.conditionInput">condition_input</a></code> | <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberCondition">DataprocMetastoreDatabaseIamMemberCondition</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.databaseInput">database_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.locationInput">location_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.memberInput">member_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.roleInput">role_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.serviceIdInput">service_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.database">database</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.location">location</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.member">member</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.project">project</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.role">role</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.serviceId">service_id</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.node"></a>
 
 ```python
 node: Node
@@ -777,7 +777,7 @@ The tree node.
 
 ---
 
-##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.cdktfStack"></a>
+##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.cdktfStack"></a>
 
 ```python
 cdktf_stack: TerraformStack
@@ -787,7 +787,7 @@ cdktf_stack: TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.fqn"></a>
 
 ```python
 fqn: str
@@ -797,7 +797,7 @@ fqn: str
 
 ---
 
-##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.friendlyUniqueId"></a>
+##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.friendlyUniqueId"></a>
 
 ```python
 friendly_unique_id: str
@@ -807,7 +807,7 @@ friendly_unique_id: str
 
 ---
 
-##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.terraformMetaArguments"></a>
+##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.terraformMetaArguments"></a>
 
 ```python
 terraform_meta_arguments: typing.Mapping[typing.Any]
@@ -817,7 +817,7 @@ terraform_meta_arguments: typing.Mapping[typing.Any]
 
 ---
 
-##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.terraformResourceType"></a>
+##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.terraformResourceType"></a>
 
 ```python
 terraform_resource_type: str
@@ -827,7 +827,7 @@ terraform_resource_type: str
 
 ---
 
-##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.terraformGeneratorMetadata"></a>
+##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.terraformGeneratorMetadata"></a>
 
 ```python
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
@@ -837,7 +837,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
@@ -847,7 +847,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -857,7 +857,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[str]
@@ -867,7 +867,7 @@ depends_on: typing.List[str]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -877,7 +877,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -887,7 +887,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -897,7 +897,7 @@ provider: TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
@@ -907,17 +907,17 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `condition`<sup>Required</sup> <a name="condition" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.condition"></a>
+##### `condition`<sup>Required</sup> <a name="condition" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.condition"></a>
 
 ```python
 condition: DataprocMetastoreDatabaseIamMemberConditionOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference">DataprocMetastoreDatabaseIamMemberConditionOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference">DataprocMetastoreDatabaseIamMemberConditionOutputReference</a>
 
 ---
 
-##### `etag`<sup>Required</sup> <a name="etag" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.etag"></a>
+##### `etag`<sup>Required</sup> <a name="etag" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.etag"></a>
 
 ```python
 etag: str
@@ -927,17 +927,17 @@ etag: str
 
 ---
 
-##### `condition_input`<sup>Optional</sup> <a name="condition_input" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.conditionInput"></a>
+##### `condition_input`<sup>Optional</sup> <a name="condition_input" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.conditionInput"></a>
 
 ```python
 condition_input: DataprocMetastoreDatabaseIamMemberCondition
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberCondition">DataprocMetastoreDatabaseIamMemberCondition</a>
+- *Type:* <a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberCondition">DataprocMetastoreDatabaseIamMemberCondition</a>
 
 ---
 
-##### `database_input`<sup>Optional</sup> <a name="database_input" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.databaseInput"></a>
+##### `database_input`<sup>Optional</sup> <a name="database_input" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.databaseInput"></a>
 
 ```python
 database_input: str
@@ -947,7 +947,7 @@ database_input: str
 
 ---
 
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.idInput"></a>
+##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.idInput"></a>
 
 ```python
 id_input: str
@@ -957,7 +957,7 @@ id_input: str
 
 ---
 
-##### `location_input`<sup>Optional</sup> <a name="location_input" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.locationInput"></a>
+##### `location_input`<sup>Optional</sup> <a name="location_input" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.locationInput"></a>
 
 ```python
 location_input: str
@@ -967,7 +967,7 @@ location_input: str
 
 ---
 
-##### `member_input`<sup>Optional</sup> <a name="member_input" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.memberInput"></a>
+##### `member_input`<sup>Optional</sup> <a name="member_input" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.memberInput"></a>
 
 ```python
 member_input: str
@@ -977,7 +977,7 @@ member_input: str
 
 ---
 
-##### `project_input`<sup>Optional</sup> <a name="project_input" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.projectInput"></a>
+##### `project_input`<sup>Optional</sup> <a name="project_input" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.projectInput"></a>
 
 ```python
 project_input: str
@@ -987,7 +987,7 @@ project_input: str
 
 ---
 
-##### `role_input`<sup>Optional</sup> <a name="role_input" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.roleInput"></a>
+##### `role_input`<sup>Optional</sup> <a name="role_input" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.roleInput"></a>
 
 ```python
 role_input: str
@@ -997,7 +997,7 @@ role_input: str
 
 ---
 
-##### `service_id_input`<sup>Optional</sup> <a name="service_id_input" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.serviceIdInput"></a>
+##### `service_id_input`<sup>Optional</sup> <a name="service_id_input" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.serviceIdInput"></a>
 
 ```python
 service_id_input: str
@@ -1007,7 +1007,7 @@ service_id_input: str
 
 ---
 
-##### `database`<sup>Required</sup> <a name="database" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.database"></a>
+##### `database`<sup>Required</sup> <a name="database" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.database"></a>
 
 ```python
 database: str
@@ -1017,7 +1017,7 @@ database: str
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.id"></a>
 
 ```python
 id: str
@@ -1027,7 +1027,7 @@ id: str
 
 ---
 
-##### `location`<sup>Required</sup> <a name="location" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.location"></a>
+##### `location`<sup>Required</sup> <a name="location" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.location"></a>
 
 ```python
 location: str
@@ -1037,7 +1037,7 @@ location: str
 
 ---
 
-##### `member`<sup>Required</sup> <a name="member" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.member"></a>
+##### `member`<sup>Required</sup> <a name="member" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.member"></a>
 
 ```python
 member: str
@@ -1047,7 +1047,7 @@ member: str
 
 ---
 
-##### `project`<sup>Required</sup> <a name="project" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.project"></a>
+##### `project`<sup>Required</sup> <a name="project" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.project"></a>
 
 ```python
 project: str
@@ -1057,7 +1057,7 @@ project: str
 
 ---
 
-##### `role`<sup>Required</sup> <a name="role" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.role"></a>
+##### `role`<sup>Required</sup> <a name="role" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.role"></a>
 
 ```python
 role: str
@@ -1067,7 +1067,7 @@ role: str
 
 ---
 
-##### `service_id`<sup>Required</sup> <a name="service_id" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.serviceId"></a>
+##### `service_id`<sup>Required</sup> <a name="service_id" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.serviceId"></a>
 
 ```python
 service_id: str
@@ -1081,11 +1081,11 @@ service_id: str
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMember.property.tfResourceType"></a>
 
 ```python
 tfResourceType: str
@@ -1097,12 +1097,12 @@ tfResourceType: str
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### DataprocMetastoreDatabaseIamMemberCondition <a name="DataprocMetastoreDatabaseIamMemberCondition" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberCondition"></a>
+### DataprocMetastoreDatabaseIamMemberCondition <a name="DataprocMetastoreDatabaseIamMemberCondition" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberCondition"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberCondition.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberCondition.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import dataproc_metastore_database_iam_member
+from cdktn_provider_google import dataproc_metastore_database_iam_member
 
 dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberCondition(
   expression: str,
@@ -1115,13 +1115,13 @@ dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberCondition(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberCondition.property.expression">expression</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_metastore_database_iam_member#expression DataprocMetastoreDatabaseIamMember#expression}. |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberCondition.property.title">title</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_metastore_database_iam_member#title DataprocMetastoreDatabaseIamMember#title}. |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberCondition.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_metastore_database_iam_member#description DataprocMetastoreDatabaseIamMember#description}. |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberCondition.property.expression">expression</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_metastore_database_iam_member#expression DataprocMetastoreDatabaseIamMember#expression}. |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberCondition.property.title">title</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_metastore_database_iam_member#title DataprocMetastoreDatabaseIamMember#title}. |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberCondition.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_metastore_database_iam_member#description DataprocMetastoreDatabaseIamMember#description}. |
 
 ---
 
-##### `expression`<sup>Required</sup> <a name="expression" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberCondition.property.expression"></a>
+##### `expression`<sup>Required</sup> <a name="expression" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberCondition.property.expression"></a>
 
 ```python
 expression: str
@@ -1133,7 +1133,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `title`<sup>Required</sup> <a name="title" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberCondition.property.title"></a>
+##### `title`<sup>Required</sup> <a name="title" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberCondition.property.title"></a>
 
 ```python
 title: str
@@ -1145,7 +1145,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberCondition.property.description"></a>
+##### `description`<sup>Optional</sup> <a name="description" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberCondition.property.description"></a>
 
 ```python
 description: str
@@ -1157,12 +1157,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### DataprocMetastoreDatabaseIamMemberConfig <a name="DataprocMetastoreDatabaseIamMemberConfig" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConfig"></a>
+### DataprocMetastoreDatabaseIamMemberConfig <a name="DataprocMetastoreDatabaseIamMemberConfig" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConfig.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import dataproc_metastore_database_iam_member
+from cdktn_provider_google import dataproc_metastore_database_iam_member
 
 dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConfig(
   connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
@@ -1187,25 +1187,25 @@ dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConfig.property.database">database</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_metastore_database_iam_member#database DataprocMetastoreDatabaseIamMember#database}. |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConfig.property.member">member</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_metastore_database_iam_member#member DataprocMetastoreDatabaseIamMember#member}. |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConfig.property.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_metastore_database_iam_member#role DataprocMetastoreDatabaseIamMember#role}. |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConfig.property.serviceId">service_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_metastore_database_iam_member#service_id DataprocMetastoreDatabaseIamMember#service_id}. |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConfig.property.condition">condition</a></code> | <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberCondition">DataprocMetastoreDatabaseIamMemberCondition</a></code> | condition block. |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_metastore_database_iam_member#id DataprocMetastoreDatabaseIamMember#id}. |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConfig.property.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_metastore_database_iam_member#location DataprocMetastoreDatabaseIamMember#location}. |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_metastore_database_iam_member#project DataprocMetastoreDatabaseIamMember#project}. |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConfig.property.database">database</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_metastore_database_iam_member#database DataprocMetastoreDatabaseIamMember#database}. |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConfig.property.member">member</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_metastore_database_iam_member#member DataprocMetastoreDatabaseIamMember#member}. |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConfig.property.role">role</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_metastore_database_iam_member#role DataprocMetastoreDatabaseIamMember#role}. |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConfig.property.serviceId">service_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_metastore_database_iam_member#service_id DataprocMetastoreDatabaseIamMember#service_id}. |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConfig.property.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberCondition">DataprocMetastoreDatabaseIamMemberCondition</a></code> | condition block. |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_metastore_database_iam_member#id DataprocMetastoreDatabaseIamMember#id}. |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConfig.property.location">location</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_metastore_database_iam_member#location DataprocMetastoreDatabaseIamMember#location}. |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/dataproc_metastore_database_iam_member#project DataprocMetastoreDatabaseIamMember#project}. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConfig.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
@@ -1215,7 +1215,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConfig.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -1225,7 +1225,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConfig.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConfig.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[ITerraformDependable]
@@ -1235,7 +1235,7 @@ depends_on: typing.List[ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConfig.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConfig.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -1245,7 +1245,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConfig.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -1255,7 +1255,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConfig.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -1265,7 +1265,7 @@ provider: TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConfig.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
@@ -1275,7 +1275,7 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `database`<sup>Required</sup> <a name="database" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConfig.property.database"></a>
+##### `database`<sup>Required</sup> <a name="database" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConfig.property.database"></a>
 
 ```python
 database: str
@@ -1287,7 +1287,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `member`<sup>Required</sup> <a name="member" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConfig.property.member"></a>
+##### `member`<sup>Required</sup> <a name="member" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConfig.property.member"></a>
 
 ```python
 member: str
@@ -1299,7 +1299,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `role`<sup>Required</sup> <a name="role" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConfig.property.role"></a>
+##### `role`<sup>Required</sup> <a name="role" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConfig.property.role"></a>
 
 ```python
 role: str
@@ -1311,7 +1311,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `service_id`<sup>Required</sup> <a name="service_id" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConfig.property.serviceId"></a>
+##### `service_id`<sup>Required</sup> <a name="service_id" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConfig.property.serviceId"></a>
 
 ```python
 service_id: str
@@ -1323,13 +1323,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `condition`<sup>Optional</sup> <a name="condition" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConfig.property.condition"></a>
+##### `condition`<sup>Optional</sup> <a name="condition" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConfig.property.condition"></a>
 
 ```python
 condition: DataprocMetastoreDatabaseIamMemberCondition
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberCondition">DataprocMetastoreDatabaseIamMemberCondition</a>
+- *Type:* <a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberCondition">DataprocMetastoreDatabaseIamMemberCondition</a>
 
 condition block.
 
@@ -1337,7 +1337,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConfig.property.id"></a>
 
 ```python
 id: str
@@ -1352,7 +1352,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
-##### `location`<sup>Optional</sup> <a name="location" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConfig.property.location"></a>
+##### `location`<sup>Optional</sup> <a name="location" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConfig.property.location"></a>
 
 ```python
 location: str
@@ -1364,7 +1364,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `project`<sup>Optional</sup> <a name="project" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConfig.property.project"></a>
+##### `project`<sup>Optional</sup> <a name="project" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConfig.property.project"></a>
 
 ```python
 project: str
@@ -1378,12 +1378,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### DataprocMetastoreDatabaseIamMemberConditionOutputReference <a name="DataprocMetastoreDatabaseIamMemberConditionOutputReference" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference"></a>
+### DataprocMetastoreDatabaseIamMemberConditionOutputReference <a name="DataprocMetastoreDatabaseIamMemberConditionOutputReference" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import dataproc_metastore_database_iam_member
+from cdktn_provider_google import dataproc_metastore_database_iam_member
 
 dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -1393,12 +1393,12 @@ dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -1406,7 +1406,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -1418,30 +1418,30 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.resetDescription">reset_description</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.resetDescription">reset_description</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -1449,13 +1449,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -1463,13 +1463,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -1477,13 +1477,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -1491,13 +1491,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -1505,13 +1505,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -1519,13 +1519,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -1533,13 +1533,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -1547,13 +1547,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -1561,13 +1561,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -1575,13 +1575,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -1591,13 +1591,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -1607,7 +1607,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_description` <a name="reset_description" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.resetDescription"></a>
+##### `reset_description` <a name="reset_description" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.resetDescription"></a>
 
 ```python
 def reset_description() -> None
@@ -1618,19 +1618,19 @@ def reset_description() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.property.expressionInput">expression_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.property.titleInput">title_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.property.description">description</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.property.expression">expression</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.property.title">title</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberCondition">DataprocMetastoreDatabaseIamMemberCondition</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.property.expressionInput">expression_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.property.titleInput">title_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.property.description">description</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.property.expression">expression</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.property.title">title</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberCondition">DataprocMetastoreDatabaseIamMemberCondition</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -1644,7 +1644,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -1654,7 +1654,7 @@ fqn: str
 
 ---
 
-##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.property.descriptionInput"></a>
+##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.property.descriptionInput"></a>
 
 ```python
 description_input: str
@@ -1664,7 +1664,7 @@ description_input: str
 
 ---
 
-##### `expression_input`<sup>Optional</sup> <a name="expression_input" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.property.expressionInput"></a>
+##### `expression_input`<sup>Optional</sup> <a name="expression_input" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.property.expressionInput"></a>
 
 ```python
 expression_input: str
@@ -1674,7 +1674,7 @@ expression_input: str
 
 ---
 
-##### `title_input`<sup>Optional</sup> <a name="title_input" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.property.titleInput"></a>
+##### `title_input`<sup>Optional</sup> <a name="title_input" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.property.titleInput"></a>
 
 ```python
 title_input: str
@@ -1684,7 +1684,7 @@ title_input: str
 
 ---
 
-##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.property.description"></a>
+##### `description`<sup>Required</sup> <a name="description" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.property.description"></a>
 
 ```python
 description: str
@@ -1694,7 +1694,7 @@ description: str
 
 ---
 
-##### `expression`<sup>Required</sup> <a name="expression" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.property.expression"></a>
+##### `expression`<sup>Required</sup> <a name="expression" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.property.expression"></a>
 
 ```python
 expression: str
@@ -1704,7 +1704,7 @@ expression: str
 
 ---
 
-##### `title`<sup>Required</sup> <a name="title" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.property.title"></a>
+##### `title`<sup>Required</sup> <a name="title" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.property.title"></a>
 
 ```python
 title: str
@@ -1714,13 +1714,13 @@ title: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberConditionOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: DataprocMetastoreDatabaseIamMemberCondition
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberCondition">DataprocMetastoreDatabaseIamMemberCondition</a>
+- *Type:* <a href="#@cdktn/provider-google.dataprocMetastoreDatabaseIamMember.DataprocMetastoreDatabaseIamMemberCondition">DataprocMetastoreDatabaseIamMemberCondition</a>
 
 ---
 

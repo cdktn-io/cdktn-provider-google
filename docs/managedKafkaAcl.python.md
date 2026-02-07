@@ -1,15 +1,15 @@
-# `managedKafkaAcl` Submodule <a name="`managedKafkaAcl` Submodule" id="@cdktf/provider-google.managedKafkaAcl"></a>
+# `managedKafkaAcl` Submodule <a name="`managedKafkaAcl` Submodule" id="@cdktn/provider-google.managedKafkaAcl"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### ManagedKafkaAcl <a name="ManagedKafkaAcl" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl"></a>
+### ManagedKafkaAcl <a name="ManagedKafkaAcl" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl"></a>
 
 Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/managed_kafka_acl google_managed_kafka_acl}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import managed_kafka_acl
+from cdktn_provider_google import managed_kafka_acl
 
 managedKafkaAcl.ManagedKafkaAcl(
   scope: Construct,
@@ -33,26 +33,26 @@ managedKafkaAcl.ManagedKafkaAcl(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.Initializer.parameter.aclEntries">acl_entries</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntries">ManagedKafkaAclAclEntries</a>]</code> | acl_entries block. |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.Initializer.parameter.aclId">acl_id</a></code> | <code>str</code> | The ID to use for the acl, which will become the final component of the acl's name. |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.Initializer.parameter.cluster">cluster</a></code> | <code>str</code> | The cluster name. |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.Initializer.parameter.location">location</a></code> | <code>str</code> | ID of the location of the Kafka resource. See https://cloud.google.com/managed-kafka/docs/locations for a list of supported locations. |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/managed_kafka_acl#id ManagedKafkaAcl#id}. |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/managed_kafka_acl#project ManagedKafkaAcl#project}. |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeouts">ManagedKafkaAclTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.Initializer.parameter.aclEntries">acl_entries</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntries">ManagedKafkaAclAclEntries</a>]</code> | acl_entries block. |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.Initializer.parameter.aclId">acl_id</a></code> | <code>str</code> | The ID to use for the acl, which will become the final component of the acl's name. |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.Initializer.parameter.cluster">cluster</a></code> | <code>str</code> | The cluster name. |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.Initializer.parameter.location">location</a></code> | <code>str</code> | ID of the location of the Kafka resource. See https://cloud.google.com/managed-kafka/docs/locations for a list of supported locations. |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/managed_kafka_acl#id ManagedKafkaAcl#id}. |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/managed_kafka_acl#project ManagedKafkaAcl#project}. |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeouts">ManagedKafkaAclTimeouts</a></code> | timeouts block. |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -60,7 +60,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -70,51 +70,51 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.Initializer.parameter.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.Initializer.parameter.connection"></a>
 
 - *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.Initializer.parameter.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.Initializer.parameter.count"></a>
 
 - *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.Initializer.parameter.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.Initializer.parameter.dependsOn"></a>
 
 - *Type:* typing.List[cdktf.ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.Initializer.parameter.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.Initializer.parameter.forEach"></a>
 
 - *Type:* cdktf.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.Initializer.parameter.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.Initializer.parameter.lifecycle"></a>
 
 - *Type:* cdktf.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.Initializer.parameter.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.Initializer.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.Initializer.parameter.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.Initializer.parameter.provisioners"></a>
 
 - *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
-##### `acl_entries`<sup>Required</sup> <a name="acl_entries" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.Initializer.parameter.aclEntries"></a>
+##### `acl_entries`<sup>Required</sup> <a name="acl_entries" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.Initializer.parameter.aclEntries"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntries">ManagedKafkaAclAclEntries</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntries">ManagedKafkaAclAclEntries</a>]
 
 acl_entries block.
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `acl_id`<sup>Required</sup> <a name="acl_id" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.Initializer.parameter.aclId"></a>
+##### `acl_id`<sup>Required</sup> <a name="acl_id" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.Initializer.parameter.aclId"></a>
 
 - *Type:* str
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `cluster`<sup>Required</sup> <a name="cluster" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.Initializer.parameter.cluster"></a>
+##### `cluster`<sup>Required</sup> <a name="cluster" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.Initializer.parameter.cluster"></a>
 
 - *Type:* str
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `location`<sup>Required</sup> <a name="location" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.Initializer.parameter.location"></a>
+##### `location`<sup>Required</sup> <a name="location" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.Initializer.parameter.location"></a>
 
 - *Type:* str
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.Initializer.parameter.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -169,7 +169,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
-##### `project`<sup>Optional</sup> <a name="project" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.Initializer.parameter.project"></a>
+##### `project`<sup>Optional</sup> <a name="project" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.Initializer.parameter.project"></a>
 
 - *Type:* str
 
@@ -177,9 +177,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.Initializer.parameter.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.Initializer.parameter.timeouts"></a>
 
-- *Type:* <a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeouts">ManagedKafkaAclTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeouts">ManagedKafkaAclTimeouts</a>
 
 timeouts block.
 
@@ -191,38 +191,38 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.toString">to_string</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.addOverride">add_override</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.toMetadata">to_metadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.hasResourceMove">has_resource_move</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.importFrom">import_from</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.putAclEntries">put_acl_entries</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.putTimeouts">put_timeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.resetId">reset_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.resetProject">reset_project</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.resetTimeouts">reset_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.toString">to_string</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.addOverride">add_override</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.toMetadata">to_metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.hasResourceMove">has_resource_move</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.importFrom">import_from</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.putAclEntries">put_acl_entries</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.resetProject">reset_project</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.resetTimeouts">reset_timeouts</a></code> | *No description.* |
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.toString"></a>
 
 ```python
 def to_string() -> str
@@ -230,7 +230,7 @@ def to_string() -> str
 
 Returns a string representation of this construct.
 
-##### `add_override` <a name="add_override" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.addOverride"></a>
+##### `add_override` <a name="add_override" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.addOverride"></a>
 
 ```python
 def add_override(
@@ -239,19 +239,19 @@ def add_override(
 ) -> None
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.addOverride.parameter.path"></a>
 
 - *Type:* str
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.addOverride.parameter.value"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `override_logical_id` <a name="override_logical_id" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.overrideLogicalId"></a>
+##### `override_logical_id` <a name="override_logical_id" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.overrideLogicalId"></a>
 
 ```python
 def override_logical_id(
@@ -261,7 +261,7 @@ def override_logical_id(
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.overrideLogicalId.parameter.newLogicalId"></a>
+###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* str
 
@@ -269,7 +269,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.resetOverrideLogicalId"></a>
+##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.resetOverrideLogicalId"></a>
 
 ```python
 def reset_override_logical_id() -> None
@@ -277,19 +277,19 @@ def reset_override_logical_id() -> None
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.toHclTerraform"></a>
+##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.toHclTerraform"></a>
 
 ```python
 def to_hcl_terraform() -> typing.Any
 ```
 
-##### `to_metadata` <a name="to_metadata" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.toMetadata"></a>
+##### `to_metadata` <a name="to_metadata" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.toMetadata"></a>
 
 ```python
 def to_metadata() -> typing.Any
 ```
 
-##### `to_terraform` <a name="to_terraform" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.toTerraform"></a>
+##### `to_terraform` <a name="to_terraform" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.toTerraform"></a>
 
 ```python
 def to_terraform() -> typing.Any
@@ -297,7 +297,7 @@ def to_terraform() -> typing.Any
 
 Adds this resource to the terraform JSON output.
 
-##### `add_move_target` <a name="add_move_target" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.addMoveTarget"></a>
+##### `add_move_target` <a name="add_move_target" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.addMoveTarget"></a>
 
 ```python
 def add_move_target(
@@ -307,7 +307,7 @@ def add_move_target(
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.addMoveTarget.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -315,7 +315,7 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -323,13 +323,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -337,13 +337,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -351,13 +351,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -365,13 +365,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -379,13 +379,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -393,13 +393,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -407,13 +407,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -421,13 +421,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -435,19 +435,19 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.hasResourceMove"></a>
+##### `has_resource_move` <a name="has_resource_move" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.hasResourceMove"></a>
 
 ```python
 def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `import_from` <a name="import_from" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.importFrom"></a>
+##### `import_from` <a name="import_from" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.importFrom"></a>
 
 ```python
 def import_from(
@@ -456,19 +456,19 @@ def import_from(
 ) -> None
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.importFrom.parameter.id"></a>
 
 - *Type:* str
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.importFrom.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -476,13 +476,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `move_from_id` <a name="move_from_id" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.moveFromId"></a>
+##### `move_from_id` <a name="move_from_id" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.moveFromId"></a>
 
 ```python
 def move_from_id(
@@ -494,7 +494,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.moveFromId.parameter.id"></a>
 
 - *Type:* str
 
@@ -502,7 +502,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `move_to` <a name="move_to" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.moveTo"></a>
+##### `move_to` <a name="move_to" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.moveTo"></a>
 
 ```python
 def move_to(
@@ -513,7 +513,7 @@ def move_to(
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.moveTo.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.moveTo.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -521,7 +521,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.moveTo.parameter.index"></a>
 
 - *Type:* str | typing.Union[int, float]
 
@@ -529,7 +529,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `move_to_id` <a name="move_to_id" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.moveToId"></a>
+##### `move_to_id` <a name="move_to_id" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.moveToId"></a>
 
 ```python
 def move_to_id(
@@ -539,7 +539,7 @@ def move_to_id(
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.moveToId.parameter.id"></a>
 
 - *Type:* str
 
@@ -547,7 +547,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `put_acl_entries` <a name="put_acl_entries" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.putAclEntries"></a>
+##### `put_acl_entries` <a name="put_acl_entries" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.putAclEntries"></a>
 
 ```python
 def put_acl_entries(
@@ -555,13 +555,13 @@ def put_acl_entries(
 ) -> None
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.putAclEntries.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.putAclEntries.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntries">ManagedKafkaAclAclEntries</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntries">ManagedKafkaAclAclEntries</a>]
 
 ---
 
-##### `put_timeouts` <a name="put_timeouts" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.putTimeouts"></a>
+##### `put_timeouts` <a name="put_timeouts" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.putTimeouts"></a>
 
 ```python
 def put_timeouts(
@@ -571,7 +571,7 @@ def put_timeouts(
 ) -> None
 ```
 
-###### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.putTimeouts.parameter.create"></a>
+###### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.putTimeouts.parameter.create"></a>
 
 - *Type:* str
 
@@ -579,7 +579,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.putTimeouts.parameter.delete"></a>
+###### `delete`<sup>Optional</sup> <a name="delete" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.putTimeouts.parameter.delete"></a>
 
 - *Type:* str
 
@@ -587,7 +587,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.putTimeouts.parameter.update"></a>
+###### `update`<sup>Optional</sup> <a name="update" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.putTimeouts.parameter.update"></a>
 
 - *Type:* str
 
@@ -595,19 +595,19 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.resetId"></a>
+##### `reset_id` <a name="reset_id" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.resetId"></a>
 
 ```python
 def reset_id() -> None
 ```
 
-##### `reset_project` <a name="reset_project" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.resetProject"></a>
+##### `reset_project` <a name="reset_project" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.resetProject"></a>
 
 ```python
 def reset_project() -> None
 ```
 
-##### `reset_timeouts` <a name="reset_timeouts" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.resetTimeouts"></a>
+##### `reset_timeouts` <a name="reset_timeouts" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.resetTimeouts"></a>
 
 ```python
 def reset_timeouts() -> None
@@ -617,17 +617,17 @@ def reset_timeouts() -> None
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.isTerraformElement">is_terraform_element</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a ManagedKafkaAcl resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.isTerraformElement">is_terraform_element</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a ManagedKafkaAcl resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `is_construct` <a name="is_construct" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.isConstruct"></a>
+##### `is_construct` <a name="is_construct" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.isConstruct"></a>
 
 ```python
-from cdktf_cdktf_provider_google import managed_kafka_acl
+from cdktn_provider_google import managed_kafka_acl
 
 managedKafkaAcl.ManagedKafkaAcl.is_construct(
   x: typing.Any
@@ -650,7 +650,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.isConstruct.parameter.x"></a>
 
 - *Type:* typing.Any
 
@@ -658,42 +658,42 @@ Any object.
 
 ---
 
-##### `is_terraform_element` <a name="is_terraform_element" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.isTerraformElement"></a>
+##### `is_terraform_element` <a name="is_terraform_element" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.isTerraformElement"></a>
 
 ```python
-from cdktf_cdktf_provider_google import managed_kafka_acl
+from cdktn_provider_google import managed_kafka_acl
 
 managedKafkaAcl.ManagedKafkaAcl.is_terraform_element(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.isTerraformElement.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.isTerraformResource"></a>
+##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.isTerraformResource"></a>
 
 ```python
-from cdktf_cdktf_provider_google import managed_kafka_acl
+from cdktn_provider_google import managed_kafka_acl
 
 managedKafkaAcl.ManagedKafkaAcl.is_terraform_resource(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.isTerraformResource.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.generateConfigForImport"></a>
+##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.generateConfigForImport"></a>
 
 ```python
-from cdktf_cdktf_provider_google import managed_kafka_acl
+from cdktn_provider_google import managed_kafka_acl
 
 managedKafkaAcl.ManagedKafkaAcl.generate_config_for_import(
   scope: Construct,
@@ -705,7 +705,7 @@ managedKafkaAcl.ManagedKafkaAcl.generate_config_for_import(
 
 Generates CDKTF code for importing a ManagedKafkaAcl resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -713,7 +713,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.generateConfigForImport.parameter.importToId"></a>
+###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* str
 
@@ -721,7 +721,7 @@ The construct id used in the generated config for the ManagedKafkaAcl to import.
 
 ---
 
-###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.generateConfigForImport.parameter.importFromId"></a>
+###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* str
 
@@ -731,7 +731,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
@@ -743,43 +743,43 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.aclEntries">acl_entries</a></code> | <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesList">ManagedKafkaAclAclEntriesList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.etag">etag</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.patternType">pattern_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.resourceName">resource_name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.resourceType">resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference">ManagedKafkaAclTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.aclEntriesInput">acl_entries_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntries">ManagedKafkaAclAclEntries</a>]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.aclIdInput">acl_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.clusterInput">cluster_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.locationInput">location_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeouts">ManagedKafkaAclTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.aclId">acl_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.cluster">cluster</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.location">location</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.project">project</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.aclEntries">acl_entries</a></code> | <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesList">ManagedKafkaAclAclEntriesList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.etag">etag</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.patternType">pattern_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.resourceName">resource_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.resourceType">resource_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference">ManagedKafkaAclTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.aclEntriesInput">acl_entries_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntries">ManagedKafkaAclAclEntries</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.aclIdInput">acl_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.clusterInput">cluster_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.locationInput">location_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeouts">ManagedKafkaAclTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.aclId">acl_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.cluster">cluster</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.location">location</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.project">project</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.node"></a>
 
 ```python
 node: Node
@@ -791,7 +791,7 @@ The tree node.
 
 ---
 
-##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.cdktfStack"></a>
+##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.cdktfStack"></a>
 
 ```python
 cdktf_stack: TerraformStack
@@ -801,7 +801,7 @@ cdktf_stack: TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.fqn"></a>
 
 ```python
 fqn: str
@@ -811,7 +811,7 @@ fqn: str
 
 ---
 
-##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.friendlyUniqueId"></a>
+##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.friendlyUniqueId"></a>
 
 ```python
 friendly_unique_id: str
@@ -821,7 +821,7 @@ friendly_unique_id: str
 
 ---
 
-##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.terraformMetaArguments"></a>
+##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.terraformMetaArguments"></a>
 
 ```python
 terraform_meta_arguments: typing.Mapping[typing.Any]
@@ -831,7 +831,7 @@ terraform_meta_arguments: typing.Mapping[typing.Any]
 
 ---
 
-##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.terraformResourceType"></a>
+##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.terraformResourceType"></a>
 
 ```python
 terraform_resource_type: str
@@ -841,7 +841,7 @@ terraform_resource_type: str
 
 ---
 
-##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.terraformGeneratorMetadata"></a>
+##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.terraformGeneratorMetadata"></a>
 
 ```python
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
@@ -851,7 +851,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
@@ -861,7 +861,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -871,7 +871,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[str]
@@ -881,7 +881,7 @@ depends_on: typing.List[str]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -891,7 +891,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -901,7 +901,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -911,7 +911,7 @@ provider: TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
@@ -921,17 +921,17 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `acl_entries`<sup>Required</sup> <a name="acl_entries" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.aclEntries"></a>
+##### `acl_entries`<sup>Required</sup> <a name="acl_entries" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.aclEntries"></a>
 
 ```python
 acl_entries: ManagedKafkaAclAclEntriesList
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesList">ManagedKafkaAclAclEntriesList</a>
+- *Type:* <a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesList">ManagedKafkaAclAclEntriesList</a>
 
 ---
 
-##### `etag`<sup>Required</sup> <a name="etag" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.etag"></a>
+##### `etag`<sup>Required</sup> <a name="etag" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.etag"></a>
 
 ```python
 etag: str
@@ -941,7 +941,7 @@ etag: str
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.name"></a>
 
 ```python
 name: str
@@ -951,7 +951,7 @@ name: str
 
 ---
 
-##### `pattern_type`<sup>Required</sup> <a name="pattern_type" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.patternType"></a>
+##### `pattern_type`<sup>Required</sup> <a name="pattern_type" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.patternType"></a>
 
 ```python
 pattern_type: str
@@ -961,7 +961,7 @@ pattern_type: str
 
 ---
 
-##### `resource_name`<sup>Required</sup> <a name="resource_name" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.resourceName"></a>
+##### `resource_name`<sup>Required</sup> <a name="resource_name" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.resourceName"></a>
 
 ```python
 resource_name: str
@@ -971,7 +971,7 @@ resource_name: str
 
 ---
 
-##### `resource_type`<sup>Required</sup> <a name="resource_type" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.resourceType"></a>
+##### `resource_type`<sup>Required</sup> <a name="resource_type" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.resourceType"></a>
 
 ```python
 resource_type: str
@@ -981,27 +981,27 @@ resource_type: str
 
 ---
 
-##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.timeouts"></a>
+##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.timeouts"></a>
 
 ```python
 timeouts: ManagedKafkaAclTimeoutsOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference">ManagedKafkaAclTimeoutsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference">ManagedKafkaAclTimeoutsOutputReference</a>
 
 ---
 
-##### `acl_entries_input`<sup>Optional</sup> <a name="acl_entries_input" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.aclEntriesInput"></a>
+##### `acl_entries_input`<sup>Optional</sup> <a name="acl_entries_input" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.aclEntriesInput"></a>
 
 ```python
 acl_entries_input: IResolvable | typing.List[ManagedKafkaAclAclEntries]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntries">ManagedKafkaAclAclEntries</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntries">ManagedKafkaAclAclEntries</a>]
 
 ---
 
-##### `acl_id_input`<sup>Optional</sup> <a name="acl_id_input" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.aclIdInput"></a>
+##### `acl_id_input`<sup>Optional</sup> <a name="acl_id_input" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.aclIdInput"></a>
 
 ```python
 acl_id_input: str
@@ -1011,7 +1011,7 @@ acl_id_input: str
 
 ---
 
-##### `cluster_input`<sup>Optional</sup> <a name="cluster_input" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.clusterInput"></a>
+##### `cluster_input`<sup>Optional</sup> <a name="cluster_input" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.clusterInput"></a>
 
 ```python
 cluster_input: str
@@ -1021,7 +1021,7 @@ cluster_input: str
 
 ---
 
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.idInput"></a>
+##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.idInput"></a>
 
 ```python
 id_input: str
@@ -1031,7 +1031,7 @@ id_input: str
 
 ---
 
-##### `location_input`<sup>Optional</sup> <a name="location_input" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.locationInput"></a>
+##### `location_input`<sup>Optional</sup> <a name="location_input" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.locationInput"></a>
 
 ```python
 location_input: str
@@ -1041,7 +1041,7 @@ location_input: str
 
 ---
 
-##### `project_input`<sup>Optional</sup> <a name="project_input" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.projectInput"></a>
+##### `project_input`<sup>Optional</sup> <a name="project_input" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.projectInput"></a>
 
 ```python
 project_input: str
@@ -1051,17 +1051,17 @@ project_input: str
 
 ---
 
-##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.timeoutsInput"></a>
+##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.timeoutsInput"></a>
 
 ```python
 timeouts_input: IResolvable | ManagedKafkaAclTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeouts">ManagedKafkaAclTimeouts</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeouts">ManagedKafkaAclTimeouts</a>
 
 ---
 
-##### `acl_id`<sup>Required</sup> <a name="acl_id" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.aclId"></a>
+##### `acl_id`<sup>Required</sup> <a name="acl_id" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.aclId"></a>
 
 ```python
 acl_id: str
@@ -1071,7 +1071,7 @@ acl_id: str
 
 ---
 
-##### `cluster`<sup>Required</sup> <a name="cluster" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.cluster"></a>
+##### `cluster`<sup>Required</sup> <a name="cluster" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.cluster"></a>
 
 ```python
 cluster: str
@@ -1081,7 +1081,7 @@ cluster: str
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.id"></a>
 
 ```python
 id: str
@@ -1091,7 +1091,7 @@ id: str
 
 ---
 
-##### `location`<sup>Required</sup> <a name="location" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.location"></a>
+##### `location`<sup>Required</sup> <a name="location" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.location"></a>
 
 ```python
 location: str
@@ -1101,7 +1101,7 @@ location: str
 
 ---
 
-##### `project`<sup>Required</sup> <a name="project" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.project"></a>
+##### `project`<sup>Required</sup> <a name="project" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.project"></a>
 
 ```python
 project: str
@@ -1115,11 +1115,11 @@ project: str
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAcl.property.tfResourceType"></a>
 
 ```python
 tfResourceType: str
@@ -1131,12 +1131,12 @@ tfResourceType: str
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### ManagedKafkaAclAclEntries <a name="ManagedKafkaAclAclEntries" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntries"></a>
+### ManagedKafkaAclAclEntries <a name="ManagedKafkaAclAclEntries" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntries"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntries.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntries.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import managed_kafka_acl
+from cdktn_provider_google import managed_kafka_acl
 
 managedKafkaAcl.ManagedKafkaAclAclEntries(
   operation: str,
@@ -1150,14 +1150,14 @@ managedKafkaAcl.ManagedKafkaAclAclEntries(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntries.property.operation">operation</a></code> | <code>str</code> | The operation type. |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntries.property.principal">principal</a></code> | <code>str</code> | The principal. |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntries.property.host">host</a></code> | <code>str</code> | The host. Must be set to "*" for Managed Service for Apache Kafka. |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntries.property.permissionType">permission_type</a></code> | <code>str</code> | The permission type. Accepted values are (case insensitive): ALLOW, DENY. |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntries.property.operation">operation</a></code> | <code>str</code> | The operation type. |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntries.property.principal">principal</a></code> | <code>str</code> | The principal. |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntries.property.host">host</a></code> | <code>str</code> | The host. Must be set to "*" for Managed Service for Apache Kafka. |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntries.property.permissionType">permission_type</a></code> | <code>str</code> | The permission type. Accepted values are (case insensitive): ALLOW, DENY. |
 
 ---
 
-##### `operation`<sup>Required</sup> <a name="operation" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntries.property.operation"></a>
+##### `operation`<sup>Required</sup> <a name="operation" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntries.property.operation"></a>
 
 ```python
 operation: str
@@ -1176,7 +1176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `principal`<sup>Required</sup> <a name="principal" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntries.property.principal"></a>
+##### `principal`<sup>Required</sup> <a name="principal" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntries.property.principal"></a>
 
 ```python
 principal: str
@@ -1192,7 +1192,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `host`<sup>Optional</sup> <a name="host" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntries.property.host"></a>
+##### `host`<sup>Optional</sup> <a name="host" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntries.property.host"></a>
 
 ```python
 host: str
@@ -1206,7 +1206,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `permission_type`<sup>Optional</sup> <a name="permission_type" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntries.property.permissionType"></a>
+##### `permission_type`<sup>Optional</sup> <a name="permission_type" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntries.property.permissionType"></a>
 
 ```python
 permission_type: str
@@ -1220,12 +1220,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### ManagedKafkaAclConfig <a name="ManagedKafkaAclConfig" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclConfig"></a>
+### ManagedKafkaAclConfig <a name="ManagedKafkaAclConfig" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclConfig.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import managed_kafka_acl
+from cdktn_provider_google import managed_kafka_acl
 
 managedKafkaAcl.ManagedKafkaAclConfig(
   connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
@@ -1249,24 +1249,24 @@ managedKafkaAcl.ManagedKafkaAclConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclConfig.property.aclEntries">acl_entries</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntries">ManagedKafkaAclAclEntries</a>]</code> | acl_entries block. |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclConfig.property.aclId">acl_id</a></code> | <code>str</code> | The ID to use for the acl, which will become the final component of the acl's name. |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclConfig.property.cluster">cluster</a></code> | <code>str</code> | The cluster name. |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclConfig.property.location">location</a></code> | <code>str</code> | ID of the location of the Kafka resource. See https://cloud.google.com/managed-kafka/docs/locations for a list of supported locations. |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/managed_kafka_acl#id ManagedKafkaAcl#id}. |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/managed_kafka_acl#project ManagedKafkaAcl#project}. |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeouts">ManagedKafkaAclTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclConfig.property.aclEntries">acl_entries</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntries">ManagedKafkaAclAclEntries</a>]</code> | acl_entries block. |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclConfig.property.aclId">acl_id</a></code> | <code>str</code> | The ID to use for the acl, which will become the final component of the acl's name. |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclConfig.property.cluster">cluster</a></code> | <code>str</code> | The cluster name. |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclConfig.property.location">location</a></code> | <code>str</code> | ID of the location of the Kafka resource. See https://cloud.google.com/managed-kafka/docs/locations for a list of supported locations. |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/managed_kafka_acl#id ManagedKafkaAcl#id}. |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/managed_kafka_acl#project ManagedKafkaAcl#project}. |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeouts">ManagedKafkaAclTimeouts</a></code> | timeouts block. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclConfig.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
@@ -1276,7 +1276,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclConfig.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -1286,7 +1286,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclConfig.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclConfig.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[ITerraformDependable]
@@ -1296,7 +1296,7 @@ depends_on: typing.List[ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclConfig.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclConfig.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -1306,7 +1306,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclConfig.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -1316,7 +1316,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclConfig.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -1326,7 +1326,7 @@ provider: TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclConfig.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
@@ -1336,13 +1336,13 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `acl_entries`<sup>Required</sup> <a name="acl_entries" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclConfig.property.aclEntries"></a>
+##### `acl_entries`<sup>Required</sup> <a name="acl_entries" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclConfig.property.aclEntries"></a>
 
 ```python
 acl_entries: IResolvable | typing.List[ManagedKafkaAclAclEntries]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntries">ManagedKafkaAclAclEntries</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntries">ManagedKafkaAclAclEntries</a>]
 
 acl_entries block.
 
@@ -1350,7 +1350,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `acl_id`<sup>Required</sup> <a name="acl_id" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclConfig.property.aclId"></a>
+##### `acl_id`<sup>Required</sup> <a name="acl_id" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclConfig.property.aclId"></a>
 
 ```python
 acl_id: str
@@ -1370,7 +1370,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `cluster`<sup>Required</sup> <a name="cluster" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclConfig.property.cluster"></a>
+##### `cluster`<sup>Required</sup> <a name="cluster" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclConfig.property.cluster"></a>
 
 ```python
 cluster: str
@@ -1384,7 +1384,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `location`<sup>Required</sup> <a name="location" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclConfig.property.location"></a>
+##### `location`<sup>Required</sup> <a name="location" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclConfig.property.location"></a>
 
 ```python
 location: str
@@ -1398,7 +1398,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclConfig.property.id"></a>
 
 ```python
 id: str
@@ -1413,7 +1413,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
-##### `project`<sup>Optional</sup> <a name="project" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclConfig.property.project"></a>
+##### `project`<sup>Optional</sup> <a name="project" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclConfig.property.project"></a>
 
 ```python
 project: str
@@ -1425,13 +1425,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclConfig.property.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclConfig.property.timeouts"></a>
 
 ```python
 timeouts: ManagedKafkaAclTimeouts
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeouts">ManagedKafkaAclTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeouts">ManagedKafkaAclTimeouts</a>
 
 timeouts block.
 
@@ -1439,12 +1439,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### ManagedKafkaAclTimeouts <a name="ManagedKafkaAclTimeouts" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeouts"></a>
+### ManagedKafkaAclTimeouts <a name="ManagedKafkaAclTimeouts" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeouts"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeouts.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeouts.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import managed_kafka_acl
+from cdktn_provider_google import managed_kafka_acl
 
 managedKafkaAcl.ManagedKafkaAclTimeouts(
   create: str = None,
@@ -1457,13 +1457,13 @@ managedKafkaAcl.ManagedKafkaAclTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/managed_kafka_acl#create ManagedKafkaAcl#create}. |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/managed_kafka_acl#delete ManagedKafkaAcl#delete}. |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/managed_kafka_acl#update ManagedKafkaAcl#update}. |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/managed_kafka_acl#create ManagedKafkaAcl#create}. |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/managed_kafka_acl#delete ManagedKafkaAcl#delete}. |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/managed_kafka_acl#update ManagedKafkaAcl#update}. |
 
 ---
 
-##### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeouts.property.create"></a>
+##### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeouts.property.create"></a>
 
 ```python
 create: str
@@ -1475,7 +1475,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeouts.property.delete"></a>
+##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeouts.property.delete"></a>
 
 ```python
 delete: str
@@ -1487,7 +1487,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeouts.property.update"></a>
+##### `update`<sup>Optional</sup> <a name="update" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeouts.property.update"></a>
 
 ```python
 update: str
@@ -1501,12 +1501,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### ManagedKafkaAclAclEntriesList <a name="ManagedKafkaAclAclEntriesList" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesList"></a>
+### ManagedKafkaAclAclEntriesList <a name="ManagedKafkaAclAclEntriesList" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesList"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesList.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesList.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import managed_kafka_acl
+from cdktn_provider_google import managed_kafka_acl
 
 managedKafkaAcl.ManagedKafkaAclAclEntriesList(
   terraform_resource: IInterpolatingParent,
@@ -1517,13 +1517,13 @@ managedKafkaAcl.ManagedKafkaAclAclEntriesList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesList.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesList.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -1531,7 +1531,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesList.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesList.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -1539,7 +1539,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesList.Initializer.parameter.wrapsSet"></a>
+##### `wraps_set`<sup>Required</sup> <a name="wraps_set" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesList.Initializer.parameter.wrapsSet"></a>
 
 - *Type:* bool
 
@@ -1551,15 +1551,15 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesList.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesList.get">get</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesList.allWithMapKey">all_with_map_key</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesList.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesList.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesList.get">get</a></code> | *No description.* |
 
 ---
 
-##### `all_with_map_key` <a name="all_with_map_key" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesList.allWithMapKey"></a>
+##### `all_with_map_key` <a name="all_with_map_key" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesList.allWithMapKey"></a>
 
 ```python
 def all_with_map_key(
@@ -1571,19 +1571,19 @@ Creating an iterator for this complex list.
 
 The list will be converted into a map with the mapKeyAttributeName as the key.
 
-###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+###### `map_key_attribute_name`<sup>Required</sup> <a name="map_key_attribute_name" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
 
 - *Type:* str
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesList.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesList.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesList.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesList.resolve"></a>
 
 ```python
 def resolve(
@@ -1593,13 +1593,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesList.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesList.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesList.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesList.toString"></a>
 
 ```python
 def to_string() -> str
@@ -1609,7 +1609,7 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `get` <a name="get" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesList.get"></a>
+##### `get` <a name="get" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesList.get"></a>
 
 ```python
 def get(
@@ -1617,7 +1617,7 @@ def get(
 ) -> ManagedKafkaAclAclEntriesOutputReference
 ```
 
-###### `index`<sup>Required</sup> <a name="index" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesList.get.parameter.index"></a>
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesList.get.parameter.index"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -1630,13 +1630,13 @@ the index of the item to return.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntries">ManagedKafkaAclAclEntries</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntries">ManagedKafkaAclAclEntries</a>]</code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesList.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesList.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -1650,7 +1650,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesList.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesList.property.fqn"></a>
 
 ```python
 fqn: str
@@ -1660,23 +1660,23 @@ fqn: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesList.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesList.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | typing.List[ManagedKafkaAclAclEntries]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntries">ManagedKafkaAclAclEntries</a>]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntries">ManagedKafkaAclAclEntries</a>]
 
 ---
 
 
-### ManagedKafkaAclAclEntriesOutputReference <a name="ManagedKafkaAclAclEntriesOutputReference" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference"></a>
+### ManagedKafkaAclAclEntriesOutputReference <a name="ManagedKafkaAclAclEntriesOutputReference" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import managed_kafka_acl
+from cdktn_provider_google import managed_kafka_acl
 
 managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -1688,14 +1688,14 @@ managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -1703,7 +1703,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -1711,7 +1711,7 @@ The attribute on the parent resource this class is referencing.
 
 ---
 
-##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.Initializer.parameter.complexObjectIndex"></a>
+##### `complex_object_index`<sup>Required</sup> <a name="complex_object_index" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.Initializer.parameter.complexObjectIndex"></a>
 
 - *Type:* typing.Union[int, float]
 
@@ -1719,7 +1719,7 @@ the index of this item in the list.
 
 ---
 
-##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+##### `complex_object_is_from_set`<sup>Required</sup> <a name="complex_object_is_from_set" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
 
 - *Type:* bool
 
@@ -1731,31 +1731,31 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.resetHost">reset_host</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.resetPermissionType">reset_permission_type</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.resetHost">reset_host</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.resetPermissionType">reset_permission_type</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -1763,13 +1763,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -1777,13 +1777,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -1791,13 +1791,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -1805,13 +1805,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -1819,13 +1819,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -1833,13 +1833,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -1847,13 +1847,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -1861,13 +1861,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -1875,13 +1875,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -1889,13 +1889,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -1905,13 +1905,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -1921,13 +1921,13 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_host` <a name="reset_host" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.resetHost"></a>
+##### `reset_host` <a name="reset_host" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.resetHost"></a>
 
 ```python
 def reset_host() -> None
 ```
 
-##### `reset_permission_type` <a name="reset_permission_type" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.resetPermissionType"></a>
+##### `reset_permission_type` <a name="reset_permission_type" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.resetPermissionType"></a>
 
 ```python
 def reset_permission_type() -> None
@@ -1938,21 +1938,21 @@ def reset_permission_type() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.property.hostInput">host_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.property.operationInput">operation_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.property.permissionTypeInput">permission_type_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.property.principalInput">principal_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.property.host">host</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.property.operation">operation</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.property.permissionType">permission_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.property.principal">principal</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntries">ManagedKafkaAclAclEntries</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.property.hostInput">host_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.property.operationInput">operation_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.property.permissionTypeInput">permission_type_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.property.principalInput">principal_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.property.host">host</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.property.operation">operation</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.property.permissionType">permission_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.property.principal">principal</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntries">ManagedKafkaAclAclEntries</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -1966,7 +1966,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -1976,7 +1976,7 @@ fqn: str
 
 ---
 
-##### `host_input`<sup>Optional</sup> <a name="host_input" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.property.hostInput"></a>
+##### `host_input`<sup>Optional</sup> <a name="host_input" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.property.hostInput"></a>
 
 ```python
 host_input: str
@@ -1986,7 +1986,7 @@ host_input: str
 
 ---
 
-##### `operation_input`<sup>Optional</sup> <a name="operation_input" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.property.operationInput"></a>
+##### `operation_input`<sup>Optional</sup> <a name="operation_input" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.property.operationInput"></a>
 
 ```python
 operation_input: str
@@ -1996,7 +1996,7 @@ operation_input: str
 
 ---
 
-##### `permission_type_input`<sup>Optional</sup> <a name="permission_type_input" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.property.permissionTypeInput"></a>
+##### `permission_type_input`<sup>Optional</sup> <a name="permission_type_input" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.property.permissionTypeInput"></a>
 
 ```python
 permission_type_input: str
@@ -2006,7 +2006,7 @@ permission_type_input: str
 
 ---
 
-##### `principal_input`<sup>Optional</sup> <a name="principal_input" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.property.principalInput"></a>
+##### `principal_input`<sup>Optional</sup> <a name="principal_input" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.property.principalInput"></a>
 
 ```python
 principal_input: str
@@ -2016,7 +2016,7 @@ principal_input: str
 
 ---
 
-##### `host`<sup>Required</sup> <a name="host" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.property.host"></a>
+##### `host`<sup>Required</sup> <a name="host" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.property.host"></a>
 
 ```python
 host: str
@@ -2026,7 +2026,7 @@ host: str
 
 ---
 
-##### `operation`<sup>Required</sup> <a name="operation" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.property.operation"></a>
+##### `operation`<sup>Required</sup> <a name="operation" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.property.operation"></a>
 
 ```python
 operation: str
@@ -2036,7 +2036,7 @@ operation: str
 
 ---
 
-##### `permission_type`<sup>Required</sup> <a name="permission_type" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.property.permissionType"></a>
+##### `permission_type`<sup>Required</sup> <a name="permission_type" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.property.permissionType"></a>
 
 ```python
 permission_type: str
@@ -2046,7 +2046,7 @@ permission_type: str
 
 ---
 
-##### `principal`<sup>Required</sup> <a name="principal" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.property.principal"></a>
+##### `principal`<sup>Required</sup> <a name="principal" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.property.principal"></a>
 
 ```python
 principal: str
@@ -2056,23 +2056,23 @@ principal: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntriesOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | ManagedKafkaAclAclEntries
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntries">ManagedKafkaAclAclEntries</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclAclEntries">ManagedKafkaAclAclEntries</a>
 
 ---
 
 
-### ManagedKafkaAclTimeoutsOutputReference <a name="ManagedKafkaAclTimeoutsOutputReference" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference"></a>
+### ManagedKafkaAclTimeoutsOutputReference <a name="ManagedKafkaAclTimeoutsOutputReference" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import managed_kafka_acl
+from cdktn_provider_google import managed_kafka_acl
 
 managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -2082,12 +2082,12 @@ managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -2095,7 +2095,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -2107,32 +2107,32 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.resetCreate">reset_create</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.resetDelete">reset_delete</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.resetUpdate">reset_update</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.resetCreate">reset_create</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.resetDelete">reset_delete</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.resetUpdate">reset_update</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -2140,13 +2140,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -2154,13 +2154,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -2168,13 +2168,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -2182,13 +2182,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -2196,13 +2196,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -2210,13 +2210,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -2224,13 +2224,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -2238,13 +2238,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -2252,13 +2252,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -2266,13 +2266,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -2282,13 +2282,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -2298,19 +2298,19 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_create` <a name="reset_create" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.resetCreate"></a>
+##### `reset_create` <a name="reset_create" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.resetCreate"></a>
 
 ```python
 def reset_create() -> None
 ```
 
-##### `reset_delete` <a name="reset_delete" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.resetDelete"></a>
+##### `reset_delete` <a name="reset_delete" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.resetDelete"></a>
 
 ```python
 def reset_delete() -> None
 ```
 
-##### `reset_update` <a name="reset_update" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.resetUpdate"></a>
+##### `reset_update` <a name="reset_update" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.resetUpdate"></a>
 
 ```python
 def reset_update() -> None
@@ -2321,19 +2321,19 @@ def reset_update() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.property.createInput">create_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.property.updateInput">update_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeouts">ManagedKafkaAclTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.property.createInput">create_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.property.updateInput">update_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeouts">ManagedKafkaAclTimeouts</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -2347,7 +2347,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -2357,7 +2357,7 @@ fqn: str
 
 ---
 
-##### `create_input`<sup>Optional</sup> <a name="create_input" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.property.createInput"></a>
+##### `create_input`<sup>Optional</sup> <a name="create_input" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.property.createInput"></a>
 
 ```python
 create_input: str
@@ -2367,7 +2367,7 @@ create_input: str
 
 ---
 
-##### `delete_input`<sup>Optional</sup> <a name="delete_input" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.property.deleteInput"></a>
+##### `delete_input`<sup>Optional</sup> <a name="delete_input" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.property.deleteInput"></a>
 
 ```python
 delete_input: str
@@ -2377,7 +2377,7 @@ delete_input: str
 
 ---
 
-##### `update_input`<sup>Optional</sup> <a name="update_input" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.property.updateInput"></a>
+##### `update_input`<sup>Optional</sup> <a name="update_input" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.property.updateInput"></a>
 
 ```python
 update_input: str
@@ -2387,7 +2387,7 @@ update_input: str
 
 ---
 
-##### `create`<sup>Required</sup> <a name="create" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.property.create"></a>
+##### `create`<sup>Required</sup> <a name="create" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.property.create"></a>
 
 ```python
 create: str
@@ -2397,7 +2397,7 @@ create: str
 
 ---
 
-##### `delete`<sup>Required</sup> <a name="delete" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.property.delete"></a>
+##### `delete`<sup>Required</sup> <a name="delete" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.property.delete"></a>
 
 ```python
 delete: str
@@ -2407,7 +2407,7 @@ delete: str
 
 ---
 
-##### `update`<sup>Required</sup> <a name="update" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.property.update"></a>
+##### `update`<sup>Required</sup> <a name="update" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.property.update"></a>
 
 ```python
 update: str
@@ -2417,13 +2417,13 @@ update: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | ManagedKafkaAclTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-google.managedKafkaAcl.ManagedKafkaAclTimeouts">ManagedKafkaAclTimeouts</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.managedKafkaAcl.ManagedKafkaAclTimeouts">ManagedKafkaAclTimeouts</a>
 
 ---
 

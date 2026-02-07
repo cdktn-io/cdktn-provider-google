@@ -1,15 +1,15 @@
-# `sccV2FolderSccBigQueryExport` Submodule <a name="`sccV2FolderSccBigQueryExport` Submodule" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport"></a>
+# `sccV2FolderSccBigQueryExport` Submodule <a name="`sccV2FolderSccBigQueryExport` Submodule" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### SccV2FolderSccBigQueryExport <a name="SccV2FolderSccBigQueryExport" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport"></a>
+### SccV2FolderSccBigQueryExport <a name="SccV2FolderSccBigQueryExport" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport"></a>
 
 Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_v2_folder_scc_big_query_export google_scc_v2_folder_scc_big_query_export}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import scc_v2_folder_scc_big_query_export
+from cdktn_provider_google import scc_v2_folder_scc_big_query_export
 
 sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport(
   scope: Construct,
@@ -34,27 +34,27 @@ sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.Initializer.parameter.bigQueryExportId">big_query_export_id</a></code> | <code>str</code> | This must be unique within the organization. |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.Initializer.parameter.folder">folder</a></code> | <code>str</code> | The folder where Cloud Security Command Center Big Query Export Config lives in. |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.Initializer.parameter.dataset">dataset</a></code> | <code>str</code> | The dataset to write findings' updates to. |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.Initializer.parameter.description">description</a></code> | <code>str</code> | The description of the notification config (max of 1024 characters). |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.Initializer.parameter.filter">filter</a></code> | <code>str</code> | Expression that defines the filter to apply across create/update events of findings. |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_v2_folder_scc_big_query_export#id SccV2FolderSccBigQueryExport#id}. |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.Initializer.parameter.location">location</a></code> | <code>str</code> | The BigQuery export configuration is stored in this location. If not provided, Use global as default. |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeouts">SccV2FolderSccBigQueryExportTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.Initializer.parameter.bigQueryExportId">big_query_export_id</a></code> | <code>str</code> | This must be unique within the organization. |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.Initializer.parameter.folder">folder</a></code> | <code>str</code> | The folder where Cloud Security Command Center Big Query Export Config lives in. |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.Initializer.parameter.dataset">dataset</a></code> | <code>str</code> | The dataset to write findings' updates to. |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.Initializer.parameter.description">description</a></code> | <code>str</code> | The description of the notification config (max of 1024 characters). |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.Initializer.parameter.filter">filter</a></code> | <code>str</code> | Expression that defines the filter to apply across create/update events of findings. |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_v2_folder_scc_big_query_export#id SccV2FolderSccBigQueryExport#id}. |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.Initializer.parameter.location">location</a></code> | <code>str</code> | The BigQuery export configuration is stored in this location. If not provided, Use global as default. |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeouts">SccV2FolderSccBigQueryExportTimeouts</a></code> | timeouts block. |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -62,7 +62,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -72,49 +72,49 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.Initializer.parameter.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.Initializer.parameter.connection"></a>
 
 - *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.Initializer.parameter.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.Initializer.parameter.count"></a>
 
 - *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.Initializer.parameter.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.Initializer.parameter.dependsOn"></a>
 
 - *Type:* typing.List[cdktf.ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.Initializer.parameter.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.Initializer.parameter.forEach"></a>
 
 - *Type:* cdktf.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.Initializer.parameter.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.Initializer.parameter.lifecycle"></a>
 
 - *Type:* cdktf.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.Initializer.parameter.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.Initializer.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.Initializer.parameter.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.Initializer.parameter.provisioners"></a>
 
 - *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
-##### `big_query_export_id`<sup>Required</sup> <a name="big_query_export_id" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.Initializer.parameter.bigQueryExportId"></a>
+##### `big_query_export_id`<sup>Required</sup> <a name="big_query_export_id" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.Initializer.parameter.bigQueryExportId"></a>
 
 - *Type:* str
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `folder`<sup>Required</sup> <a name="folder" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.Initializer.parameter.folder"></a>
+##### `folder`<sup>Required</sup> <a name="folder" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.Initializer.parameter.folder"></a>
 
 - *Type:* str
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `dataset`<sup>Optional</sup> <a name="dataset" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.Initializer.parameter.dataset"></a>
+##### `dataset`<sup>Optional</sup> <a name="dataset" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.Initializer.parameter.dataset"></a>
 
 - *Type:* str
 
@@ -151,7 +151,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.Initializer.parameter.description"></a>
+##### `description`<sup>Optional</sup> <a name="description" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.Initializer.parameter.description"></a>
 
 - *Type:* str
 
@@ -161,7 +161,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `filter`<sup>Optional</sup> <a name="filter" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.Initializer.parameter.filter"></a>
+##### `filter`<sup>Optional</sup> <a name="filter" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.Initializer.parameter.filter"></a>
 
 - *Type:* str
 
@@ -196,7 +196,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.Initializer.parameter.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -207,7 +207,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
-##### `location`<sup>Optional</sup> <a name="location" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.Initializer.parameter.location"></a>
+##### `location`<sup>Optional</sup> <a name="location" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.Initializer.parameter.location"></a>
 
 - *Type:* str
 
@@ -217,9 +217,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.Initializer.parameter.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.Initializer.parameter.timeouts"></a>
 
-- *Type:* <a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeouts">SccV2FolderSccBigQueryExportTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeouts">SccV2FolderSccBigQueryExportTimeouts</a>
 
 timeouts block.
 
@@ -231,40 +231,40 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.toString">to_string</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.addOverride">add_override</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.toMetadata">to_metadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.hasResourceMove">has_resource_move</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.importFrom">import_from</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.putTimeouts">put_timeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.resetDataset">reset_dataset</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.resetDescription">reset_description</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.resetFilter">reset_filter</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.resetId">reset_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.resetLocation">reset_location</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.resetTimeouts">reset_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.toString">to_string</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.addOverride">add_override</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.toMetadata">to_metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.hasResourceMove">has_resource_move</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.importFrom">import_from</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.resetDataset">reset_dataset</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.resetDescription">reset_description</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.resetFilter">reset_filter</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.resetLocation">reset_location</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.resetTimeouts">reset_timeouts</a></code> | *No description.* |
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.toString"></a>
 
 ```python
 def to_string() -> str
@@ -272,7 +272,7 @@ def to_string() -> str
 
 Returns a string representation of this construct.
 
-##### `add_override` <a name="add_override" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.addOverride"></a>
+##### `add_override` <a name="add_override" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.addOverride"></a>
 
 ```python
 def add_override(
@@ -281,19 +281,19 @@ def add_override(
 ) -> None
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.addOverride.parameter.path"></a>
 
 - *Type:* str
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.addOverride.parameter.value"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `override_logical_id` <a name="override_logical_id" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.overrideLogicalId"></a>
+##### `override_logical_id` <a name="override_logical_id" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.overrideLogicalId"></a>
 
 ```python
 def override_logical_id(
@@ -303,7 +303,7 @@ def override_logical_id(
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.overrideLogicalId.parameter.newLogicalId"></a>
+###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* str
 
@@ -311,7 +311,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.resetOverrideLogicalId"></a>
+##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.resetOverrideLogicalId"></a>
 
 ```python
 def reset_override_logical_id() -> None
@@ -319,19 +319,19 @@ def reset_override_logical_id() -> None
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.toHclTerraform"></a>
+##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.toHclTerraform"></a>
 
 ```python
 def to_hcl_terraform() -> typing.Any
 ```
 
-##### `to_metadata` <a name="to_metadata" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.toMetadata"></a>
+##### `to_metadata` <a name="to_metadata" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.toMetadata"></a>
 
 ```python
 def to_metadata() -> typing.Any
 ```
 
-##### `to_terraform` <a name="to_terraform" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.toTerraform"></a>
+##### `to_terraform` <a name="to_terraform" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.toTerraform"></a>
 
 ```python
 def to_terraform() -> typing.Any
@@ -339,7 +339,7 @@ def to_terraform() -> typing.Any
 
 Adds this resource to the terraform JSON output.
 
-##### `add_move_target` <a name="add_move_target" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.addMoveTarget"></a>
+##### `add_move_target` <a name="add_move_target" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.addMoveTarget"></a>
 
 ```python
 def add_move_target(
@@ -349,7 +349,7 @@ def add_move_target(
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.addMoveTarget.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -357,7 +357,7 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -365,13 +365,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -379,13 +379,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -393,13 +393,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -407,13 +407,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -421,13 +421,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -435,13 +435,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -449,13 +449,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -463,13 +463,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -477,19 +477,19 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.hasResourceMove"></a>
+##### `has_resource_move` <a name="has_resource_move" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.hasResourceMove"></a>
 
 ```python
 def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `import_from` <a name="import_from" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.importFrom"></a>
+##### `import_from` <a name="import_from" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.importFrom"></a>
 
 ```python
 def import_from(
@@ -498,19 +498,19 @@ def import_from(
 ) -> None
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.importFrom.parameter.id"></a>
 
 - *Type:* str
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.importFrom.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -518,13 +518,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `move_from_id` <a name="move_from_id" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.moveFromId"></a>
+##### `move_from_id` <a name="move_from_id" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.moveFromId"></a>
 
 ```python
 def move_from_id(
@@ -536,7 +536,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.moveFromId.parameter.id"></a>
 
 - *Type:* str
 
@@ -544,7 +544,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `move_to` <a name="move_to" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.moveTo"></a>
+##### `move_to` <a name="move_to" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.moveTo"></a>
 
 ```python
 def move_to(
@@ -555,7 +555,7 @@ def move_to(
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.moveTo.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.moveTo.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -563,7 +563,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.moveTo.parameter.index"></a>
 
 - *Type:* str | typing.Union[int, float]
 
@@ -571,7 +571,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `move_to_id` <a name="move_to_id" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.moveToId"></a>
+##### `move_to_id` <a name="move_to_id" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.moveToId"></a>
 
 ```python
 def move_to_id(
@@ -581,7 +581,7 @@ def move_to_id(
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.moveToId.parameter.id"></a>
 
 - *Type:* str
 
@@ -589,7 +589,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `put_timeouts` <a name="put_timeouts" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.putTimeouts"></a>
+##### `put_timeouts` <a name="put_timeouts" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.putTimeouts"></a>
 
 ```python
 def put_timeouts(
@@ -599,7 +599,7 @@ def put_timeouts(
 ) -> None
 ```
 
-###### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.putTimeouts.parameter.create"></a>
+###### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.putTimeouts.parameter.create"></a>
 
 - *Type:* str
 
@@ -607,7 +607,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.putTimeouts.parameter.delete"></a>
+###### `delete`<sup>Optional</sup> <a name="delete" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.putTimeouts.parameter.delete"></a>
 
 - *Type:* str
 
@@ -615,7 +615,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.putTimeouts.parameter.update"></a>
+###### `update`<sup>Optional</sup> <a name="update" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.putTimeouts.parameter.update"></a>
 
 - *Type:* str
 
@@ -623,37 +623,37 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `reset_dataset` <a name="reset_dataset" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.resetDataset"></a>
+##### `reset_dataset` <a name="reset_dataset" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.resetDataset"></a>
 
 ```python
 def reset_dataset() -> None
 ```
 
-##### `reset_description` <a name="reset_description" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.resetDescription"></a>
+##### `reset_description` <a name="reset_description" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.resetDescription"></a>
 
 ```python
 def reset_description() -> None
 ```
 
-##### `reset_filter` <a name="reset_filter" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.resetFilter"></a>
+##### `reset_filter` <a name="reset_filter" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.resetFilter"></a>
 
 ```python
 def reset_filter() -> None
 ```
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.resetId"></a>
+##### `reset_id` <a name="reset_id" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.resetId"></a>
 
 ```python
 def reset_id() -> None
 ```
 
-##### `reset_location` <a name="reset_location" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.resetLocation"></a>
+##### `reset_location` <a name="reset_location" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.resetLocation"></a>
 
 ```python
 def reset_location() -> None
 ```
 
-##### `reset_timeouts` <a name="reset_timeouts" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.resetTimeouts"></a>
+##### `reset_timeouts` <a name="reset_timeouts" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.resetTimeouts"></a>
 
 ```python
 def reset_timeouts() -> None
@@ -663,17 +663,17 @@ def reset_timeouts() -> None
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.isTerraformElement">is_terraform_element</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a SccV2FolderSccBigQueryExport resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.isTerraformElement">is_terraform_element</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a SccV2FolderSccBigQueryExport resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `is_construct` <a name="is_construct" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.isConstruct"></a>
+##### `is_construct` <a name="is_construct" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.isConstruct"></a>
 
 ```python
-from cdktf_cdktf_provider_google import scc_v2_folder_scc_big_query_export
+from cdktn_provider_google import scc_v2_folder_scc_big_query_export
 
 sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.is_construct(
   x: typing.Any
@@ -696,7 +696,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.isConstruct.parameter.x"></a>
 
 - *Type:* typing.Any
 
@@ -704,42 +704,42 @@ Any object.
 
 ---
 
-##### `is_terraform_element` <a name="is_terraform_element" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.isTerraformElement"></a>
+##### `is_terraform_element` <a name="is_terraform_element" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.isTerraformElement"></a>
 
 ```python
-from cdktf_cdktf_provider_google import scc_v2_folder_scc_big_query_export
+from cdktn_provider_google import scc_v2_folder_scc_big_query_export
 
 sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.is_terraform_element(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.isTerraformElement.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.isTerraformResource"></a>
+##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.isTerraformResource"></a>
 
 ```python
-from cdktf_cdktf_provider_google import scc_v2_folder_scc_big_query_export
+from cdktn_provider_google import scc_v2_folder_scc_big_query_export
 
 sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.is_terraform_resource(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.isTerraformResource.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.generateConfigForImport"></a>
+##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.generateConfigForImport"></a>
 
 ```python
-from cdktf_cdktf_provider_google import scc_v2_folder_scc_big_query_export
+from cdktn_provider_google import scc_v2_folder_scc_big_query_export
 
 sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.generate_config_for_import(
   scope: Construct,
@@ -751,7 +751,7 @@ sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.generate_config_for_im
 
 Generates CDKTF code for importing a SccV2FolderSccBigQueryExport resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -759,7 +759,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.generateConfigForImport.parameter.importToId"></a>
+###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* str
 
@@ -767,7 +767,7 @@ The construct id used in the generated config for the SccV2FolderSccBigQueryExpo
 
 ---
 
-###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.generateConfigForImport.parameter.importFromId"></a>
+###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* str
 
@@ -777,7 +777,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
@@ -789,45 +789,45 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.createTime">create_time</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.mostRecentEditor">most_recent_editor</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.principal">principal</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference">SccV2FolderSccBigQueryExportTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.updateTime">update_time</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.bigQueryExportIdInput">big_query_export_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.datasetInput">dataset_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.filterInput">filter_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.folderInput">folder_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.locationInput">location_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeouts">SccV2FolderSccBigQueryExportTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.bigQueryExportId">big_query_export_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.dataset">dataset</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.description">description</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.filter">filter</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.folder">folder</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.location">location</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.createTime">create_time</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.mostRecentEditor">most_recent_editor</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.principal">principal</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference">SccV2FolderSccBigQueryExportTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.updateTime">update_time</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.bigQueryExportIdInput">big_query_export_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.datasetInput">dataset_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.filterInput">filter_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.folderInput">folder_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.locationInput">location_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeouts">SccV2FolderSccBigQueryExportTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.bigQueryExportId">big_query_export_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.dataset">dataset</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.description">description</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.filter">filter</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.folder">folder</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.location">location</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.node"></a>
 
 ```python
 node: Node
@@ -839,7 +839,7 @@ The tree node.
 
 ---
 
-##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.cdktfStack"></a>
+##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.cdktfStack"></a>
 
 ```python
 cdktf_stack: TerraformStack
@@ -849,7 +849,7 @@ cdktf_stack: TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.fqn"></a>
 
 ```python
 fqn: str
@@ -859,7 +859,7 @@ fqn: str
 
 ---
 
-##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.friendlyUniqueId"></a>
+##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.friendlyUniqueId"></a>
 
 ```python
 friendly_unique_id: str
@@ -869,7 +869,7 @@ friendly_unique_id: str
 
 ---
 
-##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.terraformMetaArguments"></a>
+##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.terraformMetaArguments"></a>
 
 ```python
 terraform_meta_arguments: typing.Mapping[typing.Any]
@@ -879,7 +879,7 @@ terraform_meta_arguments: typing.Mapping[typing.Any]
 
 ---
 
-##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.terraformResourceType"></a>
+##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.terraformResourceType"></a>
 
 ```python
 terraform_resource_type: str
@@ -889,7 +889,7 @@ terraform_resource_type: str
 
 ---
 
-##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.terraformGeneratorMetadata"></a>
+##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.terraformGeneratorMetadata"></a>
 
 ```python
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
@@ -899,7 +899,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
@@ -909,7 +909,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -919,7 +919,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[str]
@@ -929,7 +929,7 @@ depends_on: typing.List[str]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -939,7 +939,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -949,7 +949,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -959,7 +959,7 @@ provider: TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
@@ -969,7 +969,7 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `create_time`<sup>Required</sup> <a name="create_time" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.createTime"></a>
+##### `create_time`<sup>Required</sup> <a name="create_time" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.createTime"></a>
 
 ```python
 create_time: str
@@ -979,7 +979,7 @@ create_time: str
 
 ---
 
-##### `most_recent_editor`<sup>Required</sup> <a name="most_recent_editor" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.mostRecentEditor"></a>
+##### `most_recent_editor`<sup>Required</sup> <a name="most_recent_editor" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.mostRecentEditor"></a>
 
 ```python
 most_recent_editor: str
@@ -989,7 +989,7 @@ most_recent_editor: str
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.name"></a>
 
 ```python
 name: str
@@ -999,7 +999,7 @@ name: str
 
 ---
 
-##### `principal`<sup>Required</sup> <a name="principal" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.principal"></a>
+##### `principal`<sup>Required</sup> <a name="principal" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.principal"></a>
 
 ```python
 principal: str
@@ -1009,17 +1009,17 @@ principal: str
 
 ---
 
-##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.timeouts"></a>
+##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.timeouts"></a>
 
 ```python
 timeouts: SccV2FolderSccBigQueryExportTimeoutsOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference">SccV2FolderSccBigQueryExportTimeoutsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference">SccV2FolderSccBigQueryExportTimeoutsOutputReference</a>
 
 ---
 
-##### `update_time`<sup>Required</sup> <a name="update_time" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.updateTime"></a>
+##### `update_time`<sup>Required</sup> <a name="update_time" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.updateTime"></a>
 
 ```python
 update_time: str
@@ -1029,7 +1029,7 @@ update_time: str
 
 ---
 
-##### `big_query_export_id_input`<sup>Optional</sup> <a name="big_query_export_id_input" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.bigQueryExportIdInput"></a>
+##### `big_query_export_id_input`<sup>Optional</sup> <a name="big_query_export_id_input" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.bigQueryExportIdInput"></a>
 
 ```python
 big_query_export_id_input: str
@@ -1039,7 +1039,7 @@ big_query_export_id_input: str
 
 ---
 
-##### `dataset_input`<sup>Optional</sup> <a name="dataset_input" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.datasetInput"></a>
+##### `dataset_input`<sup>Optional</sup> <a name="dataset_input" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.datasetInput"></a>
 
 ```python
 dataset_input: str
@@ -1049,7 +1049,7 @@ dataset_input: str
 
 ---
 
-##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.descriptionInput"></a>
+##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.descriptionInput"></a>
 
 ```python
 description_input: str
@@ -1059,7 +1059,7 @@ description_input: str
 
 ---
 
-##### `filter_input`<sup>Optional</sup> <a name="filter_input" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.filterInput"></a>
+##### `filter_input`<sup>Optional</sup> <a name="filter_input" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.filterInput"></a>
 
 ```python
 filter_input: str
@@ -1069,7 +1069,7 @@ filter_input: str
 
 ---
 
-##### `folder_input`<sup>Optional</sup> <a name="folder_input" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.folderInput"></a>
+##### `folder_input`<sup>Optional</sup> <a name="folder_input" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.folderInput"></a>
 
 ```python
 folder_input: str
@@ -1079,7 +1079,7 @@ folder_input: str
 
 ---
 
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.idInput"></a>
+##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.idInput"></a>
 
 ```python
 id_input: str
@@ -1089,7 +1089,7 @@ id_input: str
 
 ---
 
-##### `location_input`<sup>Optional</sup> <a name="location_input" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.locationInput"></a>
+##### `location_input`<sup>Optional</sup> <a name="location_input" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.locationInput"></a>
 
 ```python
 location_input: str
@@ -1099,17 +1099,17 @@ location_input: str
 
 ---
 
-##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.timeoutsInput"></a>
+##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.timeoutsInput"></a>
 
 ```python
 timeouts_input: IResolvable | SccV2FolderSccBigQueryExportTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeouts">SccV2FolderSccBigQueryExportTimeouts</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeouts">SccV2FolderSccBigQueryExportTimeouts</a>
 
 ---
 
-##### `big_query_export_id`<sup>Required</sup> <a name="big_query_export_id" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.bigQueryExportId"></a>
+##### `big_query_export_id`<sup>Required</sup> <a name="big_query_export_id" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.bigQueryExportId"></a>
 
 ```python
 big_query_export_id: str
@@ -1119,7 +1119,7 @@ big_query_export_id: str
 
 ---
 
-##### `dataset`<sup>Required</sup> <a name="dataset" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.dataset"></a>
+##### `dataset`<sup>Required</sup> <a name="dataset" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.dataset"></a>
 
 ```python
 dataset: str
@@ -1129,7 +1129,7 @@ dataset: str
 
 ---
 
-##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.description"></a>
+##### `description`<sup>Required</sup> <a name="description" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.description"></a>
 
 ```python
 description: str
@@ -1139,7 +1139,7 @@ description: str
 
 ---
 
-##### `filter`<sup>Required</sup> <a name="filter" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.filter"></a>
+##### `filter`<sup>Required</sup> <a name="filter" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.filter"></a>
 
 ```python
 filter: str
@@ -1149,7 +1149,7 @@ filter: str
 
 ---
 
-##### `folder`<sup>Required</sup> <a name="folder" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.folder"></a>
+##### `folder`<sup>Required</sup> <a name="folder" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.folder"></a>
 
 ```python
 folder: str
@@ -1159,7 +1159,7 @@ folder: str
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.id"></a>
 
 ```python
 id: str
@@ -1169,7 +1169,7 @@ id: str
 
 ---
 
-##### `location`<sup>Required</sup> <a name="location" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.location"></a>
+##### `location`<sup>Required</sup> <a name="location" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.location"></a>
 
 ```python
 location: str
@@ -1183,11 +1183,11 @@ location: str
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExport.property.tfResourceType"></a>
 
 ```python
 tfResourceType: str
@@ -1199,12 +1199,12 @@ tfResourceType: str
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### SccV2FolderSccBigQueryExportConfig <a name="SccV2FolderSccBigQueryExportConfig" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportConfig"></a>
+### SccV2FolderSccBigQueryExportConfig <a name="SccV2FolderSccBigQueryExportConfig" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportConfig.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import scc_v2_folder_scc_big_query_export
+from cdktn_provider_google import scc_v2_folder_scc_big_query_export
 
 sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportConfig(
   connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
@@ -1229,25 +1229,25 @@ sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportConfig.property.bigQueryExportId">big_query_export_id</a></code> | <code>str</code> | This must be unique within the organization. |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportConfig.property.folder">folder</a></code> | <code>str</code> | The folder where Cloud Security Command Center Big Query Export Config lives in. |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportConfig.property.dataset">dataset</a></code> | <code>str</code> | The dataset to write findings' updates to. |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportConfig.property.description">description</a></code> | <code>str</code> | The description of the notification config (max of 1024 characters). |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportConfig.property.filter">filter</a></code> | <code>str</code> | Expression that defines the filter to apply across create/update events of findings. |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_v2_folder_scc_big_query_export#id SccV2FolderSccBigQueryExport#id}. |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportConfig.property.location">location</a></code> | <code>str</code> | The BigQuery export configuration is stored in this location. If not provided, Use global as default. |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeouts">SccV2FolderSccBigQueryExportTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportConfig.property.bigQueryExportId">big_query_export_id</a></code> | <code>str</code> | This must be unique within the organization. |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportConfig.property.folder">folder</a></code> | <code>str</code> | The folder where Cloud Security Command Center Big Query Export Config lives in. |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportConfig.property.dataset">dataset</a></code> | <code>str</code> | The dataset to write findings' updates to. |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportConfig.property.description">description</a></code> | <code>str</code> | The description of the notification config (max of 1024 characters). |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportConfig.property.filter">filter</a></code> | <code>str</code> | Expression that defines the filter to apply across create/update events of findings. |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_v2_folder_scc_big_query_export#id SccV2FolderSccBigQueryExport#id}. |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportConfig.property.location">location</a></code> | <code>str</code> | The BigQuery export configuration is stored in this location. If not provided, Use global as default. |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeouts">SccV2FolderSccBigQueryExportTimeouts</a></code> | timeouts block. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportConfig.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
@@ -1257,7 +1257,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportConfig.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -1267,7 +1267,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportConfig.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportConfig.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[ITerraformDependable]
@@ -1277,7 +1277,7 @@ depends_on: typing.List[ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportConfig.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportConfig.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -1287,7 +1287,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportConfig.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -1297,7 +1297,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportConfig.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -1307,7 +1307,7 @@ provider: TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportConfig.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
@@ -1317,7 +1317,7 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `big_query_export_id`<sup>Required</sup> <a name="big_query_export_id" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportConfig.property.bigQueryExportId"></a>
+##### `big_query_export_id`<sup>Required</sup> <a name="big_query_export_id" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportConfig.property.bigQueryExportId"></a>
 
 ```python
 big_query_export_id: str
@@ -1335,7 +1335,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `folder`<sup>Required</sup> <a name="folder" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportConfig.property.folder"></a>
+##### `folder`<sup>Required</sup> <a name="folder" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportConfig.property.folder"></a>
 
 ```python
 folder: str
@@ -1349,7 +1349,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `dataset`<sup>Optional</sup> <a name="dataset" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportConfig.property.dataset"></a>
+##### `dataset`<sup>Optional</sup> <a name="dataset" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportConfig.property.dataset"></a>
 
 ```python
 dataset: str
@@ -1366,7 +1366,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportConfig.property.description"></a>
+##### `description`<sup>Optional</sup> <a name="description" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportConfig.property.description"></a>
 
 ```python
 description: str
@@ -1380,7 +1380,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `filter`<sup>Optional</sup> <a name="filter" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportConfig.property.filter"></a>
+##### `filter`<sup>Optional</sup> <a name="filter" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportConfig.property.filter"></a>
 
 ```python
 filter: str
@@ -1419,7 +1419,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportConfig.property.id"></a>
 
 ```python
 id: str
@@ -1434,7 +1434,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
-##### `location`<sup>Optional</sup> <a name="location" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportConfig.property.location"></a>
+##### `location`<sup>Optional</sup> <a name="location" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportConfig.property.location"></a>
 
 ```python
 location: str
@@ -1448,13 +1448,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportConfig.property.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportConfig.property.timeouts"></a>
 
 ```python
 timeouts: SccV2FolderSccBigQueryExportTimeouts
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeouts">SccV2FolderSccBigQueryExportTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeouts">SccV2FolderSccBigQueryExportTimeouts</a>
 
 timeouts block.
 
@@ -1462,12 +1462,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### SccV2FolderSccBigQueryExportTimeouts <a name="SccV2FolderSccBigQueryExportTimeouts" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeouts"></a>
+### SccV2FolderSccBigQueryExportTimeouts <a name="SccV2FolderSccBigQueryExportTimeouts" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeouts"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeouts.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeouts.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import scc_v2_folder_scc_big_query_export
+from cdktn_provider_google import scc_v2_folder_scc_big_query_export
 
 sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeouts(
   create: str = None,
@@ -1480,13 +1480,13 @@ sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_v2_folder_scc_big_query_export#create SccV2FolderSccBigQueryExport#create}. |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_v2_folder_scc_big_query_export#delete SccV2FolderSccBigQueryExport#delete}. |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_v2_folder_scc_big_query_export#update SccV2FolderSccBigQueryExport#update}. |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_v2_folder_scc_big_query_export#create SccV2FolderSccBigQueryExport#create}. |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_v2_folder_scc_big_query_export#delete SccV2FolderSccBigQueryExport#delete}. |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/scc_v2_folder_scc_big_query_export#update SccV2FolderSccBigQueryExport#update}. |
 
 ---
 
-##### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeouts.property.create"></a>
+##### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeouts.property.create"></a>
 
 ```python
 create: str
@@ -1498,7 +1498,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeouts.property.delete"></a>
+##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeouts.property.delete"></a>
 
 ```python
 delete: str
@@ -1510,7 +1510,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeouts.property.update"></a>
+##### `update`<sup>Optional</sup> <a name="update" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeouts.property.update"></a>
 
 ```python
 update: str
@@ -1524,12 +1524,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### SccV2FolderSccBigQueryExportTimeoutsOutputReference <a name="SccV2FolderSccBigQueryExportTimeoutsOutputReference" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference"></a>
+### SccV2FolderSccBigQueryExportTimeoutsOutputReference <a name="SccV2FolderSccBigQueryExportTimeoutsOutputReference" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import scc_v2_folder_scc_big_query_export
+from cdktn_provider_google import scc_v2_folder_scc_big_query_export
 
 sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -1539,12 +1539,12 @@ sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -1552,7 +1552,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -1564,32 +1564,32 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.resetCreate">reset_create</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.resetDelete">reset_delete</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.resetUpdate">reset_update</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.resetCreate">reset_create</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.resetDelete">reset_delete</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.resetUpdate">reset_update</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -1597,13 +1597,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -1611,13 +1611,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -1625,13 +1625,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -1639,13 +1639,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -1653,13 +1653,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -1667,13 +1667,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -1681,13 +1681,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -1695,13 +1695,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -1709,13 +1709,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -1723,13 +1723,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -1739,13 +1739,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -1755,19 +1755,19 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_create` <a name="reset_create" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.resetCreate"></a>
+##### `reset_create` <a name="reset_create" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.resetCreate"></a>
 
 ```python
 def reset_create() -> None
 ```
 
-##### `reset_delete` <a name="reset_delete" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.resetDelete"></a>
+##### `reset_delete` <a name="reset_delete" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.resetDelete"></a>
 
 ```python
 def reset_delete() -> None
 ```
 
-##### `reset_update` <a name="reset_update" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.resetUpdate"></a>
+##### `reset_update` <a name="reset_update" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.resetUpdate"></a>
 
 ```python
 def reset_update() -> None
@@ -1778,19 +1778,19 @@ def reset_update() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.property.createInput">create_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.property.updateInput">update_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeouts">SccV2FolderSccBigQueryExportTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.property.createInput">create_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.property.updateInput">update_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeouts">SccV2FolderSccBigQueryExportTimeouts</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -1804,7 +1804,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -1814,7 +1814,7 @@ fqn: str
 
 ---
 
-##### `create_input`<sup>Optional</sup> <a name="create_input" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.property.createInput"></a>
+##### `create_input`<sup>Optional</sup> <a name="create_input" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.property.createInput"></a>
 
 ```python
 create_input: str
@@ -1824,7 +1824,7 @@ create_input: str
 
 ---
 
-##### `delete_input`<sup>Optional</sup> <a name="delete_input" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.property.deleteInput"></a>
+##### `delete_input`<sup>Optional</sup> <a name="delete_input" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.property.deleteInput"></a>
 
 ```python
 delete_input: str
@@ -1834,7 +1834,7 @@ delete_input: str
 
 ---
 
-##### `update_input`<sup>Optional</sup> <a name="update_input" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.property.updateInput"></a>
+##### `update_input`<sup>Optional</sup> <a name="update_input" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.property.updateInput"></a>
 
 ```python
 update_input: str
@@ -1844,7 +1844,7 @@ update_input: str
 
 ---
 
-##### `create`<sup>Required</sup> <a name="create" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.property.create"></a>
+##### `create`<sup>Required</sup> <a name="create" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.property.create"></a>
 
 ```python
 create: str
@@ -1854,7 +1854,7 @@ create: str
 
 ---
 
-##### `delete`<sup>Required</sup> <a name="delete" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.property.delete"></a>
+##### `delete`<sup>Required</sup> <a name="delete" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.property.delete"></a>
 
 ```python
 delete: str
@@ -1864,7 +1864,7 @@ delete: str
 
 ---
 
-##### `update`<sup>Required</sup> <a name="update" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.property.update"></a>
+##### `update`<sup>Required</sup> <a name="update" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.property.update"></a>
 
 ```python
 update: str
@@ -1874,13 +1874,13 @@ update: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | SccV2FolderSccBigQueryExportTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeouts">SccV2FolderSccBigQueryExportTimeouts</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.sccV2FolderSccBigQueryExport.SccV2FolderSccBigQueryExportTimeouts">SccV2FolderSccBigQueryExportTimeouts</a>
 
 ---
 

@@ -1,15 +1,15 @@
-# `netappActiveDirectory` Submodule <a name="`netappActiveDirectory` Submodule" id="@cdktf/provider-google.netappActiveDirectory"></a>
+# `netappActiveDirectory` Submodule <a name="`netappActiveDirectory` Submodule" id="@cdktn/provider-google.netappActiveDirectory"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### NetappActiveDirectory <a name="NetappActiveDirectory" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory"></a>
+### NetappActiveDirectory <a name="NetappActiveDirectory" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory"></a>
 
 Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_active_directory google_netapp_active_directory}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import netapp_active_directory
+from cdktn_provider_google import netapp_active_directory
 
 netappActiveDirectory.NetappActiveDirectory(
   scope: Construct,
@@ -49,42 +49,42 @@ netappActiveDirectory.NetappActiveDirectory(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.dns">dns</a></code> | <code>str</code> | Comma separated list of DNS server IP addresses for the Active Directory domain. |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.domain">domain</a></code> | <code>str</code> | Fully qualified domain name for the Active Directory domain. |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.location">location</a></code> | <code>str</code> | Name of the region for the policy to apply to. |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.name">name</a></code> | <code>str</code> | The resource name of the Active Directory pool. Needs to be unique per location. |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.netBiosPrefix">net_bios_prefix</a></code> | <code>str</code> | NetBIOS name prefix of the server to be created. |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.password">password</a></code> | <code>str</code> | Password for specified username. |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.username">username</a></code> | <code>str</code> | Username for the Active Directory account with permissions to create the compute account within the specified organizational unit. |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.administrators">administrators</a></code> | <code>typing.List[str]</code> | Domain user accounts to be added to the local Administrators group of the SMB service. |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.aesEncryption">aes_encryption</a></code> | <code>bool \| cdktf.IResolvable</code> | Enables AES-128 and AES-256 encryption for Kerberos-based communication with Active Directory. |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.backupOperators">backup_operators</a></code> | <code>typing.List[str]</code> | Domain user/group accounts to be added to the Backup Operators group of the SMB service. |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.description">description</a></code> | <code>str</code> | An optional description of this resource. |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.encryptDcConnections">encrypt_dc_connections</a></code> | <code>bool \| cdktf.IResolvable</code> | If enabled, traffic between the SMB server to Domain Controller (DC) will be encrypted. |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_active_directory#id NetappActiveDirectory#id}. |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.kdcHostname">kdc_hostname</a></code> | <code>str</code> | Hostname of the Active Directory server used as Kerberos Key Distribution Center. Only required for volumes using kerberized NFSv4.1. |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.kdcIp">kdc_ip</a></code> | <code>str</code> | IP address of the Active Directory server used as Kerberos Key Distribution Center. |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Labels as key value pairs. Example: '{ "owner": "Bob", "department": "finance", "purpose": "testing" }'. |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.ldapSigning">ldap_signing</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies whether or not the LDAP traffic needs to be signed. |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.nfsUsersWithLdap">nfs_users_with_ldap</a></code> | <code>bool \| cdktf.IResolvable</code> | Local UNIX users on clients without valid user information in Active Directory are blocked from access to LDAP enabled volumes. |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.organizationalUnit">organizational_unit</a></code> | <code>str</code> | Name of the Organizational Unit where you intend to create the computer account for NetApp Volumes. |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_active_directory#project NetappActiveDirectory#project}. |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.securityOperators">security_operators</a></code> | <code>typing.List[str]</code> | Domain accounts that require elevated privileges such as 'SeSecurityPrivilege' to manage security logs. Comma-separated list. |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.site">site</a></code> | <code>str</code> | Specifies an Active Directory site to manage domain controller selection. |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeouts">NetappActiveDirectoryTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.dns">dns</a></code> | <code>str</code> | Comma separated list of DNS server IP addresses for the Active Directory domain. |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.domain">domain</a></code> | <code>str</code> | Fully qualified domain name for the Active Directory domain. |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.location">location</a></code> | <code>str</code> | Name of the region for the policy to apply to. |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.name">name</a></code> | <code>str</code> | The resource name of the Active Directory pool. Needs to be unique per location. |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.netBiosPrefix">net_bios_prefix</a></code> | <code>str</code> | NetBIOS name prefix of the server to be created. |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.password">password</a></code> | <code>str</code> | Password for specified username. |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.username">username</a></code> | <code>str</code> | Username for the Active Directory account with permissions to create the compute account within the specified organizational unit. |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.administrators">administrators</a></code> | <code>typing.List[str]</code> | Domain user accounts to be added to the local Administrators group of the SMB service. |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.aesEncryption">aes_encryption</a></code> | <code>bool \| cdktf.IResolvable</code> | Enables AES-128 and AES-256 encryption for Kerberos-based communication with Active Directory. |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.backupOperators">backup_operators</a></code> | <code>typing.List[str]</code> | Domain user/group accounts to be added to the Backup Operators group of the SMB service. |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.description">description</a></code> | <code>str</code> | An optional description of this resource. |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.encryptDcConnections">encrypt_dc_connections</a></code> | <code>bool \| cdktf.IResolvable</code> | If enabled, traffic between the SMB server to Domain Controller (DC) will be encrypted. |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_active_directory#id NetappActiveDirectory#id}. |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.kdcHostname">kdc_hostname</a></code> | <code>str</code> | Hostname of the Active Directory server used as Kerberos Key Distribution Center. Only required for volumes using kerberized NFSv4.1. |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.kdcIp">kdc_ip</a></code> | <code>str</code> | IP address of the Active Directory server used as Kerberos Key Distribution Center. |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Labels as key value pairs. Example: '{ "owner": "Bob", "department": "finance", "purpose": "testing" }'. |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.ldapSigning">ldap_signing</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies whether or not the LDAP traffic needs to be signed. |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.nfsUsersWithLdap">nfs_users_with_ldap</a></code> | <code>bool \| cdktf.IResolvable</code> | Local UNIX users on clients without valid user information in Active Directory are blocked from access to LDAP enabled volumes. |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.organizationalUnit">organizational_unit</a></code> | <code>str</code> | Name of the Organizational Unit where you intend to create the computer account for NetApp Volumes. |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_active_directory#project NetappActiveDirectory#project}. |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.securityOperators">security_operators</a></code> | <code>typing.List[str]</code> | Domain accounts that require elevated privileges such as 'SeSecurityPrivilege' to manage security logs. Comma-separated list. |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.site">site</a></code> | <code>str</code> | Specifies an Active Directory site to manage domain controller selection. |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeouts">NetappActiveDirectoryTimeouts</a></code> | timeouts block. |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -92,7 +92,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -102,49 +102,49 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.connection"></a>
 
 - *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.count"></a>
 
 - *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.dependsOn"></a>
 
 - *Type:* typing.List[cdktf.ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.forEach"></a>
 
 - *Type:* cdktf.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.lifecycle"></a>
 
 - *Type:* cdktf.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.provisioners"></a>
 
 - *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
-##### `dns`<sup>Required</sup> <a name="dns" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.dns"></a>
+##### `dns`<sup>Required</sup> <a name="dns" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.dns"></a>
 
 - *Type:* str
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `domain`<sup>Required</sup> <a name="domain" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.domain"></a>
+##### `domain`<sup>Required</sup> <a name="domain" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.domain"></a>
 
 - *Type:* str
 
@@ -164,7 +164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `location`<sup>Required</sup> <a name="location" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.location"></a>
+##### `location`<sup>Required</sup> <a name="location" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.location"></a>
 
 - *Type:* str
 
@@ -174,7 +174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.name"></a>
 
 - *Type:* str
 
@@ -184,7 +184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `net_bios_prefix`<sup>Required</sup> <a name="net_bios_prefix" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.netBiosPrefix"></a>
+##### `net_bios_prefix`<sup>Required</sup> <a name="net_bios_prefix" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.netBiosPrefix"></a>
 
 - *Type:* str
 
@@ -197,7 +197,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `password`<sup>Required</sup> <a name="password" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.password"></a>
+##### `password`<sup>Required</sup> <a name="password" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.password"></a>
 
 - *Type:* str
 
@@ -209,7 +209,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `username`<sup>Required</sup> <a name="username" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.username"></a>
+##### `username`<sup>Required</sup> <a name="username" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.username"></a>
 
 - *Type:* str
 
@@ -219,7 +219,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `administrators`<sup>Optional</sup> <a name="administrators" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.administrators"></a>
+##### `administrators`<sup>Optional</sup> <a name="administrators" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.administrators"></a>
 
 - *Type:* typing.List[str]
 
@@ -231,7 +231,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `aes_encryption`<sup>Optional</sup> <a name="aes_encryption" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.aesEncryption"></a>
+##### `aes_encryption`<sup>Optional</sup> <a name="aes_encryption" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.aesEncryption"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
@@ -241,7 +241,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `backup_operators`<sup>Optional</sup> <a name="backup_operators" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.backupOperators"></a>
+##### `backup_operators`<sup>Optional</sup> <a name="backup_operators" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.backupOperators"></a>
 
 - *Type:* typing.List[str]
 
@@ -253,7 +253,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.description"></a>
+##### `description`<sup>Optional</sup> <a name="description" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.description"></a>
 
 - *Type:* str
 
@@ -263,7 +263,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `encrypt_dc_connections`<sup>Optional</sup> <a name="encrypt_dc_connections" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.encryptDcConnections"></a>
+##### `encrypt_dc_connections`<sup>Optional</sup> <a name="encrypt_dc_connections" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.encryptDcConnections"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
@@ -273,7 +273,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.id"></a>
 
 - *Type:* str
 
@@ -284,7 +284,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
-##### `kdc_hostname`<sup>Optional</sup> <a name="kdc_hostname" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.kdcHostname"></a>
+##### `kdc_hostname`<sup>Optional</sup> <a name="kdc_hostname" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.kdcHostname"></a>
 
 - *Type:* str
 
@@ -294,7 +294,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `kdc_ip`<sup>Optional</sup> <a name="kdc_ip" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.kdcIp"></a>
+##### `kdc_ip`<sup>Optional</sup> <a name="kdc_ip" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.kdcIp"></a>
 
 - *Type:* str
 
@@ -304,7 +304,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `labels`<sup>Optional</sup> <a name="labels" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.labels"></a>
+##### `labels`<sup>Optional</sup> <a name="labels" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.labels"></a>
 
 - *Type:* typing.Mapping[str]
 
@@ -317,7 +317,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `ldap_signing`<sup>Optional</sup> <a name="ldap_signing" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.ldapSigning"></a>
+##### `ldap_signing`<sup>Optional</sup> <a name="ldap_signing" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.ldapSigning"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
@@ -327,7 +327,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `nfs_users_with_ldap`<sup>Optional</sup> <a name="nfs_users_with_ldap" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.nfsUsersWithLdap"></a>
+##### `nfs_users_with_ldap`<sup>Optional</sup> <a name="nfs_users_with_ldap" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.nfsUsersWithLdap"></a>
 
 - *Type:* bool | cdktf.IResolvable
 
@@ -339,7 +339,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `organizational_unit`<sup>Optional</sup> <a name="organizational_unit" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.organizationalUnit"></a>
+##### `organizational_unit`<sup>Optional</sup> <a name="organizational_unit" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.organizationalUnit"></a>
 
 - *Type:* str
 
@@ -351,7 +351,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `project`<sup>Optional</sup> <a name="project" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.project"></a>
+##### `project`<sup>Optional</sup> <a name="project" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.project"></a>
 
 - *Type:* str
 
@@ -359,7 +359,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `security_operators`<sup>Optional</sup> <a name="security_operators" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.securityOperators"></a>
+##### `security_operators`<sup>Optional</sup> <a name="security_operators" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.securityOperators"></a>
 
 - *Type:* typing.List[str]
 
@@ -369,7 +369,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `site`<sup>Optional</sup> <a name="site" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.site"></a>
+##### `site`<sup>Optional</sup> <a name="site" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.site"></a>
 
 - *Type:* str
 
@@ -381,9 +381,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.Initializer.parameter.timeouts"></a>
 
-- *Type:* <a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeouts">NetappActiveDirectoryTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeouts">NetappActiveDirectoryTimeouts</a>
 
 timeouts block.
 
@@ -395,50 +395,50 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.toString">to_string</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.addOverride">add_override</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.toMetadata">to_metadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.hasResourceMove">has_resource_move</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.importFrom">import_from</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.putTimeouts">put_timeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.resetAdministrators">reset_administrators</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.resetAesEncryption">reset_aes_encryption</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.resetBackupOperators">reset_backup_operators</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.resetDescription">reset_description</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.resetEncryptDcConnections">reset_encrypt_dc_connections</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.resetId">reset_id</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.resetKdcHostname">reset_kdc_hostname</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.resetKdcIp">reset_kdc_ip</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.resetLabels">reset_labels</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.resetLdapSigning">reset_ldap_signing</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.resetNfsUsersWithLdap">reset_nfs_users_with_ldap</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.resetOrganizationalUnit">reset_organizational_unit</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.resetProject">reset_project</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.resetSecurityOperators">reset_security_operators</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.resetSite">reset_site</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.resetTimeouts">reset_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.toString">to_string</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.addOverride">add_override</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.toHclTerraform">to_hcl_terraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.toMetadata">to_metadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.addMoveTarget">add_move_target</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.hasResourceMove">has_resource_move</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.importFrom">import_from</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.putTimeouts">put_timeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.resetAdministrators">reset_administrators</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.resetAesEncryption">reset_aes_encryption</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.resetBackupOperators">reset_backup_operators</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.resetDescription">reset_description</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.resetEncryptDcConnections">reset_encrypt_dc_connections</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.resetKdcHostname">reset_kdc_hostname</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.resetKdcIp">reset_kdc_ip</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.resetLabels">reset_labels</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.resetLdapSigning">reset_ldap_signing</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.resetNfsUsersWithLdap">reset_nfs_users_with_ldap</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.resetOrganizationalUnit">reset_organizational_unit</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.resetProject">reset_project</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.resetSecurityOperators">reset_security_operators</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.resetSite">reset_site</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.resetTimeouts">reset_timeouts</a></code> | *No description.* |
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.toString"></a>
 
 ```python
 def to_string() -> str
@@ -446,7 +446,7 @@ def to_string() -> str
 
 Returns a string representation of this construct.
 
-##### `add_override` <a name="add_override" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.addOverride"></a>
+##### `add_override` <a name="add_override" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.addOverride"></a>
 
 ```python
 def add_override(
@@ -455,19 +455,19 @@ def add_override(
 ) -> None
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.addOverride.parameter.path"></a>
 
 - *Type:* str
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.addOverride.parameter.value"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `override_logical_id` <a name="override_logical_id" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.overrideLogicalId"></a>
+##### `override_logical_id` <a name="override_logical_id" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.overrideLogicalId"></a>
 
 ```python
 def override_logical_id(
@@ -477,7 +477,7 @@ def override_logical_id(
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.overrideLogicalId.parameter.newLogicalId"></a>
+###### `new_logical_id`<sup>Required</sup> <a name="new_logical_id" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* str
 
@@ -485,7 +485,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.resetOverrideLogicalId"></a>
+##### `reset_override_logical_id` <a name="reset_override_logical_id" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.resetOverrideLogicalId"></a>
 
 ```python
 def reset_override_logical_id() -> None
@@ -493,19 +493,19 @@ def reset_override_logical_id() -> None
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.toHclTerraform"></a>
+##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.toHclTerraform"></a>
 
 ```python
 def to_hcl_terraform() -> typing.Any
 ```
 
-##### `to_metadata` <a name="to_metadata" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.toMetadata"></a>
+##### `to_metadata` <a name="to_metadata" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.toMetadata"></a>
 
 ```python
 def to_metadata() -> typing.Any
 ```
 
-##### `to_terraform` <a name="to_terraform" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.toTerraform"></a>
+##### `to_terraform` <a name="to_terraform" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.toTerraform"></a>
 
 ```python
 def to_terraform() -> typing.Any
@@ -513,7 +513,7 @@ def to_terraform() -> typing.Any
 
 Adds this resource to the terraform JSON output.
 
-##### `add_move_target` <a name="add_move_target" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.addMoveTarget"></a>
+##### `add_move_target` <a name="add_move_target" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.addMoveTarget"></a>
 
 ```python
 def add_move_target(
@@ -523,7 +523,7 @@ def add_move_target(
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.addMoveTarget.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -531,7 +531,7 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -539,13 +539,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -553,13 +553,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -567,13 +567,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -581,13 +581,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -595,13 +595,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -609,13 +609,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -623,13 +623,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -637,13 +637,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -651,19 +651,19 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.hasResourceMove"></a>
+##### `has_resource_move` <a name="has_resource_move" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.hasResourceMove"></a>
 
 ```python
 def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `import_from` <a name="import_from" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.importFrom"></a>
+##### `import_from` <a name="import_from" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.importFrom"></a>
 
 ```python
 def import_from(
@@ -672,19 +672,19 @@ def import_from(
 ) -> None
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.importFrom.parameter.id"></a>
 
 - *Type:* str
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.importFrom.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -692,13 +692,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `move_from_id` <a name="move_from_id" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.moveFromId"></a>
+##### `move_from_id` <a name="move_from_id" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.moveFromId"></a>
 
 ```python
 def move_from_id(
@@ -710,7 +710,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.moveFromId.parameter.id"></a>
 
 - *Type:* str
 
@@ -718,7 +718,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `move_to` <a name="move_to" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.moveTo"></a>
+##### `move_to` <a name="move_to" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.moveTo"></a>
 
 ```python
 def move_to(
@@ -729,7 +729,7 @@ def move_to(
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.moveTo.parameter.moveTarget"></a>
+###### `move_target`<sup>Required</sup> <a name="move_target" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.moveTo.parameter.moveTarget"></a>
 
 - *Type:* str
 
@@ -737,7 +737,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.moveTo.parameter.index"></a>
 
 - *Type:* str | typing.Union[int, float]
 
@@ -745,7 +745,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `move_to_id` <a name="move_to_id" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.moveToId"></a>
+##### `move_to_id` <a name="move_to_id" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.moveToId"></a>
 
 ```python
 def move_to_id(
@@ -755,7 +755,7 @@ def move_to_id(
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.moveToId.parameter.id"></a>
 
 - *Type:* str
 
@@ -763,7 +763,7 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `put_timeouts` <a name="put_timeouts" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.putTimeouts"></a>
+##### `put_timeouts` <a name="put_timeouts" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.putTimeouts"></a>
 
 ```python
 def put_timeouts(
@@ -773,7 +773,7 @@ def put_timeouts(
 ) -> None
 ```
 
-###### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.putTimeouts.parameter.create"></a>
+###### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.putTimeouts.parameter.create"></a>
 
 - *Type:* str
 
@@ -781,7 +781,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.putTimeouts.parameter.delete"></a>
+###### `delete`<sup>Optional</sup> <a name="delete" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.putTimeouts.parameter.delete"></a>
 
 - *Type:* str
 
@@ -789,7 +789,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-###### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.putTimeouts.parameter.update"></a>
+###### `update`<sup>Optional</sup> <a name="update" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.putTimeouts.parameter.update"></a>
 
 - *Type:* str
 
@@ -797,97 +797,97 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `reset_administrators` <a name="reset_administrators" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.resetAdministrators"></a>
+##### `reset_administrators` <a name="reset_administrators" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.resetAdministrators"></a>
 
 ```python
 def reset_administrators() -> None
 ```
 
-##### `reset_aes_encryption` <a name="reset_aes_encryption" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.resetAesEncryption"></a>
+##### `reset_aes_encryption` <a name="reset_aes_encryption" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.resetAesEncryption"></a>
 
 ```python
 def reset_aes_encryption() -> None
 ```
 
-##### `reset_backup_operators` <a name="reset_backup_operators" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.resetBackupOperators"></a>
+##### `reset_backup_operators` <a name="reset_backup_operators" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.resetBackupOperators"></a>
 
 ```python
 def reset_backup_operators() -> None
 ```
 
-##### `reset_description` <a name="reset_description" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.resetDescription"></a>
+##### `reset_description` <a name="reset_description" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.resetDescription"></a>
 
 ```python
 def reset_description() -> None
 ```
 
-##### `reset_encrypt_dc_connections` <a name="reset_encrypt_dc_connections" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.resetEncryptDcConnections"></a>
+##### `reset_encrypt_dc_connections` <a name="reset_encrypt_dc_connections" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.resetEncryptDcConnections"></a>
 
 ```python
 def reset_encrypt_dc_connections() -> None
 ```
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.resetId"></a>
+##### `reset_id` <a name="reset_id" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.resetId"></a>
 
 ```python
 def reset_id() -> None
 ```
 
-##### `reset_kdc_hostname` <a name="reset_kdc_hostname" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.resetKdcHostname"></a>
+##### `reset_kdc_hostname` <a name="reset_kdc_hostname" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.resetKdcHostname"></a>
 
 ```python
 def reset_kdc_hostname() -> None
 ```
 
-##### `reset_kdc_ip` <a name="reset_kdc_ip" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.resetKdcIp"></a>
+##### `reset_kdc_ip` <a name="reset_kdc_ip" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.resetKdcIp"></a>
 
 ```python
 def reset_kdc_ip() -> None
 ```
 
-##### `reset_labels` <a name="reset_labels" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.resetLabels"></a>
+##### `reset_labels` <a name="reset_labels" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.resetLabels"></a>
 
 ```python
 def reset_labels() -> None
 ```
 
-##### `reset_ldap_signing` <a name="reset_ldap_signing" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.resetLdapSigning"></a>
+##### `reset_ldap_signing` <a name="reset_ldap_signing" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.resetLdapSigning"></a>
 
 ```python
 def reset_ldap_signing() -> None
 ```
 
-##### `reset_nfs_users_with_ldap` <a name="reset_nfs_users_with_ldap" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.resetNfsUsersWithLdap"></a>
+##### `reset_nfs_users_with_ldap` <a name="reset_nfs_users_with_ldap" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.resetNfsUsersWithLdap"></a>
 
 ```python
 def reset_nfs_users_with_ldap() -> None
 ```
 
-##### `reset_organizational_unit` <a name="reset_organizational_unit" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.resetOrganizationalUnit"></a>
+##### `reset_organizational_unit` <a name="reset_organizational_unit" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.resetOrganizationalUnit"></a>
 
 ```python
 def reset_organizational_unit() -> None
 ```
 
-##### `reset_project` <a name="reset_project" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.resetProject"></a>
+##### `reset_project` <a name="reset_project" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.resetProject"></a>
 
 ```python
 def reset_project() -> None
 ```
 
-##### `reset_security_operators` <a name="reset_security_operators" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.resetSecurityOperators"></a>
+##### `reset_security_operators` <a name="reset_security_operators" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.resetSecurityOperators"></a>
 
 ```python
 def reset_security_operators() -> None
 ```
 
-##### `reset_site` <a name="reset_site" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.resetSite"></a>
+##### `reset_site` <a name="reset_site" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.resetSite"></a>
 
 ```python
 def reset_site() -> None
 ```
 
-##### `reset_timeouts` <a name="reset_timeouts" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.resetTimeouts"></a>
+##### `reset_timeouts` <a name="reset_timeouts" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.resetTimeouts"></a>
 
 ```python
 def reset_timeouts() -> None
@@ -897,17 +897,17 @@ def reset_timeouts() -> None
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.isTerraformElement">is_terraform_element</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a NetappActiveDirectory resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.isTerraformElement">is_terraform_element</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a NetappActiveDirectory resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `is_construct` <a name="is_construct" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.isConstruct"></a>
+##### `is_construct` <a name="is_construct" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.isConstruct"></a>
 
 ```python
-from cdktf_cdktf_provider_google import netapp_active_directory
+from cdktn_provider_google import netapp_active_directory
 
 netappActiveDirectory.NetappActiveDirectory.is_construct(
   x: typing.Any
@@ -930,7 +930,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.isConstruct.parameter.x"></a>
 
 - *Type:* typing.Any
 
@@ -938,42 +938,42 @@ Any object.
 
 ---
 
-##### `is_terraform_element` <a name="is_terraform_element" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.isTerraformElement"></a>
+##### `is_terraform_element` <a name="is_terraform_element" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.isTerraformElement"></a>
 
 ```python
-from cdktf_cdktf_provider_google import netapp_active_directory
+from cdktn_provider_google import netapp_active_directory
 
 netappActiveDirectory.NetappActiveDirectory.is_terraform_element(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.isTerraformElement.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.isTerraformResource"></a>
+##### `is_terraform_resource` <a name="is_terraform_resource" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.isTerraformResource"></a>
 
 ```python
-from cdktf_cdktf_provider_google import netapp_active_directory
+from cdktn_provider_google import netapp_active_directory
 
 netappActiveDirectory.NetappActiveDirectory.is_terraform_resource(
   x: typing.Any
 )
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.isTerraformResource.parameter.x"></a>
 
 - *Type:* typing.Any
 
 ---
 
-##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.generateConfigForImport"></a>
+##### `generate_config_for_import` <a name="generate_config_for_import" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.generateConfigForImport"></a>
 
 ```python
-from cdktf_cdktf_provider_google import netapp_active_directory
+from cdktn_provider_google import netapp_active_directory
 
 netappActiveDirectory.NetappActiveDirectory.generate_config_for_import(
   scope: Construct,
@@ -985,7 +985,7 @@ netappActiveDirectory.NetappActiveDirectory.generate_config_for_import(
 
 Generates CDKTF code for importing a NetappActiveDirectory resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -993,7 +993,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.generateConfigForImport.parameter.importToId"></a>
+###### `import_to_id`<sup>Required</sup> <a name="import_to_id" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* str
 
@@ -1001,7 +1001,7 @@ The construct id used in the generated config for the NetappActiveDirectory to i
 
 ---
 
-###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.generateConfigForImport.parameter.importFromId"></a>
+###### `import_from_id`<sup>Required</sup> <a name="import_from_id" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* str
 
@@ -1011,7 +1011,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* cdktf.TerraformProvider
 
@@ -1023,75 +1023,75 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.createTime">create_time</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.effectiveLabels">effective_labels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.state">state</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.stateDetails">state_details</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.terraformLabels">terraform_labels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference">NetappActiveDirectoryTimeoutsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.administratorsInput">administrators_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.aesEncryptionInput">aes_encryption_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.backupOperatorsInput">backup_operators_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.dnsInput">dns_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.domainInput">domain_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.encryptDcConnectionsInput">encrypt_dc_connections_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.kdcHostnameInput">kdc_hostname_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.kdcIpInput">kdc_ip_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.labelsInput">labels_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.ldapSigningInput">ldap_signing_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.locationInput">location_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.netBiosPrefixInput">net_bios_prefix_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.nfsUsersWithLdapInput">nfs_users_with_ldap_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.organizationalUnitInput">organizational_unit_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.passwordInput">password_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.securityOperatorsInput">security_operators_input</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.siteInput">site_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeouts">NetappActiveDirectoryTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.usernameInput">username_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.administrators">administrators</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.aesEncryption">aes_encryption</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.backupOperators">backup_operators</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.description">description</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.dns">dns</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.domain">domain</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.encryptDcConnections">encrypt_dc_connections</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.kdcHostname">kdc_hostname</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.kdcIp">kdc_ip</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.ldapSigning">ldap_signing</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.location">location</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.netBiosPrefix">net_bios_prefix</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.nfsUsersWithLdap">nfs_users_with_ldap</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.organizationalUnit">organizational_unit</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.password">password</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.project">project</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.securityOperators">security_operators</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.site">site</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.username">username</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.createTime">create_time</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.effectiveLabels">effective_labels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.state">state</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.stateDetails">state_details</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.terraformLabels">terraform_labels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference">NetappActiveDirectoryTimeoutsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.administratorsInput">administrators_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.aesEncryptionInput">aes_encryption_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.backupOperatorsInput">backup_operators_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.dnsInput">dns_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.domainInput">domain_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.encryptDcConnectionsInput">encrypt_dc_connections_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.kdcHostnameInput">kdc_hostname_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.kdcIpInput">kdc_ip_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.labelsInput">labels_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.ldapSigningInput">ldap_signing_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.locationInput">location_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.netBiosPrefixInput">net_bios_prefix_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.nfsUsersWithLdapInput">nfs_users_with_ldap_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.organizationalUnitInput">organizational_unit_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.passwordInput">password_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.securityOperatorsInput">security_operators_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.siteInput">site_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeouts">NetappActiveDirectoryTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.usernameInput">username_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.administrators">administrators</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.aesEncryption">aes_encryption</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.backupOperators">backup_operators</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.description">description</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.dns">dns</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.domain">domain</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.encryptDcConnections">encrypt_dc_connections</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.kdcHostname">kdc_hostname</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.kdcIp">kdc_ip</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.ldapSigning">ldap_signing</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.location">location</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.netBiosPrefix">net_bios_prefix</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.nfsUsersWithLdap">nfs_users_with_ldap</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.organizationalUnit">organizational_unit</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.password">password</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.project">project</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.securityOperators">security_operators</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.site">site</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.username">username</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.node"></a>
 
 ```python
 node: Node
@@ -1103,7 +1103,7 @@ The tree node.
 
 ---
 
-##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.cdktfStack"></a>
+##### `cdktf_stack`<sup>Required</sup> <a name="cdktf_stack" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.cdktfStack"></a>
 
 ```python
 cdktf_stack: TerraformStack
@@ -1113,7 +1113,7 @@ cdktf_stack: TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.fqn"></a>
 
 ```python
 fqn: str
@@ -1123,7 +1123,7 @@ fqn: str
 
 ---
 
-##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.friendlyUniqueId"></a>
+##### `friendly_unique_id`<sup>Required</sup> <a name="friendly_unique_id" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.friendlyUniqueId"></a>
 
 ```python
 friendly_unique_id: str
@@ -1133,7 +1133,7 @@ friendly_unique_id: str
 
 ---
 
-##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.terraformMetaArguments"></a>
+##### `terraform_meta_arguments`<sup>Required</sup> <a name="terraform_meta_arguments" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.terraformMetaArguments"></a>
 
 ```python
 terraform_meta_arguments: typing.Mapping[typing.Any]
@@ -1143,7 +1143,7 @@ terraform_meta_arguments: typing.Mapping[typing.Any]
 
 ---
 
-##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.terraformResourceType"></a>
+##### `terraform_resource_type`<sup>Required</sup> <a name="terraform_resource_type" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.terraformResourceType"></a>
 
 ```python
 terraform_resource_type: str
@@ -1153,7 +1153,7 @@ terraform_resource_type: str
 
 ---
 
-##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.terraformGeneratorMetadata"></a>
+##### `terraform_generator_metadata`<sup>Optional</sup> <a name="terraform_generator_metadata" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.terraformGeneratorMetadata"></a>
 
 ```python
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
@@ -1163,7 +1163,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
@@ -1173,7 +1173,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -1183,7 +1183,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[str]
@@ -1193,7 +1193,7 @@ depends_on: typing.List[str]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -1203,7 +1203,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -1213,7 +1213,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -1223,7 +1223,7 @@ provider: TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
@@ -1233,7 +1233,7 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `create_time`<sup>Required</sup> <a name="create_time" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.createTime"></a>
+##### `create_time`<sup>Required</sup> <a name="create_time" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.createTime"></a>
 
 ```python
 create_time: str
@@ -1243,7 +1243,7 @@ create_time: str
 
 ---
 
-##### `effective_labels`<sup>Required</sup> <a name="effective_labels" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.effectiveLabels"></a>
+##### `effective_labels`<sup>Required</sup> <a name="effective_labels" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.effectiveLabels"></a>
 
 ```python
 effective_labels: StringMap
@@ -1253,7 +1253,7 @@ effective_labels: StringMap
 
 ---
 
-##### `state`<sup>Required</sup> <a name="state" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.state"></a>
+##### `state`<sup>Required</sup> <a name="state" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.state"></a>
 
 ```python
 state: str
@@ -1263,7 +1263,7 @@ state: str
 
 ---
 
-##### `state_details`<sup>Required</sup> <a name="state_details" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.stateDetails"></a>
+##### `state_details`<sup>Required</sup> <a name="state_details" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.stateDetails"></a>
 
 ```python
 state_details: str
@@ -1273,7 +1273,7 @@ state_details: str
 
 ---
 
-##### `terraform_labels`<sup>Required</sup> <a name="terraform_labels" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.terraformLabels"></a>
+##### `terraform_labels`<sup>Required</sup> <a name="terraform_labels" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.terraformLabels"></a>
 
 ```python
 terraform_labels: StringMap
@@ -1283,17 +1283,17 @@ terraform_labels: StringMap
 
 ---
 
-##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.timeouts"></a>
+##### `timeouts`<sup>Required</sup> <a name="timeouts" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.timeouts"></a>
 
 ```python
 timeouts: NetappActiveDirectoryTimeoutsOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference">NetappActiveDirectoryTimeoutsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference">NetappActiveDirectoryTimeoutsOutputReference</a>
 
 ---
 
-##### `administrators_input`<sup>Optional</sup> <a name="administrators_input" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.administratorsInput"></a>
+##### `administrators_input`<sup>Optional</sup> <a name="administrators_input" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.administratorsInput"></a>
 
 ```python
 administrators_input: typing.List[str]
@@ -1303,7 +1303,7 @@ administrators_input: typing.List[str]
 
 ---
 
-##### `aes_encryption_input`<sup>Optional</sup> <a name="aes_encryption_input" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.aesEncryptionInput"></a>
+##### `aes_encryption_input`<sup>Optional</sup> <a name="aes_encryption_input" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.aesEncryptionInput"></a>
 
 ```python
 aes_encryption_input: bool | IResolvable
@@ -1313,7 +1313,7 @@ aes_encryption_input: bool | IResolvable
 
 ---
 
-##### `backup_operators_input`<sup>Optional</sup> <a name="backup_operators_input" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.backupOperatorsInput"></a>
+##### `backup_operators_input`<sup>Optional</sup> <a name="backup_operators_input" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.backupOperatorsInput"></a>
 
 ```python
 backup_operators_input: typing.List[str]
@@ -1323,7 +1323,7 @@ backup_operators_input: typing.List[str]
 
 ---
 
-##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.descriptionInput"></a>
+##### `description_input`<sup>Optional</sup> <a name="description_input" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.descriptionInput"></a>
 
 ```python
 description_input: str
@@ -1333,7 +1333,7 @@ description_input: str
 
 ---
 
-##### `dns_input`<sup>Optional</sup> <a name="dns_input" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.dnsInput"></a>
+##### `dns_input`<sup>Optional</sup> <a name="dns_input" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.dnsInput"></a>
 
 ```python
 dns_input: str
@@ -1343,7 +1343,7 @@ dns_input: str
 
 ---
 
-##### `domain_input`<sup>Optional</sup> <a name="domain_input" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.domainInput"></a>
+##### `domain_input`<sup>Optional</sup> <a name="domain_input" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.domainInput"></a>
 
 ```python
 domain_input: str
@@ -1353,7 +1353,7 @@ domain_input: str
 
 ---
 
-##### `encrypt_dc_connections_input`<sup>Optional</sup> <a name="encrypt_dc_connections_input" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.encryptDcConnectionsInput"></a>
+##### `encrypt_dc_connections_input`<sup>Optional</sup> <a name="encrypt_dc_connections_input" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.encryptDcConnectionsInput"></a>
 
 ```python
 encrypt_dc_connections_input: bool | IResolvable
@@ -1363,7 +1363,7 @@ encrypt_dc_connections_input: bool | IResolvable
 
 ---
 
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.idInput"></a>
+##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.idInput"></a>
 
 ```python
 id_input: str
@@ -1373,7 +1373,7 @@ id_input: str
 
 ---
 
-##### `kdc_hostname_input`<sup>Optional</sup> <a name="kdc_hostname_input" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.kdcHostnameInput"></a>
+##### `kdc_hostname_input`<sup>Optional</sup> <a name="kdc_hostname_input" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.kdcHostnameInput"></a>
 
 ```python
 kdc_hostname_input: str
@@ -1383,7 +1383,7 @@ kdc_hostname_input: str
 
 ---
 
-##### `kdc_ip_input`<sup>Optional</sup> <a name="kdc_ip_input" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.kdcIpInput"></a>
+##### `kdc_ip_input`<sup>Optional</sup> <a name="kdc_ip_input" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.kdcIpInput"></a>
 
 ```python
 kdc_ip_input: str
@@ -1393,7 +1393,7 @@ kdc_ip_input: str
 
 ---
 
-##### `labels_input`<sup>Optional</sup> <a name="labels_input" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.labelsInput"></a>
+##### `labels_input`<sup>Optional</sup> <a name="labels_input" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.labelsInput"></a>
 
 ```python
 labels_input: typing.Mapping[str]
@@ -1403,7 +1403,7 @@ labels_input: typing.Mapping[str]
 
 ---
 
-##### `ldap_signing_input`<sup>Optional</sup> <a name="ldap_signing_input" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.ldapSigningInput"></a>
+##### `ldap_signing_input`<sup>Optional</sup> <a name="ldap_signing_input" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.ldapSigningInput"></a>
 
 ```python
 ldap_signing_input: bool | IResolvable
@@ -1413,7 +1413,7 @@ ldap_signing_input: bool | IResolvable
 
 ---
 
-##### `location_input`<sup>Optional</sup> <a name="location_input" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.locationInput"></a>
+##### `location_input`<sup>Optional</sup> <a name="location_input" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.locationInput"></a>
 
 ```python
 location_input: str
@@ -1423,7 +1423,7 @@ location_input: str
 
 ---
 
-##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.nameInput"></a>
+##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.nameInput"></a>
 
 ```python
 name_input: str
@@ -1433,7 +1433,7 @@ name_input: str
 
 ---
 
-##### `net_bios_prefix_input`<sup>Optional</sup> <a name="net_bios_prefix_input" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.netBiosPrefixInput"></a>
+##### `net_bios_prefix_input`<sup>Optional</sup> <a name="net_bios_prefix_input" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.netBiosPrefixInput"></a>
 
 ```python
 net_bios_prefix_input: str
@@ -1443,7 +1443,7 @@ net_bios_prefix_input: str
 
 ---
 
-##### `nfs_users_with_ldap_input`<sup>Optional</sup> <a name="nfs_users_with_ldap_input" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.nfsUsersWithLdapInput"></a>
+##### `nfs_users_with_ldap_input`<sup>Optional</sup> <a name="nfs_users_with_ldap_input" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.nfsUsersWithLdapInput"></a>
 
 ```python
 nfs_users_with_ldap_input: bool | IResolvable
@@ -1453,7 +1453,7 @@ nfs_users_with_ldap_input: bool | IResolvable
 
 ---
 
-##### `organizational_unit_input`<sup>Optional</sup> <a name="organizational_unit_input" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.organizationalUnitInput"></a>
+##### `organizational_unit_input`<sup>Optional</sup> <a name="organizational_unit_input" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.organizationalUnitInput"></a>
 
 ```python
 organizational_unit_input: str
@@ -1463,7 +1463,7 @@ organizational_unit_input: str
 
 ---
 
-##### `password_input`<sup>Optional</sup> <a name="password_input" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.passwordInput"></a>
+##### `password_input`<sup>Optional</sup> <a name="password_input" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.passwordInput"></a>
 
 ```python
 password_input: str
@@ -1473,7 +1473,7 @@ password_input: str
 
 ---
 
-##### `project_input`<sup>Optional</sup> <a name="project_input" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.projectInput"></a>
+##### `project_input`<sup>Optional</sup> <a name="project_input" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.projectInput"></a>
 
 ```python
 project_input: str
@@ -1483,7 +1483,7 @@ project_input: str
 
 ---
 
-##### `security_operators_input`<sup>Optional</sup> <a name="security_operators_input" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.securityOperatorsInput"></a>
+##### `security_operators_input`<sup>Optional</sup> <a name="security_operators_input" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.securityOperatorsInput"></a>
 
 ```python
 security_operators_input: typing.List[str]
@@ -1493,7 +1493,7 @@ security_operators_input: typing.List[str]
 
 ---
 
-##### `site_input`<sup>Optional</sup> <a name="site_input" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.siteInput"></a>
+##### `site_input`<sup>Optional</sup> <a name="site_input" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.siteInput"></a>
 
 ```python
 site_input: str
@@ -1503,17 +1503,17 @@ site_input: str
 
 ---
 
-##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.timeoutsInput"></a>
+##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.timeoutsInput"></a>
 
 ```python
 timeouts_input: IResolvable | NetappActiveDirectoryTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeouts">NetappActiveDirectoryTimeouts</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeouts">NetappActiveDirectoryTimeouts</a>
 
 ---
 
-##### `username_input`<sup>Optional</sup> <a name="username_input" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.usernameInput"></a>
+##### `username_input`<sup>Optional</sup> <a name="username_input" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.usernameInput"></a>
 
 ```python
 username_input: str
@@ -1523,7 +1523,7 @@ username_input: str
 
 ---
 
-##### `administrators`<sup>Required</sup> <a name="administrators" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.administrators"></a>
+##### `administrators`<sup>Required</sup> <a name="administrators" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.administrators"></a>
 
 ```python
 administrators: typing.List[str]
@@ -1533,7 +1533,7 @@ administrators: typing.List[str]
 
 ---
 
-##### `aes_encryption`<sup>Required</sup> <a name="aes_encryption" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.aesEncryption"></a>
+##### `aes_encryption`<sup>Required</sup> <a name="aes_encryption" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.aesEncryption"></a>
 
 ```python
 aes_encryption: bool | IResolvable
@@ -1543,7 +1543,7 @@ aes_encryption: bool | IResolvable
 
 ---
 
-##### `backup_operators`<sup>Required</sup> <a name="backup_operators" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.backupOperators"></a>
+##### `backup_operators`<sup>Required</sup> <a name="backup_operators" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.backupOperators"></a>
 
 ```python
 backup_operators: typing.List[str]
@@ -1553,7 +1553,7 @@ backup_operators: typing.List[str]
 
 ---
 
-##### `description`<sup>Required</sup> <a name="description" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.description"></a>
+##### `description`<sup>Required</sup> <a name="description" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.description"></a>
 
 ```python
 description: str
@@ -1563,7 +1563,7 @@ description: str
 
 ---
 
-##### `dns`<sup>Required</sup> <a name="dns" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.dns"></a>
+##### `dns`<sup>Required</sup> <a name="dns" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.dns"></a>
 
 ```python
 dns: str
@@ -1573,7 +1573,7 @@ dns: str
 
 ---
 
-##### `domain`<sup>Required</sup> <a name="domain" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.domain"></a>
+##### `domain`<sup>Required</sup> <a name="domain" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.domain"></a>
 
 ```python
 domain: str
@@ -1583,7 +1583,7 @@ domain: str
 
 ---
 
-##### `encrypt_dc_connections`<sup>Required</sup> <a name="encrypt_dc_connections" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.encryptDcConnections"></a>
+##### `encrypt_dc_connections`<sup>Required</sup> <a name="encrypt_dc_connections" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.encryptDcConnections"></a>
 
 ```python
 encrypt_dc_connections: bool | IResolvable
@@ -1593,7 +1593,7 @@ encrypt_dc_connections: bool | IResolvable
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.id"></a>
 
 ```python
 id: str
@@ -1603,7 +1603,7 @@ id: str
 
 ---
 
-##### `kdc_hostname`<sup>Required</sup> <a name="kdc_hostname" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.kdcHostname"></a>
+##### `kdc_hostname`<sup>Required</sup> <a name="kdc_hostname" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.kdcHostname"></a>
 
 ```python
 kdc_hostname: str
@@ -1613,7 +1613,7 @@ kdc_hostname: str
 
 ---
 
-##### `kdc_ip`<sup>Required</sup> <a name="kdc_ip" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.kdcIp"></a>
+##### `kdc_ip`<sup>Required</sup> <a name="kdc_ip" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.kdcIp"></a>
 
 ```python
 kdc_ip: str
@@ -1623,7 +1623,7 @@ kdc_ip: str
 
 ---
 
-##### `labels`<sup>Required</sup> <a name="labels" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.labels"></a>
+##### `labels`<sup>Required</sup> <a name="labels" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.labels"></a>
 
 ```python
 labels: typing.Mapping[str]
@@ -1633,7 +1633,7 @@ labels: typing.Mapping[str]
 
 ---
 
-##### `ldap_signing`<sup>Required</sup> <a name="ldap_signing" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.ldapSigning"></a>
+##### `ldap_signing`<sup>Required</sup> <a name="ldap_signing" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.ldapSigning"></a>
 
 ```python
 ldap_signing: bool | IResolvable
@@ -1643,7 +1643,7 @@ ldap_signing: bool | IResolvable
 
 ---
 
-##### `location`<sup>Required</sup> <a name="location" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.location"></a>
+##### `location`<sup>Required</sup> <a name="location" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.location"></a>
 
 ```python
 location: str
@@ -1653,7 +1653,7 @@ location: str
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.name"></a>
 
 ```python
 name: str
@@ -1663,7 +1663,7 @@ name: str
 
 ---
 
-##### `net_bios_prefix`<sup>Required</sup> <a name="net_bios_prefix" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.netBiosPrefix"></a>
+##### `net_bios_prefix`<sup>Required</sup> <a name="net_bios_prefix" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.netBiosPrefix"></a>
 
 ```python
 net_bios_prefix: str
@@ -1673,7 +1673,7 @@ net_bios_prefix: str
 
 ---
 
-##### `nfs_users_with_ldap`<sup>Required</sup> <a name="nfs_users_with_ldap" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.nfsUsersWithLdap"></a>
+##### `nfs_users_with_ldap`<sup>Required</sup> <a name="nfs_users_with_ldap" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.nfsUsersWithLdap"></a>
 
 ```python
 nfs_users_with_ldap: bool | IResolvable
@@ -1683,7 +1683,7 @@ nfs_users_with_ldap: bool | IResolvable
 
 ---
 
-##### `organizational_unit`<sup>Required</sup> <a name="organizational_unit" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.organizationalUnit"></a>
+##### `organizational_unit`<sup>Required</sup> <a name="organizational_unit" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.organizationalUnit"></a>
 
 ```python
 organizational_unit: str
@@ -1693,7 +1693,7 @@ organizational_unit: str
 
 ---
 
-##### `password`<sup>Required</sup> <a name="password" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.password"></a>
+##### `password`<sup>Required</sup> <a name="password" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.password"></a>
 
 ```python
 password: str
@@ -1703,7 +1703,7 @@ password: str
 
 ---
 
-##### `project`<sup>Required</sup> <a name="project" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.project"></a>
+##### `project`<sup>Required</sup> <a name="project" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.project"></a>
 
 ```python
 project: str
@@ -1713,7 +1713,7 @@ project: str
 
 ---
 
-##### `security_operators`<sup>Required</sup> <a name="security_operators" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.securityOperators"></a>
+##### `security_operators`<sup>Required</sup> <a name="security_operators" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.securityOperators"></a>
 
 ```python
 security_operators: typing.List[str]
@@ -1723,7 +1723,7 @@ security_operators: typing.List[str]
 
 ---
 
-##### `site`<sup>Required</sup> <a name="site" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.site"></a>
+##### `site`<sup>Required</sup> <a name="site" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.site"></a>
 
 ```python
 site: str
@@ -1733,7 +1733,7 @@ site: str
 
 ---
 
-##### `username`<sup>Required</sup> <a name="username" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.username"></a>
+##### `username`<sup>Required</sup> <a name="username" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.username"></a>
 
 ```python
 username: str
@@ -1747,11 +1747,11 @@ username: str
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.tfResourceType">tfResourceType</a></code> | <code>str</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectory.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectory.property.tfResourceType"></a>
 
 ```python
 tfResourceType: str
@@ -1763,12 +1763,12 @@ tfResourceType: str
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### NetappActiveDirectoryConfig <a name="NetappActiveDirectoryConfig" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig"></a>
+### NetappActiveDirectoryConfig <a name="NetappActiveDirectoryConfig" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import netapp_active_directory
+from cdktn_provider_google import netapp_active_directory
 
 netappActiveDirectory.NetappActiveDirectoryConfig(
   connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
@@ -1808,40 +1808,40 @@ netappActiveDirectory.NetappActiveDirectoryConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.dns">dns</a></code> | <code>str</code> | Comma separated list of DNS server IP addresses for the Active Directory domain. |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.domain">domain</a></code> | <code>str</code> | Fully qualified domain name for the Active Directory domain. |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.location">location</a></code> | <code>str</code> | Name of the region for the policy to apply to. |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.name">name</a></code> | <code>str</code> | The resource name of the Active Directory pool. Needs to be unique per location. |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.netBiosPrefix">net_bios_prefix</a></code> | <code>str</code> | NetBIOS name prefix of the server to be created. |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.password">password</a></code> | <code>str</code> | Password for specified username. |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.username">username</a></code> | <code>str</code> | Username for the Active Directory account with permissions to create the compute account within the specified organizational unit. |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.administrators">administrators</a></code> | <code>typing.List[str]</code> | Domain user accounts to be added to the local Administrators group of the SMB service. |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.aesEncryption">aes_encryption</a></code> | <code>bool \| cdktf.IResolvable</code> | Enables AES-128 and AES-256 encryption for Kerberos-based communication with Active Directory. |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.backupOperators">backup_operators</a></code> | <code>typing.List[str]</code> | Domain user/group accounts to be added to the Backup Operators group of the SMB service. |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.description">description</a></code> | <code>str</code> | An optional description of this resource. |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.encryptDcConnections">encrypt_dc_connections</a></code> | <code>bool \| cdktf.IResolvable</code> | If enabled, traffic between the SMB server to Domain Controller (DC) will be encrypted. |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_active_directory#id NetappActiveDirectory#id}. |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.kdcHostname">kdc_hostname</a></code> | <code>str</code> | Hostname of the Active Directory server used as Kerberos Key Distribution Center. Only required for volumes using kerberized NFSv4.1. |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.kdcIp">kdc_ip</a></code> | <code>str</code> | IP address of the Active Directory server used as Kerberos Key Distribution Center. |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Labels as key value pairs. Example: '{ "owner": "Bob", "department": "finance", "purpose": "testing" }'. |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.ldapSigning">ldap_signing</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies whether or not the LDAP traffic needs to be signed. |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.nfsUsersWithLdap">nfs_users_with_ldap</a></code> | <code>bool \| cdktf.IResolvable</code> | Local UNIX users on clients without valid user information in Active Directory are blocked from access to LDAP enabled volumes. |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.organizationalUnit">organizational_unit</a></code> | <code>str</code> | Name of the Organizational Unit where you intend to create the computer account for NetApp Volumes. |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_active_directory#project NetappActiveDirectory#project}. |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.securityOperators">security_operators</a></code> | <code>typing.List[str]</code> | Domain accounts that require elevated privileges such as 'SeSecurityPrivilege' to manage security logs. Comma-separated list. |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.site">site</a></code> | <code>str</code> | Specifies an Active Directory site to manage domain controller selection. |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeouts">NetappActiveDirectoryTimeouts</a></code> | timeouts block. |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.dns">dns</a></code> | <code>str</code> | Comma separated list of DNS server IP addresses for the Active Directory domain. |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.domain">domain</a></code> | <code>str</code> | Fully qualified domain name for the Active Directory domain. |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.location">location</a></code> | <code>str</code> | Name of the region for the policy to apply to. |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.name">name</a></code> | <code>str</code> | The resource name of the Active Directory pool. Needs to be unique per location. |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.netBiosPrefix">net_bios_prefix</a></code> | <code>str</code> | NetBIOS name prefix of the server to be created. |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.password">password</a></code> | <code>str</code> | Password for specified username. |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.username">username</a></code> | <code>str</code> | Username for the Active Directory account with permissions to create the compute account within the specified organizational unit. |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.administrators">administrators</a></code> | <code>typing.List[str]</code> | Domain user accounts to be added to the local Administrators group of the SMB service. |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.aesEncryption">aes_encryption</a></code> | <code>bool \| cdktf.IResolvable</code> | Enables AES-128 and AES-256 encryption for Kerberos-based communication with Active Directory. |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.backupOperators">backup_operators</a></code> | <code>typing.List[str]</code> | Domain user/group accounts to be added to the Backup Operators group of the SMB service. |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.description">description</a></code> | <code>str</code> | An optional description of this resource. |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.encryptDcConnections">encrypt_dc_connections</a></code> | <code>bool \| cdktf.IResolvable</code> | If enabled, traffic between the SMB server to Domain Controller (DC) will be encrypted. |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_active_directory#id NetappActiveDirectory#id}. |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.kdcHostname">kdc_hostname</a></code> | <code>str</code> | Hostname of the Active Directory server used as Kerberos Key Distribution Center. Only required for volumes using kerberized NFSv4.1. |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.kdcIp">kdc_ip</a></code> | <code>str</code> | IP address of the Active Directory server used as Kerberos Key Distribution Center. |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.labels">labels</a></code> | <code>typing.Mapping[str]</code> | Labels as key value pairs. Example: '{ "owner": "Bob", "department": "finance", "purpose": "testing" }'. |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.ldapSigning">ldap_signing</a></code> | <code>bool \| cdktf.IResolvable</code> | Specifies whether or not the LDAP traffic needs to be signed. |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.nfsUsersWithLdap">nfs_users_with_ldap</a></code> | <code>bool \| cdktf.IResolvable</code> | Local UNIX users on clients without valid user information in Active Directory are blocked from access to LDAP enabled volumes. |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.organizationalUnit">organizational_unit</a></code> | <code>str</code> | Name of the Organizational Unit where you intend to create the computer account for NetApp Volumes. |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.project">project</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_active_directory#project NetappActiveDirectory#project}. |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.securityOperators">security_operators</a></code> | <code>typing.List[str]</code> | Domain accounts that require elevated privileges such as 'SeSecurityPrivilege' to manage security logs. Comma-separated list. |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.site">site</a></code> | <code>str</code> | Specifies an Active Directory site to manage domain controller selection. |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeouts">NetappActiveDirectoryTimeouts</a></code> | timeouts block. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.connection"></a>
 
 ```python
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
@@ -1851,7 +1851,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.count"></a>
 
 ```python
 count: typing.Union[int, float] | TerraformCount
@@ -1861,7 +1861,7 @@ count: typing.Union[int, float] | TerraformCount
 
 ---
 
-##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.dependsOn"></a>
+##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.dependsOn"></a>
 
 ```python
 depends_on: typing.List[ITerraformDependable]
@@ -1871,7 +1871,7 @@ depends_on: typing.List[ITerraformDependable]
 
 ---
 
-##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.forEach"></a>
+##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.forEach"></a>
 
 ```python
 for_each: ITerraformIterator
@@ -1881,7 +1881,7 @@ for_each: ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.lifecycle"></a>
 
 ```python
 lifecycle: TerraformResourceLifecycle
@@ -1891,7 +1891,7 @@ lifecycle: TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.provider"></a>
 
 ```python
 provider: TerraformProvider
@@ -1901,7 +1901,7 @@ provider: TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.provisioners"></a>
 
 ```python
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
@@ -1911,7 +1911,7 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `dns`<sup>Required</sup> <a name="dns" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.dns"></a>
+##### `dns`<sup>Required</sup> <a name="dns" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.dns"></a>
 
 ```python
 dns: str
@@ -1925,7 +1925,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `domain`<sup>Required</sup> <a name="domain" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.domain"></a>
+##### `domain`<sup>Required</sup> <a name="domain" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.domain"></a>
 
 ```python
 domain: str
@@ -1939,7 +1939,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `location`<sup>Required</sup> <a name="location" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.location"></a>
+##### `location`<sup>Required</sup> <a name="location" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.location"></a>
 
 ```python
 location: str
@@ -1953,7 +1953,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.name"></a>
 
 ```python
 name: str
@@ -1967,7 +1967,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `net_bios_prefix`<sup>Required</sup> <a name="net_bios_prefix" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.netBiosPrefix"></a>
+##### `net_bios_prefix`<sup>Required</sup> <a name="net_bios_prefix" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.netBiosPrefix"></a>
 
 ```python
 net_bios_prefix: str
@@ -1984,7 +1984,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `password`<sup>Required</sup> <a name="password" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.password"></a>
+##### `password`<sup>Required</sup> <a name="password" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.password"></a>
 
 ```python
 password: str
@@ -2000,7 +2000,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `username`<sup>Required</sup> <a name="username" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.username"></a>
+##### `username`<sup>Required</sup> <a name="username" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.username"></a>
 
 ```python
 username: str
@@ -2014,7 +2014,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `administrators`<sup>Optional</sup> <a name="administrators" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.administrators"></a>
+##### `administrators`<sup>Optional</sup> <a name="administrators" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.administrators"></a>
 
 ```python
 administrators: typing.List[str]
@@ -2030,7 +2030,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `aes_encryption`<sup>Optional</sup> <a name="aes_encryption" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.aesEncryption"></a>
+##### `aes_encryption`<sup>Optional</sup> <a name="aes_encryption" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.aesEncryption"></a>
 
 ```python
 aes_encryption: bool | IResolvable
@@ -2044,7 +2044,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `backup_operators`<sup>Optional</sup> <a name="backup_operators" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.backupOperators"></a>
+##### `backup_operators`<sup>Optional</sup> <a name="backup_operators" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.backupOperators"></a>
 
 ```python
 backup_operators: typing.List[str]
@@ -2060,7 +2060,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `description`<sup>Optional</sup> <a name="description" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.description"></a>
+##### `description`<sup>Optional</sup> <a name="description" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.description"></a>
 
 ```python
 description: str
@@ -2074,7 +2074,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `encrypt_dc_connections`<sup>Optional</sup> <a name="encrypt_dc_connections" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.encryptDcConnections"></a>
+##### `encrypt_dc_connections`<sup>Optional</sup> <a name="encrypt_dc_connections" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.encryptDcConnections"></a>
 
 ```python
 encrypt_dc_connections: bool | IResolvable
@@ -2088,7 +2088,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.id"></a>
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.id"></a>
 
 ```python
 id: str
@@ -2103,7 +2103,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
-##### `kdc_hostname`<sup>Optional</sup> <a name="kdc_hostname" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.kdcHostname"></a>
+##### `kdc_hostname`<sup>Optional</sup> <a name="kdc_hostname" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.kdcHostname"></a>
 
 ```python
 kdc_hostname: str
@@ -2117,7 +2117,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `kdc_ip`<sup>Optional</sup> <a name="kdc_ip" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.kdcIp"></a>
+##### `kdc_ip`<sup>Optional</sup> <a name="kdc_ip" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.kdcIp"></a>
 
 ```python
 kdc_ip: str
@@ -2131,7 +2131,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `labels`<sup>Optional</sup> <a name="labels" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.labels"></a>
+##### `labels`<sup>Optional</sup> <a name="labels" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.labels"></a>
 
 ```python
 labels: typing.Mapping[str]
@@ -2148,7 +2148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `ldap_signing`<sup>Optional</sup> <a name="ldap_signing" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.ldapSigning"></a>
+##### `ldap_signing`<sup>Optional</sup> <a name="ldap_signing" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.ldapSigning"></a>
 
 ```python
 ldap_signing: bool | IResolvable
@@ -2162,7 +2162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `nfs_users_with_ldap`<sup>Optional</sup> <a name="nfs_users_with_ldap" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.nfsUsersWithLdap"></a>
+##### `nfs_users_with_ldap`<sup>Optional</sup> <a name="nfs_users_with_ldap" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.nfsUsersWithLdap"></a>
 
 ```python
 nfs_users_with_ldap: bool | IResolvable
@@ -2178,7 +2178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `organizational_unit`<sup>Optional</sup> <a name="organizational_unit" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.organizationalUnit"></a>
+##### `organizational_unit`<sup>Optional</sup> <a name="organizational_unit" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.organizationalUnit"></a>
 
 ```python
 organizational_unit: str
@@ -2194,7 +2194,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `project`<sup>Optional</sup> <a name="project" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.project"></a>
+##### `project`<sup>Optional</sup> <a name="project" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.project"></a>
 
 ```python
 project: str
@@ -2206,7 +2206,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `security_operators`<sup>Optional</sup> <a name="security_operators" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.securityOperators"></a>
+##### `security_operators`<sup>Optional</sup> <a name="security_operators" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.securityOperators"></a>
 
 ```python
 security_operators: typing.List[str]
@@ -2220,7 +2220,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `site`<sup>Optional</sup> <a name="site" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.site"></a>
+##### `site`<sup>Optional</sup> <a name="site" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.site"></a>
 
 ```python
 site: str
@@ -2236,13 +2236,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.timeouts"></a>
+##### `timeouts`<sup>Optional</sup> <a name="timeouts" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryConfig.property.timeouts"></a>
 
 ```python
 timeouts: NetappActiveDirectoryTimeouts
 ```
 
-- *Type:* <a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeouts">NetappActiveDirectoryTimeouts</a>
+- *Type:* <a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeouts">NetappActiveDirectoryTimeouts</a>
 
 timeouts block.
 
@@ -2250,12 +2250,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-### NetappActiveDirectoryTimeouts <a name="NetappActiveDirectoryTimeouts" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeouts"></a>
+### NetappActiveDirectoryTimeouts <a name="NetappActiveDirectoryTimeouts" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeouts"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeouts.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeouts.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import netapp_active_directory
+from cdktn_provider_google import netapp_active_directory
 
 netappActiveDirectory.NetappActiveDirectoryTimeouts(
   create: str = None,
@@ -2268,13 +2268,13 @@ netappActiveDirectory.NetappActiveDirectoryTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_active_directory#create NetappActiveDirectory#create}. |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_active_directory#delete NetappActiveDirectory#delete}. |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_active_directory#update NetappActiveDirectory#update}. |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_active_directory#create NetappActiveDirectory#create}. |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_active_directory#delete NetappActiveDirectory#delete}. |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/netapp_active_directory#update NetappActiveDirectory#update}. |
 
 ---
 
-##### `create`<sup>Optional</sup> <a name="create" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeouts.property.create"></a>
+##### `create`<sup>Optional</sup> <a name="create" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeouts.property.create"></a>
 
 ```python
 create: str
@@ -2286,7 +2286,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeouts.property.delete"></a>
+##### `delete`<sup>Optional</sup> <a name="delete" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeouts.property.delete"></a>
 
 ```python
 delete: str
@@ -2298,7 +2298,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `update`<sup>Optional</sup> <a name="update" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeouts.property.update"></a>
+##### `update`<sup>Optional</sup> <a name="update" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeouts.property.update"></a>
 
 ```python
 update: str
@@ -2312,12 +2312,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### NetappActiveDirectoryTimeoutsOutputReference <a name="NetappActiveDirectoryTimeoutsOutputReference" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference"></a>
+### NetappActiveDirectoryTimeoutsOutputReference <a name="NetappActiveDirectoryTimeoutsOutputReference" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.Initializer"></a>
 
 ```python
-from cdktf_cdktf_provider_google import netapp_active_directory
+from cdktn_provider_google import netapp_active_directory
 
 netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference(
   terraform_resource: IInterpolatingParent,
@@ -2327,12 +2327,12 @@ netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
 - *Type:* cdktf.IInterpolatingParent
 
@@ -2340,7 +2340,7 @@ The parent resource.
 
 ---
 
-##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
@@ -2352,32 +2352,32 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.resetCreate">reset_create</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.resetDelete">reset_delete</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.resetUpdate">reset_update</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.resetCreate">reset_create</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.resetDelete">reset_delete</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.resetUpdate">reset_update</a></code> | *No description.* |
 
 ---
 
-##### `compute_fqn` <a name="compute_fqn" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.computeFqn"></a>
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.computeFqn"></a>
 
 ```python
 def compute_fqn() -> str
 ```
 
-##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.getAnyMapAttribute"></a>
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.getAnyMapAttribute"></a>
 
 ```python
 def get_any_map_attribute(
@@ -2385,13 +2385,13 @@ def get_any_map_attribute(
 ) -> typing.Mapping[typing.Any]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.getBooleanAttribute"></a>
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.getBooleanAttribute"></a>
 
 ```python
 def get_boolean_attribute(
@@ -2399,13 +2399,13 @@ def get_boolean_attribute(
 ) -> IResolvable
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.getBooleanMapAttribute"></a>
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.getBooleanMapAttribute"></a>
 
 ```python
 def get_boolean_map_attribute(
@@ -2413,13 +2413,13 @@ def get_boolean_map_attribute(
 ) -> typing.Mapping[bool]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_list_attribute` <a name="get_list_attribute" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.getListAttribute"></a>
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.getListAttribute"></a>
 
 ```python
 def get_list_attribute(
@@ -2427,13 +2427,13 @@ def get_list_attribute(
 ) -> typing.List[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_attribute` <a name="get_number_attribute" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.getNumberAttribute"></a>
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.getNumberAttribute"></a>
 
 ```python
 def get_number_attribute(
@@ -2441,13 +2441,13 @@ def get_number_attribute(
 ) -> typing.Union[int, float]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.getNumberListAttribute"></a>
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.getNumberListAttribute"></a>
 
 ```python
 def get_number_list_attribute(
@@ -2455,13 +2455,13 @@ def get_number_list_attribute(
 ) -> typing.List[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.getNumberMapAttribute"></a>
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.getNumberMapAttribute"></a>
 
 ```python
 def get_number_map_attribute(
@@ -2469,13 +2469,13 @@ def get_number_map_attribute(
 ) -> typing.Mapping[typing.Union[int, float]]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_attribute` <a name="get_string_attribute" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.getStringAttribute"></a>
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.getStringAttribute"></a>
 
 ```python
 def get_string_attribute(
@@ -2483,13 +2483,13 @@ def get_string_attribute(
 ) -> str
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.getStringMapAttribute"></a>
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.getStringMapAttribute"></a>
 
 ```python
 def get_string_map_attribute(
@@ -2497,13 +2497,13 @@ def get_string_map_attribute(
 ) -> typing.Mapping[str]
 ```
 
-###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* str
 
 ---
 
-##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.interpolationForAttribute"></a>
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.interpolationForAttribute"></a>
 
 ```python
 def interpolation_for_attribute(
@@ -2511,13 +2511,13 @@ def interpolation_for_attribute(
 ) -> IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* str
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.resolve"></a>
 
 ```python
 def resolve(
@@ -2527,13 +2527,13 @@ def resolve(
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.resolve.parameter._context"></a>
 
 - *Type:* cdktf.IResolveContext
 
 ---
 
-##### `to_string` <a name="to_string" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.toString"></a>
+##### `to_string` <a name="to_string" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.toString"></a>
 
 ```python
 def to_string() -> str
@@ -2543,19 +2543,19 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `reset_create` <a name="reset_create" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.resetCreate"></a>
+##### `reset_create` <a name="reset_create" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.resetCreate"></a>
 
 ```python
 def reset_create() -> None
 ```
 
-##### `reset_delete` <a name="reset_delete" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.resetDelete"></a>
+##### `reset_delete` <a name="reset_delete" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.resetDelete"></a>
 
 ```python
 def reset_delete() -> None
 ```
 
-##### `reset_update` <a name="reset_update" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.resetUpdate"></a>
+##### `reset_update` <a name="reset_update" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.resetUpdate"></a>
 
 ```python
 def reset_update() -> None
@@ -2566,19 +2566,19 @@ def reset_update() -> None
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.property.createInput">create_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.property.updateInput">update_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeouts">NetappActiveDirectoryTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.property.createInput">create_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.property.updateInput">update_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeouts">NetappActiveDirectoryTimeouts</a></code> | *No description.* |
 
 ---
 
-##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.property.creationStack"></a>
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.property.creationStack"></a>
 
 ```python
 creation_stack: typing.List[str]
@@ -2592,7 +2592,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.property.fqn"></a>
 
 ```python
 fqn: str
@@ -2602,7 +2602,7 @@ fqn: str
 
 ---
 
-##### `create_input`<sup>Optional</sup> <a name="create_input" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.property.createInput"></a>
+##### `create_input`<sup>Optional</sup> <a name="create_input" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.property.createInput"></a>
 
 ```python
 create_input: str
@@ -2612,7 +2612,7 @@ create_input: str
 
 ---
 
-##### `delete_input`<sup>Optional</sup> <a name="delete_input" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.property.deleteInput"></a>
+##### `delete_input`<sup>Optional</sup> <a name="delete_input" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.property.deleteInput"></a>
 
 ```python
 delete_input: str
@@ -2622,7 +2622,7 @@ delete_input: str
 
 ---
 
-##### `update_input`<sup>Optional</sup> <a name="update_input" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.property.updateInput"></a>
+##### `update_input`<sup>Optional</sup> <a name="update_input" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.property.updateInput"></a>
 
 ```python
 update_input: str
@@ -2632,7 +2632,7 @@ update_input: str
 
 ---
 
-##### `create`<sup>Required</sup> <a name="create" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.property.create"></a>
+##### `create`<sup>Required</sup> <a name="create" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.property.create"></a>
 
 ```python
 create: str
@@ -2642,7 +2642,7 @@ create: str
 
 ---
 
-##### `delete`<sup>Required</sup> <a name="delete" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.property.delete"></a>
+##### `delete`<sup>Required</sup> <a name="delete" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.property.delete"></a>
 
 ```python
 delete: str
@@ -2652,7 +2652,7 @@ delete: str
 
 ---
 
-##### `update`<sup>Required</sup> <a name="update" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.property.update"></a>
+##### `update`<sup>Required</sup> <a name="update" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.property.update"></a>
 
 ```python
 update: str
@@ -2662,13 +2662,13 @@ update: str
 
 ---
 
-##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.property.internalValue"></a>
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
 internal_value: IResolvable | NetappActiveDirectoryTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeouts">NetappActiveDirectoryTimeouts</a>
+- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.netappActiveDirectory.NetappActiveDirectoryTimeouts">NetappActiveDirectoryTimeouts</a>
 
 ---
 

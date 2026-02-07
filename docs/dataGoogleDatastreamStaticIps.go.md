@@ -1,28 +1,28 @@
-# `dataGoogleDatastreamStaticIps` Submodule <a name="`dataGoogleDatastreamStaticIps` Submodule" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps"></a>
+# `dataGoogleDatastreamStaticIps` Submodule <a name="`dataGoogleDatastreamStaticIps` Submodule" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### DataGoogleDatastreamStaticIps <a name="DataGoogleDatastreamStaticIps" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps"></a>
+### DataGoogleDatastreamStaticIps <a name="DataGoogleDatastreamStaticIps" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps"></a>
 
 Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/datastream_static_ips google_datastream_static_ips}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagoogledatastreamstaticips"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogledatastreamstaticips"
 
 datagoogledatastreamstaticips.NewDataGoogleDatastreamStaticIps(scope Construct, id *string, config DataGoogleDatastreamStaticIpsConfig) DataGoogleDatastreamStaticIps
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIpsConfig">DataGoogleDatastreamStaticIpsConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIpsConfig">DataGoogleDatastreamStaticIpsConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.Initializer.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.Initializer.parameter.id"></a>
 
 - *Type:* *string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.Initializer.parameter.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIpsConfig">DataGoogleDatastreamStaticIpsConfig</a>
+- *Type:* <a href="#@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIpsConfig">DataGoogleDatastreamStaticIpsConfig</a>
 
 ---
 
@@ -50,29 +50,29 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.toString">ToString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.addOverride">AddOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.toMetadata">ToMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.resetId">ResetId</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.resetProject">ResetProject</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.addOverride">AddOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.toMetadata">ToMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.resetProject">ResetProject</a></code> | *No description.* |
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.toString"></a>
 
 ```go
 func ToString() *string
@@ -80,25 +80,25 @@ func ToString() *string
 
 Returns a string representation of this construct.
 
-##### `AddOverride` <a name="AddOverride" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.addOverride"></a>
+##### `AddOverride` <a name="AddOverride" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.addOverride"></a>
 
 ```go
 func AddOverride(path *string, value interface{})
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.addOverride.parameter.path"></a>
 
 - *Type:* *string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.addOverride.parameter.value"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.overrideLogicalId"></a>
+##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.overrideLogicalId"></a>
 
 ```go
 func OverrideLogicalId(newLogicalId *string)
@@ -106,7 +106,7 @@ func OverrideLogicalId(newLogicalId *string)
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* *string
 
@@ -114,7 +114,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.resetOverrideLogicalId"></a>
+##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.resetOverrideLogicalId"></a>
 
 ```go
 func ResetOverrideLogicalId()
@@ -122,7 +122,7 @@ func ResetOverrideLogicalId()
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.toHclTerraform"></a>
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.toHclTerraform"></a>
 
 ```go
 func ToHclTerraform() interface{}
@@ -130,13 +130,13 @@ func ToHclTerraform() interface{}
 
 Adds this resource to the terraform JSON output.
 
-##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.toMetadata"></a>
+##### `ToMetadata` <a name="ToMetadata" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.toMetadata"></a>
 
 ```go
 func ToMetadata() interface{}
 ```
 
-##### `ToTerraform` <a name="ToTerraform" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.toTerraform"></a>
+##### `ToTerraform` <a name="ToTerraform" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.toTerraform"></a>
 
 ```go
 func ToTerraform() interface{}
@@ -144,133 +144,133 @@ func ToTerraform() interface{}
 
 Adds this resource to the terraform JSON output.
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.resetId"></a>
+##### `ResetId` <a name="ResetId" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.resetId"></a>
 
 ```go
 func ResetId()
 ```
 
-##### `ResetProject` <a name="ResetProject" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.resetProject"></a>
+##### `ResetProject` <a name="ResetProject" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.resetProject"></a>
 
 ```go
 func ResetProject()
@@ -280,17 +280,17 @@ func ResetProject()
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.isTerraformDataSource">IsTerraformDataSource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DataGoogleDatastreamStaticIps resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.isTerraformDataSource">IsTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DataGoogleDatastreamStaticIps resource upon running "cdktf plan <stack-name>". |
 
 ---
 
-##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.isConstruct"></a>
+##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagoogledatastreamstaticips"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogledatastreamstaticips"
 
 datagoogledatastreamstaticips.DataGoogleDatastreamStaticIps_IsConstruct(x interface{}) *bool
 ```
@@ -311,7 +311,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.isConstruct.parameter.x"></a>
 
 - *Type:* interface{}
 
@@ -319,45 +319,45 @@ Any object.
 
 ---
 
-##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.isTerraformElement"></a>
+##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagoogledatastreamstaticips"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogledatastreamstaticips"
 
 datagoogledatastreamstaticips.DataGoogleDatastreamStaticIps_IsTerraformElement(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.isTerraformElement.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.isTerraformDataSource"></a>
+##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagoogledatastreamstaticips"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogledatastreamstaticips"
 
 datagoogledatastreamstaticips.DataGoogleDatastreamStaticIps_IsTerraformDataSource(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.isTerraformDataSource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.generateConfigForImport"></a>
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagoogledatastreamstaticips"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogledatastreamstaticips"
 
 datagoogledatastreamstaticips.DataGoogleDatastreamStaticIps_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
 
 Generates CDKTF code for importing a DataGoogleDatastreamStaticIps resource upon running "cdktf plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -365,7 +365,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* *string
 
@@ -373,7 +373,7 @@ The construct id used in the generated config for the DataGoogleDatastreamStatic
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* *string
 
@@ -383,7 +383,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.generateConfigForImport.parameter.provider"></a>
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
 
@@ -395,29 +395,29 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.staticIps">StaticIps</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.locationInput">LocationInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.projectInput">ProjectInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.id">Id</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.location">Location</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.project">Project</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.staticIps">StaticIps</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.locationInput">LocationInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.projectInput">ProjectInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.location">Location</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.project">Project</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `Node`<sup>Required</sup> <a name="Node" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.node"></a>
+##### `Node`<sup>Required</sup> <a name="Node" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.node"></a>
 
 ```go
 func Node() Node
@@ -429,7 +429,7 @@ The tree node.
 
 ---
 
-##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.cdktfStack"></a>
+##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.cdktfStack"></a>
 
 ```go
 func CdktfStack() TerraformStack
@@ -439,7 +439,7 @@ func CdktfStack() TerraformStack
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -449,7 +449,7 @@ func Fqn() *string
 
 ---
 
-##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.friendlyUniqueId"></a>
+##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.friendlyUniqueId"></a>
 
 ```go
 func FriendlyUniqueId() *string
@@ -459,7 +459,7 @@ func FriendlyUniqueId() *string
 
 ---
 
-##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.terraformMetaArguments"></a>
+##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.terraformMetaArguments"></a>
 
 ```go
 func TerraformMetaArguments() *map[string]interface{}
@@ -469,7 +469,7 @@ func TerraformMetaArguments() *map[string]interface{}
 
 ---
 
-##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.terraformResourceType"></a>
+##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.terraformResourceType"></a>
 
 ```go
 func TerraformResourceType() *string
@@ -479,7 +479,7 @@ func TerraformResourceType() *string
 
 ---
 
-##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.terraformGeneratorMetadata"></a>
+##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.terraformGeneratorMetadata"></a>
 
 ```go
 func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
@@ -489,7 +489,7 @@ func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.count"></a>
 
 ```go
 func Count() interface{}
@@ -499,7 +499,7 @@ func Count() interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.dependsOn"></a>
 
 ```go
 func DependsOn() *[]*string
@@ -509,7 +509,7 @@ func DependsOn() *[]*string
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.forEach"></a>
 
 ```go
 func ForEach() ITerraformIterator
@@ -519,7 +519,7 @@ func ForEach() ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.lifecycle"></a>
 
 ```go
 func Lifecycle() TerraformResourceLifecycle
@@ -529,7 +529,7 @@ func Lifecycle() TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.provider"></a>
 
 ```go
 func Provider() TerraformProvider
@@ -539,7 +539,7 @@ func Provider() TerraformProvider
 
 ---
 
-##### `StaticIps`<sup>Required</sup> <a name="StaticIps" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.staticIps"></a>
+##### `StaticIps`<sup>Required</sup> <a name="StaticIps" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.staticIps"></a>
 
 ```go
 func StaticIps() *[]*string
@@ -549,7 +549,7 @@ func StaticIps() *[]*string
 
 ---
 
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.idInput"></a>
+##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.idInput"></a>
 
 ```go
 func IdInput() *string
@@ -559,7 +559,7 @@ func IdInput() *string
 
 ---
 
-##### `LocationInput`<sup>Optional</sup> <a name="LocationInput" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.locationInput"></a>
+##### `LocationInput`<sup>Optional</sup> <a name="LocationInput" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.locationInput"></a>
 
 ```go
 func LocationInput() *string
@@ -569,7 +569,7 @@ func LocationInput() *string
 
 ---
 
-##### `ProjectInput`<sup>Optional</sup> <a name="ProjectInput" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.projectInput"></a>
+##### `ProjectInput`<sup>Optional</sup> <a name="ProjectInput" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.projectInput"></a>
 
 ```go
 func ProjectInput() *string
@@ -579,7 +579,7 @@ func ProjectInput() *string
 
 ---
 
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.id"></a>
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.id"></a>
 
 ```go
 func Id() *string
@@ -589,7 +589,7 @@ func Id() *string
 
 ---
 
-##### `Location`<sup>Required</sup> <a name="Location" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.location"></a>
+##### `Location`<sup>Required</sup> <a name="Location" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.location"></a>
 
 ```go
 func Location() *string
@@ -599,7 +599,7 @@ func Location() *string
 
 ---
 
-##### `Project`<sup>Required</sup> <a name="Project" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.project"></a>
+##### `Project`<sup>Required</sup> <a name="Project" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.project"></a>
 
 ```go
 func Project() *string
@@ -613,11 +613,11 @@ func Project() *string
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.tfResourceType"></a>
+##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIps.property.tfResourceType"></a>
 
 ```go
 func TfResourceType() *string
@@ -629,12 +629,12 @@ func TfResourceType() *string
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### DataGoogleDatastreamStaticIpsConfig <a name="DataGoogleDatastreamStaticIpsConfig" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIpsConfig"></a>
+### DataGoogleDatastreamStaticIpsConfig <a name="DataGoogleDatastreamStaticIpsConfig" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIpsConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIpsConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIpsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagoogledatastreamstaticips"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogledatastreamstaticips"
 
 &datagoogledatastreamstaticips.DataGoogleDatastreamStaticIpsConfig {
 	Connection: interface{},
@@ -654,20 +654,20 @@ import "github.com/cdktf/cdktf-provider-google-go/google/v16/datagoogledatastrea
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIpsConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIpsConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIpsConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIpsConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIpsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIpsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIpsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIpsConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/datastream_static_ips#location DataGoogleDatastreamStaticIps#location}. |
-| <code><a href="#@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIpsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/datastream_static_ips#id DataGoogleDatastreamStaticIps#id}. |
-| <code><a href="#@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIpsConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/datastream_static_ips#project DataGoogleDatastreamStaticIps#project}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIpsConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIpsConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIpsConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIpsConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIpsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIpsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIpsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIpsConfig.property.location">Location</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/datastream_static_ips#location DataGoogleDatastreamStaticIps#location}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIpsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/datastream_static_ips#id DataGoogleDatastreamStaticIps#id}. |
+| <code><a href="#@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIpsConfig.property.project">Project</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/data-sources/datastream_static_ips#project DataGoogleDatastreamStaticIps#project}. |
 
 ---
 
-##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIpsConfig.property.connection"></a>
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIpsConfig.property.connection"></a>
 
 ```go
 Connection interface{}
@@ -677,7 +677,7 @@ Connection interface{}
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIpsConfig.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIpsConfig.property.count"></a>
 
 ```go
 Count interface{}
@@ -687,7 +687,7 @@ Count interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIpsConfig.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIpsConfig.property.dependsOn"></a>
 
 ```go
 DependsOn *[]ITerraformDependable
@@ -697,7 +697,7 @@ DependsOn *[]ITerraformDependable
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIpsConfig.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIpsConfig.property.forEach"></a>
 
 ```go
 ForEach ITerraformIterator
@@ -707,7 +707,7 @@ ForEach ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIpsConfig.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIpsConfig.property.lifecycle"></a>
 
 ```go
 Lifecycle TerraformResourceLifecycle
@@ -717,7 +717,7 @@ Lifecycle TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIpsConfig.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIpsConfig.property.provider"></a>
 
 ```go
 Provider TerraformProvider
@@ -727,7 +727,7 @@ Provider TerraformProvider
 
 ---
 
-##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIpsConfig.property.provisioners"></a>
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIpsConfig.property.provisioners"></a>
 
 ```go
 Provisioners *[]interface{}
@@ -737,7 +737,7 @@ Provisioners *[]interface{}
 
 ---
 
-##### `Location`<sup>Required</sup> <a name="Location" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIpsConfig.property.location"></a>
+##### `Location`<sup>Required</sup> <a name="Location" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIpsConfig.property.location"></a>
 
 ```go
 Location *string
@@ -749,7 +749,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ---
 
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIpsConfig.property.id"></a>
+##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIpsConfig.property.id"></a>
 
 ```go
 Id *string
@@ -764,7 +764,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ---
 
-##### `Project`<sup>Optional</sup> <a name="Project" id="@cdktf/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIpsConfig.property.project"></a>
+##### `Project`<sup>Optional</sup> <a name="Project" id="@cdktn/provider-google.dataGoogleDatastreamStaticIps.DataGoogleDatastreamStaticIpsConfig.property.project"></a>
 
 ```go
 Project *string
