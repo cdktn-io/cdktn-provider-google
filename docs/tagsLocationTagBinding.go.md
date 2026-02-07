@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.tagsLocationTagBinding.TagsLocationTagBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/tagslocationtagbinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/tagslocationtagbinding"
 
 tagslocationtagbinding.NewTagsLocationTagBinding(scope Construct, id *string, config TagsLocationTagBindingConfig) TagsLocationTagBinding
 ```
@@ -412,7 +412,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.tagsLocationTagBinding.TagsLocationTagBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/tagslocationtagbinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/tagslocationtagbinding"
 
 tagslocationtagbinding.TagsLocationTagBinding_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.tagsLocationTagBinding.TagsLocationTagBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/tagslocationtagbinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/tagslocationtagbinding"
 
 tagslocationtagbinding.TagsLocationTagBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ tagslocationtagbinding.TagsLocationTagBinding_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.tagsLocationTagBinding.TagsLocationTagBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/tagslocationtagbinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/tagslocationtagbinding"
 
 tagslocationtagbinding.TagsLocationTagBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ tagslocationtagbinding.TagsLocationTagBinding_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.tagsLocationTagBinding.TagsLocationTagBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/tagslocationtagbinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/tagslocationtagbinding"
 
 tagslocationtagbinding.TagsLocationTagBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -822,7 +822,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.tagsLocationTagBinding.TagsLocationTagBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/tagslocationtagbinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/tagslocationtagbinding"
 
 &tagslocationtagbinding.TagsLocationTagBindingConfig {
 	Connection: interface{},
@@ -836,7 +836,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/tagslocationtagbindi
 	TagValue: *string,
 	Id: *string,
 	Location: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google.tagsLocationTagBinding.TagsLocationTagBindingTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v16.tagsLocationTagBinding.TagsLocationTagBindingTimeouts,
 }
 ```
 
@@ -1005,7 +1005,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.tagsLocationTagBinding.TagsLocationTagBindingTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/tagslocationtagbinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/tagslocationtagbinding"
 
 &tagslocationtagbinding.TagsLocationTagBindingTimeouts {
 	Create: *string,
@@ -1053,7 +1053,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.tagsLocationTagBinding.TagsLocationTagBindingTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/tagslocationtagbinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/tagslocationtagbinding"
 
 tagslocationtagbinding.NewTagsLocationTagBindingTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TagsLocationTagBindingTimeoutsOutputReference
 ```

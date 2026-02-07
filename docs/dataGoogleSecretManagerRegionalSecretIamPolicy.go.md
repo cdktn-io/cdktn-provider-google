@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleSecretManagerRegionalSecretIamPolicy.DataGoogleSecretManagerRegionalSecretIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglesecretmanagerregionalsecretiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglesecretmanagerregionalsecretiampolicy"
 
 datagooglesecretmanagerregionalsecretiampolicy.NewDataGoogleSecretManagerRegionalSecretIamPolicy(scope Construct, id *string, config DataGoogleSecretManagerRegionalSecretIamPolicyConfig) DataGoogleSecretManagerRegionalSecretIamPolicy
 ```
@@ -297,7 +297,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleSecretManagerRegionalSecretIamPolicy.DataGoogleSecretManagerRegionalSecretIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglesecretmanagerregionalsecretiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglesecretmanagerregionalsecretiampolicy"
 
 datagooglesecretmanagerregionalsecretiampolicy.DataGoogleSecretManagerRegionalSecretIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleSecretManagerRegionalSecretIamPolicy.DataGoogleSecretManagerRegionalSecretIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglesecretmanagerregionalsecretiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglesecretmanagerregionalsecretiampolicy"
 
 datagooglesecretmanagerregionalsecretiampolicy.DataGoogleSecretManagerRegionalSecretIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datagooglesecretmanagerregionalsecretiampolicy.DataGoogleSecretManagerRegionalSe
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleSecretManagerRegionalSecretIamPolicy.DataGoogleSecretManagerRegionalSecretIamPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglesecretmanagerregionalsecretiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglesecretmanagerregionalsecretiampolicy"
 
 datagooglesecretmanagerregionalsecretiampolicy.DataGoogleSecretManagerRegionalSecretIamPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ datagooglesecretmanagerregionalsecretiampolicy.DataGoogleSecretManagerRegionalSe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleSecretManagerRegionalSecretIamPolicy.DataGoogleSecretManagerRegionalSecretIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglesecretmanagerregionalsecretiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglesecretmanagerregionalsecretiampolicy"
 
 datagooglesecretmanagerregionalsecretiampolicy.DataGoogleSecretManagerRegionalSecretIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -674,7 +674,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleSecretManagerRegionalSecretIamPolicy.DataGoogleSecretManagerRegionalSecretIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglesecretmanagerregionalsecretiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglesecretmanagerregionalsecretiampolicy"
 
 &datagooglesecretmanagerregionalsecretiampolicy.DataGoogleSecretManagerRegionalSecretIamPolicyConfig {
 	Connection: interface{},

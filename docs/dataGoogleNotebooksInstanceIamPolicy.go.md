@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleNotebooksInstanceIamPolicy.DataGoogleNotebooksInstanceIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglenotebooksinstanceiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglenotebooksinstanceiampolicy"
 
 datagooglenotebooksinstanceiampolicy.NewDataGoogleNotebooksInstanceIamPolicy(scope Construct, id *string, config DataGoogleNotebooksInstanceIamPolicyConfig) DataGoogleNotebooksInstanceIamPolicy
 ```
@@ -297,7 +297,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleNotebooksInstanceIamPolicy.DataGoogleNotebooksInstanceIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglenotebooksinstanceiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglenotebooksinstanceiampolicy"
 
 datagooglenotebooksinstanceiampolicy.DataGoogleNotebooksInstanceIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleNotebooksInstanceIamPolicy.DataGoogleNotebooksInstanceIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglenotebooksinstanceiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglenotebooksinstanceiampolicy"
 
 datagooglenotebooksinstanceiampolicy.DataGoogleNotebooksInstanceIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datagooglenotebooksinstanceiampolicy.DataGoogleNotebooksInstanceIamPolicy_IsTerr
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleNotebooksInstanceIamPolicy.DataGoogleNotebooksInstanceIamPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglenotebooksinstanceiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglenotebooksinstanceiampolicy"
 
 datagooglenotebooksinstanceiampolicy.DataGoogleNotebooksInstanceIamPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ datagooglenotebooksinstanceiampolicy.DataGoogleNotebooksInstanceIamPolicy_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleNotebooksInstanceIamPolicy.DataGoogleNotebooksInstanceIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglenotebooksinstanceiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglenotebooksinstanceiampolicy"
 
 datagooglenotebooksinstanceiampolicy.DataGoogleNotebooksInstanceIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -674,7 +674,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleNotebooksInstanceIamPolicy.DataGoogleNotebooksInstanceIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglenotebooksinstanceiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglenotebooksinstanceiampolicy"
 
 &datagooglenotebooksinstanceiampolicy.DataGoogleNotebooksInstanceIamPolicyConfig {
 	Connection: interface{},

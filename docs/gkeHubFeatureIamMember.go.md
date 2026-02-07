@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.gkeHubFeatureIamMember.GkeHubFeatureIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/gkehubfeatureiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/gkehubfeatureiammember"
 
 gkehubfeatureiammember.NewGkeHubFeatureIamMember(scope Construct, id *string, config GkeHubFeatureIamMemberConfig) GkeHubFeatureIamMember
 ```
@@ -419,7 +419,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.gkeHubFeatureIamMember.GkeHubFeatureIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/gkehubfeatureiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/gkehubfeatureiammember"
 
 gkehubfeatureiammember.GkeHubFeatureIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.gkeHubFeatureIamMember.GkeHubFeatureIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/gkehubfeatureiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/gkehubfeatureiammember"
 
 gkehubfeatureiammember.GkeHubFeatureIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ gkehubfeatureiammember.GkeHubFeatureIamMember_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.gkeHubFeatureIamMember.GkeHubFeatureIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/gkehubfeatureiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/gkehubfeatureiammember"
 
 gkehubfeatureiammember.GkeHubFeatureIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ gkehubfeatureiammember.GkeHubFeatureIamMember_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.gkeHubFeatureIamMember.GkeHubFeatureIamMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/gkehubfeatureiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/gkehubfeatureiammember"
 
 gkehubfeatureiammember.GkeHubFeatureIamMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -873,7 +873,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.gkeHubFeatureIamMember.GkeHubFeatureIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/gkehubfeatureiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/gkehubfeatureiammember"
 
 &gkehubfeatureiammember.GkeHubFeatureIamMemberCondition {
 	Expression: *string,
@@ -933,7 +933,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.gkeHubFeatureIamMember.GkeHubFeatureIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/gkehubfeatureiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/gkehubfeatureiammember"
 
 &gkehubfeatureiammember.GkeHubFeatureIamMemberConfig {
 	Connection: interface{},
@@ -946,7 +946,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/gkehubfeatureiammemb
 	Member: *string,
 	Name: *string,
 	Role: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google.gkeHubFeatureIamMember.GkeHubFeatureIamMemberCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v16.gkeHubFeatureIamMember.GkeHubFeatureIamMemberCondition,
 	Id: *string,
 	Location: *string,
 	Project: *string,
@@ -1140,7 +1140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.gkeHubFeatureIamMember.GkeHubFeatureIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/gkehubfeatureiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/gkehubfeatureiammember"
 
 gkehubfeatureiammember.NewGkeHubFeatureIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GkeHubFeatureIamMemberConditionOutputReference
 ```

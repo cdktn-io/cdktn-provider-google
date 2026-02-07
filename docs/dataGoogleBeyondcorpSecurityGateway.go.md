@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleBeyondcorpSecurityGateway.DataGoogleBeyondcorpSecurityGateway.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglebeyondcorpsecuritygateway"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglebeyondcorpsecuritygateway"
 
 datagooglebeyondcorpsecuritygateway.NewDataGoogleBeyondcorpSecurityGateway(scope Construct, id *string, config DataGoogleBeyondcorpSecurityGatewayConfig) DataGoogleBeyondcorpSecurityGateway
 ```
@@ -290,7 +290,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleBeyondcorpSecurityGateway.DataGoogleBeyondcorpSecurityGateway.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglebeyondcorpsecuritygateway"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglebeyondcorpsecuritygateway"
 
 datagooglebeyondcorpsecuritygateway.DataGoogleBeyondcorpSecurityGateway_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleBeyondcorpSecurityGateway.DataGoogleBeyondcorpSecurityGateway.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglebeyondcorpsecuritygateway"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglebeyondcorpsecuritygateway"
 
 datagooglebeyondcorpsecuritygateway.DataGoogleBeyondcorpSecurityGateway_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datagooglebeyondcorpsecuritygateway.DataGoogleBeyondcorpSecurityGateway_IsTerraf
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleBeyondcorpSecurityGateway.DataGoogleBeyondcorpSecurityGateway.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglebeyondcorpsecuritygateway"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglebeyondcorpsecuritygateway"
 
 datagooglebeyondcorpsecuritygateway.DataGoogleBeyondcorpSecurityGateway_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ datagooglebeyondcorpsecuritygateway.DataGoogleBeyondcorpSecurityGateway_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleBeyondcorpSecurityGateway.DataGoogleBeyondcorpSecurityGateway.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglebeyondcorpsecuritygateway"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglebeyondcorpsecuritygateway"
 
 datagooglebeyondcorpsecuritygateway.DataGoogleBeyondcorpSecurityGateway_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -722,7 +722,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleBeyondcorpSecurityGateway.DataGoogleBeyondcorpSecurityGatewayConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglebeyondcorpsecuritygateway"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglebeyondcorpsecuritygateway"
 
 &datagooglebeyondcorpsecuritygateway.DataGoogleBeyondcorpSecurityGatewayConfig {
 	Connection: interface{},
@@ -877,7 +877,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleBeyondcorpSecurityGateway.DataGoogleBeyondcorpSecurityGatewayHubs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglebeyondcorpsecuritygateway"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglebeyondcorpsecuritygateway"
 
 &datagooglebeyondcorpsecuritygateway.DataGoogleBeyondcorpSecurityGatewayHubs {
 
@@ -890,7 +890,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglebeyondcorp
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleBeyondcorpSecurityGateway.DataGoogleBeyondcorpSecurityGatewayHubsInternetGateway.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglebeyondcorpsecuritygateway"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglebeyondcorpsecuritygateway"
 
 &datagooglebeyondcorpsecuritygateway.DataGoogleBeyondcorpSecurityGatewayHubsInternetGateway {
 
@@ -905,7 +905,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglebeyondcorp
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleBeyondcorpSecurityGateway.DataGoogleBeyondcorpSecurityGatewayHubsInternetGatewayList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglebeyondcorpsecuritygateway"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglebeyondcorpsecuritygateway"
 
 datagooglebeyondcorpsecuritygateway.NewDataGoogleBeyondcorpSecurityGatewayHubsInternetGatewayList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleBeyondcorpSecurityGatewayHubsInternetGatewayList
 ```
@@ -1054,7 +1054,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleBeyondcorpSecurityGateway.DataGoogleBeyondcorpSecurityGatewayHubsInternetGatewayOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglebeyondcorpsecuritygateway"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglebeyondcorpsecuritygateway"
 
 datagooglebeyondcorpsecuritygateway.NewDataGoogleBeyondcorpSecurityGatewayHubsInternetGatewayOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleBeyondcorpSecurityGatewayHubsInternetGatewayOutputReference
 ```
@@ -1332,7 +1332,7 @@ func InternalValue() DataGoogleBeyondcorpSecurityGatewayHubsInternetGateway
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleBeyondcorpSecurityGateway.DataGoogleBeyondcorpSecurityGatewayHubsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglebeyondcorpsecuritygateway"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglebeyondcorpsecuritygateway"
 
 datagooglebeyondcorpsecuritygateway.NewDataGoogleBeyondcorpSecurityGatewayHubsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleBeyondcorpSecurityGatewayHubsList
 ```
@@ -1481,7 +1481,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleBeyondcorpSecurityGateway.DataGoogleBeyondcorpSecurityGatewayHubsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglebeyondcorpsecuritygateway"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglebeyondcorpsecuritygateway"
 
 datagooglebeyondcorpsecuritygateway.NewDataGoogleBeyondcorpSecurityGatewayHubsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleBeyondcorpSecurityGatewayHubsOutputReference
 ```

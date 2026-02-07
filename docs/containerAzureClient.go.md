@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerAzureClient.ContainerAzureClient.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/containerazureclient"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/containerazureclient"
 
 containerazureclient.NewContainerAzureClient(scope Construct, id *string, config ContainerAzureClientConfig) ContainerAzureClient
 ```
@@ -412,7 +412,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.containerAzureClient.ContainerAzureClient.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/containerazureclient"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/containerazureclient"
 
 containerazureclient.ContainerAzureClient_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.containerAzureClient.ContainerAzureClient.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/containerazureclient"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/containerazureclient"
 
 containerazureclient.ContainerAzureClient_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ containerazureclient.ContainerAzureClient_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.containerAzureClient.ContainerAzureClient.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/containerazureclient"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/containerazureclient"
 
 containerazureclient.ContainerAzureClient_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ containerazureclient.ContainerAzureClient_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.containerAzureClient.ContainerAzureClient.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/containerazureclient"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/containerazureclient"
 
 containerazureclient.ContainerAzureClient_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -888,7 +888,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerAzureClient.ContainerAzureClientConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/containerazureclient"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/containerazureclient"
 
 &containerazureclient.ContainerAzureClientConfig {
 	Connection: interface{},
@@ -904,7 +904,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/containerazureclient
 	TenantId: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google.containerAzureClient.ContainerAzureClientTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v16.containerAzureClient.ContainerAzureClientTimeouts,
 }
 ```
 
@@ -1103,7 +1103,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.containerAzureClient.ContainerAzureClientTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/containerazureclient"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/containerazureclient"
 
 &containerazureclient.ContainerAzureClientTimeouts {
 	Create: *string,
@@ -1151,7 +1151,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.containerAzureClient.ContainerAzureClientTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/containerazureclient"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/containerazureclient"
 
 containerazureclient.NewContainerAzureClientTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ContainerAzureClientTimeoutsOutputReference
 ```

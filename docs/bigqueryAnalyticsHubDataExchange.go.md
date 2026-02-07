@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.bigqueryAnalyticsHubDataExchange.BigqueryAnalyticsHubDataExchange.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/bigqueryanalyticshubdataexchange"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/bigqueryanalyticshubdataexchange"
 
 bigqueryanalyticshubdataexchange.NewBigqueryAnalyticsHubDataExchange(scope Construct, id *string, config BigqueryAnalyticsHubDataExchangeConfig) BigqueryAnalyticsHubDataExchange
 ```
@@ -474,7 +474,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.bigqueryAnalyticsHubDataExchange.BigqueryAnalyticsHubDataExchange.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/bigqueryanalyticshubdataexchange"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/bigqueryanalyticshubdataexchange"
 
 bigqueryanalyticshubdataexchange.BigqueryAnalyticsHubDataExchange_IsConstruct(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.bigqueryAnalyticsHubDataExchange.BigqueryAnalyticsHubDataExchange.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/bigqueryanalyticshubdataexchange"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/bigqueryanalyticshubdataexchange"
 
 bigqueryanalyticshubdataexchange.BigqueryAnalyticsHubDataExchange_IsTerraformElement(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ bigqueryanalyticshubdataexchange.BigqueryAnalyticsHubDataExchange_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.bigqueryAnalyticsHubDataExchange.BigqueryAnalyticsHubDataExchange.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/bigqueryanalyticshubdataexchange"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/bigqueryanalyticshubdataexchange"
 
 bigqueryanalyticshubdataexchange.BigqueryAnalyticsHubDataExchange_IsTerraformResource(x interface{}) *bool
 ```
@@ -534,7 +534,7 @@ bigqueryanalyticshubdataexchange.BigqueryAnalyticsHubDataExchange_IsTerraformRes
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.bigqueryAnalyticsHubDataExchange.BigqueryAnalyticsHubDataExchange.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/bigqueryanalyticshubdataexchange"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/bigqueryanalyticshubdataexchange"
 
 bigqueryanalyticshubdataexchange.BigqueryAnalyticsHubDataExchange_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1071,7 +1071,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.bigqueryAnalyticsHubDataExchange.BigqueryAnalyticsHubDataExchangeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/bigqueryanalyticshubdataexchange"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/bigqueryanalyticshubdataexchange"
 
 &bigqueryanalyticshubdataexchange.BigqueryAnalyticsHubDataExchangeConfig {
 	Connection: interface{},
@@ -1092,8 +1092,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/bigqueryanalyticshub
 	LogLinkedDatasetQueryUserEmail: interface{},
 	PrimaryContact: *string,
 	Project: *string,
-	SharingEnvironmentConfig: github.com/cdktn-io/cdktn-provider-google-go/google.bigqueryAnalyticsHubDataExchange.BigqueryAnalyticsHubDataExchangeSharingEnvironmentConfig,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google.bigqueryAnalyticsHubDataExchange.BigqueryAnalyticsHubDataExchangeTimeouts,
+	SharingEnvironmentConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v16.bigqueryAnalyticsHubDataExchange.BigqueryAnalyticsHubDataExchangeSharingEnvironmentConfig,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v16.bigqueryAnalyticsHubDataExchange.BigqueryAnalyticsHubDataExchangeTimeouts,
 }
 ```
 
@@ -1388,11 +1388,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.bigqueryAnalyticsHubDataExchange.BigqueryAnalyticsHubDataExchangeSharingEnvironmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/bigqueryanalyticshubdataexchange"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/bigqueryanalyticshubdataexchange"
 
 &bigqueryanalyticshubdataexchange.BigqueryAnalyticsHubDataExchangeSharingEnvironmentConfig {
-	DcrExchangeConfig: github.com/cdktn-io/cdktn-provider-google-go/google.bigqueryAnalyticsHubDataExchange.BigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigDcrExchangeConfig,
-	DefaultExchangeConfig: github.com/cdktn-io/cdktn-provider-google-go/google.bigqueryAnalyticsHubDataExchange.BigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigDefaultExchangeConfig,
+	DcrExchangeConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v16.bigqueryAnalyticsHubDataExchange.BigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigDcrExchangeConfig,
+	DefaultExchangeConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v16.bigqueryAnalyticsHubDataExchange.BigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigDefaultExchangeConfig,
 }
 ```
 
@@ -1438,7 +1438,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.bigqueryAnalyticsHubDataExchange.BigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigDcrExchangeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/bigqueryanalyticshubdataexchange"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/bigqueryanalyticshubdataexchange"
 
 &bigqueryanalyticshubdataexchange.BigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigDcrExchangeConfig {
 
@@ -1451,7 +1451,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/bigqueryanalyticshub
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.bigqueryAnalyticsHubDataExchange.BigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigDefaultExchangeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/bigqueryanalyticshubdataexchange"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/bigqueryanalyticshubdataexchange"
 
 &bigqueryanalyticshubdataexchange.BigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigDefaultExchangeConfig {
 
@@ -1464,7 +1464,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/bigqueryanalyticshub
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.bigqueryAnalyticsHubDataExchange.BigqueryAnalyticsHubDataExchangeTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/bigqueryanalyticshubdataexchange"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/bigqueryanalyticshubdataexchange"
 
 &bigqueryanalyticshubdataexchange.BigqueryAnalyticsHubDataExchangeTimeouts {
 	Create: *string,
@@ -1526,7 +1526,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.bigqueryAnalyticsHubDataExchange.BigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigDcrExchangeConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/bigqueryanalyticshubdataexchange"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/bigqueryanalyticshubdataexchange"
 
 bigqueryanalyticshubdataexchange.NewBigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigDcrExchangeConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigDcrExchangeConfigOutputReference
 ```
@@ -1775,7 +1775,7 @@ func InternalValue() BigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigDcr
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.bigqueryAnalyticsHubDataExchange.BigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigDefaultExchangeConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/bigqueryanalyticshubdataexchange"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/bigqueryanalyticshubdataexchange"
 
 bigqueryanalyticshubdataexchange.NewBigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigDefaultExchangeConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigDefaultExchangeConfigOutputReference
 ```
@@ -2024,7 +2024,7 @@ func InternalValue() BigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigDef
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.bigqueryAnalyticsHubDataExchange.BigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/bigqueryanalyticshubdataexchange"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/bigqueryanalyticshubdataexchange"
 
 bigqueryanalyticshubdataexchange.NewBigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BigqueryAnalyticsHubDataExchangeSharingEnvironmentConfigOutputReference
 ```
@@ -2357,7 +2357,7 @@ func InternalValue() BigqueryAnalyticsHubDataExchangeSharingEnvironmentConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.bigqueryAnalyticsHubDataExchange.BigqueryAnalyticsHubDataExchangeTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/bigqueryanalyticshubdataexchange"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/bigqueryanalyticshubdataexchange"
 
 bigqueryanalyticshubdataexchange.NewBigqueryAnalyticsHubDataExchangeTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BigqueryAnalyticsHubDataExchangeTimeoutsOutputReference
 ```

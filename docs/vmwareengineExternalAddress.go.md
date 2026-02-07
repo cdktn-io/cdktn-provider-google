@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vmwareengineExternalAddress.VmwareengineExternalAddress.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/vmwareengineexternaladdress"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/vmwareengineexternaladdress"
 
 vmwareengineexternaladdress.NewVmwareengineExternalAddress(scope Construct, id *string, config VmwareengineExternalAddressConfig) VmwareengineExternalAddress
 ```
@@ -412,7 +412,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.vmwareengineExternalAddress.VmwareengineExternalAddress.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/vmwareengineexternaladdress"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/vmwareengineexternaladdress"
 
 vmwareengineexternaladdress.VmwareengineExternalAddress_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.vmwareengineExternalAddress.VmwareengineExternalAddress.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/vmwareengineexternaladdress"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/vmwareengineexternaladdress"
 
 vmwareengineexternaladdress.VmwareengineExternalAddress_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ vmwareengineexternaladdress.VmwareengineExternalAddress_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.vmwareengineExternalAddress.VmwareengineExternalAddress.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/vmwareengineexternaladdress"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/vmwareengineexternaladdress"
 
 vmwareengineexternaladdress.VmwareengineExternalAddress_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ vmwareengineexternaladdress.VmwareengineExternalAddress_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.vmwareengineExternalAddress.VmwareengineExternalAddress.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/vmwareengineexternaladdress"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/vmwareengineexternaladdress"
 
 vmwareengineexternaladdress.VmwareengineExternalAddress_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -888,7 +888,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vmwareengineExternalAddress.VmwareengineExternalAddressConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/vmwareengineexternaladdress"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/vmwareengineexternaladdress"
 
 &vmwareengineexternaladdress.VmwareengineExternalAddressConfig {
 	Connection: interface{},
@@ -903,7 +903,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/vmwareengineexternal
 	Parent: *string,
 	Description: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google.vmwareengineExternalAddress.VmwareengineExternalAddressTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v16.vmwareengineExternalAddress.VmwareengineExternalAddressTimeouts,
 }
 ```
 
@@ -1090,7 +1090,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vmwareengineExternalAddress.VmwareengineExternalAddressTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/vmwareengineexternaladdress"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/vmwareengineexternaladdress"
 
 &vmwareengineexternaladdress.VmwareengineExternalAddressTimeouts {
 	Create: *string,
@@ -1152,7 +1152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vmwareengineExternalAddress.VmwareengineExternalAddressTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/vmwareengineexternaladdress"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/vmwareengineexternaladdress"
 
 vmwareengineexternaladdress.NewVmwareengineExternalAddressTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VmwareengineExternalAddressTimeoutsOutputReference
 ```

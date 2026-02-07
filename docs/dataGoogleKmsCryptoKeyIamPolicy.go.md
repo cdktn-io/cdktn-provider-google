@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleKmsCryptoKeyIamPolicy.DataGoogleKmsCryptoKeyIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglekmscryptokeyiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglekmscryptokeyiampolicy"
 
 datagooglekmscryptokeyiampolicy.NewDataGoogleKmsCryptoKeyIamPolicy(scope Construct, id *string, config DataGoogleKmsCryptoKeyIamPolicyConfig) DataGoogleKmsCryptoKeyIamPolicy
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleKmsCryptoKeyIamPolicy.DataGoogleKmsCryptoKeyIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglekmscryptokeyiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglekmscryptokeyiampolicy"
 
 datagooglekmscryptokeyiampolicy.DataGoogleKmsCryptoKeyIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleKmsCryptoKeyIamPolicy.DataGoogleKmsCryptoKeyIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglekmscryptokeyiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglekmscryptokeyiampolicy"
 
 datagooglekmscryptokeyiampolicy.DataGoogleKmsCryptoKeyIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datagooglekmscryptokeyiampolicy.DataGoogleKmsCryptoKeyIamPolicy_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleKmsCryptoKeyIamPolicy.DataGoogleKmsCryptoKeyIamPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglekmscryptokeyiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglekmscryptokeyiampolicy"
 
 datagooglekmscryptokeyiampolicy.DataGoogleKmsCryptoKeyIamPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datagooglekmscryptokeyiampolicy.DataGoogleKmsCryptoKeyIamPolicy_IsTerraformDataS
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleKmsCryptoKeyIamPolicy.DataGoogleKmsCryptoKeyIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglekmscryptokeyiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglekmscryptokeyiampolicy"
 
 datagooglekmscryptokeyiampolicy.DataGoogleKmsCryptoKeyIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -616,7 +616,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleKmsCryptoKeyIamPolicy.DataGoogleKmsCryptoKeyIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglekmscryptokeyiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglekmscryptokeyiampolicy"
 
 &datagooglekmscryptokeyiampolicy.DataGoogleKmsCryptoKeyIamPolicyConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleContainerAttachedInstallManifest.DataGoogleContainerAttachedInstallManifest.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglecontainerattachedinstallmanifest"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglecontainerattachedinstallmanifest"
 
 datagooglecontainerattachedinstallmanifest.NewDataGoogleContainerAttachedInstallManifest(scope Construct, id *string, config DataGoogleContainerAttachedInstallManifestConfig) DataGoogleContainerAttachedInstallManifest
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleContainerAttachedInstallManifest.DataGoogleContainerAttachedInstallManifest.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglecontainerattachedinstallmanifest"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglecontainerattachedinstallmanifest"
 
 datagooglecontainerattachedinstallmanifest.DataGoogleContainerAttachedInstallManifest_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleContainerAttachedInstallManifest.DataGoogleContainerAttachedInstallManifest.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglecontainerattachedinstallmanifest"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglecontainerattachedinstallmanifest"
 
 datagooglecontainerattachedinstallmanifest.DataGoogleContainerAttachedInstallManifest_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datagooglecontainerattachedinstallmanifest.DataGoogleContainerAttachedInstallMan
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleContainerAttachedInstallManifest.DataGoogleContainerAttachedInstallManifest.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglecontainerattachedinstallmanifest"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglecontainerattachedinstallmanifest"
 
 datagooglecontainerattachedinstallmanifest.DataGoogleContainerAttachedInstallManifest_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datagooglecontainerattachedinstallmanifest.DataGoogleContainerAttachedInstallMan
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleContainerAttachedInstallManifest.DataGoogleContainerAttachedInstallManifest.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglecontainerattachedinstallmanifest"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglecontainerattachedinstallmanifest"
 
 datagooglecontainerattachedinstallmanifest.DataGoogleContainerAttachedInstallManifest_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -671,7 +671,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleContainerAttachedInstallManifest.DataGoogleContainerAttachedInstallManifestConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglecontainerattachedinstallmanifest"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglecontainerattachedinstallmanifest"
 
 &datagooglecontainerattachedinstallmanifest.DataGoogleContainerAttachedInstallManifestConfig {
 	Connection: interface{},

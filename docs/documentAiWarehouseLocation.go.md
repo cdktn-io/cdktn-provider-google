@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.documentAiWarehouseLocation.DocumentAiWarehouseLocation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/documentaiwarehouselocation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/documentaiwarehouselocation"
 
 documentaiwarehouselocation.NewDocumentAiWarehouseLocation(scope Construct, id *string, config DocumentAiWarehouseLocationConfig) DocumentAiWarehouseLocation
 ```
@@ -419,7 +419,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.documentAiWarehouseLocation.DocumentAiWarehouseLocation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/documentaiwarehouselocation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/documentaiwarehouselocation"
 
 documentaiwarehouselocation.DocumentAiWarehouseLocation_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.documentAiWarehouseLocation.DocumentAiWarehouseLocation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/documentaiwarehouselocation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/documentaiwarehouselocation"
 
 documentaiwarehouselocation.DocumentAiWarehouseLocation_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ documentaiwarehouselocation.DocumentAiWarehouseLocation_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.documentAiWarehouseLocation.DocumentAiWarehouseLocation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/documentaiwarehouselocation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/documentaiwarehouselocation"
 
 documentaiwarehouselocation.DocumentAiWarehouseLocation_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ documentaiwarehouselocation.DocumentAiWarehouseLocation_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.documentAiWarehouseLocation.DocumentAiWarehouseLocation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/documentaiwarehouselocation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/documentaiwarehouselocation"
 
 documentaiwarehouselocation.DocumentAiWarehouseLocation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -884,7 +884,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.documentAiWarehouseLocation.DocumentAiWarehouseLocationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/documentaiwarehouselocation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/documentaiwarehouselocation"
 
 &documentaiwarehouselocation.DocumentAiWarehouseLocationConfig {
 	Connection: interface{},
@@ -901,7 +901,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/documentaiwarehousel
 	DocumentCreatorDefaultRole: *string,
 	Id: *string,
 	KmsKey: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google.documentAiWarehouseLocation.DocumentAiWarehouseLocationTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v16.documentAiWarehouseLocation.DocumentAiWarehouseLocationTimeouts,
 }
 ```
 
@@ -1121,7 +1121,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.documentAiWarehouseLocation.DocumentAiWarehouseLocationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/documentaiwarehouselocation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/documentaiwarehouselocation"
 
 &documentaiwarehouselocation.DocumentAiWarehouseLocationTimeouts {
 	Create: *string,
@@ -1169,7 +1169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.documentAiWarehouseLocation.DocumentAiWarehouseLocationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/documentaiwarehouselocation"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/documentaiwarehouselocation"
 
 documentaiwarehouselocation.NewDocumentAiWarehouseLocationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DocumentAiWarehouseLocationTimeoutsOutputReference
 ```

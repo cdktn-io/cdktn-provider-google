@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.composerUserWorkloadsSecret.ComposerUserWorkloadsSecret.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/composeruserworkloadssecret"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/composeruserworkloadssecret"
 
 composeruserworkloadssecret.NewComposerUserWorkloadsSecret(scope Construct, id *string, config ComposerUserWorkloadsSecretConfig) ComposerUserWorkloadsSecret
 ```
@@ -426,7 +426,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.composerUserWorkloadsSecret.ComposerUserWorkloadsSecret.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/composeruserworkloadssecret"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/composeruserworkloadssecret"
 
 composeruserworkloadssecret.ComposerUserWorkloadsSecret_IsConstruct(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.composerUserWorkloadsSecret.ComposerUserWorkloadsSecret.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/composeruserworkloadssecret"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/composeruserworkloadssecret"
 
 composeruserworkloadssecret.ComposerUserWorkloadsSecret_IsTerraformElement(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ composeruserworkloadssecret.ComposerUserWorkloadsSecret_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.composerUserWorkloadsSecret.ComposerUserWorkloadsSecret.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/composeruserworkloadssecret"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/composeruserworkloadssecret"
 
 composeruserworkloadssecret.ComposerUserWorkloadsSecret_IsTerraformResource(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ composeruserworkloadssecret.ComposerUserWorkloadsSecret_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.composerUserWorkloadsSecret.ComposerUserWorkloadsSecret.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/composeruserworkloadssecret"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/composeruserworkloadssecret"
 
 composeruserworkloadssecret.ComposerUserWorkloadsSecret_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -869,7 +869,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.composerUserWorkloadsSecret.ComposerUserWorkloadsSecretConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/composeruserworkloadssecret"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/composeruserworkloadssecret"
 
 &composeruserworkloadssecret.ComposerUserWorkloadsSecretConfig {
 	Connection: interface{},
@@ -885,7 +885,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/composeruserworkload
 	Id: *string,
 	Project: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google.composerUserWorkloadsSecret.ComposerUserWorkloadsSecretTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v16.composerUserWorkloadsSecret.ComposerUserWorkloadsSecretTimeouts,
 }
 ```
 
@@ -1086,7 +1086,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.composerUserWorkloadsSecret.ComposerUserWorkloadsSecretTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/composeruserworkloadssecret"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/composeruserworkloadssecret"
 
 &composeruserworkloadssecret.ComposerUserWorkloadsSecretTimeouts {
 	Create: *string,
@@ -1148,7 +1148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.composerUserWorkloadsSecret.ComposerUserWorkloadsSecretTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/composeruserworkloadssecret"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/composeruserworkloadssecret"
 
 composeruserworkloadssecret.NewComposerUserWorkloadsSecretTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComposerUserWorkloadsSecretTimeoutsOutputReference
 ```

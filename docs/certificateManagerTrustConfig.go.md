@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/certificatemanagertrustconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/certificatemanagertrustconfig"
 
 certificatemanagertrustconfig.NewCertificateManagerTrustConfig(scope Construct, id *string, config CertificateManagerTrustConfigConfig) CertificateManagerTrustConfig
 ```
@@ -466,7 +466,7 @@ func ResetTrustStores()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/certificatemanagertrustconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/certificatemanagertrustconfig"
 
 certificatemanagertrustconfig.CertificateManagerTrustConfig_IsConstruct(x interface{}) *bool
 ```
@@ -498,7 +498,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/certificatemanagertrustconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/certificatemanagertrustconfig"
 
 certificatemanagertrustconfig.CertificateManagerTrustConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -512,7 +512,7 @@ certificatemanagertrustconfig.CertificateManagerTrustConfig_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/certificatemanagertrustconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/certificatemanagertrustconfig"
 
 certificatemanagertrustconfig.CertificateManagerTrustConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -526,7 +526,7 @@ certificatemanagertrustconfig.CertificateManagerTrustConfig_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/certificatemanagertrustconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/certificatemanagertrustconfig"
 
 certificatemanagertrustconfig.CertificateManagerTrustConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -997,7 +997,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigAllowlistedCertificates.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/certificatemanagertrustconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/certificatemanagertrustconfig"
 
 &certificatemanagertrustconfig.CertificateManagerTrustConfigAllowlistedCertificates {
 	PemCertificate: *string,
@@ -1033,7 +1033,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/certificatemanagertrustconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/certificatemanagertrustconfig"
 
 &certificatemanagertrustconfig.CertificateManagerTrustConfigConfig {
 	Connection: interface{},
@@ -1050,7 +1050,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/certificatemanagertr
 	Id: *string,
 	Labels: *map[string]*string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google.certificateManagerTrustConfig.CertificateManagerTrustConfigTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v16.certificateManagerTrustConfig.CertificateManagerTrustConfigTimeouts,
 	TrustStores: interface{},
 }
 ```
@@ -1281,7 +1281,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/certificatemanagertrustconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/certificatemanagertrustconfig"
 
 &certificatemanagertrustconfig.CertificateManagerTrustConfigTimeouts {
 	Create: *string,
@@ -1341,7 +1341,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStores.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/certificatemanagertrustconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/certificatemanagertrustconfig"
 
 &certificatemanagertrustconfig.CertificateManagerTrustConfigTrustStores {
 	IntermediateCas: interface{},
@@ -1391,7 +1391,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresIntermediateCas.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/certificatemanagertrustconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/certificatemanagertrustconfig"
 
 &certificatemanagertrustconfig.CertificateManagerTrustConfigTrustStoresIntermediateCas {
 	PemCertificate: *string,
@@ -1427,7 +1427,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresTrustAnchors.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/certificatemanagertrustconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/certificatemanagertrustconfig"
 
 &certificatemanagertrustconfig.CertificateManagerTrustConfigTrustStoresTrustAnchors {
 	PemCertificate: *string,
@@ -1463,7 +1463,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigAllowlistedCertificatesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/certificatemanagertrustconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/certificatemanagertrustconfig"
 
 certificatemanagertrustconfig.NewCertificateManagerTrustConfigAllowlistedCertificatesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CertificateManagerTrustConfigAllowlistedCertificatesList
 ```
@@ -1623,7 +1623,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigAllowlistedCertificatesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/certificatemanagertrustconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/certificatemanagertrustconfig"
 
 certificatemanagertrustconfig.NewCertificateManagerTrustConfigAllowlistedCertificatesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CertificateManagerTrustConfigAllowlistedCertificatesOutputReference
 ```
@@ -1912,7 +1912,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/certificatemanagertrustconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/certificatemanagertrustconfig"
 
 certificatemanagertrustconfig.NewCertificateManagerTrustConfigTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CertificateManagerTrustConfigTimeoutsOutputReference
 ```
@@ -2248,7 +2248,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresIntermediateCasList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/certificatemanagertrustconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/certificatemanagertrustconfig"
 
 certificatemanagertrustconfig.NewCertificateManagerTrustConfigTrustStoresIntermediateCasList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CertificateManagerTrustConfigTrustStoresIntermediateCasList
 ```
@@ -2408,7 +2408,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresIntermediateCasOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/certificatemanagertrustconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/certificatemanagertrustconfig"
 
 certificatemanagertrustconfig.NewCertificateManagerTrustConfigTrustStoresIntermediateCasOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CertificateManagerTrustConfigTrustStoresIntermediateCasOutputReference
 ```
@@ -2704,7 +2704,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/certificatemanagertrustconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/certificatemanagertrustconfig"
 
 certificatemanagertrustconfig.NewCertificateManagerTrustConfigTrustStoresList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CertificateManagerTrustConfigTrustStoresList
 ```
@@ -2864,7 +2864,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/certificatemanagertrustconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/certificatemanagertrustconfig"
 
 certificatemanagertrustconfig.NewCertificateManagerTrustConfigTrustStoresOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CertificateManagerTrustConfigTrustStoresOutputReference
 ```
@@ -3215,7 +3215,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresTrustAnchorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/certificatemanagertrustconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/certificatemanagertrustconfig"
 
 certificatemanagertrustconfig.NewCertificateManagerTrustConfigTrustStoresTrustAnchorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CertificateManagerTrustConfigTrustStoresTrustAnchorsList
 ```
@@ -3375,7 +3375,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.certificateManagerTrustConfig.CertificateManagerTrustConfigTrustStoresTrustAnchorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/certificatemanagertrustconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/certificatemanagertrustconfig"
 
 certificatemanagertrustconfig.NewCertificateManagerTrustConfigTrustStoresTrustAnchorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CertificateManagerTrustConfigTrustStoresTrustAnchorsOutputReference
 ```

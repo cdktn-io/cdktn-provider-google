@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.gkeBackupBackupPlanIamMember.GkeBackupBackupPlanIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/gkebackupbackupplaniammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/gkebackupbackupplaniammember"
 
 gkebackupbackupplaniammember.NewGkeBackupBackupPlanIamMember(scope Construct, id *string, config GkeBackupBackupPlanIamMemberConfig) GkeBackupBackupPlanIamMember
 ```
@@ -419,7 +419,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.gkeBackupBackupPlanIamMember.GkeBackupBackupPlanIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/gkebackupbackupplaniammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/gkebackupbackupplaniammember"
 
 gkebackupbackupplaniammember.GkeBackupBackupPlanIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.gkeBackupBackupPlanIamMember.GkeBackupBackupPlanIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/gkebackupbackupplaniammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/gkebackupbackupplaniammember"
 
 gkebackupbackupplaniammember.GkeBackupBackupPlanIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ gkebackupbackupplaniammember.GkeBackupBackupPlanIamMember_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.gkeBackupBackupPlanIamMember.GkeBackupBackupPlanIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/gkebackupbackupplaniammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/gkebackupbackupplaniammember"
 
 gkebackupbackupplaniammember.GkeBackupBackupPlanIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ gkebackupbackupplaniammember.GkeBackupBackupPlanIamMember_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.gkeBackupBackupPlanIamMember.GkeBackupBackupPlanIamMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/gkebackupbackupplaniammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/gkebackupbackupplaniammember"
 
 gkebackupbackupplaniammember.GkeBackupBackupPlanIamMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -873,7 +873,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.gkeBackupBackupPlanIamMember.GkeBackupBackupPlanIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/gkebackupbackupplaniammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/gkebackupbackupplaniammember"
 
 &gkebackupbackupplaniammember.GkeBackupBackupPlanIamMemberCondition {
 	Expression: *string,
@@ -933,7 +933,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.gkeBackupBackupPlanIamMember.GkeBackupBackupPlanIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/gkebackupbackupplaniammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/gkebackupbackupplaniammember"
 
 &gkebackupbackupplaniammember.GkeBackupBackupPlanIamMemberConfig {
 	Connection: interface{},
@@ -946,7 +946,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/gkebackupbackupplani
 	Member: *string,
 	Name: *string,
 	Role: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google.gkeBackupBackupPlanIamMember.GkeBackupBackupPlanIamMemberCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v16.gkeBackupBackupPlanIamMember.GkeBackupBackupPlanIamMemberCondition,
 	Id: *string,
 	Location: *string,
 	Project: *string,
@@ -1140,7 +1140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.gkeBackupBackupPlanIamMember.GkeBackupBackupPlanIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/gkebackupbackupplaniammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/gkebackupbackupplaniammember"
 
 gkebackupbackupplaniammember.NewGkeBackupBackupPlanIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) GkeBackupBackupPlanIamMemberConditionOutputReference
 ```

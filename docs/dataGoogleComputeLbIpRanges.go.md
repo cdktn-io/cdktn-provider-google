@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeLbIpRanges.DataGoogleComputeLbIpRanges.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglecomputelbipranges"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglecomputelbipranges"
 
 datagooglecomputelbipranges.NewDataGoogleComputeLbIpRanges(scope Construct, id *string, config DataGoogleComputeLbIpRangesConfig) DataGoogleComputeLbIpRanges
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleComputeLbIpRanges.DataGoogleComputeLbIpRanges.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglecomputelbipranges"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglecomputelbipranges"
 
 datagooglecomputelbipranges.DataGoogleComputeLbIpRanges_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleComputeLbIpRanges.DataGoogleComputeLbIpRanges.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglecomputelbipranges"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglecomputelbipranges"
 
 datagooglecomputelbipranges.DataGoogleComputeLbIpRanges_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datagooglecomputelbipranges.DataGoogleComputeLbIpRanges_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleComputeLbIpRanges.DataGoogleComputeLbIpRanges.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglecomputelbipranges"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglecomputelbipranges"
 
 datagooglecomputelbipranges.DataGoogleComputeLbIpRanges_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datagooglecomputelbipranges.DataGoogleComputeLbIpRanges_IsTerraformDataSource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleComputeLbIpRanges.DataGoogleComputeLbIpRanges.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglecomputelbipranges"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglecomputelbipranges"
 
 datagooglecomputelbipranges.DataGoogleComputeLbIpRanges_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -594,7 +594,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeLbIpRanges.DataGoogleComputeLbIpRangesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglecomputelbipranges"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglecomputelbipranges"
 
 &datagooglecomputelbipranges.DataGoogleComputeLbIpRangesConfig {
 	Connection: interface{},

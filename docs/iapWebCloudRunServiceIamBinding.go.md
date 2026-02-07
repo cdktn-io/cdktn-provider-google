@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iapWebCloudRunServiceIamBinding.IapWebCloudRunServiceIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/iapwebcloudrunserviceiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/iapwebcloudrunserviceiambinding"
 
 iapwebcloudrunserviceiambinding.NewIapWebCloudRunServiceIamBinding(scope Construct, id *string, config IapWebCloudRunServiceIamBindingConfig) IapWebCloudRunServiceIamBinding
 ```
@@ -419,7 +419,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.iapWebCloudRunServiceIamBinding.IapWebCloudRunServiceIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/iapwebcloudrunserviceiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/iapwebcloudrunserviceiambinding"
 
 iapwebcloudrunserviceiambinding.IapWebCloudRunServiceIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.iapWebCloudRunServiceIamBinding.IapWebCloudRunServiceIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/iapwebcloudrunserviceiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/iapwebcloudrunserviceiambinding"
 
 iapwebcloudrunserviceiambinding.IapWebCloudRunServiceIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ iapwebcloudrunserviceiambinding.IapWebCloudRunServiceIamBinding_IsTerraformEleme
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.iapWebCloudRunServiceIamBinding.IapWebCloudRunServiceIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/iapwebcloudrunserviceiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/iapwebcloudrunserviceiambinding"
 
 iapwebcloudrunserviceiambinding.IapWebCloudRunServiceIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ iapwebcloudrunserviceiambinding.IapWebCloudRunServiceIamBinding_IsTerraformResou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.iapWebCloudRunServiceIamBinding.IapWebCloudRunServiceIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/iapwebcloudrunserviceiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/iapwebcloudrunserviceiambinding"
 
 iapwebcloudrunserviceiambinding.IapWebCloudRunServiceIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -873,7 +873,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.iapWebCloudRunServiceIamBinding.IapWebCloudRunServiceIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/iapwebcloudrunserviceiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/iapwebcloudrunserviceiambinding"
 
 &iapwebcloudrunserviceiambinding.IapWebCloudRunServiceIamBindingCondition {
 	Expression: *string,
@@ -933,7 +933,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.iapWebCloudRunServiceIamBinding.IapWebCloudRunServiceIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/iapwebcloudrunserviceiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/iapwebcloudrunserviceiambinding"
 
 &iapwebcloudrunserviceiambinding.IapWebCloudRunServiceIamBindingConfig {
 	Connection: interface{},
@@ -946,7 +946,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/iapwebcloudrunservic
 	CloudRunServiceName: *string,
 	Members: *[]*string,
 	Role: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google.iapWebCloudRunServiceIamBinding.IapWebCloudRunServiceIamBindingCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v16.iapWebCloudRunServiceIamBinding.IapWebCloudRunServiceIamBindingCondition,
 	Id: *string,
 	Location: *string,
 	Project: *string,
@@ -1140,7 +1140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iapWebCloudRunServiceIamBinding.IapWebCloudRunServiceIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/iapwebcloudrunserviceiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/iapwebcloudrunserviceiambinding"
 
 iapwebcloudrunserviceiambinding.NewIapWebCloudRunServiceIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IapWebCloudRunServiceIamBindingConditionOutputReference
 ```

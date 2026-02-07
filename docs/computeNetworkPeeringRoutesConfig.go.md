@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeNetworkPeeringRoutesConfig.ComputeNetworkPeeringRoutesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/computenetworkpeeringroutesconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/computenetworkpeeringroutesconfig"
 
 computenetworkpeeringroutesconfig.NewComputeNetworkPeeringRoutesConfig(scope Construct, id *string, config ComputeNetworkPeeringRoutesConfigConfig) ComputeNetworkPeeringRoutesConfig
 ```
@@ -426,7 +426,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computeNetworkPeeringRoutesConfig.ComputeNetworkPeeringRoutesConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/computenetworkpeeringroutesconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/computenetworkpeeringroutesconfig"
 
 computenetworkpeeringroutesconfig.ComputeNetworkPeeringRoutesConfig_IsConstruct(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computeNetworkPeeringRoutesConfig.ComputeNetworkPeeringRoutesConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/computenetworkpeeringroutesconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/computenetworkpeeringroutesconfig"
 
 computenetworkpeeringroutesconfig.ComputeNetworkPeeringRoutesConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ computenetworkpeeringroutesconfig.ComputeNetworkPeeringRoutesConfig_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computeNetworkPeeringRoutesConfig.ComputeNetworkPeeringRoutesConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/computenetworkpeeringroutesconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/computenetworkpeeringroutesconfig"
 
 computenetworkpeeringroutesconfig.ComputeNetworkPeeringRoutesConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ computenetworkpeeringroutesconfig.ComputeNetworkPeeringRoutesConfig_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computeNetworkPeeringRoutesConfig.ComputeNetworkPeeringRoutesConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/computenetworkpeeringroutesconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/computenetworkpeeringroutesconfig"
 
 computenetworkpeeringroutesconfig.ComputeNetworkPeeringRoutesConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -913,7 +913,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeNetworkPeeringRoutesConfig.ComputeNetworkPeeringRoutesConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/computenetworkpeeringroutesconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/computenetworkpeeringroutesconfig"
 
 &computenetworkpeeringroutesconfig.ComputeNetworkPeeringRoutesConfigConfig {
 	Connection: interface{},
@@ -931,7 +931,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/computenetworkpeerin
 	Id: *string,
 	ImportSubnetRoutesWithPublicIp: interface{},
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google.computeNetworkPeeringRoutesConfig.ComputeNetworkPeeringRoutesConfigTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v16.computeNetworkPeeringRoutesConfig.ComputeNetworkPeeringRoutesConfigTimeouts,
 }
 ```
 
@@ -1164,7 +1164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeNetworkPeeringRoutesConfig.ComputeNetworkPeeringRoutesConfigTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/computenetworkpeeringroutesconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/computenetworkpeeringroutesconfig"
 
 &computenetworkpeeringroutesconfig.ComputeNetworkPeeringRoutesConfigTimeouts {
 	Create: *string,
@@ -1226,7 +1226,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeNetworkPeeringRoutesConfig.ComputeNetworkPeeringRoutesConfigTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/computenetworkpeeringroutesconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/computenetworkpeeringroutesconfig"
 
 computenetworkpeeringroutesconfig.NewComputeNetworkPeeringRoutesConfigTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeNetworkPeeringRoutesConfigTimeoutsOutputReference
 ```

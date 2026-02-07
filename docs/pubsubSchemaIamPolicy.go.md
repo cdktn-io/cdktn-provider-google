@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.pubsubSchemaIamPolicy.PubsubSchemaIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/pubsubschemaiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/pubsubschemaiampolicy"
 
 pubsubschemaiampolicy.NewPubsubSchemaIamPolicy(scope Construct, id *string, config PubsubSchemaIamPolicyConfig) PubsubSchemaIamPolicy
 ```
@@ -392,7 +392,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.pubsubSchemaIamPolicy.PubsubSchemaIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/pubsubschemaiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/pubsubschemaiampolicy"
 
 pubsubschemaiampolicy.PubsubSchemaIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.pubsubSchemaIamPolicy.PubsubSchemaIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/pubsubschemaiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/pubsubschemaiampolicy"
 
 pubsubschemaiampolicy.PubsubSchemaIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ pubsubschemaiampolicy.PubsubSchemaIamPolicy_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.pubsubSchemaIamPolicy.PubsubSchemaIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/pubsubschemaiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/pubsubschemaiampolicy"
 
 pubsubschemaiampolicy.PubsubSchemaIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ pubsubschemaiampolicy.PubsubSchemaIamPolicy_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.pubsubSchemaIamPolicy.PubsubSchemaIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/pubsubschemaiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/pubsubschemaiampolicy"
 
 pubsubschemaiampolicy.PubsubSchemaIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -780,7 +780,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.pubsubSchemaIamPolicy.PubsubSchemaIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/pubsubschemaiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/pubsubschemaiampolicy"
 
 &pubsubschemaiampolicy.PubsubSchemaIamPolicyConfig {
 	Connection: interface{},

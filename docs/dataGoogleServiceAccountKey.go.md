@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleServiceAccountKey.DataGoogleServiceAccountKey.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagoogleserviceaccountkey"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogleserviceaccountkey"
 
 datagoogleserviceaccountkey.NewDataGoogleServiceAccountKey(scope Construct, id *string, config DataGoogleServiceAccountKeyConfig) DataGoogleServiceAccountKey
 ```
@@ -297,7 +297,7 @@ func ResetPublicKeyType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleServiceAccountKey.DataGoogleServiceAccountKey.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagoogleserviceaccountkey"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogleserviceaccountkey"
 
 datagoogleserviceaccountkey.DataGoogleServiceAccountKey_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleServiceAccountKey.DataGoogleServiceAccountKey.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagoogleserviceaccountkey"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogleserviceaccountkey"
 
 datagoogleserviceaccountkey.DataGoogleServiceAccountKey_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datagoogleserviceaccountkey.DataGoogleServiceAccountKey_IsTerraformElement(x int
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleServiceAccountKey.DataGoogleServiceAccountKey.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagoogleserviceaccountkey"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogleserviceaccountkey"
 
 datagoogleserviceaccountkey.DataGoogleServiceAccountKey_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ datagoogleserviceaccountkey.DataGoogleServiceAccountKey_IsTerraformDataSource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleServiceAccountKey.DataGoogleServiceAccountKey.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagoogleserviceaccountkey"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogleserviceaccountkey"
 
 datagoogleserviceaccountkey.DataGoogleServiceAccountKey_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -674,7 +674,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleServiceAccountKey.DataGoogleServiceAccountKeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagoogleserviceaccountkey"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogleserviceaccountkey"
 
 &datagoogleserviceaccountkey.DataGoogleServiceAccountKeyConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeStoragePoolIamMember.ComputeStoragePoolIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/computestoragepooliammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/computestoragepooliammember"
 
 computestoragepooliammember.NewComputeStoragePoolIamMember(scope Construct, id *string, config ComputeStoragePoolIamMemberConfig) ComputeStoragePoolIamMember
 ```
@@ -419,7 +419,7 @@ func ResetZone()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computeStoragePoolIamMember.ComputeStoragePoolIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/computestoragepooliammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/computestoragepooliammember"
 
 computestoragepooliammember.ComputeStoragePoolIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computeStoragePoolIamMember.ComputeStoragePoolIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/computestoragepooliammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/computestoragepooliammember"
 
 computestoragepooliammember.ComputeStoragePoolIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ computestoragepooliammember.ComputeStoragePoolIamMember_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computeStoragePoolIamMember.ComputeStoragePoolIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/computestoragepooliammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/computestoragepooliammember"
 
 computestoragepooliammember.ComputeStoragePoolIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ computestoragepooliammember.ComputeStoragePoolIamMember_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computeStoragePoolIamMember.ComputeStoragePoolIamMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/computestoragepooliammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/computestoragepooliammember"
 
 computestoragepooliammember.ComputeStoragePoolIamMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -873,7 +873,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeStoragePoolIamMember.ComputeStoragePoolIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/computestoragepooliammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/computestoragepooliammember"
 
 &computestoragepooliammember.ComputeStoragePoolIamMemberCondition {
 	Expression: *string,
@@ -933,7 +933,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeStoragePoolIamMember.ComputeStoragePoolIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/computestoragepooliammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/computestoragepooliammember"
 
 &computestoragepooliammember.ComputeStoragePoolIamMemberConfig {
 	Connection: interface{},
@@ -946,7 +946,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/computestoragepoolia
 	Member: *string,
 	Name: *string,
 	Role: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google.computeStoragePoolIamMember.ComputeStoragePoolIamMemberCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v16.computeStoragePoolIamMember.ComputeStoragePoolIamMemberCondition,
 	Id: *string,
 	Project: *string,
 	Zone: *string,
@@ -1140,7 +1140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeStoragePoolIamMember.ComputeStoragePoolIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/computestoragepooliammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/computestoragepooliammember"
 
 computestoragepooliammember.NewComputeStoragePoolIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeStoragePoolIamMemberConditionOutputReference
 ```

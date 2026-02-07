@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleKmsAutokeyConfig.DataGoogleKmsAutokeyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglekmsautokeyconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglekmsautokeyconfig"
 
 datagooglekmsautokeyconfig.NewDataGoogleKmsAutokeyConfig(scope Construct, id *string, config DataGoogleKmsAutokeyConfigConfig) DataGoogleKmsAutokeyConfig
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleKmsAutokeyConfig.DataGoogleKmsAutokeyConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglekmsautokeyconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglekmsautokeyconfig"
 
 datagooglekmsautokeyconfig.DataGoogleKmsAutokeyConfig_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleKmsAutokeyConfig.DataGoogleKmsAutokeyConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglekmsautokeyconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglekmsautokeyconfig"
 
 datagooglekmsautokeyconfig.DataGoogleKmsAutokeyConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datagooglekmsautokeyconfig.DataGoogleKmsAutokeyConfig_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleKmsAutokeyConfig.DataGoogleKmsAutokeyConfig.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglekmsautokeyconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglekmsautokeyconfig"
 
 datagooglekmsautokeyconfig.DataGoogleKmsAutokeyConfig_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datagooglekmsautokeyconfig.DataGoogleKmsAutokeyConfig_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleKmsAutokeyConfig.DataGoogleKmsAutokeyConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglekmsautokeyconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglekmsautokeyconfig"
 
 datagooglekmsautokeyconfig.DataGoogleKmsAutokeyConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -616,7 +616,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleKmsAutokeyConfig.DataGoogleKmsAutokeyConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglekmsautokeyconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglekmsautokeyconfig"
 
 &datagooglekmsautokeyconfig.DataGoogleKmsAutokeyConfigConfig {
 	Connection: interface{},

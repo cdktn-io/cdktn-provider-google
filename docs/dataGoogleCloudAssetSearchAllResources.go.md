@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCloudAssetSearchAllResources.DataGoogleCloudAssetSearchAllResources.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglecloudassetsearchallresources"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglecloudassetsearchallresources"
 
 datagooglecloudassetsearchallresources.NewDataGoogleCloudAssetSearchAllResources(scope Construct, id *string, config DataGoogleCloudAssetSearchAllResourcesConfig) DataGoogleCloudAssetSearchAllResources
 ```
@@ -297,7 +297,7 @@ func ResetQuery()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleCloudAssetSearchAllResources.DataGoogleCloudAssetSearchAllResources.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglecloudassetsearchallresources"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglecloudassetsearchallresources"
 
 datagooglecloudassetsearchallresources.DataGoogleCloudAssetSearchAllResources_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleCloudAssetSearchAllResources.DataGoogleCloudAssetSearchAllResources.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglecloudassetsearchallresources"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglecloudassetsearchallresources"
 
 datagooglecloudassetsearchallresources.DataGoogleCloudAssetSearchAllResources_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datagooglecloudassetsearchallresources.DataGoogleCloudAssetSearchAllResources_Is
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleCloudAssetSearchAllResources.DataGoogleCloudAssetSearchAllResources.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglecloudassetsearchallresources"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglecloudassetsearchallresources"
 
 datagooglecloudassetsearchallresources.DataGoogleCloudAssetSearchAllResources_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ datagooglecloudassetsearchallresources.DataGoogleCloudAssetSearchAllResources_Is
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleCloudAssetSearchAllResources.DataGoogleCloudAssetSearchAllResources.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglecloudassetsearchallresources"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglecloudassetsearchallresources"
 
 datagooglecloudassetsearchallresources.DataGoogleCloudAssetSearchAllResources_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -663,7 +663,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleCloudAssetSearchAllResources.DataGoogleCloudAssetSearchAllResourcesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglecloudassetsearchallresources"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglecloudassetsearchallresources"
 
 &datagooglecloudassetsearchallresources.DataGoogleCloudAssetSearchAllResourcesConfig {
 	Connection: interface{},
@@ -824,7 +824,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleCloudAssetSearchAllResources.DataGoogleCloudAssetSearchAllResourcesResults.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglecloudassetsearchallresources"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglecloudassetsearchallresources"
 
 &datagooglecloudassetsearchallresources.DataGoogleCloudAssetSearchAllResourcesResults {
 
@@ -839,7 +839,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglecloudasset
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCloudAssetSearchAllResources.DataGoogleCloudAssetSearchAllResourcesResultsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglecloudassetsearchallresources"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglecloudassetsearchallresources"
 
 datagooglecloudassetsearchallresources.NewDataGoogleCloudAssetSearchAllResourcesResultsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleCloudAssetSearchAllResourcesResultsList
 ```
@@ -988,7 +988,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleCloudAssetSearchAllResources.DataGoogleCloudAssetSearchAllResourcesResultsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglecloudassetsearchallresources"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglecloudassetsearchallresources"
 
 datagooglecloudassetsearchallresources.NewDataGoogleCloudAssetSearchAllResourcesResultsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleCloudAssetSearchAllResourcesResultsOutputReference
 ```

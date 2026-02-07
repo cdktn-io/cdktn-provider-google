@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeBackupBackupPlanIamPolicy.DataGoogleGkeBackupBackupPlanIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglegkebackupbackupplaniampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglegkebackupbackupplaniampolicy"
 
 datagooglegkebackupbackupplaniampolicy.NewDataGoogleGkeBackupBackupPlanIamPolicy(scope Construct, id *string, config DataGoogleGkeBackupBackupPlanIamPolicyConfig) DataGoogleGkeBackupBackupPlanIamPolicy
 ```
@@ -297,7 +297,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleGkeBackupBackupPlanIamPolicy.DataGoogleGkeBackupBackupPlanIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglegkebackupbackupplaniampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglegkebackupbackupplaniampolicy"
 
 datagooglegkebackupbackupplaniampolicy.DataGoogleGkeBackupBackupPlanIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleGkeBackupBackupPlanIamPolicy.DataGoogleGkeBackupBackupPlanIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglegkebackupbackupplaniampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglegkebackupbackupplaniampolicy"
 
 datagooglegkebackupbackupplaniampolicy.DataGoogleGkeBackupBackupPlanIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datagooglegkebackupbackupplaniampolicy.DataGoogleGkeBackupBackupPlanIamPolicy_Is
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleGkeBackupBackupPlanIamPolicy.DataGoogleGkeBackupBackupPlanIamPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglegkebackupbackupplaniampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglegkebackupbackupplaniampolicy"
 
 datagooglegkebackupbackupplaniampolicy.DataGoogleGkeBackupBackupPlanIamPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ datagooglegkebackupbackupplaniampolicy.DataGoogleGkeBackupBackupPlanIamPolicy_Is
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleGkeBackupBackupPlanIamPolicy.DataGoogleGkeBackupBackupPlanIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglegkebackupbackupplaniampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglegkebackupbackupplaniampolicy"
 
 datagooglegkebackupbackupplaniampolicy.DataGoogleGkeBackupBackupPlanIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -674,7 +674,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleGkeBackupBackupPlanIamPolicy.DataGoogleGkeBackupBackupPlanIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglegkebackupbackupplaniampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglegkebackupbackupplaniampolicy"
 
 &datagooglegkebackupbackupplaniampolicy.DataGoogleGkeBackupBackupPlanIamPolicyConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.healthcareFhirStoreIamPolicy.HealthcareFhirStoreIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/healthcarefhirstoreiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/healthcarefhirstoreiampolicy"
 
 healthcarefhirstoreiampolicy.NewHealthcareFhirStoreIamPolicy(scope Construct, id *string, config HealthcareFhirStoreIamPolicyConfig) HealthcareFhirStoreIamPolicy
 ```
@@ -385,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.healthcareFhirStoreIamPolicy.HealthcareFhirStoreIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/healthcarefhirstoreiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/healthcarefhirstoreiampolicy"
 
 healthcarefhirstoreiampolicy.HealthcareFhirStoreIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.healthcareFhirStoreIamPolicy.HealthcareFhirStoreIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/healthcarefhirstoreiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/healthcarefhirstoreiampolicy"
 
 healthcarefhirstoreiampolicy.HealthcareFhirStoreIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ healthcarefhirstoreiampolicy.HealthcareFhirStoreIamPolicy_IsTerraformElement(x i
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.healthcareFhirStoreIamPolicy.HealthcareFhirStoreIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/healthcarefhirstoreiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/healthcarefhirstoreiampolicy"
 
 healthcarefhirstoreiampolicy.HealthcareFhirStoreIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ healthcarefhirstoreiampolicy.HealthcareFhirStoreIamPolicy_IsTerraformResource(x 
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.healthcareFhirStoreIamPolicy.HealthcareFhirStoreIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/healthcarefhirstoreiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/healthcarefhirstoreiampolicy"
 
 healthcarefhirstoreiampolicy.HealthcareFhirStoreIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -751,7 +751,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.healthcareFhirStoreIamPolicy.HealthcareFhirStoreIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/healthcarefhirstoreiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/healthcarefhirstoreiampolicy"
 
 &healthcarefhirstoreiampolicy.HealthcareFhirStoreIamPolicyConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.binaryAuthorizationAttestorIamBinding.BinaryAuthorizationAttestorIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/binaryauthorizationattestoriambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/binaryauthorizationattestoriambinding"
 
 binaryauthorizationattestoriambinding.NewBinaryAuthorizationAttestorIamBinding(scope Construct, id *string, config BinaryAuthorizationAttestorIamBindingConfig) BinaryAuthorizationAttestorIamBinding
 ```
@@ -412,7 +412,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.binaryAuthorizationAttestorIamBinding.BinaryAuthorizationAttestorIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/binaryauthorizationattestoriambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/binaryauthorizationattestoriambinding"
 
 binaryauthorizationattestoriambinding.BinaryAuthorizationAttestorIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.binaryAuthorizationAttestorIamBinding.BinaryAuthorizationAttestorIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/binaryauthorizationattestoriambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/binaryauthorizationattestoriambinding"
 
 binaryauthorizationattestoriambinding.BinaryAuthorizationAttestorIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ binaryauthorizationattestoriambinding.BinaryAuthorizationAttestorIamBinding_IsTe
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.binaryAuthorizationAttestorIamBinding.BinaryAuthorizationAttestorIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/binaryauthorizationattestoriambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/binaryauthorizationattestoriambinding"
 
 binaryauthorizationattestoriambinding.BinaryAuthorizationAttestorIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ binaryauthorizationattestoriambinding.BinaryAuthorizationAttestorIamBinding_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.binaryAuthorizationAttestorIamBinding.BinaryAuthorizationAttestorIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/binaryauthorizationattestoriambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/binaryauthorizationattestoriambinding"
 
 binaryauthorizationattestoriambinding.BinaryAuthorizationAttestorIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -844,7 +844,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.binaryAuthorizationAttestorIamBinding.BinaryAuthorizationAttestorIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/binaryauthorizationattestoriambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/binaryauthorizationattestoriambinding"
 
 &binaryauthorizationattestoriambinding.BinaryAuthorizationAttestorIamBindingCondition {
 	Expression: *string,
@@ -904,7 +904,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.binaryAuthorizationAttestorIamBinding.BinaryAuthorizationAttestorIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/binaryauthorizationattestoriambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/binaryauthorizationattestoriambinding"
 
 &binaryauthorizationattestoriambinding.BinaryAuthorizationAttestorIamBindingConfig {
 	Connection: interface{},
@@ -917,7 +917,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/binaryauthorizationa
 	Attestor: *string,
 	Members: *[]*string,
 	Role: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google.binaryAuthorizationAttestorIamBinding.BinaryAuthorizationAttestorIamBindingCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v16.binaryAuthorizationAttestorIamBinding.BinaryAuthorizationAttestorIamBindingCondition,
 	Id: *string,
 	Project: *string,
 }
@@ -1097,7 +1097,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.binaryAuthorizationAttestorIamBinding.BinaryAuthorizationAttestorIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/binaryauthorizationattestoriambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/binaryauthorizationattestoriambinding"
 
 binaryauthorizationattestoriambinding.NewBinaryAuthorizationAttestorIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BinaryAuthorizationAttestorIamBindingConditionOutputReference
 ```

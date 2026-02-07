@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleGkeHubScopeIamPolicy.DataGoogleGkeHubScopeIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglegkehubscopeiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglegkehubscopeiampolicy"
 
 datagooglegkehubscopeiampolicy.NewDataGoogleGkeHubScopeIamPolicy(scope Construct, id *string, config DataGoogleGkeHubScopeIamPolicyConfig) DataGoogleGkeHubScopeIamPolicy
 ```
@@ -290,7 +290,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleGkeHubScopeIamPolicy.DataGoogleGkeHubScopeIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglegkehubscopeiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglegkehubscopeiampolicy"
 
 datagooglegkehubscopeiampolicy.DataGoogleGkeHubScopeIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleGkeHubScopeIamPolicy.DataGoogleGkeHubScopeIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglegkehubscopeiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglegkehubscopeiampolicy"
 
 datagooglegkehubscopeiampolicy.DataGoogleGkeHubScopeIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datagooglegkehubscopeiampolicy.DataGoogleGkeHubScopeIamPolicy_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleGkeHubScopeIamPolicy.DataGoogleGkeHubScopeIamPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglegkehubscopeiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglegkehubscopeiampolicy"
 
 datagooglegkehubscopeiampolicy.DataGoogleGkeHubScopeIamPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ datagooglegkehubscopeiampolicy.DataGoogleGkeHubScopeIamPolicy_IsTerraformDataSou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleGkeHubScopeIamPolicy.DataGoogleGkeHubScopeIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglegkehubscopeiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglegkehubscopeiampolicy"
 
 datagooglegkehubscopeiampolicy.DataGoogleGkeHubScopeIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -645,7 +645,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleGkeHubScopeIamPolicy.DataGoogleGkeHubScopeIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglegkehubscopeiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglegkehubscopeiampolicy"
 
 &datagooglegkehubscopeiampolicy.DataGoogleGkeHubScopeIamPolicyConfig {
 	Connection: interface{},

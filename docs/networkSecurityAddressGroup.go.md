@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityAddressGroup.NetworkSecurityAddressGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/networksecurityaddressgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/networksecurityaddressgroup"
 
 networksecurityaddressgroup.NewNetworkSecurityAddressGroup(scope Construct, id *string, config NetworkSecurityAddressGroupConfig) NetworkSecurityAddressGroup
 ```
@@ -433,7 +433,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.networkSecurityAddressGroup.NetworkSecurityAddressGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/networksecurityaddressgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/networksecurityaddressgroup"
 
 networksecurityaddressgroup.NetworkSecurityAddressGroup_IsConstruct(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.networkSecurityAddressGroup.NetworkSecurityAddressGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/networksecurityaddressgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/networksecurityaddressgroup"
 
 networksecurityaddressgroup.NetworkSecurityAddressGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ networksecurityaddressgroup.NetworkSecurityAddressGroup_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.networkSecurityAddressGroup.NetworkSecurityAddressGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/networksecurityaddressgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/networksecurityaddressgroup"
 
 networksecurityaddressgroup.NetworkSecurityAddressGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ networksecurityaddressgroup.NetworkSecurityAddressGroup_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.networkSecurityAddressGroup.NetworkSecurityAddressGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/networksecurityaddressgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/networksecurityaddressgroup"
 
 networksecurityaddressgroup.NetworkSecurityAddressGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -986,7 +986,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkSecurityAddressGroup.NetworkSecurityAddressGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/networksecurityaddressgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/networksecurityaddressgroup"
 
 &networksecurityaddressgroup.NetworkSecurityAddressGroupConfig {
 	Connection: interface{},
@@ -1005,7 +1005,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/networksecurityaddre
 	Items: *[]*string,
 	Labels: *map[string]*string,
 	Parent: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google.networkSecurityAddressGroup.NetworkSecurityAddressGroupTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v16.networkSecurityAddressGroup.NetworkSecurityAddressGroupTimeouts,
 }
 ```
 
@@ -1254,7 +1254,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkSecurityAddressGroup.NetworkSecurityAddressGroupTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/networksecurityaddressgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/networksecurityaddressgroup"
 
 &networksecurityaddressgroup.NetworkSecurityAddressGroupTimeouts {
 	Create: *string,
@@ -1316,7 +1316,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkSecurityAddressGroup.NetworkSecurityAddressGroupTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/networksecurityaddressgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/networksecurityaddressgroup"
 
 networksecurityaddressgroup.NewNetworkSecurityAddressGroupTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkSecurityAddressGroupTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGooglePubsubTopicIamPolicy.DataGooglePubsubTopicIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglepubsubtopiciampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglepubsubtopiciampolicy"
 
 datagooglepubsubtopiciampolicy.NewDataGooglePubsubTopicIamPolicy(scope Construct, id *string, config DataGooglePubsubTopicIamPolicyConfig) DataGooglePubsubTopicIamPolicy
 ```
@@ -290,7 +290,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGooglePubsubTopicIamPolicy.DataGooglePubsubTopicIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglepubsubtopiciampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglepubsubtopiciampolicy"
 
 datagooglepubsubtopiciampolicy.DataGooglePubsubTopicIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGooglePubsubTopicIamPolicy.DataGooglePubsubTopicIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglepubsubtopiciampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglepubsubtopiciampolicy"
 
 datagooglepubsubtopiciampolicy.DataGooglePubsubTopicIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datagooglepubsubtopiciampolicy.DataGooglePubsubTopicIamPolicy_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGooglePubsubTopicIamPolicy.DataGooglePubsubTopicIamPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglepubsubtopiciampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglepubsubtopiciampolicy"
 
 datagooglepubsubtopiciampolicy.DataGooglePubsubTopicIamPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ datagooglepubsubtopiciampolicy.DataGooglePubsubTopicIamPolicy_IsTerraformDataSou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGooglePubsubTopicIamPolicy.DataGooglePubsubTopicIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglepubsubtopiciampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglepubsubtopiciampolicy"
 
 datagooglepubsubtopiciampolicy.DataGooglePubsubTopicIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -645,7 +645,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGooglePubsubTopicIamPolicy.DataGooglePubsubTopicIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/datagooglepubsubtopiciampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglepubsubtopiciampolicy"
 
 &datagooglepubsubtopiciampolicy.DataGooglePubsubTopicIamPolicyConfig {
 	Connection: interface{},
