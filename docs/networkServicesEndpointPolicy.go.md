@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesEndpointPolicy.NetworkServicesEndpointPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/networkservicesendpointpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/networkservicesendpointpolicy"
 
 networkservicesendpointpolicy.NewNetworkServicesEndpointPolicy(scope Construct, id *string, config NetworkServicesEndpointPolicyConfig) NetworkServicesEndpointPolicy
 ```
@@ -480,7 +480,7 @@ func ResetTrafficPortSelector()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.networkServicesEndpointPolicy.NetworkServicesEndpointPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/networkservicesendpointpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/networkservicesendpointpolicy"
 
 networkservicesendpointpolicy.NetworkServicesEndpointPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -512,7 +512,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.networkServicesEndpointPolicy.NetworkServicesEndpointPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/networkservicesendpointpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/networkservicesendpointpolicy"
 
 networkservicesendpointpolicy.NetworkServicesEndpointPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -526,7 +526,7 @@ networkservicesendpointpolicy.NetworkServicesEndpointPolicy_IsTerraformElement(x
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.networkServicesEndpointPolicy.NetworkServicesEndpointPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/networkservicesendpointpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/networkservicesendpointpolicy"
 
 networkservicesendpointpolicy.NetworkServicesEndpointPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -540,7 +540,7 @@ networkservicesendpointpolicy.NetworkServicesEndpointPolicy_IsTerraformResource(
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.networkServicesEndpointPolicy.NetworkServicesEndpointPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/networkservicesendpointpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/networkservicesendpointpolicy"
 
 networkservicesendpointpolicy.NetworkServicesEndpointPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1077,7 +1077,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkServicesEndpointPolicy.NetworkServicesEndpointPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/networkservicesendpointpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/networkservicesendpointpolicy"
 
 &networkservicesendpointpolicy.NetworkServicesEndpointPolicyConfig {
 	Connection: interface{},
@@ -1087,7 +1087,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/networkservicese
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	EndpointMatcher: github.com/cdktn-io/cdktn-provider-google-go/google/v16.networkServicesEndpointPolicy.NetworkServicesEndpointPolicyEndpointMatcher,
+	EndpointMatcher: github.com/cdktn-io/cdktn-provider-google-go/google/v17.networkServicesEndpointPolicy.NetworkServicesEndpointPolicyEndpointMatcher,
 	Name: *string,
 	Type: *string,
 	AuthorizationPolicy: *string,
@@ -1097,8 +1097,8 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/networkservicese
 	Labels: *map[string]*string,
 	Project: *string,
 	ServerTlsPolicy: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v16.networkServicesEndpointPolicy.NetworkServicesEndpointPolicyTimeouts,
-	TrafficPortSelector: github.com/cdktn-io/cdktn-provider-google-go/google/v16.networkServicesEndpointPolicy.NetworkServicesEndpointPolicyTrafficPortSelector,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.networkServicesEndpointPolicy.NetworkServicesEndpointPolicyTimeouts,
+	TrafficPortSelector: github.com/cdktn-io/cdktn-provider-google-go/google/v17.networkServicesEndpointPolicy.NetworkServicesEndpointPolicyTrafficPortSelector,
 }
 ```
 
@@ -1377,10 +1377,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkServicesEndpointPolicy.NetworkServicesEndpointPolicyEndpointMatcher.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/networkservicesendpointpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/networkservicesendpointpolicy"
 
 &networkservicesendpointpolicy.NetworkServicesEndpointPolicyEndpointMatcher {
-	MetadataLabelMatcher: github.com/cdktn-io/cdktn-provider-google-go/google/v16.networkServicesEndpointPolicy.NetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcher,
+	MetadataLabelMatcher: github.com/cdktn-io/cdktn-provider-google-go/google/v17.networkServicesEndpointPolicy.NetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcher,
 }
 ```
 
@@ -1411,7 +1411,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkServicesEndpointPolicy.NetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcher.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/networkservicesendpointpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/networkservicesendpointpolicy"
 
 &networkservicesendpointpolicy.NetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcher {
 	MetadataLabelMatchCriteria: *string,
@@ -1461,7 +1461,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkServicesEndpointPolicy.NetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcherMetadataLabels.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/networkservicesendpointpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/networkservicesendpointpolicy"
 
 &networkservicesendpointpolicy.NetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcherMetadataLabels {
 	LabelName: *string,
@@ -1511,7 +1511,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkServicesEndpointPolicy.NetworkServicesEndpointPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/networkservicesendpointpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/networkservicesendpointpolicy"
 
 &networkservicesendpointpolicy.NetworkServicesEndpointPolicyTimeouts {
 	Create: *string,
@@ -1571,7 +1571,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.networkServicesEndpointPolicy.NetworkServicesEndpointPolicyTrafficPortSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/networkservicesendpointpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/networkservicesendpointpolicy"
 
 &networkservicesendpointpolicy.NetworkServicesEndpointPolicyTrafficPortSelector {
 	Ports: *[]*string,
@@ -1609,7 +1609,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesEndpointPolicy.NetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcherMetadataLabelsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/networkservicesendpointpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/networkservicesendpointpolicy"
 
 networkservicesendpointpolicy.NewNetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcherMetadataLabelsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcherMetadataLabelsList
 ```
@@ -1769,7 +1769,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesEndpointPolicy.NetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcherMetadataLabelsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/networkservicesendpointpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/networkservicesendpointpolicy"
 
 networkservicesendpointpolicy.NewNetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcherMetadataLabelsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) NetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcherMetadataLabelsOutputReference
 ```
@@ -2080,7 +2080,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesEndpointPolicy.NetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcherOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/networkservicesendpointpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/networkservicesendpointpolicy"
 
 networkservicesendpointpolicy.NewNetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcherOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMatcherOutputReference
 ```
@@ -2393,7 +2393,7 @@ func InternalValue() NetworkServicesEndpointPolicyEndpointMatcherMetadataLabelMa
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesEndpointPolicy.NetworkServicesEndpointPolicyEndpointMatcherOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/networkservicesendpointpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/networkservicesendpointpolicy"
 
 networkservicesendpointpolicy.NewNetworkServicesEndpointPolicyEndpointMatcherOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkServicesEndpointPolicyEndpointMatcherOutputReference
 ```
@@ -2677,7 +2677,7 @@ func InternalValue() NetworkServicesEndpointPolicyEndpointMatcher
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesEndpointPolicy.NetworkServicesEndpointPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/networkservicesendpointpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/networkservicesendpointpolicy"
 
 networkservicesendpointpolicy.NewNetworkServicesEndpointPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkServicesEndpointPolicyTimeoutsOutputReference
 ```
@@ -3013,7 +3013,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.networkServicesEndpointPolicy.NetworkServicesEndpointPolicyTrafficPortSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/networkservicesendpointpolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/networkservicesendpointpolicy"
 
 networkservicesendpointpolicy.NewNetworkServicesEndpointPolicyTrafficPortSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetworkServicesEndpointPolicyTrafficPortSelectorOutputReference
 ```

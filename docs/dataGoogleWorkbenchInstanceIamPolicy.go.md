@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleWorkbenchInstanceIamPolicy.DataGoogleWorkbenchInstanceIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogleworkbenchinstanceiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogleworkbenchinstanceiampolicy"
 
 datagoogleworkbenchinstanceiampolicy.NewDataGoogleWorkbenchInstanceIamPolicy(scope Construct, id *string, config DataGoogleWorkbenchInstanceIamPolicyConfig) DataGoogleWorkbenchInstanceIamPolicy
 ```
@@ -297,7 +297,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleWorkbenchInstanceIamPolicy.DataGoogleWorkbenchInstanceIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogleworkbenchinstanceiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogleworkbenchinstanceiampolicy"
 
 datagoogleworkbenchinstanceiampolicy.DataGoogleWorkbenchInstanceIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleWorkbenchInstanceIamPolicy.DataGoogleWorkbenchInstanceIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogleworkbenchinstanceiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogleworkbenchinstanceiampolicy"
 
 datagoogleworkbenchinstanceiampolicy.DataGoogleWorkbenchInstanceIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datagoogleworkbenchinstanceiampolicy.DataGoogleWorkbenchInstanceIamPolicy_IsTerr
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleWorkbenchInstanceIamPolicy.DataGoogleWorkbenchInstanceIamPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogleworkbenchinstanceiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogleworkbenchinstanceiampolicy"
 
 datagoogleworkbenchinstanceiampolicy.DataGoogleWorkbenchInstanceIamPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ datagoogleworkbenchinstanceiampolicy.DataGoogleWorkbenchInstanceIamPolicy_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleWorkbenchInstanceIamPolicy.DataGoogleWorkbenchInstanceIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogleworkbenchinstanceiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogleworkbenchinstanceiampolicy"
 
 datagoogleworkbenchinstanceiampolicy.DataGoogleWorkbenchInstanceIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -674,7 +674,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleWorkbenchInstanceIamPolicy.DataGoogleWorkbenchInstanceIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogleworkbenchinstanceiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogleworkbenchinstanceiampolicy"
 
 &datagoogleworkbenchinstanceiampolicy.DataGoogleWorkbenchInstanceIamPolicyConfig {
 	Connection: interface{},

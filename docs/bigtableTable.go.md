@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.bigtableTable.BigtableTable.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/bigtabletable"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/bigtabletable"
 
 bigtabletable.NewBigtableTable(scope Construct, id *string, config BigtableTableConfig) BigtableTable
 ```
@@ -480,7 +480,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.bigtableTable.BigtableTable.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/bigtabletable"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/bigtabletable"
 
 bigtabletable.BigtableTable_IsConstruct(x interface{}) *bool
 ```
@@ -512,7 +512,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.bigtableTable.BigtableTable.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/bigtabletable"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/bigtabletable"
 
 bigtabletable.BigtableTable_IsTerraformElement(x interface{}) *bool
 ```
@@ -526,7 +526,7 @@ bigtabletable.BigtableTable_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.bigtableTable.BigtableTable.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/bigtabletable"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/bigtabletable"
 
 bigtabletable.BigtableTable_IsTerraformResource(x interface{}) *bool
 ```
@@ -540,7 +540,7 @@ bigtabletable.BigtableTable_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.bigtableTable.BigtableTable.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/bigtabletable"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/bigtabletable"
 
 bigtabletable.BigtableTable_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1011,7 +1011,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.bigtableTable.BigtableTableAutomatedBackupPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/bigtabletable"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/bigtabletable"
 
 &bigtabletable.BigtableTableAutomatedBackupPolicy {
 	Frequency: *string,
@@ -1061,7 +1061,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.bigtableTable.BigtableTableColumnFamily.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/bigtabletable"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/bigtabletable"
 
 &bigtabletable.BigtableTableColumnFamily {
 	Family: *string,
@@ -1111,7 +1111,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.bigtableTable.BigtableTableConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/bigtabletable"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/bigtabletable"
 
 &bigtabletable.BigtableTableConfig {
 	Connection: interface{},
@@ -1123,7 +1123,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/bigtabletable"
 	Provisioners: *[]interface{},
 	InstanceName: *string,
 	Name: *string,
-	AutomatedBackupPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v16.bigtableTable.BigtableTableAutomatedBackupPolicy,
+	AutomatedBackupPolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v17.bigtableTable.BigtableTableAutomatedBackupPolicy,
 	ChangeStreamRetention: *string,
 	ColumnFamily: interface{},
 	DeletionProtection: *string,
@@ -1131,7 +1131,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/bigtabletable"
 	Project: *string,
 	RowKeySchema: *string,
 	SplitKeys: *[]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v16.bigtableTable.BigtableTableTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.bigtableTable.BigtableTableTimeouts,
 }
 ```
 
@@ -1405,7 +1405,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.bigtableTable.BigtableTableTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/bigtabletable"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/bigtabletable"
 
 &bigtabletable.BigtableTableTimeouts {
 	Create: *string,
@@ -1453,7 +1453,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.bigtableTable.BigtableTableAutomatedBackupPolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/bigtabletable"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/bigtabletable"
 
 bigtabletable.NewBigtableTableAutomatedBackupPolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BigtableTableAutomatedBackupPolicyOutputReference
 ```
@@ -1760,7 +1760,7 @@ func InternalValue() BigtableTableAutomatedBackupPolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.bigtableTable.BigtableTableColumnFamilyList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/bigtabletable"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/bigtabletable"
 
 bigtabletable.NewBigtableTableColumnFamilyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BigtableTableColumnFamilyList
 ```
@@ -1920,7 +1920,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.bigtableTable.BigtableTableColumnFamilyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/bigtabletable"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/bigtabletable"
 
 bigtabletable.NewBigtableTableColumnFamilyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) BigtableTableColumnFamilyOutputReference
 ```
@@ -2238,7 +2238,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.bigtableTable.BigtableTableTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/bigtabletable"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/bigtabletable"
 
 bigtabletable.NewBigtableTableTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BigtableTableTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleLoggingProjectSettings.DataGoogleLoggingProjectSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogleloggingprojectsettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogleloggingprojectsettings"
 
 datagoogleloggingprojectsettings.NewDataGoogleLoggingProjectSettings(scope Construct, id *string, config DataGoogleLoggingProjectSettingsConfig) DataGoogleLoggingProjectSettings
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleLoggingProjectSettings.DataGoogleLoggingProjectSettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogleloggingprojectsettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogleloggingprojectsettings"
 
 datagoogleloggingprojectsettings.DataGoogleLoggingProjectSettings_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleLoggingProjectSettings.DataGoogleLoggingProjectSettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogleloggingprojectsettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogleloggingprojectsettings"
 
 datagoogleloggingprojectsettings.DataGoogleLoggingProjectSettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datagoogleloggingprojectsettings.DataGoogleLoggingProjectSettings_IsTerraformEle
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleLoggingProjectSettings.DataGoogleLoggingProjectSettings.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogleloggingprojectsettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogleloggingprojectsettings"
 
 datagoogleloggingprojectsettings.DataGoogleLoggingProjectSettings_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datagoogleloggingprojectsettings.DataGoogleLoggingProjectSettings_IsTerraformDat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleLoggingProjectSettings.DataGoogleLoggingProjectSettings.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogleloggingprojectsettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogleloggingprojectsettings"
 
 datagoogleloggingprojectsettings.DataGoogleLoggingProjectSettings_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -660,7 +660,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleLoggingProjectSettings.DataGoogleLoggingProjectSettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogleloggingprojectsettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogleloggingprojectsettings"
 
 &datagoogleloggingprojectsettings.DataGoogleLoggingProjectSettingsConfig {
 	Connection: interface{},

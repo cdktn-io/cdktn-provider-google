@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.sccEventThreatDetectionCustomModule.SccEventThreatDetectionCustomModule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/scceventthreatdetectioncustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/scceventthreatdetectioncustommodule"
 
 scceventthreatdetectioncustommodule.NewSccEventThreatDetectionCustomModule(scope Construct, id *string, config SccEventThreatDetectionCustomModuleConfig) SccEventThreatDetectionCustomModule
 ```
@@ -412,7 +412,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.sccEventThreatDetectionCustomModule.SccEventThreatDetectionCustomModule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/scceventthreatdetectioncustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/scceventthreatdetectioncustommodule"
 
 scceventthreatdetectioncustommodule.SccEventThreatDetectionCustomModule_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.sccEventThreatDetectionCustomModule.SccEventThreatDetectionCustomModule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/scceventthreatdetectioncustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/scceventthreatdetectioncustommodule"
 
 scceventthreatdetectioncustommodule.SccEventThreatDetectionCustomModule_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ scceventthreatdetectioncustommodule.SccEventThreatDetectionCustomModule_IsTerraf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.sccEventThreatDetectionCustomModule.SccEventThreatDetectionCustomModule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/scceventthreatdetectioncustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/scceventthreatdetectioncustommodule"
 
 scceventthreatdetectioncustommodule.SccEventThreatDetectionCustomModule_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ scceventthreatdetectioncustommodule.SccEventThreatDetectionCustomModule_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.sccEventThreatDetectionCustomModule.SccEventThreatDetectionCustomModule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/scceventthreatdetectioncustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/scceventthreatdetectioncustommodule"
 
 scceventthreatdetectioncustommodule.SccEventThreatDetectionCustomModule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -888,7 +888,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.sccEventThreatDetectionCustomModule.SccEventThreatDetectionCustomModuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/scceventthreatdetectioncustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/scceventthreatdetectioncustommodule"
 
 &scceventthreatdetectioncustommodule.SccEventThreatDetectionCustomModuleConfig {
 	Connection: interface{},
@@ -904,7 +904,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/scceventthreatde
 	Type: *string,
 	DisplayName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v16.sccEventThreatDetectionCustomModule.SccEventThreatDetectionCustomModuleTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.sccEventThreatDetectionCustomModule.SccEventThreatDetectionCustomModuleTimeouts,
 }
 ```
 
@@ -1106,7 +1106,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.sccEventThreatDetectionCustomModule.SccEventThreatDetectionCustomModuleTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/scceventthreatdetectioncustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/scceventthreatdetectioncustommodule"
 
 &scceventthreatdetectioncustommodule.SccEventThreatDetectionCustomModuleTimeouts {
 	Create: *string,
@@ -1168,7 +1168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.sccEventThreatDetectionCustomModule.SccEventThreatDetectionCustomModuleTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/scceventthreatdetectioncustommodule"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/scceventthreatdetectioncustommodule"
 
 scceventthreatdetectioncustommodule.NewSccEventThreatDetectionCustomModuleTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SccEventThreatDetectionCustomModuleTimeoutsOutputReference
 ```

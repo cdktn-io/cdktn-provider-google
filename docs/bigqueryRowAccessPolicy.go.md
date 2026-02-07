@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.bigqueryRowAccessPolicy.BigqueryRowAccessPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/bigqueryrowaccesspolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/bigqueryrowaccesspolicy"
 
 bigqueryrowaccesspolicy.NewBigqueryRowAccessPolicy(scope Construct, id *string, config BigqueryRowAccessPolicyConfig) BigqueryRowAccessPolicy
 ```
@@ -419,7 +419,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.bigqueryRowAccessPolicy.BigqueryRowAccessPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/bigqueryrowaccesspolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/bigqueryrowaccesspolicy"
 
 bigqueryrowaccesspolicy.BigqueryRowAccessPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.bigqueryRowAccessPolicy.BigqueryRowAccessPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/bigqueryrowaccesspolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/bigqueryrowaccesspolicy"
 
 bigqueryrowaccesspolicy.BigqueryRowAccessPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ bigqueryrowaccesspolicy.BigqueryRowAccessPolicy_IsTerraformElement(x interface{}
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.bigqueryRowAccessPolicy.BigqueryRowAccessPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/bigqueryrowaccesspolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/bigqueryrowaccesspolicy"
 
 bigqueryrowaccesspolicy.BigqueryRowAccessPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ bigqueryrowaccesspolicy.BigqueryRowAccessPolicy_IsTerraformResource(x interface{
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.bigqueryRowAccessPolicy.BigqueryRowAccessPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/bigqueryrowaccesspolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/bigqueryrowaccesspolicy"
 
 bigqueryrowaccesspolicy.BigqueryRowAccessPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -906,7 +906,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.bigqueryRowAccessPolicy.BigqueryRowAccessPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/bigqueryrowaccesspolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/bigqueryrowaccesspolicy"
 
 &bigqueryrowaccesspolicy.BigqueryRowAccessPolicyConfig {
 	Connection: interface{},
@@ -923,7 +923,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/bigqueryrowacces
 	Grantees: *[]*string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v16.bigqueryRowAccessPolicy.BigqueryRowAccessPolicyTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.bigqueryRowAccessPolicy.BigqueryRowAccessPolicyTimeouts,
 }
 ```
 
@@ -1171,7 +1171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.bigqueryRowAccessPolicy.BigqueryRowAccessPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/bigqueryrowaccesspolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/bigqueryrowaccesspolicy"
 
 &bigqueryrowaccesspolicy.BigqueryRowAccessPolicyTimeouts {
 	Create: *string,
@@ -1233,7 +1233,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.bigqueryRowAccessPolicy.BigqueryRowAccessPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/bigqueryrowaccesspolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/bigqueryrowaccesspolicy"
 
 bigqueryrowaccesspolicy.NewBigqueryRowAccessPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) BigqueryRowAccessPolicyTimeoutsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.netappBackupPolicy.NetappBackupPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/netappbackuppolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/netappbackuppolicy"
 
 netappbackuppolicy.NewNetappBackupPolicy(scope Construct, id *string, config NetappBackupPolicyConfig) NetappBackupPolicy
 ```
@@ -433,7 +433,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.netappBackupPolicy.NetappBackupPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/netappbackuppolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/netappbackuppolicy"
 
 netappbackuppolicy.NetappBackupPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.netappBackupPolicy.NetappBackupPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/netappbackuppolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/netappbackuppolicy"
 
 netappbackuppolicy.NetappBackupPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ netappbackuppolicy.NetappBackupPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.netappBackupPolicy.NetappBackupPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/netappbackuppolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/netappbackuppolicy"
 
 netappbackuppolicy.NetappBackupPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ netappbackuppolicy.NetappBackupPolicy_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.netappBackupPolicy.NetappBackupPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/netappbackuppolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/netappbackuppolicy"
 
 netappbackuppolicy.NetappBackupPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1019,7 +1019,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.netappBackupPolicy.NetappBackupPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/netappbackuppolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/netappbackuppolicy"
 
 &netappbackuppolicy.NetappBackupPolicyConfig {
 	Connection: interface{},
@@ -1039,7 +1039,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/netappbackuppoli
 	Id: *string,
 	Labels: *map[string]*string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v16.netappBackupPolicy.NetappBackupPolicyTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.netappBackupPolicy.NetappBackupPolicyTimeouts,
 }
 ```
 
@@ -1305,7 +1305,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.netappBackupPolicy.NetappBackupPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/netappbackuppolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/netappbackuppolicy"
 
 &netappbackuppolicy.NetappBackupPolicyTimeouts {
 	Create: *string,
@@ -1367,7 +1367,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.netappBackupPolicy.NetappBackupPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/netappbackuppolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/netappbackuppolicy"
 
 netappbackuppolicy.NewNetappBackupPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NetappBackupPolicyTimeoutsOutputReference
 ```

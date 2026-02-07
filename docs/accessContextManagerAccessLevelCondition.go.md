@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerAccessLevelCondition.AccessContextManagerAccessLevelCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/accesscontextmanageraccesslevelcondition"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/accesscontextmanageraccesslevelcondition"
 
 accesscontextmanageraccesslevelcondition.NewAccessContextManagerAccessLevelCondition(scope Construct, id *string, config AccessContextManagerAccessLevelConditionConfig) AccessContextManagerAccessLevelCondition
 ```
@@ -480,7 +480,7 @@ func ResetVpcNetworkSources()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.accessContextManagerAccessLevelCondition.AccessContextManagerAccessLevelCondition.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/accesscontextmanageraccesslevelcondition"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/accesscontextmanageraccesslevelcondition"
 
 accesscontextmanageraccesslevelcondition.AccessContextManagerAccessLevelCondition_IsConstruct(x interface{}) *bool
 ```
@@ -512,7 +512,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.accessContextManagerAccessLevelCondition.AccessContextManagerAccessLevelCondition.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/accesscontextmanageraccesslevelcondition"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/accesscontextmanageraccesslevelcondition"
 
 accesscontextmanageraccesslevelcondition.AccessContextManagerAccessLevelCondition_IsTerraformElement(x interface{}) *bool
 ```
@@ -526,7 +526,7 @@ accesscontextmanageraccesslevelcondition.AccessContextManagerAccessLevelConditio
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.accessContextManagerAccessLevelCondition.AccessContextManagerAccessLevelCondition.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/accesscontextmanageraccesslevelcondition"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/accesscontextmanageraccesslevelcondition"
 
 accesscontextmanageraccesslevelcondition.AccessContextManagerAccessLevelCondition_IsTerraformResource(x interface{}) *bool
 ```
@@ -540,7 +540,7 @@ accesscontextmanageraccesslevelcondition.AccessContextManagerAccessLevelConditio
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.accessContextManagerAccessLevelCondition.AccessContextManagerAccessLevelCondition.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/accesscontextmanageraccesslevelcondition"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/accesscontextmanageraccesslevelcondition"
 
 accesscontextmanageraccesslevelcondition.AccessContextManagerAccessLevelCondition_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1000,7 +1000,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.accessContextManagerAccessLevelCondition.AccessContextManagerAccessLevelConditionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/accesscontextmanageraccesslevelcondition"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/accesscontextmanageraccesslevelcondition"
 
 &accesscontextmanageraccesslevelcondition.AccessContextManagerAccessLevelConditionConfig {
 	Connection: interface{},
@@ -1011,14 +1011,14 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/accesscontextman
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	AccessLevel: *string,
-	DevicePolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v16.accessContextManagerAccessLevelCondition.AccessContextManagerAccessLevelConditionDevicePolicy,
+	DevicePolicy: github.com/cdktn-io/cdktn-provider-google-go/google/v17.accessContextManagerAccessLevelCondition.AccessContextManagerAccessLevelConditionDevicePolicy,
 	Id: *string,
 	IpSubnetworks: *[]*string,
 	Members: *[]*string,
 	Negate: interface{},
 	Regions: *[]*string,
 	RequiredAccessLevels: *[]*string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v16.accessContextManagerAccessLevelCondition.AccessContextManagerAccessLevelConditionTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.accessContextManagerAccessLevelCondition.AccessContextManagerAccessLevelConditionTimeouts,
 	VpcNetworkSources: interface{},
 }
 ```
@@ -1289,7 +1289,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.accessContextManagerAccessLevelCondition.AccessContextManagerAccessLevelConditionDevicePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/accesscontextmanageraccesslevelcondition"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/accesscontextmanageraccesslevelcondition"
 
 &accesscontextmanageraccesslevelcondition.AccessContextManagerAccessLevelConditionDevicePolicy {
 	AllowedDeviceManagementLevels: *[]*string,
@@ -1403,7 +1403,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.accessContextManagerAccessLevelCondition.AccessContextManagerAccessLevelConditionDevicePolicyOsConstraints.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/accesscontextmanageraccesslevelcondition"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/accesscontextmanageraccesslevelcondition"
 
 &accesscontextmanageraccesslevelcondition.AccessContextManagerAccessLevelConditionDevicePolicyOsConstraints {
 	OsType: *string,
@@ -1457,7 +1457,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.accessContextManagerAccessLevelCondition.AccessContextManagerAccessLevelConditionTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/accesscontextmanageraccesslevelcondition"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/accesscontextmanageraccesslevelcondition"
 
 &accesscontextmanageraccesslevelcondition.AccessContextManagerAccessLevelConditionTimeouts {
 	Create: *string,
@@ -1503,10 +1503,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.accessContextManagerAccessLevelCondition.AccessContextManagerAccessLevelConditionVpcNetworkSources.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/accesscontextmanageraccesslevelcondition"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/accesscontextmanageraccesslevelcondition"
 
 &accesscontextmanageraccesslevelcondition.AccessContextManagerAccessLevelConditionVpcNetworkSources {
-	VpcSubnetwork: github.com/cdktn-io/cdktn-provider-google-go/google/v16.accessContextManagerAccessLevelCondition.AccessContextManagerAccessLevelConditionVpcNetworkSourcesVpcSubnetwork,
+	VpcSubnetwork: github.com/cdktn-io/cdktn-provider-google-go/google/v17.accessContextManagerAccessLevelCondition.AccessContextManagerAccessLevelConditionVpcNetworkSourcesVpcSubnetwork,
 }
 ```
 
@@ -1537,7 +1537,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.accessContextManagerAccessLevelCondition.AccessContextManagerAccessLevelConditionVpcNetworkSourcesVpcSubnetwork.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/accesscontextmanageraccesslevelcondition"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/accesscontextmanageraccesslevelcondition"
 
 &accesscontextmanageraccesslevelcondition.AccessContextManagerAccessLevelConditionVpcNetworkSourcesVpcSubnetwork {
 	Network: *string,
@@ -1591,7 +1591,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerAccessLevelCondition.AccessContextManagerAccessLevelConditionDevicePolicyOsConstraintsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/accesscontextmanageraccesslevelcondition"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/accesscontextmanageraccesslevelcondition"
 
 accesscontextmanageraccesslevelcondition.NewAccessContextManagerAccessLevelConditionDevicePolicyOsConstraintsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessContextManagerAccessLevelConditionDevicePolicyOsConstraintsList
 ```
@@ -1751,7 +1751,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerAccessLevelCondition.AccessContextManagerAccessLevelConditionDevicePolicyOsConstraintsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/accesscontextmanageraccesslevelcondition"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/accesscontextmanageraccesslevelcondition"
 
 accesscontextmanageraccesslevelcondition.NewAccessContextManagerAccessLevelConditionDevicePolicyOsConstraintsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessContextManagerAccessLevelConditionDevicePolicyOsConstraintsOutputReference
 ```
@@ -2069,7 +2069,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerAccessLevelCondition.AccessContextManagerAccessLevelConditionDevicePolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/accesscontextmanageraccesslevelcondition"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/accesscontextmanageraccesslevelcondition"
 
 accesscontextmanageraccesslevelcondition.NewAccessContextManagerAccessLevelConditionDevicePolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccessContextManagerAccessLevelConditionDevicePolicyOutputReference
 ```
@@ -2505,7 +2505,7 @@ func InternalValue() AccessContextManagerAccessLevelConditionDevicePolicy
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerAccessLevelCondition.AccessContextManagerAccessLevelConditionTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/accesscontextmanageraccesslevelcondition"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/accesscontextmanageraccesslevelcondition"
 
 accesscontextmanageraccesslevelcondition.NewAccessContextManagerAccessLevelConditionTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccessContextManagerAccessLevelConditionTimeoutsOutputReference
 ```
@@ -2812,7 +2812,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerAccessLevelCondition.AccessContextManagerAccessLevelConditionVpcNetworkSourcesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/accesscontextmanageraccesslevelcondition"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/accesscontextmanageraccesslevelcondition"
 
 accesscontextmanageraccesslevelcondition.NewAccessContextManagerAccessLevelConditionVpcNetworkSourcesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AccessContextManagerAccessLevelConditionVpcNetworkSourcesList
 ```
@@ -2972,7 +2972,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerAccessLevelCondition.AccessContextManagerAccessLevelConditionVpcNetworkSourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/accesscontextmanageraccesslevelcondition"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/accesscontextmanageraccesslevelcondition"
 
 accesscontextmanageraccesslevelcondition.NewAccessContextManagerAccessLevelConditionVpcNetworkSourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AccessContextManagerAccessLevelConditionVpcNetworkSourcesOutputReference
 ```
@@ -3281,7 +3281,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.accessContextManagerAccessLevelCondition.AccessContextManagerAccessLevelConditionVpcNetworkSourcesVpcSubnetworkOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/accesscontextmanageraccesslevelcondition"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/accesscontextmanageraccesslevelcondition"
 
 accesscontextmanageraccesslevelcondition.NewAccessContextManagerAccessLevelConditionVpcNetworkSourcesVpcSubnetworkOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccessContextManagerAccessLevelConditionVpcNetworkSourcesVpcSubnetworkOutputReference
 ```

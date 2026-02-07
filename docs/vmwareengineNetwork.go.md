@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetwork.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/vmwareenginenetwork"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/vmwareenginenetwork"
 
 vmwareenginenetwork.NewVmwareengineNetwork(scope Construct, id *string, config VmwareengineNetworkConfig) VmwareengineNetwork
 ```
@@ -419,7 +419,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetwork.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/vmwareenginenetwork"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/vmwareenginenetwork"
 
 vmwareenginenetwork.VmwareengineNetwork_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetwork.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/vmwareenginenetwork"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/vmwareenginenetwork"
 
 vmwareenginenetwork.VmwareengineNetwork_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ vmwareenginenetwork.VmwareengineNetwork_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetwork.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/vmwareenginenetwork"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/vmwareenginenetwork"
 
 vmwareenginenetwork.VmwareengineNetwork_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ vmwareenginenetwork.VmwareengineNetwork_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetwork.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/vmwareenginenetwork"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/vmwareenginenetwork"
 
 vmwareenginenetwork.VmwareengineNetwork_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -895,7 +895,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetworkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/vmwareenginenetwork"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/vmwareenginenetwork"
 
 &vmwareenginenetwork.VmwareengineNetworkConfig {
 	Connection: interface{},
@@ -911,7 +911,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/vmwareenginenetw
 	Description: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v16.vmwareengineNetwork.VmwareengineNetworkTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.vmwareengineNetwork.VmwareengineNetworkTimeouts,
 }
 ```
 
@@ -1108,7 +1108,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetworkTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/vmwareenginenetwork"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/vmwareenginenetwork"
 
 &vmwareenginenetwork.VmwareengineNetworkTimeouts {
 	Create: *string,
@@ -1168,7 +1168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetworkVpcNetworks.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/vmwareenginenetwork"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/vmwareenginenetwork"
 
 &vmwareenginenetwork.VmwareengineNetworkVpcNetworks {
 
@@ -1183,7 +1183,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/vmwareenginenetw
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetworkTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/vmwareenginenetwork"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/vmwareenginenetwork"
 
 vmwareenginenetwork.NewVmwareengineNetworkTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VmwareengineNetworkTimeoutsOutputReference
 ```
@@ -1519,7 +1519,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetworkVpcNetworksList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/vmwareenginenetwork"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/vmwareenginenetwork"
 
 vmwareenginenetwork.NewVmwareengineNetworkVpcNetworksList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VmwareengineNetworkVpcNetworksList
 ```
@@ -1668,7 +1668,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.vmwareengineNetwork.VmwareengineNetworkVpcNetworksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/vmwareenginenetwork"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/vmwareenginenetwork"
 
 vmwareenginenetwork.NewVmwareengineNetworkVpcNetworksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VmwareengineNetworkVpcNetworksOutputReference
 ```

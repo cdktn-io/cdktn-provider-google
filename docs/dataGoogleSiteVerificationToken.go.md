@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleSiteVerificationToken.DataGoogleSiteVerificationToken.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglesiteverificationtoken"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglesiteverificationtoken"
 
 datagooglesiteverificationtoken.NewDataGoogleSiteVerificationToken(scope Construct, id *string, config DataGoogleSiteVerificationTokenConfig) DataGoogleSiteVerificationToken
 ```
@@ -303,7 +303,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleSiteVerificationToken.DataGoogleSiteVerificationToken.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglesiteverificationtoken"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglesiteverificationtoken"
 
 datagooglesiteverificationtoken.DataGoogleSiteVerificationToken_IsConstruct(x interface{}) *bool
 ```
@@ -335,7 +335,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleSiteVerificationToken.DataGoogleSiteVerificationToken.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglesiteverificationtoken"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglesiteverificationtoken"
 
 datagooglesiteverificationtoken.DataGoogleSiteVerificationToken_IsTerraformElement(x interface{}) *bool
 ```
@@ -349,7 +349,7 @@ datagooglesiteverificationtoken.DataGoogleSiteVerificationToken_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleSiteVerificationToken.DataGoogleSiteVerificationToken.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglesiteverificationtoken"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglesiteverificationtoken"
 
 datagooglesiteverificationtoken.DataGoogleSiteVerificationToken_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -363,7 +363,7 @@ datagooglesiteverificationtoken.DataGoogleSiteVerificationToken_IsTerraformDataS
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleSiteVerificationToken.DataGoogleSiteVerificationToken.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglesiteverificationtoken"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglesiteverificationtoken"
 
 datagooglesiteverificationtoken.DataGoogleSiteVerificationToken_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -691,7 +691,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleSiteVerificationToken.DataGoogleSiteVerificationTokenConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglesiteverificationtoken"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglesiteverificationtoken"
 
 &datagooglesiteverificationtoken.DataGoogleSiteVerificationTokenConfig {
 	Connection: interface{},
@@ -705,7 +705,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglesiteve
 	Type: *string,
 	VerificationMethod: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v16.dataGoogleSiteVerificationToken.DataGoogleSiteVerificationTokenTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dataGoogleSiteVerificationToken.DataGoogleSiteVerificationTokenTimeouts,
 }
 ```
 
@@ -879,7 +879,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleSiteVerificationToken.DataGoogleSiteVerificationTokenTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglesiteverificationtoken"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglesiteverificationtoken"
 
 &datagooglesiteverificationtoken.DataGoogleSiteVerificationTokenTimeouts {
 	Read: *string,
@@ -913,7 +913,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleSiteVerificationToken.DataGoogleSiteVerificationTokenTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglesiteverificationtoken"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglesiteverificationtoken"
 
 datagooglesiteverificationtoken.NewDataGoogleSiteVerificationTokenTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataGoogleSiteVerificationTokenTimeoutsOutputReference
 ```
