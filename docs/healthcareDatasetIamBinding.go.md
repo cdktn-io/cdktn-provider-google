@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.healthcareDatasetIamBinding.HealthcareDatasetIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/healthcaredatasetiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/healthcaredatasetiambinding"
 
 healthcaredatasetiambinding.NewHealthcareDatasetIamBinding(scope Construct, id *string, config HealthcareDatasetIamBindingConfig) HealthcareDatasetIamBinding
 ```
@@ -405,7 +405,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.healthcareDatasetIamBinding.HealthcareDatasetIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/healthcaredatasetiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/healthcaredatasetiambinding"
 
 healthcaredatasetiambinding.HealthcareDatasetIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.healthcareDatasetIamBinding.HealthcareDatasetIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/healthcaredatasetiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/healthcaredatasetiambinding"
 
 healthcaredatasetiambinding.HealthcareDatasetIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ healthcaredatasetiambinding.HealthcareDatasetIamBinding_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.healthcareDatasetIamBinding.HealthcareDatasetIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/healthcaredatasetiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/healthcaredatasetiambinding"
 
 healthcaredatasetiambinding.HealthcareDatasetIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ healthcaredatasetiambinding.HealthcareDatasetIamBinding_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.healthcareDatasetIamBinding.HealthcareDatasetIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/healthcaredatasetiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/healthcaredatasetiambinding"
 
 healthcaredatasetiambinding.HealthcareDatasetIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -815,7 +815,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.healthcareDatasetIamBinding.HealthcareDatasetIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/healthcaredatasetiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/healthcaredatasetiambinding"
 
 &healthcaredatasetiambinding.HealthcareDatasetIamBindingCondition {
 	Expression: *string,
@@ -875,7 +875,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.healthcareDatasetIamBinding.HealthcareDatasetIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/healthcaredatasetiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/healthcaredatasetiambinding"
 
 &healthcaredatasetiambinding.HealthcareDatasetIamBindingConfig {
 	Connection: interface{},
@@ -888,7 +888,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/healthcaredatase
 	DatasetId: *string,
 	Members: *[]*string,
 	Role: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v16.healthcareDatasetIamBinding.HealthcareDatasetIamBindingCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v17.healthcareDatasetIamBinding.HealthcareDatasetIamBindingCondition,
 	Id: *string,
 }
 ```
@@ -1054,7 +1054,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.healthcareDatasetIamBinding.HealthcareDatasetIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/healthcaredatasetiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/healthcaredatasetiambinding"
 
 healthcaredatasetiambinding.NewHealthcareDatasetIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) HealthcareDatasetIamBindingConditionOutputReference
 ```

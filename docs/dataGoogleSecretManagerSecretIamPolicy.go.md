@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleSecretManagerSecretIamPolicy.DataGoogleSecretManagerSecretIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglesecretmanagersecretiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglesecretmanagersecretiampolicy"
 
 datagooglesecretmanagersecretiampolicy.NewDataGoogleSecretManagerSecretIamPolicy(scope Construct, id *string, config DataGoogleSecretManagerSecretIamPolicyConfig) DataGoogleSecretManagerSecretIamPolicy
 ```
@@ -290,7 +290,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleSecretManagerSecretIamPolicy.DataGoogleSecretManagerSecretIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglesecretmanagersecretiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglesecretmanagersecretiampolicy"
 
 datagooglesecretmanagersecretiampolicy.DataGoogleSecretManagerSecretIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleSecretManagerSecretIamPolicy.DataGoogleSecretManagerSecretIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglesecretmanagersecretiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglesecretmanagersecretiampolicy"
 
 datagooglesecretmanagersecretiampolicy.DataGoogleSecretManagerSecretIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datagooglesecretmanagersecretiampolicy.DataGoogleSecretManagerSecretIamPolicy_Is
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleSecretManagerSecretIamPolicy.DataGoogleSecretManagerSecretIamPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglesecretmanagersecretiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglesecretmanagersecretiampolicy"
 
 datagooglesecretmanagersecretiampolicy.DataGoogleSecretManagerSecretIamPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ datagooglesecretmanagersecretiampolicy.DataGoogleSecretManagerSecretIamPolicy_Is
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleSecretManagerSecretIamPolicy.DataGoogleSecretManagerSecretIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglesecretmanagersecretiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglesecretmanagersecretiampolicy"
 
 datagooglesecretmanagersecretiampolicy.DataGoogleSecretManagerSecretIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -645,7 +645,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleSecretManagerSecretIamPolicy.DataGoogleSecretManagerSecretIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglesecretmanagersecretiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglesecretmanagersecretiampolicy"
 
 &datagooglesecretmanagersecretiampolicy.DataGoogleSecretManagerSecretIamPolicyConfig {
 	Connection: interface{},

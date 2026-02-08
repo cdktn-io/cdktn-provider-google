@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.beyondcorpSecurityGatewayApplicationIamPolicy.BeyondcorpSecurityGatewayApplicationIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/beyondcorpsecuritygatewayapplicationiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/beyondcorpsecuritygatewayapplicationiampolicy"
 
 beyondcorpsecuritygatewayapplicationiampolicy.NewBeyondcorpSecurityGatewayApplicationIamPolicy(scope Construct, id *string, config BeyondcorpSecurityGatewayApplicationIamPolicyConfig) BeyondcorpSecurityGatewayApplicationIamPolicy
 ```
@@ -392,7 +392,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.beyondcorpSecurityGatewayApplicationIamPolicy.BeyondcorpSecurityGatewayApplicationIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/beyondcorpsecuritygatewayapplicationiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/beyondcorpsecuritygatewayapplicationiampolicy"
 
 beyondcorpsecuritygatewayapplicationiampolicy.BeyondcorpSecurityGatewayApplicationIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.beyondcorpSecurityGatewayApplicationIamPolicy.BeyondcorpSecurityGatewayApplicationIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/beyondcorpsecuritygatewayapplicationiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/beyondcorpsecuritygatewayapplicationiampolicy"
 
 beyondcorpsecuritygatewayapplicationiampolicy.BeyondcorpSecurityGatewayApplicationIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ beyondcorpsecuritygatewayapplicationiampolicy.BeyondcorpSecurityGatewayApplicati
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.beyondcorpSecurityGatewayApplicationIamPolicy.BeyondcorpSecurityGatewayApplicationIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/beyondcorpsecuritygatewayapplicationiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/beyondcorpsecuritygatewayapplicationiampolicy"
 
 beyondcorpsecuritygatewayapplicationiampolicy.BeyondcorpSecurityGatewayApplicationIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ beyondcorpsecuritygatewayapplicationiampolicy.BeyondcorpSecurityGatewayApplicati
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.beyondcorpSecurityGatewayApplicationIamPolicy.BeyondcorpSecurityGatewayApplicationIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/beyondcorpsecuritygatewayapplicationiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/beyondcorpsecuritygatewayapplicationiampolicy"
 
 beyondcorpsecuritygatewayapplicationiampolicy.BeyondcorpSecurityGatewayApplicationIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -802,7 +802,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.beyondcorpSecurityGatewayApplicationIamPolicy.BeyondcorpSecurityGatewayApplicationIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/beyondcorpsecuritygatewayapplicationiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/beyondcorpsecuritygatewayapplicationiampolicy"
 
 &beyondcorpsecuritygatewayapplicationiampolicy.BeyondcorpSecurityGatewayApplicationIamPolicyConfig {
 	Connection: interface{},

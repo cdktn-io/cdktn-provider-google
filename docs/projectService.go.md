@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.projectService.ProjectService.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/projectservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/projectservice"
 
 projectservice.NewProjectService(scope Construct, id *string, config ProjectServiceConfig) ProjectService
 ```
@@ -426,7 +426,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.projectService.ProjectService.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/projectservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/projectservice"
 
 projectservice.ProjectService_IsConstruct(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.projectService.ProjectService.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/projectservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/projectservice"
 
 projectservice.ProjectService_IsTerraformElement(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ projectservice.ProjectService_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.projectService.ProjectService.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/projectservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/projectservice"
 
 projectservice.ProjectService_IsTerraformResource(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ projectservice.ProjectService_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.projectService.ProjectService.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/projectservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/projectservice"
 
 projectservice.ProjectService_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -847,7 +847,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.projectService.ProjectServiceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/projectservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/projectservice"
 
 &projectservice.ProjectServiceConfig {
 	Connection: interface{},
@@ -862,7 +862,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/projectservice"
 	DisableOnDestroy: interface{},
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v16.projectService.ProjectServiceTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.projectService.ProjectServiceTimeouts,
 }
 ```
 
@@ -1038,7 +1038,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.projectService.ProjectServiceTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/projectservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/projectservice"
 
 &projectservice.ProjectServiceTimeouts {
 	Create: *string,
@@ -1114,7 +1114,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.projectService.ProjectServiceTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/projectservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/projectservice"
 
 projectservice.NewProjectServiceTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ProjectServiceTimeoutsOutputReference
 ```

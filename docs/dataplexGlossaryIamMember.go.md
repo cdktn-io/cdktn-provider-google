@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataplexGlossaryIamMember.DataplexGlossaryIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/dataplexglossaryiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataplexglossaryiammember"
 
 dataplexglossaryiammember.NewDataplexGlossaryIamMember(scope Construct, id *string, config DataplexGlossaryIamMemberConfig) DataplexGlossaryIamMember
 ```
@@ -419,7 +419,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataplexGlossaryIamMember.DataplexGlossaryIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/dataplexglossaryiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataplexglossaryiammember"
 
 dataplexglossaryiammember.DataplexGlossaryIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataplexGlossaryIamMember.DataplexGlossaryIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/dataplexglossaryiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataplexglossaryiammember"
 
 dataplexglossaryiammember.DataplexGlossaryIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ dataplexglossaryiammember.DataplexGlossaryIamMember_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.dataplexGlossaryIamMember.DataplexGlossaryIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/dataplexglossaryiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataplexglossaryiammember"
 
 dataplexglossaryiammember.DataplexGlossaryIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ dataplexglossaryiammember.DataplexGlossaryIamMember_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataplexGlossaryIamMember.DataplexGlossaryIamMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/dataplexglossaryiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataplexglossaryiammember"
 
 dataplexglossaryiammember.DataplexGlossaryIamMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -873,7 +873,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataplexGlossaryIamMember.DataplexGlossaryIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/dataplexglossaryiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataplexglossaryiammember"
 
 &dataplexglossaryiammember.DataplexGlossaryIamMemberCondition {
 	Expression: *string,
@@ -933,7 +933,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataplexGlossaryIamMember.DataplexGlossaryIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/dataplexglossaryiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataplexglossaryiammember"
 
 &dataplexglossaryiammember.DataplexGlossaryIamMemberConfig {
 	Connection: interface{},
@@ -946,7 +946,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/dataplexglossary
 	GlossaryId: *string,
 	Member: *string,
 	Role: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v16.dataplexGlossaryIamMember.DataplexGlossaryIamMemberCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v17.dataplexGlossaryIamMember.DataplexGlossaryIamMemberCondition,
 	Id: *string,
 	Location: *string,
 	Project: *string,
@@ -1140,7 +1140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataplexGlossaryIamMember.DataplexGlossaryIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/dataplexglossaryiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/dataplexglossaryiammember"
 
 dataplexglossaryiammember.NewDataplexGlossaryIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataplexGlossaryIamMemberConditionOutputReference
 ```

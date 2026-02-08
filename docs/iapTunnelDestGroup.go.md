@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iapTunnelDestGroup.IapTunnelDestGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/iaptunneldestgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/iaptunneldestgroup"
 
 iaptunneldestgroup.NewIapTunnelDestGroup(scope Construct, id *string, config IapTunnelDestGroupConfig) IapTunnelDestGroup
 ```
@@ -433,7 +433,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.iapTunnelDestGroup.IapTunnelDestGroup.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/iaptunneldestgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/iaptunneldestgroup"
 
 iaptunneldestgroup.IapTunnelDestGroup_IsConstruct(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.iapTunnelDestGroup.IapTunnelDestGroup.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/iaptunneldestgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/iaptunneldestgroup"
 
 iaptunneldestgroup.IapTunnelDestGroup_IsTerraformElement(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ iaptunneldestgroup.IapTunnelDestGroup_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.iapTunnelDestGroup.IapTunnelDestGroup.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/iaptunneldestgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/iaptunneldestgroup"
 
 iaptunneldestgroup.IapTunnelDestGroup_IsTerraformResource(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ iaptunneldestgroup.IapTunnelDestGroup_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.iapTunnelDestGroup.IapTunnelDestGroup.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/iaptunneldestgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/iaptunneldestgroup"
 
 iaptunneldestgroup.IapTunnelDestGroup_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -887,7 +887,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.iapTunnelDestGroup.IapTunnelDestGroupConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/iaptunneldestgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/iaptunneldestgroup"
 
 &iaptunneldestgroup.IapTunnelDestGroupConfig {
 	Connection: interface{},
@@ -903,7 +903,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/iaptunneldestgro
 	Id: *string,
 	Project: *string,
 	Region: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v16.iapTunnelDestGroup.IapTunnelDestGroupTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.iapTunnelDestGroup.IapTunnelDestGroupTimeouts,
 }
 ```
 
@@ -1100,7 +1100,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.iapTunnelDestGroup.IapTunnelDestGroupTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/iaptunneldestgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/iaptunneldestgroup"
 
 &iaptunneldestgroup.IapTunnelDestGroupTimeouts {
 	Create: *string,
@@ -1162,7 +1162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iapTunnelDestGroup.IapTunnelDestGroupTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/iaptunneldestgroup"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/iaptunneldestgroup"
 
 iaptunneldestgroup.NewIapTunnelDestGroupTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IapTunnelDestGroupTimeoutsOutputReference
 ```

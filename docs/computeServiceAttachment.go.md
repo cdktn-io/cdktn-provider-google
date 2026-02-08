@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/computeserviceattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeserviceattachment"
 
 computeserviceattachment.NewComputeServiceAttachment(scope Construct, id *string, config ComputeServiceAttachmentConfig) ComputeServiceAttachment
 ```
@@ -481,7 +481,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachment.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/computeserviceattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeserviceattachment"
 
 computeserviceattachment.ComputeServiceAttachment_IsConstruct(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/computeserviceattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeserviceattachment"
 
 computeserviceattachment.ComputeServiceAttachment_IsTerraformElement(x interface{}) *bool
 ```
@@ -527,7 +527,7 @@ computeserviceattachment.ComputeServiceAttachment_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/computeserviceattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeserviceattachment"
 
 computeserviceattachment.ComputeServiceAttachment_IsTerraformResource(x interface{}) *bool
 ```
@@ -541,7 +541,7 @@ computeserviceattachment.ComputeServiceAttachment_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/computeserviceattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeserviceattachment"
 
 computeserviceattachment.ComputeServiceAttachment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1155,7 +1155,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/computeserviceattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeserviceattachment"
 
 &computeserviceattachment.ComputeServiceAttachmentConfig {
 	Connection: interface{},
@@ -1180,7 +1180,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/computeserviceat
 	ReconcileConnections: interface{},
 	Region: *string,
 	SendPropagatedConnectionLimitIfZero: interface{},
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v16.computeServiceAttachment.ComputeServiceAttachmentTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.computeServiceAttachment.ComputeServiceAttachmentTimeouts,
 }
 ```
 
@@ -1537,7 +1537,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentConnectedEndpoints.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/computeserviceattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeserviceattachment"
 
 &computeserviceattachment.ComputeServiceAttachmentConnectedEndpoints {
 
@@ -1550,7 +1550,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/computeserviceat
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentConsumerAcceptLists.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/computeserviceattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeserviceattachment"
 
 &computeserviceattachment.ComputeServiceAttachmentConsumerAcceptLists {
 	ConnectionLimit: *f64,
@@ -1616,7 +1616,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/computeserviceattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeserviceattachment"
 
 &computeserviceattachment.ComputeServiceAttachmentTimeouts {
 	Create: *string,
@@ -1678,7 +1678,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentConnectedEndpointsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/computeserviceattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeserviceattachment"
 
 computeserviceattachment.NewComputeServiceAttachmentConnectedEndpointsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeServiceAttachmentConnectedEndpointsList
 ```
@@ -1827,7 +1827,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentConnectedEndpointsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/computeserviceattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeserviceattachment"
 
 computeserviceattachment.NewComputeServiceAttachmentConnectedEndpointsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeServiceAttachmentConnectedEndpointsOutputReference
 ```
@@ -2149,7 +2149,7 @@ func InternalValue() ComputeServiceAttachmentConnectedEndpoints
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentConsumerAcceptListsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/computeserviceattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeserviceattachment"
 
 computeserviceattachment.NewComputeServiceAttachmentConsumerAcceptListsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeServiceAttachmentConsumerAcceptListsList
 ```
@@ -2309,7 +2309,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentConsumerAcceptListsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/computeserviceattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeserviceattachment"
 
 computeserviceattachment.NewComputeServiceAttachmentConsumerAcceptListsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ComputeServiceAttachmentConsumerAcceptListsOutputReference
 ```
@@ -2656,7 +2656,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeServiceAttachment.ComputeServiceAttachmentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/computeserviceattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computeserviceattachment"
 
 computeserviceattachment.NewComputeServiceAttachmentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeServiceAttachmentTimeoutsOutputReference
 ```

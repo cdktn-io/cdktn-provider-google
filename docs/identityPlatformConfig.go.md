@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.identityPlatformConfig.IdentityPlatformConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/identityplatformconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/identityplatformconfig"
 
 identityplatformconfig.NewIdentityPlatformConfig(scope Construct, id *string, config IdentityPlatformConfigConfig) IdentityPlatformConfig
 ```
@@ -586,7 +586,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.identityPlatformConfig.IdentityPlatformConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/identityplatformconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/identityplatformconfig"
 
 identityplatformconfig.IdentityPlatformConfig_IsConstruct(x interface{}) *bool
 ```
@@ -618,7 +618,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.identityPlatformConfig.IdentityPlatformConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/identityplatformconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/identityplatformconfig"
 
 identityplatformconfig.IdentityPlatformConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -632,7 +632,7 @@ identityplatformconfig.IdentityPlatformConfig_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.identityPlatformConfig.IdentityPlatformConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/identityplatformconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/identityplatformconfig"
 
 identityplatformconfig.IdentityPlatformConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -646,7 +646,7 @@ identityplatformconfig.IdentityPlatformConfig_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.identityPlatformConfig.IdentityPlatformConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/identityplatformconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/identityplatformconfig"
 
 identityplatformconfig.IdentityPlatformConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1172,11 +1172,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.identityPlatformConfig.IdentityPlatformConfigBlockingFunctions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/identityplatformconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/identityplatformconfig"
 
 &identityplatformconfig.IdentityPlatformConfigBlockingFunctions {
 	Triggers: interface{},
-	ForwardInboundCredentials: github.com/cdktn-io/cdktn-provider-google-go/google/v16.identityPlatformConfig.IdentityPlatformConfigBlockingFunctionsForwardInboundCredentials,
+	ForwardInboundCredentials: github.com/cdktn-io/cdktn-provider-google-go/google/v17.identityPlatformConfig.IdentityPlatformConfigBlockingFunctionsForwardInboundCredentials,
 }
 ```
 
@@ -1222,7 +1222,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.identityPlatformConfig.IdentityPlatformConfigBlockingFunctionsForwardInboundCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/identityplatformconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/identityplatformconfig"
 
 &identityplatformconfig.IdentityPlatformConfigBlockingFunctionsForwardInboundCredentials {
 	AccessToken: interface{},
@@ -1288,7 +1288,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.identityPlatformConfig.IdentityPlatformConfigBlockingFunctionsTriggers.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/identityplatformconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/identityplatformconfig"
 
 &identityplatformconfig.IdentityPlatformConfigBlockingFunctionsTriggers {
 	EventType: *string,
@@ -1336,10 +1336,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.identityPlatformConfig.IdentityPlatformConfigClient.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/identityplatformconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/identityplatformconfig"
 
 &identityplatformconfig.IdentityPlatformConfigClient {
-	Permissions: github.com/cdktn-io/cdktn-provider-google-go/google/v16.identityPlatformConfig.IdentityPlatformConfigClientPermissions,
+	Permissions: github.com/cdktn-io/cdktn-provider-google-go/google/v17.identityPlatformConfig.IdentityPlatformConfigClientPermissions,
 }
 ```
 
@@ -1370,7 +1370,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.identityPlatformConfig.IdentityPlatformConfigClientPermissions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/identityplatformconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/identityplatformconfig"
 
 &identityplatformconfig.IdentityPlatformConfigClientPermissions {
 	DisabledUserDeletion: interface{},
@@ -1420,7 +1420,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.identityPlatformConfig.IdentityPlatformConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/identityplatformconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/identityplatformconfig"
 
 &identityplatformconfig.IdentityPlatformConfigConfig {
 	Connection: interface{},
@@ -1432,17 +1432,17 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/identityplatform
 	Provisioners: *[]interface{},
 	AuthorizedDomains: *[]*string,
 	AutodeleteAnonymousUsers: interface{},
-	BlockingFunctions: github.com/cdktn-io/cdktn-provider-google-go/google/v16.identityPlatformConfig.IdentityPlatformConfigBlockingFunctions,
-	Client: github.com/cdktn-io/cdktn-provider-google-go/google/v16.identityPlatformConfig.IdentityPlatformConfigClient,
+	BlockingFunctions: github.com/cdktn-io/cdktn-provider-google-go/google/v17.identityPlatformConfig.IdentityPlatformConfigBlockingFunctions,
+	Client: github.com/cdktn-io/cdktn-provider-google-go/google/v17.identityPlatformConfig.IdentityPlatformConfigClient,
 	Id: *string,
-	Mfa: github.com/cdktn-io/cdktn-provider-google-go/google/v16.identityPlatformConfig.IdentityPlatformConfigMfa,
-	Monitoring: github.com/cdktn-io/cdktn-provider-google-go/google/v16.identityPlatformConfig.IdentityPlatformConfigMonitoring,
-	MultiTenant: github.com/cdktn-io/cdktn-provider-google-go/google/v16.identityPlatformConfig.IdentityPlatformConfigMultiTenant,
+	Mfa: github.com/cdktn-io/cdktn-provider-google-go/google/v17.identityPlatformConfig.IdentityPlatformConfigMfa,
+	Monitoring: github.com/cdktn-io/cdktn-provider-google-go/google/v17.identityPlatformConfig.IdentityPlatformConfigMonitoring,
+	MultiTenant: github.com/cdktn-io/cdktn-provider-google-go/google/v17.identityPlatformConfig.IdentityPlatformConfigMultiTenant,
 	Project: *string,
-	Quota: github.com/cdktn-io/cdktn-provider-google-go/google/v16.identityPlatformConfig.IdentityPlatformConfigQuota,
-	SignIn: github.com/cdktn-io/cdktn-provider-google-go/google/v16.identityPlatformConfig.IdentityPlatformConfigSignIn,
-	SmsRegionConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v16.identityPlatformConfig.IdentityPlatformConfigSmsRegionConfig,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v16.identityPlatformConfig.IdentityPlatformConfigTimeouts,
+	Quota: github.com/cdktn-io/cdktn-provider-google-go/google/v17.identityPlatformConfig.IdentityPlatformConfigQuota,
+	SignIn: github.com/cdktn-io/cdktn-provider-google-go/google/v17.identityPlatformConfig.IdentityPlatformConfigSignIn,
+	SmsRegionConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v17.identityPlatformConfig.IdentityPlatformConfigSmsRegionConfig,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.identityPlatformConfig.IdentityPlatformConfigTimeouts,
 }
 ```
 
@@ -1729,7 +1729,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.identityPlatformConfig.IdentityPlatformConfigMfa.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/identityplatformconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/identityplatformconfig"
 
 &identityplatformconfig.IdentityPlatformConfigMfa {
 	EnabledProviders: *[]*string,
@@ -1795,11 +1795,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.identityPlatformConfig.IdentityPlatformConfigMfaProviderConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/identityplatformconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/identityplatformconfig"
 
 &identityplatformconfig.IdentityPlatformConfigMfaProviderConfigs {
 	State: *string,
-	TotpProviderConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v16.identityPlatformConfig.IdentityPlatformConfigMfaProviderConfigsTotpProviderConfig,
+	TotpProviderConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v17.identityPlatformConfig.IdentityPlatformConfigMfaProviderConfigsTotpProviderConfig,
 }
 ```
 
@@ -1845,7 +1845,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.identityPlatformConfig.IdentityPlatformConfigMfaProviderConfigsTotpProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/identityplatformconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/identityplatformconfig"
 
 &identityplatformconfig.IdentityPlatformConfigMfaProviderConfigsTotpProviderConfig {
 	AdjacentIntervals: *f64,
@@ -1879,10 +1879,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.identityPlatformConfig.IdentityPlatformConfigMonitoring.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/identityplatformconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/identityplatformconfig"
 
 &identityplatformconfig.IdentityPlatformConfigMonitoring {
-	RequestLogging: github.com/cdktn-io/cdktn-provider-google-go/google/v16.identityPlatformConfig.IdentityPlatformConfigMonitoringRequestLogging,
+	RequestLogging: github.com/cdktn-io/cdktn-provider-google-go/google/v17.identityPlatformConfig.IdentityPlatformConfigMonitoringRequestLogging,
 }
 ```
 
@@ -1913,7 +1913,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.identityPlatformConfig.IdentityPlatformConfigMonitoringRequestLogging.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/identityplatformconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/identityplatformconfig"
 
 &identityplatformconfig.IdentityPlatformConfigMonitoringRequestLogging {
 	Enabled: interface{},
@@ -1947,7 +1947,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.identityPlatformConfig.IdentityPlatformConfigMultiTenant.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/identityplatformconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/identityplatformconfig"
 
 &identityplatformconfig.IdentityPlatformConfigMultiTenant {
 	AllowTenants: interface{},
@@ -2000,10 +2000,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.identityPlatformConfig.IdentityPlatformConfigQuota.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/identityplatformconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/identityplatformconfig"
 
 &identityplatformconfig.IdentityPlatformConfigQuota {
-	SignUpQuotaConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v16.identityPlatformConfig.IdentityPlatformConfigQuotaSignUpQuotaConfig,
+	SignUpQuotaConfig: github.com/cdktn-io/cdktn-provider-google-go/google/v17.identityPlatformConfig.IdentityPlatformConfigQuotaSignUpQuotaConfig,
 }
 ```
 
@@ -2034,7 +2034,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.identityPlatformConfig.IdentityPlatformConfigQuotaSignUpQuotaConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/identityplatformconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/identityplatformconfig"
 
 &identityplatformconfig.IdentityPlatformConfigQuotaSignUpQuotaConfig {
 	Quota: *f64,
@@ -2100,13 +2100,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.identityPlatformConfig.IdentityPlatformConfigSignIn.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/identityplatformconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/identityplatformconfig"
 
 &identityplatformconfig.IdentityPlatformConfigSignIn {
 	AllowDuplicateEmails: interface{},
-	Anonymous: github.com/cdktn-io/cdktn-provider-google-go/google/v16.identityPlatformConfig.IdentityPlatformConfigSignInAnonymous,
-	Email: github.com/cdktn-io/cdktn-provider-google-go/google/v16.identityPlatformConfig.IdentityPlatformConfigSignInEmail,
-	PhoneNumber: github.com/cdktn-io/cdktn-provider-google-go/google/v16.identityPlatformConfig.IdentityPlatformConfigSignInPhoneNumber,
+	Anonymous: github.com/cdktn-io/cdktn-provider-google-go/google/v17.identityPlatformConfig.IdentityPlatformConfigSignInAnonymous,
+	Email: github.com/cdktn-io/cdktn-provider-google-go/google/v17.identityPlatformConfig.IdentityPlatformConfigSignInEmail,
+	PhoneNumber: github.com/cdktn-io/cdktn-provider-google-go/google/v17.identityPlatformConfig.IdentityPlatformConfigSignInPhoneNumber,
 }
 ```
 
@@ -2182,7 +2182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.identityPlatformConfig.IdentityPlatformConfigSignInAnonymous.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/identityplatformconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/identityplatformconfig"
 
 &identityplatformconfig.IdentityPlatformConfigSignInAnonymous {
 	Enabled: interface{},
@@ -2216,7 +2216,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.identityPlatformConfig.IdentityPlatformConfigSignInEmail.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/identityplatformconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/identityplatformconfig"
 
 &identityplatformconfig.IdentityPlatformConfigSignInEmail {
 	Enabled: interface{},
@@ -2270,7 +2270,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.identityPlatformConfig.IdentityPlatformConfigSignInHashConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/identityplatformconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/identityplatformconfig"
 
 &identityplatformconfig.IdentityPlatformConfigSignInHashConfig {
 
@@ -2283,7 +2283,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/identityplatform
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.identityPlatformConfig.IdentityPlatformConfigSignInPhoneNumber.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/identityplatformconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/identityplatformconfig"
 
 &identityplatformconfig.IdentityPlatformConfigSignInPhoneNumber {
 	Enabled: interface{},
@@ -2333,11 +2333,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.identityPlatformConfig.IdentityPlatformConfigSmsRegionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/identityplatformconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/identityplatformconfig"
 
 &identityplatformconfig.IdentityPlatformConfigSmsRegionConfig {
-	AllowByDefault: github.com/cdktn-io/cdktn-provider-google-go/google/v16.identityPlatformConfig.IdentityPlatformConfigSmsRegionConfigAllowByDefault,
-	AllowlistOnly: github.com/cdktn-io/cdktn-provider-google-go/google/v16.identityPlatformConfig.IdentityPlatformConfigSmsRegionConfigAllowlistOnly,
+	AllowByDefault: github.com/cdktn-io/cdktn-provider-google-go/google/v17.identityPlatformConfig.IdentityPlatformConfigSmsRegionConfigAllowByDefault,
+	AllowlistOnly: github.com/cdktn-io/cdktn-provider-google-go/google/v17.identityPlatformConfig.IdentityPlatformConfigSmsRegionConfigAllowlistOnly,
 }
 ```
 
@@ -2383,7 +2383,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.identityPlatformConfig.IdentityPlatformConfigSmsRegionConfigAllowByDefault.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/identityplatformconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/identityplatformconfig"
 
 &identityplatformconfig.IdentityPlatformConfigSmsRegionConfigAllowByDefault {
 	DisallowedRegions: *[]*string,
@@ -2417,7 +2417,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.identityPlatformConfig.IdentityPlatformConfigSmsRegionConfigAllowlistOnly.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/identityplatformconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/identityplatformconfig"
 
 &identityplatformconfig.IdentityPlatformConfigSmsRegionConfigAllowlistOnly {
 	AllowedRegions: *[]*string,
@@ -2451,7 +2451,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.identityPlatformConfig.IdentityPlatformConfigTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/identityplatformconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/identityplatformconfig"
 
 &identityplatformconfig.IdentityPlatformConfigTimeouts {
 	Create: *string,
@@ -2513,7 +2513,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.identityPlatformConfig.IdentityPlatformConfigBlockingFunctionsForwardInboundCredentialsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/identityplatformconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/identityplatformconfig"
 
 identityplatformconfig.NewIdentityPlatformConfigBlockingFunctionsForwardInboundCredentialsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IdentityPlatformConfigBlockingFunctionsForwardInboundCredentialsOutputReference
 ```
@@ -2849,7 +2849,7 @@ func InternalValue() IdentityPlatformConfigBlockingFunctionsForwardInboundCreden
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.identityPlatformConfig.IdentityPlatformConfigBlockingFunctionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/identityplatformconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/identityplatformconfig"
 
 identityplatformconfig.NewIdentityPlatformConfigBlockingFunctionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IdentityPlatformConfigBlockingFunctionsOutputReference
 ```
@@ -3175,7 +3175,7 @@ func InternalValue() IdentityPlatformConfigBlockingFunctions
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.identityPlatformConfig.IdentityPlatformConfigBlockingFunctionsTriggersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/identityplatformconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/identityplatformconfig"
 
 identityplatformconfig.NewIdentityPlatformConfigBlockingFunctionsTriggersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IdentityPlatformConfigBlockingFunctionsTriggersList
 ```
@@ -3335,7 +3335,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.identityPlatformConfig.IdentityPlatformConfigBlockingFunctionsTriggersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/identityplatformconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/identityplatformconfig"
 
 identityplatformconfig.NewIdentityPlatformConfigBlockingFunctionsTriggersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IdentityPlatformConfigBlockingFunctionsTriggersOutputReference
 ```
@@ -3657,7 +3657,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.identityPlatformConfig.IdentityPlatformConfigClientOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/identityplatformconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/identityplatformconfig"
 
 identityplatformconfig.NewIdentityPlatformConfigClientOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IdentityPlatformConfigClientOutputReference
 ```
@@ -3970,7 +3970,7 @@ func InternalValue() IdentityPlatformConfigClient
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.identityPlatformConfig.IdentityPlatformConfigClientPermissionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/identityplatformconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/identityplatformconfig"
 
 identityplatformconfig.NewIdentityPlatformConfigClientPermissionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IdentityPlatformConfigClientPermissionsOutputReference
 ```
@@ -4277,7 +4277,7 @@ func InternalValue() IdentityPlatformConfigClientPermissions
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.identityPlatformConfig.IdentityPlatformConfigMfaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/identityplatformconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/identityplatformconfig"
 
 identityplatformconfig.NewIdentityPlatformConfigMfaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IdentityPlatformConfigMfaOutputReference
 ```
@@ -4626,7 +4626,7 @@ func InternalValue() IdentityPlatformConfigMfa
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.identityPlatformConfig.IdentityPlatformConfigMfaProviderConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/identityplatformconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/identityplatformconfig"
 
 identityplatformconfig.NewIdentityPlatformConfigMfaProviderConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IdentityPlatformConfigMfaProviderConfigsList
 ```
@@ -4786,7 +4786,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.identityPlatformConfig.IdentityPlatformConfigMfaProviderConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/identityplatformconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/identityplatformconfig"
 
 identityplatformconfig.NewIdentityPlatformConfigMfaProviderConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IdentityPlatformConfigMfaProviderConfigsOutputReference
 ```
@@ -5124,7 +5124,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.identityPlatformConfig.IdentityPlatformConfigMfaProviderConfigsTotpProviderConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/identityplatformconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/identityplatformconfig"
 
 identityplatformconfig.NewIdentityPlatformConfigMfaProviderConfigsTotpProviderConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IdentityPlatformConfigMfaProviderConfigsTotpProviderConfigOutputReference
 ```
@@ -5402,7 +5402,7 @@ func InternalValue() IdentityPlatformConfigMfaProviderConfigsTotpProviderConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.identityPlatformConfig.IdentityPlatformConfigMonitoringOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/identityplatformconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/identityplatformconfig"
 
 identityplatformconfig.NewIdentityPlatformConfigMonitoringOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IdentityPlatformConfigMonitoringOutputReference
 ```
@@ -5693,7 +5693,7 @@ func InternalValue() IdentityPlatformConfigMonitoring
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.identityPlatformConfig.IdentityPlatformConfigMonitoringRequestLoggingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/identityplatformconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/identityplatformconfig"
 
 identityplatformconfig.NewIdentityPlatformConfigMonitoringRequestLoggingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IdentityPlatformConfigMonitoringRequestLoggingOutputReference
 ```
@@ -5971,7 +5971,7 @@ func InternalValue() IdentityPlatformConfigMonitoringRequestLogging
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.identityPlatformConfig.IdentityPlatformConfigMultiTenantOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/identityplatformconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/identityplatformconfig"
 
 identityplatformconfig.NewIdentityPlatformConfigMultiTenantOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IdentityPlatformConfigMultiTenantOutputReference
 ```
@@ -6278,7 +6278,7 @@ func InternalValue() IdentityPlatformConfigMultiTenant
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.identityPlatformConfig.IdentityPlatformConfigQuotaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/identityplatformconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/identityplatformconfig"
 
 identityplatformconfig.NewIdentityPlatformConfigQuotaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IdentityPlatformConfigQuotaOutputReference
 ```
@@ -6569,7 +6569,7 @@ func InternalValue() IdentityPlatformConfigQuota
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.identityPlatformConfig.IdentityPlatformConfigQuotaSignUpQuotaConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/identityplatformconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/identityplatformconfig"
 
 identityplatformconfig.NewIdentityPlatformConfigQuotaSignUpQuotaConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IdentityPlatformConfigQuotaSignUpQuotaConfigOutputReference
 ```
@@ -6905,7 +6905,7 @@ func InternalValue() IdentityPlatformConfigQuotaSignUpQuotaConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.identityPlatformConfig.IdentityPlatformConfigSignInAnonymousOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/identityplatformconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/identityplatformconfig"
 
 identityplatformconfig.NewIdentityPlatformConfigSignInAnonymousOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IdentityPlatformConfigSignInAnonymousOutputReference
 ```
@@ -7176,7 +7176,7 @@ func InternalValue() IdentityPlatformConfigSignInAnonymous
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.identityPlatformConfig.IdentityPlatformConfigSignInEmailOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/identityplatformconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/identityplatformconfig"
 
 identityplatformconfig.NewIdentityPlatformConfigSignInEmailOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IdentityPlatformConfigSignInEmailOutputReference
 ```
@@ -7476,7 +7476,7 @@ func InternalValue() IdentityPlatformConfigSignInEmail
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.identityPlatformConfig.IdentityPlatformConfigSignInHashConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/identityplatformconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/identityplatformconfig"
 
 identityplatformconfig.NewIdentityPlatformConfigSignInHashConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IdentityPlatformConfigSignInHashConfigList
 ```
@@ -7625,7 +7625,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.identityPlatformConfig.IdentityPlatformConfigSignInHashConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/identityplatformconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/identityplatformconfig"
 
 identityplatformconfig.NewIdentityPlatformConfigSignInHashConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IdentityPlatformConfigSignInHashConfigOutputReference
 ```
@@ -7947,7 +7947,7 @@ func InternalValue() IdentityPlatformConfigSignInHashConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.identityPlatformConfig.IdentityPlatformConfigSignInOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/identityplatformconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/identityplatformconfig"
 
 identityplatformconfig.NewIdentityPlatformConfigSignInOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IdentityPlatformConfigSignInOutputReference
 ```
@@ -8362,7 +8362,7 @@ func InternalValue() IdentityPlatformConfigSignIn
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.identityPlatformConfig.IdentityPlatformConfigSignInPhoneNumberOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/identityplatformconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/identityplatformconfig"
 
 identityplatformconfig.NewIdentityPlatformConfigSignInPhoneNumberOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IdentityPlatformConfigSignInPhoneNumberOutputReference
 ```
@@ -8662,7 +8662,7 @@ func InternalValue() IdentityPlatformConfigSignInPhoneNumber
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.identityPlatformConfig.IdentityPlatformConfigSmsRegionConfigAllowByDefaultOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/identityplatformconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/identityplatformconfig"
 
 identityplatformconfig.NewIdentityPlatformConfigSmsRegionConfigAllowByDefaultOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IdentityPlatformConfigSmsRegionConfigAllowByDefaultOutputReference
 ```
@@ -8940,7 +8940,7 @@ func InternalValue() IdentityPlatformConfigSmsRegionConfigAllowByDefault
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.identityPlatformConfig.IdentityPlatformConfigSmsRegionConfigAllowlistOnlyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/identityplatformconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/identityplatformconfig"
 
 identityplatformconfig.NewIdentityPlatformConfigSmsRegionConfigAllowlistOnlyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IdentityPlatformConfigSmsRegionConfigAllowlistOnlyOutputReference
 ```
@@ -9218,7 +9218,7 @@ func InternalValue() IdentityPlatformConfigSmsRegionConfigAllowlistOnly
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.identityPlatformConfig.IdentityPlatformConfigSmsRegionConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/identityplatformconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/identityplatformconfig"
 
 identityplatformconfig.NewIdentityPlatformConfigSmsRegionConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IdentityPlatformConfigSmsRegionConfigOutputReference
 ```
@@ -9551,7 +9551,7 @@ func InternalValue() IdentityPlatformConfigSmsRegionConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.identityPlatformConfig.IdentityPlatformConfigTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/identityplatformconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/identityplatformconfig"
 
 identityplatformconfig.NewIdentityPlatformConfigTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IdentityPlatformConfigTimeoutsOutputReference
 ```

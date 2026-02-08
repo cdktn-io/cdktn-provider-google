@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.colabRuntimeTemplateIamBinding.ColabRuntimeTemplateIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/colabruntimetemplateiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/colabruntimetemplateiambinding"
 
 colabruntimetemplateiambinding.NewColabRuntimeTemplateIamBinding(scope Construct, id *string, config ColabRuntimeTemplateIamBindingConfig) ColabRuntimeTemplateIamBinding
 ```
@@ -419,7 +419,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.colabRuntimeTemplateIamBinding.ColabRuntimeTemplateIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/colabruntimetemplateiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/colabruntimetemplateiambinding"
 
 colabruntimetemplateiambinding.ColabRuntimeTemplateIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.colabRuntimeTemplateIamBinding.ColabRuntimeTemplateIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/colabruntimetemplateiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/colabruntimetemplateiambinding"
 
 colabruntimetemplateiambinding.ColabRuntimeTemplateIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ colabruntimetemplateiambinding.ColabRuntimeTemplateIamBinding_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.colabRuntimeTemplateIamBinding.ColabRuntimeTemplateIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/colabruntimetemplateiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/colabruntimetemplateiambinding"
 
 colabruntimetemplateiambinding.ColabRuntimeTemplateIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ colabruntimetemplateiambinding.ColabRuntimeTemplateIamBinding_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.colabRuntimeTemplateIamBinding.ColabRuntimeTemplateIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/colabruntimetemplateiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/colabruntimetemplateiambinding"
 
 colabruntimetemplateiambinding.ColabRuntimeTemplateIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -873,7 +873,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.colabRuntimeTemplateIamBinding.ColabRuntimeTemplateIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/colabruntimetemplateiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/colabruntimetemplateiambinding"
 
 &colabruntimetemplateiambinding.ColabRuntimeTemplateIamBindingCondition {
 	Expression: *string,
@@ -933,7 +933,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.colabRuntimeTemplateIamBinding.ColabRuntimeTemplateIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/colabruntimetemplateiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/colabruntimetemplateiambinding"
 
 &colabruntimetemplateiambinding.ColabRuntimeTemplateIamBindingConfig {
 	Connection: interface{},
@@ -946,7 +946,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/colabruntimetemp
 	Members: *[]*string,
 	Role: *string,
 	RuntimeTemplate: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v16.colabRuntimeTemplateIamBinding.ColabRuntimeTemplateIamBindingCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v17.colabRuntimeTemplateIamBinding.ColabRuntimeTemplateIamBindingCondition,
 	Id: *string,
 	Location: *string,
 	Project: *string,
@@ -1140,7 +1140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.colabRuntimeTemplateIamBinding.ColabRuntimeTemplateIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/colabruntimetemplateiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/colabruntimetemplateiambinding"
 
 colabruntimetemplateiambinding.NewColabRuntimeTemplateIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ColabRuntimeTemplateIamBindingConditionOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.spannerDatabaseIamMember.SpannerDatabaseIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/spannerdatabaseiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/spannerdatabaseiammember"
 
 spannerdatabaseiammember.NewSpannerDatabaseIamMember(scope Construct, id *string, config SpannerDatabaseIamMemberConfig) SpannerDatabaseIamMember
 ```
@@ -412,7 +412,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.spannerDatabaseIamMember.SpannerDatabaseIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/spannerdatabaseiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/spannerdatabaseiammember"
 
 spannerdatabaseiammember.SpannerDatabaseIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.spannerDatabaseIamMember.SpannerDatabaseIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/spannerdatabaseiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/spannerdatabaseiammember"
 
 spannerdatabaseiammember.SpannerDatabaseIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ spannerdatabaseiammember.SpannerDatabaseIamMember_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.spannerDatabaseIamMember.SpannerDatabaseIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/spannerdatabaseiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/spannerdatabaseiammember"
 
 spannerdatabaseiammember.SpannerDatabaseIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ spannerdatabaseiammember.SpannerDatabaseIamMember_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.spannerDatabaseIamMember.SpannerDatabaseIamMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/spannerdatabaseiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/spannerdatabaseiammember"
 
 spannerdatabaseiammember.SpannerDatabaseIamMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -866,7 +866,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.spannerDatabaseIamMember.SpannerDatabaseIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/spannerdatabaseiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/spannerdatabaseiammember"
 
 &spannerdatabaseiammember.SpannerDatabaseIamMemberCondition {
 	Expression: *string,
@@ -926,7 +926,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.spannerDatabaseIamMember.SpannerDatabaseIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/spannerdatabaseiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/spannerdatabaseiammember"
 
 &spannerdatabaseiammember.SpannerDatabaseIamMemberConfig {
 	Connection: interface{},
@@ -940,7 +940,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/spannerdatabasei
 	Instance: *string,
 	Member: *string,
 	Role: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v16.spannerDatabaseIamMember.SpannerDatabaseIamMemberCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v17.spannerDatabaseIamMember.SpannerDatabaseIamMemberCondition,
 	Id: *string,
 	Project: *string,
 }
@@ -1133,7 +1133,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.spannerDatabaseIamMember.SpannerDatabaseIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/spannerdatabaseiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/spannerdatabaseiammember"
 
 spannerdatabaseiammember.NewSpannerDatabaseIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SpannerDatabaseIamMemberConditionOutputReference
 ```

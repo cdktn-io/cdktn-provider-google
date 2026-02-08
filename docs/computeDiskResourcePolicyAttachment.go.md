@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeDiskResourcePolicyAttachment.ComputeDiskResourcePolicyAttachment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/computediskresourcepolicyattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computediskresourcepolicyattachment"
 
 computediskresourcepolicyattachment.NewComputeDiskResourcePolicyAttachment(scope Construct, id *string, config ComputeDiskResourcePolicyAttachmentConfig) ComputeDiskResourcePolicyAttachment
 ```
@@ -419,7 +419,7 @@ func ResetZone()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.computeDiskResourcePolicyAttachment.ComputeDiskResourcePolicyAttachment.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/computediskresourcepolicyattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computediskresourcepolicyattachment"
 
 computediskresourcepolicyattachment.ComputeDiskResourcePolicyAttachment_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.computeDiskResourcePolicyAttachment.ComputeDiskResourcePolicyAttachment.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/computediskresourcepolicyattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computediskresourcepolicyattachment"
 
 computediskresourcepolicyattachment.ComputeDiskResourcePolicyAttachment_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ computediskresourcepolicyattachment.ComputeDiskResourcePolicyAttachment_IsTerraf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.computeDiskResourcePolicyAttachment.ComputeDiskResourcePolicyAttachment.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/computediskresourcepolicyattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computediskresourcepolicyattachment"
 
 computediskresourcepolicyattachment.ComputeDiskResourcePolicyAttachment_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ computediskresourcepolicyattachment.ComputeDiskResourcePolicyAttachment_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.computeDiskResourcePolicyAttachment.ComputeDiskResourcePolicyAttachment.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/computediskresourcepolicyattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computediskresourcepolicyattachment"
 
 computediskresourcepolicyattachment.ComputeDiskResourcePolicyAttachment_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -840,7 +840,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeDiskResourcePolicyAttachment.ComputeDiskResourcePolicyAttachmentConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/computediskresourcepolicyattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computediskresourcepolicyattachment"
 
 &computediskresourcepolicyattachment.ComputeDiskResourcePolicyAttachmentConfig {
 	Connection: interface{},
@@ -854,7 +854,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/computediskresou
 	Name: *string,
 	Id: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v16.computeDiskResourcePolicyAttachment.ComputeDiskResourcePolicyAttachmentTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.computeDiskResourcePolicyAttachment.ComputeDiskResourcePolicyAttachmentTimeouts,
 	Zone: *string,
 }
 ```
@@ -1037,7 +1037,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.computeDiskResourcePolicyAttachment.ComputeDiskResourcePolicyAttachmentTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/computediskresourcepolicyattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computediskresourcepolicyattachment"
 
 &computediskresourcepolicyattachment.ComputeDiskResourcePolicyAttachmentTimeouts {
 	Create: *string,
@@ -1085,7 +1085,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.computeDiskResourcePolicyAttachment.ComputeDiskResourcePolicyAttachmentTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/computediskresourcepolicyattachment"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/computediskresourcepolicyattachment"
 
 computediskresourcepolicyattachment.NewComputeDiskResourcePolicyAttachmentTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ComputeDiskResourcePolicyAttachmentTimeoutsOutputReference
 ```

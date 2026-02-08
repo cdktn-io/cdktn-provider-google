@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.secretManagerRegionalSecretIamBinding.SecretManagerRegionalSecretIamBinding.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/secretmanagerregionalsecretiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/secretmanagerregionalsecretiambinding"
 
 secretmanagerregionalsecretiambinding.NewSecretManagerRegionalSecretIamBinding(scope Construct, id *string, config SecretManagerRegionalSecretIamBindingConfig) SecretManagerRegionalSecretIamBinding
 ```
@@ -419,7 +419,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.secretManagerRegionalSecretIamBinding.SecretManagerRegionalSecretIamBinding.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/secretmanagerregionalsecretiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/secretmanagerregionalsecretiambinding"
 
 secretmanagerregionalsecretiambinding.SecretManagerRegionalSecretIamBinding_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.secretManagerRegionalSecretIamBinding.SecretManagerRegionalSecretIamBinding.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/secretmanagerregionalsecretiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/secretmanagerregionalsecretiambinding"
 
 secretmanagerregionalsecretiambinding.SecretManagerRegionalSecretIamBinding_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ secretmanagerregionalsecretiambinding.SecretManagerRegionalSecretIamBinding_IsTe
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.secretManagerRegionalSecretIamBinding.SecretManagerRegionalSecretIamBinding.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/secretmanagerregionalsecretiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/secretmanagerregionalsecretiambinding"
 
 secretmanagerregionalsecretiambinding.SecretManagerRegionalSecretIamBinding_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ secretmanagerregionalsecretiambinding.SecretManagerRegionalSecretIamBinding_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.secretManagerRegionalSecretIamBinding.SecretManagerRegionalSecretIamBinding.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/secretmanagerregionalsecretiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/secretmanagerregionalsecretiambinding"
 
 secretmanagerregionalsecretiambinding.SecretManagerRegionalSecretIamBinding_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -873,7 +873,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.secretManagerRegionalSecretIamBinding.SecretManagerRegionalSecretIamBindingCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/secretmanagerregionalsecretiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/secretmanagerregionalsecretiambinding"
 
 &secretmanagerregionalsecretiambinding.SecretManagerRegionalSecretIamBindingCondition {
 	Expression: *string,
@@ -933,7 +933,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.secretManagerRegionalSecretIamBinding.SecretManagerRegionalSecretIamBindingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/secretmanagerregionalsecretiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/secretmanagerregionalsecretiambinding"
 
 &secretmanagerregionalsecretiambinding.SecretManagerRegionalSecretIamBindingConfig {
 	Connection: interface{},
@@ -946,7 +946,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/secretmanagerreg
 	Members: *[]*string,
 	Role: *string,
 	SecretId: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v16.secretManagerRegionalSecretIamBinding.SecretManagerRegionalSecretIamBindingCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v17.secretManagerRegionalSecretIamBinding.SecretManagerRegionalSecretIamBindingCondition,
 	Id: *string,
 	Location: *string,
 	Project: *string,
@@ -1140,7 +1140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.secretManagerRegionalSecretIamBinding.SecretManagerRegionalSecretIamBindingConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/secretmanagerregionalsecretiambinding"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/secretmanagerregionalsecretiambinding"
 
 secretmanagerregionalsecretiambinding.NewSecretManagerRegionalSecretIamBindingConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SecretManagerRegionalSecretIamBindingConditionOutputReference
 ```
