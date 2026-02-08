@@ -882,9 +882,9 @@ export class GoogleProvider extends cdktf.TerraformProvider {
       terraformGeneratorMetadata: {
         providerName: 'google',
         providerVersion: '6.50.0',
-        providerVersionConstraint: '~> 6.0'
+        providerVersionConstraint: '~> 6.50.0'
       },
-      terraformProviderSource: 'google'
+      terraformProviderSource: 'hashicorp/google'
     });
     this._accessApprovalCustomEndpoint = config.accessApprovalCustomEndpoint;
     this._accessContextManagerCustomEndpoint = config.accessContextManagerCustomEndpoint;

@@ -19,17 +19,17 @@ The PyPI package is available at [https://pypi.org/project/cdktn-provider-google
 
 ### Nuget
 
-The Nuget package is available at [https://www.nuget.org/packages/Io.Cdktn.Cdktn.Providers.Google](https://www.nuget.org/packages/Io.Cdktn.Cdktn.Providers.Google).
+The Nuget package is available at [https://www.nuget.org/packages/Io.Cdktn.Providers.Google](https://www.nuget.org/packages/Io.Cdktn.Providers.Google).
 
-`dotnet add package Io.Cdktn.Cdktn.Providers.Google`
+`dotnet add package Io.Cdktn.Providers.Google`
 
 ### Maven
 
-The Maven package is available at [https://mvnrepository.com/artifact/com.Io.Cdktn/cdktn-provider-google](https://mvnrepository.com/artifact/com.Io.Cdktn/cdktn-provider-google).
+The Maven package is available at [https://mvnrepository.com/artifact/io.cdktn/cdktn-provider-google](https://mvnrepository.com/artifact/io.cdktn/cdktn-provider-google).
 
 ```
 <dependency>
-    <groupId>com.Io.Cdktn</groupId>
+    <groupId>io.cdktn</groupId>
     <artifactId>cdktn-provider-google</artifactId>
     <version>[REPLACE WITH DESIRED VERSION]</version>
 </dependency>
@@ -58,7 +58,7 @@ You can also visit a hosted version of the documentation on [constructs.dev](htt
 
 ## Versioning
 
-This project is explicitly not tracking the Terraform google provider version 1:1. In fact, it always tracks `latest` of `~> 6.0` with every release. If there are scenarios where you explicitly have to pin your provider version, you can do so by [generating the provider constructs manually](https://cdk.tf/imports).
+This project is explicitly not tracking the Terraform google provider version 1:1. In fact, it always tracks `latest` of `~> 6.50.0` with every release. If there are scenarios where you explicitly have to pin your provider version, you can do so by [generating the provider constructs manually](https://cdk.tf/imports).
 
 These are the upstream dependencies:
 
