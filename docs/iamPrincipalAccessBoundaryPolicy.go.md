@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iamPrincipalAccessBoundaryPolicy.IamPrincipalAccessBoundaryPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/iamprincipalaccessboundarypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/iamprincipalaccessboundarypolicy"
 
 iamprincipalaccessboundarypolicy.NewIamPrincipalAccessBoundaryPolicy(scope Construct, id *string, config IamPrincipalAccessBoundaryPolicyConfig) IamPrincipalAccessBoundaryPolicy
 ```
@@ -439,7 +439,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.iamPrincipalAccessBoundaryPolicy.IamPrincipalAccessBoundaryPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/iamprincipalaccessboundarypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/iamprincipalaccessboundarypolicy"
 
 iamprincipalaccessboundarypolicy.IamPrincipalAccessBoundaryPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.iamPrincipalAccessBoundaryPolicy.IamPrincipalAccessBoundaryPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/iamprincipalaccessboundarypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/iamprincipalaccessboundarypolicy"
 
 iamprincipalaccessboundarypolicy.IamPrincipalAccessBoundaryPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ iamprincipalaccessboundarypolicy.IamPrincipalAccessBoundaryPolicy_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.iamPrincipalAccessBoundaryPolicy.IamPrincipalAccessBoundaryPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/iamprincipalaccessboundarypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/iamprincipalaccessboundarypolicy"
 
 iamprincipalaccessboundarypolicy.IamPrincipalAccessBoundaryPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ iamprincipalaccessboundarypolicy.IamPrincipalAccessBoundaryPolicy_IsTerraformRes
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.iamPrincipalAccessBoundaryPolicy.IamPrincipalAccessBoundaryPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/iamprincipalaccessboundarypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/iamprincipalaccessboundarypolicy"
 
 iamprincipalaccessboundarypolicy.IamPrincipalAccessBoundaryPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -970,7 +970,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.iamPrincipalAccessBoundaryPolicy.IamPrincipalAccessBoundaryPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/iamprincipalaccessboundarypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/iamprincipalaccessboundarypolicy"
 
 &iamprincipalaccessboundarypolicy.IamPrincipalAccessBoundaryPolicyConfig {
 	Connection: interface{},
@@ -984,10 +984,10 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/iamprincipalacce
 	Organization: *string,
 	PrincipalAccessBoundaryPolicyId: *string,
 	Annotations: *map[string]*string,
-	Details: github.com/cdktn-io/cdktn-provider-google-go/google/v16.iamPrincipalAccessBoundaryPolicy.IamPrincipalAccessBoundaryPolicyDetails,
+	Details: github.com/cdktn-io/cdktn-provider-google-go/google/v17.iamPrincipalAccessBoundaryPolicy.IamPrincipalAccessBoundaryPolicyDetails,
 	DisplayName: *string,
 	Id: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v16.iamPrincipalAccessBoundaryPolicy.IamPrincipalAccessBoundaryPolicyTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.iamPrincipalAccessBoundaryPolicy.IamPrincipalAccessBoundaryPolicyTimeouts,
 }
 ```
 
@@ -1206,7 +1206,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.iamPrincipalAccessBoundaryPolicy.IamPrincipalAccessBoundaryPolicyDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/iamprincipalaccessboundarypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/iamprincipalaccessboundarypolicy"
 
 &iamprincipalaccessboundarypolicy.IamPrincipalAccessBoundaryPolicyDetails {
 	Rules: interface{},
@@ -1256,7 +1256,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.iamPrincipalAccessBoundaryPolicy.IamPrincipalAccessBoundaryPolicyDetailsRules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/iamprincipalaccessboundarypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/iamprincipalaccessboundarypolicy"
 
 &iamprincipalaccessboundarypolicy.IamPrincipalAccessBoundaryPolicyDetailsRules {
 	Effect: *string,
@@ -1332,7 +1332,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.iamPrincipalAccessBoundaryPolicy.IamPrincipalAccessBoundaryPolicyTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/iamprincipalaccessboundarypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/iamprincipalaccessboundarypolicy"
 
 &iamprincipalaccessboundarypolicy.IamPrincipalAccessBoundaryPolicyTimeouts {
 	Create: *string,
@@ -1394,7 +1394,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iamPrincipalAccessBoundaryPolicy.IamPrincipalAccessBoundaryPolicyDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/iamprincipalaccessboundarypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/iamprincipalaccessboundarypolicy"
 
 iamprincipalaccessboundarypolicy.NewIamPrincipalAccessBoundaryPolicyDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IamPrincipalAccessBoundaryPolicyDetailsOutputReference
 ```
@@ -1707,7 +1707,7 @@ func InternalValue() IamPrincipalAccessBoundaryPolicyDetails
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iamPrincipalAccessBoundaryPolicy.IamPrincipalAccessBoundaryPolicyDetailsRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/iamprincipalaccessboundarypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/iamprincipalaccessboundarypolicy"
 
 iamprincipalaccessboundarypolicy.NewIamPrincipalAccessBoundaryPolicyDetailsRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IamPrincipalAccessBoundaryPolicyDetailsRulesList
 ```
@@ -1867,7 +1867,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iamPrincipalAccessBoundaryPolicy.IamPrincipalAccessBoundaryPolicyDetailsRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/iamprincipalaccessboundarypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/iamprincipalaccessboundarypolicy"
 
 iamprincipalaccessboundarypolicy.NewIamPrincipalAccessBoundaryPolicyDetailsRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) IamPrincipalAccessBoundaryPolicyDetailsRulesOutputReference
 ```
@@ -2207,7 +2207,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.iamPrincipalAccessBoundaryPolicy.IamPrincipalAccessBoundaryPolicyTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/iamprincipalaccessboundarypolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/iamprincipalaccessboundarypolicy"
 
 iamprincipalaccessboundarypolicy.NewIamPrincipalAccessBoundaryPolicyTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IamPrincipalAccessBoundaryPolicyTimeoutsOutputReference
 ```

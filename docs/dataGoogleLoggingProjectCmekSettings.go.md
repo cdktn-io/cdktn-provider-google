@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleLoggingProjectCmekSettings.DataGoogleLoggingProjectCmekSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogleloggingprojectcmeksettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogleloggingprojectcmeksettings"
 
 datagoogleloggingprojectcmeksettings.NewDataGoogleLoggingProjectCmekSettings(scope Construct, id *string, config DataGoogleLoggingProjectCmekSettingsConfig) DataGoogleLoggingProjectCmekSettings
 ```
@@ -290,7 +290,7 @@ func ResetKmsKeyName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleLoggingProjectCmekSettings.DataGoogleLoggingProjectCmekSettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogleloggingprojectcmeksettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogleloggingprojectcmeksettings"
 
 datagoogleloggingprojectcmeksettings.DataGoogleLoggingProjectCmekSettings_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleLoggingProjectCmekSettings.DataGoogleLoggingProjectCmekSettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogleloggingprojectcmeksettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogleloggingprojectcmeksettings"
 
 datagoogleloggingprojectcmeksettings.DataGoogleLoggingProjectCmekSettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datagoogleloggingprojectcmeksettings.DataGoogleLoggingProjectCmekSettings_IsTerr
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleLoggingProjectCmekSettings.DataGoogleLoggingProjectCmekSettings.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogleloggingprojectcmeksettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogleloggingprojectcmeksettings"
 
 datagoogleloggingprojectcmeksettings.DataGoogleLoggingProjectCmekSettings_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ datagoogleloggingprojectcmeksettings.DataGoogleLoggingProjectCmekSettings_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleLoggingProjectCmekSettings.DataGoogleLoggingProjectCmekSettings.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogleloggingprojectcmeksettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogleloggingprojectcmeksettings"
 
 datagoogleloggingprojectcmeksettings.DataGoogleLoggingProjectCmekSettings_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -656,7 +656,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleLoggingProjectCmekSettings.DataGoogleLoggingProjectCmekSettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogleloggingprojectcmeksettings"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogleloggingprojectcmeksettings"
 
 &datagoogleloggingprojectcmeksettings.DataGoogleLoggingProjectCmekSettingsConfig {
 	Connection: interface{},

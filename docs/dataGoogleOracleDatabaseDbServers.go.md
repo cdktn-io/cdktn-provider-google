@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleOracleDatabaseDbServers.DataGoogleOracleDatabaseDbServers.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogleoracledatabasedbservers"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogleoracledatabasedbservers"
 
 datagoogleoracledatabasedbservers.NewDataGoogleOracleDatabaseDbServers(scope Construct, id *string, config DataGoogleOracleDatabaseDbServersConfig) DataGoogleOracleDatabaseDbServers
 ```
@@ -290,7 +290,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleOracleDatabaseDbServers.DataGoogleOracleDatabaseDbServers.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogleoracledatabasedbservers"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogleoracledatabasedbservers"
 
 datagoogleoracledatabasedbservers.DataGoogleOracleDatabaseDbServers_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleOracleDatabaseDbServers.DataGoogleOracleDatabaseDbServers.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogleoracledatabasedbservers"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogleoracledatabasedbservers"
 
 datagoogleoracledatabasedbservers.DataGoogleOracleDatabaseDbServers_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datagoogleoracledatabasedbservers.DataGoogleOracleDatabaseDbServers_IsTerraformE
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleOracleDatabaseDbServers.DataGoogleOracleDatabaseDbServers.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogleoracledatabasedbservers"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogleoracledatabasedbservers"
 
 datagoogleoracledatabasedbservers.DataGoogleOracleDatabaseDbServers_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ datagoogleoracledatabasedbservers.DataGoogleOracleDatabaseDbServers_IsTerraformD
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleOracleDatabaseDbServers.DataGoogleOracleDatabaseDbServers.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogleoracledatabasedbservers"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogleoracledatabasedbservers"
 
 datagoogleoracledatabasedbservers.DataGoogleOracleDatabaseDbServers_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -656,7 +656,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleOracleDatabaseDbServers.DataGoogleOracleDatabaseDbServersConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogleoracledatabasedbservers"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogleoracledatabasedbservers"
 
 &datagoogleoracledatabasedbservers.DataGoogleOracleDatabaseDbServersConfig {
 	Connection: interface{},
@@ -825,7 +825,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleOracleDatabaseDbServers.DataGoogleOracleDatabaseDbServersDbServers.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogleoracledatabasedbservers"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogleoracledatabasedbservers"
 
 &datagoogleoracledatabasedbservers.DataGoogleOracleDatabaseDbServersDbServers {
 
@@ -838,7 +838,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogleoracle
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleOracleDatabaseDbServers.DataGoogleOracleDatabaseDbServersDbServersProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogleoracledatabasedbservers"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogleoracledatabasedbservers"
 
 &datagoogleoracledatabasedbservers.DataGoogleOracleDatabaseDbServersDbServersProperties {
 
@@ -853,7 +853,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogleoracle
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleOracleDatabaseDbServers.DataGoogleOracleDatabaseDbServersDbServersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogleoracledatabasedbservers"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogleoracledatabasedbservers"
 
 datagoogleoracledatabasedbservers.NewDataGoogleOracleDatabaseDbServersDbServersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleOracleDatabaseDbServersDbServersList
 ```
@@ -1002,7 +1002,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleOracleDatabaseDbServers.DataGoogleOracleDatabaseDbServersDbServersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogleoracledatabasedbservers"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogleoracledatabasedbservers"
 
 datagoogleoracledatabasedbservers.NewDataGoogleOracleDatabaseDbServersDbServersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleOracleDatabaseDbServersDbServersOutputReference
 ```
@@ -1291,7 +1291,7 @@ func InternalValue() DataGoogleOracleDatabaseDbServersDbServers
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleOracleDatabaseDbServers.DataGoogleOracleDatabaseDbServersDbServersPropertiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogleoracledatabasedbservers"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogleoracledatabasedbservers"
 
 datagoogleoracledatabasedbservers.NewDataGoogleOracleDatabaseDbServersDbServersPropertiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleOracleDatabaseDbServersDbServersPropertiesList
 ```
@@ -1440,7 +1440,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleOracleDatabaseDbServers.DataGoogleOracleDatabaseDbServersDbServersPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogleoracledatabasedbservers"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogleoracledatabasedbservers"
 
 datagoogleoracledatabasedbservers.NewDataGoogleOracleDatabaseDbServersDbServersPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleOracleDatabaseDbServersDbServersPropertiesOutputReference
 ```

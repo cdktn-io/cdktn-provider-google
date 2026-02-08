@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseAutonomousDatabase.OracleDatabaseAutonomousDatabase.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/oracledatabaseautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/oracledatabaseautonomousdatabase"
 
 oracledatabaseautonomousdatabase.NewOracleDatabaseAutonomousDatabase(scope Construct, id *string, config OracleDatabaseAutonomousDatabaseConfig) OracleDatabaseAutonomousDatabase
 ```
@@ -481,7 +481,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.oracleDatabaseAutonomousDatabase.OracleDatabaseAutonomousDatabase.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/oracledatabaseautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/oracledatabaseautonomousdatabase"
 
 oracledatabaseautonomousdatabase.OracleDatabaseAutonomousDatabase_IsConstruct(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.oracleDatabaseAutonomousDatabase.OracleDatabaseAutonomousDatabase.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/oracledatabaseautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/oracledatabaseautonomousdatabase"
 
 oracledatabaseautonomousdatabase.OracleDatabaseAutonomousDatabase_IsTerraformElement(x interface{}) *bool
 ```
@@ -527,7 +527,7 @@ oracledatabaseautonomousdatabase.OracleDatabaseAutonomousDatabase_IsTerraformEle
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.oracleDatabaseAutonomousDatabase.OracleDatabaseAutonomousDatabase.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/oracledatabaseautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/oracledatabaseautonomousdatabase"
 
 oracledatabaseautonomousdatabase.OracleDatabaseAutonomousDatabase_IsTerraformResource(x interface{}) *bool
 ```
@@ -541,7 +541,7 @@ oracledatabaseautonomousdatabase.OracleDatabaseAutonomousDatabase_IsTerraformRes
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.oracleDatabaseAutonomousDatabase.OracleDatabaseAutonomousDatabase.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/oracledatabaseautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/oracledatabaseautonomousdatabase"
 
 oracledatabaseautonomousdatabase.OracleDatabaseAutonomousDatabase_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1155,7 +1155,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseAutonomousDatabase.OracleDatabaseAutonomousDatabaseConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/oracledatabaseautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/oracledatabaseautonomousdatabase"
 
 &oracledatabaseautonomousdatabase.OracleDatabaseAutonomousDatabaseConfig {
 	Connection: interface{},
@@ -1168,7 +1168,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/oracledatabaseau
 	AutonomousDatabaseId: *string,
 	Database: *string,
 	Location: *string,
-	Properties: github.com/cdktn-io/cdktn-provider-google-go/google/v16.oracleDatabaseAutonomousDatabase.OracleDatabaseAutonomousDatabaseProperties,
+	Properties: github.com/cdktn-io/cdktn-provider-google-go/google/v17.oracleDatabaseAutonomousDatabase.OracleDatabaseAutonomousDatabaseProperties,
 	AdminPassword: *string,
 	Cidr: *string,
 	DeletionProtection: interface{},
@@ -1179,7 +1179,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/oracledatabaseau
 	OdbNetwork: *string,
 	OdbSubnet: *string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v16.oracleDatabaseAutonomousDatabase.OracleDatabaseAutonomousDatabaseTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.oracleDatabaseAutonomousDatabase.OracleDatabaseAutonomousDatabaseTimeouts,
 }
 ```
 
@@ -1515,7 +1515,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseAutonomousDatabase.OracleDatabaseAutonomousDatabaseProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/oracledatabaseautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/oracledatabaseautonomousdatabase"
 
 &oracledatabaseautonomousdatabase.OracleDatabaseAutonomousDatabaseProperties {
 	DbWorkload: *string,
@@ -1825,7 +1825,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseAutonomousDatabase.OracleDatabaseAutonomousDatabasePropertiesApexDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/oracledatabaseautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/oracledatabaseautonomousdatabase"
 
 &oracledatabaseautonomousdatabase.OracleDatabaseAutonomousDatabasePropertiesApexDetails {
 
@@ -1838,7 +1838,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/oracledatabaseau
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseAutonomousDatabase.OracleDatabaseAutonomousDatabasePropertiesConnectionStrings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/oracledatabaseautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/oracledatabaseautonomousdatabase"
 
 &oracledatabaseautonomousdatabase.OracleDatabaseAutonomousDatabasePropertiesConnectionStrings {
 
@@ -1851,7 +1851,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/oracledatabaseau
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseAutonomousDatabase.OracleDatabaseAutonomousDatabasePropertiesConnectionStringsAllConnectionStrings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/oracledatabaseautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/oracledatabaseautonomousdatabase"
 
 &oracledatabaseautonomousdatabase.OracleDatabaseAutonomousDatabasePropertiesConnectionStringsAllConnectionStrings {
 
@@ -1864,7 +1864,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/oracledatabaseau
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseAutonomousDatabase.OracleDatabaseAutonomousDatabasePropertiesConnectionStringsProfiles.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/oracledatabaseautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/oracledatabaseautonomousdatabase"
 
 &oracledatabaseautonomousdatabase.OracleDatabaseAutonomousDatabasePropertiesConnectionStringsProfiles {
 
@@ -1877,7 +1877,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/oracledatabaseau
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseAutonomousDatabase.OracleDatabaseAutonomousDatabasePropertiesConnectionUrls.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/oracledatabaseautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/oracledatabaseautonomousdatabase"
 
 &oracledatabaseautonomousdatabase.OracleDatabaseAutonomousDatabasePropertiesConnectionUrls {
 
@@ -1890,7 +1890,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/oracledatabaseau
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseAutonomousDatabase.OracleDatabaseAutonomousDatabasePropertiesCustomerContacts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/oracledatabaseautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/oracledatabaseautonomousdatabase"
 
 &oracledatabaseautonomousdatabase.OracleDatabaseAutonomousDatabasePropertiesCustomerContacts {
 	Email: *string,
@@ -1924,7 +1924,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseAutonomousDatabase.OracleDatabaseAutonomousDatabasePropertiesLocalStandbyDb.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/oracledatabaseautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/oracledatabaseautonomousdatabase"
 
 &oracledatabaseautonomousdatabase.OracleDatabaseAutonomousDatabasePropertiesLocalStandbyDb {
 
@@ -1937,7 +1937,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/oracledatabaseau
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseAutonomousDatabase.OracleDatabaseAutonomousDatabasePropertiesScheduledOperationDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/oracledatabaseautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/oracledatabaseautonomousdatabase"
 
 &oracledatabaseautonomousdatabase.OracleDatabaseAutonomousDatabasePropertiesScheduledOperationDetails {
 
@@ -1950,7 +1950,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/oracledatabaseau
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseAutonomousDatabase.OracleDatabaseAutonomousDatabasePropertiesScheduledOperationDetailsStartTime.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/oracledatabaseautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/oracledatabaseautonomousdatabase"
 
 &oracledatabaseautonomousdatabase.OracleDatabaseAutonomousDatabasePropertiesScheduledOperationDetailsStartTime {
 
@@ -1963,7 +1963,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/oracledatabaseau
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseAutonomousDatabase.OracleDatabaseAutonomousDatabasePropertiesScheduledOperationDetailsStopTime.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/oracledatabaseautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/oracledatabaseautonomousdatabase"
 
 &oracledatabaseautonomousdatabase.OracleDatabaseAutonomousDatabasePropertiesScheduledOperationDetailsStopTime {
 
@@ -1976,7 +1976,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/oracledatabaseau
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.oracleDatabaseAutonomousDatabase.OracleDatabaseAutonomousDatabaseTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/oracledatabaseautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/oracledatabaseautonomousdatabase"
 
 &oracledatabaseautonomousdatabase.OracleDatabaseAutonomousDatabaseTimeouts {
 	Create: *string,
@@ -2038,7 +2038,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseAutonomousDatabase.OracleDatabaseAutonomousDatabasePropertiesApexDetailsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/oracledatabaseautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/oracledatabaseautonomousdatabase"
 
 oracledatabaseautonomousdatabase.NewOracleDatabaseAutonomousDatabasePropertiesApexDetailsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OracleDatabaseAutonomousDatabasePropertiesApexDetailsList
 ```
@@ -2187,7 +2187,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseAutonomousDatabase.OracleDatabaseAutonomousDatabasePropertiesApexDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/oracledatabaseautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/oracledatabaseautonomousdatabase"
 
 oracledatabaseautonomousdatabase.NewOracleDatabaseAutonomousDatabasePropertiesApexDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OracleDatabaseAutonomousDatabasePropertiesApexDetailsOutputReference
 ```
@@ -2476,7 +2476,7 @@ func InternalValue() OracleDatabaseAutonomousDatabasePropertiesApexDetails
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseAutonomousDatabase.OracleDatabaseAutonomousDatabasePropertiesConnectionStringsAllConnectionStringsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/oracledatabaseautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/oracledatabaseautonomousdatabase"
 
 oracledatabaseautonomousdatabase.NewOracleDatabaseAutonomousDatabasePropertiesConnectionStringsAllConnectionStringsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OracleDatabaseAutonomousDatabasePropertiesConnectionStringsAllConnectionStringsList
 ```
@@ -2625,7 +2625,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseAutonomousDatabase.OracleDatabaseAutonomousDatabasePropertiesConnectionStringsAllConnectionStringsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/oracledatabaseautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/oracledatabaseautonomousdatabase"
 
 oracledatabaseautonomousdatabase.NewOracleDatabaseAutonomousDatabasePropertiesConnectionStringsAllConnectionStringsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OracleDatabaseAutonomousDatabasePropertiesConnectionStringsAllConnectionStringsOutputReference
 ```
@@ -2925,7 +2925,7 @@ func InternalValue() OracleDatabaseAutonomousDatabasePropertiesConnectionStrings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseAutonomousDatabase.OracleDatabaseAutonomousDatabasePropertiesConnectionStringsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/oracledatabaseautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/oracledatabaseautonomousdatabase"
 
 oracledatabaseautonomousdatabase.NewOracleDatabaseAutonomousDatabasePropertiesConnectionStringsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OracleDatabaseAutonomousDatabasePropertiesConnectionStringsList
 ```
@@ -3074,7 +3074,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseAutonomousDatabase.OracleDatabaseAutonomousDatabasePropertiesConnectionStringsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/oracledatabaseautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/oracledatabaseautonomousdatabase"
 
 oracledatabaseautonomousdatabase.NewOracleDatabaseAutonomousDatabasePropertiesConnectionStringsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OracleDatabaseAutonomousDatabasePropertiesConnectionStringsOutputReference
 ```
@@ -3407,7 +3407,7 @@ func InternalValue() OracleDatabaseAutonomousDatabasePropertiesConnectionStrings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseAutonomousDatabase.OracleDatabaseAutonomousDatabasePropertiesConnectionStringsProfilesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/oracledatabaseautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/oracledatabaseautonomousdatabase"
 
 oracledatabaseautonomousdatabase.NewOracleDatabaseAutonomousDatabasePropertiesConnectionStringsProfilesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OracleDatabaseAutonomousDatabasePropertiesConnectionStringsProfilesList
 ```
@@ -3556,7 +3556,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseAutonomousDatabase.OracleDatabaseAutonomousDatabasePropertiesConnectionStringsProfilesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/oracledatabaseautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/oracledatabaseautonomousdatabase"
 
 oracledatabaseautonomousdatabase.NewOracleDatabaseAutonomousDatabasePropertiesConnectionStringsProfilesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OracleDatabaseAutonomousDatabasePropertiesConnectionStringsProfilesOutputReference
 ```
@@ -3922,7 +3922,7 @@ func InternalValue() OracleDatabaseAutonomousDatabasePropertiesConnectionStrings
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseAutonomousDatabase.OracleDatabaseAutonomousDatabasePropertiesConnectionUrlsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/oracledatabaseautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/oracledatabaseautonomousdatabase"
 
 oracledatabaseautonomousdatabase.NewOracleDatabaseAutonomousDatabasePropertiesConnectionUrlsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OracleDatabaseAutonomousDatabasePropertiesConnectionUrlsList
 ```
@@ -4071,7 +4071,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseAutonomousDatabase.OracleDatabaseAutonomousDatabasePropertiesConnectionUrlsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/oracledatabaseautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/oracledatabaseautonomousdatabase"
 
 oracledatabaseautonomousdatabase.NewOracleDatabaseAutonomousDatabasePropertiesConnectionUrlsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OracleDatabaseAutonomousDatabasePropertiesConnectionUrlsOutputReference
 ```
@@ -4426,7 +4426,7 @@ func InternalValue() OracleDatabaseAutonomousDatabasePropertiesConnectionUrls
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseAutonomousDatabase.OracleDatabaseAutonomousDatabasePropertiesCustomerContactsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/oracledatabaseautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/oracledatabaseautonomousdatabase"
 
 oracledatabaseautonomousdatabase.NewOracleDatabaseAutonomousDatabasePropertiesCustomerContactsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OracleDatabaseAutonomousDatabasePropertiesCustomerContactsList
 ```
@@ -4586,7 +4586,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseAutonomousDatabase.OracleDatabaseAutonomousDatabasePropertiesCustomerContactsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/oracledatabaseautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/oracledatabaseautonomousdatabase"
 
 oracledatabaseautonomousdatabase.NewOracleDatabaseAutonomousDatabasePropertiesCustomerContactsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OracleDatabaseAutonomousDatabasePropertiesCustomerContactsOutputReference
 ```
@@ -4875,7 +4875,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseAutonomousDatabase.OracleDatabaseAutonomousDatabasePropertiesLocalStandbyDbList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/oracledatabaseautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/oracledatabaseautonomousdatabase"
 
 oracledatabaseautonomousdatabase.NewOracleDatabaseAutonomousDatabasePropertiesLocalStandbyDbList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OracleDatabaseAutonomousDatabasePropertiesLocalStandbyDbList
 ```
@@ -5024,7 +5024,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseAutonomousDatabase.OracleDatabaseAutonomousDatabasePropertiesLocalStandbyDbOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/oracledatabaseautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/oracledatabaseautonomousdatabase"
 
 oracledatabaseautonomousdatabase.NewOracleDatabaseAutonomousDatabasePropertiesLocalStandbyDbOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OracleDatabaseAutonomousDatabasePropertiesLocalStandbyDbOutputReference
 ```
@@ -5346,7 +5346,7 @@ func InternalValue() OracleDatabaseAutonomousDatabasePropertiesLocalStandbyDb
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseAutonomousDatabase.OracleDatabaseAutonomousDatabasePropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/oracledatabaseautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/oracledatabaseautonomousdatabase"
 
 oracledatabaseautonomousdatabase.NewOracleDatabaseAutonomousDatabasePropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleDatabaseAutonomousDatabasePropertiesOutputReference
 ```
@@ -6512,7 +6512,7 @@ func InternalValue() OracleDatabaseAutonomousDatabaseProperties
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseAutonomousDatabase.OracleDatabaseAutonomousDatabasePropertiesScheduledOperationDetailsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/oracledatabaseautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/oracledatabaseautonomousdatabase"
 
 oracledatabaseautonomousdatabase.NewOracleDatabaseAutonomousDatabasePropertiesScheduledOperationDetailsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OracleDatabaseAutonomousDatabasePropertiesScheduledOperationDetailsList
 ```
@@ -6661,7 +6661,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseAutonomousDatabase.OracleDatabaseAutonomousDatabasePropertiesScheduledOperationDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/oracledatabaseautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/oracledatabaseautonomousdatabase"
 
 oracledatabaseautonomousdatabase.NewOracleDatabaseAutonomousDatabasePropertiesScheduledOperationDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OracleDatabaseAutonomousDatabasePropertiesScheduledOperationDetailsOutputReference
 ```
@@ -6961,7 +6961,7 @@ func InternalValue() OracleDatabaseAutonomousDatabasePropertiesScheduledOperatio
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseAutonomousDatabase.OracleDatabaseAutonomousDatabasePropertiesScheduledOperationDetailsStartTimeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/oracledatabaseautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/oracledatabaseautonomousdatabase"
 
 oracledatabaseautonomousdatabase.NewOracleDatabaseAutonomousDatabasePropertiesScheduledOperationDetailsStartTimeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OracleDatabaseAutonomousDatabasePropertiesScheduledOperationDetailsStartTimeList
 ```
@@ -7110,7 +7110,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseAutonomousDatabase.OracleDatabaseAutonomousDatabasePropertiesScheduledOperationDetailsStartTimeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/oracledatabaseautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/oracledatabaseautonomousdatabase"
 
 oracledatabaseautonomousdatabase.NewOracleDatabaseAutonomousDatabasePropertiesScheduledOperationDetailsStartTimeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OracleDatabaseAutonomousDatabasePropertiesScheduledOperationDetailsStartTimeOutputReference
 ```
@@ -7421,7 +7421,7 @@ func InternalValue() OracleDatabaseAutonomousDatabasePropertiesScheduledOperatio
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseAutonomousDatabase.OracleDatabaseAutonomousDatabasePropertiesScheduledOperationDetailsStopTimeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/oracledatabaseautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/oracledatabaseautonomousdatabase"
 
 oracledatabaseautonomousdatabase.NewOracleDatabaseAutonomousDatabasePropertiesScheduledOperationDetailsStopTimeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OracleDatabaseAutonomousDatabasePropertiesScheduledOperationDetailsStopTimeList
 ```
@@ -7570,7 +7570,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseAutonomousDatabase.OracleDatabaseAutonomousDatabasePropertiesScheduledOperationDetailsStopTimeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/oracledatabaseautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/oracledatabaseautonomousdatabase"
 
 oracledatabaseautonomousdatabase.NewOracleDatabaseAutonomousDatabasePropertiesScheduledOperationDetailsStopTimeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) OracleDatabaseAutonomousDatabasePropertiesScheduledOperationDetailsStopTimeOutputReference
 ```
@@ -7881,7 +7881,7 @@ func InternalValue() OracleDatabaseAutonomousDatabasePropertiesScheduledOperatio
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.oracleDatabaseAutonomousDatabase.OracleDatabaseAutonomousDatabaseTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/oracledatabaseautonomousdatabase"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/oracledatabaseautonomousdatabase"
 
 oracledatabaseautonomousdatabase.NewOracleDatabaseAutonomousDatabaseTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) OracleDatabaseAutonomousDatabaseTimeoutsOutputReference
 ```

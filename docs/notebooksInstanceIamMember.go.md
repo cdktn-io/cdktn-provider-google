@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.notebooksInstanceIamMember.NotebooksInstanceIamMember.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/notebooksinstanceiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/notebooksinstanceiammember"
 
 notebooksinstanceiammember.NewNotebooksInstanceIamMember(scope Construct, id *string, config NotebooksInstanceIamMemberConfig) NotebooksInstanceIamMember
 ```
@@ -419,7 +419,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.notebooksInstanceIamMember.NotebooksInstanceIamMember.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/notebooksinstanceiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/notebooksinstanceiammember"
 
 notebooksinstanceiammember.NotebooksInstanceIamMember_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.notebooksInstanceIamMember.NotebooksInstanceIamMember.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/notebooksinstanceiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/notebooksinstanceiammember"
 
 notebooksinstanceiammember.NotebooksInstanceIamMember_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ notebooksinstanceiammember.NotebooksInstanceIamMember_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.notebooksInstanceIamMember.NotebooksInstanceIamMember.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/notebooksinstanceiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/notebooksinstanceiammember"
 
 notebooksinstanceiammember.NotebooksInstanceIamMember_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ notebooksinstanceiammember.NotebooksInstanceIamMember_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.notebooksInstanceIamMember.NotebooksInstanceIamMember.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/notebooksinstanceiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/notebooksinstanceiammember"
 
 notebooksinstanceiammember.NotebooksInstanceIamMember_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -873,7 +873,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.notebooksInstanceIamMember.NotebooksInstanceIamMemberCondition.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/notebooksinstanceiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/notebooksinstanceiammember"
 
 &notebooksinstanceiammember.NotebooksInstanceIamMemberCondition {
 	Expression: *string,
@@ -933,7 +933,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.notebooksInstanceIamMember.NotebooksInstanceIamMemberConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/notebooksinstanceiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/notebooksinstanceiammember"
 
 &notebooksinstanceiammember.NotebooksInstanceIamMemberConfig {
 	Connection: interface{},
@@ -946,7 +946,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/notebooksinstanc
 	InstanceName: *string,
 	Member: *string,
 	Role: *string,
-	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v16.notebooksInstanceIamMember.NotebooksInstanceIamMemberCondition,
+	Condition: github.com/cdktn-io/cdktn-provider-google-go/google/v17.notebooksInstanceIamMember.NotebooksInstanceIamMemberCondition,
 	Id: *string,
 	Location: *string,
 	Project: *string,
@@ -1140,7 +1140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.notebooksInstanceIamMember.NotebooksInstanceIamMemberConditionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/notebooksinstanceiammember"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/notebooksinstanceiammember"
 
 notebooksinstanceiammember.NewNotebooksInstanceIamMemberConditionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NotebooksInstanceIamMemberConditionOutputReference
 ```

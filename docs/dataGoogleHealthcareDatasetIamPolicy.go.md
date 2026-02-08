@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleHealthcareDatasetIamPolicy.DataGoogleHealthcareDatasetIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglehealthcaredatasetiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglehealthcaredatasetiampolicy"
 
 datagooglehealthcaredatasetiampolicy.NewDataGoogleHealthcareDatasetIamPolicy(scope Construct, id *string, config DataGoogleHealthcareDatasetIamPolicyConfig) DataGoogleHealthcareDatasetIamPolicy
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleHealthcareDatasetIamPolicy.DataGoogleHealthcareDatasetIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglehealthcaredatasetiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglehealthcaredatasetiampolicy"
 
 datagooglehealthcaredatasetiampolicy.DataGoogleHealthcareDatasetIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleHealthcareDatasetIamPolicy.DataGoogleHealthcareDatasetIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglehealthcaredatasetiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglehealthcaredatasetiampolicy"
 
 datagooglehealthcaredatasetiampolicy.DataGoogleHealthcareDatasetIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datagooglehealthcaredatasetiampolicy.DataGoogleHealthcareDatasetIamPolicy_IsTerr
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleHealthcareDatasetIamPolicy.DataGoogleHealthcareDatasetIamPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglehealthcaredatasetiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglehealthcaredatasetiampolicy"
 
 datagooglehealthcaredatasetiampolicy.DataGoogleHealthcareDatasetIamPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datagooglehealthcaredatasetiampolicy.DataGoogleHealthcareDatasetIamPolicy_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleHealthcareDatasetIamPolicy.DataGoogleHealthcareDatasetIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglehealthcaredatasetiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglehealthcaredatasetiampolicy"
 
 datagooglehealthcaredatasetiampolicy.DataGoogleHealthcareDatasetIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -616,7 +616,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleHealthcareDatasetIamPolicy.DataGoogleHealthcareDatasetIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglehealthcaredatasetiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglehealthcaredatasetiampolicy"
 
 &datagooglehealthcaredatasetiampolicy.DataGoogleHealthcareDatasetIamPolicyConfig {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreService.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogledataprocmetastoreservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogledataprocmetastoreservice"
 
 datagoogledataprocmetastoreservice.NewDataGoogleDataprocMetastoreService(scope Construct, id *string, config DataGoogleDataprocMetastoreServiceConfig) DataGoogleDataprocMetastoreService
 ```
@@ -290,7 +290,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreService.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogledataprocmetastoreservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogledataprocmetastoreservice"
 
 datagoogledataprocmetastoreservice.DataGoogleDataprocMetastoreService_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreService.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogledataprocmetastoreservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogledataprocmetastoreservice"
 
 datagoogledataprocmetastoreservice.DataGoogleDataprocMetastoreService_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datagoogledataprocmetastoreservice.DataGoogleDataprocMetastoreService_IsTerrafor
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreService.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogledataprocmetastoreservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogledataprocmetastoreservice"
 
 datagoogledataprocmetastoreservice.DataGoogleDataprocMetastoreService_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ datagoogledataprocmetastoreservice.DataGoogleDataprocMetastoreService_IsTerrafor
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreService.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogledataprocmetastoreservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogledataprocmetastoreservice"
 
 datagoogledataprocmetastoreservice.DataGoogleDataprocMetastoreService_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -920,7 +920,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreServiceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogledataprocmetastoreservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogledataprocmetastoreservice"
 
 &datagoogledataprocmetastoreservice.DataGoogleDataprocMetastoreServiceConfig {
 	Connection: interface{},
@@ -1089,7 +1089,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreServiceEncryptionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogledataprocmetastoreservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogledataprocmetastoreservice"
 
 &datagoogledataprocmetastoreservice.DataGoogleDataprocMetastoreServiceEncryptionConfig {
 
@@ -1102,7 +1102,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogledatapr
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreServiceHiveMetastoreConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogledataprocmetastoreservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogledataprocmetastoreservice"
 
 &datagoogledataprocmetastoreservice.DataGoogleDataprocMetastoreServiceHiveMetastoreConfig {
 
@@ -1115,7 +1115,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogledatapr
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogledataprocmetastoreservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogledataprocmetastoreservice"
 
 &datagoogledataprocmetastoreservice.DataGoogleDataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersions {
 
@@ -1128,7 +1128,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogledatapr
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreServiceHiveMetastoreConfigKerberosConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogledataprocmetastoreservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogledataprocmetastoreservice"
 
 &datagoogledataprocmetastoreservice.DataGoogleDataprocMetastoreServiceHiveMetastoreConfigKerberosConfig {
 
@@ -1141,7 +1141,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogledatapr
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreServiceHiveMetastoreConfigKerberosConfigKeytab.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogledataprocmetastoreservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogledataprocmetastoreservice"
 
 &datagoogledataprocmetastoreservice.DataGoogleDataprocMetastoreServiceHiveMetastoreConfigKerberosConfigKeytab {
 
@@ -1154,7 +1154,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogledatapr
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreServiceMaintenanceWindow.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogledataprocmetastoreservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogledataprocmetastoreservice"
 
 &datagoogledataprocmetastoreservice.DataGoogleDataprocMetastoreServiceMaintenanceWindow {
 
@@ -1167,7 +1167,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogledatapr
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreServiceMetadataIntegration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogledataprocmetastoreservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogledataprocmetastoreservice"
 
 &datagoogledataprocmetastoreservice.DataGoogleDataprocMetastoreServiceMetadataIntegration {
 
@@ -1180,7 +1180,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogledatapr
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreServiceMetadataIntegrationDataCatalogConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogledataprocmetastoreservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogledataprocmetastoreservice"
 
 &datagoogledataprocmetastoreservice.DataGoogleDataprocMetastoreServiceMetadataIntegrationDataCatalogConfig {
 
@@ -1193,7 +1193,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogledatapr
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreServiceNetworkConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogledataprocmetastoreservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogledataprocmetastoreservice"
 
 &datagoogledataprocmetastoreservice.DataGoogleDataprocMetastoreServiceNetworkConfig {
 
@@ -1206,7 +1206,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogledatapr
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreServiceNetworkConfigConsumers.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogledataprocmetastoreservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogledataprocmetastoreservice"
 
 &datagoogledataprocmetastoreservice.DataGoogleDataprocMetastoreServiceNetworkConfigConsumers {
 
@@ -1219,7 +1219,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogledatapr
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreServiceScalingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogledataprocmetastoreservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogledataprocmetastoreservice"
 
 &datagoogledataprocmetastoreservice.DataGoogleDataprocMetastoreServiceScalingConfig {
 
@@ -1232,7 +1232,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogledatapr
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreServiceScalingConfigAutoscalingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogledataprocmetastoreservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogledataprocmetastoreservice"
 
 &datagoogledataprocmetastoreservice.DataGoogleDataprocMetastoreServiceScalingConfigAutoscalingConfig {
 
@@ -1245,7 +1245,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogledatapr
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreServiceScalingConfigAutoscalingConfigLimitConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogledataprocmetastoreservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogledataprocmetastoreservice"
 
 &datagoogledataprocmetastoreservice.DataGoogleDataprocMetastoreServiceScalingConfigAutoscalingConfigLimitConfig {
 
@@ -1258,7 +1258,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogledatapr
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreServiceScheduledBackup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogledataprocmetastoreservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogledataprocmetastoreservice"
 
 &datagoogledataprocmetastoreservice.DataGoogleDataprocMetastoreServiceScheduledBackup {
 
@@ -1271,7 +1271,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogledatapr
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreServiceTelemetryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogledataprocmetastoreservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogledataprocmetastoreservice"
 
 &datagoogledataprocmetastoreservice.DataGoogleDataprocMetastoreServiceTelemetryConfig {
 
@@ -1286,7 +1286,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogledatapr
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreServiceEncryptionConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogledataprocmetastoreservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogledataprocmetastoreservice"
 
 datagoogledataprocmetastoreservice.NewDataGoogleDataprocMetastoreServiceEncryptionConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleDataprocMetastoreServiceEncryptionConfigList
 ```
@@ -1435,7 +1435,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreServiceEncryptionConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogledataprocmetastoreservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogledataprocmetastoreservice"
 
 datagoogledataprocmetastoreservice.NewDataGoogleDataprocMetastoreServiceEncryptionConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleDataprocMetastoreServiceEncryptionConfigOutputReference
 ```
@@ -1713,7 +1713,7 @@ func InternalValue() DataGoogleDataprocMetastoreServiceEncryptionConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogledataprocmetastoreservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogledataprocmetastoreservice"
 
 datagoogledataprocmetastoreservice.NewDataGoogleDataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleDataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersionsList
 ```
@@ -1862,7 +1862,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogledataprocmetastoreservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogledataprocmetastoreservice"
 
 datagoogledataprocmetastoreservice.NewDataGoogleDataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleDataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersionsOutputReference
 ```
@@ -2162,7 +2162,7 @@ func InternalValue() DataGoogleDataprocMetastoreServiceHiveMetastoreConfigAuxili
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreServiceHiveMetastoreConfigKerberosConfigKeytabList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogledataprocmetastoreservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogledataprocmetastoreservice"
 
 datagoogledataprocmetastoreservice.NewDataGoogleDataprocMetastoreServiceHiveMetastoreConfigKerberosConfigKeytabList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleDataprocMetastoreServiceHiveMetastoreConfigKerberosConfigKeytabList
 ```
@@ -2311,7 +2311,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreServiceHiveMetastoreConfigKerberosConfigKeytabOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogledataprocmetastoreservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogledataprocmetastoreservice"
 
 datagoogledataprocmetastoreservice.NewDataGoogleDataprocMetastoreServiceHiveMetastoreConfigKerberosConfigKeytabOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleDataprocMetastoreServiceHiveMetastoreConfigKerberosConfigKeytabOutputReference
 ```
@@ -2589,7 +2589,7 @@ func InternalValue() DataGoogleDataprocMetastoreServiceHiveMetastoreConfigKerber
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreServiceHiveMetastoreConfigKerberosConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogledataprocmetastoreservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogledataprocmetastoreservice"
 
 datagoogledataprocmetastoreservice.NewDataGoogleDataprocMetastoreServiceHiveMetastoreConfigKerberosConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleDataprocMetastoreServiceHiveMetastoreConfigKerberosConfigList
 ```
@@ -2738,7 +2738,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreServiceHiveMetastoreConfigKerberosConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogledataprocmetastoreservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogledataprocmetastoreservice"
 
 datagoogledataprocmetastoreservice.NewDataGoogleDataprocMetastoreServiceHiveMetastoreConfigKerberosConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleDataprocMetastoreServiceHiveMetastoreConfigKerberosConfigOutputReference
 ```
@@ -3038,7 +3038,7 @@ func InternalValue() DataGoogleDataprocMetastoreServiceHiveMetastoreConfigKerber
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreServiceHiveMetastoreConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogledataprocmetastoreservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogledataprocmetastoreservice"
 
 datagoogledataprocmetastoreservice.NewDataGoogleDataprocMetastoreServiceHiveMetastoreConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleDataprocMetastoreServiceHiveMetastoreConfigList
 ```
@@ -3187,7 +3187,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreServiceHiveMetastoreConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogledataprocmetastoreservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogledataprocmetastoreservice"
 
 datagoogledataprocmetastoreservice.NewDataGoogleDataprocMetastoreServiceHiveMetastoreConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleDataprocMetastoreServiceHiveMetastoreConfigOutputReference
 ```
@@ -3509,7 +3509,7 @@ func InternalValue() DataGoogleDataprocMetastoreServiceHiveMetastoreConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreServiceMaintenanceWindowList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogledataprocmetastoreservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogledataprocmetastoreservice"
 
 datagoogledataprocmetastoreservice.NewDataGoogleDataprocMetastoreServiceMaintenanceWindowList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleDataprocMetastoreServiceMaintenanceWindowList
 ```
@@ -3658,7 +3658,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreServiceMaintenanceWindowOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogledataprocmetastoreservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogledataprocmetastoreservice"
 
 datagoogledataprocmetastoreservice.NewDataGoogleDataprocMetastoreServiceMaintenanceWindowOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleDataprocMetastoreServiceMaintenanceWindowOutputReference
 ```
@@ -3947,7 +3947,7 @@ func InternalValue() DataGoogleDataprocMetastoreServiceMaintenanceWindow
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreServiceMetadataIntegrationDataCatalogConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogledataprocmetastoreservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogledataprocmetastoreservice"
 
 datagoogledataprocmetastoreservice.NewDataGoogleDataprocMetastoreServiceMetadataIntegrationDataCatalogConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleDataprocMetastoreServiceMetadataIntegrationDataCatalogConfigList
 ```
@@ -4096,7 +4096,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreServiceMetadataIntegrationDataCatalogConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogledataprocmetastoreservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogledataprocmetastoreservice"
 
 datagoogledataprocmetastoreservice.NewDataGoogleDataprocMetastoreServiceMetadataIntegrationDataCatalogConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleDataprocMetastoreServiceMetadataIntegrationDataCatalogConfigOutputReference
 ```
@@ -4374,7 +4374,7 @@ func InternalValue() DataGoogleDataprocMetastoreServiceMetadataIntegrationDataCa
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreServiceMetadataIntegrationList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogledataprocmetastoreservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogledataprocmetastoreservice"
 
 datagoogledataprocmetastoreservice.NewDataGoogleDataprocMetastoreServiceMetadataIntegrationList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleDataprocMetastoreServiceMetadataIntegrationList
 ```
@@ -4523,7 +4523,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreServiceMetadataIntegrationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogledataprocmetastoreservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogledataprocmetastoreservice"
 
 datagoogledataprocmetastoreservice.NewDataGoogleDataprocMetastoreServiceMetadataIntegrationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleDataprocMetastoreServiceMetadataIntegrationOutputReference
 ```
@@ -4801,7 +4801,7 @@ func InternalValue() DataGoogleDataprocMetastoreServiceMetadataIntegration
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreServiceNetworkConfigConsumersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogledataprocmetastoreservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogledataprocmetastoreservice"
 
 datagoogledataprocmetastoreservice.NewDataGoogleDataprocMetastoreServiceNetworkConfigConsumersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleDataprocMetastoreServiceNetworkConfigConsumersList
 ```
@@ -4950,7 +4950,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreServiceNetworkConfigConsumersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogledataprocmetastoreservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogledataprocmetastoreservice"
 
 datagoogledataprocmetastoreservice.NewDataGoogleDataprocMetastoreServiceNetworkConfigConsumersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleDataprocMetastoreServiceNetworkConfigConsumersOutputReference
 ```
@@ -5239,7 +5239,7 @@ func InternalValue() DataGoogleDataprocMetastoreServiceNetworkConfigConsumers
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreServiceNetworkConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogledataprocmetastoreservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogledataprocmetastoreservice"
 
 datagoogledataprocmetastoreservice.NewDataGoogleDataprocMetastoreServiceNetworkConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleDataprocMetastoreServiceNetworkConfigList
 ```
@@ -5388,7 +5388,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreServiceNetworkConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogledataprocmetastoreservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogledataprocmetastoreservice"
 
 datagoogledataprocmetastoreservice.NewDataGoogleDataprocMetastoreServiceNetworkConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleDataprocMetastoreServiceNetworkConfigOutputReference
 ```
@@ -5666,7 +5666,7 @@ func InternalValue() DataGoogleDataprocMetastoreServiceNetworkConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreServiceScalingConfigAutoscalingConfigLimitConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogledataprocmetastoreservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogledataprocmetastoreservice"
 
 datagoogledataprocmetastoreservice.NewDataGoogleDataprocMetastoreServiceScalingConfigAutoscalingConfigLimitConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleDataprocMetastoreServiceScalingConfigAutoscalingConfigLimitConfigList
 ```
@@ -5815,7 +5815,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreServiceScalingConfigAutoscalingConfigLimitConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogledataprocmetastoreservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogledataprocmetastoreservice"
 
 datagoogledataprocmetastoreservice.NewDataGoogleDataprocMetastoreServiceScalingConfigAutoscalingConfigLimitConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleDataprocMetastoreServiceScalingConfigAutoscalingConfigLimitConfigOutputReference
 ```
@@ -6104,7 +6104,7 @@ func InternalValue() DataGoogleDataprocMetastoreServiceScalingConfigAutoscalingC
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreServiceScalingConfigAutoscalingConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogledataprocmetastoreservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogledataprocmetastoreservice"
 
 datagoogledataprocmetastoreservice.NewDataGoogleDataprocMetastoreServiceScalingConfigAutoscalingConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleDataprocMetastoreServiceScalingConfigAutoscalingConfigList
 ```
@@ -6253,7 +6253,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreServiceScalingConfigAutoscalingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogledataprocmetastoreservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogledataprocmetastoreservice"
 
 datagoogledataprocmetastoreservice.NewDataGoogleDataprocMetastoreServiceScalingConfigAutoscalingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleDataprocMetastoreServiceScalingConfigAutoscalingConfigOutputReference
 ```
@@ -6553,7 +6553,7 @@ func InternalValue() DataGoogleDataprocMetastoreServiceScalingConfigAutoscalingC
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreServiceScalingConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogledataprocmetastoreservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogledataprocmetastoreservice"
 
 datagoogledataprocmetastoreservice.NewDataGoogleDataprocMetastoreServiceScalingConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleDataprocMetastoreServiceScalingConfigList
 ```
@@ -6702,7 +6702,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreServiceScalingConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogledataprocmetastoreservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogledataprocmetastoreservice"
 
 datagoogledataprocmetastoreservice.NewDataGoogleDataprocMetastoreServiceScalingConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleDataprocMetastoreServiceScalingConfigOutputReference
 ```
@@ -7002,7 +7002,7 @@ func InternalValue() DataGoogleDataprocMetastoreServiceScalingConfig
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreServiceScheduledBackupList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogledataprocmetastoreservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogledataprocmetastoreservice"
 
 datagoogledataprocmetastoreservice.NewDataGoogleDataprocMetastoreServiceScheduledBackupList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleDataprocMetastoreServiceScheduledBackupList
 ```
@@ -7151,7 +7151,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreServiceScheduledBackupOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogledataprocmetastoreservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogledataprocmetastoreservice"
 
 datagoogledataprocmetastoreservice.NewDataGoogleDataprocMetastoreServiceScheduledBackupOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleDataprocMetastoreServiceScheduledBackupOutputReference
 ```
@@ -7462,7 +7462,7 @@ func InternalValue() DataGoogleDataprocMetastoreServiceScheduledBackup
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreServiceTelemetryConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogledataprocmetastoreservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogledataprocmetastoreservice"
 
 datagoogledataprocmetastoreservice.NewDataGoogleDataprocMetastoreServiceTelemetryConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleDataprocMetastoreServiceTelemetryConfigList
 ```
@@ -7611,7 +7611,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleDataprocMetastoreService.DataGoogleDataprocMetastoreServiceTelemetryConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagoogledataprocmetastoreservice"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagoogledataprocmetastoreservice"
 
 datagoogledataprocmetastoreservice.NewDataGoogleDataprocMetastoreServiceTelemetryConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleDataprocMetastoreServiceTelemetryConfigOutputReference
 ```

@@ -78,7 +78,7 @@
     "terraform"
   ],
   "engines": {
-    "node": ">= 20.9.0"
+    "node": ">= 20.16.0"
   },
   "main": "lib/index.js",
   "license": "MPL-2.0",

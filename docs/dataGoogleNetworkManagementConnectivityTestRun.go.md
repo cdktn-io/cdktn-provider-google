@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleNetworkManagementConnectivityTestRun.DataGoogleNetworkManagementConnectivityTestRun.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglenetworkmanagementconnectivitytestrun"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglenetworkmanagementconnectivitytestrun"
 
 datagooglenetworkmanagementconnectivitytestrun.NewDataGoogleNetworkManagementConnectivityTestRun(scope Construct, id *string, config DataGoogleNetworkManagementConnectivityTestRunConfig) DataGoogleNetworkManagementConnectivityTestRun
 ```
@@ -290,7 +290,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleNetworkManagementConnectivityTestRun.DataGoogleNetworkManagementConnectivityTestRun.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglenetworkmanagementconnectivitytestrun"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglenetworkmanagementconnectivitytestrun"
 
 datagooglenetworkmanagementconnectivitytestrun.DataGoogleNetworkManagementConnectivityTestRun_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleNetworkManagementConnectivityTestRun.DataGoogleNetworkManagementConnectivityTestRun.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglenetworkmanagementconnectivitytestrun"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglenetworkmanagementconnectivitytestrun"
 
 datagooglenetworkmanagementconnectivitytestrun.DataGoogleNetworkManagementConnectivityTestRun_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datagooglenetworkmanagementconnectivitytestrun.DataGoogleNetworkManagementConnec
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleNetworkManagementConnectivityTestRun.DataGoogleNetworkManagementConnectivityTestRun.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglenetworkmanagementconnectivitytestrun"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglenetworkmanagementconnectivitytestrun"
 
 datagooglenetworkmanagementconnectivitytestrun.DataGoogleNetworkManagementConnectivityTestRun_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ datagooglenetworkmanagementconnectivitytestrun.DataGoogleNetworkManagementConnec
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleNetworkManagementConnectivityTestRun.DataGoogleNetworkManagementConnectivityTestRun.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglenetworkmanagementconnectivitytestrun"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglenetworkmanagementconnectivitytestrun"
 
 datagooglenetworkmanagementconnectivitytestrun.DataGoogleNetworkManagementConnectivityTestRun_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -634,7 +634,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleNetworkManagementConnectivityTestRun.DataGoogleNetworkManagementConnectivityTestRunConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglenetworkmanagementconnectivitytestrun"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglenetworkmanagementconnectivitytestrun"
 
 &datagooglenetworkmanagementconnectivitytestrun.DataGoogleNetworkManagementConnectivityTestRunConfig {
 	Connection: interface{},
@@ -783,7 +783,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleNetworkManagementConnectivityTestRun.DataGoogleNetworkManagementConnectivityTestRunReachabilityDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglenetworkmanagementconnectivitytestrun"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglenetworkmanagementconnectivitytestrun"
 
 &datagooglenetworkmanagementconnectivitytestrun.DataGoogleNetworkManagementConnectivityTestRunReachabilityDetails {
 
@@ -796,7 +796,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglenetwor
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleNetworkManagementConnectivityTestRun.DataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsTraces.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglenetworkmanagementconnectivitytestrun"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglenetworkmanagementconnectivitytestrun"
 
 &datagooglenetworkmanagementconnectivitytestrun.DataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsTraces {
 
@@ -809,7 +809,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglenetwor
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleNetworkManagementConnectivityTestRun.DataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsTracesEndpointInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglenetworkmanagementconnectivitytestrun"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglenetworkmanagementconnectivitytestrun"
 
 &datagooglenetworkmanagementconnectivitytestrun.DataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsTracesEndpointInfo {
 
@@ -822,7 +822,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglenetwor
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleNetworkManagementConnectivityTestRun.DataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsTracesSteps.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglenetworkmanagementconnectivitytestrun"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglenetworkmanagementconnectivitytestrun"
 
 &datagooglenetworkmanagementconnectivitytestrun.DataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsTracesSteps {
 
@@ -837,7 +837,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglenetwor
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleNetworkManagementConnectivityTestRun.DataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglenetworkmanagementconnectivitytestrun"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglenetworkmanagementconnectivitytestrun"
 
 datagooglenetworkmanagementconnectivitytestrun.NewDataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsList
 ```
@@ -986,7 +986,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleNetworkManagementConnectivityTestRun.DataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglenetworkmanagementconnectivitytestrun"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglenetworkmanagementconnectivitytestrun"
 
 datagooglenetworkmanagementconnectivitytestrun.NewDataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsOutputReference
 ```
@@ -1286,7 +1286,7 @@ func InternalValue() DataGoogleNetworkManagementConnectivityTestRunReachabilityD
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleNetworkManagementConnectivityTestRun.DataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsTracesEndpointInfoList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglenetworkmanagementconnectivitytestrun"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglenetworkmanagementconnectivitytestrun"
 
 datagooglenetworkmanagementconnectivitytestrun.NewDataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsTracesEndpointInfoList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsTracesEndpointInfoList
 ```
@@ -1435,7 +1435,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleNetworkManagementConnectivityTestRun.DataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsTracesEndpointInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglenetworkmanagementconnectivitytestrun"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglenetworkmanagementconnectivitytestrun"
 
 datagooglenetworkmanagementconnectivitytestrun.NewDataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsTracesEndpointInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsTracesEndpointInfoOutputReference
 ```
@@ -1790,7 +1790,7 @@ func InternalValue() DataGoogleNetworkManagementConnectivityTestRunReachabilityD
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleNetworkManagementConnectivityTestRun.DataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsTracesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglenetworkmanagementconnectivitytestrun"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglenetworkmanagementconnectivitytestrun"
 
 datagooglenetworkmanagementconnectivitytestrun.NewDataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsTracesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsTracesList
 ```
@@ -1939,7 +1939,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleNetworkManagementConnectivityTestRun.DataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsTracesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglenetworkmanagementconnectivitytestrun"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglenetworkmanagementconnectivitytestrun"
 
 datagooglenetworkmanagementconnectivitytestrun.NewDataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsTracesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsTracesOutputReference
 ```
@@ -2239,7 +2239,7 @@ func InternalValue() DataGoogleNetworkManagementConnectivityTestRunReachabilityD
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleNetworkManagementConnectivityTestRun.DataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsTracesStepsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglenetworkmanagementconnectivitytestrun"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglenetworkmanagementconnectivitytestrun"
 
 datagooglenetworkmanagementconnectivitytestrun.NewDataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsTracesStepsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsTracesStepsList
 ```
@@ -2388,7 +2388,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleNetworkManagementConnectivityTestRun.DataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsTracesStepsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglenetworkmanagementconnectivitytestrun"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglenetworkmanagementconnectivitytestrun"
 
 datagooglenetworkmanagementconnectivitytestrun.NewDataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsTracesStepsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsTracesStepsOutputReference
 ```

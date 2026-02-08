@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.gkeHubScopeIamPolicy.GkeHubScopeIamPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/gkehubscopeiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubscopeiampolicy"
 
 gkehubscopeiampolicy.NewGkeHubScopeIamPolicy(scope Construct, id *string, config GkeHubScopeIamPolicyConfig) GkeHubScopeIamPolicy
 ```
@@ -392,7 +392,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.gkeHubScopeIamPolicy.GkeHubScopeIamPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/gkehubscopeiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubscopeiampolicy"
 
 gkehubscopeiampolicy.GkeHubScopeIamPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.gkeHubScopeIamPolicy.GkeHubScopeIamPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/gkehubscopeiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubscopeiampolicy"
 
 gkehubscopeiampolicy.GkeHubScopeIamPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ gkehubscopeiampolicy.GkeHubScopeIamPolicy_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.gkeHubScopeIamPolicy.GkeHubScopeIamPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/gkehubscopeiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubscopeiampolicy"
 
 gkehubscopeiampolicy.GkeHubScopeIamPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ gkehubscopeiampolicy.GkeHubScopeIamPolicy_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.gkeHubScopeIamPolicy.GkeHubScopeIamPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/gkehubscopeiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubscopeiampolicy"
 
 gkehubscopeiampolicy.GkeHubScopeIamPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -780,7 +780,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.gkeHubScopeIamPolicy.GkeHubScopeIamPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/gkehubscopeiampolicy"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/gkehubscopeiampolicy"
 
 &gkehubscopeiampolicy.GkeHubScopeIamPolicyConfig {
 	Connection: interface{},

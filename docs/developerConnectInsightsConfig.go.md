@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/developerconnectinsightsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/developerconnectinsightsconfig"
 
 developerconnectinsightsconfig.NewDeveloperConnectInsightsConfig(scope Construct, id *string, config DeveloperConnectInsightsConfigConfig) DeveloperConnectInsightsConfig
 ```
@@ -446,7 +446,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/developerconnectinsightsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/developerconnectinsightsconfig"
 
 developerconnectinsightsconfig.DeveloperConnectInsightsConfig_IsConstruct(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/developerconnectinsightsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/developerconnectinsightsconfig"
 
 developerconnectinsightsconfig.DeveloperConnectInsightsConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ developerconnectinsightsconfig.DeveloperConnectInsightsConfig_IsTerraformElement
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/developerconnectinsightsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/developerconnectinsightsconfig"
 
 developerconnectinsightsconfig.DeveloperConnectInsightsConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ developerconnectinsightsconfig.DeveloperConnectInsightsConfig_IsTerraformResourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/developerconnectinsightsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/developerconnectinsightsconfig"
 
 developerconnectinsightsconfig.DeveloperConnectInsightsConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1043,11 +1043,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigArtifactConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/developerconnectinsightsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/developerconnectinsightsconfig"
 
 &developerconnectinsightsconfig.DeveloperConnectInsightsConfigArtifactConfigs {
-	GoogleArtifactAnalysis: github.com/cdktn-io/cdktn-provider-google-go/google/v16.developerConnectInsightsConfig.DeveloperConnectInsightsConfigArtifactConfigsGoogleArtifactAnalysis,
-	GoogleArtifactRegistry: github.com/cdktn-io/cdktn-provider-google-go/google/v16.developerConnectInsightsConfig.DeveloperConnectInsightsConfigArtifactConfigsGoogleArtifactRegistry,
+	GoogleArtifactAnalysis: github.com/cdktn-io/cdktn-provider-google-go/google/v17.developerConnectInsightsConfig.DeveloperConnectInsightsConfigArtifactConfigsGoogleArtifactAnalysis,
+	GoogleArtifactRegistry: github.com/cdktn-io/cdktn-provider-google-go/google/v17.developerConnectInsightsConfig.DeveloperConnectInsightsConfigArtifactConfigsGoogleArtifactRegistry,
 	Uri: *string,
 }
 ```
@@ -1113,7 +1113,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigArtifactConfigsGoogleArtifactAnalysis.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/developerconnectinsightsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/developerconnectinsightsconfig"
 
 &developerconnectinsightsconfig.DeveloperConnectInsightsConfigArtifactConfigsGoogleArtifactAnalysis {
 	ProjectId: *string,
@@ -1147,7 +1147,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigArtifactConfigsGoogleArtifactRegistry.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/developerconnectinsightsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/developerconnectinsightsconfig"
 
 &developerconnectinsightsconfig.DeveloperConnectInsightsConfigArtifactConfigsGoogleArtifactRegistry {
 	ArtifactRegistryPackage: *string,
@@ -1197,7 +1197,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/developerconnectinsightsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/developerconnectinsightsconfig"
 
 &developerconnectinsightsconfig.DeveloperConnectInsightsConfigConfig {
 	Connection: interface{},
@@ -1215,7 +1215,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/developerconnect
 	Id: *string,
 	Labels: *map[string]*string,
 	Project: *string,
-	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v16.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTimeouts,
+	Timeouts: github.com/cdktn-io/cdktn-provider-google-go/google/v17.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTimeouts,
 }
 ```
 
@@ -1448,7 +1448,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigErrors.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/developerconnectinsightsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/developerconnectinsightsconfig"
 
 &developerconnectinsightsconfig.DeveloperConnectInsightsConfigErrors {
 
@@ -1461,7 +1461,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/developerconnect
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigErrorsDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/developerconnectinsightsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/developerconnectinsightsconfig"
 
 &developerconnectinsightsconfig.DeveloperConnectInsightsConfigErrorsDetails {
 
@@ -1474,7 +1474,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/developerconnect
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigRuntimeConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/developerconnectinsightsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/developerconnectinsightsconfig"
 
 &developerconnectinsightsconfig.DeveloperConnectInsightsConfigRuntimeConfigs {
 
@@ -1487,7 +1487,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/developerconnect
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigRuntimeConfigsAppHubWorkload.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/developerconnectinsightsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/developerconnectinsightsconfig"
 
 &developerconnectinsightsconfig.DeveloperConnectInsightsConfigRuntimeConfigsAppHubWorkload {
 
@@ -1500,7 +1500,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/developerconnect
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigRuntimeConfigsGkeWorkload.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/developerconnectinsightsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/developerconnectinsightsconfig"
 
 &developerconnectinsightsconfig.DeveloperConnectInsightsConfigRuntimeConfigsGkeWorkload {
 
@@ -1513,7 +1513,7 @@ import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/developerconnect
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/developerconnectinsightsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/developerconnectinsightsconfig"
 
 &developerconnectinsightsconfig.DeveloperConnectInsightsConfigTimeouts {
 	Create: *string,
@@ -1575,7 +1575,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigArtifactConfigsGoogleArtifactAnalysisOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/developerconnectinsightsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/developerconnectinsightsconfig"
 
 developerconnectinsightsconfig.NewDeveloperConnectInsightsConfigArtifactConfigsGoogleArtifactAnalysisOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeveloperConnectInsightsConfigArtifactConfigsGoogleArtifactAnalysisOutputReference
 ```
@@ -1846,7 +1846,7 @@ func InternalValue() DeveloperConnectInsightsConfigArtifactConfigsGoogleArtifact
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigArtifactConfigsGoogleArtifactRegistryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/developerconnectinsightsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/developerconnectinsightsconfig"
 
 developerconnectinsightsconfig.NewDeveloperConnectInsightsConfigArtifactConfigsGoogleArtifactRegistryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeveloperConnectInsightsConfigArtifactConfigsGoogleArtifactRegistryOutputReference
 ```
@@ -2139,7 +2139,7 @@ func InternalValue() DeveloperConnectInsightsConfigArtifactConfigsGoogleArtifact
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigArtifactConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/developerconnectinsightsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/developerconnectinsightsconfig"
 
 developerconnectinsightsconfig.NewDeveloperConnectInsightsConfigArtifactConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeveloperConnectInsightsConfigArtifactConfigsList
 ```
@@ -2299,7 +2299,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigArtifactConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/developerconnectinsightsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/developerconnectinsightsconfig"
 
 developerconnectinsightsconfig.NewDeveloperConnectInsightsConfigArtifactConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeveloperConnectInsightsConfigArtifactConfigsOutputReference
 ```
@@ -2679,7 +2679,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigErrorsDetailsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/developerconnectinsightsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/developerconnectinsightsconfig"
 
 developerconnectinsightsconfig.NewDeveloperConnectInsightsConfigErrorsDetailsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeveloperConnectInsightsConfigErrorsDetailsList
 ```
@@ -2828,7 +2828,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigErrorsDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/developerconnectinsightsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/developerconnectinsightsconfig"
 
 developerconnectinsightsconfig.NewDeveloperConnectInsightsConfigErrorsDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeveloperConnectInsightsConfigErrorsDetailsOutputReference
 ```
@@ -3106,7 +3106,7 @@ func InternalValue() DeveloperConnectInsightsConfigErrorsDetails
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigErrorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/developerconnectinsightsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/developerconnectinsightsconfig"
 
 developerconnectinsightsconfig.NewDeveloperConnectInsightsConfigErrorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeveloperConnectInsightsConfigErrorsList
 ```
@@ -3255,7 +3255,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigErrorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/developerconnectinsightsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/developerconnectinsightsconfig"
 
 developerconnectinsightsconfig.NewDeveloperConnectInsightsConfigErrorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeveloperConnectInsightsConfigErrorsOutputReference
 ```
@@ -3555,7 +3555,7 @@ func InternalValue() DeveloperConnectInsightsConfigErrors
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigRuntimeConfigsAppHubWorkloadList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/developerconnectinsightsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/developerconnectinsightsconfig"
 
 developerconnectinsightsconfig.NewDeveloperConnectInsightsConfigRuntimeConfigsAppHubWorkloadList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeveloperConnectInsightsConfigRuntimeConfigsAppHubWorkloadList
 ```
@@ -3704,7 +3704,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigRuntimeConfigsAppHubWorkloadOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/developerconnectinsightsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/developerconnectinsightsconfig"
 
 developerconnectinsightsconfig.NewDeveloperConnectInsightsConfigRuntimeConfigsAppHubWorkloadOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeveloperConnectInsightsConfigRuntimeConfigsAppHubWorkloadOutputReference
 ```
@@ -4004,7 +4004,7 @@ func InternalValue() DeveloperConnectInsightsConfigRuntimeConfigsAppHubWorkload
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigRuntimeConfigsGkeWorkloadList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/developerconnectinsightsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/developerconnectinsightsconfig"
 
 developerconnectinsightsconfig.NewDeveloperConnectInsightsConfigRuntimeConfigsGkeWorkloadList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeveloperConnectInsightsConfigRuntimeConfigsGkeWorkloadList
 ```
@@ -4153,7 +4153,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigRuntimeConfigsGkeWorkloadOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/developerconnectinsightsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/developerconnectinsightsconfig"
 
 developerconnectinsightsconfig.NewDeveloperConnectInsightsConfigRuntimeConfigsGkeWorkloadOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeveloperConnectInsightsConfigRuntimeConfigsGkeWorkloadOutputReference
 ```
@@ -4442,7 +4442,7 @@ func InternalValue() DeveloperConnectInsightsConfigRuntimeConfigsGkeWorkload
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigRuntimeConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/developerconnectinsightsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/developerconnectinsightsconfig"
 
 developerconnectinsightsconfig.NewDeveloperConnectInsightsConfigRuntimeConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DeveloperConnectInsightsConfigRuntimeConfigsList
 ```
@@ -4591,7 +4591,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigRuntimeConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/developerconnectinsightsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/developerconnectinsightsconfig"
 
 developerconnectinsightsconfig.NewDeveloperConnectInsightsConfigRuntimeConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DeveloperConnectInsightsConfigRuntimeConfigsOutputReference
 ```
@@ -4902,7 +4902,7 @@ func InternalValue() DeveloperConnectInsightsConfigRuntimeConfigs
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/developerconnectinsightsconfig"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/developerconnectinsightsconfig"
 
 developerconnectinsightsconfig.NewDeveloperConnectInsightsConfigTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DeveloperConnectInsightsConfigTimeoutsOutputReference
 ```

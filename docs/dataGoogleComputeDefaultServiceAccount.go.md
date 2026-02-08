@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 #### Initializers <a name="Initializers" id="@cdktn/provider-google.dataGoogleComputeDefaultServiceAccount.DataGoogleComputeDefaultServiceAccount.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglecomputedefaultserviceaccount"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecomputedefaultserviceaccount"
 
 datagooglecomputedefaultserviceaccount.NewDataGoogleComputeDefaultServiceAccount(scope Construct, id *string, config DataGoogleComputeDefaultServiceAccountConfig) DataGoogleComputeDefaultServiceAccount
 ```
@@ -290,7 +290,7 @@ func ResetProject()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-google.dataGoogleComputeDefaultServiceAccount.DataGoogleComputeDefaultServiceAccount.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglecomputedefaultserviceaccount"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecomputedefaultserviceaccount"
 
 datagooglecomputedefaultserviceaccount.DataGoogleComputeDefaultServiceAccount_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-google.dataGoogleComputeDefaultServiceAccount.DataGoogleComputeDefaultServiceAccount.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglecomputedefaultserviceaccount"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecomputedefaultserviceaccount"
 
 datagooglecomputedefaultserviceaccount.DataGoogleComputeDefaultServiceAccount_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datagooglecomputedefaultserviceaccount.DataGoogleComputeDefaultServiceAccount_Is
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-google.dataGoogleComputeDefaultServiceAccount.DataGoogleComputeDefaultServiceAccount.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglecomputedefaultserviceaccount"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecomputedefaultserviceaccount"
 
 datagooglecomputedefaultserviceaccount.DataGoogleComputeDefaultServiceAccount_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ datagooglecomputedefaultserviceaccount.DataGoogleComputeDefaultServiceAccount_Is
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-google.dataGoogleComputeDefaultServiceAccount.DataGoogleComputeDefaultServiceAccount.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglecomputedefaultserviceaccount"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecomputedefaultserviceaccount"
 
 datagooglecomputedefaultserviceaccount.DataGoogleComputeDefaultServiceAccount_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -656,7 +656,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-google.dataGoogleComputeDefaultServiceAccount.DataGoogleComputeDefaultServiceAccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-google-go/google/v16/datagooglecomputedefaultserviceaccount"
+import "github.com/cdktn-io/cdktn-provider-google-go/google/v17/datagooglecomputedefaultserviceaccount"
 
 &datagooglecomputedefaultserviceaccount.DataGoogleComputeDefaultServiceAccountConfig {
 	Connection: interface{},
