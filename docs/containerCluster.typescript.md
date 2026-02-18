@@ -409,7 +409,7 @@ public importFrom(id: string, provider?: TerraformProvider): void
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.containerCluster.ContainerCluster.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -815,7 +815,7 @@ public putNodePool(value: IResolvable | ContainerClusterNodePool[]): void
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.containerCluster.ContainerCluster.putNodePool.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePool">ContainerClusterNodePool</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePool">ContainerClusterNodePool</a>[]
 
 ---
 
@@ -1462,7 +1462,7 @@ public resetWorkloadIdentityConfig(): void
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a ContainerCluster resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTN code for importing a ContainerCluster resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -1534,7 +1534,7 @@ import { containerCluster } from '@cdktn/provider-google'
 containerCluster.ContainerCluster.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
-Generates CDKTF code for importing a ContainerCluster resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a ContainerCluster resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.containerCluster.ContainerCluster.generateConfigForImport.parameter.scope"></a>
 
@@ -1564,7 +1564,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.containerCluster.ContainerCluster.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the ContainerCluster to import is found.
 
@@ -1575,19 +1575,19 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.cdktfStack">cdktfStack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.addonsConfig">addonsConfig</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigOutputReference">ContainerClusterAddonsConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.anonymousAuthenticationConfig">anonymousAuthenticationConfig</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAnonymousAuthenticationConfigOutputReference">ContainerClusterAnonymousAuthenticationConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.authenticatorGroupsConfig">authenticatorGroupsConfig</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAuthenticatorGroupsConfigOutputReference">ContainerClusterAuthenticatorGroupsConfigOutputReference</a></code> | *No description.* |
@@ -1599,7 +1599,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.databaseEncryption">databaseEncryption</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterDatabaseEncryptionOutputReference">ContainerClusterDatabaseEncryptionOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.defaultSnatStatus">defaultSnatStatus</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterDefaultSnatStatusOutputReference">ContainerClusterDefaultSnatStatusOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.dnsConfig">dnsConfig</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterDnsConfigOutputReference">ContainerClusterDnsConfigOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.effectiveLabels">effectiveLabels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.effectiveLabels">effectiveLabels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.enableK8SBetaApis">enableK8SBetaApis</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterEnableK8SBetaApisOutputReference">ContainerClusterEnableK8SBetaApisOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.endpoint">endpoint</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.enterpriseConfig">enterpriseConfig</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterEnterpriseConfigOutputReference">ContainerClusterEnterpriseConfigOutputReference</a></code> | *No description.* |
@@ -1634,14 +1634,14 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.selfLink">selfLink</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.serviceExternalIpsConfig">serviceExternalIpsConfig</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterServiceExternalIpsConfigOutputReference">ContainerClusterServiceExternalIpsConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.servicesIpv4Cidr">servicesIpv4Cidr</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.terraformLabels">terraformLabels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.terraformLabels">terraformLabels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterTimeoutsOutputReference">ContainerClusterTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.tpuIpv4CidrBlock">tpuIpv4CidrBlock</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.userManagedKeysConfig">userManagedKeysConfig</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterUserManagedKeysConfigOutputReference">ContainerClusterUserManagedKeysConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.verticalPodAutoscaling">verticalPodAutoscaling</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterVerticalPodAutoscalingOutputReference">ContainerClusterVerticalPodAutoscalingOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.workloadIdentityConfig">workloadIdentityConfig</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterWorkloadIdentityConfigOutputReference">ContainerClusterWorkloadIdentityConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.addonsConfigInput">addonsConfigInput</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfig">ContainerClusterAddonsConfig</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.allowNetAdminInput">allowNetAdminInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.allowNetAdminInput">allowNetAdminInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.anonymousAuthenticationConfigInput">anonymousAuthenticationConfigInput</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAnonymousAuthenticationConfig">ContainerClusterAnonymousAuthenticationConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.authenticatorGroupsConfigInput">authenticatorGroupsConfigInput</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAuthenticatorGroupsConfig">ContainerClusterAuthenticatorGroupsConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.binaryAuthorizationInput">binaryAuthorizationInput</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterBinaryAuthorization">ContainerClusterBinaryAuthorization</a></code> | *No description.* |
@@ -1654,21 +1654,21 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.datapathProviderInput">datapathProviderInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.defaultMaxPodsPerNodeInput">defaultMaxPodsPerNodeInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.defaultSnatStatusInput">defaultSnatStatusInput</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterDefaultSnatStatus">ContainerClusterDefaultSnatStatus</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.deletionProtectionInput">deletionProtectionInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.deletionProtectionInput">deletionProtectionInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.disableL4LbFirewallReconciliationInput">disableL4LbFirewallReconciliationInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.disableL4LbFirewallReconciliationInput">disableL4LbFirewallReconciliationInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.dnsConfigInput">dnsConfigInput</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterDnsConfig">ContainerClusterDnsConfig</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.enableAutopilotInput">enableAutopilotInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.enableCiliumClusterwideNetworkPolicyInput">enableCiliumClusterwideNetworkPolicyInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.enableFqdnNetworkPolicyInput">enableFqdnNetworkPolicyInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.enableIntranodeVisibilityInput">enableIntranodeVisibilityInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.enableAutopilotInput">enableAutopilotInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.enableCiliumClusterwideNetworkPolicyInput">enableCiliumClusterwideNetworkPolicyInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.enableFqdnNetworkPolicyInput">enableFqdnNetworkPolicyInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.enableIntranodeVisibilityInput">enableIntranodeVisibilityInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.enableK8SBetaApisInput">enableK8SBetaApisInput</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterEnableK8SBetaApis">ContainerClusterEnableK8SBetaApis</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.enableKubernetesAlphaInput">enableKubernetesAlphaInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.enableL4IlbSubsettingInput">enableL4IlbSubsettingInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.enableLegacyAbacInput">enableLegacyAbacInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.enableMultiNetworkingInput">enableMultiNetworkingInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.enableShieldedNodesInput">enableShieldedNodesInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.enableTpuInput">enableTpuInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.enableKubernetesAlphaInput">enableKubernetesAlphaInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.enableL4IlbSubsettingInput">enableL4IlbSubsettingInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.enableLegacyAbacInput">enableLegacyAbacInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.enableMultiNetworkingInput">enableMultiNetworkingInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.enableShieldedNodesInput">enableShieldedNodesInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.enableTpuInput">enableTpuInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.enterpriseConfigInput">enterpriseConfigInput</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterEnterpriseConfig">ContainerClusterEnterpriseConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.fleetInput">fleetInput</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterFleet">ContainerClusterFleet</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.gatewayApiConfigInput">gatewayApiConfigInput</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterGatewayApiConfig">ContainerClusterGatewayApiConfig</a></code> | *No description.* |
@@ -1697,7 +1697,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.nodeLocationsInput">nodeLocationsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.nodePoolAutoConfigInput">nodePoolAutoConfigInput</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolAutoConfig">ContainerClusterNodePoolAutoConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.nodePoolDefaultsInput">nodePoolDefaultsInput</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaults">ContainerClusterNodePoolDefaults</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.nodePoolInput">nodePoolInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePool">ContainerClusterNodePool</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.nodePoolInput">nodePoolInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePool">ContainerClusterNodePool</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.nodeVersionInput">nodeVersionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.notificationConfigInput">notificationConfigInput</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNotificationConfig">ContainerClusterNotificationConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.podAutoscalingInput">podAutoscalingInput</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterPodAutoscaling">ContainerClusterPodAutoscaling</a></code> | *No description.* |
@@ -1706,34 +1706,34 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.rbacBindingConfigInput">rbacBindingConfigInput</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterRbacBindingConfig">ContainerClusterRbacBindingConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.releaseChannelInput">releaseChannelInput</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterReleaseChannel">ContainerClusterReleaseChannel</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.removeDefaultNodePoolInput">removeDefaultNodePoolInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.removeDefaultNodePoolInput">removeDefaultNodePoolInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.resourceLabelsInput">resourceLabelsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.resourceUsageExportConfigInput">resourceUsageExportConfigInput</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterResourceUsageExportConfig">ContainerClusterResourceUsageExportConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.secretManagerConfigInput">secretManagerConfigInput</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterSecretManagerConfig">ContainerClusterSecretManagerConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.securityPostureConfigInput">securityPostureConfigInput</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterSecurityPostureConfig">ContainerClusterSecurityPostureConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.serviceExternalIpsConfigInput">serviceExternalIpsConfigInput</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterServiceExternalIpsConfig">ContainerClusterServiceExternalIpsConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.subnetworkInput">subnetworkInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterTimeouts">ContainerClusterTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterTimeouts">ContainerClusterTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.userManagedKeysConfigInput">userManagedKeysConfigInput</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterUserManagedKeysConfig">ContainerClusterUserManagedKeysConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.verticalPodAutoscalingInput">verticalPodAutoscalingInput</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterVerticalPodAutoscaling">ContainerClusterVerticalPodAutoscaling</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.workloadIdentityConfigInput">workloadIdentityConfigInput</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterWorkloadIdentityConfig">ContainerClusterWorkloadIdentityConfig</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.allowNetAdmin">allowNetAdmin</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.allowNetAdmin">allowNetAdmin</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.clusterIpv4Cidr">clusterIpv4Cidr</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.datapathProvider">datapathProvider</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.defaultMaxPodsPerNode">defaultMaxPodsPerNode</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.deletionProtection">deletionProtection</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.deletionProtection">deletionProtection</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.description">description</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.disableL4LbFirewallReconciliation">disableL4LbFirewallReconciliation</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.enableAutopilot">enableAutopilot</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.enableCiliumClusterwideNetworkPolicy">enableCiliumClusterwideNetworkPolicy</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.enableFqdnNetworkPolicy">enableFqdnNetworkPolicy</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.enableIntranodeVisibility">enableIntranodeVisibility</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.enableKubernetesAlpha">enableKubernetesAlpha</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.enableL4IlbSubsetting">enableL4IlbSubsetting</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.enableLegacyAbac">enableLegacyAbac</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.enableMultiNetworking">enableMultiNetworking</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.enableShieldedNodes">enableShieldedNodes</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.enableTpu">enableTpu</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.disableL4LbFirewallReconciliation">disableL4LbFirewallReconciliation</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.enableAutopilot">enableAutopilot</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.enableCiliumClusterwideNetworkPolicy">enableCiliumClusterwideNetworkPolicy</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.enableFqdnNetworkPolicy">enableFqdnNetworkPolicy</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.enableIntranodeVisibility">enableIntranodeVisibility</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.enableKubernetesAlpha">enableKubernetesAlpha</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.enableL4IlbSubsetting">enableL4IlbSubsetting</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.enableLegacyAbac">enableLegacyAbac</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.enableMultiNetworking">enableMultiNetworking</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.enableShieldedNodes">enableShieldedNodes</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.enableTpu">enableTpu</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.initialNodeCount">initialNodeCount</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.inTransitEncryptionConfig">inTransitEncryptionConfig</a></code> | <code>string</code> | *No description.* |
@@ -1748,7 +1748,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.nodeVersion">nodeVersion</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.privateIpv6GoogleAccess">privateIpv6GoogleAccess</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.project">project</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.removeDefaultNodePool">removeDefaultNodePool</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.removeDefaultNodePool">removeDefaultNodePool</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.resourceLabels">resourceLabels</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerCluster.property.subnetwork">subnetwork</a></code> | <code>string</code> | *No description.* |
 
@@ -1772,7 +1772,7 @@ The tree node.
 public readonly cdktfStack: TerraformStack;
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -1822,7 +1822,7 @@ public readonly terraformResourceType: string;
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -1832,7 +1832,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1842,7 +1842,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -1862,7 +1862,7 @@ public readonly dependsOn: string[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1872,7 +1872,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1882,7 +1882,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1892,7 +1892,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -2012,7 +2012,7 @@ public readonly dnsConfig: ContainerClusterDnsConfigOutputReference;
 public readonly effectiveLabels: StringMap;
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -2362,7 +2362,7 @@ public readonly servicesIpv4Cidr: string;
 public readonly terraformLabels: StringMap;
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -2432,7 +2432,7 @@ public readonly addonsConfigInput: ContainerClusterAddonsConfig;
 public readonly allowNetAdminInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -2562,7 +2562,7 @@ public readonly defaultSnatStatusInput: ContainerClusterDefaultSnatStatus;
 public readonly deletionProtectionInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -2582,7 +2582,7 @@ public readonly descriptionInput: string;
 public readonly disableL4LbFirewallReconciliationInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -2602,7 +2602,7 @@ public readonly dnsConfigInput: ContainerClusterDnsConfig;
 public readonly enableAutopilotInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -2612,7 +2612,7 @@ public readonly enableAutopilotInput: boolean | IResolvable;
 public readonly enableCiliumClusterwideNetworkPolicyInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -2622,7 +2622,7 @@ public readonly enableCiliumClusterwideNetworkPolicyInput: boolean | IResolvable
 public readonly enableFqdnNetworkPolicyInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -2632,7 +2632,7 @@ public readonly enableFqdnNetworkPolicyInput: boolean | IResolvable;
 public readonly enableIntranodeVisibilityInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -2652,7 +2652,7 @@ public readonly enableK8SBetaApisInput: ContainerClusterEnableK8SBetaApis;
 public readonly enableKubernetesAlphaInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -2662,7 +2662,7 @@ public readonly enableKubernetesAlphaInput: boolean | IResolvable;
 public readonly enableL4IlbSubsettingInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -2672,7 +2672,7 @@ public readonly enableL4IlbSubsettingInput: boolean | IResolvable;
 public readonly enableLegacyAbacInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -2682,7 +2682,7 @@ public readonly enableLegacyAbacInput: boolean | IResolvable;
 public readonly enableMultiNetworkingInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -2692,7 +2692,7 @@ public readonly enableMultiNetworkingInput: boolean | IResolvable;
 public readonly enableShieldedNodesInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -2702,7 +2702,7 @@ public readonly enableShieldedNodesInput: boolean | IResolvable;
 public readonly enableTpuInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -2992,7 +2992,7 @@ public readonly nodePoolDefaultsInput: ContainerClusterNodePoolDefaults;
 public readonly nodePoolInput: IResolvable | ContainerClusterNodePool[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePool">ContainerClusterNodePool</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePool">ContainerClusterNodePool</a>[]
 
 ---
 
@@ -3082,7 +3082,7 @@ public readonly releaseChannelInput: ContainerClusterReleaseChannel;
 public readonly removeDefaultNodePoolInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -3152,7 +3152,7 @@ public readonly subnetworkInput: string;
 public readonly timeoutsInput: IResolvable | ContainerClusterTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterTimeouts">ContainerClusterTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterTimeouts">ContainerClusterTimeouts</a>
 
 ---
 
@@ -3192,7 +3192,7 @@ public readonly workloadIdentityConfigInput: ContainerClusterWorkloadIdentityCon
 public readonly allowNetAdmin: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -3232,7 +3232,7 @@ public readonly defaultMaxPodsPerNode: number;
 public readonly deletionProtection: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -3252,7 +3252,7 @@ public readonly description: string;
 public readonly disableL4LbFirewallReconciliation: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -3262,7 +3262,7 @@ public readonly disableL4LbFirewallReconciliation: boolean | IResolvable;
 public readonly enableAutopilot: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -3272,7 +3272,7 @@ public readonly enableAutopilot: boolean | IResolvable;
 public readonly enableCiliumClusterwideNetworkPolicy: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -3282,7 +3282,7 @@ public readonly enableCiliumClusterwideNetworkPolicy: boolean | IResolvable;
 public readonly enableFqdnNetworkPolicy: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -3292,7 +3292,7 @@ public readonly enableFqdnNetworkPolicy: boolean | IResolvable;
 public readonly enableIntranodeVisibility: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -3302,7 +3302,7 @@ public readonly enableIntranodeVisibility: boolean | IResolvable;
 public readonly enableKubernetesAlpha: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -3312,7 +3312,7 @@ public readonly enableKubernetesAlpha: boolean | IResolvable;
 public readonly enableL4IlbSubsetting: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -3322,7 +3322,7 @@ public readonly enableL4IlbSubsetting: boolean | IResolvable;
 public readonly enableLegacyAbac: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -3332,7 +3332,7 @@ public readonly enableLegacyAbac: boolean | IResolvable;
 public readonly enableMultiNetworking: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -3342,7 +3342,7 @@ public readonly enableMultiNetworking: boolean | IResolvable;
 public readonly enableShieldedNodes: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -3352,7 +3352,7 @@ public readonly enableShieldedNodes: boolean | IResolvable;
 public readonly enableTpu: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -3502,7 +3502,7 @@ public readonly project: string;
 public readonly removeDefaultNodePool: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -3572,7 +3572,7 @@ const containerClusterAddonsConfig: containerCluster.ContainerClusterAddonsConfi
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfig.property.lustreCsiDriverConfig">lustreCsiDriverConfig</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigLustreCsiDriverConfig">ContainerClusterAddonsConfigLustreCsiDriverConfig</a></code> | lustre_csi_driver_config block. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfig.property.networkPolicyConfig">networkPolicyConfig</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigNetworkPolicyConfig">ContainerClusterAddonsConfigNetworkPolicyConfig</a></code> | network_policy_config block. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfig.property.parallelstoreCsiDriverConfig">parallelstoreCsiDriverConfig</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigParallelstoreCsiDriverConfig">ContainerClusterAddonsConfigParallelstoreCsiDriverConfig</a></code> | parallelstore_csi_driver_config block. |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfig.property.rayOperatorConfig">rayOperatorConfig</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfig">ContainerClusterAddonsConfigRayOperatorConfig</a>[]</code> | ray_operator_config block. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfig.property.rayOperatorConfig">rayOperatorConfig</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfig">ContainerClusterAddonsConfigRayOperatorConfig</a>[]</code> | ray_operator_config block. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfig.property.statefulHaConfig">statefulHaConfig</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigStatefulHaConfig">ContainerClusterAddonsConfigStatefulHaConfig</a></code> | stateful_ha_config block. |
 
 ---
@@ -3751,7 +3751,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly rayOperatorConfig: IResolvable | ContainerClusterAddonsConfigRayOperatorConfig[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfig">ContainerClusterAddonsConfigRayOperatorConfig</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfig">ContainerClusterAddonsConfigRayOperatorConfig</a>[]
 
 ray_operator_config block.
 
@@ -3787,7 +3787,7 @@ const containerClusterAddonsConfigCloudrunConfig: containerCluster.ContainerClus
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigCloudrunConfig.property.disabled">disabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/container_cluster#disabled ContainerCluster#disabled}. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigCloudrunConfig.property.disabled">disabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/container_cluster#disabled ContainerCluster#disabled}. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigCloudrunConfig.property.loadBalancerType">loadBalancerType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/container_cluster#load_balancer_type ContainerCluster#load_balancer_type}. |
 
 ---
@@ -3798,7 +3798,7 @@ const containerClusterAddonsConfigCloudrunConfig: containerCluster.ContainerClus
 public readonly disabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/container_cluster#disabled ContainerCluster#disabled}.
 
@@ -3830,7 +3830,7 @@ const containerClusterAddonsConfigConfigConnectorConfig: containerCluster.Contai
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigConfigConnectorConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigConfigConnectorConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}. |
 
 ---
 
@@ -3840,7 +3840,7 @@ const containerClusterAddonsConfigConfigConnectorConfig: containerCluster.Contai
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}.
 
@@ -3860,7 +3860,7 @@ const containerClusterAddonsConfigDnsCacheConfig: containerCluster.ContainerClus
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigDnsCacheConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigDnsCacheConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}. |
 
 ---
 
@@ -3870,7 +3870,7 @@ const containerClusterAddonsConfigDnsCacheConfig: containerCluster.ContainerClus
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}.
 
@@ -3890,7 +3890,7 @@ const containerClusterAddonsConfigGcePersistentDiskCsiDriverConfig: containerClu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigGcePersistentDiskCsiDriverConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigGcePersistentDiskCsiDriverConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}. |
 
 ---
 
@@ -3900,7 +3900,7 @@ const containerClusterAddonsConfigGcePersistentDiskCsiDriverConfig: containerClu
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}.
 
@@ -3920,7 +3920,7 @@ const containerClusterAddonsConfigGcpFilestoreCsiDriverConfig: containerCluster.
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigGcpFilestoreCsiDriverConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigGcpFilestoreCsiDriverConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}. |
 
 ---
 
@@ -3930,7 +3930,7 @@ const containerClusterAddonsConfigGcpFilestoreCsiDriverConfig: containerCluster.
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}.
 
@@ -3950,7 +3950,7 @@ const containerClusterAddonsConfigGcsFuseCsiDriverConfig: containerCluster.Conta
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigGcsFuseCsiDriverConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigGcsFuseCsiDriverConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}. |
 
 ---
 
@@ -3960,7 +3960,7 @@ const containerClusterAddonsConfigGcsFuseCsiDriverConfig: containerCluster.Conta
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}.
 
@@ -3980,7 +3980,7 @@ const containerClusterAddonsConfigGkeBackupAgentConfig: containerCluster.Contain
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigGkeBackupAgentConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigGkeBackupAgentConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}. |
 
 ---
 
@@ -3990,7 +3990,7 @@ const containerClusterAddonsConfigGkeBackupAgentConfig: containerCluster.Contain
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}.
 
@@ -4010,7 +4010,7 @@ const containerClusterAddonsConfigHorizontalPodAutoscaling: containerCluster.Con
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigHorizontalPodAutoscaling.property.disabled">disabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/container_cluster#disabled ContainerCluster#disabled}. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigHorizontalPodAutoscaling.property.disabled">disabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/container_cluster#disabled ContainerCluster#disabled}. |
 
 ---
 
@@ -4020,7 +4020,7 @@ const containerClusterAddonsConfigHorizontalPodAutoscaling: containerCluster.Con
 public readonly disabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/container_cluster#disabled ContainerCluster#disabled}.
 
@@ -4040,7 +4040,7 @@ const containerClusterAddonsConfigHttpLoadBalancing: containerCluster.ContainerC
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigHttpLoadBalancing.property.disabled">disabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/container_cluster#disabled ContainerCluster#disabled}. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigHttpLoadBalancing.property.disabled">disabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/container_cluster#disabled ContainerCluster#disabled}. |
 
 ---
 
@@ -4050,7 +4050,7 @@ const containerClusterAddonsConfigHttpLoadBalancing: containerCluster.ContainerC
 public readonly disabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/container_cluster#disabled ContainerCluster#disabled}.
 
@@ -4070,8 +4070,8 @@ const containerClusterAddonsConfigLustreCsiDriverConfig: containerCluster.Contai
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigLustreCsiDriverConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether the Lustre CSI driver is enabled for this cluster. |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigLustreCsiDriverConfig.property.enableLegacyLustrePort">enableLegacyLustrePort</a></code> | <code>boolean \| cdktf.IResolvable</code> | If set to true, the Lustre CSI driver will initialize LNet (the virtual network layer for Lustre kernel module) using port 6988. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigLustreCsiDriverConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether the Lustre CSI driver is enabled for this cluster. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigLustreCsiDriverConfig.property.enableLegacyLustrePort">enableLegacyLustrePort</a></code> | <code>boolean \| cdktn.IResolvable</code> | If set to true, the Lustre CSI driver will initialize LNet (the virtual network layer for Lustre kernel module) using port 6988. |
 
 ---
 
@@ -4081,7 +4081,7 @@ const containerClusterAddonsConfigLustreCsiDriverConfig: containerCluster.Contai
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether the Lustre CSI driver is enabled for this cluster.
 
@@ -4095,7 +4095,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly enableLegacyLustrePort: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 If set to true, the Lustre CSI driver will initialize LNet (the virtual network layer for Lustre kernel module) using port 6988.
 
@@ -4119,7 +4119,7 @@ const containerClusterAddonsConfigNetworkPolicyConfig: containerCluster.Containe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigNetworkPolicyConfig.property.disabled">disabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/container_cluster#disabled ContainerCluster#disabled}. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigNetworkPolicyConfig.property.disabled">disabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/container_cluster#disabled ContainerCluster#disabled}. |
 
 ---
 
@@ -4129,7 +4129,7 @@ const containerClusterAddonsConfigNetworkPolicyConfig: containerCluster.Containe
 public readonly disabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/container_cluster#disabled ContainerCluster#disabled}.
 
@@ -4149,7 +4149,7 @@ const containerClusterAddonsConfigParallelstoreCsiDriverConfig: containerCluster
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigParallelstoreCsiDriverConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigParallelstoreCsiDriverConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}. |
 
 ---
 
@@ -4159,7 +4159,7 @@ const containerClusterAddonsConfigParallelstoreCsiDriverConfig: containerCluster
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}.
 
@@ -4179,7 +4179,7 @@ const containerClusterAddonsConfigRayOperatorConfig: containerCluster.ContainerC
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfig.property.rayClusterLoggingConfig">rayClusterLoggingConfig</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigRayClusterLoggingConfig">ContainerClusterAddonsConfigRayOperatorConfigRayClusterLoggingConfig</a></code> | ray_cluster_logging_config block. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfig.property.rayClusterMonitoringConfig">rayClusterMonitoringConfig</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigRayClusterMonitoringConfig">ContainerClusterAddonsConfigRayOperatorConfigRayClusterMonitoringConfig</a></code> | ray_cluster_monitoring_config block. |
 
@@ -4191,7 +4191,7 @@ const containerClusterAddonsConfigRayOperatorConfig: containerCluster.ContainerC
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}.
 
@@ -4239,7 +4239,7 @@ const containerClusterAddonsConfigRayOperatorConfigRayClusterLoggingConfig: cont
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigRayClusterLoggingConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigRayClusterLoggingConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}. |
 
 ---
 
@@ -4249,7 +4249,7 @@ const containerClusterAddonsConfigRayOperatorConfigRayClusterLoggingConfig: cont
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}.
 
@@ -4269,7 +4269,7 @@ const containerClusterAddonsConfigRayOperatorConfigRayClusterMonitoringConfig: c
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigRayClusterMonitoringConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigRayClusterMonitoringConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}. |
 
 ---
 
@@ -4279,7 +4279,7 @@ const containerClusterAddonsConfigRayOperatorConfigRayClusterMonitoringConfig: c
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}.
 
@@ -4299,7 +4299,7 @@ const containerClusterAddonsConfigStatefulHaConfig: containerCluster.ContainerCl
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigStatefulHaConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigStatefulHaConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}. |
 
 ---
 
@@ -4309,7 +4309,7 @@ const containerClusterAddonsConfigStatefulHaConfig: containerCluster.ContainerCl
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/container_cluster#enabled ContainerCluster#enabled}.
 
@@ -4399,7 +4399,7 @@ const containerClusterBinaryAuthorization: containerCluster.ContainerClusterBina
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterBinaryAuthorization.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enable Binary Authorization for this cluster. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterBinaryAuthorization.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Enable Binary Authorization for this cluster. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterBinaryAuthorization.property.evaluationMode">evaluationMode</a></code> | <code>string</code> | Mode of operation for Binary Authorization policy evaluation. |
 
 ---
@@ -4410,7 +4410,7 @@ const containerClusterBinaryAuthorization: containerCluster.ContainerClusterBina
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Enable Binary Authorization for this cluster.
 
@@ -4449,8 +4449,8 @@ const containerClusterClusterAutoscaling: containerCluster.ContainerClusterClust
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscaling.property.autoProvisioningDefaults">autoProvisioningDefaults</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaults">ContainerClusterClusterAutoscalingAutoProvisioningDefaults</a></code> | auto_provisioning_defaults block. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscaling.property.autoProvisioningLocations">autoProvisioningLocations</a></code> | <code>string[]</code> | The list of Google Compute Engine zones in which the NodePool's nodes can be created by NAP. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscaling.property.autoscalingProfile">autoscalingProfile</a></code> | <code>string</code> | Configuration options for the Autoscaling profile feature, which lets you choose whether the cluster autoscaler should optimize for resource utilization or resource availability when deciding to remove nodes from a cluster. |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscaling.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether node auto-provisioning is enabled. Resource limits for cpu and memory must be defined to enable node auto-provisioning. |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscaling.property.resourceLimits">resourceLimits</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingResourceLimits">ContainerClusterClusterAutoscalingResourceLimits</a>[]</code> | resource_limits block. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscaling.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether node auto-provisioning is enabled. Resource limits for cpu and memory must be defined to enable node auto-provisioning. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscaling.property.resourceLimits">resourceLimits</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingResourceLimits">ContainerClusterClusterAutoscalingResourceLimits</a>[]</code> | resource_limits block. |
 
 ---
 
@@ -4504,7 +4504,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether node auto-provisioning is enabled. Resource limits for cpu and memory must be defined to enable node auto-provisioning.
 
@@ -4518,7 +4518,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly resourceLimits: IResolvable | ContainerClusterClusterAutoscalingResourceLimits[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingResourceLimits">ContainerClusterClusterAutoscalingResourceLimits</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingResourceLimits">ContainerClusterClusterAutoscalingResourceLimits</a>[]
 
 resource_limits block.
 
@@ -4709,8 +4709,8 @@ const containerClusterClusterAutoscalingAutoProvisioningDefaultsManagement: cont
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagement.property.autoRepair">autoRepair</a></code> | <code>boolean \| cdktf.IResolvable</code> | Specifies whether the node auto-repair is enabled for the node pool. |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagement.property.autoUpgrade">autoUpgrade</a></code> | <code>boolean \| cdktf.IResolvable</code> | Specifies whether node auto-upgrade is enabled for the node pool. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagement.property.autoRepair">autoRepair</a></code> | <code>boolean \| cdktn.IResolvable</code> | Specifies whether the node auto-repair is enabled for the node pool. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagement.property.autoUpgrade">autoUpgrade</a></code> | <code>boolean \| cdktn.IResolvable</code> | Specifies whether node auto-upgrade is enabled for the node pool. |
 
 ---
 
@@ -4720,7 +4720,7 @@ const containerClusterClusterAutoscalingAutoProvisioningDefaultsManagement: cont
 public readonly autoRepair: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Specifies whether the node auto-repair is enabled for the node pool.
 
@@ -4736,7 +4736,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly autoUpgrade: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Specifies whether node auto-upgrade is enabled for the node pool.
 
@@ -4771,8 +4771,8 @@ const containerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstance
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfig.property.enableIntegrityMonitoring">enableIntegrityMonitoring</a></code> | <code>boolean \| cdktf.IResolvable</code> | Defines whether the instance has integrity monitoring enabled. |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfig.property.enableSecureBoot">enableSecureBoot</a></code> | <code>boolean \| cdktf.IResolvable</code> | Defines whether the instance has Secure Boot enabled. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfig.property.enableIntegrityMonitoring">enableIntegrityMonitoring</a></code> | <code>boolean \| cdktn.IResolvable</code> | Defines whether the instance has integrity monitoring enabled. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfig.property.enableSecureBoot">enableSecureBoot</a></code> | <code>boolean \| cdktn.IResolvable</code> | Defines whether the instance has Secure Boot enabled. |
 
 ---
 
@@ -4782,7 +4782,7 @@ const containerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstance
 public readonly enableIntegrityMonitoring: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Defines whether the instance has integrity monitoring enabled.
 
@@ -4796,7 +4796,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly enableSecureBoot: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Defines whether the instance has Secure Boot enabled.
 
@@ -5074,7 +5074,7 @@ const containerClusterConfidentialNodes: containerCluster.ContainerClusterConfid
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfidentialNodes.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether Confidential Nodes feature is enabled for all nodes in this cluster. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfidentialNodes.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether Confidential Nodes feature is enabled for all nodes in this cluster. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfidentialNodes.property.confidentialInstanceType">confidentialInstanceType</a></code> | <code>string</code> | Defines the type of technology used by the confidential node. |
 
 ---
@@ -5085,7 +5085,7 @@ const containerClusterConfidentialNodes: containerCluster.ContainerClusterConfid
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether Confidential Nodes feature is enabled for all nodes in this cluster.
 
@@ -5121,16 +5121,16 @@ const containerClusterConfig: containerCluster.ContainerClusterConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.dependsOn">dependsOn</a></code> | <code>cdktn.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.name">name</a></code> | <code>string</code> | The name of the cluster, unique within the project and location. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.addonsConfig">addonsConfig</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfig">ContainerClusterAddonsConfig</a></code> | addons_config block. |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.allowNetAdmin">allowNetAdmin</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enable NET_ADMIN for this cluster. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.allowNetAdmin">allowNetAdmin</a></code> | <code>boolean \| cdktn.IResolvable</code> | Enable NET_ADMIN for this cluster. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.anonymousAuthenticationConfig">anonymousAuthenticationConfig</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAnonymousAuthenticationConfig">ContainerClusterAnonymousAuthenticationConfig</a></code> | anonymous_authentication_config block. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.authenticatorGroupsConfig">authenticatorGroupsConfig</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAuthenticatorGroupsConfig">ContainerClusterAuthenticatorGroupsConfig</a></code> | authenticator_groups_config block. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.binaryAuthorization">binaryAuthorization</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterBinaryAuthorization">ContainerClusterBinaryAuthorization</a></code> | binary_authorization block. |
@@ -5143,21 +5143,21 @@ const containerClusterConfig: containerCluster.ContainerClusterConfig = { ... }
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.datapathProvider">datapathProvider</a></code> | <code>string</code> | The desired datapath provider for this cluster. By default, uses the IPTables-based kube-proxy implementation. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.defaultMaxPodsPerNode">defaultMaxPodsPerNode</a></code> | <code>number</code> | The default maximum number of pods per node in this cluster. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.defaultSnatStatus">defaultSnatStatus</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterDefaultSnatStatus">ContainerClusterDefaultSnatStatus</a></code> | default_snat_status block. |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.deletionProtection">deletionProtection</a></code> | <code>boolean \| cdktf.IResolvable</code> | When the field is set to true or unset in Terraform state, a terraform apply or terraform destroy that would delete the cluster will fail. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.deletionProtection">deletionProtection</a></code> | <code>boolean \| cdktn.IResolvable</code> | When the field is set to true or unset in Terraform state, a terraform apply or terraform destroy that would delete the cluster will fail. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.description">description</a></code> | <code>string</code> | Description of the cluster. |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.disableL4LbFirewallReconciliation">disableL4LbFirewallReconciliation</a></code> | <code>boolean \| cdktf.IResolvable</code> | Disable L4 load balancer VPC firewalls to enable firewall policies. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.disableL4LbFirewallReconciliation">disableL4LbFirewallReconciliation</a></code> | <code>boolean \| cdktn.IResolvable</code> | Disable L4 load balancer VPC firewalls to enable firewall policies. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.dnsConfig">dnsConfig</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterDnsConfig">ContainerClusterDnsConfig</a></code> | dns_config block. |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.enableAutopilot">enableAutopilot</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enable Autopilot for this cluster. |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.enableCiliumClusterwideNetworkPolicy">enableCiliumClusterwideNetworkPolicy</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether Cilium cluster-wide network policy is enabled on this cluster. |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.enableFqdnNetworkPolicy">enableFqdnNetworkPolicy</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether FQDN Network Policy is enabled on this cluster. |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.enableIntranodeVisibility">enableIntranodeVisibility</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether Intra-node visibility is enabled for this cluster. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.enableAutopilot">enableAutopilot</a></code> | <code>boolean \| cdktn.IResolvable</code> | Enable Autopilot for this cluster. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.enableCiliumClusterwideNetworkPolicy">enableCiliumClusterwideNetworkPolicy</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether Cilium cluster-wide network policy is enabled on this cluster. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.enableFqdnNetworkPolicy">enableFqdnNetworkPolicy</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether FQDN Network Policy is enabled on this cluster. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.enableIntranodeVisibility">enableIntranodeVisibility</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether Intra-node visibility is enabled for this cluster. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.enableK8SBetaApis">enableK8SBetaApis</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterEnableK8SBetaApis">ContainerClusterEnableK8SBetaApis</a></code> | enable_k8s_beta_apis block. |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.enableKubernetesAlpha">enableKubernetesAlpha</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether to enable Kubernetes Alpha features for this cluster. |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.enableL4IlbSubsetting">enableL4IlbSubsetting</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether L4ILB Subsetting is enabled for this cluster. |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.enableLegacyAbac">enableLegacyAbac</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether the ABAC authorizer is enabled for this cluster. |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.enableMultiNetworking">enableMultiNetworking</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether multi-networking is enabled for this cluster. |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.enableShieldedNodes">enableShieldedNodes</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enable Shielded Nodes features on all nodes in this cluster. Defaults to true. |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.enableTpu">enableTpu</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether to enable Cloud TPU resources in this cluster. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.enableKubernetesAlpha">enableKubernetesAlpha</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether to enable Kubernetes Alpha features for this cluster. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.enableL4IlbSubsetting">enableL4IlbSubsetting</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether L4ILB Subsetting is enabled for this cluster. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.enableLegacyAbac">enableLegacyAbac</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether the ABAC authorizer is enabled for this cluster. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.enableMultiNetworking">enableMultiNetworking</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether multi-networking is enabled for this cluster. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.enableShieldedNodes">enableShieldedNodes</a></code> | <code>boolean \| cdktn.IResolvable</code> | Enable Shielded Nodes features on all nodes in this cluster. Defaults to true. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.enableTpu">enableTpu</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether to enable Cloud TPU resources in this cluster. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.enterpriseConfig">enterpriseConfig</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterEnterpriseConfig">ContainerClusterEnterpriseConfig</a></code> | enterprise_config block. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.fleet">fleet</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterFleet">ContainerClusterFleet</a></code> | fleet block. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.gatewayApiConfig">gatewayApiConfig</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterGatewayApiConfig">ContainerClusterGatewayApiConfig</a></code> | gateway_api_config block. |
@@ -5183,7 +5183,7 @@ const containerClusterConfig: containerCluster.ContainerClusterConfig = { ... }
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.networkPolicy">networkPolicy</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNetworkPolicy">ContainerClusterNetworkPolicy</a></code> | network_policy block. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.nodeConfig">nodeConfig</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfig">ContainerClusterNodeConfig</a></code> | node_config block. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.nodeLocations">nodeLocations</a></code> | <code>string[]</code> | The list of zones in which the cluster's nodes are located. |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.nodePool">nodePool</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePool">ContainerClusterNodePool</a>[]</code> | node_pool block. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.nodePool">nodePool</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePool">ContainerClusterNodePool</a>[]</code> | node_pool block. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.nodePoolAutoConfig">nodePoolAutoConfig</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolAutoConfig">ContainerClusterNodePoolAutoConfig</a></code> | node_pool_auto_config block. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.nodePoolDefaults">nodePoolDefaults</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaults">ContainerClusterNodePoolDefaults</a></code> | node_pool_defaults block. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.nodeVersion">nodeVersion</a></code> | <code>string</code> | The Kubernetes version on the nodes. |
@@ -5194,7 +5194,7 @@ const containerClusterConfig: containerCluster.ContainerClusterConfig = { ... }
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.project">project</a></code> | <code>string</code> | The ID of the project in which the resource belongs. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.rbacBindingConfig">rbacBindingConfig</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterRbacBindingConfig">ContainerClusterRbacBindingConfig</a></code> | rbac_binding_config block. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.releaseChannel">releaseChannel</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterReleaseChannel">ContainerClusterReleaseChannel</a></code> | release_channel block. |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.removeDefaultNodePool">removeDefaultNodePool</a></code> | <code>boolean \| cdktf.IResolvable</code> | If true, deletes the default node pool upon cluster creation. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.removeDefaultNodePool">removeDefaultNodePool</a></code> | <code>boolean \| cdktn.IResolvable</code> | If true, deletes the default node pool upon cluster creation. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.resourceLabels">resourceLabels</a></code> | <code>{[ key: string ]: string}</code> | The GCE resource labels (a map of key/value pairs) to be applied to the cluster. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.resourceUsageExportConfig">resourceUsageExportConfig</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterResourceUsageExportConfig">ContainerClusterResourceUsageExportConfig</a></code> | resource_usage_export_config block. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfig.property.secretManagerConfig">secretManagerConfig</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterSecretManagerConfig">ContainerClusterSecretManagerConfig</a></code> | secret_manager_config block. |
@@ -5214,7 +5214,7 @@ const containerClusterConfig: containerCluster.ContainerClusterConfig = { ... }
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -5224,7 +5224,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -5234,7 +5234,7 @@ public readonly count: number | TerraformCount;
 public readonly dependsOn: ITerraformDependable[];
 ```
 
-- *Type:* cdktf.ITerraformDependable[]
+- *Type:* cdktn.ITerraformDependable[]
 
 ---
 
@@ -5244,7 +5244,7 @@ public readonly dependsOn: ITerraformDependable[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -5254,7 +5254,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -5264,7 +5264,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -5274,7 +5274,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -5312,7 +5312,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly allowNetAdmin: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Enable NET_ADMIN for this cluster.
 
@@ -5496,7 +5496,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly deletionProtection: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 When the field is set to true or unset in Terraform state, a terraform apply or terraform destroy that would delete the cluster will fail.
 
@@ -5526,7 +5526,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly disableL4LbFirewallReconciliation: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Disable L4 load balancer VPC firewalls to enable firewall policies.
 
@@ -5554,7 +5554,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly enableAutopilot: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Enable Autopilot for this cluster.
 
@@ -5568,7 +5568,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly enableCiliumClusterwideNetworkPolicy: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether Cilium cluster-wide network policy is enabled on this cluster.
 
@@ -5582,7 +5582,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly enableFqdnNetworkPolicy: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether FQDN Network Policy is enabled on this cluster.
 
@@ -5596,7 +5596,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly enableIntranodeVisibility: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether Intra-node visibility is enabled for this cluster.
 
@@ -5626,7 +5626,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly enableKubernetesAlpha: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether to enable Kubernetes Alpha features for this cluster.
 
@@ -5642,7 +5642,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly enableL4IlbSubsetting: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether L4ILB Subsetting is enabled for this cluster.
 
@@ -5656,7 +5656,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly enableLegacyAbac: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether the ABAC authorizer is enabled for this cluster.
 
@@ -5672,7 +5672,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly enableMultiNetworking: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether multi-networking is enabled for this cluster.
 
@@ -5686,7 +5686,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly enableShieldedNodes: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Enable Shielded Nodes features on all nodes in this cluster. Defaults to true.
 
@@ -5700,7 +5700,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly enableTpu: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether to enable Cloud TPU resources in this cluster.
 
@@ -6081,7 +6081,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly nodePool: IResolvable | ContainerClusterNodePool[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePool">ContainerClusterNodePool</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePool">ContainerClusterNodePool</a>[]
 
 node_pool block.
 
@@ -6241,7 +6241,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly removeDefaultNodePool: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 If true, deletes the default node pool upon cluster creation.
 
@@ -6455,7 +6455,7 @@ const containerClusterControlPlaneEndpointsConfigDnsEndpointConfig: containerClu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfig.property.allowExternalTraffic">allowExternalTraffic</a></code> | <code>boolean \| cdktf.IResolvable</code> | Controls whether user traffic is allowed over this endpoint. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfig.property.allowExternalTraffic">allowExternalTraffic</a></code> | <code>boolean \| cdktn.IResolvable</code> | Controls whether user traffic is allowed over this endpoint. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfig.property.endpoint">endpoint</a></code> | <code>string</code> | The cluster's DNS endpoint. |
 
 ---
@@ -6466,7 +6466,7 @@ const containerClusterControlPlaneEndpointsConfigDnsEndpointConfig: containerClu
 public readonly allowExternalTraffic: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Controls whether user traffic is allowed over this endpoint.
 
@@ -6504,7 +6504,7 @@ const containerClusterControlPlaneEndpointsConfigIpEndpointsConfig: containerClu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterControlPlaneEndpointsConfigIpEndpointsConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Controls whether to allow direct IP access. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterControlPlaneEndpointsConfigIpEndpointsConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Controls whether to allow direct IP access. |
 
 ---
 
@@ -6514,7 +6514,7 @@ const containerClusterControlPlaneEndpointsConfigIpEndpointsConfig: containerClu
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Controls whether to allow direct IP access.
 
@@ -6536,7 +6536,7 @@ const containerClusterCostManagementConfig: containerCluster.ContainerClusterCos
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterCostManagementConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether to enable GKE cost allocation. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterCostManagementConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether to enable GKE cost allocation. |
 
 ---
 
@@ -6546,7 +6546,7 @@ const containerClusterCostManagementConfig: containerCluster.ContainerClusterCos
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether to enable GKE cost allocation.
 
@@ -6617,7 +6617,7 @@ const containerClusterDefaultSnatStatus: containerCluster.ContainerClusterDefaul
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterDefaultSnatStatus.property.disabled">disabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | When disabled is set to false, default IP masquerade rules will be applied to the nodes to prevent sNAT on cluster internal traffic. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterDefaultSnatStatus.property.disabled">disabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | When disabled is set to false, default IP masquerade rules will be applied to the nodes to prevent sNAT on cluster internal traffic. |
 
 ---
 
@@ -6627,7 +6627,7 @@ const containerClusterDefaultSnatStatus: containerCluster.ContainerClusterDefaul
 public readonly disabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 When disabled is set to false, default IP masquerade rules will be applied to the nodes to prevent sNAT on cluster internal traffic.
 
@@ -6889,7 +6889,7 @@ const containerClusterIdentityServiceConfig: containerCluster.ContainerClusterId
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterIdentityServiceConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether to enable the Identity Service component. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterIdentityServiceConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether to enable the Identity Service component. |
 
 ---
 
@@ -6899,7 +6899,7 @@ const containerClusterIdentityServiceConfig: containerCluster.ContainerClusterId
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether to enable the Identity Service component.
 
@@ -6921,7 +6921,7 @@ const containerClusterIpAllocationPolicy: containerCluster.ContainerClusterIpAll
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicy.property.additionalIpRangesConfig">additionalIpRangesConfig</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyAdditionalIpRangesConfig">ContainerClusterIpAllocationPolicyAdditionalIpRangesConfig</a>[]</code> | additional_ip_ranges_config block. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicy.property.additionalIpRangesConfig">additionalIpRangesConfig</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyAdditionalIpRangesConfig">ContainerClusterIpAllocationPolicyAdditionalIpRangesConfig</a>[]</code> | additional_ip_ranges_config block. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicy.property.additionalPodRangesConfig">additionalPodRangesConfig</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyAdditionalPodRangesConfig">ContainerClusterIpAllocationPolicyAdditionalPodRangesConfig</a></code> | additional_pod_ranges_config block. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicy.property.clusterIpv4CidrBlock">clusterIpv4CidrBlock</a></code> | <code>string</code> | The IP address range for the cluster pod IPs. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicy.property.clusterSecondaryRangeName">clusterSecondaryRangeName</a></code> | <code>string</code> | The name of the existing secondary range in the cluster's subnetwork to use for pod IP addresses. |
@@ -6938,7 +6938,7 @@ const containerClusterIpAllocationPolicy: containerCluster.ContainerClusterIpAll
 public readonly additionalIpRangesConfig: IResolvable | ContainerClusterIpAllocationPolicyAdditionalIpRangesConfig[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyAdditionalIpRangesConfig">ContainerClusterIpAllocationPolicyAdditionalIpRangesConfig</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyAdditionalIpRangesConfig">ContainerClusterIpAllocationPolicyAdditionalIpRangesConfig</a>[]
 
 additional_ip_ranges_config block.
 
@@ -7147,7 +7147,7 @@ const containerClusterIpAllocationPolicyPodCidrOverprovisionConfig: containerClu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyPodCidrOverprovisionConfig.property.disabled">disabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/container_cluster#disabled ContainerCluster#disabled}. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyPodCidrOverprovisionConfig.property.disabled">disabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/container_cluster#disabled ContainerCluster#disabled}. |
 
 ---
 
@@ -7157,7 +7157,7 @@ const containerClusterIpAllocationPolicyPodCidrOverprovisionConfig: containerClu
 public readonly disabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/container_cluster#disabled ContainerCluster#disabled}.
 
@@ -7210,7 +7210,7 @@ const containerClusterMaintenancePolicy: containerCluster.ContainerClusterMainte
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicy.property.dailyMaintenanceWindow">dailyMaintenanceWindow</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyDailyMaintenanceWindow">ContainerClusterMaintenancePolicyDailyMaintenanceWindow</a></code> | daily_maintenance_window block. |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicy.property.maintenanceExclusion">maintenanceExclusion</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyMaintenanceExclusion">ContainerClusterMaintenancePolicyMaintenanceExclusion</a>[]</code> | maintenance_exclusion block. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicy.property.maintenanceExclusion">maintenanceExclusion</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyMaintenanceExclusion">ContainerClusterMaintenancePolicyMaintenanceExclusion</a>[]</code> | maintenance_exclusion block. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicy.property.recurringWindow">recurringWindow</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyRecurringWindow">ContainerClusterMaintenancePolicyRecurringWindow</a></code> | recurring_window block. |
 
 ---
@@ -7235,7 +7235,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly maintenanceExclusion: IResolvable | ContainerClusterMaintenancePolicyMaintenanceExclusion[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyMaintenanceExclusion">ContainerClusterMaintenancePolicyMaintenanceExclusion</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyMaintenanceExclusion">ContainerClusterMaintenancePolicyMaintenanceExclusion</a>[]
 
 maintenance_exclusion block.
 
@@ -7492,7 +7492,7 @@ const containerClusterMasterAuthClientCertificateConfig: containerCluster.Contai
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthClientCertificateConfig.property.issueClientCertificate">issueClientCertificate</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether client certificate authorization is enabled for this cluster. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthClientCertificateConfig.property.issueClientCertificate">issueClientCertificate</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether client certificate authorization is enabled for this cluster. |
 
 ---
 
@@ -7502,7 +7502,7 @@ const containerClusterMasterAuthClientCertificateConfig: containerCluster.Contai
 public readonly issueClientCertificate: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether client certificate authorization is enabled for this cluster.
 
@@ -7524,9 +7524,9 @@ const containerClusterMasterAuthorizedNetworksConfig: containerCluster.Container
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfig.property.cidrBlocks">cidrBlocks</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigCidrBlocks">ContainerClusterMasterAuthorizedNetworksConfigCidrBlocks</a>[]</code> | cidr_blocks block. |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfig.property.gcpPublicCidrsAccessEnabled">gcpPublicCidrsAccessEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether Kubernetes master is accessible via Google Compute Engine Public IPs. |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfig.property.privateEndpointEnforcementEnabled">privateEndpointEnforcementEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether authorized networks is enforced on the private endpoint or not. Defaults to false. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfig.property.cidrBlocks">cidrBlocks</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigCidrBlocks">ContainerClusterMasterAuthorizedNetworksConfigCidrBlocks</a>[]</code> | cidr_blocks block. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfig.property.gcpPublicCidrsAccessEnabled">gcpPublicCidrsAccessEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether Kubernetes master is accessible via Google Compute Engine Public IPs. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfig.property.privateEndpointEnforcementEnabled">privateEndpointEnforcementEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether authorized networks is enforced on the private endpoint or not. Defaults to false. |
 
 ---
 
@@ -7536,7 +7536,7 @@ const containerClusterMasterAuthorizedNetworksConfig: containerCluster.Container
 public readonly cidrBlocks: IResolvable | ContainerClusterMasterAuthorizedNetworksConfigCidrBlocks[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigCidrBlocks">ContainerClusterMasterAuthorizedNetworksConfigCidrBlocks</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigCidrBlocks">ContainerClusterMasterAuthorizedNetworksConfigCidrBlocks</a>[]
 
 cidr_blocks block.
 
@@ -7550,7 +7550,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly gcpPublicCidrsAccessEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether Kubernetes master is accessible via Google Compute Engine Public IPs.
 
@@ -7564,7 +7564,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly privateEndpointEnforcementEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether authorized networks is enforced on the private endpoint or not. Defaults to false.
 
@@ -7633,7 +7633,7 @@ const containerClusterMeshCertificates: containerCluster.ContainerClusterMeshCer
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMeshCertificates.property.enableCertificates">enableCertificates</a></code> | <code>boolean \| cdktf.IResolvable</code> | When enabled the GKE Workload Identity Certificates controller and node agent will be deployed in the cluster. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMeshCertificates.property.enableCertificates">enableCertificates</a></code> | <code>boolean \| cdktn.IResolvable</code> | When enabled the GKE Workload Identity Certificates controller and node agent will be deployed in the cluster. |
 
 ---
 
@@ -7643,7 +7643,7 @@ const containerClusterMeshCertificates: containerCluster.ContainerClusterMeshCer
 public readonly enableCertificates: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 When enabled the GKE Workload Identity Certificates controller and node agent will be deployed in the cluster.
 
@@ -7729,8 +7729,8 @@ const containerClusterMonitoringConfigAdvancedDatapathObservabilityConfig: conta
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfig.property.enableMetrics">enableMetrics</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether or not the advanced datapath metrics are enabled. |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfig.property.enableRelay">enableRelay</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether or not Relay is enabled. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfig.property.enableMetrics">enableMetrics</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether or not the advanced datapath metrics are enabled. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfig.property.enableRelay">enableRelay</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether or not Relay is enabled. |
 
 ---
 
@@ -7740,7 +7740,7 @@ const containerClusterMonitoringConfigAdvancedDatapathObservabilityConfig: conta
 public readonly enableMetrics: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether or not the advanced datapath metrics are enabled.
 
@@ -7754,7 +7754,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly enableRelay: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether or not Relay is enabled.
 
@@ -7776,7 +7776,7 @@ const containerClusterMonitoringConfigManagedPrometheus: containerCluster.Contai
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMonitoringConfigManagedPrometheus.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether or not the managed collection is enabled. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMonitoringConfigManagedPrometheus.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether or not the managed collection is enabled. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMonitoringConfigManagedPrometheus.property.autoMonitoringConfig">autoMonitoringConfig</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMonitoringConfigManagedPrometheusAutoMonitoringConfig">ContainerClusterMonitoringConfigManagedPrometheusAutoMonitoringConfig</a></code> | auto_monitoring_config block. |
 
 ---
@@ -7787,7 +7787,7 @@ const containerClusterMonitoringConfigManagedPrometheus: containerCluster.Contai
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether or not the managed collection is enabled.
 
@@ -7887,7 +7887,7 @@ const containerClusterNetworkPolicy: containerCluster.ContainerClusterNetworkPol
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNetworkPolicy.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether network policy is enabled on the cluster. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNetworkPolicy.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether network policy is enabled on the cluster. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNetworkPolicy.property.provider">provider</a></code> | <code>string</code> | The selected network policy provider. |
 
 ---
@@ -7898,7 +7898,7 @@ const containerClusterNetworkPolicy: containerCluster.ContainerClusterNetworkPol
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether network policy is enabled on the cluster.
 
@@ -7941,12 +7941,12 @@ const containerClusterNodeConfig: containerCluster.ContainerClusterNodeConfig = 
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfig.property.containerdConfig">containerdConfig</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfig">ContainerClusterNodeConfigContainerdConfig</a></code> | containerd_config block. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfig.property.diskSizeGb">diskSizeGb</a></code> | <code>number</code> | Size of the disk attached to each node, specified in GB. The smallest allowed disk size is 10GB. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfig.property.diskType">diskType</a></code> | <code>string</code> | Type of the disk attached to each node. Such as pd-standard, pd-balanced or pd-ssd. |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfig.property.enableConfidentialStorage">enableConfidentialStorage</a></code> | <code>boolean \| cdktf.IResolvable</code> | If enabled boot disks are configured with confidential mode. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfig.property.enableConfidentialStorage">enableConfidentialStorage</a></code> | <code>boolean \| cdktn.IResolvable</code> | If enabled boot disks are configured with confidential mode. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfig.property.ephemeralStorageLocalSsdConfig">ephemeralStorageLocalSsdConfig</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigEphemeralStorageLocalSsdConfig">ContainerClusterNodeConfigEphemeralStorageLocalSsdConfig</a></code> | ephemeral_storage_local_ssd_config block. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfig.property.fastSocket">fastSocket</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigFastSocket">ContainerClusterNodeConfigFastSocket</a></code> | fast_socket block. |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfig.property.flexStart">flexStart</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enables Flex Start provisioning model for the node pool. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfig.property.flexStart">flexStart</a></code> | <code>boolean \| cdktn.IResolvable</code> | Enables Flex Start provisioning model for the node pool. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfig.property.gcfsConfig">gcfsConfig</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGcfsConfig">ContainerClusterNodeConfigGcfsConfig</a></code> | gcfs_config block. |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfig.property.guestAccelerator">guestAccelerator</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGuestAccelerator">ContainerClusterNodeConfigGuestAccelerator</a>[]</code> | guest_accelerator block. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfig.property.guestAccelerator">guestAccelerator</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGuestAccelerator">ContainerClusterNodeConfigGuestAccelerator</a>[]</code> | guest_accelerator block. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfig.property.gvnic">gvnic</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGvnic">ContainerClusterNodeConfigGvnic</a></code> | gvnic block. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfig.property.hostMaintenancePolicy">hostMaintenancePolicy</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigHostMaintenancePolicy">ContainerClusterNodeConfigHostMaintenancePolicy</a></code> | host_maintenance_policy block. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfig.property.imageType">imageType</a></code> | <code>string</code> | The image type to use for this node. |
@@ -7963,18 +7963,18 @@ const containerClusterNodeConfig: containerCluster.ContainerClusterNodeConfig = 
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfig.property.minCpuPlatform">minCpuPlatform</a></code> | <code>string</code> | Minimum CPU platform to be used by this instance. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfig.property.nodeGroup">nodeGroup</a></code> | <code>string</code> | Setting this field will assign instances of this pool to run on the specified node group. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfig.property.oauthScopes">oauthScopes</a></code> | <code>string[]</code> | The set of Google API scopes to be made available on all of the node VMs. |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfig.property.preemptible">preemptible</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether the nodes are created as preemptible VM instances. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfig.property.preemptible">preemptible</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether the nodes are created as preemptible VM instances. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfig.property.reservationAffinity">reservationAffinity</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigReservationAffinity">ContainerClusterNodeConfigReservationAffinity</a></code> | reservation_affinity block. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfig.property.resourceLabels">resourceLabels</a></code> | <code>{[ key: string ]: string}</code> | The GCE resource labels (a map of key/value pairs) to be applied to the node pool. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfig.property.resourceManagerTags">resourceManagerTags</a></code> | <code>{[ key: string ]: string}</code> | A map of resource manager tags. |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfig.property.secondaryBootDisks">secondaryBootDisks</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSecondaryBootDisks">ContainerClusterNodeConfigSecondaryBootDisks</a>[]</code> | secondary_boot_disks block. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfig.property.secondaryBootDisks">secondaryBootDisks</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSecondaryBootDisks">ContainerClusterNodeConfigSecondaryBootDisks</a>[]</code> | secondary_boot_disks block. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfig.property.serviceAccount">serviceAccount</a></code> | <code>string</code> | The Google Cloud Platform Service Account to be used by the node VMs. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfig.property.shieldedInstanceConfig">shieldedInstanceConfig</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigShieldedInstanceConfig">ContainerClusterNodeConfigShieldedInstanceConfig</a></code> | shielded_instance_config block. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfig.property.soleTenantConfig">soleTenantConfig</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSoleTenantConfig">ContainerClusterNodeConfigSoleTenantConfig</a></code> | sole_tenant_config block. |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfig.property.spot">spot</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether the nodes are created as spot VM instances. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfig.property.spot">spot</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether the nodes are created as spot VM instances. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfig.property.storagePools">storagePools</a></code> | <code>string[]</code> | The list of Storage Pools where boot disks are provisioned. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfig.property.tags">tags</a></code> | <code>string[]</code> | The list of instance tags applied to all nodes. |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfig.property.taint">taint</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigTaint">ContainerClusterNodeConfigTaint</a>[]</code> | taint block. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfig.property.taint">taint</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigTaint">ContainerClusterNodeConfigTaint</a>[]</code> | taint block. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfig.property.windowsNodeConfig">windowsNodeConfig</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigWindowsNodeConfig">ContainerClusterNodeConfigWindowsNodeConfig</a></code> | windows_node_config block. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfig.property.workloadMetadataConfig">workloadMetadataConfig</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigWorkloadMetadataConfig">ContainerClusterNodeConfigWorkloadMetadataConfig</a></code> | workload_metadata_config block. |
 
@@ -8084,7 +8084,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly enableConfidentialStorage: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 If enabled boot disks are configured with confidential mode.
 
@@ -8126,7 +8126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly flexStart: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Enables Flex Start provisioning model for the node pool.
 
@@ -8154,7 +8154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly guestAccelerator: IResolvable | ContainerClusterNodeConfigGuestAccelerator[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGuestAccelerator">ContainerClusterNodeConfigGuestAccelerator</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGuestAccelerator">ContainerClusterNodeConfigGuestAccelerator</a>[]
 
 guest_accelerator block.
 
@@ -8402,7 +8402,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly preemptible: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether the nodes are created as preemptible VM instances.
 
@@ -8460,7 +8460,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly secondaryBootDisks: IResolvable | ContainerClusterNodeConfigSecondaryBootDisks[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSecondaryBootDisks">ContainerClusterNodeConfigSecondaryBootDisks</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSecondaryBootDisks">ContainerClusterNodeConfigSecondaryBootDisks</a>[]
 
 secondary_boot_disks block.
 
@@ -8516,7 +8516,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly spot: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether the nodes are created as spot VM instances.
 
@@ -8558,7 +8558,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly taint: IResolvable | ContainerClusterNodeConfigTaint[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigTaint">ContainerClusterNodeConfigTaint</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigTaint">ContainerClusterNodeConfigTaint</a>[]
 
 taint block.
 
@@ -8609,7 +8609,7 @@ const containerClusterNodeConfigAdvancedMachineFeatures: containerCluster.Contai
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigAdvancedMachineFeatures.property.threadsPerCore">threadsPerCore</a></code> | <code>number</code> | The number of threads per physical core. |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigAdvancedMachineFeatures.property.enableNestedVirtualization">enableNestedVirtualization</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether the node should have nested virtualization enabled. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigAdvancedMachineFeatures.property.enableNestedVirtualization">enableNestedVirtualization</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether the node should have nested virtualization enabled. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigAdvancedMachineFeatures.property.performanceMonitoringUnit">performanceMonitoringUnit</a></code> | <code>string</code> | Level of Performance Monitoring Unit (PMU) requested. If unset, no access to the PMU is assumed. |
 
 ---
@@ -8636,7 +8636,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly enableNestedVirtualization: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether the node should have nested virtualization enabled.
 
@@ -8749,7 +8749,7 @@ const containerClusterNodeConfigConfidentialNodes: containerCluster.ContainerClu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigConfidentialNodes.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether Confidential Nodes feature is enabled for all nodes in this pool. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigConfidentialNodes.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether Confidential Nodes feature is enabled for all nodes in this pool. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigConfidentialNodes.property.confidentialInstanceType">confidentialInstanceType</a></code> | <code>string</code> | Defines the type of technology used by the confidential node. |
 
 ---
@@ -8760,7 +8760,7 @@ const containerClusterNodeConfigConfidentialNodes: containerCluster.ContainerClu
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether Confidential Nodes feature is enabled for all nodes in this pool.
 
@@ -8828,8 +8828,8 @@ const containerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfig: con
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether or not private registries are configured. |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfig.property.certificateAuthorityDomainConfig">certificateAuthorityDomainConfig</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig">ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig</a>[]</code> | certificate_authority_domain_config block. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether or not private registries are configured. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfig.property.certificateAuthorityDomainConfig">certificateAuthorityDomainConfig</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig">ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig</a>[]</code> | certificate_authority_domain_config block. |
 
 ---
 
@@ -8839,7 +8839,7 @@ const containerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfig: con
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether or not private registries are configured.
 
@@ -8853,7 +8853,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly certificateAuthorityDomainConfig: IResolvable | ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig">ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig">ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig</a>[]
 
 certificate_authority_domain_config block.
 
@@ -9014,7 +9014,7 @@ const containerClusterNodeConfigFastSocket: containerCluster.ContainerClusterNod
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigFastSocket.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether or not NCCL Fast Socket is enabled. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigFastSocket.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether or not NCCL Fast Socket is enabled. |
 
 ---
 
@@ -9024,7 +9024,7 @@ const containerClusterNodeConfigFastSocket: containerCluster.ContainerClusterNod
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether or not NCCL Fast Socket is enabled.
 
@@ -9046,7 +9046,7 @@ const containerClusterNodeConfigGcfsConfig: containerCluster.ContainerClusterNod
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGcfsConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether or not GCFS is enabled. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGcfsConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether or not GCFS is enabled. |
 
 ---
 
@@ -9056,7 +9056,7 @@ const containerClusterNodeConfigGcfsConfig: containerCluster.ContainerClusterNod
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether or not GCFS is enabled.
 
@@ -9251,7 +9251,7 @@ const containerClusterNodeConfigGvnic: containerCluster.ContainerClusterNodeConf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGvnic.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether or not gvnic is enabled. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGvnic.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether or not gvnic is enabled. |
 
 ---
 
@@ -9261,7 +9261,7 @@ const containerClusterNodeConfigGvnic: containerCluster.ContainerClusterNodeConf
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether or not gvnic is enabled.
 
@@ -9318,7 +9318,7 @@ const containerClusterNodeConfigKubeletConfig: containerCluster.ContainerCluster
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfig.property.allowedUnsafeSysctls">allowedUnsafeSysctls</a></code> | <code>string[]</code> | Defines a comma-separated allowlist of unsafe sysctls or sysctl patterns which can be set on the Pods. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfig.property.containerLogMaxFiles">containerLogMaxFiles</a></code> | <code>number</code> | Defines the maximum number of container log files that can be present for a container. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfig.property.containerLogMaxSize">containerLogMaxSize</a></code> | <code>string</code> | Defines the maximum size of the container log file before it is rotated. |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfig.property.cpuCfsQuota">cpuCfsQuota</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enable CPU CFS quota enforcement for containers that specify CPU limits. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfig.property.cpuCfsQuota">cpuCfsQuota</a></code> | <code>boolean \| cdktn.IResolvable</code> | Enable CPU CFS quota enforcement for containers that specify CPU limits. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfig.property.cpuCfsQuotaPeriod">cpuCfsQuotaPeriod</a></code> | <code>string</code> | Set the CPU CFS quota period value 'cpu.cfs_period_us'. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfig.property.cpuManagerPolicy">cpuManagerPolicy</a></code> | <code>string</code> | Control the CPU management policy on the node. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfig.property.evictionMaxPodGracePeriodSeconds">evictionMaxPodGracePeriodSeconds</a></code> | <code>number</code> | Defines the maximum allowed grace period (in seconds) to use when terminating pods in response to a soft eviction threshold being met. |
@@ -9332,7 +9332,7 @@ const containerClusterNodeConfigKubeletConfig: containerCluster.ContainerCluster
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfig.property.insecureKubeletReadonlyPortEnabled">insecureKubeletReadonlyPortEnabled</a></code> | <code>string</code> | Controls whether the kubelet read-only port is enabled. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfig.property.maxParallelImagePulls">maxParallelImagePulls</a></code> | <code>number</code> | Set the maximum number of image pulls in parallel. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfig.property.podPidsLimit">podPidsLimit</a></code> | <code>number</code> | Controls the maximum number of processes allowed to run in a pod. |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfig.property.singleProcessOomKill">singleProcessOomKill</a></code> | <code>boolean \| cdktf.IResolvable</code> | Defines whether to enable single process OOM killer. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfig.property.singleProcessOomKill">singleProcessOomKill</a></code> | <code>boolean \| cdktn.IResolvable</code> | Defines whether to enable single process OOM killer. |
 
 ---
 
@@ -9384,7 +9384,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly cpuCfsQuota: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Enable CPU CFS quota enforcement for containers that specify CPU limits.
 
@@ -9584,7 +9584,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly singleProcessOomKill: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Defines whether to enable single process OOM killer.
 
@@ -10209,8 +10209,8 @@ const containerClusterNodeConfigShieldedInstanceConfig: containerCluster.Contain
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigShieldedInstanceConfig.property.enableIntegrityMonitoring">enableIntegrityMonitoring</a></code> | <code>boolean \| cdktf.IResolvable</code> | Defines whether the instance has integrity monitoring enabled. |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigShieldedInstanceConfig.property.enableSecureBoot">enableSecureBoot</a></code> | <code>boolean \| cdktf.IResolvable</code> | Defines whether the instance has Secure Boot enabled. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigShieldedInstanceConfig.property.enableIntegrityMonitoring">enableIntegrityMonitoring</a></code> | <code>boolean \| cdktn.IResolvable</code> | Defines whether the instance has integrity monitoring enabled. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigShieldedInstanceConfig.property.enableSecureBoot">enableSecureBoot</a></code> | <code>boolean \| cdktn.IResolvable</code> | Defines whether the instance has Secure Boot enabled. |
 
 ---
 
@@ -10220,7 +10220,7 @@ const containerClusterNodeConfigShieldedInstanceConfig: containerCluster.Contain
 public readonly enableIntegrityMonitoring: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Defines whether the instance has integrity monitoring enabled.
 
@@ -10234,7 +10234,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly enableSecureBoot: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Defines whether the instance has Secure Boot enabled.
 
@@ -10256,7 +10256,7 @@ const containerClusterNodeConfigSoleTenantConfig: containerCluster.ContainerClus
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSoleTenantConfig.property.nodeAffinity">nodeAffinity</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSoleTenantConfigNodeAffinity">ContainerClusterNodeConfigSoleTenantConfigNodeAffinity</a>[]</code> | node_affinity block. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSoleTenantConfig.property.nodeAffinity">nodeAffinity</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSoleTenantConfigNodeAffinity">ContainerClusterNodeConfigSoleTenantConfigNodeAffinity</a>[]</code> | node_affinity block. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSoleTenantConfig.property.minNodeCpus">minNodeCpus</a></code> | <code>number</code> | Specifies the minimum number of vCPUs that each sole tenant node must have to use CPU overcommit. |
 
 ---
@@ -10267,7 +10267,7 @@ const containerClusterNodeConfigSoleTenantConfig: containerCluster.ContainerClus
 public readonly nodeAffinity: IResolvable | ContainerClusterNodeConfigSoleTenantConfigNodeAffinity[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSoleTenantConfigNodeAffinity">ContainerClusterNodeConfigSoleTenantConfigNodeAffinity</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSoleTenantConfigNodeAffinity">ContainerClusterNodeConfigSoleTenantConfigNodeAffinity</a>[]
 
 node_affinity block.
 
@@ -11154,8 +11154,8 @@ const containerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateR
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether or not private registries are configured. |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfig.property.certificateAuthorityDomainConfig">certificateAuthorityDomainConfig</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig">ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig</a>[]</code> | certificate_authority_domain_config block. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether or not private registries are configured. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfig.property.certificateAuthorityDomainConfig">certificateAuthorityDomainConfig</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig">ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig</a>[]</code> | certificate_authority_domain_config block. |
 
 ---
 
@@ -11165,7 +11165,7 @@ const containerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateR
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether or not private registries are configured.
 
@@ -11179,7 +11179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly certificateAuthorityDomainConfig: IResolvable | ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig">ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig">ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig</a>[]
 
 certificate_authority_domain_config block.
 
@@ -11280,7 +11280,7 @@ const containerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfig: containerClu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether or not GCFS is enabled. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether or not GCFS is enabled. |
 
 ---
 
@@ -11290,7 +11290,7 @@ const containerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfig: containerClu
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether or not GCFS is enabled.
 
@@ -11312,8 +11312,8 @@ const containerClusterNodePoolManagement: containerCluster.ContainerClusterNodeP
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolManagement.property.autoRepair">autoRepair</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether the nodes will be automatically repaired. Enabled by default. |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolManagement.property.autoUpgrade">autoUpgrade</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether the nodes will be automatically upgraded. Enabled by default. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolManagement.property.autoRepair">autoRepair</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether the nodes will be automatically repaired. Enabled by default. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolManagement.property.autoUpgrade">autoUpgrade</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether the nodes will be automatically upgraded. Enabled by default. |
 
 ---
 
@@ -11323,7 +11323,7 @@ const containerClusterNodePoolManagement: containerCluster.ContainerClusterNodeP
 public readonly autoRepair: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether the nodes will be automatically repaired. Enabled by default.
 
@@ -11337,7 +11337,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly autoUpgrade: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether the nodes will be automatically upgraded. Enabled by default.
 
@@ -11359,10 +11359,10 @@ const containerClusterNodePoolNetworkConfig: containerCluster.ContainerClusterNo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfig.property.additionalNodeNetworkConfigs">additionalNodeNetworkConfigs</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigs">ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigs</a>[]</code> | additional_node_network_configs block. |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfig.property.additionalPodNetworkConfigs">additionalPodNetworkConfigs</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigs">ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigs</a>[]</code> | additional_pod_network_configs block. |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfig.property.createPodRange">createPodRange</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether to create a new range for pod IPs in this node pool. |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfig.property.enablePrivateNodes">enablePrivateNodes</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether nodes have internal IP addresses only. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfig.property.additionalNodeNetworkConfigs">additionalNodeNetworkConfigs</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigs">ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigs</a>[]</code> | additional_node_network_configs block. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfig.property.additionalPodNetworkConfigs">additionalPodNetworkConfigs</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigs">ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigs</a>[]</code> | additional_pod_network_configs block. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfig.property.createPodRange">createPodRange</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether to create a new range for pod IPs in this node pool. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfig.property.enablePrivateNodes">enablePrivateNodes</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether nodes have internal IP addresses only. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfig.property.networkPerformanceConfig">networkPerformanceConfig</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigNetworkPerformanceConfig">ContainerClusterNodePoolNetworkConfigNetworkPerformanceConfig</a></code> | network_performance_config block. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfig.property.podCidrOverprovisionConfig">podCidrOverprovisionConfig</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfig">ContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfig</a></code> | pod_cidr_overprovision_config block. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfig.property.podIpv4CidrBlock">podIpv4CidrBlock</a></code> | <code>string</code> | The IP address range for pod IPs in this node pool. |
@@ -11376,7 +11376,7 @@ const containerClusterNodePoolNetworkConfig: containerCluster.ContainerClusterNo
 public readonly additionalNodeNetworkConfigs: IResolvable | ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigs[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigs">ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigs</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigs">ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigs</a>[]
 
 additional_node_network_configs block.
 
@@ -11390,7 +11390,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly additionalPodNetworkConfigs: IResolvable | ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigs[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigs">ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigs</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigs">ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigs</a>[]
 
 additional_pod_network_configs block.
 
@@ -11404,7 +11404,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly createPodRange: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether to create a new range for pod IPs in this node pool.
 
@@ -11420,7 +11420,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly enablePrivateNodes: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether nodes have internal IP addresses only.
 
@@ -11643,7 +11643,7 @@ const containerClusterNodePoolNetworkConfigPodCidrOverprovisionConfig: container
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfig.property.disabled">disabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/container_cluster#disabled ContainerCluster#disabled}. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfig.property.disabled">disabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/container_cluster#disabled ContainerCluster#disabled}. |
 
 ---
 
@@ -11653,7 +11653,7 @@ const containerClusterNodePoolNetworkConfigPodCidrOverprovisionConfig: container
 public readonly disabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/container_cluster#disabled ContainerCluster#disabled}.
 
@@ -11680,12 +11680,12 @@ const containerClusterNodePoolNodeConfig: containerCluster.ContainerClusterNodeP
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfig.property.containerdConfig">containerdConfig</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfig">ContainerClusterNodePoolNodeConfigContainerdConfig</a></code> | containerd_config block. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfig.property.diskSizeGb">diskSizeGb</a></code> | <code>number</code> | Size of the disk attached to each node, specified in GB. The smallest allowed disk size is 10GB. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfig.property.diskType">diskType</a></code> | <code>string</code> | Type of the disk attached to each node. Such as pd-standard, pd-balanced or pd-ssd. |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfig.property.enableConfidentialStorage">enableConfidentialStorage</a></code> | <code>boolean \| cdktf.IResolvable</code> | If enabled boot disks are configured with confidential mode. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfig.property.enableConfidentialStorage">enableConfidentialStorage</a></code> | <code>boolean \| cdktn.IResolvable</code> | If enabled boot disks are configured with confidential mode. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfig.property.ephemeralStorageLocalSsdConfig">ephemeralStorageLocalSsdConfig</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfig">ContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfig</a></code> | ephemeral_storage_local_ssd_config block. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfig.property.fastSocket">fastSocket</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigFastSocket">ContainerClusterNodePoolNodeConfigFastSocket</a></code> | fast_socket block. |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfig.property.flexStart">flexStart</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enables Flex Start provisioning model for the node pool. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfig.property.flexStart">flexStart</a></code> | <code>boolean \| cdktn.IResolvable</code> | Enables Flex Start provisioning model for the node pool. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfig.property.gcfsConfig">gcfsConfig</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGcfsConfig">ContainerClusterNodePoolNodeConfigGcfsConfig</a></code> | gcfs_config block. |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfig.property.guestAccelerator">guestAccelerator</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGuestAccelerator">ContainerClusterNodePoolNodeConfigGuestAccelerator</a>[]</code> | guest_accelerator block. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfig.property.guestAccelerator">guestAccelerator</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGuestAccelerator">ContainerClusterNodePoolNodeConfigGuestAccelerator</a>[]</code> | guest_accelerator block. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfig.property.gvnic">gvnic</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGvnic">ContainerClusterNodePoolNodeConfigGvnic</a></code> | gvnic block. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfig.property.hostMaintenancePolicy">hostMaintenancePolicy</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigHostMaintenancePolicy">ContainerClusterNodePoolNodeConfigHostMaintenancePolicy</a></code> | host_maintenance_policy block. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfig.property.imageType">imageType</a></code> | <code>string</code> | The image type to use for this node. |
@@ -11702,18 +11702,18 @@ const containerClusterNodePoolNodeConfig: containerCluster.ContainerClusterNodeP
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfig.property.minCpuPlatform">minCpuPlatform</a></code> | <code>string</code> | Minimum CPU platform to be used by this instance. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfig.property.nodeGroup">nodeGroup</a></code> | <code>string</code> | Setting this field will assign instances of this pool to run on the specified node group. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfig.property.oauthScopes">oauthScopes</a></code> | <code>string[]</code> | The set of Google API scopes to be made available on all of the node VMs. |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfig.property.preemptible">preemptible</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether the nodes are created as preemptible VM instances. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfig.property.preemptible">preemptible</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether the nodes are created as preemptible VM instances. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfig.property.reservationAffinity">reservationAffinity</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigReservationAffinity">ContainerClusterNodePoolNodeConfigReservationAffinity</a></code> | reservation_affinity block. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfig.property.resourceLabels">resourceLabels</a></code> | <code>{[ key: string ]: string}</code> | The GCE resource labels (a map of key/value pairs) to be applied to the node pool. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfig.property.resourceManagerTags">resourceManagerTags</a></code> | <code>{[ key: string ]: string}</code> | A map of resource manager tags. |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfig.property.secondaryBootDisks">secondaryBootDisks</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSecondaryBootDisks">ContainerClusterNodePoolNodeConfigSecondaryBootDisks</a>[]</code> | secondary_boot_disks block. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfig.property.secondaryBootDisks">secondaryBootDisks</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSecondaryBootDisks">ContainerClusterNodePoolNodeConfigSecondaryBootDisks</a>[]</code> | secondary_boot_disks block. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfig.property.serviceAccount">serviceAccount</a></code> | <code>string</code> | The Google Cloud Platform Service Account to be used by the node VMs. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfig.property.shieldedInstanceConfig">shieldedInstanceConfig</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigShieldedInstanceConfig">ContainerClusterNodePoolNodeConfigShieldedInstanceConfig</a></code> | shielded_instance_config block. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfig.property.soleTenantConfig">soleTenantConfig</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSoleTenantConfig">ContainerClusterNodePoolNodeConfigSoleTenantConfig</a></code> | sole_tenant_config block. |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfig.property.spot">spot</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether the nodes are created as spot VM instances. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfig.property.spot">spot</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether the nodes are created as spot VM instances. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfig.property.storagePools">storagePools</a></code> | <code>string[]</code> | The list of Storage Pools where boot disks are provisioned. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfig.property.tags">tags</a></code> | <code>string[]</code> | The list of instance tags applied to all nodes. |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfig.property.taint">taint</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigTaint">ContainerClusterNodePoolNodeConfigTaint</a>[]</code> | taint block. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfig.property.taint">taint</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigTaint">ContainerClusterNodePoolNodeConfigTaint</a>[]</code> | taint block. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfig.property.windowsNodeConfig">windowsNodeConfig</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigWindowsNodeConfig">ContainerClusterNodePoolNodeConfigWindowsNodeConfig</a></code> | windows_node_config block. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfig.property.workloadMetadataConfig">workloadMetadataConfig</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigWorkloadMetadataConfig">ContainerClusterNodePoolNodeConfigWorkloadMetadataConfig</a></code> | workload_metadata_config block. |
 
@@ -11823,7 +11823,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly enableConfidentialStorage: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 If enabled boot disks are configured with confidential mode.
 
@@ -11865,7 +11865,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly flexStart: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Enables Flex Start provisioning model for the node pool.
 
@@ -11893,7 +11893,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly guestAccelerator: IResolvable | ContainerClusterNodePoolNodeConfigGuestAccelerator[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGuestAccelerator">ContainerClusterNodePoolNodeConfigGuestAccelerator</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGuestAccelerator">ContainerClusterNodePoolNodeConfigGuestAccelerator</a>[]
 
 guest_accelerator block.
 
@@ -12141,7 +12141,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly preemptible: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether the nodes are created as preemptible VM instances.
 
@@ -12199,7 +12199,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly secondaryBootDisks: IResolvable | ContainerClusterNodePoolNodeConfigSecondaryBootDisks[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSecondaryBootDisks">ContainerClusterNodePoolNodeConfigSecondaryBootDisks</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSecondaryBootDisks">ContainerClusterNodePoolNodeConfigSecondaryBootDisks</a>[]
 
 secondary_boot_disks block.
 
@@ -12255,7 +12255,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly spot: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether the nodes are created as spot VM instances.
 
@@ -12297,7 +12297,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly taint: IResolvable | ContainerClusterNodePoolNodeConfigTaint[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigTaint">ContainerClusterNodePoolNodeConfigTaint</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigTaint">ContainerClusterNodePoolNodeConfigTaint</a>[]
 
 taint block.
 
@@ -12348,7 +12348,7 @@ const containerClusterNodePoolNodeConfigAdvancedMachineFeatures: containerCluste
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigAdvancedMachineFeatures.property.threadsPerCore">threadsPerCore</a></code> | <code>number</code> | The number of threads per physical core. |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigAdvancedMachineFeatures.property.enableNestedVirtualization">enableNestedVirtualization</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether the node should have nested virtualization enabled. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigAdvancedMachineFeatures.property.enableNestedVirtualization">enableNestedVirtualization</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether the node should have nested virtualization enabled. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigAdvancedMachineFeatures.property.performanceMonitoringUnit">performanceMonitoringUnit</a></code> | <code>string</code> | Level of Performance Monitoring Unit (PMU) requested. If unset, no access to the PMU is assumed. |
 
 ---
@@ -12375,7 +12375,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly enableNestedVirtualization: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether the node should have nested virtualization enabled.
 
@@ -12488,7 +12488,7 @@ const containerClusterNodePoolNodeConfigConfidentialNodes: containerCluster.Cont
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigConfidentialNodes.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether Confidential Nodes feature is enabled for all nodes in this pool. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigConfidentialNodes.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether Confidential Nodes feature is enabled for all nodes in this pool. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigConfidentialNodes.property.confidentialInstanceType">confidentialInstanceType</a></code> | <code>string</code> | Defines the type of technology used by the confidential node. |
 
 ---
@@ -12499,7 +12499,7 @@ const containerClusterNodePoolNodeConfigConfidentialNodes: containerCluster.Cont
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether Confidential Nodes feature is enabled for all nodes in this pool.
 
@@ -12567,8 +12567,8 @@ const containerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessCon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether or not private registries are configured. |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfig.property.certificateAuthorityDomainConfig">certificateAuthorityDomainConfig</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig">ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig</a>[]</code> | certificate_authority_domain_config block. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether or not private registries are configured. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfig.property.certificateAuthorityDomainConfig">certificateAuthorityDomainConfig</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig">ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig</a>[]</code> | certificate_authority_domain_config block. |
 
 ---
 
@@ -12578,7 +12578,7 @@ const containerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessCon
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether or not private registries are configured.
 
@@ -12592,7 +12592,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly certificateAuthorityDomainConfig: IResolvable | ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig">ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig">ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig</a>[]
 
 certificate_authority_domain_config block.
 
@@ -12753,7 +12753,7 @@ const containerClusterNodePoolNodeConfigFastSocket: containerCluster.ContainerCl
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigFastSocket.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether or not NCCL Fast Socket is enabled. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigFastSocket.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether or not NCCL Fast Socket is enabled. |
 
 ---
 
@@ -12763,7 +12763,7 @@ const containerClusterNodePoolNodeConfigFastSocket: containerCluster.ContainerCl
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether or not NCCL Fast Socket is enabled.
 
@@ -12785,7 +12785,7 @@ const containerClusterNodePoolNodeConfigGcfsConfig: containerCluster.ContainerCl
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGcfsConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether or not GCFS is enabled. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGcfsConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether or not GCFS is enabled. |
 
 ---
 
@@ -12795,7 +12795,7 @@ const containerClusterNodePoolNodeConfigGcfsConfig: containerCluster.ContainerCl
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether or not GCFS is enabled.
 
@@ -12990,7 +12990,7 @@ const containerClusterNodePoolNodeConfigGvnic: containerCluster.ContainerCluster
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGvnic.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether or not gvnic is enabled. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGvnic.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether or not gvnic is enabled. |
 
 ---
 
@@ -13000,7 +13000,7 @@ const containerClusterNodePoolNodeConfigGvnic: containerCluster.ContainerCluster
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether or not gvnic is enabled.
 
@@ -13057,7 +13057,7 @@ const containerClusterNodePoolNodeConfigKubeletConfig: containerCluster.Containe
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfig.property.allowedUnsafeSysctls">allowedUnsafeSysctls</a></code> | <code>string[]</code> | Defines a comma-separated allowlist of unsafe sysctls or sysctl patterns which can be set on the Pods. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfig.property.containerLogMaxFiles">containerLogMaxFiles</a></code> | <code>number</code> | Defines the maximum number of container log files that can be present for a container. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfig.property.containerLogMaxSize">containerLogMaxSize</a></code> | <code>string</code> | Defines the maximum size of the container log file before it is rotated. |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfig.property.cpuCfsQuota">cpuCfsQuota</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enable CPU CFS quota enforcement for containers that specify CPU limits. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfig.property.cpuCfsQuota">cpuCfsQuota</a></code> | <code>boolean \| cdktn.IResolvable</code> | Enable CPU CFS quota enforcement for containers that specify CPU limits. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfig.property.cpuCfsQuotaPeriod">cpuCfsQuotaPeriod</a></code> | <code>string</code> | Set the CPU CFS quota period value 'cpu.cfs_period_us'. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfig.property.cpuManagerPolicy">cpuManagerPolicy</a></code> | <code>string</code> | Control the CPU management policy on the node. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfig.property.evictionMaxPodGracePeriodSeconds">evictionMaxPodGracePeriodSeconds</a></code> | <code>number</code> | Defines the maximum allowed grace period (in seconds) to use when terminating pods in response to a soft eviction threshold being met. |
@@ -13071,7 +13071,7 @@ const containerClusterNodePoolNodeConfigKubeletConfig: containerCluster.Containe
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfig.property.insecureKubeletReadonlyPortEnabled">insecureKubeletReadonlyPortEnabled</a></code> | <code>string</code> | Controls whether the kubelet read-only port is enabled. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfig.property.maxParallelImagePulls">maxParallelImagePulls</a></code> | <code>number</code> | Set the maximum number of image pulls in parallel. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfig.property.podPidsLimit">podPidsLimit</a></code> | <code>number</code> | Controls the maximum number of processes allowed to run in a pod. |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfig.property.singleProcessOomKill">singleProcessOomKill</a></code> | <code>boolean \| cdktf.IResolvable</code> | Defines whether to enable single process OOM killer. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfig.property.singleProcessOomKill">singleProcessOomKill</a></code> | <code>boolean \| cdktn.IResolvable</code> | Defines whether to enable single process OOM killer. |
 
 ---
 
@@ -13123,7 +13123,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly cpuCfsQuota: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Enable CPU CFS quota enforcement for containers that specify CPU limits.
 
@@ -13323,7 +13323,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly singleProcessOomKill: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Defines whether to enable single process OOM killer.
 
@@ -13948,8 +13948,8 @@ const containerClusterNodePoolNodeConfigShieldedInstanceConfig: containerCluster
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigShieldedInstanceConfig.property.enableIntegrityMonitoring">enableIntegrityMonitoring</a></code> | <code>boolean \| cdktf.IResolvable</code> | Defines whether the instance has integrity monitoring enabled. |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigShieldedInstanceConfig.property.enableSecureBoot">enableSecureBoot</a></code> | <code>boolean \| cdktf.IResolvable</code> | Defines whether the instance has Secure Boot enabled. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigShieldedInstanceConfig.property.enableIntegrityMonitoring">enableIntegrityMonitoring</a></code> | <code>boolean \| cdktn.IResolvable</code> | Defines whether the instance has integrity monitoring enabled. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigShieldedInstanceConfig.property.enableSecureBoot">enableSecureBoot</a></code> | <code>boolean \| cdktn.IResolvable</code> | Defines whether the instance has Secure Boot enabled. |
 
 ---
 
@@ -13959,7 +13959,7 @@ const containerClusterNodePoolNodeConfigShieldedInstanceConfig: containerCluster
 public readonly enableIntegrityMonitoring: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Defines whether the instance has integrity monitoring enabled.
 
@@ -13973,7 +13973,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly enableSecureBoot: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Defines whether the instance has Secure Boot enabled.
 
@@ -13995,7 +13995,7 @@ const containerClusterNodePoolNodeConfigSoleTenantConfig: containerCluster.Conta
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSoleTenantConfig.property.nodeAffinity">nodeAffinity</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinity">ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinity</a>[]</code> | node_affinity block. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSoleTenantConfig.property.nodeAffinity">nodeAffinity</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinity">ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinity</a>[]</code> | node_affinity block. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSoleTenantConfig.property.minNodeCpus">minNodeCpus</a></code> | <code>number</code> | Specifies the minimum number of vCPUs that each sole tenant node must have to use CPU overcommit. |
 
 ---
@@ -14006,7 +14006,7 @@ const containerClusterNodePoolNodeConfigSoleTenantConfig: containerCluster.Conta
 public readonly nodeAffinity: IResolvable | ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinity[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinity">ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinity</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinity">ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinity</a>[]
 
 node_affinity block.
 
@@ -14296,7 +14296,7 @@ const containerClusterNodePoolQueuedProvisioning: containerCluster.ContainerClus
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolQueuedProvisioning.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether nodes in this node pool are obtainable solely through the ProvisioningRequest API. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolQueuedProvisioning.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether nodes in this node pool are obtainable solely through the ProvisioningRequest API. |
 
 ---
 
@@ -14306,7 +14306,7 @@ const containerClusterNodePoolQueuedProvisioning: containerCluster.ContainerClus
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether nodes in this node pool are obtainable solely through the ProvisioningRequest API.
 
@@ -14550,7 +14550,7 @@ const containerClusterNotificationConfigPubsub: containerCluster.ContainerCluste
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNotificationConfigPubsub.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether or not the notification config is enabled. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNotificationConfigPubsub.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether or not the notification config is enabled. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNotificationConfigPubsub.property.filter">filter</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNotificationConfigPubsubFilter">ContainerClusterNotificationConfigPubsubFilter</a></code> | filter block. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNotificationConfigPubsub.property.topic">topic</a></code> | <code>string</code> | The pubsub topic to push upgrade notifications to. |
 
@@ -14562,7 +14562,7 @@ const containerClusterNotificationConfigPubsub: containerCluster.ContainerCluste
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether or not the notification config is enabled.
 
@@ -14683,8 +14683,8 @@ const containerClusterPrivateClusterConfig: containerCluster.ContainerClusterPri
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterPrivateClusterConfig.property.enablePrivateEndpoint">enablePrivateEndpoint</a></code> | <code>boolean \| cdktf.IResolvable</code> | When true, the cluster's private endpoint is used as the cluster endpoint and access through the public endpoint is disabled. |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterPrivateClusterConfig.property.enablePrivateNodes">enablePrivateNodes</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enables the private cluster feature, creating a private endpoint on the cluster. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterPrivateClusterConfig.property.enablePrivateEndpoint">enablePrivateEndpoint</a></code> | <code>boolean \| cdktn.IResolvable</code> | When true, the cluster's private endpoint is used as the cluster endpoint and access through the public endpoint is disabled. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterPrivateClusterConfig.property.enablePrivateNodes">enablePrivateNodes</a></code> | <code>boolean \| cdktn.IResolvable</code> | Enables the private cluster feature, creating a private endpoint on the cluster. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterPrivateClusterConfig.property.masterGlobalAccessConfig">masterGlobalAccessConfig</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterPrivateClusterConfigMasterGlobalAccessConfig">ContainerClusterPrivateClusterConfigMasterGlobalAccessConfig</a></code> | master_global_access_config block. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterPrivateClusterConfig.property.masterIpv4CidrBlock">masterIpv4CidrBlock</a></code> | <code>string</code> | The IP range in CIDR notation to use for the hosted master network. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterPrivateClusterConfig.property.privateEndpointSubnetwork">privateEndpointSubnetwork</a></code> | <code>string</code> | Subnetwork in cluster's network where master's endpoint will be provisioned. |
@@ -14697,7 +14697,7 @@ const containerClusterPrivateClusterConfig: containerCluster.ContainerClusterPri
 public readonly enablePrivateEndpoint: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 When true, the cluster's private endpoint is used as the cluster endpoint and access through the public endpoint is disabled.
 
@@ -14713,7 +14713,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly enablePrivateNodes: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Enables the private cluster feature, creating a private endpoint on the cluster.
 
@@ -14781,7 +14781,7 @@ const containerClusterPrivateClusterConfigMasterGlobalAccessConfig: containerClu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterPrivateClusterConfigMasterGlobalAccessConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether the cluster master is accessible globally or not. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterPrivateClusterConfigMasterGlobalAccessConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether the cluster master is accessible globally or not. |
 
 ---
 
@@ -14791,7 +14791,7 @@ const containerClusterPrivateClusterConfigMasterGlobalAccessConfig: containerClu
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether the cluster master is accessible globally or not.
 
@@ -14813,8 +14813,8 @@ const containerClusterRbacBindingConfig: containerCluster.ContainerClusterRbacBi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterRbacBindingConfig.property.enableInsecureBindingSystemAuthenticated">enableInsecureBindingSystemAuthenticated</a></code> | <code>boolean \| cdktf.IResolvable</code> | Setting this to true will allow any ClusterRoleBinding and RoleBinding with subjects system:authenticated. |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterRbacBindingConfig.property.enableInsecureBindingSystemUnauthenticated">enableInsecureBindingSystemUnauthenticated</a></code> | <code>boolean \| cdktf.IResolvable</code> | Setting this to true will allow any ClusterRoleBinding and RoleBinding with subjects system:anonymous or system:unauthenticated. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterRbacBindingConfig.property.enableInsecureBindingSystemAuthenticated">enableInsecureBindingSystemAuthenticated</a></code> | <code>boolean \| cdktn.IResolvable</code> | Setting this to true will allow any ClusterRoleBinding and RoleBinding with subjects system:authenticated. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterRbacBindingConfig.property.enableInsecureBindingSystemUnauthenticated">enableInsecureBindingSystemUnauthenticated</a></code> | <code>boolean \| cdktn.IResolvable</code> | Setting this to true will allow any ClusterRoleBinding and RoleBinding with subjects system:anonymous or system:unauthenticated. |
 
 ---
 
@@ -14824,7 +14824,7 @@ const containerClusterRbacBindingConfig: containerCluster.ContainerClusterRbacBi
 public readonly enableInsecureBindingSystemAuthenticated: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Setting this to true will allow any ClusterRoleBinding and RoleBinding with subjects system:authenticated.
 
@@ -14838,7 +14838,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly enableInsecureBindingSystemUnauthenticated: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Setting this to true will allow any ClusterRoleBinding and RoleBinding with subjects system:anonymous or system:unauthenticated.
 
@@ -14900,8 +14900,8 @@ const containerClusterResourceUsageExportConfig: containerCluster.ContainerClust
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterResourceUsageExportConfig.property.bigqueryDestination">bigqueryDestination</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterResourceUsageExportConfigBigqueryDestination">ContainerClusterResourceUsageExportConfigBigqueryDestination</a></code> | bigquery_destination block. |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterResourceUsageExportConfig.property.enableNetworkEgressMetering">enableNetworkEgressMetering</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether to enable network egress metering for this cluster. |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterResourceUsageExportConfig.property.enableResourceConsumptionMetering">enableResourceConsumptionMetering</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether to enable resource consumption metering on this cluster. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterResourceUsageExportConfig.property.enableNetworkEgressMetering">enableNetworkEgressMetering</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether to enable network egress metering for this cluster. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterResourceUsageExportConfig.property.enableResourceConsumptionMetering">enableResourceConsumptionMetering</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether to enable resource consumption metering on this cluster. |
 
 ---
 
@@ -14925,7 +14925,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly enableNetworkEgressMetering: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether to enable network egress metering for this cluster.
 
@@ -14941,7 +14941,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly enableResourceConsumptionMetering: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether to enable resource consumption metering on this cluster.
 
@@ -14997,7 +14997,7 @@ const containerClusterSecretManagerConfig: containerCluster.ContainerClusterSecr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterSecretManagerConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enable the Secret manager csi component. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterSecretManagerConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Enable the Secret manager csi component. |
 
 ---
 
@@ -15007,7 +15007,7 @@ const containerClusterSecretManagerConfig: containerCluster.ContainerClusterSecr
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Enable the Secret manager csi component.
 
@@ -15076,7 +15076,7 @@ const containerClusterServiceExternalIpsConfig: containerCluster.ContainerCluste
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterServiceExternalIpsConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | When enabled, services with external ips specified will be allowed. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterServiceExternalIpsConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | When enabled, services with external ips specified will be allowed. |
 
 ---
 
@@ -15086,7 +15086,7 @@ const containerClusterServiceExternalIpsConfig: containerCluster.ContainerCluste
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 When enabled, services with external ips specified will be allowed.
 
@@ -15314,7 +15314,7 @@ const containerClusterVerticalPodAutoscaling: containerCluster.ContainerClusterV
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterVerticalPodAutoscaling.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enables vertical pod autoscaling. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterVerticalPodAutoscaling.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Enables vertical pod autoscaling. |
 
 ---
 
@@ -15324,7 +15324,7 @@ const containerClusterVerticalPodAutoscaling: containerCluster.ContainerClusterV
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Enables vertical pod autoscaling.
 
@@ -15378,14 +15378,14 @@ new containerCluster.ContainerClusterAddonsConfigCloudrunConfigOutputReference(t
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigCloudrunConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigCloudrunConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigCloudrunConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigCloudrunConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15556,7 +15556,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigCloudrunConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15583,9 +15583,9 @@ public resetLoadBalancerType(): void
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigCloudrunConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigCloudrunConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigCloudrunConfigOutputReference.property.disabledInput">disabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigCloudrunConfigOutputReference.property.disabledInput">disabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigCloudrunConfigOutputReference.property.loadBalancerTypeInput">loadBalancerTypeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigCloudrunConfigOutputReference.property.disabled">disabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigCloudrunConfigOutputReference.property.disabled">disabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigCloudrunConfigOutputReference.property.loadBalancerType">loadBalancerType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigCloudrunConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigCloudrunConfig">ContainerClusterAddonsConfigCloudrunConfig</a></code> | *No description.* |
 
@@ -15621,7 +15621,7 @@ public readonly fqn: string;
 public readonly disabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -15641,7 +15641,7 @@ public readonly loadBalancerTypeInput: string;
 public readonly disabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -15678,14 +15678,14 @@ new containerCluster.ContainerClusterAddonsConfigConfigConnectorConfigOutputRefe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigConfigConnectorConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigConfigConnectorConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigConfigConnectorConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigConfigConnectorConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -15855,7 +15855,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigConfigConnectorConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -15876,8 +15876,8 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigConfigConnectorConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigConfigConnectorConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigConfigConnectorConfigOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigConfigConnectorConfigOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigConfigConnectorConfigOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigConfigConnectorConfigOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigConfigConnectorConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigConfigConnectorConfig">ContainerClusterAddonsConfigConfigConnectorConfig</a></code> | *No description.* |
 
 ---
@@ -15912,7 +15912,7 @@ public readonly fqn: string;
 public readonly enabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -15922,7 +15922,7 @@ public readonly enabledInput: boolean | IResolvable;
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -15949,14 +15949,14 @@ new containerCluster.ContainerClusterAddonsConfigDnsCacheConfigOutputReference(t
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigDnsCacheConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigDnsCacheConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigDnsCacheConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigDnsCacheConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -16126,7 +16126,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigDnsCacheConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -16147,8 +16147,8 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigDnsCacheConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigDnsCacheConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigDnsCacheConfigOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigDnsCacheConfigOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigDnsCacheConfigOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigDnsCacheConfigOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigDnsCacheConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigDnsCacheConfig">ContainerClusterAddonsConfigDnsCacheConfig</a></code> | *No description.* |
 
 ---
@@ -16183,7 +16183,7 @@ public readonly fqn: string;
 public readonly enabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -16193,7 +16193,7 @@ public readonly enabledInput: boolean | IResolvable;
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -16220,14 +16220,14 @@ new containerCluster.ContainerClusterAddonsConfigGcePersistentDiskCsiDriverConfi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigGcePersistentDiskCsiDriverConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigGcePersistentDiskCsiDriverConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigGcePersistentDiskCsiDriverConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigGcePersistentDiskCsiDriverConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -16397,7 +16397,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigGcePersistentDiskCsiDriverConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -16418,8 +16418,8 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigGcePersistentDiskCsiDriverConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigGcePersistentDiskCsiDriverConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigGcePersistentDiskCsiDriverConfigOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigGcePersistentDiskCsiDriverConfigOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigGcePersistentDiskCsiDriverConfigOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigGcePersistentDiskCsiDriverConfigOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigGcePersistentDiskCsiDriverConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigGcePersistentDiskCsiDriverConfig">ContainerClusterAddonsConfigGcePersistentDiskCsiDriverConfig</a></code> | *No description.* |
 
 ---
@@ -16454,7 +16454,7 @@ public readonly fqn: string;
 public readonly enabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -16464,7 +16464,7 @@ public readonly enabledInput: boolean | IResolvable;
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -16491,14 +16491,14 @@ new containerCluster.ContainerClusterAddonsConfigGcpFilestoreCsiDriverConfigOutp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigGcpFilestoreCsiDriverConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigGcpFilestoreCsiDriverConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigGcpFilestoreCsiDriverConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigGcpFilestoreCsiDriverConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -16668,7 +16668,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigGcpFilestoreCsiDriverConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -16689,8 +16689,8 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigGcpFilestoreCsiDriverConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigGcpFilestoreCsiDriverConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigGcpFilestoreCsiDriverConfigOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigGcpFilestoreCsiDriverConfigOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigGcpFilestoreCsiDriverConfigOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigGcpFilestoreCsiDriverConfigOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigGcpFilestoreCsiDriverConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigGcpFilestoreCsiDriverConfig">ContainerClusterAddonsConfigGcpFilestoreCsiDriverConfig</a></code> | *No description.* |
 
 ---
@@ -16725,7 +16725,7 @@ public readonly fqn: string;
 public readonly enabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -16735,7 +16735,7 @@ public readonly enabledInput: boolean | IResolvable;
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -16762,14 +16762,14 @@ new containerCluster.ContainerClusterAddonsConfigGcsFuseCsiDriverConfigOutputRef
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigGcsFuseCsiDriverConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigGcsFuseCsiDriverConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigGcsFuseCsiDriverConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigGcsFuseCsiDriverConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -16939,7 +16939,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigGcsFuseCsiDriverConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -16960,8 +16960,8 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigGcsFuseCsiDriverConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigGcsFuseCsiDriverConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigGcsFuseCsiDriverConfigOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigGcsFuseCsiDriverConfigOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigGcsFuseCsiDriverConfigOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigGcsFuseCsiDriverConfigOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigGcsFuseCsiDriverConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigGcsFuseCsiDriverConfig">ContainerClusterAddonsConfigGcsFuseCsiDriverConfig</a></code> | *No description.* |
 
 ---
@@ -16996,7 +16996,7 @@ public readonly fqn: string;
 public readonly enabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -17006,7 +17006,7 @@ public readonly enabledInput: boolean | IResolvable;
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -17033,14 +17033,14 @@ new containerCluster.ContainerClusterAddonsConfigGkeBackupAgentConfigOutputRefer
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigGkeBackupAgentConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigGkeBackupAgentConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigGkeBackupAgentConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigGkeBackupAgentConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -17210,7 +17210,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigGkeBackupAgentConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -17231,8 +17231,8 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigGkeBackupAgentConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigGkeBackupAgentConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigGkeBackupAgentConfigOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigGkeBackupAgentConfigOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigGkeBackupAgentConfigOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigGkeBackupAgentConfigOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigGkeBackupAgentConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigGkeBackupAgentConfig">ContainerClusterAddonsConfigGkeBackupAgentConfig</a></code> | *No description.* |
 
 ---
@@ -17267,7 +17267,7 @@ public readonly fqn: string;
 public readonly enabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -17277,7 +17277,7 @@ public readonly enabledInput: boolean | IResolvable;
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -17304,14 +17304,14 @@ new containerCluster.ContainerClusterAddonsConfigHorizontalPodAutoscalingOutputR
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigHorizontalPodAutoscalingOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigHorizontalPodAutoscalingOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigHorizontalPodAutoscalingOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigHorizontalPodAutoscalingOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -17481,7 +17481,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigHorizontalPodAutoscalingOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -17502,8 +17502,8 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigHorizontalPodAutoscalingOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigHorizontalPodAutoscalingOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigHorizontalPodAutoscalingOutputReference.property.disabledInput">disabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigHorizontalPodAutoscalingOutputReference.property.disabled">disabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigHorizontalPodAutoscalingOutputReference.property.disabledInput">disabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigHorizontalPodAutoscalingOutputReference.property.disabled">disabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigHorizontalPodAutoscalingOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigHorizontalPodAutoscaling">ContainerClusterAddonsConfigHorizontalPodAutoscaling</a></code> | *No description.* |
 
 ---
@@ -17538,7 +17538,7 @@ public readonly fqn: string;
 public readonly disabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -17548,7 +17548,7 @@ public readonly disabledInput: boolean | IResolvable;
 public readonly disabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -17575,14 +17575,14 @@ new containerCluster.ContainerClusterAddonsConfigHttpLoadBalancingOutputReferenc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigHttpLoadBalancingOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigHttpLoadBalancingOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigHttpLoadBalancingOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigHttpLoadBalancingOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -17752,7 +17752,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigHttpLoadBalancingOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -17773,8 +17773,8 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigHttpLoadBalancingOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigHttpLoadBalancingOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigHttpLoadBalancingOutputReference.property.disabledInput">disabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigHttpLoadBalancingOutputReference.property.disabled">disabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigHttpLoadBalancingOutputReference.property.disabledInput">disabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigHttpLoadBalancingOutputReference.property.disabled">disabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigHttpLoadBalancingOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigHttpLoadBalancing">ContainerClusterAddonsConfigHttpLoadBalancing</a></code> | *No description.* |
 
 ---
@@ -17809,7 +17809,7 @@ public readonly fqn: string;
 public readonly disabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -17819,7 +17819,7 @@ public readonly disabledInput: boolean | IResolvable;
 public readonly disabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -17846,14 +17846,14 @@ new containerCluster.ContainerClusterAddonsConfigLustreCsiDriverConfigOutputRefe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -18024,7 +18024,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -18051,10 +18051,10 @@ public resetEnableLegacyLustrePort(): void
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference.property.enableLegacyLustrePortInput">enableLegacyLustrePortInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference.property.enableLegacyLustrePort">enableLegacyLustrePort</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference.property.enableLegacyLustrePortInput">enableLegacyLustrePortInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference.property.enableLegacyLustrePort">enableLegacyLustrePort</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigLustreCsiDriverConfig">ContainerClusterAddonsConfigLustreCsiDriverConfig</a></code> | *No description.* |
 
 ---
@@ -18089,7 +18089,7 @@ public readonly fqn: string;
 public readonly enabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -18099,7 +18099,7 @@ public readonly enabledInput: boolean | IResolvable;
 public readonly enableLegacyLustrePortInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -18109,7 +18109,7 @@ public readonly enableLegacyLustrePortInput: boolean | IResolvable;
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -18119,7 +18119,7 @@ public readonly enabled: boolean | IResolvable;
 public readonly enableLegacyLustrePort: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -18146,14 +18146,14 @@ new containerCluster.ContainerClusterAddonsConfigNetworkPolicyConfigOutputRefere
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigNetworkPolicyConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigNetworkPolicyConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigNetworkPolicyConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigNetworkPolicyConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -18323,7 +18323,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigNetworkPolicyConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -18344,8 +18344,8 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigNetworkPolicyConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigNetworkPolicyConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigNetworkPolicyConfigOutputReference.property.disabledInput">disabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigNetworkPolicyConfigOutputReference.property.disabled">disabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigNetworkPolicyConfigOutputReference.property.disabledInput">disabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigNetworkPolicyConfigOutputReference.property.disabled">disabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigNetworkPolicyConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigNetworkPolicyConfig">ContainerClusterAddonsConfigNetworkPolicyConfig</a></code> | *No description.* |
 
 ---
@@ -18380,7 +18380,7 @@ public readonly fqn: string;
 public readonly disabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -18390,7 +18390,7 @@ public readonly disabledInput: boolean | IResolvable;
 public readonly disabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -18417,14 +18417,14 @@ new containerCluster.ContainerClusterAddonsConfigOutputReference(terraformResour
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -18622,7 +18622,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -18788,7 +18788,7 @@ public putRayOperatorConfig(value: IResolvable | ContainerClusterAddonsConfigRay
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigOutputReference.putRayOperatorConfig.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfig">ContainerClusterAddonsConfigRayOperatorConfig</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfig">ContainerClusterAddonsConfigRayOperatorConfig</a>[]
 
 ---
 
@@ -18921,7 +18921,7 @@ public resetStatefulHaConfig(): void
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigOutputReference.property.lustreCsiDriverConfigInput">lustreCsiDriverConfigInput</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigLustreCsiDriverConfig">ContainerClusterAddonsConfigLustreCsiDriverConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigOutputReference.property.networkPolicyConfigInput">networkPolicyConfigInput</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigNetworkPolicyConfig">ContainerClusterAddonsConfigNetworkPolicyConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigOutputReference.property.parallelstoreCsiDriverConfigInput">parallelstoreCsiDriverConfigInput</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigParallelstoreCsiDriverConfig">ContainerClusterAddonsConfigParallelstoreCsiDriverConfig</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigOutputReference.property.rayOperatorConfigInput">rayOperatorConfigInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfig">ContainerClusterAddonsConfigRayOperatorConfig</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigOutputReference.property.rayOperatorConfigInput">rayOperatorConfigInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfig">ContainerClusterAddonsConfigRayOperatorConfig</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigOutputReference.property.statefulHaConfigInput">statefulHaConfigInput</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigStatefulHaConfig">ContainerClusterAddonsConfigStatefulHaConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfig">ContainerClusterAddonsConfig</a></code> | *No description.* |
 
@@ -19217,7 +19217,7 @@ public readonly parallelstoreCsiDriverConfigInput: ContainerClusterAddonsConfigP
 public readonly rayOperatorConfigInput: IResolvable | ContainerClusterAddonsConfigRayOperatorConfig[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfig">ContainerClusterAddonsConfigRayOperatorConfig</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfig">ContainerClusterAddonsConfigRayOperatorConfig</a>[]
 
 ---
 
@@ -19254,14 +19254,14 @@ new containerCluster.ContainerClusterAddonsConfigParallelstoreCsiDriverConfigOut
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigParallelstoreCsiDriverConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigParallelstoreCsiDriverConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigParallelstoreCsiDriverConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigParallelstoreCsiDriverConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -19431,7 +19431,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigParallelstoreCsiDriverConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -19452,8 +19452,8 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigParallelstoreCsiDriverConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigParallelstoreCsiDriverConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigParallelstoreCsiDriverConfigOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigParallelstoreCsiDriverConfigOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigParallelstoreCsiDriverConfigOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigParallelstoreCsiDriverConfigOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigParallelstoreCsiDriverConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigParallelstoreCsiDriverConfig">ContainerClusterAddonsConfigParallelstoreCsiDriverConfig</a></code> | *No description.* |
 
 ---
@@ -19488,7 +19488,7 @@ public readonly fqn: string;
 public readonly enabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -19498,7 +19498,7 @@ public readonly enabledInput: boolean | IResolvable;
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -19525,7 +19525,7 @@ new containerCluster.ContainerClusterAddonsConfigRayOperatorConfigList(terraform
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -19533,7 +19533,7 @@ new containerCluster.ContainerClusterAddonsConfigRayOperatorConfigList(terraform
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -19599,7 +19599,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -19634,7 +19634,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfig">ContainerClusterAddonsConfigRayOperatorConfig</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfig">ContainerClusterAddonsConfigRayOperatorConfig</a>[]</code> | *No description.* |
 
 ---
 
@@ -19668,7 +19668,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ContainerClusterAddonsConfigRayOperatorConfig[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfig">ContainerClusterAddonsConfigRayOperatorConfig</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfig">ContainerClusterAddonsConfigRayOperatorConfig</a>[]
 
 ---
 
@@ -19685,7 +19685,7 @@ new containerCluster.ContainerClusterAddonsConfigRayOperatorConfigOutputReferenc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -19694,7 +19694,7 @@ new containerCluster.ContainerClusterAddonsConfigRayOperatorConfigOutputReferenc
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -19884,7 +19884,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -19943,11 +19943,11 @@ public resetRayClusterMonitoringConfig(): void
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigOutputReference.property.rayClusterLoggingConfig">rayClusterLoggingConfig</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigRayClusterLoggingConfigOutputReference">ContainerClusterAddonsConfigRayOperatorConfigRayClusterLoggingConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigOutputReference.property.rayClusterMonitoringConfig">rayClusterMonitoringConfig</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigRayClusterMonitoringConfigOutputReference">ContainerClusterAddonsConfigRayOperatorConfigRayClusterMonitoringConfigOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigOutputReference.property.rayClusterLoggingConfigInput">rayClusterLoggingConfigInput</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigRayClusterLoggingConfig">ContainerClusterAddonsConfigRayOperatorConfigRayClusterLoggingConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigOutputReference.property.rayClusterMonitoringConfigInput">rayClusterMonitoringConfigInput</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigRayClusterMonitoringConfig">ContainerClusterAddonsConfigRayOperatorConfigRayClusterMonitoringConfig</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfig">ContainerClusterAddonsConfigRayOperatorConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfig">ContainerClusterAddonsConfigRayOperatorConfig</a></code> | *No description.* |
 
 ---
 
@@ -20001,7 +20001,7 @@ public readonly rayClusterMonitoringConfig: ContainerClusterAddonsConfigRayOpera
 public readonly enabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -20031,7 +20031,7 @@ public readonly rayClusterMonitoringConfigInput: ContainerClusterAddonsConfigRay
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -20041,7 +20041,7 @@ public readonly enabled: boolean | IResolvable;
 public readonly internalValue: IResolvable | ContainerClusterAddonsConfigRayOperatorConfig;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfig">ContainerClusterAddonsConfigRayOperatorConfig</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfig">ContainerClusterAddonsConfigRayOperatorConfig</a>
 
 ---
 
@@ -20058,14 +20058,14 @@ new containerCluster.ContainerClusterAddonsConfigRayOperatorConfigRayClusterLogg
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigRayClusterLoggingConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigRayClusterLoggingConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigRayClusterLoggingConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigRayClusterLoggingConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -20235,7 +20235,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigRayClusterLoggingConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -20256,8 +20256,8 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigRayClusterLoggingConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigRayClusterLoggingConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigRayClusterLoggingConfigOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigRayClusterLoggingConfigOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigRayClusterLoggingConfigOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigRayClusterLoggingConfigOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigRayClusterLoggingConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigRayClusterLoggingConfig">ContainerClusterAddonsConfigRayOperatorConfigRayClusterLoggingConfig</a></code> | *No description.* |
 
 ---
@@ -20292,7 +20292,7 @@ public readonly fqn: string;
 public readonly enabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -20302,7 +20302,7 @@ public readonly enabledInput: boolean | IResolvable;
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -20329,14 +20329,14 @@ new containerCluster.ContainerClusterAddonsConfigRayOperatorConfigRayClusterMoni
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigRayClusterMonitoringConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigRayClusterMonitoringConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigRayClusterMonitoringConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigRayClusterMonitoringConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -20506,7 +20506,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigRayClusterMonitoringConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -20527,8 +20527,8 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigRayClusterMonitoringConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigRayClusterMonitoringConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigRayClusterMonitoringConfigOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigRayClusterMonitoringConfigOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigRayClusterMonitoringConfigOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigRayClusterMonitoringConfigOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigRayClusterMonitoringConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigRayOperatorConfigRayClusterMonitoringConfig">ContainerClusterAddonsConfigRayOperatorConfigRayClusterMonitoringConfig</a></code> | *No description.* |
 
 ---
@@ -20563,7 +20563,7 @@ public readonly fqn: string;
 public readonly enabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -20573,7 +20573,7 @@ public readonly enabledInput: boolean | IResolvable;
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -20600,14 +20600,14 @@ new containerCluster.ContainerClusterAddonsConfigStatefulHaConfigOutputReference
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigStatefulHaConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigStatefulHaConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigStatefulHaConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigStatefulHaConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -20777,7 +20777,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigStatefulHaConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -20798,8 +20798,8 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigStatefulHaConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigStatefulHaConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigStatefulHaConfigOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigStatefulHaConfigOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigStatefulHaConfigOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigStatefulHaConfigOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigStatefulHaConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigStatefulHaConfig">ContainerClusterAddonsConfigStatefulHaConfig</a></code> | *No description.* |
 
 ---
@@ -20834,7 +20834,7 @@ public readonly fqn: string;
 public readonly enabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -20844,7 +20844,7 @@ public readonly enabledInput: boolean | IResolvable;
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -20871,14 +20871,14 @@ new containerCluster.ContainerClusterAnonymousAuthenticationConfigOutputReferenc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAnonymousAuthenticationConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAnonymousAuthenticationConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAnonymousAuthenticationConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterAnonymousAuthenticationConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -21048,7 +21048,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterAnonymousAuthenticationConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -21142,14 +21142,14 @@ new containerCluster.ContainerClusterAuthenticatorGroupsConfigOutputReference(te
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAuthenticatorGroupsConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAuthenticatorGroupsConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterAuthenticatorGroupsConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterAuthenticatorGroupsConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -21319,7 +21319,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterAuthenticatorGroupsConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -21413,14 +21413,14 @@ new containerCluster.ContainerClusterBinaryAuthorizationOutputReference(terrafor
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterBinaryAuthorizationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterBinaryAuthorizationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterBinaryAuthorizationOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterBinaryAuthorizationOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -21592,7 +21592,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterBinaryAuthorizationOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -21625,9 +21625,9 @@ public resetEvaluationMode(): void
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterBinaryAuthorizationOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterBinaryAuthorizationOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterBinaryAuthorizationOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterBinaryAuthorizationOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterBinaryAuthorizationOutputReference.property.evaluationModeInput">evaluationModeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterBinaryAuthorizationOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterBinaryAuthorizationOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterBinaryAuthorizationOutputReference.property.evaluationMode">evaluationMode</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterBinaryAuthorizationOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterBinaryAuthorization">ContainerClusterBinaryAuthorization</a></code> | *No description.* |
 
@@ -21663,7 +21663,7 @@ public readonly fqn: string;
 public readonly enabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -21683,7 +21683,7 @@ public readonly evaluationModeInput: string;
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -21720,14 +21720,14 @@ new containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsM
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -21899,7 +21899,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -21933,10 +21933,10 @@ public resetAutoUpgrade(): void
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementOutputReference.property.upgradeOptions">upgradeOptions</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementUpgradeOptionsList">ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementUpgradeOptionsList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementOutputReference.property.autoRepairInput">autoRepairInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementOutputReference.property.autoUpgradeInput">autoUpgradeInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementOutputReference.property.autoRepair">autoRepair</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementOutputReference.property.autoUpgrade">autoUpgrade</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementOutputReference.property.autoRepairInput">autoRepairInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementOutputReference.property.autoUpgradeInput">autoUpgradeInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementOutputReference.property.autoRepair">autoRepair</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementOutputReference.property.autoUpgrade">autoUpgrade</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagement">ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagement</a></code> | *No description.* |
 
 ---
@@ -21981,7 +21981,7 @@ public readonly upgradeOptions: ContainerClusterClusterAutoscalingAutoProvisioni
 public readonly autoRepairInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -21991,7 +21991,7 @@ public readonly autoRepairInput: boolean | IResolvable;
 public readonly autoUpgradeInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -22001,7 +22001,7 @@ public readonly autoUpgradeInput: boolean | IResolvable;
 public readonly autoRepair: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -22011,7 +22011,7 @@ public readonly autoRepair: boolean | IResolvable;
 public readonly autoUpgrade: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -22038,7 +22038,7 @@ new containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsM
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementUpgradeOptionsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementUpgradeOptionsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementUpgradeOptionsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementUpgradeOptionsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -22046,7 +22046,7 @@ new containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsM
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementUpgradeOptionsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -22112,7 +22112,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementUpgradeOptionsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -22187,7 +22187,7 @@ new containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsM
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementUpgradeOptionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementUpgradeOptionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementUpgradeOptionsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementUpgradeOptionsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementUpgradeOptionsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -22196,7 +22196,7 @@ new containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsM
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementUpgradeOptionsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -22382,7 +22382,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementUpgradeOptionsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -22476,14 +22476,14 @@ new containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsO
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -22666,7 +22666,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -23054,14 +23054,14 @@ new containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsS
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -23233,7 +23233,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -23266,10 +23266,10 @@ public resetEnableSecureBoot(): void
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfigOutputReference.property.enableIntegrityMonitoringInput">enableIntegrityMonitoringInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfigOutputReference.property.enableSecureBootInput">enableSecureBootInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfigOutputReference.property.enableIntegrityMonitoring">enableIntegrityMonitoring</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfigOutputReference.property.enableSecureBoot">enableSecureBoot</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfigOutputReference.property.enableIntegrityMonitoringInput">enableIntegrityMonitoringInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfigOutputReference.property.enableSecureBootInput">enableSecureBootInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfigOutputReference.property.enableIntegrityMonitoring">enableIntegrityMonitoring</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfigOutputReference.property.enableSecureBoot">enableSecureBoot</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfig">ContainerClusterClusterAutoscalingAutoProvisioningDefaultsShieldedInstanceConfig</a></code> | *No description.* |
 
 ---
@@ -23304,7 +23304,7 @@ public readonly fqn: string;
 public readonly enableIntegrityMonitoringInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -23314,7 +23314,7 @@ public readonly enableIntegrityMonitoringInput: boolean | IResolvable;
 public readonly enableSecureBootInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -23324,7 +23324,7 @@ public readonly enableSecureBootInput: boolean | IResolvable;
 public readonly enableIntegrityMonitoring: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -23334,7 +23334,7 @@ public readonly enableIntegrityMonitoring: boolean | IResolvable;
 public readonly enableSecureBoot: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -23361,14 +23361,14 @@ new containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsU
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettingsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettingsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettingsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettingsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -23541,7 +23541,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettingsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -23681,14 +23681,14 @@ new containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsU
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettingsStandardRolloutPolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettingsStandardRolloutPolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettingsStandardRolloutPolicyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettingsStandardRolloutPolicyOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -23861,7 +23861,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsBlueGreenSettingsStandardRolloutPolicyOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -24017,14 +24017,14 @@ new containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsU
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -24199,7 +24199,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaultsUpgradeSettingsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -24395,14 +24395,14 @@ new containerCluster.ContainerClusterClusterAutoscalingOutputReference(terraform
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -24579,7 +24579,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -24613,7 +24613,7 @@ public putResourceLimits(value: IResolvable | ContainerClusterClusterAutoscaling
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingOutputReference.putResourceLimits.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingResourceLimits">ContainerClusterClusterAutoscalingResourceLimits</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingResourceLimits">ContainerClusterClusterAutoscalingResourceLimits</a>[]
 
 ---
 
@@ -24659,11 +24659,11 @@ public resetResourceLimits(): void
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingOutputReference.property.autoProvisioningDefaultsInput">autoProvisioningDefaultsInput</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingAutoProvisioningDefaults">ContainerClusterClusterAutoscalingAutoProvisioningDefaults</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingOutputReference.property.autoProvisioningLocationsInput">autoProvisioningLocationsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingOutputReference.property.autoscalingProfileInput">autoscalingProfileInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingOutputReference.property.resourceLimitsInput">resourceLimitsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingResourceLimits">ContainerClusterClusterAutoscalingResourceLimits</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingOutputReference.property.resourceLimitsInput">resourceLimitsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingResourceLimits">ContainerClusterClusterAutoscalingResourceLimits</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingOutputReference.property.autoProvisioningLocations">autoProvisioningLocations</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingOutputReference.property.autoscalingProfile">autoscalingProfile</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscaling">ContainerClusterClusterAutoscaling</a></code> | *No description.* |
 
 ---
@@ -24748,7 +24748,7 @@ public readonly autoscalingProfileInput: string;
 public readonly enabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -24758,7 +24758,7 @@ public readonly enabledInput: boolean | IResolvable;
 public readonly resourceLimitsInput: IResolvable | ContainerClusterClusterAutoscalingResourceLimits[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingResourceLimits">ContainerClusterClusterAutoscalingResourceLimits</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingResourceLimits">ContainerClusterClusterAutoscalingResourceLimits</a>[]
 
 ---
 
@@ -24788,7 +24788,7 @@ public readonly autoscalingProfile: string;
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -24815,7 +24815,7 @@ new containerCluster.ContainerClusterClusterAutoscalingResourceLimitsList(terraf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingResourceLimitsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingResourceLimitsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingResourceLimitsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingResourceLimitsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -24823,7 +24823,7 @@ new containerCluster.ContainerClusterClusterAutoscalingResourceLimitsList(terraf
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingResourceLimitsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -24889,7 +24889,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingResourceLimitsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -24924,7 +24924,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingResourceLimitsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingResourceLimitsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingResourceLimitsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingResourceLimits">ContainerClusterClusterAutoscalingResourceLimits</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingResourceLimitsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingResourceLimits">ContainerClusterClusterAutoscalingResourceLimits</a>[]</code> | *No description.* |
 
 ---
 
@@ -24958,7 +24958,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ContainerClusterClusterAutoscalingResourceLimits[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingResourceLimits">ContainerClusterClusterAutoscalingResourceLimits</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingResourceLimits">ContainerClusterClusterAutoscalingResourceLimits</a>[]
 
 ---
 
@@ -24975,7 +24975,7 @@ new containerCluster.ContainerClusterClusterAutoscalingResourceLimitsOutputRefer
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingResourceLimitsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingResourceLimitsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingResourceLimitsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingResourceLimitsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingResourceLimitsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -24984,7 +24984,7 @@ new containerCluster.ContainerClusterClusterAutoscalingResourceLimitsOutputRefer
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingResourceLimitsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -25171,7 +25171,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingResourceLimitsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -25204,7 +25204,7 @@ public resetMinimum(): void
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingResourceLimitsOutputReference.property.maximum">maximum</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingResourceLimitsOutputReference.property.minimum">minimum</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingResourceLimitsOutputReference.property.resourceType">resourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingResourceLimitsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingResourceLimits">ContainerClusterClusterAutoscalingResourceLimits</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingResourceLimitsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingResourceLimits">ContainerClusterClusterAutoscalingResourceLimits</a></code> | *No description.* |
 
 ---
 
@@ -25298,7 +25298,7 @@ public readonly resourceType: string;
 public readonly internalValue: IResolvable | ContainerClusterClusterAutoscalingResourceLimits;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingResourceLimits">ContainerClusterClusterAutoscalingResourceLimits</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterClusterAutoscalingResourceLimits">ContainerClusterClusterAutoscalingResourceLimits</a>
 
 ---
 
@@ -25315,14 +25315,14 @@ new containerCluster.ContainerClusterConfidentialNodesOutputReference(terraformR
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfidentialNodesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfidentialNodesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfidentialNodesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterConfidentialNodesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -25493,7 +25493,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterConfidentialNodesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -25521,9 +25521,9 @@ public resetConfidentialInstanceType(): void
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfidentialNodesOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfidentialNodesOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfidentialNodesOutputReference.property.confidentialInstanceTypeInput">confidentialInstanceTypeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfidentialNodesOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfidentialNodesOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfidentialNodesOutputReference.property.confidentialInstanceType">confidentialInstanceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfidentialNodesOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfidentialNodesOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfidentialNodesOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterConfidentialNodes">ContainerClusterConfidentialNodes</a></code> | *No description.* |
 
 ---
@@ -25568,7 +25568,7 @@ public readonly confidentialInstanceTypeInput: string;
 public readonly enabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -25588,7 +25588,7 @@ public readonly confidentialInstanceType: string;
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -25615,14 +25615,14 @@ new containerCluster.ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -25794,7 +25794,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -25827,9 +25827,9 @@ public resetEndpoint(): void
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference.property.allowExternalTrafficInput">allowExternalTrafficInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference.property.allowExternalTrafficInput">allowExternalTrafficInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference.property.endpointInput">endpointInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference.property.allowExternalTraffic">allowExternalTraffic</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference.property.allowExternalTraffic">allowExternalTraffic</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference.property.endpoint">endpoint</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfig">ContainerClusterControlPlaneEndpointsConfigDnsEndpointConfig</a></code> | *No description.* |
 
@@ -25865,7 +25865,7 @@ public readonly fqn: string;
 public readonly allowExternalTrafficInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -25885,7 +25885,7 @@ public readonly endpointInput: string;
 public readonly allowExternalTraffic: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -25922,14 +25922,14 @@ new containerCluster.ContainerClusterControlPlaneEndpointsConfigIpEndpointsConfi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterControlPlaneEndpointsConfigIpEndpointsConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterControlPlaneEndpointsConfigIpEndpointsConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterControlPlaneEndpointsConfigIpEndpointsConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterControlPlaneEndpointsConfigIpEndpointsConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -26100,7 +26100,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterControlPlaneEndpointsConfigIpEndpointsConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -26127,8 +26127,8 @@ public resetEnabled(): void
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterControlPlaneEndpointsConfigIpEndpointsConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterControlPlaneEndpointsConfigIpEndpointsConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterControlPlaneEndpointsConfigIpEndpointsConfigOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterControlPlaneEndpointsConfigIpEndpointsConfigOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterControlPlaneEndpointsConfigIpEndpointsConfigOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterControlPlaneEndpointsConfigIpEndpointsConfigOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterControlPlaneEndpointsConfigIpEndpointsConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterControlPlaneEndpointsConfigIpEndpointsConfig">ContainerClusterControlPlaneEndpointsConfigIpEndpointsConfig</a></code> | *No description.* |
 
 ---
@@ -26163,7 +26163,7 @@ public readonly fqn: string;
 public readonly enabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -26173,7 +26173,7 @@ public readonly enabledInput: boolean | IResolvable;
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -26200,14 +26200,14 @@ new containerCluster.ContainerClusterControlPlaneEndpointsConfigOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterControlPlaneEndpointsConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterControlPlaneEndpointsConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterControlPlaneEndpointsConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterControlPlaneEndpointsConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -26381,7 +26381,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterControlPlaneEndpointsConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -26533,14 +26533,14 @@ new containerCluster.ContainerClusterCostManagementConfigOutputReference(terrafo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterCostManagementConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterCostManagementConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterCostManagementConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterCostManagementConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -26710,7 +26710,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterCostManagementConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -26731,8 +26731,8 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterCostManagementConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterCostManagementConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterCostManagementConfigOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterCostManagementConfigOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterCostManagementConfigOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterCostManagementConfigOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterCostManagementConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterCostManagementConfig">ContainerClusterCostManagementConfig</a></code> | *No description.* |
 
 ---
@@ -26767,7 +26767,7 @@ public readonly fqn: string;
 public readonly enabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -26777,7 +26777,7 @@ public readonly enabledInput: boolean | IResolvable;
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -26804,14 +26804,14 @@ new containerCluster.ContainerClusterDatabaseEncryptionOutputReference(terraform
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterDatabaseEncryptionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterDatabaseEncryptionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterDatabaseEncryptionOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterDatabaseEncryptionOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -26982,7 +26982,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterDatabaseEncryptionOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -27104,14 +27104,14 @@ new containerCluster.ContainerClusterDefaultSnatStatusOutputReference(terraformR
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterDefaultSnatStatusOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterDefaultSnatStatusOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterDefaultSnatStatusOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterDefaultSnatStatusOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -27281,7 +27281,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterDefaultSnatStatusOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -27302,8 +27302,8 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterDefaultSnatStatusOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterDefaultSnatStatusOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterDefaultSnatStatusOutputReference.property.disabledInput">disabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterDefaultSnatStatusOutputReference.property.disabled">disabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterDefaultSnatStatusOutputReference.property.disabledInput">disabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterDefaultSnatStatusOutputReference.property.disabled">disabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterDefaultSnatStatusOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterDefaultSnatStatus">ContainerClusterDefaultSnatStatus</a></code> | *No description.* |
 
 ---
@@ -27338,7 +27338,7 @@ public readonly fqn: string;
 public readonly disabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -27348,7 +27348,7 @@ public readonly disabledInput: boolean | IResolvable;
 public readonly disabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -27375,14 +27375,14 @@ new containerCluster.ContainerClusterDnsConfigOutputReference(terraformResource:
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterDnsConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterDnsConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterDnsConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterDnsConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -27556,7 +27556,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterDnsConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -27740,14 +27740,14 @@ new containerCluster.ContainerClusterEnableK8SBetaApisOutputReference(terraformR
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterEnableK8SBetaApisOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterEnableK8SBetaApisOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterEnableK8SBetaApisOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterEnableK8SBetaApisOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -27917,7 +27917,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterEnableK8SBetaApisOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -28011,14 +28011,14 @@ new containerCluster.ContainerClusterEnterpriseConfigOutputReference(terraformRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterEnterpriseConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterEnterpriseConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterEnterpriseConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterEnterpriseConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -28189,7 +28189,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterEnterpriseConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -28300,14 +28300,14 @@ new containerCluster.ContainerClusterFleetOutputReference(terraformResource: IIn
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterFleetOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterFleetOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterFleetOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterFleetOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -28478,7 +28478,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterFleetOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -28508,7 +28508,7 @@ public resetProject(): void
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterFleetOutputReference.property.membership">membership</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterFleetOutputReference.property.membershipId">membershipId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterFleetOutputReference.property.membershipLocation">membershipLocation</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterFleetOutputReference.property.preRegistered">preRegistered</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterFleetOutputReference.property.preRegistered">preRegistered</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterFleetOutputReference.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterFleetOutputReference.property.project">project</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterFleetOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterFleet">ContainerClusterFleet</a></code> | *No description.* |
@@ -28575,7 +28575,7 @@ public readonly membershipLocation: string;
 public readonly preRegistered: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -28622,14 +28622,14 @@ new containerCluster.ContainerClusterGatewayApiConfigOutputReference(terraformRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterGatewayApiConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterGatewayApiConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterGatewayApiConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterGatewayApiConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -28799,7 +28799,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterGatewayApiConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -28893,14 +28893,14 @@ new containerCluster.ContainerClusterGkeAutoUpgradeConfigOutputReference(terrafo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterGkeAutoUpgradeConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterGkeAutoUpgradeConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterGkeAutoUpgradeConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterGkeAutoUpgradeConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -29070,7 +29070,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterGkeAutoUpgradeConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -29164,14 +29164,14 @@ new containerCluster.ContainerClusterIdentityServiceConfigOutputReference(terraf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterIdentityServiceConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterIdentityServiceConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterIdentityServiceConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterIdentityServiceConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -29342,7 +29342,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterIdentityServiceConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -29369,8 +29369,8 @@ public resetEnabled(): void
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterIdentityServiceConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterIdentityServiceConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterIdentityServiceConfigOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterIdentityServiceConfigOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterIdentityServiceConfigOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterIdentityServiceConfigOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterIdentityServiceConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterIdentityServiceConfig">ContainerClusterIdentityServiceConfig</a></code> | *No description.* |
 
 ---
@@ -29405,7 +29405,7 @@ public readonly fqn: string;
 public readonly enabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -29415,7 +29415,7 @@ public readonly enabledInput: boolean | IResolvable;
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -29442,7 +29442,7 @@ new containerCluster.ContainerClusterIpAllocationPolicyAdditionalIpRangesConfigL
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyAdditionalIpRangesConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyAdditionalIpRangesConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyAdditionalIpRangesConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyAdditionalIpRangesConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -29450,7 +29450,7 @@ new containerCluster.ContainerClusterIpAllocationPolicyAdditionalIpRangesConfigL
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyAdditionalIpRangesConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -29516,7 +29516,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyAdditionalIpRangesConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -29551,7 +29551,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyAdditionalIpRangesConfigList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyAdditionalIpRangesConfigList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyAdditionalIpRangesConfigList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyAdditionalIpRangesConfig">ContainerClusterIpAllocationPolicyAdditionalIpRangesConfig</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyAdditionalIpRangesConfigList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyAdditionalIpRangesConfig">ContainerClusterIpAllocationPolicyAdditionalIpRangesConfig</a>[]</code> | *No description.* |
 
 ---
 
@@ -29585,7 +29585,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ContainerClusterIpAllocationPolicyAdditionalIpRangesConfig[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyAdditionalIpRangesConfig">ContainerClusterIpAllocationPolicyAdditionalIpRangesConfig</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyAdditionalIpRangesConfig">ContainerClusterIpAllocationPolicyAdditionalIpRangesConfig</a>[]
 
 ---
 
@@ -29602,7 +29602,7 @@ new containerCluster.ContainerClusterIpAllocationPolicyAdditionalIpRangesConfigO
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyAdditionalIpRangesConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyAdditionalIpRangesConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyAdditionalIpRangesConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyAdditionalIpRangesConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyAdditionalIpRangesConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -29611,7 +29611,7 @@ new containerCluster.ContainerClusterIpAllocationPolicyAdditionalIpRangesConfigO
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyAdditionalIpRangesConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -29798,7 +29798,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyAdditionalIpRangesConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -29829,7 +29829,7 @@ public resetPodIpv4RangeNames(): void
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyAdditionalIpRangesConfigOutputReference.property.subnetworkInput">subnetworkInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyAdditionalIpRangesConfigOutputReference.property.podIpv4RangeNames">podIpv4RangeNames</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyAdditionalIpRangesConfigOutputReference.property.subnetwork">subnetwork</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyAdditionalIpRangesConfigOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyAdditionalIpRangesConfig">ContainerClusterIpAllocationPolicyAdditionalIpRangesConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyAdditionalIpRangesConfigOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyAdditionalIpRangesConfig">ContainerClusterIpAllocationPolicyAdditionalIpRangesConfig</a></code> | *No description.* |
 
 ---
 
@@ -29903,7 +29903,7 @@ public readonly subnetwork: string;
 public readonly internalValue: IResolvable | ContainerClusterIpAllocationPolicyAdditionalIpRangesConfig;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyAdditionalIpRangesConfig">ContainerClusterIpAllocationPolicyAdditionalIpRangesConfig</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyAdditionalIpRangesConfig">ContainerClusterIpAllocationPolicyAdditionalIpRangesConfig</a>
 
 ---
 
@@ -29920,14 +29920,14 @@ new containerCluster.ContainerClusterIpAllocationPolicyAdditionalPodRangesConfig
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyAdditionalPodRangesConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyAdditionalPodRangesConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyAdditionalPodRangesConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyAdditionalPodRangesConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -30097,7 +30097,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyAdditionalPodRangesConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -30191,14 +30191,14 @@ new containerCluster.ContainerClusterIpAllocationPolicyOutputReference(terraform
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -30379,7 +30379,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -30401,7 +30401,7 @@ public putAdditionalIpRangesConfig(value: IResolvable | ContainerClusterIpAlloca
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyOutputReference.putAdditionalIpRangesConfig.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyAdditionalIpRangesConfig">ContainerClusterIpAllocationPolicyAdditionalIpRangesConfig</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyAdditionalIpRangesConfig">ContainerClusterIpAllocationPolicyAdditionalIpRangesConfig</a>[]
 
 ---
 
@@ -30487,7 +30487,7 @@ public resetStackType(): void
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyOutputReference.property.additionalIpRangesConfig">additionalIpRangesConfig</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyAdditionalIpRangesConfigList">ContainerClusterIpAllocationPolicyAdditionalIpRangesConfigList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyOutputReference.property.additionalPodRangesConfig">additionalPodRangesConfig</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyAdditionalPodRangesConfigOutputReference">ContainerClusterIpAllocationPolicyAdditionalPodRangesConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyOutputReference.property.podCidrOverprovisionConfig">podCidrOverprovisionConfig</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyPodCidrOverprovisionConfigOutputReference">ContainerClusterIpAllocationPolicyPodCidrOverprovisionConfigOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyOutputReference.property.additionalIpRangesConfigInput">additionalIpRangesConfigInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyAdditionalIpRangesConfig">ContainerClusterIpAllocationPolicyAdditionalIpRangesConfig</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyOutputReference.property.additionalIpRangesConfigInput">additionalIpRangesConfigInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyAdditionalIpRangesConfig">ContainerClusterIpAllocationPolicyAdditionalIpRangesConfig</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyOutputReference.property.additionalPodRangesConfigInput">additionalPodRangesConfigInput</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyAdditionalPodRangesConfig">ContainerClusterIpAllocationPolicyAdditionalPodRangesConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyOutputReference.property.clusterIpv4CidrBlockInput">clusterIpv4CidrBlockInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyOutputReference.property.clusterSecondaryRangeNameInput">clusterSecondaryRangeNameInput</a></code> | <code>string</code> | *No description.* |
@@ -30564,7 +30564,7 @@ public readonly podCidrOverprovisionConfig: ContainerClusterIpAllocationPolicyPo
 public readonly additionalIpRangesConfigInput: IResolvable | ContainerClusterIpAllocationPolicyAdditionalIpRangesConfig[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyAdditionalIpRangesConfig">ContainerClusterIpAllocationPolicyAdditionalIpRangesConfig</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyAdditionalIpRangesConfig">ContainerClusterIpAllocationPolicyAdditionalIpRangesConfig</a>[]
 
 ---
 
@@ -30711,14 +30711,14 @@ new containerCluster.ContainerClusterIpAllocationPolicyPodCidrOverprovisionConfi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyPodCidrOverprovisionConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyPodCidrOverprovisionConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyPodCidrOverprovisionConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyPodCidrOverprovisionConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -30888,7 +30888,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyPodCidrOverprovisionConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -30909,8 +30909,8 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyPodCidrOverprovisionConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyPodCidrOverprovisionConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyPodCidrOverprovisionConfigOutputReference.property.disabledInput">disabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyPodCidrOverprovisionConfigOutputReference.property.disabled">disabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyPodCidrOverprovisionConfigOutputReference.property.disabledInput">disabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyPodCidrOverprovisionConfigOutputReference.property.disabled">disabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyPodCidrOverprovisionConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterIpAllocationPolicyPodCidrOverprovisionConfig">ContainerClusterIpAllocationPolicyPodCidrOverprovisionConfig</a></code> | *No description.* |
 
 ---
@@ -30945,7 +30945,7 @@ public readonly fqn: string;
 public readonly disabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -30955,7 +30955,7 @@ public readonly disabledInput: boolean | IResolvable;
 public readonly disabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -30982,14 +30982,14 @@ new containerCluster.ContainerClusterLoggingConfigOutputReference(terraformResou
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterLoggingConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterLoggingConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterLoggingConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterLoggingConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -31159,7 +31159,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterLoggingConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -31253,14 +31253,14 @@ new containerCluster.ContainerClusterMaintenancePolicyDailyMaintenanceWindowOutp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyDailyMaintenanceWindowOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyDailyMaintenanceWindowOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyDailyMaintenanceWindowOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyDailyMaintenanceWindowOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -31430,7 +31430,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyDailyMaintenanceWindowOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -31535,14 +31535,14 @@ new containerCluster.ContainerClusterMaintenancePolicyMaintenanceExclusionExclus
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyMaintenanceExclusionExclusionOptionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyMaintenanceExclusionExclusionOptionsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyMaintenanceExclusionExclusionOptionsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyMaintenanceExclusionExclusionOptionsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -31712,7 +31712,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyMaintenanceExclusionExclusionOptionsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -31806,7 +31806,7 @@ new containerCluster.ContainerClusterMaintenancePolicyMaintenanceExclusionList(t
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyMaintenanceExclusionList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyMaintenanceExclusionList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyMaintenanceExclusionList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyMaintenanceExclusionList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -31814,7 +31814,7 @@ new containerCluster.ContainerClusterMaintenancePolicyMaintenanceExclusionList(t
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyMaintenanceExclusionList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -31880,7 +31880,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyMaintenanceExclusionList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -31915,7 +31915,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyMaintenanceExclusionList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyMaintenanceExclusionList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyMaintenanceExclusionList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyMaintenanceExclusion">ContainerClusterMaintenancePolicyMaintenanceExclusion</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyMaintenanceExclusionList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyMaintenanceExclusion">ContainerClusterMaintenancePolicyMaintenanceExclusion</a>[]</code> | *No description.* |
 
 ---
 
@@ -31949,7 +31949,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ContainerClusterMaintenancePolicyMaintenanceExclusion[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyMaintenanceExclusion">ContainerClusterMaintenancePolicyMaintenanceExclusion</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyMaintenanceExclusion">ContainerClusterMaintenancePolicyMaintenanceExclusion</a>[]
 
 ---
 
@@ -31966,7 +31966,7 @@ new containerCluster.ContainerClusterMaintenancePolicyMaintenanceExclusionOutput
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyMaintenanceExclusionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyMaintenanceExclusionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyMaintenanceExclusionOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyMaintenanceExclusionOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyMaintenanceExclusionOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -31975,7 +31975,7 @@ new containerCluster.ContainerClusterMaintenancePolicyMaintenanceExclusionOutput
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyMaintenanceExclusionOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -32163,7 +32163,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyMaintenanceExclusionOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -32210,7 +32210,7 @@ public resetExclusionOptions(): void
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyMaintenanceExclusionOutputReference.property.endTime">endTime</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyMaintenanceExclusionOutputReference.property.exclusionName">exclusionName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyMaintenanceExclusionOutputReference.property.startTime">startTime</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyMaintenanceExclusionOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyMaintenanceExclusion">ContainerClusterMaintenancePolicyMaintenanceExclusion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyMaintenanceExclusionOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyMaintenanceExclusion">ContainerClusterMaintenancePolicyMaintenanceExclusion</a></code> | *No description.* |
 
 ---
 
@@ -32324,7 +32324,7 @@ public readonly startTime: string;
 public readonly internalValue: IResolvable | ContainerClusterMaintenancePolicyMaintenanceExclusion;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyMaintenanceExclusion">ContainerClusterMaintenancePolicyMaintenanceExclusion</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyMaintenanceExclusion">ContainerClusterMaintenancePolicyMaintenanceExclusion</a>
 
 ---
 
@@ -32341,14 +32341,14 @@ new containerCluster.ContainerClusterMaintenancePolicyOutputReference(terraformR
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -32524,7 +32524,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -32558,7 +32558,7 @@ public putMaintenanceExclusion(value: IResolvable | ContainerClusterMaintenanceP
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyOutputReference.putMaintenanceExclusion.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyMaintenanceExclusion">ContainerClusterMaintenancePolicyMaintenanceExclusion</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyMaintenanceExclusion">ContainerClusterMaintenancePolicyMaintenanceExclusion</a>[]
 
 ---
 
@@ -32603,7 +32603,7 @@ public resetRecurringWindow(): void
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyOutputReference.property.maintenanceExclusion">maintenanceExclusion</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyMaintenanceExclusionList">ContainerClusterMaintenancePolicyMaintenanceExclusionList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyOutputReference.property.recurringWindow">recurringWindow</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyRecurringWindowOutputReference">ContainerClusterMaintenancePolicyRecurringWindowOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyOutputReference.property.dailyMaintenanceWindowInput">dailyMaintenanceWindowInput</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyDailyMaintenanceWindow">ContainerClusterMaintenancePolicyDailyMaintenanceWindow</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyOutputReference.property.maintenanceExclusionInput">maintenanceExclusionInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyMaintenanceExclusion">ContainerClusterMaintenancePolicyMaintenanceExclusion</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyOutputReference.property.maintenanceExclusionInput">maintenanceExclusionInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyMaintenanceExclusion">ContainerClusterMaintenancePolicyMaintenanceExclusion</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyOutputReference.property.recurringWindowInput">recurringWindowInput</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyRecurringWindow">ContainerClusterMaintenancePolicyRecurringWindow</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicy">ContainerClusterMaintenancePolicy</a></code> | *No description.* |
 
@@ -32679,7 +32679,7 @@ public readonly dailyMaintenanceWindowInput: ContainerClusterMaintenancePolicyDa
 public readonly maintenanceExclusionInput: IResolvable | ContainerClusterMaintenancePolicyMaintenanceExclusion[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyMaintenanceExclusion">ContainerClusterMaintenancePolicyMaintenanceExclusion</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyMaintenanceExclusion">ContainerClusterMaintenancePolicyMaintenanceExclusion</a>[]
 
 ---
 
@@ -32716,14 +32716,14 @@ new containerCluster.ContainerClusterMaintenancePolicyRecurringWindowOutputRefer
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyRecurringWindowOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyRecurringWindowOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyRecurringWindowOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyRecurringWindowOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -32893,7 +32893,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterMaintenancePolicyRecurringWindowOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -33031,14 +33031,14 @@ new containerCluster.ContainerClusterMasterAuthClientCertificateConfigOutputRefe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthClientCertificateConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthClientCertificateConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthClientCertificateConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthClientCertificateConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -33208,7 +33208,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthClientCertificateConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -33229,8 +33229,8 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthClientCertificateConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthClientCertificateConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthClientCertificateConfigOutputReference.property.issueClientCertificateInput">issueClientCertificateInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthClientCertificateConfigOutputReference.property.issueClientCertificate">issueClientCertificate</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthClientCertificateConfigOutputReference.property.issueClientCertificateInput">issueClientCertificateInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthClientCertificateConfigOutputReference.property.issueClientCertificate">issueClientCertificate</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthClientCertificateConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthClientCertificateConfig">ContainerClusterMasterAuthClientCertificateConfig</a></code> | *No description.* |
 
 ---
@@ -33265,7 +33265,7 @@ public readonly fqn: string;
 public readonly issueClientCertificateInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -33275,7 +33275,7 @@ public readonly issueClientCertificateInput: boolean | IResolvable;
 public readonly issueClientCertificate: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -33302,7 +33302,7 @@ new containerCluster.ContainerClusterMasterAuthorizedNetworksConfigCidrBlocksLis
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigCidrBlocksList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigCidrBlocksList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigCidrBlocksList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigCidrBlocksList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -33310,7 +33310,7 @@ new containerCluster.ContainerClusterMasterAuthorizedNetworksConfigCidrBlocksLis
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigCidrBlocksList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -33376,7 +33376,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigCidrBlocksList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -33411,7 +33411,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigCidrBlocksList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigCidrBlocksList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigCidrBlocksList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigCidrBlocks">ContainerClusterMasterAuthorizedNetworksConfigCidrBlocks</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigCidrBlocksList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigCidrBlocks">ContainerClusterMasterAuthorizedNetworksConfigCidrBlocks</a>[]</code> | *No description.* |
 
 ---
 
@@ -33445,7 +33445,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ContainerClusterMasterAuthorizedNetworksConfigCidrBlocks[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigCidrBlocks">ContainerClusterMasterAuthorizedNetworksConfigCidrBlocks</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigCidrBlocks">ContainerClusterMasterAuthorizedNetworksConfigCidrBlocks</a>[]
 
 ---
 
@@ -33462,7 +33462,7 @@ new containerCluster.ContainerClusterMasterAuthorizedNetworksConfigCidrBlocksOut
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigCidrBlocksOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigCidrBlocksOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigCidrBlocksOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigCidrBlocksOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigCidrBlocksOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -33471,7 +33471,7 @@ new containerCluster.ContainerClusterMasterAuthorizedNetworksConfigCidrBlocksOut
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigCidrBlocksOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -33658,7 +33658,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigCidrBlocksOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -33689,7 +33689,7 @@ public resetDisplayName(): void
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigCidrBlocksOutputReference.property.displayNameInput">displayNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigCidrBlocksOutputReference.property.cidrBlock">cidrBlock</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigCidrBlocksOutputReference.property.displayName">displayName</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigCidrBlocksOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigCidrBlocks">ContainerClusterMasterAuthorizedNetworksConfigCidrBlocks</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigCidrBlocksOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigCidrBlocks">ContainerClusterMasterAuthorizedNetworksConfigCidrBlocks</a></code> | *No description.* |
 
 ---
 
@@ -33763,7 +33763,7 @@ public readonly displayName: string;
 public readonly internalValue: IResolvable | ContainerClusterMasterAuthorizedNetworksConfigCidrBlocks;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigCidrBlocks">ContainerClusterMasterAuthorizedNetworksConfigCidrBlocks</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigCidrBlocks">ContainerClusterMasterAuthorizedNetworksConfigCidrBlocks</a>
 
 ---
 
@@ -33780,14 +33780,14 @@ new containerCluster.ContainerClusterMasterAuthorizedNetworksConfigOutputReferen
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -33961,7 +33961,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -33983,7 +33983,7 @@ public putCidrBlocks(value: IResolvable | ContainerClusterMasterAuthorizedNetwor
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigOutputReference.putCidrBlocks.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigCidrBlocks">ContainerClusterMasterAuthorizedNetworksConfigCidrBlocks</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigCidrBlocks">ContainerClusterMasterAuthorizedNetworksConfigCidrBlocks</a>[]
 
 ---
 
@@ -34013,11 +34013,11 @@ public resetPrivateEndpointEnforcementEnabled(): void
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigOutputReference.property.cidrBlocks">cidrBlocks</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigCidrBlocksList">ContainerClusterMasterAuthorizedNetworksConfigCidrBlocksList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigOutputReference.property.cidrBlocksInput">cidrBlocksInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigCidrBlocks">ContainerClusterMasterAuthorizedNetworksConfigCidrBlocks</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigOutputReference.property.gcpPublicCidrsAccessEnabledInput">gcpPublicCidrsAccessEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigOutputReference.property.privateEndpointEnforcementEnabledInput">privateEndpointEnforcementEnabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigOutputReference.property.gcpPublicCidrsAccessEnabled">gcpPublicCidrsAccessEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigOutputReference.property.privateEndpointEnforcementEnabled">privateEndpointEnforcementEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigOutputReference.property.cidrBlocksInput">cidrBlocksInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigCidrBlocks">ContainerClusterMasterAuthorizedNetworksConfigCidrBlocks</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigOutputReference.property.gcpPublicCidrsAccessEnabledInput">gcpPublicCidrsAccessEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigOutputReference.property.privateEndpointEnforcementEnabledInput">privateEndpointEnforcementEnabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigOutputReference.property.gcpPublicCidrsAccessEnabled">gcpPublicCidrsAccessEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigOutputReference.property.privateEndpointEnforcementEnabled">privateEndpointEnforcementEnabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfig">ContainerClusterMasterAuthorizedNetworksConfig</a></code> | *No description.* |
 
 ---
@@ -34062,7 +34062,7 @@ public readonly cidrBlocks: ContainerClusterMasterAuthorizedNetworksConfigCidrBl
 public readonly cidrBlocksInput: IResolvable | ContainerClusterMasterAuthorizedNetworksConfigCidrBlocks[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigCidrBlocks">ContainerClusterMasterAuthorizedNetworksConfigCidrBlocks</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthorizedNetworksConfigCidrBlocks">ContainerClusterMasterAuthorizedNetworksConfigCidrBlocks</a>[]
 
 ---
 
@@ -34072,7 +34072,7 @@ public readonly cidrBlocksInput: IResolvable | ContainerClusterMasterAuthorizedN
 public readonly gcpPublicCidrsAccessEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -34082,7 +34082,7 @@ public readonly gcpPublicCidrsAccessEnabledInput: boolean | IResolvable;
 public readonly privateEndpointEnforcementEnabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -34092,7 +34092,7 @@ public readonly privateEndpointEnforcementEnabledInput: boolean | IResolvable;
 public readonly gcpPublicCidrsAccessEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -34102,7 +34102,7 @@ public readonly gcpPublicCidrsAccessEnabled: boolean | IResolvable;
 public readonly privateEndpointEnforcementEnabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -34129,14 +34129,14 @@ new containerCluster.ContainerClusterMasterAuthOutputReference(terraformResource
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -34307,7 +34307,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterMasterAuthOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -34446,14 +34446,14 @@ new containerCluster.ContainerClusterMeshCertificatesOutputReference(terraformRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMeshCertificatesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMeshCertificatesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMeshCertificatesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterMeshCertificatesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -34623,7 +34623,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterMeshCertificatesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -34644,8 +34644,8 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMeshCertificatesOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMeshCertificatesOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMeshCertificatesOutputReference.property.enableCertificatesInput">enableCertificatesInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMeshCertificatesOutputReference.property.enableCertificates">enableCertificates</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMeshCertificatesOutputReference.property.enableCertificatesInput">enableCertificatesInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMeshCertificatesOutputReference.property.enableCertificates">enableCertificates</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMeshCertificatesOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMeshCertificates">ContainerClusterMeshCertificates</a></code> | *No description.* |
 
 ---
@@ -34680,7 +34680,7 @@ public readonly fqn: string;
 public readonly enableCertificatesInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -34690,7 +34690,7 @@ public readonly enableCertificatesInput: boolean | IResolvable;
 public readonly enableCertificates: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -34717,14 +34717,14 @@ new containerCluster.ContainerClusterMonitoringConfigAdvancedDatapathObservabili
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -34894,7 +34894,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -34915,10 +34915,10 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference.property.enableMetricsInput">enableMetricsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference.property.enableRelayInput">enableRelayInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference.property.enableMetrics">enableMetrics</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference.property.enableRelay">enableRelay</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference.property.enableMetricsInput">enableMetricsInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference.property.enableRelayInput">enableRelayInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference.property.enableMetrics">enableMetrics</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference.property.enableRelay">enableRelay</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfig">ContainerClusterMonitoringConfigAdvancedDatapathObservabilityConfig</a></code> | *No description.* |
 
 ---
@@ -34953,7 +34953,7 @@ public readonly fqn: string;
 public readonly enableMetricsInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -34963,7 +34963,7 @@ public readonly enableMetricsInput: boolean | IResolvable;
 public readonly enableRelayInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -34973,7 +34973,7 @@ public readonly enableRelayInput: boolean | IResolvable;
 public readonly enableMetrics: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -34983,7 +34983,7 @@ public readonly enableMetrics: boolean | IResolvable;
 public readonly enableRelay: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -35010,14 +35010,14 @@ new containerCluster.ContainerClusterMonitoringConfigManagedPrometheusAutoMonito
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMonitoringConfigManagedPrometheusAutoMonitoringConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMonitoringConfigManagedPrometheusAutoMonitoringConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMonitoringConfigManagedPrometheusAutoMonitoringConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterMonitoringConfigManagedPrometheusAutoMonitoringConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -35187,7 +35187,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterMonitoringConfigManagedPrometheusAutoMonitoringConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -35281,14 +35281,14 @@ new containerCluster.ContainerClusterMonitoringConfigManagedPrometheusOutputRefe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMonitoringConfigManagedPrometheusOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMonitoringConfigManagedPrometheusOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMonitoringConfigManagedPrometheusOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterMonitoringConfigManagedPrometheusOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -35460,7 +35460,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterMonitoringConfigManagedPrometheusOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -35501,8 +35501,8 @@ public resetAutoMonitoringConfig(): void
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMonitoringConfigManagedPrometheusOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMonitoringConfigManagedPrometheusOutputReference.property.autoMonitoringConfig">autoMonitoringConfig</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMonitoringConfigManagedPrometheusAutoMonitoringConfigOutputReference">ContainerClusterMonitoringConfigManagedPrometheusAutoMonitoringConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMonitoringConfigManagedPrometheusOutputReference.property.autoMonitoringConfigInput">autoMonitoringConfigInput</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMonitoringConfigManagedPrometheusAutoMonitoringConfig">ContainerClusterMonitoringConfigManagedPrometheusAutoMonitoringConfig</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMonitoringConfigManagedPrometheusOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMonitoringConfigManagedPrometheusOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMonitoringConfigManagedPrometheusOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMonitoringConfigManagedPrometheusOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMonitoringConfigManagedPrometheusOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMonitoringConfigManagedPrometheus">ContainerClusterMonitoringConfigManagedPrometheus</a></code> | *No description.* |
 
 ---
@@ -35557,7 +35557,7 @@ public readonly autoMonitoringConfigInput: ContainerClusterMonitoringConfigManag
 public readonly enabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -35567,7 +35567,7 @@ public readonly enabledInput: boolean | IResolvable;
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -35594,14 +35594,14 @@ new containerCluster.ContainerClusterMonitoringConfigOutputReference(terraformRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMonitoringConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMonitoringConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterMonitoringConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterMonitoringConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -35776,7 +35776,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterMonitoringConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -35956,14 +35956,14 @@ new containerCluster.ContainerClusterNetworkPerformanceConfigOutputReference(ter
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNetworkPerformanceConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNetworkPerformanceConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNetworkPerformanceConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNetworkPerformanceConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -36133,7 +36133,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNetworkPerformanceConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -36227,14 +36227,14 @@ new containerCluster.ContainerClusterNetworkPolicyOutputReference(terraformResou
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNetworkPolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNetworkPolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNetworkPolicyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNetworkPolicyOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -36405,7 +36405,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNetworkPolicyOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -36432,9 +36432,9 @@ public resetProvider(): void
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNetworkPolicyOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNetworkPolicyOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNetworkPolicyOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNetworkPolicyOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNetworkPolicyOutputReference.property.providerInput">providerInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNetworkPolicyOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNetworkPolicyOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNetworkPolicyOutputReference.property.provider">provider</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNetworkPolicyOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNetworkPolicy">ContainerClusterNetworkPolicy</a></code> | *No description.* |
 
@@ -36470,7 +36470,7 @@ public readonly fqn: string;
 public readonly enabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -36490,7 +36490,7 @@ public readonly providerInput: string;
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -36527,14 +36527,14 @@ new containerCluster.ContainerClusterNodeConfigAdvancedMachineFeaturesOutputRefe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigAdvancedMachineFeaturesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigAdvancedMachineFeaturesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigAdvancedMachineFeaturesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigAdvancedMachineFeaturesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -36706,7 +36706,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigAdvancedMachineFeaturesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -36739,10 +36739,10 @@ public resetPerformanceMonitoringUnit(): void
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigAdvancedMachineFeaturesOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigAdvancedMachineFeaturesOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigAdvancedMachineFeaturesOutputReference.property.enableNestedVirtualizationInput">enableNestedVirtualizationInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigAdvancedMachineFeaturesOutputReference.property.enableNestedVirtualizationInput">enableNestedVirtualizationInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigAdvancedMachineFeaturesOutputReference.property.performanceMonitoringUnitInput">performanceMonitoringUnitInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigAdvancedMachineFeaturesOutputReference.property.threadsPerCoreInput">threadsPerCoreInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigAdvancedMachineFeaturesOutputReference.property.enableNestedVirtualization">enableNestedVirtualization</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigAdvancedMachineFeaturesOutputReference.property.enableNestedVirtualization">enableNestedVirtualization</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigAdvancedMachineFeaturesOutputReference.property.performanceMonitoringUnit">performanceMonitoringUnit</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigAdvancedMachineFeaturesOutputReference.property.threadsPerCore">threadsPerCore</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigAdvancedMachineFeaturesOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigAdvancedMachineFeatures">ContainerClusterNodeConfigAdvancedMachineFeatures</a></code> | *No description.* |
@@ -36779,7 +36779,7 @@ public readonly fqn: string;
 public readonly enableNestedVirtualizationInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -36809,7 +36809,7 @@ public readonly threadsPerCoreInput: number;
 public readonly enableNestedVirtualization: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -36856,14 +36856,14 @@ new containerCluster.ContainerClusterNodeConfigBootDiskOutputReference(terraform
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigBootDiskOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigBootDiskOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigBootDiskOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigBootDiskOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -37037,7 +37037,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigBootDiskOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -37221,14 +37221,14 @@ new containerCluster.ContainerClusterNodeConfigConfidentialNodesOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigConfidentialNodesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigConfidentialNodesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigConfidentialNodesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigConfidentialNodesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -37399,7 +37399,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigConfidentialNodesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -37427,9 +37427,9 @@ public resetConfidentialInstanceType(): void
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigConfidentialNodesOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigConfidentialNodesOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigConfidentialNodesOutputReference.property.confidentialInstanceTypeInput">confidentialInstanceTypeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigConfidentialNodesOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigConfidentialNodesOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigConfidentialNodesOutputReference.property.confidentialInstanceType">confidentialInstanceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigConfidentialNodesOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigConfidentialNodesOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigConfidentialNodesOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigConfidentialNodes">ContainerClusterNodeConfigConfidentialNodes</a></code> | *No description.* |
 
 ---
@@ -37474,7 +37474,7 @@ public readonly confidentialInstanceTypeInput: string;
 public readonly enabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -37494,7 +37494,7 @@ public readonly confidentialInstanceType: string;
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -37521,14 +37521,14 @@ new containerCluster.ContainerClusterNodeConfigContainerdConfigOutputReference(t
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -37700,7 +37700,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -37812,14 +37812,14 @@ new containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -37989,7 +37989,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -38083,7 +38083,7 @@ new containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -38091,7 +38091,7 @@ new containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAc
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -38157,7 +38157,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -38192,7 +38192,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig">ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig">ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig</a>[]</code> | *No description.* |
 
 ---
 
@@ -38226,7 +38226,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig">ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig">ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig</a>[]
 
 ---
 
@@ -38243,7 +38243,7 @@ new containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -38252,7 +38252,7 @@ new containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAc
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -38439,7 +38439,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -38476,7 +38476,7 @@ public putGcpSecretManagerCertificateConfig(value: ContainerClusterNodeConfigCon
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigOutputReference.property.fqdnsInput">fqdnsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigOutputReference.property.gcpSecretManagerCertificateConfigInput">gcpSecretManagerCertificateConfigInput</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfig">ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigOutputReference.property.fqdns">fqdns</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig">ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig">ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig</a></code> | *No description.* |
 
 ---
 
@@ -38550,7 +38550,7 @@ public readonly fqdns: string[];
 public readonly internalValue: IResolvable | ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig">ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig">ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig</a>
 
 ---
 
@@ -38567,14 +38567,14 @@ new containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -38746,7 +38746,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -38768,7 +38768,7 @@ public putCertificateAuthorityDomainConfig(value: IResolvable | ContainerCluster
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference.putCertificateAuthorityDomainConfig.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig">ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig">ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig</a>[]
 
 ---
 
@@ -38786,9 +38786,9 @@ public resetCertificateAuthorityDomainConfig(): void
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference.property.certificateAuthorityDomainConfig">certificateAuthorityDomainConfig</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigList">ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference.property.certificateAuthorityDomainConfigInput">certificateAuthorityDomainConfigInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig">ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference.property.certificateAuthorityDomainConfigInput">certificateAuthorityDomainConfigInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig">ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfig">ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfig</a></code> | *No description.* |
 
 ---
@@ -38833,7 +38833,7 @@ public readonly certificateAuthorityDomainConfig: ContainerClusterNodeConfigCont
 public readonly certificateAuthorityDomainConfigInput: IResolvable | ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig">ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig">ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig</a>[]
 
 ---
 
@@ -38843,7 +38843,7 @@ public readonly certificateAuthorityDomainConfigInput: IResolvable | ContainerCl
 public readonly enabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -38853,7 +38853,7 @@ public readonly enabledInput: boolean | IResolvable;
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -38880,7 +38880,7 @@ new containerCluster.ContainerClusterNodeConfigEffectiveTaintsList(terraformReso
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigEffectiveTaintsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigEffectiveTaintsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigEffectiveTaintsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigEffectiveTaintsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -38888,7 +38888,7 @@ new containerCluster.ContainerClusterNodeConfigEffectiveTaintsList(terraformReso
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigEffectiveTaintsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -38954,7 +38954,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigEffectiveTaintsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -39029,7 +39029,7 @@ new containerCluster.ContainerClusterNodeConfigEffectiveTaintsOutputReference(te
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigEffectiveTaintsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigEffectiveTaintsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigEffectiveTaintsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigEffectiveTaintsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigEffectiveTaintsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -39038,7 +39038,7 @@ new containerCluster.ContainerClusterNodeConfigEffectiveTaintsOutputReference(te
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigEffectiveTaintsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -39224,7 +39224,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigEffectiveTaintsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -39329,14 +39329,14 @@ new containerCluster.ContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOut
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -39507,7 +39507,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigEphemeralStorageLocalSsdConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -39629,14 +39629,14 @@ new containerCluster.ContainerClusterNodeConfigFastSocketOutputReference(terrafo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigFastSocketOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigFastSocketOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigFastSocketOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigFastSocketOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -39806,7 +39806,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigFastSocketOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -39827,8 +39827,8 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigFastSocketOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigFastSocketOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigFastSocketOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigFastSocketOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigFastSocketOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigFastSocketOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigFastSocketOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigFastSocket">ContainerClusterNodeConfigFastSocket</a></code> | *No description.* |
 
 ---
@@ -39863,7 +39863,7 @@ public readonly fqn: string;
 public readonly enabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -39873,7 +39873,7 @@ public readonly enabledInput: boolean | IResolvable;
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -39900,14 +39900,14 @@ new containerCluster.ContainerClusterNodeConfigGcfsConfigOutputReference(terrafo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGcfsConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGcfsConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGcfsConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGcfsConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -40077,7 +40077,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGcfsConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -40098,8 +40098,8 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGcfsConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGcfsConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGcfsConfigOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGcfsConfigOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGcfsConfigOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGcfsConfigOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGcfsConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGcfsConfig">ContainerClusterNodeConfigGcfsConfig</a></code> | *No description.* |
 
 ---
@@ -40134,7 +40134,7 @@ public readonly fqn: string;
 public readonly enabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -40144,7 +40144,7 @@ public readonly enabledInput: boolean | IResolvable;
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -40171,14 +40171,14 @@ new containerCluster.ContainerClusterNodeConfigGuestAcceleratorGpuDriverInstalla
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGuestAcceleratorGpuDriverInstallationConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGuestAcceleratorGpuDriverInstallationConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGuestAcceleratorGpuDriverInstallationConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGuestAcceleratorGpuDriverInstallationConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -40348,7 +40348,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGuestAcceleratorGpuDriverInstallationConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -40442,14 +40442,14 @@ new containerCluster.ContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigO
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -40619,7 +40619,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGuestAcceleratorGpuSharingConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -40735,7 +40735,7 @@ new containerCluster.ContainerClusterNodeConfigGuestAcceleratorList(terraformRes
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGuestAcceleratorList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGuestAcceleratorList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGuestAcceleratorList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGuestAcceleratorList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -40743,7 +40743,7 @@ new containerCluster.ContainerClusterNodeConfigGuestAcceleratorList(terraformRes
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGuestAcceleratorList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -40809,7 +40809,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGuestAcceleratorList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -40844,7 +40844,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGuestAcceleratorList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGuestAcceleratorList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGuestAcceleratorList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGuestAccelerator">ContainerClusterNodeConfigGuestAccelerator</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGuestAcceleratorList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGuestAccelerator">ContainerClusterNodeConfigGuestAccelerator</a>[]</code> | *No description.* |
 
 ---
 
@@ -40878,7 +40878,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ContainerClusterNodeConfigGuestAccelerator[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGuestAccelerator">ContainerClusterNodeConfigGuestAccelerator</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGuestAccelerator">ContainerClusterNodeConfigGuestAccelerator</a>[]
 
 ---
 
@@ -40895,7 +40895,7 @@ new containerCluster.ContainerClusterNodeConfigGuestAcceleratorOutputReference(t
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGuestAcceleratorOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGuestAcceleratorOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGuestAcceleratorOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGuestAcceleratorOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGuestAcceleratorOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -40904,7 +40904,7 @@ new containerCluster.ContainerClusterNodeConfigGuestAcceleratorOutputReference(t
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGuestAcceleratorOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -41095,7 +41095,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGuestAcceleratorOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -41168,7 +41168,7 @@ public resetGpuSharingConfig(): void
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGuestAcceleratorOutputReference.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGuestAcceleratorOutputReference.property.gpuPartitionSize">gpuPartitionSize</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGuestAcceleratorOutputReference.property.type">type</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGuestAcceleratorOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGuestAccelerator">ContainerClusterNodeConfigGuestAccelerator</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGuestAcceleratorOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGuestAccelerator">ContainerClusterNodeConfigGuestAccelerator</a></code> | *No description.* |
 
 ---
 
@@ -41302,7 +41302,7 @@ public readonly type: string;
 public readonly internalValue: IResolvable | ContainerClusterNodeConfigGuestAccelerator;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGuestAccelerator">ContainerClusterNodeConfigGuestAccelerator</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGuestAccelerator">ContainerClusterNodeConfigGuestAccelerator</a>
 
 ---
 
@@ -41319,14 +41319,14 @@ new containerCluster.ContainerClusterNodeConfigGvnicOutputReference(terraformRes
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGvnicOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGvnicOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGvnicOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGvnicOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -41496,7 +41496,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGvnicOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -41517,8 +41517,8 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGvnicOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGvnicOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGvnicOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGvnicOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGvnicOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGvnicOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGvnicOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGvnic">ContainerClusterNodeConfigGvnic</a></code> | *No description.* |
 
 ---
@@ -41553,7 +41553,7 @@ public readonly fqn: string;
 public readonly enabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -41563,7 +41563,7 @@ public readonly enabledInput: boolean | IResolvable;
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -41590,14 +41590,14 @@ new containerCluster.ContainerClusterNodeConfigHostMaintenancePolicyOutputRefere
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigHostMaintenancePolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigHostMaintenancePolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigHostMaintenancePolicyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigHostMaintenancePolicyOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -41767,7 +41767,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigHostMaintenancePolicyOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -41861,14 +41861,14 @@ new containerCluster.ContainerClusterNodeConfigKubeletConfigEvictionMinimumRecla
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -42044,7 +42044,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -42284,14 +42284,14 @@ new containerCluster.ContainerClusterNodeConfigKubeletConfigEvictionSoftGracePer
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -42467,7 +42467,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -42707,14 +42707,14 @@ new containerCluster.ContainerClusterNodeConfigKubeletConfigEvictionSoftOutputRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfigEvictionSoftOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfigEvictionSoftOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfigEvictionSoftOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfigEvictionSoftOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -42890,7 +42890,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfigEvictionSoftOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -43130,14 +43130,14 @@ new containerCluster.ContainerClusterNodeConfigKubeletConfigOutputReference(terr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -43328,7 +43328,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -43499,7 +43499,7 @@ public resetSingleProcessOomKill(): void
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfigOutputReference.property.allowedUnsafeSysctlsInput">allowedUnsafeSysctlsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfigOutputReference.property.containerLogMaxFilesInput">containerLogMaxFilesInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfigOutputReference.property.containerLogMaxSizeInput">containerLogMaxSizeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfigOutputReference.property.cpuCfsQuotaInput">cpuCfsQuotaInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfigOutputReference.property.cpuCfsQuotaInput">cpuCfsQuotaInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfigOutputReference.property.cpuCfsQuotaPeriodInput">cpuCfsQuotaPeriodInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfigOutputReference.property.cpuManagerPolicyInput">cpuManagerPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfigOutputReference.property.evictionMaxPodGracePeriodSecondsInput">evictionMaxPodGracePeriodSecondsInput</a></code> | <code>number</code> | *No description.* |
@@ -43513,11 +43513,11 @@ public resetSingleProcessOomKill(): void
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfigOutputReference.property.insecureKubeletReadonlyPortEnabledInput">insecureKubeletReadonlyPortEnabledInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfigOutputReference.property.maxParallelImagePullsInput">maxParallelImagePullsInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfigOutputReference.property.podPidsLimitInput">podPidsLimitInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfigOutputReference.property.singleProcessOomKillInput">singleProcessOomKillInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfigOutputReference.property.singleProcessOomKillInput">singleProcessOomKillInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfigOutputReference.property.allowedUnsafeSysctls">allowedUnsafeSysctls</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfigOutputReference.property.containerLogMaxFiles">containerLogMaxFiles</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfigOutputReference.property.containerLogMaxSize">containerLogMaxSize</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfigOutputReference.property.cpuCfsQuota">cpuCfsQuota</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfigOutputReference.property.cpuCfsQuota">cpuCfsQuota</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfigOutputReference.property.cpuCfsQuotaPeriod">cpuCfsQuotaPeriod</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfigOutputReference.property.cpuManagerPolicy">cpuManagerPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfigOutputReference.property.evictionMaxPodGracePeriodSeconds">evictionMaxPodGracePeriodSeconds</a></code> | <code>number</code> | *No description.* |
@@ -43528,7 +43528,7 @@ public resetSingleProcessOomKill(): void
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfigOutputReference.property.insecureKubeletReadonlyPortEnabled">insecureKubeletReadonlyPortEnabled</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfigOutputReference.property.maxParallelImagePulls">maxParallelImagePulls</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfigOutputReference.property.podPidsLimit">podPidsLimit</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfigOutputReference.property.singleProcessOomKill">singleProcessOomKill</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfigOutputReference.property.singleProcessOomKill">singleProcessOomKill</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfig">ContainerClusterNodeConfigKubeletConfig</a></code> | *No description.* |
 
 ---
@@ -43623,7 +43623,7 @@ public readonly containerLogMaxSizeInput: string;
 public readonly cpuCfsQuotaInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -43763,7 +43763,7 @@ public readonly podPidsLimitInput: number;
 public readonly singleProcessOomKillInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -43803,7 +43803,7 @@ public readonly containerLogMaxSize: string;
 public readonly cpuCfsQuota: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -43913,7 +43913,7 @@ public readonly podPidsLimit: number;
 public readonly singleProcessOomKill: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -43940,14 +43940,14 @@ new containerCluster.ContainerClusterNodeConfigLinuxNodeConfigHugepagesConfigOut
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigLinuxNodeConfigHugepagesConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigLinuxNodeConfigHugepagesConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigLinuxNodeConfigHugepagesConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigLinuxNodeConfigHugepagesConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -44119,7 +44119,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigLinuxNodeConfigHugepagesConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -44247,14 +44247,14 @@ new containerCluster.ContainerClusterNodeConfigLinuxNodeConfigOutputReference(te
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigLinuxNodeConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigLinuxNodeConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigLinuxNodeConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigLinuxNodeConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -44430,7 +44430,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigLinuxNodeConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -44654,14 +44654,14 @@ new containerCluster.ContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputRefe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -44831,7 +44831,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigLocalNvmeSsdBlockConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -44925,14 +44925,14 @@ new containerCluster.ContainerClusterNodeConfigOutputReference(terraformResource
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -45165,7 +45165,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -45271,7 +45271,7 @@ public putGuestAccelerator(value: IResolvable | ContainerClusterNodeConfigGuestA
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigOutputReference.putGuestAccelerator.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGuestAccelerator">ContainerClusterNodeConfigGuestAccelerator</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGuestAccelerator">ContainerClusterNodeConfigGuestAccelerator</a>[]
 
 ---
 
@@ -45355,7 +45355,7 @@ public putSecondaryBootDisks(value: IResolvable | ContainerClusterNodeConfigSeco
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigOutputReference.putSecondaryBootDisks.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSecondaryBootDisks">ContainerClusterNodeConfigSecondaryBootDisks</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSecondaryBootDisks">ContainerClusterNodeConfigSecondaryBootDisks</a>[]
 
 ---
 
@@ -45391,7 +45391,7 @@ public putTaint(value: IResolvable | ContainerClusterNodeConfigTaint[]): void
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigOutputReference.putTaint.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigTaint">ContainerClusterNodeConfigTaint</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigTaint">ContainerClusterNodeConfigTaint</a>[]
 
 ---
 
@@ -45712,12 +45712,12 @@ public resetWorkloadMetadataConfig(): void
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigOutputReference.property.containerdConfigInput">containerdConfigInput</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigContainerdConfig">ContainerClusterNodeConfigContainerdConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigOutputReference.property.diskSizeGbInput">diskSizeGbInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigOutputReference.property.diskTypeInput">diskTypeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigOutputReference.property.enableConfidentialStorageInput">enableConfidentialStorageInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigOutputReference.property.enableConfidentialStorageInput">enableConfidentialStorageInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigOutputReference.property.ephemeralStorageLocalSsdConfigInput">ephemeralStorageLocalSsdConfigInput</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigEphemeralStorageLocalSsdConfig">ContainerClusterNodeConfigEphemeralStorageLocalSsdConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigOutputReference.property.fastSocketInput">fastSocketInput</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigFastSocket">ContainerClusterNodeConfigFastSocket</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigOutputReference.property.flexStartInput">flexStartInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigOutputReference.property.flexStartInput">flexStartInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigOutputReference.property.gcfsConfigInput">gcfsConfigInput</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGcfsConfig">ContainerClusterNodeConfigGcfsConfig</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigOutputReference.property.guestAcceleratorInput">guestAcceleratorInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGuestAccelerator">ContainerClusterNodeConfigGuestAccelerator</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigOutputReference.property.guestAcceleratorInput">guestAcceleratorInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGuestAccelerator">ContainerClusterNodeConfigGuestAccelerator</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigOutputReference.property.gvnicInput">gvnicInput</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGvnic">ContainerClusterNodeConfigGvnic</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigOutputReference.property.hostMaintenancePolicyInput">hostMaintenancePolicyInput</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigHostMaintenancePolicy">ContainerClusterNodeConfigHostMaintenancePolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigOutputReference.property.imageTypeInput">imageTypeInput</a></code> | <code>string</code> | *No description.* |
@@ -45734,25 +45734,25 @@ public resetWorkloadMetadataConfig(): void
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigOutputReference.property.minCpuPlatformInput">minCpuPlatformInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigOutputReference.property.nodeGroupInput">nodeGroupInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigOutputReference.property.oauthScopesInput">oauthScopesInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigOutputReference.property.preemptibleInput">preemptibleInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigOutputReference.property.preemptibleInput">preemptibleInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigOutputReference.property.reservationAffinityInput">reservationAffinityInput</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigReservationAffinity">ContainerClusterNodeConfigReservationAffinity</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigOutputReference.property.resourceLabelsInput">resourceLabelsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigOutputReference.property.resourceManagerTagsInput">resourceManagerTagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigOutputReference.property.secondaryBootDisksInput">secondaryBootDisksInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSecondaryBootDisks">ContainerClusterNodeConfigSecondaryBootDisks</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigOutputReference.property.secondaryBootDisksInput">secondaryBootDisksInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSecondaryBootDisks">ContainerClusterNodeConfigSecondaryBootDisks</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigOutputReference.property.serviceAccountInput">serviceAccountInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigOutputReference.property.shieldedInstanceConfigInput">shieldedInstanceConfigInput</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigShieldedInstanceConfig">ContainerClusterNodeConfigShieldedInstanceConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigOutputReference.property.soleTenantConfigInput">soleTenantConfigInput</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSoleTenantConfig">ContainerClusterNodeConfigSoleTenantConfig</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigOutputReference.property.spotInput">spotInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigOutputReference.property.spotInput">spotInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigOutputReference.property.storagePoolsInput">storagePoolsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigOutputReference.property.tagsInput">tagsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigOutputReference.property.taintInput">taintInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigTaint">ContainerClusterNodeConfigTaint</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigOutputReference.property.taintInput">taintInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigTaint">ContainerClusterNodeConfigTaint</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigOutputReference.property.windowsNodeConfigInput">windowsNodeConfigInput</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigWindowsNodeConfig">ContainerClusterNodeConfigWindowsNodeConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigOutputReference.property.workloadMetadataConfigInput">workloadMetadataConfigInput</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigWorkloadMetadataConfig">ContainerClusterNodeConfigWorkloadMetadataConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigOutputReference.property.bootDiskKmsKey">bootDiskKmsKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigOutputReference.property.diskSizeGb">diskSizeGb</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigOutputReference.property.diskType">diskType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigOutputReference.property.enableConfidentialStorage">enableConfidentialStorage</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigOutputReference.property.flexStart">flexStart</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigOutputReference.property.enableConfidentialStorage">enableConfidentialStorage</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigOutputReference.property.flexStart">flexStart</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigOutputReference.property.imageType">imageType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigOutputReference.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigOutputReference.property.localSsdCount">localSsdCount</a></code> | <code>number</code> | *No description.* |
@@ -45764,11 +45764,11 @@ public resetWorkloadMetadataConfig(): void
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigOutputReference.property.minCpuPlatform">minCpuPlatform</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigOutputReference.property.nodeGroup">nodeGroup</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigOutputReference.property.oauthScopes">oauthScopes</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigOutputReference.property.preemptible">preemptible</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigOutputReference.property.preemptible">preemptible</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigOutputReference.property.resourceLabels">resourceLabels</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigOutputReference.property.resourceManagerTags">resourceManagerTags</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigOutputReference.property.serviceAccount">serviceAccount</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigOutputReference.property.spot">spot</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigOutputReference.property.spot">spot</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigOutputReference.property.storagePools">storagePools</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigOutputReference.property.tags">tags</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfig">ContainerClusterNodeConfig</a></code> | *No description.* |
@@ -46085,7 +46085,7 @@ public readonly diskTypeInput: string;
 public readonly enableConfidentialStorageInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -46115,7 +46115,7 @@ public readonly fastSocketInput: ContainerClusterNodeConfigFastSocket;
 public readonly flexStartInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -46135,7 +46135,7 @@ public readonly gcfsConfigInput: ContainerClusterNodeConfigGcfsConfig;
 public readonly guestAcceleratorInput: IResolvable | ContainerClusterNodeConfigGuestAccelerator[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGuestAccelerator">ContainerClusterNodeConfigGuestAccelerator</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigGuestAccelerator">ContainerClusterNodeConfigGuestAccelerator</a>[]
 
 ---
 
@@ -46305,7 +46305,7 @@ public readonly oauthScopesInput: string[];
 public readonly preemptibleInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -46345,7 +46345,7 @@ public readonly resourceManagerTagsInput: {[ key: string ]: string};
 public readonly secondaryBootDisksInput: IResolvable | ContainerClusterNodeConfigSecondaryBootDisks[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSecondaryBootDisks">ContainerClusterNodeConfigSecondaryBootDisks</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSecondaryBootDisks">ContainerClusterNodeConfigSecondaryBootDisks</a>[]
 
 ---
 
@@ -46385,7 +46385,7 @@ public readonly soleTenantConfigInput: ContainerClusterNodeConfigSoleTenantConfi
 public readonly spotInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -46415,7 +46415,7 @@ public readonly tagsInput: string[];
 public readonly taintInput: IResolvable | ContainerClusterNodeConfigTaint[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigTaint">ContainerClusterNodeConfigTaint</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigTaint">ContainerClusterNodeConfigTaint</a>[]
 
 ---
 
@@ -46475,7 +46475,7 @@ public readonly diskType: string;
 public readonly enableConfidentialStorage: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -46485,7 +46485,7 @@ public readonly enableConfidentialStorage: boolean | IResolvable;
 public readonly flexStart: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -46605,7 +46605,7 @@ public readonly oauthScopes: string[];
 public readonly preemptible: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -46645,7 +46645,7 @@ public readonly serviceAccount: string;
 public readonly spot: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -46692,14 +46692,14 @@ new containerCluster.ContainerClusterNodeConfigReservationAffinityOutputReferenc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigReservationAffinityOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigReservationAffinityOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigReservationAffinityOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigReservationAffinityOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -46871,7 +46871,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigReservationAffinityOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -47021,7 +47021,7 @@ new containerCluster.ContainerClusterNodeConfigSecondaryBootDisksList(terraformR
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSecondaryBootDisksList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSecondaryBootDisksList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSecondaryBootDisksList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSecondaryBootDisksList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -47029,7 +47029,7 @@ new containerCluster.ContainerClusterNodeConfigSecondaryBootDisksList(terraformR
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSecondaryBootDisksList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -47095,7 +47095,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSecondaryBootDisksList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -47130,7 +47130,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSecondaryBootDisksList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSecondaryBootDisksList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSecondaryBootDisksList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSecondaryBootDisks">ContainerClusterNodeConfigSecondaryBootDisks</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSecondaryBootDisksList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSecondaryBootDisks">ContainerClusterNodeConfigSecondaryBootDisks</a>[]</code> | *No description.* |
 
 ---
 
@@ -47164,7 +47164,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ContainerClusterNodeConfigSecondaryBootDisks[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSecondaryBootDisks">ContainerClusterNodeConfigSecondaryBootDisks</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSecondaryBootDisks">ContainerClusterNodeConfigSecondaryBootDisks</a>[]
 
 ---
 
@@ -47181,7 +47181,7 @@ new containerCluster.ContainerClusterNodeConfigSecondaryBootDisksOutputReference
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSecondaryBootDisksOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSecondaryBootDisksOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSecondaryBootDisksOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSecondaryBootDisksOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSecondaryBootDisksOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -47190,7 +47190,7 @@ new containerCluster.ContainerClusterNodeConfigSecondaryBootDisksOutputReference
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSecondaryBootDisksOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -47377,7 +47377,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSecondaryBootDisksOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -47408,7 +47408,7 @@ public resetMode(): void
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSecondaryBootDisksOutputReference.property.modeInput">modeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSecondaryBootDisksOutputReference.property.diskImage">diskImage</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSecondaryBootDisksOutputReference.property.mode">mode</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSecondaryBootDisksOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSecondaryBootDisks">ContainerClusterNodeConfigSecondaryBootDisks</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSecondaryBootDisksOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSecondaryBootDisks">ContainerClusterNodeConfigSecondaryBootDisks</a></code> | *No description.* |
 
 ---
 
@@ -47482,7 +47482,7 @@ public readonly mode: string;
 public readonly internalValue: IResolvable | ContainerClusterNodeConfigSecondaryBootDisks;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSecondaryBootDisks">ContainerClusterNodeConfigSecondaryBootDisks</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSecondaryBootDisks">ContainerClusterNodeConfigSecondaryBootDisks</a>
 
 ---
 
@@ -47499,14 +47499,14 @@ new containerCluster.ContainerClusterNodeConfigShieldedInstanceConfigOutputRefer
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigShieldedInstanceConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigShieldedInstanceConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigShieldedInstanceConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigShieldedInstanceConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -47678,7 +47678,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigShieldedInstanceConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -47711,10 +47711,10 @@ public resetEnableSecureBoot(): void
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigShieldedInstanceConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigShieldedInstanceConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigShieldedInstanceConfigOutputReference.property.enableIntegrityMonitoringInput">enableIntegrityMonitoringInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigShieldedInstanceConfigOutputReference.property.enableSecureBootInput">enableSecureBootInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigShieldedInstanceConfigOutputReference.property.enableIntegrityMonitoring">enableIntegrityMonitoring</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigShieldedInstanceConfigOutputReference.property.enableSecureBoot">enableSecureBoot</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigShieldedInstanceConfigOutputReference.property.enableIntegrityMonitoringInput">enableIntegrityMonitoringInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigShieldedInstanceConfigOutputReference.property.enableSecureBootInput">enableSecureBootInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigShieldedInstanceConfigOutputReference.property.enableIntegrityMonitoring">enableIntegrityMonitoring</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigShieldedInstanceConfigOutputReference.property.enableSecureBoot">enableSecureBoot</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigShieldedInstanceConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigShieldedInstanceConfig">ContainerClusterNodeConfigShieldedInstanceConfig</a></code> | *No description.* |
 
 ---
@@ -47749,7 +47749,7 @@ public readonly fqn: string;
 public readonly enableIntegrityMonitoringInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -47759,7 +47759,7 @@ public readonly enableIntegrityMonitoringInput: boolean | IResolvable;
 public readonly enableSecureBootInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -47769,7 +47769,7 @@ public readonly enableSecureBootInput: boolean | IResolvable;
 public readonly enableIntegrityMonitoring: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -47779,7 +47779,7 @@ public readonly enableIntegrityMonitoring: boolean | IResolvable;
 public readonly enableSecureBoot: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -47806,7 +47806,7 @@ new containerCluster.ContainerClusterNodeConfigSoleTenantConfigNodeAffinityList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSoleTenantConfigNodeAffinityList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSoleTenantConfigNodeAffinityList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSoleTenantConfigNodeAffinityList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSoleTenantConfigNodeAffinityList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -47814,7 +47814,7 @@ new containerCluster.ContainerClusterNodeConfigSoleTenantConfigNodeAffinityList(
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSoleTenantConfigNodeAffinityList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -47880,7 +47880,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSoleTenantConfigNodeAffinityList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -47915,7 +47915,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSoleTenantConfigNodeAffinityList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSoleTenantConfigNodeAffinityList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSoleTenantConfigNodeAffinityList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSoleTenantConfigNodeAffinity">ContainerClusterNodeConfigSoleTenantConfigNodeAffinity</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSoleTenantConfigNodeAffinityList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSoleTenantConfigNodeAffinity">ContainerClusterNodeConfigSoleTenantConfigNodeAffinity</a>[]</code> | *No description.* |
 
 ---
 
@@ -47949,7 +47949,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ContainerClusterNodeConfigSoleTenantConfigNodeAffinity[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSoleTenantConfigNodeAffinity">ContainerClusterNodeConfigSoleTenantConfigNodeAffinity</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSoleTenantConfigNodeAffinity">ContainerClusterNodeConfigSoleTenantConfigNodeAffinity</a>[]
 
 ---
 
@@ -47966,7 +47966,7 @@ new containerCluster.ContainerClusterNodeConfigSoleTenantConfigNodeAffinityOutpu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSoleTenantConfigNodeAffinityOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSoleTenantConfigNodeAffinityOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSoleTenantConfigNodeAffinityOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSoleTenantConfigNodeAffinityOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSoleTenantConfigNodeAffinityOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -47975,7 +47975,7 @@ new containerCluster.ContainerClusterNodeConfigSoleTenantConfigNodeAffinityOutpu
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSoleTenantConfigNodeAffinityOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -48161,7 +48161,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSoleTenantConfigNodeAffinityOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -48188,7 +48188,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSoleTenantConfigNodeAffinityOutputReference.property.key">key</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSoleTenantConfigNodeAffinityOutputReference.property.operator">operator</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSoleTenantConfigNodeAffinityOutputReference.property.values">values</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSoleTenantConfigNodeAffinityOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSoleTenantConfigNodeAffinity">ContainerClusterNodeConfigSoleTenantConfigNodeAffinity</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSoleTenantConfigNodeAffinityOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSoleTenantConfigNodeAffinity">ContainerClusterNodeConfigSoleTenantConfigNodeAffinity</a></code> | *No description.* |
 
 ---
 
@@ -48282,7 +48282,7 @@ public readonly values: string[];
 public readonly internalValue: IResolvable | ContainerClusterNodeConfigSoleTenantConfigNodeAffinity;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSoleTenantConfigNodeAffinity">ContainerClusterNodeConfigSoleTenantConfigNodeAffinity</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSoleTenantConfigNodeAffinity">ContainerClusterNodeConfigSoleTenantConfigNodeAffinity</a>
 
 ---
 
@@ -48299,14 +48299,14 @@ new containerCluster.ContainerClusterNodeConfigSoleTenantConfigOutputReference(t
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSoleTenantConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSoleTenantConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSoleTenantConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSoleTenantConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -48478,7 +48478,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSoleTenantConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -48500,7 +48500,7 @@ public putNodeAffinity(value: IResolvable | ContainerClusterNodeConfigSoleTenant
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSoleTenantConfigOutputReference.putNodeAffinity.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSoleTenantConfigNodeAffinity">ContainerClusterNodeConfigSoleTenantConfigNodeAffinity</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSoleTenantConfigNodeAffinity">ContainerClusterNodeConfigSoleTenantConfigNodeAffinity</a>[]
 
 ---
 
@@ -48519,7 +48519,7 @@ public resetMinNodeCpus(): void
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSoleTenantConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSoleTenantConfigOutputReference.property.nodeAffinity">nodeAffinity</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSoleTenantConfigNodeAffinityList">ContainerClusterNodeConfigSoleTenantConfigNodeAffinityList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSoleTenantConfigOutputReference.property.minNodeCpusInput">minNodeCpusInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSoleTenantConfigOutputReference.property.nodeAffinityInput">nodeAffinityInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSoleTenantConfigNodeAffinity">ContainerClusterNodeConfigSoleTenantConfigNodeAffinity</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSoleTenantConfigOutputReference.property.nodeAffinityInput">nodeAffinityInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSoleTenantConfigNodeAffinity">ContainerClusterNodeConfigSoleTenantConfigNodeAffinity</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSoleTenantConfigOutputReference.property.minNodeCpus">minNodeCpus</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSoleTenantConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSoleTenantConfig">ContainerClusterNodeConfigSoleTenantConfig</a></code> | *No description.* |
 
@@ -48575,7 +48575,7 @@ public readonly minNodeCpusInput: number;
 public readonly nodeAffinityInput: IResolvable | ContainerClusterNodeConfigSoleTenantConfigNodeAffinity[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSoleTenantConfigNodeAffinity">ContainerClusterNodeConfigSoleTenantConfigNodeAffinity</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigSoleTenantConfigNodeAffinity">ContainerClusterNodeConfigSoleTenantConfigNodeAffinity</a>[]
 
 ---
 
@@ -48612,7 +48612,7 @@ new containerCluster.ContainerClusterNodeConfigTaintList(terraformResource: IInt
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigTaintList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigTaintList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigTaintList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigTaintList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -48620,7 +48620,7 @@ new containerCluster.ContainerClusterNodeConfigTaintList(terraformResource: IInt
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigTaintList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -48686,7 +48686,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigTaintList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -48721,7 +48721,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigTaintList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigTaintList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigTaintList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigTaint">ContainerClusterNodeConfigTaint</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigTaintList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigTaint">ContainerClusterNodeConfigTaint</a>[]</code> | *No description.* |
 
 ---
 
@@ -48755,7 +48755,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ContainerClusterNodeConfigTaint[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigTaint">ContainerClusterNodeConfigTaint</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigTaint">ContainerClusterNodeConfigTaint</a>[]
 
 ---
 
@@ -48772,7 +48772,7 @@ new containerCluster.ContainerClusterNodeConfigTaintOutputReference(terraformRes
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigTaintOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigTaintOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigTaintOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigTaintOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigTaintOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -48781,7 +48781,7 @@ new containerCluster.ContainerClusterNodeConfigTaintOutputReference(terraformRes
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigTaintOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -48967,7 +48967,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigTaintOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -48994,7 +48994,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigTaintOutputReference.property.effect">effect</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigTaintOutputReference.property.key">key</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigTaintOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigTaintOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigTaint">ContainerClusterNodeConfigTaint</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigTaintOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigTaint">ContainerClusterNodeConfigTaint</a></code> | *No description.* |
 
 ---
 
@@ -49088,7 +49088,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | ContainerClusterNodeConfigTaint;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigTaint">ContainerClusterNodeConfigTaint</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigTaint">ContainerClusterNodeConfigTaint</a>
 
 ---
 
@@ -49105,14 +49105,14 @@ new containerCluster.ContainerClusterNodeConfigWindowsNodeConfigOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigWindowsNodeConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigWindowsNodeConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigWindowsNodeConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigWindowsNodeConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -49283,7 +49283,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigWindowsNodeConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -49383,14 +49383,14 @@ new containerCluster.ContainerClusterNodeConfigWorkloadMetadataConfigOutputRefer
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigWorkloadMetadataConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigWorkloadMetadataConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigWorkloadMetadataConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigWorkloadMetadataConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -49560,7 +49560,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigWorkloadMetadataConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -49654,14 +49654,14 @@ new containerCluster.ContainerClusterNodePoolAutoConfigLinuxNodeConfigOutputRefe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolAutoConfigLinuxNodeConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolAutoConfigLinuxNodeConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolAutoConfigLinuxNodeConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolAutoConfigLinuxNodeConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -49832,7 +49832,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolAutoConfigLinuxNodeConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -49932,14 +49932,14 @@ new containerCluster.ContainerClusterNodePoolAutoConfigNetworkTagsOutputReferenc
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolAutoConfigNetworkTagsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolAutoConfigNetworkTagsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolAutoConfigNetworkTagsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolAutoConfigNetworkTagsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -50110,7 +50110,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolAutoConfigNetworkTagsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -50210,14 +50210,14 @@ new containerCluster.ContainerClusterNodePoolAutoConfigNodeKubeletConfigOutputRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolAutoConfigNodeKubeletConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolAutoConfigNodeKubeletConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolAutoConfigNodeKubeletConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolAutoConfigNodeKubeletConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -50388,7 +50388,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolAutoConfigNodeKubeletConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -50488,14 +50488,14 @@ new containerCluster.ContainerClusterNodePoolAutoConfigOutputReference(terraform
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolAutoConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolAutoConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolAutoConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolAutoConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -50672,7 +50672,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolAutoConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -50892,14 +50892,14 @@ new containerCluster.ContainerClusterNodePoolAutoscalingOutputReference(terrafor
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolAutoscalingOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolAutoscalingOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolAutoscalingOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolAutoscalingOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -51074,7 +51074,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolAutoscalingOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -51286,14 +51286,14 @@ new containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainer
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -51465,7 +51465,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -51577,14 +51577,14 @@ new containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainer
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -51754,7 +51754,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -51848,7 +51848,7 @@ new containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainer
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -51856,7 +51856,7 @@ new containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainer
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -51922,7 +51922,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -51957,7 +51957,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig">ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig">ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig</a>[]</code> | *No description.* |
 
 ---
 
@@ -51991,7 +51991,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig">ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig">ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig</a>[]
 
 ---
 
@@ -52008,7 +52008,7 @@ new containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainer
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -52017,7 +52017,7 @@ new containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainer
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -52204,7 +52204,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -52241,7 +52241,7 @@ public putGcpSecretManagerCertificateConfig(value: ContainerClusterNodePoolDefau
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigOutputReference.property.fqdnsInput">fqdnsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigOutputReference.property.gcpSecretManagerCertificateConfigInput">gcpSecretManagerCertificateConfigInput</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfig">ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigOutputReference.property.fqdns">fqdns</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig">ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig">ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig</a></code> | *No description.* |
 
 ---
 
@@ -52315,7 +52315,7 @@ public readonly fqdns: string[];
 public readonly internalValue: IResolvable | ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig">ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig">ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig</a>
 
 ---
 
@@ -52332,14 +52332,14 @@ new containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainer
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -52511,7 +52511,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -52533,7 +52533,7 @@ public putCertificateAuthorityDomainConfig(value: IResolvable | ContainerCluster
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigOutputReference.putCertificateAuthorityDomainConfig.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig">ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig">ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig</a>[]
 
 ---
 
@@ -52551,9 +52551,9 @@ public resetCertificateAuthorityDomainConfig(): void
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigOutputReference.property.certificateAuthorityDomainConfig">certificateAuthorityDomainConfig</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigList">ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigOutputReference.property.certificateAuthorityDomainConfigInput">certificateAuthorityDomainConfigInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig">ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigOutputReference.property.certificateAuthorityDomainConfigInput">certificateAuthorityDomainConfigInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig">ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfig">ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfig</a></code> | *No description.* |
 
 ---
@@ -52598,7 +52598,7 @@ public readonly certificateAuthorityDomainConfig: ContainerClusterNodePoolDefaul
 public readonly certificateAuthorityDomainConfigInput: IResolvable | ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig">ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig">ContainerClusterNodePoolDefaultsNodeConfigDefaultsContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig</a>[]
 
 ---
 
@@ -52608,7 +52608,7 @@ public readonly certificateAuthorityDomainConfigInput: IResolvable | ContainerCl
 public readonly enabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -52618,7 +52618,7 @@ public readonly enabledInput: boolean | IResolvable;
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -52645,14 +52645,14 @@ new containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -52822,7 +52822,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -52843,8 +52843,8 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfigOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfigOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfigOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfigOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfig">ContainerClusterNodePoolDefaultsNodeConfigDefaultsGcfsConfig</a></code> | *No description.* |
 
 ---
@@ -52879,7 +52879,7 @@ public readonly fqn: string;
 public readonly enabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -52889,7 +52889,7 @@ public readonly enabledInput: boolean | IResolvable;
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -52916,14 +52916,14 @@ new containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputRef
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -53099,7 +53099,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsNodeConfigDefaultsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -53307,14 +53307,14 @@ new containerCluster.ContainerClusterNodePoolDefaultsOutputReference(terraformRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -53486,7 +53486,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolDefaultsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -53598,7 +53598,7 @@ new containerCluster.ContainerClusterNodePoolList(terraformResource: IInterpolat
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -53606,7 +53606,7 @@ new containerCluster.ContainerClusterNodePoolList(terraformResource: IInterpolat
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -53672,7 +53672,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -53707,7 +53707,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePool">ContainerClusterNodePool</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePool">ContainerClusterNodePool</a>[]</code> | *No description.* |
 
 ---
 
@@ -53741,7 +53741,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ContainerClusterNodePool[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePool">ContainerClusterNodePool</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePool">ContainerClusterNodePool</a>[]
 
 ---
 
@@ -53758,14 +53758,14 @@ new containerCluster.ContainerClusterNodePoolManagementOutputReference(terraform
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolManagementOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolManagementOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolManagementOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolManagementOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -53937,7 +53937,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolManagementOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -53970,10 +53970,10 @@ public resetAutoUpgrade(): void
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolManagementOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolManagementOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolManagementOutputReference.property.autoRepairInput">autoRepairInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolManagementOutputReference.property.autoUpgradeInput">autoUpgradeInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolManagementOutputReference.property.autoRepair">autoRepair</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolManagementOutputReference.property.autoUpgrade">autoUpgrade</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolManagementOutputReference.property.autoRepairInput">autoRepairInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolManagementOutputReference.property.autoUpgradeInput">autoUpgradeInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolManagementOutputReference.property.autoRepair">autoRepair</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolManagementOutputReference.property.autoUpgrade">autoUpgrade</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolManagementOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolManagement">ContainerClusterNodePoolManagement</a></code> | *No description.* |
 
 ---
@@ -54008,7 +54008,7 @@ public readonly fqn: string;
 public readonly autoRepairInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -54018,7 +54018,7 @@ public readonly autoRepairInput: boolean | IResolvable;
 public readonly autoUpgradeInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -54028,7 +54028,7 @@ public readonly autoUpgradeInput: boolean | IResolvable;
 public readonly autoRepair: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -54038,7 +54038,7 @@ public readonly autoRepair: boolean | IResolvable;
 public readonly autoUpgrade: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -54065,7 +54065,7 @@ new containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkC
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -54073,7 +54073,7 @@ new containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkC
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -54139,7 +54139,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -54174,7 +54174,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigs">ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigs</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigs">ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigs</a>[]</code> | *No description.* |
 
 ---
 
@@ -54208,7 +54208,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigs[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigs">ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigs</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigs">ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigs</a>[]
 
 ---
 
@@ -54225,7 +54225,7 @@ new containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkC
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -54234,7 +54234,7 @@ new containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkC
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -54422,7 +54422,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -54459,7 +54459,7 @@ public resetSubnetwork(): void
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigsOutputReference.property.subnetworkInput">subnetworkInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigsOutputReference.property.network">network</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigsOutputReference.property.subnetwork">subnetwork</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigs">ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigs</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigs">ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigs</a></code> | *No description.* |
 
 ---
 
@@ -54533,7 +54533,7 @@ public readonly subnetwork: string;
 public readonly internalValue: IResolvable | ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigs;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigs">ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigs</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigs">ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigs</a>
 
 ---
 
@@ -54550,7 +54550,7 @@ new containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkCo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -54558,7 +54558,7 @@ new containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkCo
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -54624,7 +54624,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -54659,7 +54659,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigs">ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigs</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigs">ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigs</a>[]</code> | *No description.* |
 
 ---
 
@@ -54693,7 +54693,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigs[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigs">ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigs</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigs">ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigs</a>[]
 
 ---
 
@@ -54710,7 +54710,7 @@ new containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkCo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -54719,7 +54719,7 @@ new containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkCo
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -54908,7 +54908,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -54953,7 +54953,7 @@ public resetSubnetwork(): void
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigsOutputReference.property.maxPodsPerNode">maxPodsPerNode</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigsOutputReference.property.secondaryPodRange">secondaryPodRange</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigsOutputReference.property.subnetwork">subnetwork</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigs">ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigs</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigs">ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigs</a></code> | *No description.* |
 
 ---
 
@@ -55047,7 +55047,7 @@ public readonly subnetwork: string;
 public readonly internalValue: IResolvable | ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigs;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigs">ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigs</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigs">ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigs</a>
 
 ---
 
@@ -55064,14 +55064,14 @@ new containerCluster.ContainerClusterNodePoolNetworkConfigNetworkPerformanceConf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigNetworkPerformanceConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigNetworkPerformanceConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigNetworkPerformanceConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigNetworkPerformanceConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -55241,7 +55241,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigNetworkPerformanceConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -55335,14 +55335,14 @@ new containerCluster.ContainerClusterNodePoolNetworkConfigOutputReference(terraf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -55524,7 +55524,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -55546,7 +55546,7 @@ public putAdditionalNodeNetworkConfigs(value: IResolvable | ContainerClusterNode
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigOutputReference.putAdditionalNodeNetworkConfigs.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigs">ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigs</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigs">ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigs</a>[]
 
 ---
 
@@ -55558,7 +55558,7 @@ public putAdditionalPodNetworkConfigs(value: IResolvable | ContainerClusterNodeP
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigOutputReference.putAdditionalPodNetworkConfigs.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigs">ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigs</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigs">ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigs</a>[]
 
 ---
 
@@ -55646,16 +55646,16 @@ public resetPodRange(): void
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigOutputReference.property.networkPerformanceConfig">networkPerformanceConfig</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigNetworkPerformanceConfigOutputReference">ContainerClusterNodePoolNetworkConfigNetworkPerformanceConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigOutputReference.property.podCidrOverprovisionConfig">podCidrOverprovisionConfig</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfigOutputReference">ContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigOutputReference.property.subnetwork">subnetwork</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigOutputReference.property.additionalNodeNetworkConfigsInput">additionalNodeNetworkConfigsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigs">ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigs</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigOutputReference.property.additionalPodNetworkConfigsInput">additionalPodNetworkConfigsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigs">ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigs</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigOutputReference.property.createPodRangeInput">createPodRangeInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigOutputReference.property.enablePrivateNodesInput">enablePrivateNodesInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigOutputReference.property.additionalNodeNetworkConfigsInput">additionalNodeNetworkConfigsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigs">ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigs</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigOutputReference.property.additionalPodNetworkConfigsInput">additionalPodNetworkConfigsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigs">ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigs</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigOutputReference.property.createPodRangeInput">createPodRangeInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigOutputReference.property.enablePrivateNodesInput">enablePrivateNodesInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigOutputReference.property.networkPerformanceConfigInput">networkPerformanceConfigInput</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigNetworkPerformanceConfig">ContainerClusterNodePoolNetworkConfigNetworkPerformanceConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigOutputReference.property.podCidrOverprovisionConfigInput">podCidrOverprovisionConfigInput</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfig">ContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigOutputReference.property.podIpv4CidrBlockInput">podIpv4CidrBlockInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigOutputReference.property.podRangeInput">podRangeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigOutputReference.property.createPodRange">createPodRange</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigOutputReference.property.enablePrivateNodes">enablePrivateNodes</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigOutputReference.property.createPodRange">createPodRange</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigOutputReference.property.enablePrivateNodes">enablePrivateNodes</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigOutputReference.property.podIpv4CidrBlock">podIpv4CidrBlock</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigOutputReference.property.podRange">podRange</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfig">ContainerClusterNodePoolNetworkConfig</a></code> | *No description.* |
@@ -55742,7 +55742,7 @@ public readonly subnetwork: string;
 public readonly additionalNodeNetworkConfigsInput: IResolvable | ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigs[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigs">ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigs</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigs">ContainerClusterNodePoolNetworkConfigAdditionalNodeNetworkConfigs</a>[]
 
 ---
 
@@ -55752,7 +55752,7 @@ public readonly additionalNodeNetworkConfigsInput: IResolvable | ContainerCluste
 public readonly additionalPodNetworkConfigsInput: IResolvable | ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigs[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigs">ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigs</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigs">ContainerClusterNodePoolNetworkConfigAdditionalPodNetworkConfigs</a>[]
 
 ---
 
@@ -55762,7 +55762,7 @@ public readonly additionalPodNetworkConfigsInput: IResolvable | ContainerCluster
 public readonly createPodRangeInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -55772,7 +55772,7 @@ public readonly createPodRangeInput: boolean | IResolvable;
 public readonly enablePrivateNodesInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -55822,7 +55822,7 @@ public readonly podRangeInput: string;
 public readonly createPodRange: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -55832,7 +55832,7 @@ public readonly createPodRange: boolean | IResolvable;
 public readonly enablePrivateNodes: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -55879,14 +55879,14 @@ new containerCluster.ContainerClusterNodePoolNetworkConfigPodCidrOverprovisionCo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -56056,7 +56056,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -56077,8 +56077,8 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfigOutputReference.property.disabledInput">disabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfigOutputReference.property.disabled">disabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfigOutputReference.property.disabledInput">disabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfigOutputReference.property.disabled">disabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfig">ContainerClusterNodePoolNetworkConfigPodCidrOverprovisionConfig</a></code> | *No description.* |
 
 ---
@@ -56113,7 +56113,7 @@ public readonly fqn: string;
 public readonly disabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -56123,7 +56123,7 @@ public readonly disabledInput: boolean | IResolvable;
 public readonly disabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -56150,14 +56150,14 @@ new containerCluster.ContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesOu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -56329,7 +56329,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -56362,10 +56362,10 @@ public resetPerformanceMonitoringUnit(): void
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesOutputReference.property.enableNestedVirtualizationInput">enableNestedVirtualizationInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesOutputReference.property.enableNestedVirtualizationInput">enableNestedVirtualizationInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesOutputReference.property.performanceMonitoringUnitInput">performanceMonitoringUnitInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesOutputReference.property.threadsPerCoreInput">threadsPerCoreInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesOutputReference.property.enableNestedVirtualization">enableNestedVirtualization</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesOutputReference.property.enableNestedVirtualization">enableNestedVirtualization</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesOutputReference.property.performanceMonitoringUnit">performanceMonitoringUnit</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesOutputReference.property.threadsPerCore">threadsPerCore</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigAdvancedMachineFeaturesOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigAdvancedMachineFeatures">ContainerClusterNodePoolNodeConfigAdvancedMachineFeatures</a></code> | *No description.* |
@@ -56402,7 +56402,7 @@ public readonly fqn: string;
 public readonly enableNestedVirtualizationInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -56432,7 +56432,7 @@ public readonly threadsPerCoreInput: number;
 public readonly enableNestedVirtualization: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -56479,14 +56479,14 @@ new containerCluster.ContainerClusterNodePoolNodeConfigBootDiskOutputReference(t
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigBootDiskOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigBootDiskOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigBootDiskOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigBootDiskOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -56660,7 +56660,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigBootDiskOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -56844,14 +56844,14 @@ new containerCluster.ContainerClusterNodePoolNodeConfigConfidentialNodesOutputRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigConfidentialNodesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigConfidentialNodesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigConfidentialNodesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigConfidentialNodesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -57022,7 +57022,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigConfidentialNodesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -57050,9 +57050,9 @@ public resetConfidentialInstanceType(): void
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigConfidentialNodesOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigConfidentialNodesOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigConfidentialNodesOutputReference.property.confidentialInstanceTypeInput">confidentialInstanceTypeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigConfidentialNodesOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigConfidentialNodesOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigConfidentialNodesOutputReference.property.confidentialInstanceType">confidentialInstanceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigConfidentialNodesOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigConfidentialNodesOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigConfidentialNodesOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigConfidentialNodes">ContainerClusterNodePoolNodeConfigConfidentialNodes</a></code> | *No description.* |
 
 ---
@@ -57097,7 +57097,7 @@ public readonly confidentialInstanceTypeInput: string;
 public readonly enabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -57117,7 +57117,7 @@ public readonly confidentialInstanceType: string;
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -57144,14 +57144,14 @@ new containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigOutputRef
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -57323,7 +57323,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -57435,14 +57435,14 @@ new containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -57612,7 +57612,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -57706,7 +57706,7 @@ new containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -57714,7 +57714,7 @@ new containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRe
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -57780,7 +57780,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -57815,7 +57815,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig">ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig">ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig</a>[]</code> | *No description.* |
 
 ---
 
@@ -57849,7 +57849,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig">ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig">ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig</a>[]
 
 ---
 
@@ -57866,7 +57866,7 @@ new containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -57875,7 +57875,7 @@ new containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRe
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -58062,7 +58062,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -58099,7 +58099,7 @@ public putGcpSecretManagerCertificateConfig(value: ContainerClusterNodePoolNodeC
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigOutputReference.property.fqdnsInput">fqdnsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigOutputReference.property.gcpSecretManagerCertificateConfigInput">gcpSecretManagerCertificateConfigInput</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfig">ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigGcpSecretManagerCertificateConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigOutputReference.property.fqdns">fqdns</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig">ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig">ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig</a></code> | *No description.* |
 
 ---
 
@@ -58173,7 +58173,7 @@ public readonly fqdns: string[];
 public readonly internalValue: IResolvable | ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig">ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig">ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig</a>
 
 ---
 
@@ -58190,14 +58190,14 @@ new containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -58369,7 +58369,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -58391,7 +58391,7 @@ public putCertificateAuthorityDomainConfig(value: IResolvable | ContainerCluster
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference.putCertificateAuthorityDomainConfig.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig">ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig">ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig</a>[]
 
 ---
 
@@ -58409,9 +58409,9 @@ public resetCertificateAuthorityDomainConfig(): void
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference.property.certificateAuthorityDomainConfig">certificateAuthorityDomainConfig</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigList">ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfigList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference.property.certificateAuthorityDomainConfigInput">certificateAuthorityDomainConfigInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig">ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference.property.certificateAuthorityDomainConfigInput">certificateAuthorityDomainConfigInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig">ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfig">ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfig</a></code> | *No description.* |
 
 ---
@@ -58456,7 +58456,7 @@ public readonly certificateAuthorityDomainConfig: ContainerClusterNodePoolNodeCo
 public readonly certificateAuthorityDomainConfigInput: IResolvable | ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig">ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig">ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigCertificateAuthorityDomainConfig</a>[]
 
 ---
 
@@ -58466,7 +58466,7 @@ public readonly certificateAuthorityDomainConfigInput: IResolvable | ContainerCl
 public readonly enabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -58476,7 +58476,7 @@ public readonly enabledInput: boolean | IResolvable;
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -58503,7 +58503,7 @@ new containerCluster.ContainerClusterNodePoolNodeConfigEffectiveTaintsList(terra
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigEffectiveTaintsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigEffectiveTaintsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigEffectiveTaintsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigEffectiveTaintsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -58511,7 +58511,7 @@ new containerCluster.ContainerClusterNodePoolNodeConfigEffectiveTaintsList(terra
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigEffectiveTaintsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -58577,7 +58577,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigEffectiveTaintsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -58652,7 +58652,7 @@ new containerCluster.ContainerClusterNodePoolNodeConfigEffectiveTaintsOutputRefe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigEffectiveTaintsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigEffectiveTaintsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigEffectiveTaintsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigEffectiveTaintsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigEffectiveTaintsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -58661,7 +58661,7 @@ new containerCluster.ContainerClusterNodePoolNodeConfigEffectiveTaintsOutputRefe
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigEffectiveTaintsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -58847,7 +58847,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigEffectiveTaintsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -58952,14 +58952,14 @@ new containerCluster.ContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdC
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -59130,7 +59130,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -59252,14 +59252,14 @@ new containerCluster.ContainerClusterNodePoolNodeConfigFastSocketOutputReference
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigFastSocketOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigFastSocketOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigFastSocketOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigFastSocketOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -59429,7 +59429,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigFastSocketOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -59450,8 +59450,8 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigFastSocketOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigFastSocketOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigFastSocketOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigFastSocketOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigFastSocketOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigFastSocketOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigFastSocketOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigFastSocket">ContainerClusterNodePoolNodeConfigFastSocket</a></code> | *No description.* |
 
 ---
@@ -59486,7 +59486,7 @@ public readonly fqn: string;
 public readonly enabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -59496,7 +59496,7 @@ public readonly enabledInput: boolean | IResolvable;
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -59523,14 +59523,14 @@ new containerCluster.ContainerClusterNodePoolNodeConfigGcfsConfigOutputReference
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGcfsConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGcfsConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGcfsConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGcfsConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -59700,7 +59700,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGcfsConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -59721,8 +59721,8 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGcfsConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGcfsConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGcfsConfigOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGcfsConfigOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGcfsConfigOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGcfsConfigOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGcfsConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGcfsConfig">ContainerClusterNodePoolNodeConfigGcfsConfig</a></code> | *No description.* |
 
 ---
@@ -59757,7 +59757,7 @@ public readonly fqn: string;
 public readonly enabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -59767,7 +59767,7 @@ public readonly enabledInput: boolean | IResolvable;
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -59794,14 +59794,14 @@ new containerCluster.ContainerClusterNodePoolNodeConfigGuestAcceleratorGpuDriver
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGuestAcceleratorGpuDriverInstallationConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGuestAcceleratorGpuDriverInstallationConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGuestAcceleratorGpuDriverInstallationConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGuestAcceleratorGpuDriverInstallationConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -59971,7 +59971,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGuestAcceleratorGpuDriverInstallationConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -60065,14 +60065,14 @@ new containerCluster.ContainerClusterNodePoolNodeConfigGuestAcceleratorGpuSharin
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGuestAcceleratorGpuSharingConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGuestAcceleratorGpuSharingConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGuestAcceleratorGpuSharingConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGuestAcceleratorGpuSharingConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -60242,7 +60242,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGuestAcceleratorGpuSharingConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -60358,7 +60358,7 @@ new containerCluster.ContainerClusterNodePoolNodeConfigGuestAcceleratorList(terr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGuestAcceleratorList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGuestAcceleratorList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGuestAcceleratorList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGuestAcceleratorList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -60366,7 +60366,7 @@ new containerCluster.ContainerClusterNodePoolNodeConfigGuestAcceleratorList(terr
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGuestAcceleratorList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -60432,7 +60432,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGuestAcceleratorList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -60467,7 +60467,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGuestAcceleratorList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGuestAcceleratorList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGuestAcceleratorList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGuestAccelerator">ContainerClusterNodePoolNodeConfigGuestAccelerator</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGuestAcceleratorList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGuestAccelerator">ContainerClusterNodePoolNodeConfigGuestAccelerator</a>[]</code> | *No description.* |
 
 ---
 
@@ -60501,7 +60501,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ContainerClusterNodePoolNodeConfigGuestAccelerator[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGuestAccelerator">ContainerClusterNodePoolNodeConfigGuestAccelerator</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGuestAccelerator">ContainerClusterNodePoolNodeConfigGuestAccelerator</a>[]
 
 ---
 
@@ -60518,7 +60518,7 @@ new containerCluster.ContainerClusterNodePoolNodeConfigGuestAcceleratorOutputRef
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGuestAcceleratorOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGuestAcceleratorOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGuestAcceleratorOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGuestAcceleratorOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGuestAcceleratorOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -60527,7 +60527,7 @@ new containerCluster.ContainerClusterNodePoolNodeConfigGuestAcceleratorOutputRef
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGuestAcceleratorOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -60718,7 +60718,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGuestAcceleratorOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -60791,7 +60791,7 @@ public resetGpuSharingConfig(): void
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGuestAcceleratorOutputReference.property.count">count</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGuestAcceleratorOutputReference.property.gpuPartitionSize">gpuPartitionSize</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGuestAcceleratorOutputReference.property.type">type</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGuestAcceleratorOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGuestAccelerator">ContainerClusterNodePoolNodeConfigGuestAccelerator</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGuestAcceleratorOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGuestAccelerator">ContainerClusterNodePoolNodeConfigGuestAccelerator</a></code> | *No description.* |
 
 ---
 
@@ -60925,7 +60925,7 @@ public readonly type: string;
 public readonly internalValue: IResolvable | ContainerClusterNodePoolNodeConfigGuestAccelerator;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGuestAccelerator">ContainerClusterNodePoolNodeConfigGuestAccelerator</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGuestAccelerator">ContainerClusterNodePoolNodeConfigGuestAccelerator</a>
 
 ---
 
@@ -60942,14 +60942,14 @@ new containerCluster.ContainerClusterNodePoolNodeConfigGvnicOutputReference(terr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGvnicOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGvnicOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGvnicOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGvnicOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -61119,7 +61119,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGvnicOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -61140,8 +61140,8 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGvnicOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGvnicOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGvnicOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGvnicOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGvnicOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGvnicOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGvnicOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGvnic">ContainerClusterNodePoolNodeConfigGvnic</a></code> | *No description.* |
 
 ---
@@ -61176,7 +61176,7 @@ public readonly fqn: string;
 public readonly enabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -61186,7 +61186,7 @@ public readonly enabledInput: boolean | IResolvable;
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -61213,14 +61213,14 @@ new containerCluster.ContainerClusterNodePoolNodeConfigHostMaintenancePolicyOutp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigHostMaintenancePolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigHostMaintenancePolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigHostMaintenancePolicyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigHostMaintenancePolicyOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -61390,7 +61390,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigHostMaintenancePolicyOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -61484,14 +61484,14 @@ new containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigEvictionMini
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -61667,7 +61667,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigEvictionMinimumReclaimOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -61907,14 +61907,14 @@ new containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoft
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -62090,7 +62090,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -62330,14 +62330,14 @@ new containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoft
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -62513,7 +62513,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -62753,14 +62753,14 @@ new containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigOutputRefere
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -62951,7 +62951,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -63122,7 +63122,7 @@ public resetSingleProcessOomKill(): void
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference.property.allowedUnsafeSysctlsInput">allowedUnsafeSysctlsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference.property.containerLogMaxFilesInput">containerLogMaxFilesInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference.property.containerLogMaxSizeInput">containerLogMaxSizeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference.property.cpuCfsQuotaInput">cpuCfsQuotaInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference.property.cpuCfsQuotaInput">cpuCfsQuotaInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference.property.cpuCfsQuotaPeriodInput">cpuCfsQuotaPeriodInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference.property.cpuManagerPolicyInput">cpuManagerPolicyInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference.property.evictionMaxPodGracePeriodSecondsInput">evictionMaxPodGracePeriodSecondsInput</a></code> | <code>number</code> | *No description.* |
@@ -63136,11 +63136,11 @@ public resetSingleProcessOomKill(): void
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference.property.insecureKubeletReadonlyPortEnabledInput">insecureKubeletReadonlyPortEnabledInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference.property.maxParallelImagePullsInput">maxParallelImagePullsInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference.property.podPidsLimitInput">podPidsLimitInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference.property.singleProcessOomKillInput">singleProcessOomKillInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference.property.singleProcessOomKillInput">singleProcessOomKillInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference.property.allowedUnsafeSysctls">allowedUnsafeSysctls</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference.property.containerLogMaxFiles">containerLogMaxFiles</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference.property.containerLogMaxSize">containerLogMaxSize</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference.property.cpuCfsQuota">cpuCfsQuota</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference.property.cpuCfsQuota">cpuCfsQuota</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference.property.cpuCfsQuotaPeriod">cpuCfsQuotaPeriod</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference.property.cpuManagerPolicy">cpuManagerPolicy</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference.property.evictionMaxPodGracePeriodSeconds">evictionMaxPodGracePeriodSeconds</a></code> | <code>number</code> | *No description.* |
@@ -63151,7 +63151,7 @@ public resetSingleProcessOomKill(): void
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference.property.insecureKubeletReadonlyPortEnabled">insecureKubeletReadonlyPortEnabled</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference.property.maxParallelImagePulls">maxParallelImagePulls</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference.property.podPidsLimit">podPidsLimit</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference.property.singleProcessOomKill">singleProcessOomKill</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference.property.singleProcessOomKill">singleProcessOomKill</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigKubeletConfig">ContainerClusterNodePoolNodeConfigKubeletConfig</a></code> | *No description.* |
 
 ---
@@ -63246,7 +63246,7 @@ public readonly containerLogMaxSizeInput: string;
 public readonly cpuCfsQuotaInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -63386,7 +63386,7 @@ public readonly podPidsLimitInput: number;
 public readonly singleProcessOomKillInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -63426,7 +63426,7 @@ public readonly containerLogMaxSize: string;
 public readonly cpuCfsQuota: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -63536,7 +63536,7 @@ public readonly podPidsLimit: number;
 public readonly singleProcessOomKill: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -63563,14 +63563,14 @@ new containerCluster.ContainerClusterNodePoolNodeConfigLinuxNodeConfigHugepagesC
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigLinuxNodeConfigHugepagesConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigLinuxNodeConfigHugepagesConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigLinuxNodeConfigHugepagesConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigLinuxNodeConfigHugepagesConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -63742,7 +63742,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigLinuxNodeConfigHugepagesConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -63870,14 +63870,14 @@ new containerCluster.ContainerClusterNodePoolNodeConfigLinuxNodeConfigOutputRefe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigLinuxNodeConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigLinuxNodeConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigLinuxNodeConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigLinuxNodeConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -64053,7 +64053,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigLinuxNodeConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -64277,14 +64277,14 @@ new containerCluster.ContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOu
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -64454,7 +64454,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigLocalNvmeSsdBlockConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -64548,14 +64548,14 @@ new containerCluster.ContainerClusterNodePoolNodeConfigOutputReference(terraform
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -64788,7 +64788,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -64894,7 +64894,7 @@ public putGuestAccelerator(value: IResolvable | ContainerClusterNodePoolNodeConf
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigOutputReference.putGuestAccelerator.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGuestAccelerator">ContainerClusterNodePoolNodeConfigGuestAccelerator</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGuestAccelerator">ContainerClusterNodePoolNodeConfigGuestAccelerator</a>[]
 
 ---
 
@@ -64978,7 +64978,7 @@ public putSecondaryBootDisks(value: IResolvable | ContainerClusterNodePoolNodeCo
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigOutputReference.putSecondaryBootDisks.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSecondaryBootDisks">ContainerClusterNodePoolNodeConfigSecondaryBootDisks</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSecondaryBootDisks">ContainerClusterNodePoolNodeConfigSecondaryBootDisks</a>[]
 
 ---
 
@@ -65014,7 +65014,7 @@ public putTaint(value: IResolvable | ContainerClusterNodePoolNodeConfigTaint[]):
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigOutputReference.putTaint.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigTaint">ContainerClusterNodePoolNodeConfigTaint</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigTaint">ContainerClusterNodePoolNodeConfigTaint</a>[]
 
 ---
 
@@ -65335,12 +65335,12 @@ public resetWorkloadMetadataConfig(): void
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigOutputReference.property.containerdConfigInput">containerdConfigInput</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfig">ContainerClusterNodePoolNodeConfigContainerdConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigOutputReference.property.diskSizeGbInput">diskSizeGbInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigOutputReference.property.diskTypeInput">diskTypeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigOutputReference.property.enableConfidentialStorageInput">enableConfidentialStorageInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigOutputReference.property.enableConfidentialStorageInput">enableConfidentialStorageInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigOutputReference.property.ephemeralStorageLocalSsdConfigInput">ephemeralStorageLocalSsdConfigInput</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfig">ContainerClusterNodePoolNodeConfigEphemeralStorageLocalSsdConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigOutputReference.property.fastSocketInput">fastSocketInput</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigFastSocket">ContainerClusterNodePoolNodeConfigFastSocket</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigOutputReference.property.flexStartInput">flexStartInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigOutputReference.property.flexStartInput">flexStartInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigOutputReference.property.gcfsConfigInput">gcfsConfigInput</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGcfsConfig">ContainerClusterNodePoolNodeConfigGcfsConfig</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigOutputReference.property.guestAcceleratorInput">guestAcceleratorInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGuestAccelerator">ContainerClusterNodePoolNodeConfigGuestAccelerator</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigOutputReference.property.guestAcceleratorInput">guestAcceleratorInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGuestAccelerator">ContainerClusterNodePoolNodeConfigGuestAccelerator</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigOutputReference.property.gvnicInput">gvnicInput</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGvnic">ContainerClusterNodePoolNodeConfigGvnic</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigOutputReference.property.hostMaintenancePolicyInput">hostMaintenancePolicyInput</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigHostMaintenancePolicy">ContainerClusterNodePoolNodeConfigHostMaintenancePolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigOutputReference.property.imageTypeInput">imageTypeInput</a></code> | <code>string</code> | *No description.* |
@@ -65357,25 +65357,25 @@ public resetWorkloadMetadataConfig(): void
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigOutputReference.property.minCpuPlatformInput">minCpuPlatformInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigOutputReference.property.nodeGroupInput">nodeGroupInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigOutputReference.property.oauthScopesInput">oauthScopesInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigOutputReference.property.preemptibleInput">preemptibleInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigOutputReference.property.preemptibleInput">preemptibleInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigOutputReference.property.reservationAffinityInput">reservationAffinityInput</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigReservationAffinity">ContainerClusterNodePoolNodeConfigReservationAffinity</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigOutputReference.property.resourceLabelsInput">resourceLabelsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigOutputReference.property.resourceManagerTagsInput">resourceManagerTagsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigOutputReference.property.secondaryBootDisksInput">secondaryBootDisksInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSecondaryBootDisks">ContainerClusterNodePoolNodeConfigSecondaryBootDisks</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigOutputReference.property.secondaryBootDisksInput">secondaryBootDisksInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSecondaryBootDisks">ContainerClusterNodePoolNodeConfigSecondaryBootDisks</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigOutputReference.property.serviceAccountInput">serviceAccountInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigOutputReference.property.shieldedInstanceConfigInput">shieldedInstanceConfigInput</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigShieldedInstanceConfig">ContainerClusterNodePoolNodeConfigShieldedInstanceConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigOutputReference.property.soleTenantConfigInput">soleTenantConfigInput</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSoleTenantConfig">ContainerClusterNodePoolNodeConfigSoleTenantConfig</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigOutputReference.property.spotInput">spotInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigOutputReference.property.spotInput">spotInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigOutputReference.property.storagePoolsInput">storagePoolsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigOutputReference.property.tagsInput">tagsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigOutputReference.property.taintInput">taintInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigTaint">ContainerClusterNodePoolNodeConfigTaint</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigOutputReference.property.taintInput">taintInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigTaint">ContainerClusterNodePoolNodeConfigTaint</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigOutputReference.property.windowsNodeConfigInput">windowsNodeConfigInput</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigWindowsNodeConfig">ContainerClusterNodePoolNodeConfigWindowsNodeConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigOutputReference.property.workloadMetadataConfigInput">workloadMetadataConfigInput</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigWorkloadMetadataConfig">ContainerClusterNodePoolNodeConfigWorkloadMetadataConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigOutputReference.property.bootDiskKmsKey">bootDiskKmsKey</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigOutputReference.property.diskSizeGb">diskSizeGb</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigOutputReference.property.diskType">diskType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigOutputReference.property.enableConfidentialStorage">enableConfidentialStorage</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigOutputReference.property.flexStart">flexStart</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigOutputReference.property.enableConfidentialStorage">enableConfidentialStorage</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigOutputReference.property.flexStart">flexStart</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigOutputReference.property.imageType">imageType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigOutputReference.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigOutputReference.property.localSsdCount">localSsdCount</a></code> | <code>number</code> | *No description.* |
@@ -65387,11 +65387,11 @@ public resetWorkloadMetadataConfig(): void
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigOutputReference.property.minCpuPlatform">minCpuPlatform</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigOutputReference.property.nodeGroup">nodeGroup</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigOutputReference.property.oauthScopes">oauthScopes</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigOutputReference.property.preemptible">preemptible</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigOutputReference.property.preemptible">preemptible</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigOutputReference.property.resourceLabels">resourceLabels</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigOutputReference.property.resourceManagerTags">resourceManagerTags</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigOutputReference.property.serviceAccount">serviceAccount</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigOutputReference.property.spot">spot</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigOutputReference.property.spot">spot</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigOutputReference.property.storagePools">storagePools</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigOutputReference.property.tags">tags</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfig">ContainerClusterNodePoolNodeConfig</a></code> | *No description.* |
@@ -65708,7 +65708,7 @@ public readonly diskTypeInput: string;
 public readonly enableConfidentialStorageInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -65738,7 +65738,7 @@ public readonly fastSocketInput: ContainerClusterNodePoolNodeConfigFastSocket;
 public readonly flexStartInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -65758,7 +65758,7 @@ public readonly gcfsConfigInput: ContainerClusterNodePoolNodeConfigGcfsConfig;
 public readonly guestAcceleratorInput: IResolvable | ContainerClusterNodePoolNodeConfigGuestAccelerator[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGuestAccelerator">ContainerClusterNodePoolNodeConfigGuestAccelerator</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigGuestAccelerator">ContainerClusterNodePoolNodeConfigGuestAccelerator</a>[]
 
 ---
 
@@ -65928,7 +65928,7 @@ public readonly oauthScopesInput: string[];
 public readonly preemptibleInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -65968,7 +65968,7 @@ public readonly resourceManagerTagsInput: {[ key: string ]: string};
 public readonly secondaryBootDisksInput: IResolvable | ContainerClusterNodePoolNodeConfigSecondaryBootDisks[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSecondaryBootDisks">ContainerClusterNodePoolNodeConfigSecondaryBootDisks</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSecondaryBootDisks">ContainerClusterNodePoolNodeConfigSecondaryBootDisks</a>[]
 
 ---
 
@@ -66008,7 +66008,7 @@ public readonly soleTenantConfigInput: ContainerClusterNodePoolNodeConfigSoleTen
 public readonly spotInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -66038,7 +66038,7 @@ public readonly tagsInput: string[];
 public readonly taintInput: IResolvable | ContainerClusterNodePoolNodeConfigTaint[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigTaint">ContainerClusterNodePoolNodeConfigTaint</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigTaint">ContainerClusterNodePoolNodeConfigTaint</a>[]
 
 ---
 
@@ -66098,7 +66098,7 @@ public readonly diskType: string;
 public readonly enableConfidentialStorage: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -66108,7 +66108,7 @@ public readonly enableConfidentialStorage: boolean | IResolvable;
 public readonly flexStart: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -66228,7 +66228,7 @@ public readonly oauthScopes: string[];
 public readonly preemptible: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -66268,7 +66268,7 @@ public readonly serviceAccount: string;
 public readonly spot: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -66315,14 +66315,14 @@ new containerCluster.ContainerClusterNodePoolNodeConfigReservationAffinityOutput
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigReservationAffinityOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigReservationAffinityOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigReservationAffinityOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigReservationAffinityOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -66494,7 +66494,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigReservationAffinityOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -66644,7 +66644,7 @@ new containerCluster.ContainerClusterNodePoolNodeConfigSecondaryBootDisksList(te
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSecondaryBootDisksList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSecondaryBootDisksList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSecondaryBootDisksList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSecondaryBootDisksList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -66652,7 +66652,7 @@ new containerCluster.ContainerClusterNodePoolNodeConfigSecondaryBootDisksList(te
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSecondaryBootDisksList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -66718,7 +66718,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSecondaryBootDisksList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -66753,7 +66753,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSecondaryBootDisksList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSecondaryBootDisksList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSecondaryBootDisksList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSecondaryBootDisks">ContainerClusterNodePoolNodeConfigSecondaryBootDisks</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSecondaryBootDisksList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSecondaryBootDisks">ContainerClusterNodePoolNodeConfigSecondaryBootDisks</a>[]</code> | *No description.* |
 
 ---
 
@@ -66787,7 +66787,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ContainerClusterNodePoolNodeConfigSecondaryBootDisks[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSecondaryBootDisks">ContainerClusterNodePoolNodeConfigSecondaryBootDisks</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSecondaryBootDisks">ContainerClusterNodePoolNodeConfigSecondaryBootDisks</a>[]
 
 ---
 
@@ -66804,7 +66804,7 @@ new containerCluster.ContainerClusterNodePoolNodeConfigSecondaryBootDisksOutputR
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSecondaryBootDisksOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSecondaryBootDisksOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSecondaryBootDisksOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSecondaryBootDisksOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSecondaryBootDisksOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -66813,7 +66813,7 @@ new containerCluster.ContainerClusterNodePoolNodeConfigSecondaryBootDisksOutputR
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSecondaryBootDisksOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -67000,7 +67000,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSecondaryBootDisksOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -67031,7 +67031,7 @@ public resetMode(): void
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSecondaryBootDisksOutputReference.property.modeInput">modeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSecondaryBootDisksOutputReference.property.diskImage">diskImage</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSecondaryBootDisksOutputReference.property.mode">mode</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSecondaryBootDisksOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSecondaryBootDisks">ContainerClusterNodePoolNodeConfigSecondaryBootDisks</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSecondaryBootDisksOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSecondaryBootDisks">ContainerClusterNodePoolNodeConfigSecondaryBootDisks</a></code> | *No description.* |
 
 ---
 
@@ -67105,7 +67105,7 @@ public readonly mode: string;
 public readonly internalValue: IResolvable | ContainerClusterNodePoolNodeConfigSecondaryBootDisks;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSecondaryBootDisks">ContainerClusterNodePoolNodeConfigSecondaryBootDisks</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSecondaryBootDisks">ContainerClusterNodePoolNodeConfigSecondaryBootDisks</a>
 
 ---
 
@@ -67122,14 +67122,14 @@ new containerCluster.ContainerClusterNodePoolNodeConfigShieldedInstanceConfigOut
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigShieldedInstanceConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigShieldedInstanceConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigShieldedInstanceConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigShieldedInstanceConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -67301,7 +67301,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigShieldedInstanceConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -67334,10 +67334,10 @@ public resetEnableSecureBoot(): void
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigShieldedInstanceConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigShieldedInstanceConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigShieldedInstanceConfigOutputReference.property.enableIntegrityMonitoringInput">enableIntegrityMonitoringInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigShieldedInstanceConfigOutputReference.property.enableSecureBootInput">enableSecureBootInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigShieldedInstanceConfigOutputReference.property.enableIntegrityMonitoring">enableIntegrityMonitoring</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigShieldedInstanceConfigOutputReference.property.enableSecureBoot">enableSecureBoot</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigShieldedInstanceConfigOutputReference.property.enableIntegrityMonitoringInput">enableIntegrityMonitoringInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigShieldedInstanceConfigOutputReference.property.enableSecureBootInput">enableSecureBootInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigShieldedInstanceConfigOutputReference.property.enableIntegrityMonitoring">enableIntegrityMonitoring</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigShieldedInstanceConfigOutputReference.property.enableSecureBoot">enableSecureBoot</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigShieldedInstanceConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigShieldedInstanceConfig">ContainerClusterNodePoolNodeConfigShieldedInstanceConfig</a></code> | *No description.* |
 
 ---
@@ -67372,7 +67372,7 @@ public readonly fqn: string;
 public readonly enableIntegrityMonitoringInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -67382,7 +67382,7 @@ public readonly enableIntegrityMonitoringInput: boolean | IResolvable;
 public readonly enableSecureBootInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -67392,7 +67392,7 @@ public readonly enableSecureBootInput: boolean | IResolvable;
 public readonly enableIntegrityMonitoring: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -67402,7 +67402,7 @@ public readonly enableIntegrityMonitoring: boolean | IResolvable;
 public readonly enableSecureBoot: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -67429,7 +67429,7 @@ new containerCluster.ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffin
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinityList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinityList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinityList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinityList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -67437,7 +67437,7 @@ new containerCluster.ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffin
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinityList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -67503,7 +67503,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinityList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -67538,7 +67538,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinityList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinityList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinityList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinity">ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinity</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinityList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinity">ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinity</a>[]</code> | *No description.* |
 
 ---
 
@@ -67572,7 +67572,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinity[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinity">ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinity</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinity">ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinity</a>[]
 
 ---
 
@@ -67589,7 +67589,7 @@ new containerCluster.ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffin
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinityOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinityOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinityOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinityOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinityOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -67598,7 +67598,7 @@ new containerCluster.ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffin
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinityOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -67784,7 +67784,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinityOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -67811,7 +67811,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinityOutputReference.property.key">key</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinityOutputReference.property.operator">operator</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinityOutputReference.property.values">values</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinityOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinity">ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinity</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinityOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinity">ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinity</a></code> | *No description.* |
 
 ---
 
@@ -67905,7 +67905,7 @@ public readonly values: string[];
 public readonly internalValue: IResolvable | ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinity;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinity">ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinity</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinity">ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinity</a>
 
 ---
 
@@ -67922,14 +67922,14 @@ new containerCluster.ContainerClusterNodePoolNodeConfigSoleTenantConfigOutputRef
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSoleTenantConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSoleTenantConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSoleTenantConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSoleTenantConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -68101,7 +68101,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSoleTenantConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -68123,7 +68123,7 @@ public putNodeAffinity(value: IResolvable | ContainerClusterNodePoolNodeConfigSo
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSoleTenantConfigOutputReference.putNodeAffinity.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinity">ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinity</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinity">ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinity</a>[]
 
 ---
 
@@ -68142,7 +68142,7 @@ public resetMinNodeCpus(): void
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSoleTenantConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSoleTenantConfigOutputReference.property.nodeAffinity">nodeAffinity</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinityList">ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinityList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSoleTenantConfigOutputReference.property.minNodeCpusInput">minNodeCpusInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSoleTenantConfigOutputReference.property.nodeAffinityInput">nodeAffinityInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinity">ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinity</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSoleTenantConfigOutputReference.property.nodeAffinityInput">nodeAffinityInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinity">ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinity</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSoleTenantConfigOutputReference.property.minNodeCpus">minNodeCpus</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSoleTenantConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSoleTenantConfig">ContainerClusterNodePoolNodeConfigSoleTenantConfig</a></code> | *No description.* |
 
@@ -68198,7 +68198,7 @@ public readonly minNodeCpusInput: number;
 public readonly nodeAffinityInput: IResolvable | ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinity[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinity">ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinity</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinity">ContainerClusterNodePoolNodeConfigSoleTenantConfigNodeAffinity</a>[]
 
 ---
 
@@ -68235,7 +68235,7 @@ new containerCluster.ContainerClusterNodePoolNodeConfigTaintList(terraformResour
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigTaintList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigTaintList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigTaintList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigTaintList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -68243,7 +68243,7 @@ new containerCluster.ContainerClusterNodePoolNodeConfigTaintList(terraformResour
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigTaintList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -68309,7 +68309,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigTaintList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -68344,7 +68344,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigTaintList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigTaintList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigTaintList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigTaint">ContainerClusterNodePoolNodeConfigTaint</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigTaintList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigTaint">ContainerClusterNodePoolNodeConfigTaint</a>[]</code> | *No description.* |
 
 ---
 
@@ -68378,7 +68378,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | ContainerClusterNodePoolNodeConfigTaint[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigTaint">ContainerClusterNodePoolNodeConfigTaint</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigTaint">ContainerClusterNodePoolNodeConfigTaint</a>[]
 
 ---
 
@@ -68395,7 +68395,7 @@ new containerCluster.ContainerClusterNodePoolNodeConfigTaintOutputReference(terr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigTaintOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigTaintOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigTaintOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigTaintOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigTaintOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -68404,7 +68404,7 @@ new containerCluster.ContainerClusterNodePoolNodeConfigTaintOutputReference(terr
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigTaintOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -68590,7 +68590,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigTaintOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -68617,7 +68617,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigTaintOutputReference.property.effect">effect</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigTaintOutputReference.property.key">key</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigTaintOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigTaintOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigTaint">ContainerClusterNodePoolNodeConfigTaint</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigTaintOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigTaint">ContainerClusterNodePoolNodeConfigTaint</a></code> | *No description.* |
 
 ---
 
@@ -68711,7 +68711,7 @@ public readonly value: string;
 public readonly internalValue: IResolvable | ContainerClusterNodePoolNodeConfigTaint;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigTaint">ContainerClusterNodePoolNodeConfigTaint</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigTaint">ContainerClusterNodePoolNodeConfigTaint</a>
 
 ---
 
@@ -68728,14 +68728,14 @@ new containerCluster.ContainerClusterNodePoolNodeConfigWindowsNodeConfigOutputRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigWindowsNodeConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigWindowsNodeConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigWindowsNodeConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigWindowsNodeConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -68906,7 +68906,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigWindowsNodeConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -69006,14 +69006,14 @@ new containerCluster.ContainerClusterNodePoolNodeConfigWorkloadMetadataConfigOut
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigWorkloadMetadataConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigWorkloadMetadataConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigWorkloadMetadataConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigWorkloadMetadataConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -69183,7 +69183,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigWorkloadMetadataConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -69277,7 +69277,7 @@ new containerCluster.ContainerClusterNodePoolOutputReference(terraformResource: 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -69286,7 +69286,7 @@ new containerCluster.ContainerClusterNodePoolOutputReference(terraformResource: 
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -69493,7 +69493,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -69712,7 +69712,7 @@ public resetVersion(): void
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolOutputReference.property.nodeCount">nodeCount</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolOutputReference.property.nodeLocations">nodeLocations</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolOutputReference.property.version">version</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePool">ContainerClusterNodePool</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePool">ContainerClusterNodePool</a></code> | *No description.* |
 
 ---
 
@@ -70046,7 +70046,7 @@ public readonly version: string;
 public readonly internalValue: IResolvable | ContainerClusterNodePool;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePool">ContainerClusterNodePool</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePool">ContainerClusterNodePool</a>
 
 ---
 
@@ -70063,14 +70063,14 @@ new containerCluster.ContainerClusterNodePoolPlacementPolicyOutputReference(terr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolPlacementPolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolPlacementPolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolPlacementPolicyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolPlacementPolicyOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -70242,7 +70242,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolPlacementPolicyOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -70392,14 +70392,14 @@ new containerCluster.ContainerClusterNodePoolQueuedProvisioningOutputReference(t
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolQueuedProvisioningOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolQueuedProvisioningOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolQueuedProvisioningOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolQueuedProvisioningOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -70569,7 +70569,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolQueuedProvisioningOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -70590,8 +70590,8 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolQueuedProvisioningOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolQueuedProvisioningOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolQueuedProvisioningOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolQueuedProvisioningOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolQueuedProvisioningOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolQueuedProvisioningOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolQueuedProvisioningOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolQueuedProvisioning">ContainerClusterNodePoolQueuedProvisioning</a></code> | *No description.* |
 
 ---
@@ -70626,7 +70626,7 @@ public readonly fqn: string;
 public readonly enabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -70636,7 +70636,7 @@ public readonly enabledInput: boolean | IResolvable;
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -70663,14 +70663,14 @@ new containerCluster.ContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsOut
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -70842,7 +70842,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -70976,14 +70976,14 @@ new containerCluster.ContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsSta
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsStandardRolloutPolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsStandardRolloutPolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsStandardRolloutPolicyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsStandardRolloutPolicyOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -71156,7 +71156,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolUpgradeSettingsBlueGreenSettingsStandardRolloutPolicyOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -71312,14 +71312,14 @@ new containerCluster.ContainerClusterNodePoolUpgradeSettingsOutputReference(terr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolUpgradeSettingsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolUpgradeSettingsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNodePoolUpgradeSettingsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolUpgradeSettingsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -71494,7 +71494,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNodePoolUpgradeSettingsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -71690,14 +71690,14 @@ new containerCluster.ContainerClusterNotificationConfigOutputReference(terraform
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNotificationConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNotificationConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNotificationConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNotificationConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -71868,7 +71868,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNotificationConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -71974,14 +71974,14 @@ new containerCluster.ContainerClusterNotificationConfigPubsubFilterOutputReferen
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNotificationConfigPubsubFilterOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNotificationConfigPubsubFilterOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNotificationConfigPubsubFilterOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNotificationConfigPubsubFilterOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -72151,7 +72151,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNotificationConfigPubsubFilterOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -72245,14 +72245,14 @@ new containerCluster.ContainerClusterNotificationConfigPubsubOutputReference(ter
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNotificationConfigPubsubOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNotificationConfigPubsubOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNotificationConfigPubsubOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterNotificationConfigPubsubOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -72425,7 +72425,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterNotificationConfigPubsubOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -72471,10 +72471,10 @@ public resetTopic(): void
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNotificationConfigPubsubOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNotificationConfigPubsubOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNotificationConfigPubsubOutputReference.property.filter">filter</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNotificationConfigPubsubFilterOutputReference">ContainerClusterNotificationConfigPubsubFilterOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNotificationConfigPubsubOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNotificationConfigPubsubOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNotificationConfigPubsubOutputReference.property.filterInput">filterInput</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNotificationConfigPubsubFilter">ContainerClusterNotificationConfigPubsubFilter</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNotificationConfigPubsubOutputReference.property.topicInput">topicInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNotificationConfigPubsubOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNotificationConfigPubsubOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNotificationConfigPubsubOutputReference.property.topic">topic</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNotificationConfigPubsubOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterNotificationConfigPubsub">ContainerClusterNotificationConfigPubsub</a></code> | *No description.* |
 
@@ -72520,7 +72520,7 @@ public readonly filter: ContainerClusterNotificationConfigPubsubFilterOutputRefe
 public readonly enabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -72550,7 +72550,7 @@ public readonly topicInput: string;
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -72587,14 +72587,14 @@ new containerCluster.ContainerClusterPodAutoscalingOutputReference(terraformReso
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterPodAutoscalingOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterPodAutoscalingOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterPodAutoscalingOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterPodAutoscalingOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -72764,7 +72764,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterPodAutoscalingOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -72858,14 +72858,14 @@ new containerCluster.ContainerClusterPrivateClusterConfigMasterGlobalAccessConfi
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterPrivateClusterConfigMasterGlobalAccessConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterPrivateClusterConfigMasterGlobalAccessConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterPrivateClusterConfigMasterGlobalAccessConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterPrivateClusterConfigMasterGlobalAccessConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -73035,7 +73035,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterPrivateClusterConfigMasterGlobalAccessConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -73056,8 +73056,8 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterPrivateClusterConfigMasterGlobalAccessConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterPrivateClusterConfigMasterGlobalAccessConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterPrivateClusterConfigMasterGlobalAccessConfigOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterPrivateClusterConfigMasterGlobalAccessConfigOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterPrivateClusterConfigMasterGlobalAccessConfigOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterPrivateClusterConfigMasterGlobalAccessConfigOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterPrivateClusterConfigMasterGlobalAccessConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterPrivateClusterConfigMasterGlobalAccessConfig">ContainerClusterPrivateClusterConfigMasterGlobalAccessConfig</a></code> | *No description.* |
 
 ---
@@ -73092,7 +73092,7 @@ public readonly fqn: string;
 public readonly enabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -73102,7 +73102,7 @@ public readonly enabledInput: boolean | IResolvable;
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -73129,14 +73129,14 @@ new containerCluster.ContainerClusterPrivateClusterConfigOutputReference(terrafo
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterPrivateClusterConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterPrivateClusterConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterPrivateClusterConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterPrivateClusterConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -73312,7 +73312,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterPrivateClusterConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -73379,13 +73379,13 @@ public resetPrivateEndpointSubnetwork(): void
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterPrivateClusterConfigOutputReference.property.peeringName">peeringName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterPrivateClusterConfigOutputReference.property.privateEndpoint">privateEndpoint</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterPrivateClusterConfigOutputReference.property.publicEndpoint">publicEndpoint</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterPrivateClusterConfigOutputReference.property.enablePrivateEndpointInput">enablePrivateEndpointInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterPrivateClusterConfigOutputReference.property.enablePrivateNodesInput">enablePrivateNodesInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterPrivateClusterConfigOutputReference.property.enablePrivateEndpointInput">enablePrivateEndpointInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterPrivateClusterConfigOutputReference.property.enablePrivateNodesInput">enablePrivateNodesInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterPrivateClusterConfigOutputReference.property.masterGlobalAccessConfigInput">masterGlobalAccessConfigInput</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterPrivateClusterConfigMasterGlobalAccessConfig">ContainerClusterPrivateClusterConfigMasterGlobalAccessConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterPrivateClusterConfigOutputReference.property.masterIpv4CidrBlockInput">masterIpv4CidrBlockInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterPrivateClusterConfigOutputReference.property.privateEndpointSubnetworkInput">privateEndpointSubnetworkInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterPrivateClusterConfigOutputReference.property.enablePrivateEndpoint">enablePrivateEndpoint</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterPrivateClusterConfigOutputReference.property.enablePrivateNodes">enablePrivateNodes</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterPrivateClusterConfigOutputReference.property.enablePrivateEndpoint">enablePrivateEndpoint</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterPrivateClusterConfigOutputReference.property.enablePrivateNodes">enablePrivateNodes</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterPrivateClusterConfigOutputReference.property.masterIpv4CidrBlock">masterIpv4CidrBlock</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterPrivateClusterConfigOutputReference.property.privateEndpointSubnetwork">privateEndpointSubnetwork</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterPrivateClusterConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterPrivateClusterConfig">ContainerClusterPrivateClusterConfig</a></code> | *No description.* |
@@ -73462,7 +73462,7 @@ public readonly publicEndpoint: string;
 public readonly enablePrivateEndpointInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -73472,7 +73472,7 @@ public readonly enablePrivateEndpointInput: boolean | IResolvable;
 public readonly enablePrivateNodesInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -73512,7 +73512,7 @@ public readonly privateEndpointSubnetworkInput: string;
 public readonly enablePrivateEndpoint: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -73522,7 +73522,7 @@ public readonly enablePrivateEndpoint: boolean | IResolvable;
 public readonly enablePrivateNodes: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -73569,14 +73569,14 @@ new containerCluster.ContainerClusterRbacBindingConfigOutputReference(terraformR
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterRbacBindingConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterRbacBindingConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterRbacBindingConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterRbacBindingConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -73748,7 +73748,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterRbacBindingConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -73781,10 +73781,10 @@ public resetEnableInsecureBindingSystemUnauthenticated(): void
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterRbacBindingConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterRbacBindingConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterRbacBindingConfigOutputReference.property.enableInsecureBindingSystemAuthenticatedInput">enableInsecureBindingSystemAuthenticatedInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterRbacBindingConfigOutputReference.property.enableInsecureBindingSystemUnauthenticatedInput">enableInsecureBindingSystemUnauthenticatedInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterRbacBindingConfigOutputReference.property.enableInsecureBindingSystemAuthenticated">enableInsecureBindingSystemAuthenticated</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterRbacBindingConfigOutputReference.property.enableInsecureBindingSystemUnauthenticated">enableInsecureBindingSystemUnauthenticated</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterRbacBindingConfigOutputReference.property.enableInsecureBindingSystemAuthenticatedInput">enableInsecureBindingSystemAuthenticatedInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterRbacBindingConfigOutputReference.property.enableInsecureBindingSystemUnauthenticatedInput">enableInsecureBindingSystemUnauthenticatedInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterRbacBindingConfigOutputReference.property.enableInsecureBindingSystemAuthenticated">enableInsecureBindingSystemAuthenticated</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterRbacBindingConfigOutputReference.property.enableInsecureBindingSystemUnauthenticated">enableInsecureBindingSystemUnauthenticated</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterRbacBindingConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterRbacBindingConfig">ContainerClusterRbacBindingConfig</a></code> | *No description.* |
 
 ---
@@ -73819,7 +73819,7 @@ public readonly fqn: string;
 public readonly enableInsecureBindingSystemAuthenticatedInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -73829,7 +73829,7 @@ public readonly enableInsecureBindingSystemAuthenticatedInput: boolean | IResolv
 public readonly enableInsecureBindingSystemUnauthenticatedInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -73839,7 +73839,7 @@ public readonly enableInsecureBindingSystemUnauthenticatedInput: boolean | IReso
 public readonly enableInsecureBindingSystemAuthenticated: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -73849,7 +73849,7 @@ public readonly enableInsecureBindingSystemAuthenticated: boolean | IResolvable;
 public readonly enableInsecureBindingSystemUnauthenticated: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -73876,14 +73876,14 @@ new containerCluster.ContainerClusterReleaseChannelOutputReference(terraformReso
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterReleaseChannelOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterReleaseChannelOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterReleaseChannelOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterReleaseChannelOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -74053,7 +74053,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterReleaseChannelOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -74147,14 +74147,14 @@ new containerCluster.ContainerClusterResourceUsageExportConfigBigqueryDestinatio
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterResourceUsageExportConfigBigqueryDestinationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterResourceUsageExportConfigBigqueryDestinationOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterResourceUsageExportConfigBigqueryDestinationOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterResourceUsageExportConfigBigqueryDestinationOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -74324,7 +74324,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterResourceUsageExportConfigBigqueryDestinationOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -74418,14 +74418,14 @@ new containerCluster.ContainerClusterResourceUsageExportConfigOutputReference(te
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterResourceUsageExportConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterResourceUsageExportConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterResourceUsageExportConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterResourceUsageExportConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -74598,7 +74598,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterResourceUsageExportConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -74645,10 +74645,10 @@ public resetEnableResourceConsumptionMetering(): void
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterResourceUsageExportConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterResourceUsageExportConfigOutputReference.property.bigqueryDestination">bigqueryDestination</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterResourceUsageExportConfigBigqueryDestinationOutputReference">ContainerClusterResourceUsageExportConfigBigqueryDestinationOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterResourceUsageExportConfigOutputReference.property.bigqueryDestinationInput">bigqueryDestinationInput</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterResourceUsageExportConfigBigqueryDestination">ContainerClusterResourceUsageExportConfigBigqueryDestination</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterResourceUsageExportConfigOutputReference.property.enableNetworkEgressMeteringInput">enableNetworkEgressMeteringInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterResourceUsageExportConfigOutputReference.property.enableResourceConsumptionMeteringInput">enableResourceConsumptionMeteringInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterResourceUsageExportConfigOutputReference.property.enableNetworkEgressMetering">enableNetworkEgressMetering</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterResourceUsageExportConfigOutputReference.property.enableResourceConsumptionMetering">enableResourceConsumptionMetering</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterResourceUsageExportConfigOutputReference.property.enableNetworkEgressMeteringInput">enableNetworkEgressMeteringInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterResourceUsageExportConfigOutputReference.property.enableResourceConsumptionMeteringInput">enableResourceConsumptionMeteringInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterResourceUsageExportConfigOutputReference.property.enableNetworkEgressMetering">enableNetworkEgressMetering</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterResourceUsageExportConfigOutputReference.property.enableResourceConsumptionMetering">enableResourceConsumptionMetering</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterResourceUsageExportConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterResourceUsageExportConfig">ContainerClusterResourceUsageExportConfig</a></code> | *No description.* |
 
 ---
@@ -74703,7 +74703,7 @@ public readonly bigqueryDestinationInput: ContainerClusterResourceUsageExportCon
 public readonly enableNetworkEgressMeteringInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -74713,7 +74713,7 @@ public readonly enableNetworkEgressMeteringInput: boolean | IResolvable;
 public readonly enableResourceConsumptionMeteringInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -74723,7 +74723,7 @@ public readonly enableResourceConsumptionMeteringInput: boolean | IResolvable;
 public readonly enableNetworkEgressMetering: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -74733,7 +74733,7 @@ public readonly enableNetworkEgressMetering: boolean | IResolvable;
 public readonly enableResourceConsumptionMetering: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -74760,14 +74760,14 @@ new containerCluster.ContainerClusterSecretManagerConfigOutputReference(terrafor
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterSecretManagerConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterSecretManagerConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterSecretManagerConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterSecretManagerConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -74937,7 +74937,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterSecretManagerConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -74958,8 +74958,8 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterSecretManagerConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterSecretManagerConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterSecretManagerConfigOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterSecretManagerConfigOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterSecretManagerConfigOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterSecretManagerConfigOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterSecretManagerConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterSecretManagerConfig">ContainerClusterSecretManagerConfig</a></code> | *No description.* |
 
 ---
@@ -74994,7 +74994,7 @@ public readonly fqn: string;
 public readonly enabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -75004,7 +75004,7 @@ public readonly enabledInput: boolean | IResolvable;
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -75031,14 +75031,14 @@ new containerCluster.ContainerClusterSecurityPostureConfigOutputReference(terraf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterSecurityPostureConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterSecurityPostureConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterSecurityPostureConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterSecurityPostureConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -75210,7 +75210,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterSecurityPostureConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -75338,14 +75338,14 @@ new containerCluster.ContainerClusterServiceExternalIpsConfigOutputReference(ter
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterServiceExternalIpsConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterServiceExternalIpsConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterServiceExternalIpsConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterServiceExternalIpsConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -75515,7 +75515,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterServiceExternalIpsConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -75536,8 +75536,8 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterServiceExternalIpsConfigOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterServiceExternalIpsConfigOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterServiceExternalIpsConfigOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterServiceExternalIpsConfigOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterServiceExternalIpsConfigOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterServiceExternalIpsConfigOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterServiceExternalIpsConfigOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterServiceExternalIpsConfig">ContainerClusterServiceExternalIpsConfig</a></code> | *No description.* |
 
 ---
@@ -75572,7 +75572,7 @@ public readonly fqn: string;
 public readonly enabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -75582,7 +75582,7 @@ public readonly enabledInput: boolean | IResolvable;
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -75609,14 +75609,14 @@ new containerCluster.ContainerClusterTimeoutsOutputReference(terraformResource: 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -75790,7 +75790,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -75843,7 +75843,7 @@ public resetUpdate(): void
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterTimeoutsOutputReference.property.delete">delete</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterTimeoutsOutputReference.property.read">read</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterTimeouts">ContainerClusterTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.containerCluster.ContainerClusterTimeouts">ContainerClusterTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -75957,7 +75957,7 @@ public readonly update: string;
 public readonly internalValue: IResolvable | ContainerClusterTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterTimeouts">ContainerClusterTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.containerCluster.ContainerClusterTimeouts">ContainerClusterTimeouts</a>
 
 ---
 
@@ -75974,14 +75974,14 @@ new containerCluster.ContainerClusterUserManagedKeysConfigOutputReference(terraf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterUserManagedKeysConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterUserManagedKeysConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterUserManagedKeysConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterUserManagedKeysConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -76159,7 +76159,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterUserManagedKeysConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -76455,14 +76455,14 @@ new containerCluster.ContainerClusterVerticalPodAutoscalingOutputReference(terra
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterVerticalPodAutoscalingOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterVerticalPodAutoscalingOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterVerticalPodAutoscalingOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterVerticalPodAutoscalingOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -76632,7 +76632,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterVerticalPodAutoscalingOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -76653,8 +76653,8 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterVerticalPodAutoscalingOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterVerticalPodAutoscalingOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterVerticalPodAutoscalingOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterVerticalPodAutoscalingOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterVerticalPodAutoscalingOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterVerticalPodAutoscalingOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterVerticalPodAutoscalingOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterVerticalPodAutoscaling">ContainerClusterVerticalPodAutoscaling</a></code> | *No description.* |
 
 ---
@@ -76689,7 +76689,7 @@ public readonly fqn: string;
 public readonly enabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -76699,7 +76699,7 @@ public readonly enabledInput: boolean | IResolvable;
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -76726,14 +76726,14 @@ new containerCluster.ContainerClusterWorkloadIdentityConfigOutputReference(terra
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterWorkloadIdentityConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterWorkloadIdentityConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.containerCluster.ContainerClusterWorkloadIdentityConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.containerCluster.ContainerClusterWorkloadIdentityConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -76904,7 +76904,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.containerCluster.ContainerClusterWorkloadIdentityConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 

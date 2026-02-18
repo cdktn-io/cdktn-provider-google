@@ -37,16 +37,16 @@ kmsEkmConnection.KmsEkmConnection(
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.Initializer.parameter.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.Initializer.parameter.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.Initializer.parameter.location">location</a></code> | <code>str</code> | The location for the EkmConnection. A full list of valid locations can be found by running 'gcloud kms locations list'. |
 | <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.Initializer.parameter.name">name</a></code> | <code>str</code> | The resource name for the EkmConnection. |
-| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.Initializer.parameter.serviceResolvers">service_resolvers</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolvers">KmsEkmConnectionServiceResolvers</a>]</code> | service_resolvers block. |
+| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.Initializer.parameter.serviceResolvers">service_resolvers</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolvers">KmsEkmConnectionServiceResolvers</a>]</code> | service_resolvers block. |
 | <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.Initializer.parameter.cryptoSpacePath">crypto_space_path</a></code> | <code>str</code> | Optional. |
 | <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.Initializer.parameter.etag">etag</a></code> | <code>str</code> | Optional. Etag of the currently stored EkmConnection. |
 | <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/kms_ekm_connection#id KmsEkmConnection#id}. |
@@ -76,43 +76,43 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.Initializer.parameter.connection"></a>
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
 ##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.Initializer.parameter.dependsOn"></a>
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
 ##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.Initializer.parameter.forEach"></a>
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.Initializer.parameter.lifecycle"></a>
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.Initializer.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `service_resolvers`<sup>Required</sup> <a name="service_resolvers" id="@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.Initializer.parameter.serviceResolvers"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolvers">KmsEkmConnectionServiceResolvers</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolvers">KmsEkmConnectionServiceResolvers</a>]
 
 service_resolvers block.
 
@@ -489,7 +489,7 @@ def import_from(
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -582,7 +582,7 @@ def put_service_resolvers(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.putServiceResolvers.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolvers">KmsEkmConnectionServiceResolvers</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolvers">KmsEkmConnectionServiceResolvers</a>]
 
 ---
 
@@ -663,7 +663,7 @@ def reset_timeouts() -> None
 | <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.isTerraformElement">is_terraform_element</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a KmsEkmConnection resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTN code for importing a KmsEkmConnection resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -746,7 +746,7 @@ kmsEkmConnection.KmsEkmConnection.generate_config_for_import(
 )
 ```
 
-Generates CDKTF code for importing a KmsEkmConnection resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a KmsEkmConnection resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.generateConfigForImport.parameter.scope"></a>
 
@@ -776,7 +776,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the KmsEkmConnection to import is found.
 
@@ -787,19 +787,19 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.property.cdktfStack">cdktf_stack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.property.createTime">create_time</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.property.serviceResolvers">service_resolvers</a></code> | <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversList">KmsEkmConnectionServiceResolversList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionTimeoutsOutputReference">KmsEkmConnectionTimeoutsOutputReference</a></code> | *No description.* |
@@ -810,8 +810,8 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.property.locationInput">location_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.property.serviceResolversInput">service_resolvers_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolvers">KmsEkmConnectionServiceResolvers</a>]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionTimeouts">KmsEkmConnectionTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.property.serviceResolversInput">service_resolvers_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolvers">KmsEkmConnectionServiceResolvers</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionTimeouts">KmsEkmConnectionTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.property.cryptoSpacePath">crypto_space_path</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.property.etag">etag</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection.property.id">id</a></code> | <code>str</code> | *No description.* |
@@ -840,7 +840,7 @@ The tree node.
 cdktf_stack: TerraformStack
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -890,7 +890,7 @@ terraform_resource_type: str
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -900,7 +900,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -910,7 +910,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
@@ -930,7 +930,7 @@ depends_on: typing.List[str]
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -940,7 +940,7 @@ for_each: ITerraformIterator
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -950,7 +950,7 @@ lifecycle: TerraformResourceLifecycle
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -960,7 +960,7 @@ provider: TerraformProvider
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -1070,7 +1070,7 @@ project_input: str
 service_resolvers_input: IResolvable | typing.List[KmsEkmConnectionServiceResolvers]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolvers">KmsEkmConnectionServiceResolvers</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolvers">KmsEkmConnectionServiceResolvers</a>]
 
 ---
 
@@ -1080,7 +1080,7 @@ service_resolvers_input: IResolvable | typing.List[KmsEkmConnectionServiceResolv
 timeouts_input: IResolvable | KmsEkmConnectionTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionTimeouts">KmsEkmConnectionTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionTimeouts">KmsEkmConnectionTimeouts</a>
 
 ---
 
@@ -1205,16 +1205,16 @@ kmsEkmConnection.KmsEkmConnectionConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionConfig.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionConfig.property.location">location</a></code> | <code>str</code> | The location for the EkmConnection. A full list of valid locations can be found by running 'gcloud kms locations list'. |
 | <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionConfig.property.name">name</a></code> | <code>str</code> | The resource name for the EkmConnection. |
-| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionConfig.property.serviceResolvers">service_resolvers</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolvers">KmsEkmConnectionServiceResolvers</a>]</code> | service_resolvers block. |
+| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionConfig.property.serviceResolvers">service_resolvers</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolvers">KmsEkmConnectionServiceResolvers</a>]</code> | service_resolvers block. |
 | <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionConfig.property.cryptoSpacePath">crypto_space_path</a></code> | <code>str</code> | Optional. |
 | <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionConfig.property.etag">etag</a></code> | <code>str</code> | Optional. Etag of the currently stored EkmConnection. |
 | <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/kms_ekm_connection#id KmsEkmConnection#id}. |
@@ -1230,7 +1230,7 @@ kmsEkmConnection.KmsEkmConnectionConfig(
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1240,7 +1240,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
@@ -1250,7 +1250,7 @@ count: typing.Union[int, float] | TerraformCount
 depends_on: typing.List[ITerraformDependable]
 ```
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
@@ -1260,7 +1260,7 @@ depends_on: typing.List[ITerraformDependable]
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1270,7 +1270,7 @@ for_each: ITerraformIterator
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1280,7 +1280,7 @@ lifecycle: TerraformResourceLifecycle
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1290,7 +1290,7 @@ provider: TerraformProvider
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -1328,7 +1328,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 service_resolvers: IResolvable | typing.List[KmsEkmConnectionServiceResolvers]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolvers">KmsEkmConnectionServiceResolvers</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolvers">KmsEkmConnectionServiceResolvers</a>]
 
 service_resolvers block.
 
@@ -1443,7 +1443,7 @@ kmsEkmConnection.KmsEkmConnectionServiceResolvers(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolvers.property.hostname">hostname</a></code> | <code>str</code> | Required. The hostname of the EKM replica used at TLS and HTTP layers. |
-| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolvers.property.serverCertificates">server_certificates</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversServerCertificates">KmsEkmConnectionServiceResolversServerCertificates</a>]</code> | server_certificates block. |
+| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolvers.property.serverCertificates">server_certificates</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversServerCertificates">KmsEkmConnectionServiceResolversServerCertificates</a>]</code> | server_certificates block. |
 | <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolvers.property.serviceDirectoryService">service_directory_service</a></code> | <code>str</code> | Required. |
 | <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolvers.property.endpointFilter">endpoint_filter</a></code> | <code>str</code> | Optional. |
 
@@ -1469,7 +1469,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 server_certificates: IResolvable | typing.List[KmsEkmConnectionServiceResolversServerCertificates]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversServerCertificates">KmsEkmConnectionServiceResolversServerCertificates</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversServerCertificates">KmsEkmConnectionServiceResolversServerCertificates</a>]
 
 server_certificates block.
 
@@ -1639,7 +1639,7 @@ kmsEkmConnection.KmsEkmConnectionServiceResolversList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -1647,7 +1647,7 @@ kmsEkmConnection.KmsEkmConnectionServiceResolversList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -1717,7 +1717,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -1754,7 +1754,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolvers">KmsEkmConnectionServiceResolvers</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolvers">KmsEkmConnectionServiceResolvers</a>]</code> | *No description.* |
 
 ---
 
@@ -1788,7 +1788,7 @@ fqn: str
 internal_value: IResolvable | typing.List[KmsEkmConnectionServiceResolvers]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolvers">KmsEkmConnectionServiceResolvers</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolvers">KmsEkmConnectionServiceResolvers</a>]
 
 ---
 
@@ -1810,7 +1810,7 @@ kmsEkmConnection.KmsEkmConnectionServiceResolversOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -1819,7 +1819,7 @@ kmsEkmConnection.KmsEkmConnectionServiceResolversOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2029,7 +2029,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2053,7 +2053,7 @@ def put_server_certificates(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversOutputReference.putServerCertificates.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversServerCertificates">KmsEkmConnectionServiceResolversServerCertificates</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversServerCertificates">KmsEkmConnectionServiceResolversServerCertificates</a>]
 
 ---
 
@@ -2073,12 +2073,12 @@ def reset_endpoint_filter() -> None
 | <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversOutputReference.property.serverCertificates">server_certificates</a></code> | <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversServerCertificatesList">KmsEkmConnectionServiceResolversServerCertificatesList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversOutputReference.property.endpointFilterInput">endpoint_filter_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversOutputReference.property.hostnameInput">hostname_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversOutputReference.property.serverCertificatesInput">server_certificates_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversServerCertificates">KmsEkmConnectionServiceResolversServerCertificates</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversOutputReference.property.serverCertificatesInput">server_certificates_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversServerCertificates">KmsEkmConnectionServiceResolversServerCertificates</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversOutputReference.property.serviceDirectoryServiceInput">service_directory_service_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversOutputReference.property.endpointFilter">endpoint_filter</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversOutputReference.property.hostname">hostname</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversOutputReference.property.serviceDirectoryService">service_directory_service</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolvers">KmsEkmConnectionServiceResolvers</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolvers">KmsEkmConnectionServiceResolvers</a></code> | *No description.* |
 
 ---
 
@@ -2142,7 +2142,7 @@ hostname_input: str
 server_certificates_input: IResolvable | typing.List[KmsEkmConnectionServiceResolversServerCertificates]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversServerCertificates">KmsEkmConnectionServiceResolversServerCertificates</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversServerCertificates">KmsEkmConnectionServiceResolversServerCertificates</a>]
 
 ---
 
@@ -2192,7 +2192,7 @@ service_directory_service: str
 internal_value: IResolvable | KmsEkmConnectionServiceResolvers
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolvers">KmsEkmConnectionServiceResolvers</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolvers">KmsEkmConnectionServiceResolvers</a>
 
 ---
 
@@ -2213,7 +2213,7 @@ kmsEkmConnection.KmsEkmConnectionServiceResolversServerCertificatesList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversServerCertificatesList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversServerCertificatesList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversServerCertificatesList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversServerCertificatesList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -2221,7 +2221,7 @@ kmsEkmConnection.KmsEkmConnectionServiceResolversServerCertificatesList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversServerCertificatesList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2291,7 +2291,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversServerCertificatesList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2328,7 +2328,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversServerCertificatesList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversServerCertificatesList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversServerCertificatesList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversServerCertificates">KmsEkmConnectionServiceResolversServerCertificates</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversServerCertificatesList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversServerCertificates">KmsEkmConnectionServiceResolversServerCertificates</a>]</code> | *No description.* |
 
 ---
 
@@ -2362,7 +2362,7 @@ fqn: str
 internal_value: IResolvable | typing.List[KmsEkmConnectionServiceResolversServerCertificates]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversServerCertificates">KmsEkmConnectionServiceResolversServerCertificates</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversServerCertificates">KmsEkmConnectionServiceResolversServerCertificates</a>]
 
 ---
 
@@ -2384,7 +2384,7 @@ kmsEkmConnection.KmsEkmConnectionServiceResolversServerCertificatesOutputReferen
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversServerCertificatesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversServerCertificatesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversServerCertificatesOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversServerCertificatesOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversServerCertificatesOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -2393,7 +2393,7 @@ kmsEkmConnection.KmsEkmConnectionServiceResolversServerCertificatesOutputReferen
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversServerCertificatesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2602,7 +2602,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversServerCertificatesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2632,7 +2632,7 @@ def reset_subject_alternative_dns_names() -> None
 | <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversServerCertificatesOutputReference.property.issuer">issuer</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversServerCertificatesOutputReference.property.notAfterTime">not_after_time</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversServerCertificatesOutputReference.property.notBeforeTime">not_before_time</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversServerCertificatesOutputReference.property.parsed">parsed</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversServerCertificatesOutputReference.property.parsed">parsed</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversServerCertificatesOutputReference.property.serialNumber">serial_number</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversServerCertificatesOutputReference.property.sha256Fingerprint">sha256_fingerprint</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversServerCertificatesOutputReference.property.subject">subject</a></code> | <code>str</code> | *No description.* |
@@ -2640,7 +2640,7 @@ def reset_subject_alternative_dns_names() -> None
 | <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversServerCertificatesOutputReference.property.subjectAlternativeDnsNamesInput">subject_alternative_dns_names_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversServerCertificatesOutputReference.property.rawDer">raw_der</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversServerCertificatesOutputReference.property.subjectAlternativeDnsNames">subject_alternative_dns_names</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversServerCertificatesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversServerCertificates">KmsEkmConnectionServiceResolversServerCertificates</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversServerCertificatesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversServerCertificates">KmsEkmConnectionServiceResolversServerCertificates</a></code> | *No description.* |
 
 ---
 
@@ -2704,7 +2704,7 @@ not_before_time: str
 parsed: IResolvable
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -2784,7 +2784,7 @@ subject_alternative_dns_names: typing.List[str]
 internal_value: IResolvable | KmsEkmConnectionServiceResolversServerCertificates
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversServerCertificates">KmsEkmConnectionServiceResolversServerCertificates</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversServerCertificates">KmsEkmConnectionServiceResolversServerCertificates</a>
 
 ---
 
@@ -2804,14 +2804,14 @@ kmsEkmConnection.KmsEkmConnectionTimeoutsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3006,7 +3006,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3051,7 +3051,7 @@ def reset_update() -> None
 | <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionTimeouts">KmsEkmConnectionTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionTimeouts">KmsEkmConnectionTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -3145,7 +3145,7 @@ update: str
 internal_value: IResolvable | KmsEkmConnectionTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionTimeouts">KmsEkmConnectionTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionTimeouts">KmsEkmConnectionTimeouts</a>
 
 ---
 

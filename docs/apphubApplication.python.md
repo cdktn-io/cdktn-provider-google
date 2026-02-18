@@ -37,13 +37,13 @@ apphubApplication.ApphubApplication(
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplication.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplication.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplication.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplication.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplication.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplication.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplication.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplication.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplication.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplication.Initializer.parameter.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplication.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplication.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplication.Initializer.parameter.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplication.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplication.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplication.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplication.Initializer.parameter.applicationId">application_id</a></code> | <code>str</code> | Required. The Application identifier. |
 | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplication.Initializer.parameter.location">location</a></code> | <code>str</code> | Part of 'parent'. See documentation of 'projectsId'. |
 | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplication.Initializer.parameter.scope">scope</a></code> | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationScope">ApphubApplicationScope</a></code> | scope block. |
@@ -76,43 +76,43 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.apphubApplication.ApphubApplication.Initializer.parameter.connection"></a>
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.apphubApplication.ApphubApplication.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
 ##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.apphubApplication.ApphubApplication.Initializer.parameter.dependsOn"></a>
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
 ##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.apphubApplication.ApphubApplication.Initializer.parameter.forEach"></a>
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.apphubApplication.ApphubApplication.Initializer.parameter.lifecycle"></a>
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.apphubApplication.ApphubApplication.Initializer.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.apphubApplication.ApphubApplication.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -486,7 +486,7 @@ def import_from(
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.apphubApplication.ApphubApplication.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -583,7 +583,7 @@ def put_attributes(
 
 ###### `business_owners`<sup>Optional</sup> <a name="business_owners" id="@cdktn/provider-google.apphubApplication.ApphubApplication.putAttributes.parameter.businessOwners"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesBusinessOwners">ApphubApplicationAttributesBusinessOwners</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesBusinessOwners">ApphubApplicationAttributesBusinessOwners</a>]
 
 business_owners block.
 
@@ -603,7 +603,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `developer_owners`<sup>Optional</sup> <a name="developer_owners" id="@cdktn/provider-google.apphubApplication.ApphubApplication.putAttributes.parameter.developerOwners"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesDeveloperOwners">ApphubApplicationAttributesDeveloperOwners</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesDeveloperOwners">ApphubApplicationAttributesDeveloperOwners</a>]
 
 developer_owners block.
 
@@ -623,7 +623,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ###### `operator_owners`<sup>Optional</sup> <a name="operator_owners" id="@cdktn/provider-google.apphubApplication.ApphubApplication.putAttributes.parameter.operatorOwners"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesOperatorOwners">ApphubApplicationAttributesOperatorOwners</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesOperatorOwners">ApphubApplicationAttributesOperatorOwners</a>]
 
 operator_owners block.
 
@@ -726,7 +726,7 @@ def reset_timeouts() -> None
 | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplication.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplication.isTerraformElement">is_terraform_element</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplication.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplication.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a ApphubApplication resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplication.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTN code for importing a ApphubApplication resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -809,7 +809,7 @@ apphubApplication.ApphubApplication.generate_config_for_import(
 )
 ```
 
-Generates CDKTF code for importing a ApphubApplication resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a ApphubApplication resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.apphubApplication.ApphubApplication.generateConfigForImport.parameter.scope"></a>
 
@@ -839,7 +839,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.apphubApplication.ApphubApplication.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the ApphubApplication to import is found.
 
@@ -850,19 +850,19 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplication.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplication.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplication.property.cdktfStack">cdktf_stack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplication.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplication.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplication.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplication.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplication.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplication.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplication.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplication.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplication.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplication.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplication.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplication.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplication.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplication.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplication.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplication.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplication.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplication.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplication.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplication.property.attributes">attributes</a></code> | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesOutputReference">ApphubApplicationAttributesOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplication.property.createTime">create_time</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplication.property.name">name</a></code> | <code>str</code> | *No description.* |
@@ -879,7 +879,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplication.property.locationInput">location_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplication.property.projectInput">project_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplication.property.scopeInput">scope_input</a></code> | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationScope">ApphubApplicationScope</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplication.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationTimeouts">ApphubApplicationTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplication.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationTimeouts">ApphubApplicationTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplication.property.applicationId">application_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplication.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplication.property.displayName">display_name</a></code> | <code>str</code> | *No description.* |
@@ -907,7 +907,7 @@ The tree node.
 cdktf_stack: TerraformStack
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -957,7 +957,7 @@ terraform_resource_type: str
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -967,7 +967,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -977,7 +977,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
@@ -997,7 +997,7 @@ depends_on: typing.List[str]
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1007,7 +1007,7 @@ for_each: ITerraformIterator
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1017,7 +1017,7 @@ lifecycle: TerraformResourceLifecycle
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1027,7 +1027,7 @@ provider: TerraformProvider
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -1197,7 +1197,7 @@ scope_input: ApphubApplicationScope
 timeouts_input: IResolvable | ApphubApplicationTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationTimeouts">ApphubApplicationTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationTimeouts">ApphubApplicationTimeouts</a>
 
 ---
 
@@ -1301,11 +1301,11 @@ apphubApplication.ApphubApplicationAttributes(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributes.property.businessOwners">business_owners</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesBusinessOwners">ApphubApplicationAttributesBusinessOwners</a>]</code> | business_owners block. |
+| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributes.property.businessOwners">business_owners</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesBusinessOwners">ApphubApplicationAttributesBusinessOwners</a>]</code> | business_owners block. |
 | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributes.property.criticality">criticality</a></code> | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesCriticality">ApphubApplicationAttributesCriticality</a></code> | criticality block. |
-| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributes.property.developerOwners">developer_owners</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesDeveloperOwners">ApphubApplicationAttributesDeveloperOwners</a>]</code> | developer_owners block. |
+| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributes.property.developerOwners">developer_owners</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesDeveloperOwners">ApphubApplicationAttributesDeveloperOwners</a>]</code> | developer_owners block. |
 | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributes.property.environment">environment</a></code> | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesEnvironment">ApphubApplicationAttributesEnvironment</a></code> | environment block. |
-| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributes.property.operatorOwners">operator_owners</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesOperatorOwners">ApphubApplicationAttributesOperatorOwners</a>]</code> | operator_owners block. |
+| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributes.property.operatorOwners">operator_owners</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesOperatorOwners">ApphubApplicationAttributesOperatorOwners</a>]</code> | operator_owners block. |
 
 ---
 
@@ -1315,7 +1315,7 @@ apphubApplication.ApphubApplicationAttributes(
 business_owners: IResolvable | typing.List[ApphubApplicationAttributesBusinessOwners]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesBusinessOwners">ApphubApplicationAttributesBusinessOwners</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesBusinessOwners">ApphubApplicationAttributesBusinessOwners</a>]
 
 business_owners block.
 
@@ -1343,7 +1343,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 developer_owners: IResolvable | typing.List[ApphubApplicationAttributesDeveloperOwners]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesDeveloperOwners">ApphubApplicationAttributesDeveloperOwners</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesDeveloperOwners">ApphubApplicationAttributesDeveloperOwners</a>]
 
 developer_owners block.
 
@@ -1371,7 +1371,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 operator_owners: IResolvable | typing.List[ApphubApplicationAttributesOperatorOwners]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesOperatorOwners">ApphubApplicationAttributesOperatorOwners</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesOperatorOwners">ApphubApplicationAttributesOperatorOwners</a>]
 
 operator_owners block.
 
@@ -1628,13 +1628,13 @@ apphubApplication.ApphubApplicationConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationConfig.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationConfig.property.applicationId">application_id</a></code> | <code>str</code> | Required. The Application identifier. |
 | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationConfig.property.location">location</a></code> | <code>str</code> | Part of 'parent'. See documentation of 'projectsId'. |
 | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationConfig.property.scope">scope</a></code> | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationScope">ApphubApplicationScope</a></code> | scope block. |
@@ -1653,7 +1653,7 @@ apphubApplication.ApphubApplicationConfig(
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1663,7 +1663,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
@@ -1673,7 +1673,7 @@ count: typing.Union[int, float] | TerraformCount
 depends_on: typing.List[ITerraformDependable]
 ```
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
@@ -1683,7 +1683,7 @@ depends_on: typing.List[ITerraformDependable]
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1693,7 +1693,7 @@ for_each: ITerraformIterator
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1703,7 +1703,7 @@ lifecycle: TerraformResourceLifecycle
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1713,7 +1713,7 @@ provider: TerraformProvider
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -1954,7 +1954,7 @@ apphubApplication.ApphubApplicationAttributesBusinessOwnersList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesBusinessOwnersList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesBusinessOwnersList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesBusinessOwnersList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesBusinessOwnersList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -1962,7 +1962,7 @@ apphubApplication.ApphubApplicationAttributesBusinessOwnersList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesBusinessOwnersList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2032,7 +2032,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesBusinessOwnersList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2069,7 +2069,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesBusinessOwnersList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesBusinessOwnersList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesBusinessOwnersList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesBusinessOwners">ApphubApplicationAttributesBusinessOwners</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesBusinessOwnersList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesBusinessOwners">ApphubApplicationAttributesBusinessOwners</a>]</code> | *No description.* |
 
 ---
 
@@ -2103,7 +2103,7 @@ fqn: str
 internal_value: IResolvable | typing.List[ApphubApplicationAttributesBusinessOwners]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesBusinessOwners">ApphubApplicationAttributesBusinessOwners</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesBusinessOwners">ApphubApplicationAttributesBusinessOwners</a>]
 
 ---
 
@@ -2125,7 +2125,7 @@ apphubApplication.ApphubApplicationAttributesBusinessOwnersOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesBusinessOwnersOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesBusinessOwnersOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesBusinessOwnersOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesBusinessOwnersOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesBusinessOwnersOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -2134,7 +2134,7 @@ apphubApplication.ApphubApplicationAttributesBusinessOwnersOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesBusinessOwnersOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2343,7 +2343,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesBusinessOwnersOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2374,7 +2374,7 @@ def reset_display_name() -> None
 | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesBusinessOwnersOutputReference.property.emailInput">email_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesBusinessOwnersOutputReference.property.displayName">display_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesBusinessOwnersOutputReference.property.email">email</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesBusinessOwnersOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesBusinessOwners">ApphubApplicationAttributesBusinessOwners</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesBusinessOwnersOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesBusinessOwners">ApphubApplicationAttributesBusinessOwners</a></code> | *No description.* |
 
 ---
 
@@ -2448,7 +2448,7 @@ email: str
 internal_value: IResolvable | ApphubApplicationAttributesBusinessOwners
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesBusinessOwners">ApphubApplicationAttributesBusinessOwners</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesBusinessOwners">ApphubApplicationAttributesBusinessOwners</a>
 
 ---
 
@@ -2468,14 +2468,14 @@ apphubApplication.ApphubApplicationAttributesCriticalityOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesCriticalityOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesCriticalityOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesCriticalityOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesCriticalityOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2667,7 +2667,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesCriticalityOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2765,7 +2765,7 @@ apphubApplication.ApphubApplicationAttributesDeveloperOwnersList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesDeveloperOwnersList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesDeveloperOwnersList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesDeveloperOwnersList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesDeveloperOwnersList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -2773,7 +2773,7 @@ apphubApplication.ApphubApplicationAttributesDeveloperOwnersList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesDeveloperOwnersList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -2843,7 +2843,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesDeveloperOwnersList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -2880,7 +2880,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesDeveloperOwnersList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesDeveloperOwnersList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesDeveloperOwnersList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesDeveloperOwners">ApphubApplicationAttributesDeveloperOwners</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesDeveloperOwnersList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesDeveloperOwners">ApphubApplicationAttributesDeveloperOwners</a>]</code> | *No description.* |
 
 ---
 
@@ -2914,7 +2914,7 @@ fqn: str
 internal_value: IResolvable | typing.List[ApphubApplicationAttributesDeveloperOwners]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesDeveloperOwners">ApphubApplicationAttributesDeveloperOwners</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesDeveloperOwners">ApphubApplicationAttributesDeveloperOwners</a>]
 
 ---
 
@@ -2936,7 +2936,7 @@ apphubApplication.ApphubApplicationAttributesDeveloperOwnersOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesDeveloperOwnersOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesDeveloperOwnersOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesDeveloperOwnersOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesDeveloperOwnersOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesDeveloperOwnersOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -2945,7 +2945,7 @@ apphubApplication.ApphubApplicationAttributesDeveloperOwnersOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesDeveloperOwnersOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3154,7 +3154,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesDeveloperOwnersOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3185,7 +3185,7 @@ def reset_display_name() -> None
 | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesDeveloperOwnersOutputReference.property.emailInput">email_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesDeveloperOwnersOutputReference.property.displayName">display_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesDeveloperOwnersOutputReference.property.email">email</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesDeveloperOwnersOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesDeveloperOwners">ApphubApplicationAttributesDeveloperOwners</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesDeveloperOwnersOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesDeveloperOwners">ApphubApplicationAttributesDeveloperOwners</a></code> | *No description.* |
 
 ---
 
@@ -3259,7 +3259,7 @@ email: str
 internal_value: IResolvable | ApphubApplicationAttributesDeveloperOwners
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesDeveloperOwners">ApphubApplicationAttributesDeveloperOwners</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesDeveloperOwners">ApphubApplicationAttributesDeveloperOwners</a>
 
 ---
 
@@ -3279,14 +3279,14 @@ apphubApplication.ApphubApplicationAttributesEnvironmentOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesEnvironmentOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesEnvironmentOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesEnvironmentOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesEnvironmentOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3478,7 +3478,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesEnvironmentOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3576,7 +3576,7 @@ apphubApplication.ApphubApplicationAttributesOperatorOwnersList(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesOperatorOwnersList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesOperatorOwnersList.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesOperatorOwnersList.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesOperatorOwnersList.Initializer.parameter.wrapsSet">wraps_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -3584,7 +3584,7 @@ apphubApplication.ApphubApplicationAttributesOperatorOwnersList(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesOperatorOwnersList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3654,7 +3654,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesOperatorOwnersList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3691,7 +3691,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesOperatorOwnersList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesOperatorOwnersList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesOperatorOwnersList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesOperatorOwners">ApphubApplicationAttributesOperatorOwners</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesOperatorOwnersList.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesOperatorOwners">ApphubApplicationAttributesOperatorOwners</a>]</code> | *No description.* |
 
 ---
 
@@ -3725,7 +3725,7 @@ fqn: str
 internal_value: IResolvable | typing.List[ApphubApplicationAttributesOperatorOwners]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesOperatorOwners">ApphubApplicationAttributesOperatorOwners</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesOperatorOwners">ApphubApplicationAttributesOperatorOwners</a>]
 
 ---
 
@@ -3747,7 +3747,7 @@ apphubApplication.ApphubApplicationAttributesOperatorOwnersOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesOperatorOwnersOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesOperatorOwnersOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesOperatorOwnersOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesOperatorOwnersOutputReference.Initializer.parameter.complexObjectIndex">complex_object_index</a></code> | <code>typing.Union[int, float]</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesOperatorOwnersOutputReference.Initializer.parameter.complexObjectIsFromSet">complex_object_is_from_set</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -3756,7 +3756,7 @@ apphubApplication.ApphubApplicationAttributesOperatorOwnersOutputReference(
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesOperatorOwnersOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3965,7 +3965,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesOperatorOwnersOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3996,7 +3996,7 @@ def reset_display_name() -> None
 | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesOperatorOwnersOutputReference.property.emailInput">email_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesOperatorOwnersOutputReference.property.displayName">display_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesOperatorOwnersOutputReference.property.email">email</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesOperatorOwnersOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesOperatorOwners">ApphubApplicationAttributesOperatorOwners</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesOperatorOwnersOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesOperatorOwners">ApphubApplicationAttributesOperatorOwners</a></code> | *No description.* |
 
 ---
 
@@ -4070,7 +4070,7 @@ email: str
 internal_value: IResolvable | ApphubApplicationAttributesOperatorOwners
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesOperatorOwners">ApphubApplicationAttributesOperatorOwners</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesOperatorOwners">ApphubApplicationAttributesOperatorOwners</a>
 
 ---
 
@@ -4090,14 +4090,14 @@ apphubApplication.ApphubApplicationAttributesOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4299,7 +4299,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4323,7 +4323,7 @@ def put_business_owners(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesOutputReference.putBusinessOwners.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesBusinessOwners">ApphubApplicationAttributesBusinessOwners</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesBusinessOwners">ApphubApplicationAttributesBusinessOwners</a>]
 
 ---
 
@@ -4355,7 +4355,7 @@ def put_developer_owners(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesOutputReference.putDeveloperOwners.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesDeveloperOwners">ApphubApplicationAttributesDeveloperOwners</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesDeveloperOwners">ApphubApplicationAttributesDeveloperOwners</a>]
 
 ---
 
@@ -4387,7 +4387,7 @@ def put_operator_owners(
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesOutputReference.putOperatorOwners.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesOperatorOwners">ApphubApplicationAttributesOperatorOwners</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesOperatorOwners">ApphubApplicationAttributesOperatorOwners</a>]
 
 ---
 
@@ -4433,11 +4433,11 @@ def reset_operator_owners() -> None
 | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesOutputReference.property.developerOwners">developer_owners</a></code> | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesDeveloperOwnersList">ApphubApplicationAttributesDeveloperOwnersList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesOutputReference.property.environment">environment</a></code> | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesEnvironmentOutputReference">ApphubApplicationAttributesEnvironmentOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesOutputReference.property.operatorOwners">operator_owners</a></code> | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesOperatorOwnersList">ApphubApplicationAttributesOperatorOwnersList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesOutputReference.property.businessOwnersInput">business_owners_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesBusinessOwners">ApphubApplicationAttributesBusinessOwners</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesOutputReference.property.businessOwnersInput">business_owners_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesBusinessOwners">ApphubApplicationAttributesBusinessOwners</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesOutputReference.property.criticalityInput">criticality_input</a></code> | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesCriticality">ApphubApplicationAttributesCriticality</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesOutputReference.property.developerOwnersInput">developer_owners_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesDeveloperOwners">ApphubApplicationAttributesDeveloperOwners</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesOutputReference.property.developerOwnersInput">developer_owners_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesDeveloperOwners">ApphubApplicationAttributesDeveloperOwners</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesOutputReference.property.environmentInput">environment_input</a></code> | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesEnvironment">ApphubApplicationAttributesEnvironment</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesOutputReference.property.operatorOwnersInput">operator_owners_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesOperatorOwners">ApphubApplicationAttributesOperatorOwners</a>]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesOutputReference.property.operatorOwnersInput">operator_owners_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesOperatorOwners">ApphubApplicationAttributesOperatorOwners</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributes">ApphubApplicationAttributes</a></code> | *No description.* |
 
 ---
@@ -4522,7 +4522,7 @@ operator_owners: ApphubApplicationAttributesOperatorOwnersList
 business_owners_input: IResolvable | typing.List[ApphubApplicationAttributesBusinessOwners]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesBusinessOwners">ApphubApplicationAttributesBusinessOwners</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesBusinessOwners">ApphubApplicationAttributesBusinessOwners</a>]
 
 ---
 
@@ -4542,7 +4542,7 @@ criticality_input: ApphubApplicationAttributesCriticality
 developer_owners_input: IResolvable | typing.List[ApphubApplicationAttributesDeveloperOwners]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesDeveloperOwners">ApphubApplicationAttributesDeveloperOwners</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesDeveloperOwners">ApphubApplicationAttributesDeveloperOwners</a>]
 
 ---
 
@@ -4562,7 +4562,7 @@ environment_input: ApphubApplicationAttributesEnvironment
 operator_owners_input: IResolvable | typing.List[ApphubApplicationAttributesOperatorOwners]
 ```
 
-- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesOperatorOwners">ApphubApplicationAttributesOperatorOwners</a>]
+- *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationAttributesOperatorOwners">ApphubApplicationAttributesOperatorOwners</a>]
 
 ---
 
@@ -4592,14 +4592,14 @@ apphubApplication.ApphubApplicationScopeOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationScopeOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationScopeOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationScopeOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.apphubApplication.ApphubApplicationScopeOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4791,7 +4791,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.apphubApplication.ApphubApplicationScopeOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4888,14 +4888,14 @@ apphubApplication.ApphubApplicationTimeoutsOutputReference(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.apphubApplication.ApphubApplicationTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5090,7 +5090,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.apphubApplication.ApphubApplicationTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5135,7 +5135,7 @@ def reset_update() -> None
 | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationTimeouts">ApphubApplicationTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationTimeouts">ApphubApplicationTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -5229,7 +5229,7 @@ update: str
 internal_value: IResolvable | ApphubApplicationTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationTimeouts">ApphubApplicationTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.apphubApplication.ApphubApplicationTimeouts">ApphubApplicationTimeouts</a>
 
 ---
 

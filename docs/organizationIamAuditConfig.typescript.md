@@ -292,7 +292,7 @@ public importFrom(id: string, provider?: TerraformProvider): void
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfig.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -374,7 +374,7 @@ public putAuditLogConfig(value: IResolvable | OrganizationIamAuditConfigAuditLog
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfig.putAuditLogConfig.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfigAuditLogConfig">OrganizationIamAuditConfigAuditLogConfig</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfigAuditLogConfig">OrganizationIamAuditConfigAuditLogConfig</a>[]
 
 ---
 
@@ -391,7 +391,7 @@ public resetId(): void
 | <code><a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfig.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfig.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfig.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfig.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a OrganizationIamAuditConfig resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfig.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTN code for importing a OrganizationIamAuditConfig resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -463,7 +463,7 @@ import { organizationIamAuditConfig } from '@cdktn/provider-google'
 organizationIamAuditConfig.OrganizationIamAuditConfig.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
-Generates CDKTF code for importing a OrganizationIamAuditConfig resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a OrganizationIamAuditConfig resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfig.generateConfigForImport.parameter.scope"></a>
 
@@ -493,7 +493,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfig.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the OrganizationIamAuditConfig to import is found.
 
@@ -504,22 +504,22 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfig.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfig.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfig.property.cdktfStack">cdktfStack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfig.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfig.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfig.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfig.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfig.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfig.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfig.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfig.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfig.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfig.property.auditLogConfig">auditLogConfig</a></code> | <code><a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfigAuditLogConfigList">OrganizationIamAuditConfigAuditLogConfigList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfig.property.etag">etag</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfig.property.auditLogConfigInput">auditLogConfigInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfigAuditLogConfig">OrganizationIamAuditConfigAuditLogConfig</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfig.property.auditLogConfigInput">auditLogConfigInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfigAuditLogConfig">OrganizationIamAuditConfigAuditLogConfig</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfig.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfig.property.orgIdInput">orgIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfig.property.serviceInput">serviceInput</a></code> | <code>string</code> | *No description.* |
@@ -547,7 +547,7 @@ The tree node.
 public readonly cdktfStack: TerraformStack;
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -597,7 +597,7 @@ public readonly terraformResourceType: string;
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -607,7 +607,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -617,7 +617,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -637,7 +637,7 @@ public readonly dependsOn: string[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -647,7 +647,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -657,7 +657,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -667,7 +667,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -697,7 +697,7 @@ public readonly etag: string;
 public readonly auditLogConfigInput: IResolvable | OrganizationIamAuditConfigAuditLogConfig[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfigAuditLogConfig">OrganizationIamAuditConfigAuditLogConfig</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfigAuditLogConfig">OrganizationIamAuditConfigAuditLogConfig</a>[]
 
 ---
 
@@ -844,14 +844,14 @@ const organizationIamAuditConfigConfig: organizationIamAuditConfig.OrganizationI
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfigConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfigConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfigConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfigConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfigConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfigConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfigConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfigConfig.property.auditLogConfig">auditLogConfig</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfigAuditLogConfig">OrganizationIamAuditConfigAuditLogConfig</a>[]</code> | audit_log_config block. |
+| <code><a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfigConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfigConfig.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfigConfig.property.dependsOn">dependsOn</a></code> | <code>cdktn.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfigConfig.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfigConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfigConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfigConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfigConfig.property.auditLogConfig">auditLogConfig</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfigAuditLogConfig">OrganizationIamAuditConfigAuditLogConfig</a>[]</code> | audit_log_config block. |
 | <code><a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfigConfig.property.orgId">orgId</a></code> | <code>string</code> | The numeric ID of the organization in which you want to manage the audit logging config. |
 | <code><a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfigConfig.property.service">service</a></code> | <code>string</code> | Service which will be enabled for audit logging. The special value allServices covers all services. |
 | <code><a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfigConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/organization_iam_audit_config#id OrganizationIamAuditConfig#id}. |
@@ -864,7 +864,7 @@ const organizationIamAuditConfigConfig: organizationIamAuditConfig.OrganizationI
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -874,7 +874,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -884,7 +884,7 @@ public readonly count: number | TerraformCount;
 public readonly dependsOn: ITerraformDependable[];
 ```
 
-- *Type:* cdktf.ITerraformDependable[]
+- *Type:* cdktn.ITerraformDependable[]
 
 ---
 
@@ -894,7 +894,7 @@ public readonly dependsOn: ITerraformDependable[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -904,7 +904,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -914,7 +914,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -924,7 +924,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -934,7 +934,7 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 public readonly auditLogConfig: IResolvable | OrganizationIamAuditConfigAuditLogConfig[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfigAuditLogConfig">OrganizationIamAuditConfigAuditLogConfig</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfigAuditLogConfig">OrganizationIamAuditConfigAuditLogConfig</a>[]
 
 audit_log_config block.
 
@@ -999,7 +999,7 @@ new organizationIamAuditConfig.OrganizationIamAuditConfigAuditLogConfigList(terr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfigAuditLogConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfigAuditLogConfigList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfigAuditLogConfigList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfigAuditLogConfigList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -1007,7 +1007,7 @@ new organizationIamAuditConfig.OrganizationIamAuditConfigAuditLogConfigList(terr
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfigAuditLogConfigList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -1073,7 +1073,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfigAuditLogConfigList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -1108,7 +1108,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfigAuditLogConfigList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfigAuditLogConfigList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfigAuditLogConfigList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfigAuditLogConfig">OrganizationIamAuditConfigAuditLogConfig</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfigAuditLogConfigList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfigAuditLogConfig">OrganizationIamAuditConfigAuditLogConfig</a>[]</code> | *No description.* |
 
 ---
 
@@ -1142,7 +1142,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | OrganizationIamAuditConfigAuditLogConfig[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfigAuditLogConfig">OrganizationIamAuditConfigAuditLogConfig</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfigAuditLogConfig">OrganizationIamAuditConfigAuditLogConfig</a>[]
 
 ---
 
@@ -1159,7 +1159,7 @@ new organizationIamAuditConfig.OrganizationIamAuditConfigAuditLogConfigOutputRef
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfigAuditLogConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfigAuditLogConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfigAuditLogConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfigAuditLogConfigOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfigAuditLogConfigOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -1168,7 +1168,7 @@ new organizationIamAuditConfig.OrganizationIamAuditConfigAuditLogConfigOutputRef
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfigAuditLogConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -1355,7 +1355,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfigAuditLogConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -1386,7 +1386,7 @@ public resetExemptedMembers(): void
 | <code><a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfigAuditLogConfigOutputReference.property.logTypeInput">logTypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfigAuditLogConfigOutputReference.property.exemptedMembers">exemptedMembers</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfigAuditLogConfigOutputReference.property.logType">logType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfigAuditLogConfigOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfigAuditLogConfig">OrganizationIamAuditConfigAuditLogConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfigAuditLogConfigOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfigAuditLogConfig">OrganizationIamAuditConfigAuditLogConfig</a></code> | *No description.* |
 
 ---
 
@@ -1460,7 +1460,7 @@ public readonly logType: string;
 public readonly internalValue: IResolvable | OrganizationIamAuditConfigAuditLogConfig;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfigAuditLogConfig">OrganizationIamAuditConfigAuditLogConfig</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.organizationIamAuditConfig.OrganizationIamAuditConfigAuditLogConfig">OrganizationIamAuditConfigAuditLogConfig</a>
 
 ---
 

@@ -327,7 +327,7 @@ public importFrom(id: string, provider?: TerraformProvider): void
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.storageBucket.StorageBucket.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -421,7 +421,7 @@ public putCors(value: IResolvable | StorageBucketCors[]): void
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.storageBucket.StorageBucket.putCors.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.storageBucket.StorageBucketCors">StorageBucketCors</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.storageBucket.StorageBucketCors">StorageBucketCors</a>[]
 
 ---
 
@@ -481,7 +481,7 @@ public putLifecycleRule(value: IResolvable | StorageBucketLifecycleRule[]): void
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.storageBucket.StorageBucket.putLifecycleRule.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRule">StorageBucketLifecycleRule</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRule">StorageBucketLifecycleRule</a>[]
 
 ---
 
@@ -708,7 +708,7 @@ public resetWebsite(): void
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a StorageBucket resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTN code for importing a StorageBucket resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -780,7 +780,7 @@ import { storageBucket } from '@cdktn/provider-google'
 storageBucket.StorageBucket.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
-Generates CDKTF code for importing a StorageBucket resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a StorageBucket resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.storageBucket.StorageBucket.generateConfigForImport.parameter.scope"></a>
 
@@ -810,7 +810,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.storageBucket.StorageBucket.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the StorageBucket to import is found.
 
@@ -821,23 +821,23 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.cdktfStack">cdktfStack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.autoclass">autoclass</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketAutoclassOutputReference">StorageBucketAutoclassOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.cors">cors</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCorsList">StorageBucketCorsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.customPlacementConfig">customPlacementConfig</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference">StorageBucketCustomPlacementConfigOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.effectiveLabels">effectiveLabels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.effectiveLabels">effectiveLabels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.encryption">encryption</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference">StorageBucketEncryptionOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.hierarchicalNamespace">hierarchicalNamespace</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference">StorageBucketHierarchicalNamespaceOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.ipFilter">ipFilter</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference">StorageBucketIpFilterOutputReference</a></code> | *No description.* |
@@ -847,7 +847,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.retentionPolicy">retentionPolicy</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference">StorageBucketRetentionPolicyOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.selfLink">selfLink</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.softDeletePolicy">softDeletePolicy</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference">StorageBucketSoftDeletePolicyOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.terraformLabels">terraformLabels</a></code> | <code>cdktf.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.terraformLabels">terraformLabels</a></code> | <code>cdktn.StringMap</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.timeCreated">timeCreated</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference">StorageBucketTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.updated">updated</a></code> | <code>string</code> | *No description.* |
@@ -855,44 +855,44 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.versioning">versioning</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketVersioningOutputReference">StorageBucketVersioningOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.website">website</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketWebsiteOutputReference">StorageBucketWebsiteOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.autoclassInput">autoclassInput</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketAutoclass">StorageBucketAutoclass</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.corsInput">corsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.storageBucket.StorageBucketCors">StorageBucketCors</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.corsInput">corsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.storageBucket.StorageBucketCors">StorageBucketCors</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.customPlacementConfigInput">customPlacementConfigInput</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCustomPlacementConfig">StorageBucketCustomPlacementConfig</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.defaultEventBasedHoldInput">defaultEventBasedHoldInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.enableObjectRetentionInput">enableObjectRetentionInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.defaultEventBasedHoldInput">defaultEventBasedHoldInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.enableObjectRetentionInput">enableObjectRetentionInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.encryptionInput">encryptionInput</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryption">StorageBucketEncryption</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.forceDestroyInput">forceDestroyInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.forceDestroyInput">forceDestroyInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.hierarchicalNamespaceInput">hierarchicalNamespaceInput</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespace">StorageBucketHierarchicalNamespace</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.ipFilterInput">ipFilterInput</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilter">StorageBucketIpFilter</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.labelsInput">labelsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.lifecycleRuleInput">lifecycleRuleInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRule">StorageBucketLifecycleRule</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.lifecycleRuleInput">lifecycleRuleInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRule">StorageBucketLifecycleRule</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.locationInput">locationInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.loggingInput">loggingInput</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLogging">StorageBucketLogging</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.projectInput">projectInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.publicAccessPreventionInput">publicAccessPreventionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.requesterPaysInput">requesterPaysInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.requesterPaysInput">requesterPaysInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.retentionPolicyInput">retentionPolicyInput</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicy">StorageBucketRetentionPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.rpoInput">rpoInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.softDeletePolicyInput">softDeletePolicyInput</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicy">StorageBucketSoftDeletePolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.storageClassInput">storageClassInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.storageBucket.StorageBucketTimeouts">StorageBucketTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.uniformBucketLevelAccessInput">uniformBucketLevelAccessInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.storageBucket.StorageBucketTimeouts">StorageBucketTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.uniformBucketLevelAccessInput">uniformBucketLevelAccessInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.versioningInput">versioningInput</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketVersioning">StorageBucketVersioning</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.websiteInput">websiteInput</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketWebsite">StorageBucketWebsite</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.defaultEventBasedHold">defaultEventBasedHold</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.enableObjectRetention">enableObjectRetention</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.forceDestroy">forceDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.defaultEventBasedHold">defaultEventBasedHold</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.enableObjectRetention">enableObjectRetention</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.forceDestroy">forceDestroy</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.location">location</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.project">project</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.publicAccessPrevention">publicAccessPrevention</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.requesterPays">requesterPays</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.requesterPays">requesterPays</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.rpo">rpo</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.storageClass">storageClass</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.uniformBucketLevelAccess">uniformBucketLevelAccess</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucket.property.uniformBucketLevelAccess">uniformBucketLevelAccess</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 
 ---
 
@@ -914,7 +914,7 @@ The tree node.
 public readonly cdktfStack: TerraformStack;
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -964,7 +964,7 @@ public readonly terraformResourceType: string;
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -974,7 +974,7 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -984,7 +984,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -1004,7 +1004,7 @@ public readonly dependsOn: string[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1014,7 +1014,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1024,7 +1024,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1034,7 +1034,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -1074,7 +1074,7 @@ public readonly customPlacementConfig: StorageBucketCustomPlacementConfigOutputR
 public readonly effectiveLabels: StringMap;
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -1174,7 +1174,7 @@ public readonly softDeletePolicy: StorageBucketSoftDeletePolicyOutputReference;
 public readonly terraformLabels: StringMap;
 ```
 
-- *Type:* cdktf.StringMap
+- *Type:* cdktn.StringMap
 
 ---
 
@@ -1254,7 +1254,7 @@ public readonly autoclassInput: StorageBucketAutoclass;
 public readonly corsInput: IResolvable | StorageBucketCors[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.storageBucket.StorageBucketCors">StorageBucketCors</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.storageBucket.StorageBucketCors">StorageBucketCors</a>[]
 
 ---
 
@@ -1274,7 +1274,7 @@ public readonly customPlacementConfigInput: StorageBucketCustomPlacementConfig;
 public readonly defaultEventBasedHoldInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1284,7 +1284,7 @@ public readonly defaultEventBasedHoldInput: boolean | IResolvable;
 public readonly enableObjectRetentionInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1304,7 +1304,7 @@ public readonly encryptionInput: StorageBucketEncryption;
 public readonly forceDestroyInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1354,7 +1354,7 @@ public readonly labelsInput: {[ key: string ]: string};
 public readonly lifecycleRuleInput: IResolvable | StorageBucketLifecycleRule[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRule">StorageBucketLifecycleRule</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRule">StorageBucketLifecycleRule</a>[]
 
 ---
 
@@ -1414,7 +1414,7 @@ public readonly publicAccessPreventionInput: string;
 public readonly requesterPaysInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1464,7 +1464,7 @@ public readonly storageClassInput: string;
 public readonly timeoutsInput: IResolvable | StorageBucketTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.storageBucket.StorageBucketTimeouts">StorageBucketTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.storageBucket.StorageBucketTimeouts">StorageBucketTimeouts</a>
 
 ---
 
@@ -1474,7 +1474,7 @@ public readonly timeoutsInput: IResolvable | StorageBucketTimeouts;
 public readonly uniformBucketLevelAccessInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1504,7 +1504,7 @@ public readonly websiteInput: StorageBucketWebsite;
 public readonly defaultEventBasedHold: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1514,7 +1514,7 @@ public readonly defaultEventBasedHold: boolean | IResolvable;
 public readonly enableObjectRetention: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1524,7 +1524,7 @@ public readonly enableObjectRetention: boolean | IResolvable;
 public readonly forceDestroy: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1594,7 +1594,7 @@ public readonly publicAccessPrevention: string;
 public readonly requesterPays: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1624,7 +1624,7 @@ public readonly storageClass: string;
 public readonly uniformBucketLevelAccess: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -1662,7 +1662,7 @@ const storageBucketAutoclass: storageBucket.StorageBucketAutoclass = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketAutoclass.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | While set to true, autoclass automatically transitions objects in your bucket to appropriate storage classes based on each object's access pattern. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketAutoclass.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | While set to true, autoclass automatically transitions objects in your bucket to appropriate storage classes based on each object's access pattern. |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketAutoclass.property.terminalStorageClass">terminalStorageClass</a></code> | <code>string</code> | The storage class that objects in the bucket eventually transition to if they are not read for a certain length of time. |
 
 ---
@@ -1673,7 +1673,7 @@ const storageBucketAutoclass: storageBucket.StorageBucketAutoclass = { ... }
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 While set to true, autoclass automatically transitions objects in your bucket to appropriate storage classes based on each object's access pattern.
 
@@ -1711,37 +1711,37 @@ const storageBucketConfig: storageBucket.StorageBucketConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.dependsOn">dependsOn</a></code> | <code>cdktn.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.location">location</a></code> | <code>string</code> | The Google Cloud Storage location or region. |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.name">name</a></code> | <code>string</code> | The name of the bucket. |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.autoclass">autoclass</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketAutoclass">StorageBucketAutoclass</a></code> | autoclass block. |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.cors">cors</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.storageBucket.StorageBucketCors">StorageBucketCors</a>[]</code> | cors block. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.cors">cors</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.storageBucket.StorageBucketCors">StorageBucketCors</a>[]</code> | cors block. |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.customPlacementConfig">customPlacementConfig</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCustomPlacementConfig">StorageBucketCustomPlacementConfig</a></code> | custom_placement_config block. |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.defaultEventBasedHold">defaultEventBasedHold</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether or not to automatically apply an eventBasedHold to new objects added to the bucket. |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.enableObjectRetention">enableObjectRetention</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enables each object in the bucket to have its own retention policy, which prevents deletion until stored for a specific length of time. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.defaultEventBasedHold">defaultEventBasedHold</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether or not to automatically apply an eventBasedHold to new objects added to the bucket. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.enableObjectRetention">enableObjectRetention</a></code> | <code>boolean \| cdktn.IResolvable</code> | Enables each object in the bucket to have its own retention policy, which prevents deletion until stored for a specific length of time. |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.encryption">encryption</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryption">StorageBucketEncryption</a></code> | encryption block. |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.forceDestroy">forceDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | When deleting a bucket, this boolean option will delete all contained objects, or anywhereCaches (if any). |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.forceDestroy">forceDestroy</a></code> | <code>boolean \| cdktn.IResolvable</code> | When deleting a bucket, this boolean option will delete all contained objects, or anywhereCaches (if any). |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.hierarchicalNamespace">hierarchicalNamespace</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespace">StorageBucketHierarchicalNamespace</a></code> | hierarchical_namespace block. |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/storage_bucket#id StorageBucket#id}. |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.ipFilter">ipFilter</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilter">StorageBucketIpFilter</a></code> | ip_filter block. |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.labels">labels</a></code> | <code>{[ key: string ]: string}</code> | A set of key/value label pairs to assign to the bucket. |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.lifecycleRule">lifecycleRule</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRule">StorageBucketLifecycleRule</a>[]</code> | lifecycle_rule block. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.lifecycleRule">lifecycleRule</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRule">StorageBucketLifecycleRule</a>[]</code> | lifecycle_rule block. |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.logging">logging</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLogging">StorageBucketLogging</a></code> | logging block. |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.project">project</a></code> | <code>string</code> | The ID of the project in which the resource belongs. |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.publicAccessPrevention">publicAccessPrevention</a></code> | <code>string</code> | Prevents public access to a bucket. |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.requesterPays">requesterPays</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enables Requester Pays on a storage bucket. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.requesterPays">requesterPays</a></code> | <code>boolean \| cdktn.IResolvable</code> | Enables Requester Pays on a storage bucket. |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.retentionPolicy">retentionPolicy</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicy">StorageBucketRetentionPolicy</a></code> | retention_policy block. |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.rpo">rpo</a></code> | <code>string</code> | Specifies the RPO setting of bucket. |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.softDeletePolicy">softDeletePolicy</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicy">StorageBucketSoftDeletePolicy</a></code> | soft_delete_policy block. |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.storageClass">storageClass</a></code> | <code>string</code> | The Storage Class of the new bucket. Supported values include: STANDARD, MULTI_REGIONAL, REGIONAL, NEARLINE, COLDLINE, ARCHIVE. |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketTimeouts">StorageBucketTimeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.uniformBucketLevelAccess">uniformBucketLevelAccess</a></code> | <code>boolean \| cdktf.IResolvable</code> | Enables uniform bucket-level access on a bucket. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.uniformBucketLevelAccess">uniformBucketLevelAccess</a></code> | <code>boolean \| cdktn.IResolvable</code> | Enables uniform bucket-level access on a bucket. |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.versioning">versioning</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketVersioning">StorageBucketVersioning</a></code> | versioning block. |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketConfig.property.website">website</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketWebsite">StorageBucketWebsite</a></code> | website block. |
 
@@ -1753,7 +1753,7 @@ const storageBucketConfig: storageBucket.StorageBucketConfig = { ... }
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1763,7 +1763,7 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
@@ -1773,7 +1773,7 @@ public readonly count: number | TerraformCount;
 public readonly dependsOn: ITerraformDependable[];
 ```
 
-- *Type:* cdktf.ITerraformDependable[]
+- *Type:* cdktn.ITerraformDependable[]
 
 ---
 
@@ -1783,7 +1783,7 @@ public readonly dependsOn: ITerraformDependable[];
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1793,7 +1793,7 @@ public readonly forEach: ITerraformIterator;
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1803,7 +1803,7 @@ public readonly lifecycle: TerraformResourceLifecycle;
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1813,7 +1813,7 @@ public readonly provider: TerraformProvider;
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
@@ -1865,7 +1865,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly cors: IResolvable | StorageBucketCors[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.storageBucket.StorageBucketCors">StorageBucketCors</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.storageBucket.StorageBucketCors">StorageBucketCors</a>[]
 
 cors block.
 
@@ -1893,7 +1893,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly defaultEventBasedHold: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether or not to automatically apply an eventBasedHold to new objects added to the bucket.
 
@@ -1907,7 +1907,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly enableObjectRetention: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Enables each object in the bucket to have its own retention policy, which prevents deletion until stored for a specific length of time.
 
@@ -1935,7 +1935,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly forceDestroy: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 When deleting a bucket, this boolean option will delete all contained objects, or anywhereCaches (if any).
 
@@ -2008,7 +2008,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly lifecycleRule: IResolvable | StorageBucketLifecycleRule[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRule">StorageBucketLifecycleRule</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRule">StorageBucketLifecycleRule</a>[]
 
 lifecycle_rule block.
 
@@ -2066,7 +2066,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly requesterPays: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Enables Requester Pays on a storage bucket.
 
@@ -2152,7 +2152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly uniformBucketLevelAccess: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Enables uniform bucket-level access on a bucket.
 
@@ -2349,7 +2349,7 @@ const storageBucketHierarchicalNamespace: storageBucket.StorageBucketHierarchica
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespace.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | Set this field true to organize bucket with logical file system structure. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespace.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Set this field true to organize bucket with logical file system structure. |
 
 ---
 
@@ -2359,7 +2359,7 @@ const storageBucketHierarchicalNamespace: storageBucket.StorageBucketHierarchica
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Set this field true to organize bucket with logical file system structure.
 
@@ -2382,10 +2382,10 @@ const storageBucketIpFilter: storageBucket.StorageBucketIpFilter = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilter.property.mode">mode</a></code> | <code>string</code> | The mode of the IP filter. Valid values are 'Enabled' and 'Disabled'. |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilter.property.allowAllServiceAgentAccess">allowAllServiceAgentAccess</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether to allow all service agents to access the bucket regardless of the IP filter configuration. |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilter.property.allowCrossOrgVpcs">allowCrossOrgVpcs</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether to allow cross-org VPCs in the bucket's IP filter configuration. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilter.property.allowAllServiceAgentAccess">allowAllServiceAgentAccess</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether to allow all service agents to access the bucket regardless of the IP filter configuration. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilter.property.allowCrossOrgVpcs">allowCrossOrgVpcs</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether to allow cross-org VPCs in the bucket's IP filter configuration. |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilter.property.publicNetworkSource">publicNetworkSource</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSource">StorageBucketIpFilterPublicNetworkSource</a></code> | public_network_source block. |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilter.property.vpcNetworkSources">vpcNetworkSources</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSources">StorageBucketIpFilterVpcNetworkSources</a>[]</code> | vpc_network_sources block. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilter.property.vpcNetworkSources">vpcNetworkSources</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSources">StorageBucketIpFilterVpcNetworkSources</a>[]</code> | vpc_network_sources block. |
 
 ---
 
@@ -2409,7 +2409,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly allowAllServiceAgentAccess: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether to allow all service agents to access the bucket regardless of the IP filter configuration.
 
@@ -2423,7 +2423,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly allowCrossOrgVpcs: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether to allow cross-org VPCs in the bucket's IP filter configuration.
 
@@ -2451,7 +2451,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly vpcNetworkSources: IResolvable | StorageBucketIpFilterVpcNetworkSources[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSources">StorageBucketIpFilterVpcNetworkSources</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSources">StorageBucketIpFilterVpcNetworkSources</a>[]
 
 vpc_network_sources block.
 
@@ -2656,10 +2656,10 @@ const storageBucketLifecycleRuleCondition: storageBucket.StorageBucketLifecycleR
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleCondition.property.matchesSuffix">matchesSuffix</a></code> | <code>string[]</code> | One or more matching name suffixes to satisfy this condition. |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleCondition.property.noncurrentTimeBefore">noncurrentTimeBefore</a></code> | <code>string</code> | Creation date of an object in RFC 3339 (e.g. 2017-06-13) to satisfy this condition. |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleCondition.property.numNewerVersions">numNewerVersions</a></code> | <code>number</code> | Relevant only for versioned objects. The number of newer versions of an object to satisfy this condition. |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleCondition.property.sendAgeIfZero">sendAgeIfZero</a></code> | <code>boolean \| cdktf.IResolvable</code> | While set true, age value will be sent in the request even for zero value of the field. |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleCondition.property.sendDaysSinceCustomTimeIfZero">sendDaysSinceCustomTimeIfZero</a></code> | <code>boolean \| cdktf.IResolvable</code> | While set true, days_since_custom_time value will be sent in the request even for zero value of the field. |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleCondition.property.sendDaysSinceNoncurrentTimeIfZero">sendDaysSinceNoncurrentTimeIfZero</a></code> | <code>boolean \| cdktf.IResolvable</code> | While set true, days_since_noncurrent_time value will be sent in the request even for zero value of the field. |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleCondition.property.sendNumNewerVersionsIfZero">sendNumNewerVersionsIfZero</a></code> | <code>boolean \| cdktf.IResolvable</code> | While set true, num_newer_versions value will be sent in the request even for zero value of the field. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleCondition.property.sendAgeIfZero">sendAgeIfZero</a></code> | <code>boolean \| cdktn.IResolvable</code> | While set true, age value will be sent in the request even for zero value of the field. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleCondition.property.sendDaysSinceCustomTimeIfZero">sendDaysSinceCustomTimeIfZero</a></code> | <code>boolean \| cdktn.IResolvable</code> | While set true, days_since_custom_time value will be sent in the request even for zero value of the field. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleCondition.property.sendDaysSinceNoncurrentTimeIfZero">sendDaysSinceNoncurrentTimeIfZero</a></code> | <code>boolean \| cdktn.IResolvable</code> | While set true, days_since_noncurrent_time value will be sent in the request even for zero value of the field. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleCondition.property.sendNumNewerVersionsIfZero">sendNumNewerVersionsIfZero</a></code> | <code>boolean \| cdktn.IResolvable</code> | While set true, num_newer_versions value will be sent in the request even for zero value of the field. |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleCondition.property.withState">withState</a></code> | <code>string</code> | Match to live and/or archived objects. Unversioned buckets have only live objects. Supported values include: "LIVE", "ARCHIVED", "ANY". |
 
 ---
@@ -2810,7 +2810,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly sendAgeIfZero: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 While set true, age value will be sent in the request even for zero value of the field.
 
@@ -2826,7 +2826,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly sendDaysSinceCustomTimeIfZero: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 While set true, days_since_custom_time value will be sent in the request even for zero value of the field.
 
@@ -2842,7 +2842,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly sendDaysSinceNoncurrentTimeIfZero: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 While set true, days_since_noncurrent_time value will be sent in the request even for zero value of the field.
 
@@ -2858,7 +2858,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly sendNumNewerVersionsIfZero: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 While set true, num_newer_versions value will be sent in the request even for zero value of the field.
 
@@ -2946,7 +2946,7 @@ const storageBucketRetentionPolicy: storageBucket.StorageBucketRetentionPolicy =
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicy.property.retentionPeriod">retentionPeriod</a></code> | <code>number</code> | The period of time, in seconds, that objects in the bucket must be retained and cannot be deleted, overwritten, or archived. |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicy.property.isLocked">isLocked</a></code> | <code>boolean \| cdktf.IResolvable</code> | If set to true, the bucket will be locked and permanently restrict edits to the bucket's retention policy. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicy.property.isLocked">isLocked</a></code> | <code>boolean \| cdktn.IResolvable</code> | If set to true, the bucket will be locked and permanently restrict edits to the bucket's retention policy. |
 
 ---
 
@@ -2972,7 +2972,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public readonly isLocked: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 If set to true, the bucket will be locked and permanently restrict edits to the bucket's retention policy.
 
@@ -3086,7 +3086,7 @@ const storageBucketVersioning: storageBucket.StorageBucketVersioning = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketVersioning.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | While set to true, versioning is fully enabled for this bucket. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketVersioning.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | While set to true, versioning is fully enabled for this bucket. |
 
 ---
 
@@ -3096,7 +3096,7 @@ const storageBucketVersioning: storageBucket.StorageBucketVersioning = { ... }
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 While set to true, versioning is fully enabled for this bucket.
 
@@ -3165,14 +3165,14 @@ new storageBucket.StorageBucketAutoclassOutputReference(terraformResource: IInte
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketAutoclassOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketAutoclassOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketAutoclassOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.storageBucket.StorageBucketAutoclassOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3343,7 +3343,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.storageBucket.StorageBucketAutoclassOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3370,9 +3370,9 @@ public resetTerminalStorageClass(): void
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketAutoclassOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketAutoclassOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketAutoclassOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketAutoclassOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketAutoclassOutputReference.property.terminalStorageClassInput">terminalStorageClassInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketAutoclassOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketAutoclassOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketAutoclassOutputReference.property.terminalStorageClass">terminalStorageClass</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketAutoclassOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketAutoclass">StorageBucketAutoclass</a></code> | *No description.* |
 
@@ -3408,7 +3408,7 @@ public readonly fqn: string;
 public readonly enabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -3428,7 +3428,7 @@ public readonly terminalStorageClassInput: string;
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -3465,7 +3465,7 @@ new storageBucket.StorageBucketCorsList(terraformResource: IInterpolatingParent,
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCorsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCorsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCorsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCorsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -3473,7 +3473,7 @@ new storageBucket.StorageBucketCorsList(terraformResource: IInterpolatingParent,
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.storageBucket.StorageBucketCorsList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3539,7 +3539,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.storageBucket.StorageBucketCorsList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3574,7 +3574,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCorsList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCorsList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCorsList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.storageBucket.StorageBucketCors">StorageBucketCors</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCorsList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.storageBucket.StorageBucketCors">StorageBucketCors</a>[]</code> | *No description.* |
 
 ---
 
@@ -3608,7 +3608,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | StorageBucketCors[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.storageBucket.StorageBucketCors">StorageBucketCors</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.storageBucket.StorageBucketCors">StorageBucketCors</a>[]
 
 ---
 
@@ -3625,7 +3625,7 @@ new storageBucket.StorageBucketCorsOutputReference(terraformResource: IInterpola
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -3634,7 +3634,7 @@ new storageBucket.StorageBucketCorsOutputReference(terraformResource: IInterpola
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -3824,7 +3824,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -3877,7 +3877,7 @@ public resetResponseHeader(): void
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.property.method">method</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.property.origin">origin</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.property.responseHeader">responseHeader</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.storageBucket.StorageBucketCors">StorageBucketCors</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCorsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.storageBucket.StorageBucketCors">StorageBucketCors</a></code> | *No description.* |
 
 ---
 
@@ -3991,7 +3991,7 @@ public readonly responseHeader: string[];
 public readonly internalValue: IResolvable | StorageBucketCors;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.storageBucket.StorageBucketCors">StorageBucketCors</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.storageBucket.StorageBucketCors">StorageBucketCors</a>
 
 ---
 
@@ -4008,14 +4008,14 @@ new storageBucket.StorageBucketCustomPlacementConfigOutputReference(terraformRes
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4185,7 +4185,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.storageBucket.StorageBucketCustomPlacementConfigOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4279,14 +4279,14 @@ new storageBucket.StorageBucketEncryptionOutputReference(terraformResource: IInt
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4456,7 +4456,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.storageBucket.StorageBucketEncryptionOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4550,14 +4550,14 @@ new storageBucket.StorageBucketHierarchicalNamespaceOutputReference(terraformRes
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -4727,7 +4727,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -4748,8 +4748,8 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespaceOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketHierarchicalNamespace">StorageBucketHierarchicalNamespace</a></code> | *No description.* |
 
 ---
@@ -4784,7 +4784,7 @@ public readonly fqn: string;
 public readonly enabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -4794,7 +4794,7 @@ public readonly enabledInput: boolean | IResolvable;
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -4821,14 +4821,14 @@ new storageBucket.StorageBucketIpFilterOutputReference(terraformResource: IInter
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5004,7 +5004,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5038,7 +5038,7 @@ public putVpcNetworkSources(value: IResolvable | StorageBucketIpFilterVpcNetwork
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.putVpcNetworkSources.parameter.value"></a>
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSources">StorageBucketIpFilterVpcNetworkSources</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSources">StorageBucketIpFilterVpcNetworkSources</a>[]
 
 ---
 
@@ -5075,13 +5075,13 @@ public resetVpcNetworkSources(): void
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.property.publicNetworkSource">publicNetworkSource</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference">StorageBucketIpFilterPublicNetworkSourceOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.property.vpcNetworkSources">vpcNetworkSources</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesList">StorageBucketIpFilterVpcNetworkSourcesList</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.property.allowAllServiceAgentAccessInput">allowAllServiceAgentAccessInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.property.allowCrossOrgVpcsInput">allowCrossOrgVpcsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.property.allowAllServiceAgentAccessInput">allowAllServiceAgentAccessInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.property.allowCrossOrgVpcsInput">allowCrossOrgVpcsInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.property.modeInput">modeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.property.publicNetworkSourceInput">publicNetworkSourceInput</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSource">StorageBucketIpFilterPublicNetworkSource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.property.vpcNetworkSourcesInput">vpcNetworkSourcesInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSources">StorageBucketIpFilterVpcNetworkSources</a>[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.property.allowAllServiceAgentAccess">allowAllServiceAgentAccess</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.property.allowCrossOrgVpcs">allowCrossOrgVpcs</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.property.vpcNetworkSourcesInput">vpcNetworkSourcesInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSources">StorageBucketIpFilterVpcNetworkSources</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.property.allowAllServiceAgentAccess">allowAllServiceAgentAccess</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.property.allowCrossOrgVpcs">allowCrossOrgVpcs</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.property.mode">mode</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilter">StorageBucketIpFilter</a></code> | *No description.* |
 
@@ -5137,7 +5137,7 @@ public readonly vpcNetworkSources: StorageBucketIpFilterVpcNetworkSourcesList;
 public readonly allowAllServiceAgentAccessInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -5147,7 +5147,7 @@ public readonly allowAllServiceAgentAccessInput: boolean | IResolvable;
 public readonly allowCrossOrgVpcsInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -5177,7 +5177,7 @@ public readonly publicNetworkSourceInput: StorageBucketIpFilterPublicNetworkSour
 public readonly vpcNetworkSourcesInput: IResolvable | StorageBucketIpFilterVpcNetworkSources[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSources">StorageBucketIpFilterVpcNetworkSources</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSources">StorageBucketIpFilterVpcNetworkSources</a>[]
 
 ---
 
@@ -5187,7 +5187,7 @@ public readonly vpcNetworkSourcesInput: IResolvable | StorageBucketIpFilterVpcNe
 public readonly allowAllServiceAgentAccess: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -5197,7 +5197,7 @@ public readonly allowAllServiceAgentAccess: boolean | IResolvable;
 public readonly allowCrossOrgVpcs: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -5234,14 +5234,14 @@ new storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference(terraf
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5411,7 +5411,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterPublicNetworkSourceOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5505,7 +5505,7 @@ new storageBucket.StorageBucketIpFilterVpcNetworkSourcesList(terraformResource: 
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -5513,7 +5513,7 @@ new storageBucket.StorageBucketIpFilterVpcNetworkSourcesList(terraformResource: 
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5579,7 +5579,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5614,7 +5614,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSources">StorageBucketIpFilterVpcNetworkSources</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSources">StorageBucketIpFilterVpcNetworkSources</a>[]</code> | *No description.* |
 
 ---
 
@@ -5648,7 +5648,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | StorageBucketIpFilterVpcNetworkSources[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSources">StorageBucketIpFilterVpcNetworkSources</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSources">StorageBucketIpFilterVpcNetworkSources</a>[]
 
 ---
 
@@ -5665,7 +5665,7 @@ new storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference(terrafor
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -5674,7 +5674,7 @@ new storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference(terrafor
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -5860,7 +5860,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -5885,7 +5885,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.property.networkInput">networkInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.property.allowedIpCidrRanges">allowedIpCidrRanges</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.property.network">network</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSources">StorageBucketIpFilterVpcNetworkSources</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSourcesOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSources">StorageBucketIpFilterVpcNetworkSources</a></code> | *No description.* |
 
 ---
 
@@ -5959,7 +5959,7 @@ public readonly network: string;
 public readonly internalValue: IResolvable | StorageBucketIpFilterVpcNetworkSources;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSources">StorageBucketIpFilterVpcNetworkSources</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.storageBucket.StorageBucketIpFilterVpcNetworkSources">StorageBucketIpFilterVpcNetworkSources</a>
 
 ---
 
@@ -5976,14 +5976,14 @@ new storageBucket.StorageBucketLifecycleRuleActionOutputReference(terraformResou
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6154,7 +6154,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleActionOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6276,14 +6276,14 @@ new storageBucket.StorageBucketLifecycleRuleConditionOutputReference(terraformRe
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -6468,7 +6468,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -6589,10 +6589,10 @@ public resetWithState(): void
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.matchesSuffixInput">matchesSuffixInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.noncurrentTimeBeforeInput">noncurrentTimeBeforeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.numNewerVersionsInput">numNewerVersionsInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.sendAgeIfZeroInput">sendAgeIfZeroInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.sendDaysSinceCustomTimeIfZeroInput">sendDaysSinceCustomTimeIfZeroInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.sendDaysSinceNoncurrentTimeIfZeroInput">sendDaysSinceNoncurrentTimeIfZeroInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.sendNumNewerVersionsIfZeroInput">sendNumNewerVersionsIfZeroInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.sendAgeIfZeroInput">sendAgeIfZeroInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.sendDaysSinceCustomTimeIfZeroInput">sendDaysSinceCustomTimeIfZeroInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.sendDaysSinceNoncurrentTimeIfZeroInput">sendDaysSinceNoncurrentTimeIfZeroInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.sendNumNewerVersionsIfZeroInput">sendNumNewerVersionsIfZeroInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.withStateInput">withStateInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.age">age</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.createdBefore">createdBefore</a></code> | <code>string</code> | *No description.* |
@@ -6604,10 +6604,10 @@ public resetWithState(): void
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.matchesSuffix">matchesSuffix</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.noncurrentTimeBefore">noncurrentTimeBefore</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.numNewerVersions">numNewerVersions</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.sendAgeIfZero">sendAgeIfZero</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.sendDaysSinceCustomTimeIfZero">sendDaysSinceCustomTimeIfZero</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.sendDaysSinceNoncurrentTimeIfZero">sendDaysSinceNoncurrentTimeIfZero</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.sendNumNewerVersionsIfZero">sendNumNewerVersionsIfZero</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.sendAgeIfZero">sendAgeIfZero</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.sendDaysSinceCustomTimeIfZero">sendDaysSinceCustomTimeIfZero</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.sendDaysSinceNoncurrentTimeIfZero">sendDaysSinceNoncurrentTimeIfZero</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.sendNumNewerVersionsIfZero">sendNumNewerVersionsIfZero</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.withState">withState</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleCondition">StorageBucketLifecycleRuleCondition</a></code> | *No description.* |
 
@@ -6743,7 +6743,7 @@ public readonly numNewerVersionsInput: number;
 public readonly sendAgeIfZeroInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -6753,7 +6753,7 @@ public readonly sendAgeIfZeroInput: boolean | IResolvable;
 public readonly sendDaysSinceCustomTimeIfZeroInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -6763,7 +6763,7 @@ public readonly sendDaysSinceCustomTimeIfZeroInput: boolean | IResolvable;
 public readonly sendDaysSinceNoncurrentTimeIfZeroInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -6773,7 +6773,7 @@ public readonly sendDaysSinceNoncurrentTimeIfZeroInput: boolean | IResolvable;
 public readonly sendNumNewerVersionsIfZeroInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -6893,7 +6893,7 @@ public readonly numNewerVersions: number;
 public readonly sendAgeIfZero: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -6903,7 +6903,7 @@ public readonly sendAgeIfZero: boolean | IResolvable;
 public readonly sendDaysSinceCustomTimeIfZero: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -6913,7 +6913,7 @@ public readonly sendDaysSinceCustomTimeIfZero: boolean | IResolvable;
 public readonly sendDaysSinceNoncurrentTimeIfZero: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -6923,7 +6923,7 @@ public readonly sendDaysSinceNoncurrentTimeIfZero: boolean | IResolvable;
 public readonly sendNumNewerVersionsIfZero: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -6960,7 +6960,7 @@ new storageBucket.StorageBucketLifecycleRuleList(terraformResource: IInterpolati
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
 
@@ -6968,7 +6968,7 @@ new storageBucket.StorageBucketLifecycleRuleList(terraformResource: IInterpolati
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleList.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7034,7 +7034,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleList.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7069,7 +7069,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRule">StorageBucketLifecycleRule</a>[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRule">StorageBucketLifecycleRule</a>[]</code> | *No description.* |
 
 ---
 
@@ -7103,7 +7103,7 @@ public readonly fqn: string;
 public readonly internalValue: IResolvable | StorageBucketLifecycleRule[];
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRule">StorageBucketLifecycleRule</a>[]
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRule">StorageBucketLifecycleRule</a>[]
 
 ---
 
@@ -7120,7 +7120,7 @@ new storageBucket.StorageBucketLifecycleRuleOutputReference(terraformResource: I
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
@@ -7129,7 +7129,7 @@ new storageBucket.StorageBucketLifecycleRuleOutputReference(terraformResource: I
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7317,7 +7317,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7366,7 +7366,7 @@ public putCondition(value: StorageBucketLifecycleRuleCondition): void
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.property.condition">condition</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleConditionOutputReference">StorageBucketLifecycleRuleConditionOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.property.actionInput">actionInput</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleAction">StorageBucketLifecycleRuleAction</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.property.conditionInput">conditionInput</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleCondition">StorageBucketLifecycleRuleCondition</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRule">StorageBucketLifecycleRule</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRuleOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRule">StorageBucketLifecycleRule</a></code> | *No description.* |
 
 ---
 
@@ -7440,7 +7440,7 @@ public readonly conditionInput: StorageBucketLifecycleRuleCondition;
 public readonly internalValue: IResolvable | StorageBucketLifecycleRule;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRule">StorageBucketLifecycleRule</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.storageBucket.StorageBucketLifecycleRule">StorageBucketLifecycleRule</a>
 
 ---
 
@@ -7457,14 +7457,14 @@ new storageBucket.StorageBucketLoggingOutputReference(terraformResource: IInterp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLoggingOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLoggingOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketLoggingOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.storageBucket.StorageBucketLoggingOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7635,7 +7635,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.storageBucket.StorageBucketLoggingOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7757,14 +7757,14 @@ new storageBucket.StorageBucketRetentionPolicyOutputReference(terraformResource:
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -7935,7 +7935,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -7962,9 +7962,9 @@ public resetIsLocked(): void
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.property.isLockedInput">isLockedInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.property.isLockedInput">isLockedInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.property.retentionPeriodInput">retentionPeriodInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.property.isLocked">isLocked</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.property.isLocked">isLocked</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.property.retentionPeriod">retentionPeriod</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicyOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketRetentionPolicy">StorageBucketRetentionPolicy</a></code> | *No description.* |
 
@@ -8000,7 +8000,7 @@ public readonly fqn: string;
 public readonly isLockedInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -8020,7 +8020,7 @@ public readonly retentionPeriodInput: number;
 public readonly isLocked: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -8057,14 +8057,14 @@ new storageBucket.StorageBucketSoftDeletePolicyOutputReference(terraformResource
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8235,7 +8235,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.storageBucket.StorageBucketSoftDeletePolicyOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8346,14 +8346,14 @@ new storageBucket.StorageBucketTimeoutsOutputReference(terraformResource: IInter
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8526,7 +8526,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8571,7 +8571,7 @@ public resetUpdate(): void
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.property.read">read</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.storageBucket.StorageBucketTimeouts">StorageBucketTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.storageBucket.StorageBucketTimeouts">StorageBucketTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -8665,7 +8665,7 @@ public readonly update: string;
 public readonly internalValue: IResolvable | StorageBucketTimeouts;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.storageBucket.StorageBucketTimeouts">StorageBucketTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.storageBucket.StorageBucketTimeouts">StorageBucketTimeouts</a>
 
 ---
 
@@ -8682,14 +8682,14 @@ new storageBucket.StorageBucketVersioningOutputReference(terraformResource: IInt
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketVersioningOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketVersioningOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketVersioningOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.storageBucket.StorageBucketVersioningOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -8859,7 +8859,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.storageBucket.StorageBucketVersioningOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -8880,8 +8880,8 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketVersioningOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketVersioningOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketVersioningOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketVersioningOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketVersioningOutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketVersioningOutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketVersioningOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketVersioning">StorageBucketVersioning</a></code> | *No description.* |
 
 ---
@@ -8916,7 +8916,7 @@ public readonly fqn: string;
 public readonly enabledInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -8926,7 +8926,7 @@ public readonly enabledInput: boolean | IResolvable;
 public readonly enabled: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
@@ -8953,14 +8953,14 @@ new storageBucket.StorageBucketWebsiteOutputReference(terraformResource: IInterp
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketWebsiteOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketWebsiteOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.storageBucket.StorageBucketWebsiteOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-google.storageBucket.StorageBucketWebsiteOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -9132,7 +9132,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.storageBucket.StorageBucketWebsiteOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 

@@ -34,17 +34,17 @@ parameterManagerParameterVersion.ParameterManagerParameterVersion(
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.Initializer.parameter.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.Initializer.parameter.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.Initializer.parameter.parameter">parameter</a></code> | <code>str</code> | Parameter Manager Parameter resource. |
 | <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.Initializer.parameter.parameterData">parameter_data</a></code> | <code>str</code> | The Parameter data. |
 | <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.Initializer.parameter.parameterVersionId">parameter_version_id</a></code> | <code>str</code> | Version ID of the Parameter Version Resource. This must be unique within the Parameter. |
-| <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.Initializer.parameter.disabled">disabled</a></code> | <code>bool \| cdktf.IResolvable</code> | The current state of Parameter Version. This field is only applicable for updating Parameter Version. |
+| <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.Initializer.parameter.disabled">disabled</a></code> | <code>bool \| cdktn.IResolvable</code> | The current state of Parameter Version. This field is only applicable for updating Parameter Version. |
 | <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/parameter_manager_parameter_version#id ParameterManagerParameterVersion#id}. |
 | <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersionTimeouts">ParameterManagerParameterVersionTimeouts</a></code> | timeouts block. |
 
@@ -70,43 +70,43 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.Initializer.parameter.connection"></a>
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
 ##### `depends_on`<sup>Optional</sup> <a name="depends_on" id="@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.Initializer.parameter.dependsOn"></a>
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
 ##### `for_each`<sup>Optional</sup> <a name="for_each" id="@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.Initializer.parameter.forEach"></a>
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
 ##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.Initializer.parameter.lifecycle"></a>
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
 ##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.Initializer.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `disabled`<sup>Optional</sup> <a name="disabled" id="@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.Initializer.parameter.disabled"></a>
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 The current state of Parameter Version. This field is only applicable for updating Parameter Version.
 
@@ -447,7 +447,7 @@ def import_from(
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -589,7 +589,7 @@ def reset_timeouts() -> None
 | <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.isConstruct">is_construct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.isTerraformElement">is_terraform_element</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.isTerraformResource">is_terraform_resource</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTF code for importing a ParameterManagerParameterVersion resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.generateConfigForImport">generate_config_for_import</a></code> | Generates CDKTN code for importing a ParameterManagerParameterVersion resource upon running "cdktn plan <stack-name>". |
 
 ---
 
@@ -672,7 +672,7 @@ parameterManagerParameterVersion.ParameterManagerParameterVersion.generate_confi
 )
 ```
 
-Generates CDKTF code for importing a ParameterManagerParameterVersion resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a ParameterManagerParameterVersion resource upon running "cdktn plan <stack-name>".
 
 ###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.generateConfigForImport.parameter.scope"></a>
 
@@ -702,7 +702,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 
 ###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the ParameterManagerParameterVersion to import is found.
 
@@ -713,31 +713,31 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/google/6.5
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.property.cdktfStack">cdktf_stack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.property.cdktfStack">cdktf_stack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.property.friendlyUniqueId">friendly_unique_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.property.createTime">create_time</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.property.kmsKeyVersion">kms_key_version</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersionTimeoutsOutputReference">ParameterManagerParameterVersionTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.property.updateTime">update_time</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.property.disabledInput">disabled_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.property.disabledInput">disabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.property.parameterDataInput">parameter_data_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.property.parameterInput">parameter_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.property.parameterVersionIdInput">parameter_version_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersionTimeouts">ParameterManagerParameterVersionTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.property.disabled">disabled</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.property.timeoutsInput">timeouts_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersionTimeouts">ParameterManagerParameterVersionTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.property.disabled">disabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.property.parameter">parameter</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersion.property.parameterData">parameter_data</a></code> | <code>str</code> | *No description.* |
@@ -763,7 +763,7 @@ The tree node.
 cdktf_stack: TerraformStack
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
@@ -813,7 +813,7 @@ terraform_resource_type: str
 terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
@@ -823,7 +823,7 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -833,7 +833,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
@@ -853,7 +853,7 @@ depends_on: typing.List[str]
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -863,7 +863,7 @@ for_each: ITerraformIterator
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -873,7 +873,7 @@ lifecycle: TerraformResourceLifecycle
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -883,7 +883,7 @@ provider: TerraformProvider
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -943,7 +943,7 @@ update_time: str
 disabled_input: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -993,7 +993,7 @@ parameter_version_id_input: str
 timeouts_input: IResolvable | ParameterManagerParameterVersionTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersionTimeouts">ParameterManagerParameterVersionTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersionTimeouts">ParameterManagerParameterVersionTimeouts</a>
 
 ---
 
@@ -1003,7 +1003,7 @@ timeouts_input: IResolvable | ParameterManagerParameterVersionTimeouts
 disabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1095,17 +1095,17 @@ parameterManagerParameterVersion.ParameterManagerParameterVersionConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersionConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersionConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersionConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersionConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersionConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersionConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersionConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersionConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersionConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersionConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktn.ITerraformDependable]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersionConfig.property.forEach">for_each</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersionConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersionConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersionConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersionConfig.property.parameter">parameter</a></code> | <code>str</code> | Parameter Manager Parameter resource. |
 | <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersionConfig.property.parameterData">parameter_data</a></code> | <code>str</code> | The Parameter data. |
 | <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersionConfig.property.parameterVersionId">parameter_version_id</a></code> | <code>str</code> | Version ID of the Parameter Version Resource. This must be unique within the Parameter. |
-| <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersionConfig.property.disabled">disabled</a></code> | <code>bool \| cdktf.IResolvable</code> | The current state of Parameter Version. This field is only applicable for updating Parameter Version. |
+| <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersionConfig.property.disabled">disabled</a></code> | <code>bool \| cdktn.IResolvable</code> | The current state of Parameter Version. This field is only applicable for updating Parameter Version. |
 | <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersionConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/google/6.50.0/docs/resources/parameter_manager_parameter_version#id ParameterManagerParameterVersion#id}. |
 | <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersionConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersionTimeouts">ParameterManagerParameterVersionTimeouts</a></code> | timeouts block. |
 
@@ -1117,7 +1117,7 @@ parameterManagerParameterVersion.ParameterManagerParameterVersionConfig(
 connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
@@ -1127,7 +1127,7 @@ connection: SSHProvisionerConnection | WinrmProvisionerConnection
 count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[int, float] | cdktf.TerraformCount
+- *Type:* typing.Union[int, float] | cdktn.TerraformCount
 
 ---
 
@@ -1137,7 +1137,7 @@ count: typing.Union[int, float] | TerraformCount
 depends_on: typing.List[ITerraformDependable]
 ```
 
-- *Type:* typing.List[cdktf.ITerraformDependable]
+- *Type:* typing.List[cdktn.ITerraformDependable]
 
 ---
 
@@ -1147,7 +1147,7 @@ depends_on: typing.List[ITerraformDependable]
 for_each: ITerraformIterator
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
@@ -1157,7 +1157,7 @@ for_each: ITerraformIterator
 lifecycle: TerraformResourceLifecycle
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
@@ -1167,7 +1167,7 @@ lifecycle: TerraformResourceLifecycle
 provider: TerraformProvider
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
@@ -1177,7 +1177,7 @@ provider: TerraformProvider
 provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
+- *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
 
 ---
 
@@ -1229,7 +1229,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 disabled: bool | IResolvable
 ```
 
-- *Type:* bool | cdktf.IResolvable
+- *Type:* bool | cdktn.IResolvable
 
 The current state of Parameter Version. This field is only applicable for updating Parameter Version.
 
@@ -1343,14 +1343,14 @@ parameterManagerParameterVersion.ParameterManagerParameterVersionTimeoutsOutputR
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersionTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersionTimeoutsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
 | <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersionTimeoutsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
 ##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersionTimeoutsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
@@ -1545,7 +1545,7 @@ Produce the Token's value at resolution time.
 
 ###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersionTimeoutsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
@@ -1590,7 +1590,7 @@ def reset_update() -> None
 | <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersionTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersionTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersionTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersionTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersionTimeouts">ParameterManagerParameterVersionTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersionTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersionTimeouts">ParameterManagerParameterVersionTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -1684,7 +1684,7 @@ update: str
 internal_value: IResolvable | ParameterManagerParameterVersionTimeouts
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersionTimeouts">ParameterManagerParameterVersionTimeouts</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-google.parameterManagerParameterVersion.ParameterManagerParameterVersionTimeouts">ParameterManagerParameterVersionTimeouts</a>
 
 ---
 
